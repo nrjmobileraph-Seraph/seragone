@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-<link rel="manifest" href="manifest.json">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -309,18 +308,18 @@ body{font-family:'EB Garamond',serif;color:var(--texte);}
         <div class="hud-panels">
           <div class="panel">
             <div class="panel-label">MONDES ACTIFS</div>
-            <div class="panel-val">23</div>
+            <div class="panel-val" id="v-nact">23</div>
             <div class="panel-sub">n<sub>act</sub></div>
           </div>
           <div class="panel">
             <div class="panel-label">CAPACITÉ DE GAIN</div>
-            <div class="panel-val">43%</div>
+            <div class="panel-val" id="v-cap">--%</div>
             <div class="panel-sub">potentiel annuel</div>
           </div>
           <div class="panel conv-hud" style="min-width:260px;">
             <div class="panel-label">CONVERGENCE MULTIMONDE</div>
-            <div class="conv-big">52%</div>
-            <div class="bt" style="height:10px;margin-bottom:8px;"><div class="bf glow" data-t="52"></div></div>
+            <div class="conv-big" id="v-conv">--%</div>
+            <div class="bt" style="height:10px;margin-bottom:8px;"><div class="bf glow" id="bf-conv" data-t="52"></div></div>
             <div>
               <div class="brow"><span class="bn">JOUR</span><span class="bv">23 mondes</span></div>
               <div class="bt"><div class="bf glow" data-t="100"></div></div>
@@ -590,14 +589,14 @@ body{font-family:'EB Garamond',serif;color:var(--texte);}
                     stroke="rgba(40,10,10,.9)" stroke-width="20"/>
 
             <!-- Arc glow large (halo) -->
-            <circle cx="160" cy="160" r="120" fill="none"
+            <circle id="arc-glow" cx="160" cy="160" r="120" fill="none"
                     stroke="rgba(218,165,32,.25)" stroke-width="28"
                     stroke-dasharray="271 481" stroke-dashoffset="94"
                     stroke-linecap="round"
                     filter="url(#glow-fort)" opacity=".6"/>
 
             <!-- Arc principal -->
-            <circle cx="160" cy="160" r="120" fill="none"
+            <circle id="arc-main" cx="160" cy="160" r="120" fill="none"
                     stroke="url(#arc-grad)" stroke-width="16"
                     stroke-dasharray="271 481" stroke-dashoffset="94"
                     stroke-linecap="round"
@@ -625,16 +624,11 @@ body{font-family:'EB Garamond',serif;color:var(--texte);}
               <text x="268" y="265" text-anchor="middle">100%</text>
             </g>
 
-            <!-- Indicateur tête de curseur (point lumineux à 43%) -->
-            <!-- Arc = 271 * 0.43 = 116.5 pts, angle = -90 + 270*0.43 = 26° -->
-            <!-- Point à 26° sur r=120 : x=160+120*cos(26°)=268, y=160+120*sin(26°)=213 -- mais angle from top -->
-            <!-- Angle départ = -90 + (-135) = -225° = 135° -->
-            <!-- A 43% : angle = 135 + 0.43*270 = 135+116 = 251° from right = départ à 225° + 116° -->
-            <!-- position: cx = 160 + 120*cos(225+116 = 341° = -19°) = 160+120*cos(-19°) ≈ 160+113.5=273, y=160+120*sin(-19°)≈160-39=121 -->
-            <circle cx="273" cy="121" r="10" fill="#f0c040"
+            <!-- Indicateur tête de curseur (positionné dynamiquement) -->
+            <circle id="cursor-glow" cx="273" cy="121" r="10" fill="#f0c040"
                     filter="url(#glow-or)"
                     style="animation:curseur-pulse 2s ease-in-out infinite"/>
-            <circle cx="273" cy="121" r="6" fill="white" opacity=".9"/>
+            <circle id="cursor-dot" cx="273" cy="121" r="6" fill="white" opacity=".9"/>
 
           </svg>
 
@@ -659,7 +653,7 @@ body{font-family:'EB Garamond',serif;color:var(--texte);}
                 0 3px 0 rgba(0,0,0,1),
                 0 0 4px rgba(0,0,0,1);
               animation:eclat 5s ease-in-out infinite;
-            ">+43<span style="font-size:50%;color:#8a6020;vertical-align:super;">%</span></div>
+            " id="v-pot">+--<span style="font-size:50%;color:#8a6020;vertical-align:super;">%</span></div>
             <div style="
               font-family:'Cinzel',serif;
               font-size:clamp(9px,.85vw,11px);
@@ -692,7 +686,7 @@ body{font-family:'EB Garamond',serif;color:var(--texte);}
           </div>
           <div class="comp-item cur">
             <span class="comp-nom">↳ Séragone actuel</span>
-            <span class="comp-val">+43%</span>
+            <span class="comp-val" id="v-pot-comp">+--%</span>
           </div>
           <div class="comp-item">
             <span class="comp-nom">+ levier ×2</span>
@@ -893,20 +887,52 @@ function updateUI(data) {
     }
   }
 
-  // Convergence
+  // Convergence (panneau HUD)
   const convEl = document.getElementById('v-conv');
   if (convEl) convEl.textContent = data.convergence + '%';
 
-  // Barres de convergence
+  // Barre de convergence
   const bfConv = document.getElementById('bf-conv');
   if (bfConv) bfConv.style.width = data.convergence + '%';
 
-  // Capacité de gain / potentiel
-  document.querySelectorAll('.panel-val, .mv, .pot-chiffre').forEach(el => {
-    if (el.textContent.includes('%') && el.closest('.panel, .metric-card')) {
-      // laisser la valeur statique pour l'instant
-    }
-  });
+  // Capacité de gain (panneau HUD) — branchée sur capacite du cerveau
+  const capEl = document.getElementById('v-cap');
+  if (capEl) capEl.textContent = data.capacite + '%';
+
+  // ═══ GROS CHIFFRE CENTRAL (l'œil doré) — branché sur convergence ═══
+  const potEl = document.getElementById('v-pot');
+  if (potEl) {
+    potEl.innerHTML = '+' + data.convergence + '<span style="font-size:50%;color:#8a6020;vertical-align:super;">%</span>';
+  }
+
+  // Comparaison "Séragone actuel"
+  const compEl = document.getElementById('v-pot-comp');
+  if (compEl) compEl.textContent = '+' + data.convergence + '%';
+
+  // ═══ ARC SVG + CURSEUR — positionnés selon convergence ═══
+  const pct = data.convergence / 100;  // 0..1
+  const R = 120, CX = 160, CY = 160;
+  const fullArc = 2 * Math.PI * R * (270 / 360);  // ~565.5
+  const arcLen = pct * fullArc;
+  const gapLen = 2 * Math.PI * R - arcLen;
+
+  // Mettre à jour les arcs SVG
+  const arcGlow = document.getElementById('arc-glow');
+  const arcMain = document.getElementById('arc-main');
+  if (arcGlow) arcGlow.setAttribute('stroke-dasharray', arcLen.toFixed(1) + ' ' + gapLen.toFixed(1));
+  if (arcMain) arcMain.setAttribute('stroke-dasharray', arcLen.toFixed(1) + ' ' + gapLen.toFixed(1));
+
+  // Déplacer le curseur lumineux
+  // L'arc commence à 225° (bas gauche) et couvre 270°
+  const angleDeg = 225 + pct * 270;
+  const angleRad = angleDeg * Math.PI / 180;
+  const curX = CX + R * Math.cos(angleRad);
+  const curY = CY + R * Math.sin(angleRad);
+
+  const curGlow = document.getElementById('cursor-glow');
+  const curDot  = document.getElementById('cursor-dot');
+  if (curGlow) { curGlow.setAttribute('cx', curX.toFixed(1)); curGlow.setAttribute('cy', curY.toFixed(1)); }
+  if (curDot)  { curDot.setAttribute('cx', curX.toFixed(1));  curDot.setAttribute('cy', curY.toFixed(1)); }
 
   // Indicateur de connexion
   const ind = document.getElementById('live-dot');
