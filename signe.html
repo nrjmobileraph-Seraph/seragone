@@ -6,150 +6,45 @@
 <title>Séragone</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Séragone">
 <meta name="theme-color" content="#0c0404">
 <meta name="mobile-web-app-capable" content="yes">
-<link rel="manifest" href="data:application/json,{&quot;name&quot;:&quot;Séragone&quot;,&quot;short_name&quot;:&quot;Séragone&quot;,&quot;start_url&quot;:&quot;./signe.html&quot;,&quot;display&quot;:&quot;standalone&quot;,&quot;background_color&quot;:&quot;%230c0404&quot;,&quot;theme_color&quot;:&quot;%230c0404&quot;}">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Cinzel:wght@400&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 html,body{width:100%;height:100%;overflow:hidden;background:#0c0404;}
-
 .bg{
   position:fixed;inset:0;
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 30%, rgba(120,40,10,.35) 0%, transparent 70%),
-    radial-gradient(ellipse 60% 80% at 30% 70%, rgba(80,20,5,.25) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 50% at 70% 60%, rgba(60,15,5,.2) 0%, transparent 50%),
+  background:radial-gradient(ellipse 80% 60% at 50% 30%, rgba(120,40,10,.35) 0%, transparent 70%),
     linear-gradient(160deg, #1a0505 0%, #0c0202 40%, #0a0101 100%);
   animation:breathe 14s ease-in-out infinite;
 }
-@keyframes breathe{
-  0%,100%{filter:brightness(1);}
-  50%{filter:brightness(1.15);}
-}
-
-/* Particules dorées */
-.bg::after{
-  content:'';
-  position:absolute;inset:0;
-  background-image:
-    radial-gradient(1px 1px at 20% 30%, rgba(218,165,32,.4) 0%, transparent 100%),
-    radial-gradient(1px 1px at 80% 20%, rgba(218,165,32,.3) 0%, transparent 100%),
-    radial-gradient(1px 1px at 60% 70%, rgba(218,165,32,.25) 0%, transparent 100%),
-    radial-gradient(1px 1px at 40% 80%, rgba(218,165,32,.3) 0%, transparent 100%),
-    radial-gradient(2px 2px at 15% 60%, rgba(218,165,32,.2) 0%, transparent 100%),
-    radial-gradient(1px 1px at 85% 55%, rgba(218,165,32,.35) 0%, transparent 100%),
-    radial-gradient(1px 1px at 50% 15%, rgba(218,165,32,.3) 0%, transparent 100%);
-  opacity:.8;
-}
-
-.overlay{
-  position:fixed;inset:0;
-  background:radial-gradient(ellipse 70% 70% at 50% 50%,rgba(8,2,2,.1) 0%,rgba(8,2,2,.5) 60%,rgba(8,2,2,.85) 100%);
-}
-
-/* Oeil doré décoratif */
-.oeil{
-  position:fixed;top:0;left:50%;transform:translateX(-50%);
-  width:180px;height:80px;
-  background:radial-gradient(ellipse at 50% 80%, rgba(218,165,32,.12) 0%, transparent 70%);
-  border-bottom:1px solid rgba(218,165,32,.08);
-}
-
-.content{
-  position:fixed;inset:0;
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;
-  padding:60px 32px 100px;
-  text-align:center;
-}
-
-.signe-label{
-  font-family:'Cinzel',serif;
-  font-size:clamp(8px,2vw,10px);
-  letter-spacing:7px;
-  color:rgba(218,165,32,.42);
-  text-transform:uppercase;
-  margin-bottom:28px;
-}
-
-.pct{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(90px,24vw,160px);
-  font-weight:300;
-  color:#f0c040;line-height:1;
-  text-shadow:0 0 60px rgba(218,165,32,.6),0 3px 14px rgba(0,0,0,1);
-  animation:glow 7s ease-in-out infinite;
-}
-@keyframes glow{
-  0%,100%{text-shadow:0 0 40px rgba(218,165,32,.45),0 3px 14px rgba(0,0,0,1);}
-  50%{text-shadow:0 0 90px rgba(218,165,32,.9),0 0 180px rgba(218,165,32,.3),0 3px 14px rgba(0,0,0,1);}
-}
+@keyframes breathe{0%,100%{filter:brightness(1);}50%{filter:brightness(1.15);}}
+.overlay{position:fixed;inset:0;background:radial-gradient(ellipse 70% 70% at 50% 50%,rgba(8,2,2,.1) 0%,rgba(8,2,2,.5) 60%,rgba(8,2,2,.85) 100%);}
+.content{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 32px 100px;text-align:center;}
+.signe-label{font-family:'Cinzel',serif;font-size:10px;letter-spacing:7px;color:rgba(218,165,32,.42);text-transform:uppercase;margin-bottom:28px;}
+.pct{font-family:'Cormorant Garamond',serif;font-size:clamp(90px,24vw,160px);font-weight:300;color:#f0c040;line-height:1;text-shadow:0 0 60px rgba(218,165,32,.6),0 3px 14px rgba(0,0,0,1);animation:glow 7s ease-in-out infinite;}
+@keyframes glow{0%,100%{text-shadow:0 0 40px rgba(218,165,32,.45),0 3px 14px rgba(0,0,0,1);}50%{text-shadow:0 0 90px rgba(218,165,32,.9),0 3px 14px rgba(0,0,0,1);}}
 .pct sup{font-size:38%;vertical-align:super;color:rgba(240,192,64,.6);}
-
-.lecture{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(26px,7vw,42px);
-  font-weight:300;font-style:italic;
-  letter-spacing:4px;margin-top:12px;
-  text-shadow:0 3px 10px rgba(0,0,0,1);
-}
+.lecture{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,7vw,42px);font-weight:300;font-style:italic;letter-spacing:4px;margin-top:12px;text-shadow:0 3px 10px rgba(0,0,0,1);}
 .sep{width:52px;height:1px;background:linear-gradient(to right,transparent,rgba(218,165,32,.45),transparent);margin:20px auto;}
-.etat{
-  font-family:'Cinzel',serif;
-  font-size:clamp(10px,2.6vw,13px);
-  letter-spacing:5px;text-transform:uppercase;
-  margin-bottom:18px;
-}
-.resume{
-  font-family:'Cormorant Garamond',serif;
-  font-style:italic;font-weight:300;
-  font-size:clamp(18px,4.5vw,24px);
-  color:#e8d5b0;max-width:320px;line-height:1.6;
-  text-shadow:0 2px 12px rgba(0,0,0,1);
-  opacity:.9;
-}
-
-.infos{
-  position:fixed;bottom:0;left:0;right:0;
-  padding:14px 28px 24px;
-  display:flex;justify-content:space-between;align-items:flex-end;
-  background:linear-gradient(to top,rgba(8,2,2,.95),transparent);
-}
-.info-prix{
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(14px,3.5vw,17px);font-weight:300;
-  color:rgba(212,184,150,.5);
-}
-.info-ts{
-  font-family:'Cinzel',serif;
-  font-size:clamp(7px,1.7vw,9px);
-  letter-spacing:2px;color:rgba(218,165,32,.3);
-  text-align:right;line-height:1.7;
-}
-
-.dot{
-  position:fixed;top:20px;right:20px;
-  display:flex;align-items:center;gap:6px;z-index:100;
-}
+.etat{font-family:'Cinzel',serif;font-size:clamp(10px,2.6vw,13px);letter-spacing:5px;text-transform:uppercase;margin-bottom:18px;}
+.resume{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(16px,4vw,22px);color:#e8d5b0;max-width:320px;line-height:1.6;text-shadow:0 2px 12px rgba(0,0,0,1);opacity:.9;}
+.infos{position:fixed;bottom:0;left:0;right:0;padding:14px 28px 24px;display:flex;justify-content:space-between;align-items:flex-end;background:linear-gradient(to top,rgba(8,2,2,.95),transparent);}
+.info-prix{font-family:'Cormorant Garamond',serif;font-size:clamp(14px,3.5vw,17px);font-weight:300;color:rgba(212,184,150,.5);}
+.info-ts{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:rgba(218,165,32,.3);text-align:right;line-height:1.7;}
+.dot{position:fixed;top:20px;right:20px;display:flex;align-items:center;gap:6px;z-index:100;}
 .dot-c{width:8px;height:8px;border-radius:50%;background:#ef4444;transition:background .5s;}
 .dot-t{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:rgba(218,165,32,.35);}
-.ok{color:#f0c040;}
-.prud{color:#ef4444;text-shadow:0 0 20px rgba(239,68,68,.4);}
-.neutr{color:#d4b896;opacity:.7;}
+/* DEBUG */
+#debug{position:fixed;top:40px;left:10px;right:10px;font-size:10px;color:rgba(255,200,0,.7);font-family:monospace;z-index:999;word-break:break-all;line-height:1.4;}
+.ok{color:#f0c040;} .prud{color:#ef4444;} .neutr{color:#d4b896;opacity:.7;}
 </style>
 </head>
 <body>
 <div class="bg"></div>
-<div class="oeil"></div>
 <div class="overlay"></div>
-
-<div class="dot">
-  <div class="dot-c" id="dot"></div>
-  <div class="dot-t" id="dot-t">—</div>
-</div>
-
+<div id="debug">chargement...</div>
+<div class="dot"><div class="dot-c" id="dot"></div><div class="dot-t" id="dot-t">—</div></div>
 <div class="content">
   <div class="signe-label">Séragone · Signe du jour</div>
   <div class="pct" id="pct">—<sup>%</sup></div>
@@ -158,19 +53,18 @@ html,body{width:100%;height:100%;overflow:hidden;background:#0c0404;}
   <div class="etat ok" id="etat">···</div>
   <div class="resume" id="resume"></div>
 </div>
-
 <div class="infos">
   <div class="info-prix" id="prix"></div>
   <div class="info-ts" id="ts"></div>
 </div>
-
 <script>
 const URL_DATA = 'https://vps-1e58449b.vps.ovh.net/data';
+const dbg = document.getElementById('debug');
 
 function jouerSon(lecture) {
   try {
     const ctx = new (window.AudioContext || window.webkitAudioContext)();
-    const freqs = {PLUIEDOR:528, DEGAGÉ:440, NEUTRE:320, AVERTISSEMENT:220, TEMPÊTE:150};
+    const freqs = {PLUIEDOR:528,DEGAGÉ:440,NEUTRE:320,AVERTISSEMENT:220,TEMPÊTE:150};
     const freq = freqs[(lecture||'').toUpperCase()] || 320;
     const osc = ctx.createOscillator();
     const env = ctx.createGain();
@@ -181,71 +75,49 @@ function jouerSon(lecture) {
     env.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 2.5);
     osc.connect(env); env.connect(ctx.destination);
     osc.start(); osc.stop(ctx.currentTime + 2.5);
-  } catch(e) {}
+  } catch(e) { dbg.textContent += ' SON_ERR:'+e.message; }
 }
 
-const LIBELLES = {
-  PLUIEDOR:'Pluie d\'or', DEGAGÉ:'Dégagé',
-  NEUTRE:'Neutre', AVERTISSEMENT:'Avertissement', TEMPÊTE:'Tempête'
-};
-
+const LIBELLES = {PLUIEDOR:"Pluie d'or",DEGAGÉ:'Dégagé',NEUTRE:'Neutre',AVERTISSEMENT:'Avertissement',TEMPÊTE:'Tempête'};
 let premierChargement = true;
 let derniereSig = null;
 
 async function fetchState() {
+  dbg.textContent = 'fetch...';
   try {
     const r = await fetch(URL_DATA + '?t=' + Date.now());
+    dbg.textContent = 'HTTP ' + r.status;
     if (!r.ok) throw new Error('HTTP ' + r.status);
-    const d = await r.json();
-
+    const txt = await r.text();
+    dbg.textContent = 'txt:' + txt.substring(0,80);
+    const d = JSON.parse(txt);
     const oncle = d.oncle || {};
     const chance = parseFloat(oncle.chance_gain_pct ?? d.chance_gain_pct ?? 50).toFixed(0);
     const lecture = (oncle.lecture_oncle ?? d.lecture_oncle ?? 'NEUTRE').toUpperCase().replace(/ /g,'');
     const resume = oncle.resume_court ?? d.resume_court ?? '';
     const prix = parseFloat(oncle.prix ?? d.prix ?? 0);
+    dbg.textContent = 'OK chance='+chance+' lect='+lecture+' res='+resume.substring(0,20);
 
     if (premierChargement || lecture !== derniereSig) {
-      jouerSon(lecture);
-      derniereSig = lecture;
-      premierChargement = false;
+      jouerSon(lecture); derniereSig = lecture; premierChargement = false;
     }
 
     document.getElementById('pct').innerHTML = chance + '<sup>%</sup>';
-
     const lectEl = document.getElementById('lecture');
     lectEl.textContent = LIBELLES[lecture] || lecture;
-    if (lecture === 'PLUIEDOR' || lecture.includes('EGAG')) {
-      lectEl.style.color = '#f0c040';
-    } else if (lecture === 'AVERTISSEMENT') {
-      lectEl.style.color = '#f59e0b';
-    } else if (lecture === 'TEMPÊTE') {
-      lectEl.style.color = '#ef4444';
-    } else {
-      lectEl.style.color = '#d4b896';
-    }
+    if (lecture==='PLUIEDOR'||lecture.includes('EGAG')) lectEl.style.color='#f0c040';
+    else if (lecture==='AVERTISSEMENT') lectEl.style.color='#f59e0b';
+    else if (lecture==='TEMPÊTE') lectEl.style.color='#ef4444';
+    else lectEl.style.color='#d4b896';
 
     const etatEl = document.getElementById('etat');
-    const etats = {
-      PLUIEDOR:'Favorable', DEGAGÉ:'Favorable', DÉGAGÉ:'Favorable',
-      NEUTRE:'Neutre', AVERTISSEMENT:'Prudence', TEMPÊTE:'Danger'
-    };
+    const etats = {PLUIEDOR:'Favorable',DEGAGÉ:'Favorable',DÉGAGÉ:'Favorable',NEUTRE:'Neutre',AVERTISSEMENT:'Prudence',TEMPÊTE:'Danger'};
     etatEl.textContent = etats[lecture] || 'Neutre';
-    etatEl.className = 'etat ' + (
-      (lecture==='PLUIEDOR'||lecture.includes('EGAG')) ? 'ok' :
-      lecture==='TEMPÊTE' ? 'prud' : 'neutr'
-    );
-
+    etatEl.className = 'etat '+((lecture==='PLUIEDOR'||lecture.includes('EGAG'))?'ok':lecture==='TEMPÊTE'?'prud':'neutr');
     document.getElementById('resume').textContent = resume;
-
-    if (prix > 0) {
-      document.getElementById('prix').textContent =
-        prix.toLocaleString('fr-FR',{minimumFractionDigits:0,maximumFractionDigits:0}) + ' €';
-    }
-
+    if (prix > 0) document.getElementById('prix').textContent = prix.toLocaleString('fr-FR',{minimumFractionDigits:0,maximumFractionDigits:0})+' €';
     const now = new Date();
-    document.getElementById('ts').innerHTML =
-      now.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'})+'<br>'+
-      now.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
+    document.getElementById('ts').innerHTML = now.toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'})+'<br>'+now.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
 
     const dot = document.getElementById('dot');
     dot.style.background = '#22c55e';
@@ -254,14 +126,13 @@ async function fetchState() {
     dot._t = setTimeout(()=>{dot.style.background='#ef4444';document.getElementById('dot-t').textContent='—';}, 12000);
 
   } catch(e) {
+    dbg.textContent = 'ERR: ' + e.message;
     document.getElementById('dot').style.background = '#ef4444';
     document.getElementById('dot-t').textContent = 'ERR';
-    console.error('Fetch error:', e);
   }
 }
 
 document.addEventListener('touchstart', ()=>{ if(premierChargement) fetchState(); }, {once:true});
-
 fetchState();
 setInterval(fetchState, 30000);
 </script>
