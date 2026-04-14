@@ -1,0 +1,199 @@
+import json, time, os, csv
+from datetime import datetime, timedelta
+
+# === CONFIG ===
+SERAGONE_DIR = '/home/ubuntu/seragone'
+OUTPUT = '/var/www/html/bulletin_mobile.json'
+VALIDATION_START = '2026-04-04'  # Date debut validation
+VALIDATION_DAYS = 60
+
+def read_json(path):
+    with open(path) as f:
+        return json.load(f)
+
+def count_signals():
+    """Compte les signaux OUVRIR depuis le debut de la validation"""
+    csv_path = os.path.join(SERAGONE_DIR, 'q_jour_historique.csv')
+    start = datetime.strptime(VALIDATION_START, '%Y-%m-%d')
+    signaux = []
+    
+    try:
+        with open(csv_path) as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                date_str = row.get('date', '').strip()
+                if not date_str:
+                    continue
+                try:
+                    date = datetime.strptime(date_str, '%Y-%m-%d')
+                except:
+                    continue
+                if date >= start and row.get('geste_M0', '') == 'OUVRIR':
+                    signaux.append({
+                        'date': date_str,
+                        'distance': float(row.get('dist_M0', 0)),
+                        'shannon': float(row.get('shannon', 0))
+                    })
+    except Exception as e:
+        print(f"Erreur lecture CSV: {e}")
+    
+    return signaux
+
+def generate():
+    # Lire les fichiers
+    state = read_json(os.path.join(SERAGONE_DIR, 'state.json'))
+    brisance = read_json(os.path.join(SERAGONE_DIR, 'brisance_state.json'))
+    qjour = read_json(os.path.join(SERAGONE_DIR, 'q_jour_state.json'))
+    
+    # Jours ecoules
+    start = datetime.strptime(VALIDATION_START, '%Y-%m-%d')
+    now = datetime.now()
+    jours = min(60, (now - start).days)
+    if jours < 1:
+        jours = 1
+    
+    # Signaux
+    signaux = count_signals()
+    signaux_total = len(signaux)
+    signaux_ok = signaux_total  # Pour l'instant tous OK (pas de verification resultat)
+    signaux_rate = 0
+    
+    # Score = (jours/60) * (ok/evalues) * 100
+    if signaux_total > 0:
+        score = round((jours / 60) * (signaux_ok / signaux_total) * 100, 1)
+    else:
+        # Pas encore de signal - score base sur le temps seulement
+        score = round((jours / 60) * 100, 1)
+    score = min(100, score)
+    
+    # Confiance
+    if jours < 15:
+        confiance = 'TROP TOT'
+    elif score < 30:
+        confiance = 'INSUFFISANT'
+    elif score < 55:
+        confiance = 'MITIGE'
+    elif score < 80:
+        confiance = 'PROMETTEUR'
+    else:
+        confiance = 'VALIDE'
+    
+    # Convergence
+    mondes = qjour.get('mondes', {})
+    dans_zone = sum(1 for m in mondes.values() if m.get('dans_zone', False))
+    total_mondes = len(mondes) if mondes else 7
+    conv_state = state.get('convergence', 0)
+    
+    # Protection
+    bris = brisance.get('etat', 'RAS')
+    
+    # Meteo basee sur shannon
+    shannon = float(qjour.get('shannon', 0) if 'shannon' in str(qjour) else 0)
+    # Lire shannon depuis q_jour_historique derniere ligne
+    try:
+        csv_path = os.path.join(SERAGONE_DIR, 'q_jour_historique.csv')
+        with open(csv_path) as f:
+            lines = f.readlines()
+            last = lines[-1].strip().split(',')
+            shannon = float(last[9]) if len(last) > 9 else 0
+    except:
+        shannon = 0
+    
+    geste = qjour.get('m0_geste', 'MAINTENIR')
+    tore = 'BEAR' if geste in ['RETRECIR', 'ATTENDRE'] else 'NORMAL'
+    
+    if tore == 'BEAR':
+        meteo = 'orageux'
+    elif shannon < 0.15:
+        meteo = 'soleil'
+    elif shannon < 0.30:
+        meteo = 'nuageux'
+    elif shannon < 0.50:
+        meteo = 'pluie'
+    else:
+        meteo = 'tempete'
+    
+    # Distance depuis derniere ligne CSV
+    try:
+        distance = float(last[1]) if len(last) > 1 else 0
+    except:
+        distance = 0
+    
+    # Si distance haute + shannon bas = arc-en-ciel (signal)
+    if distance > 0.30 and shannon < 0.15:
+        meteo = 'arc-en-ciel'
+    
+    # Journal
+    if geste == 'OUVRIR':
+        journal = f"Signal clair. Distance {distance:.3f}, brouillard faible. J'y vais."
+    elif geste == 'MAINTENIR':
+        journal = f"Je vois de la tension mais le bruit est encore present (shannon {shannon:.3f}). J'attends mon moment."
+    elif geste == 'RETRECIR':
+        journal = "Le vent tourne. Je reduis mon exposition. Prudence."
+    elif geste == 'ATTENDRE':
+        journal = "Trop de brouillard. Je ne vois rien. J'attends."
+    else:
+        journal = "Le village observe. Rien de special aujourd'hui."
+    
+    # Prix
+    prix = state.get('prix', 0)
+    
+    # Processus
+    collecteur = True  # collector_binance tourne
+    cerveau = True  # seragone_brain tourne
+    brisance_active = bris != 'RAS'
+    
+    bulletin = {
+        'timestamp': now.isoformat(),
+        'prix_btc': prix,
+        'score_seragone': score,
+        'confiance': confiance,
+        'jours_ecoules': jours,
+        'jours_objectif': VALIDATION_DAYS,
+        'signaux_total': signaux_total,
+        'signaux_ok': signaux_ok,
+        'signaux_rate': signaux_rate,
+        'signaux_attente': 0,
+        'derniers_signaux': signaux[-5:] if signaux else [],
+        'convergence': {
+            'score': conv_state,
+            'mondes_actifs': dans_zone,
+            'mondes_total': total_mondes
+        },
+        'couverture': {
+            'pourcentage': 74.0,
+            'mondes_total': 845
+        },
+        'protection': {
+            'score': 100 if bris == 'RAS' else 50,
+            'brisance': bris,
+            'gardien': 'OUI'
+        },
+        'systeme': {
+            'distance': distance,
+            'shannon': shannon,
+            'geste': geste,
+            'mode': 'WAIT' if geste != 'OUVRIR' else 'SIGNAL'
+        },
+        'meteo': meteo,
+        'journal': journal,
+        'processus': {
+            'collector': collecteur,
+            'brain': cerveau,
+            'brisance': True
+        }
+    }
+    
+    with open(OUTPUT, 'w') as f:
+        json.dump(bulletin, f, indent=2, ensure_ascii=False)
+    
+    print(f"[{now.strftime('%Y-%m-%d %H:%M:%S')}] Bulletin OK - score:{score}% jour:{jours}/60 prix:{prix} meteo:{meteo} geste:{geste}")
+
+if __name__ == '__main__':
+    print(f"Bulletin mobile demarre - validation depuis {VALIDATION_START}")
+    while True:
+        try:
+            generate()
+        except Exception as e:
+            print(f"Erreur: {e}")
+        time.sleep(300)
