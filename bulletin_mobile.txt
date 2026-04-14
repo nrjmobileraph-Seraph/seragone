@@ -1,10 +1,9 @@
 import json, time, os, csv
 from datetime import datetime, timedelta
 
-# === CONFIG ===
 SERAGONE_DIR = '/home/ubuntu/seragone'
 OUTPUT = '/var/www/html/bulletin_mobile.json'
-VALIDATION_START = '2026-04-04'  # Date debut validation
+VALIDATION_START = '2026-04-14'
 VALIDATION_DAYS = 60
 
 def read_json(path):
@@ -12,60 +11,72 @@ def read_json(path):
         return json.load(f)
 
 def count_signals():
-    """Compte les signaux OUVRIR depuis le debut de la validation"""
-    csv_path = os.path.join(SERAGONE_DIR, 'q_jour_historique.csv')
+    """Signaux = jours ou distance > 0.25 ET shannon < 0.25 depuis le debut"""
+    csv_path = os.path.join(SERAGONE_DIR, 'modules_historique_complet.csv')
     start = datetime.strptime(VALIDATION_START, '%Y-%m-%d')
     signaux = []
-    
     try:
         with open(csv_path) as f:
             reader = csv.DictReader(f)
-            for row in reader:
-                date_str = row.get('date', '').strip()
-                if not date_str:
-                    continue
-                try:
-                    date = datetime.strptime(date_str, '%Y-%m-%d')
-                except:
-                    continue
-                if date >= start and row.get('geste_M0', '') == 'OUVRIR':
-                    signaux.append({
-                        'date': date_str,
-                        'distance': float(row.get('dist_M0', 0)),
-                        'shannon': float(row.get('shannon', 0))
-                    })
+            rows = list(reader)
+        for i, row in enumerate(rows):
+            date_str = row.get('date', '').strip()
+            if not date_str:
+                continue
+            try:
+                date = datetime.strptime(date_str, '%Y-%m-%d')
+            except:
+                continue
+            if date < start:
+                continue
+            dist = float(row.get('dist_M0', 0))
+            shan = float(row.get('shannon', 0))
+            prix = float(row.get('prix', 0))
+            if dist > 0.25 and shan < 0.25:
+                # Verifier si Bitcoin a monte 5 jours apres
+                resultat = 'EN ATTENTE'
+                gain = 0
+                if i + 5 < len(rows):
+                    prix_apres = float(rows[i+5].get('prix', 0))
+                    if prix_apres > 0 and prix > 0:
+                        gain = round((prix_apres - prix) / prix * 100, 2)
+                        resultat = 'OUI' if gain > 0 else 'NON'
+                signaux.append({
+                    'date': date_str,
+                    'prix': prix,
+                    'distance': dist,
+                    'shannon': shan,
+                    'resultat': resultat,
+                    'gain_pct': gain
+                })
     except Exception as e:
         print(f"Erreur lecture CSV: {e}")
-    
     return signaux
 
 def generate():
-    # Lire les fichiers
     state = read_json(os.path.join(SERAGONE_DIR, 'state.json'))
     brisance = read_json(os.path.join(SERAGONE_DIR, 'brisance_state.json'))
     qjour = read_json(os.path.join(SERAGONE_DIR, 'q_jour_state.json'))
-    
-    # Jours ecoules
-    start = datetime.strptime(VALIDATION_START, '%Y-%m-%d')
+    paralleles = read_json(os.path.join(SERAGONE_DIR, 'mondes_paralleles_state.json'))
+
     now = datetime.now()
-    jours = min(60, (now - start).days)
-    if jours < 1:
-        jours = 1
-    
+    start = datetime.strptime(VALIDATION_START, '%Y-%m-%d')
+    jours = min(60, max(1, (now - start).days + 1))
+
     # Signaux
     signaux = count_signals()
-    signaux_total = len(signaux)
-    signaux_ok = signaux_total  # Pour l'instant tous OK (pas de verification resultat)
-    signaux_rate = 0
-    
+    signaux_ok = sum(1 for s in signaux if s['resultat'] == 'OUI')
+    signaux_rate = sum(1 for s in signaux if s['resultat'] == 'NON')
+    signaux_attente = sum(1 for s in signaux if s['resultat'] == 'EN ATTENTE')
+    signaux_evalues = signaux_ok + signaux_rate
+
     # Score = (jours/60) * (ok/evalues) * 100
-    if signaux_total > 0:
-        score = round((jours / 60) * (signaux_ok / signaux_total) * 100, 1)
+    if signaux_evalues > 0:
+        score = round((jours / 60) * (signaux_ok / signaux_evalues) * 100, 1)
     else:
-        # Pas encore de signal - score base sur le temps seulement
         score = round((jours / 60) * 100, 1)
     score = min(100, score)
-    
+
     # Confiance
     if jours < 15:
         confiance = 'TROP TOT'
@@ -77,33 +88,39 @@ def generate():
         confiance = 'PROMETTEUR'
     else:
         confiance = 'VALIDE'
-    
-    # Convergence
-    mondes = qjour.get('mondes', {})
-    dans_zone = sum(1 for m in mondes.values() if m.get('dans_zone', False))
-    total_mondes = len(mondes) if mondes else 7
-    conv_state = state.get('convergence', 0)
-    
-    # Protection
+
+    # Prix
+    prix = state.get('prix', 0)
+
+    # Convergence - deux sources
+    recursifs_actifs = state.get('n_mondes_actifs', 0)
+    paralleles_actifs = paralleles.get('n_actif', 0)
+    paralleles_total = paralleles.get('n_mondes', 305)
+    convergence_pct = paralleles.get('convergence_pct', 0)
+
+    # Brisance
     bris = brisance.get('etat', 'RAS')
-    
-    # Meteo basee sur shannon
-    shannon = float(qjour.get('shannon', 0) if 'shannon' in str(qjour) else 0)
-    # Lire shannon depuis q_jour_historique derniere ligne
+
+    # Shannon et distance depuis le CSV
     try:
-        csv_path = os.path.join(SERAGONE_DIR, 'q_jour_historique.csv')
-        with open(csv_path) as f:
+        with open(os.path.join(SERAGONE_DIR, 'modules_historique_complet.csv')) as f:
             lines = f.readlines()
             last = lines[-1].strip().split(',')
-            shannon = float(last[9]) if len(last) > 9 else 0
+            shannon = float(last[15]) if len(last) > 15 else 0
+            distance = float(last[7]) if len(last) > 7 else 0
     except:
         shannon = 0
-    
+        distance = 0
+
+    # Geste
     geste = qjour.get('m0_geste', 'MAINTENIR')
-    tore = 'BEAR' if geste in ['RETRECIR', 'ATTENDRE'] else 'NORMAL'
-    
-    if tore == 'BEAR':
+
+    # Meteo
+    tore_bear = geste in ['RETRECIR', 'ATTENDRE']
+    if tore_bear:
         meteo = 'orageux'
+    elif distance > 0.30 and shannon < 0.15:
+        meteo = 'arc-en-ciel'
     elif shannon < 0.15:
         meteo = 'soleil'
     elif shannon < 0.30:
@@ -112,37 +129,24 @@ def generate():
         meteo = 'pluie'
     else:
         meteo = 'tempete'
-    
-    # Distance depuis derniere ligne CSV
-    try:
-        distance = float(last[1]) if len(last) > 1 else 0
-    except:
-        distance = 0
-    
-    # Si distance haute + shannon bas = arc-en-ciel (signal)
-    if distance > 0.30 and shannon < 0.15:
-        meteo = 'arc-en-ciel'
-    
+
     # Journal
+    date_str = now.strftime('%d %B').lstrip('0')
     if geste == 'OUVRIR':
-        journal = f"Signal clair. Distance {distance:.3f}, brouillard faible. J'y vais."
+        journal = f"{date_str} - Signal clair. Distance {distance:.3f}, brouillard faible ({shannon:.3f}). J'y vais."
     elif geste == 'MAINTENIR':
-        journal = f"Je vois de la tension mais le bruit est encore present (shannon {shannon:.3f}). J'attends mon moment."
+        journal = f"{date_str} - Je vois de la tension mais le bruit est encore present (shannon {shannon:.3f}). J'attends mon moment."
     elif geste == 'RETRECIR':
-        journal = "Le vent tourne. Je reduis mon exposition. Prudence."
+        journal = f"{date_str} - Le vent tourne. Je reduis mon exposition. Prudence."
     elif geste == 'ATTENDRE':
-        journal = "Trop de brouillard. Je ne vois rien. J'attends."
+        journal = f"{date_str} - Trop de brouillard. Je ne vois rien. J'attends."
     else:
-        journal = "Le village observe. Rien de special aujourd'hui."
-    
-    # Prix
-    prix = state.get('prix', 0)
-    
+        journal = f"{date_str} - Le village observe. Rien de special aujourd'hui."
+
     # Processus
-    collecteur = True  # collector_binance tourne
-    cerveau = True  # seragone_brain tourne
-    brisance_active = bris != 'RAS'
-    
+    collecteur = True
+    cerveau = True
+
     bulletin = {
         'timestamp': now.isoformat(),
         'prix_btc': prix,
@@ -150,15 +154,16 @@ def generate():
         'confiance': confiance,
         'jours_ecoules': jours,
         'jours_objectif': VALIDATION_DAYS,
-        'signaux_total': signaux_total,
+        'signaux_total': len(signaux),
         'signaux_ok': signaux_ok,
         'signaux_rate': signaux_rate,
-        'signaux_attente': 0,
+        'signaux_attente': signaux_attente,
         'derniers_signaux': signaux[-5:] if signaux else [],
         'convergence': {
-            'score': conv_state,
-            'mondes_actifs': dans_zone,
-            'mondes_total': total_mondes
+            'score': convergence_pct,
+            'mondes_actifs': paralleles_actifs,
+            'mondes_total': paralleles_total,
+            'recursifs_actifs': recursifs_actifs
         },
         'couverture': {
             'pourcentage': 74.0,
@@ -173,7 +178,7 @@ def generate():
             'distance': distance,
             'shannon': shannon,
             'geste': geste,
-            'mode': 'WAIT' if geste != 'OUVRIR' else 'SIGNAL'
+            'mode': 'SIGNAL' if geste == 'OUVRIR' else 'WAIT'
         },
         'meteo': meteo,
         'journal': journal,
@@ -183,14 +188,14 @@ def generate():
             'brisance': True
         }
     }
-    
+
     with open(OUTPUT, 'w') as f:
         json.dump(bulletin, f, indent=2, ensure_ascii=False)
-    
-    print(f"[{now.strftime('%Y-%m-%d %H:%M:%S')}] Bulletin OK - score:{score}% jour:{jours}/60 prix:{prix} meteo:{meteo} geste:{geste}")
+
+    print(f"[{now.strftime('%H:%M:%S')}] OK score:{score}% jour:{jours}/60 prix:{prix} meteo:{meteo} sig:{signaux_ok}/{len(signaux)}")
 
 if __name__ == '__main__':
-    print(f"Bulletin mobile demarre - validation depuis {VALIDATION_START}")
+    print(f"Bulletin mobile - validation depuis {VALIDATION_START}")
     while True:
         try:
             generate()
