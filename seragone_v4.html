@@ -573,7 +573,7 @@ function updateDashboard(data) {
   arc.setAttribute('stroke-dasharray', `${pct * 327} 327`);
   
   // Score color based on value
-  let color = '#999'; // grey 0-30
+  let color = '#999';
   if (score > 80) color = '#4CAF50';
   else if (score > 55) color = '#42A5F5';
   else if (score > 30) color = '#FF9800';
@@ -588,6 +588,36 @@ function updateDashboard(data) {
   else if (score > 55) status = 'CONFIANCE CROISSANTE';
   else if (score > 30) status = 'SIGNAUX ÉMERGENTS';
   document.getElementById('score-status').textContent = status;
+  
+  // Gauges
+  if (data.convergence !== undefined) document.getElementById('g-conv').textContent = data.convergence;
+  if (data.convergence !== undefined) document.getElementById('g-conv-bar').style.width = Math.min(100, data.convergence * 100) + '%';
+  if (data.couverture) document.getElementById('g-couv').textContent = data.couverture;
+  if (data.couverture) {
+    const parts = data.couverture.split('/');
+    document.getElementById('g-couv-bar').style.width = (parseInt(parts[0]) / parseInt(parts[1]) * 100) + '%';
+  }
+  if (data.protection) document.getElementById('g-prot').textContent = data.protection;
+  
+  // Météo
+  if (data.meteo) {
+    document.getElementById('meteo-val').textContent = data.meteo + ' — ' + (data.geste || '');
+    const icons = {'Grand soleil':'☀️','Ciel degage':'🌤','Nuages':'⛅','Tempete':'🌧','Brouillard':'🌫'};
+    document.getElementById('meteo-icon').textContent = icons[data.meteo] || '☀️';
+    document.getElementById('simple-meteo').textContent = icons[data.meteo] || '☀️';
+  }
+  
+  // Prix BTC
+  if (data.prix) {
+    const p = Math.round(data.prix).toLocaleString('fr-FR');
+    document.getElementById('btc-price').textContent = p + ' €';
+    document.getElementById('simple-btc').textContent = '₿ ' + p + ' €';
+  }
+  
+  // Signaux
+  if (data.collecteur) document.getElementById('sig-coll').classList.add('on');
+  if (data.cerveau) document.getElementById('sig-cerv').classList.add('on');
+  if (data.brisance_active) document.getElementById('sig-bris').classList.add('warn');
   
   // Simple mode
   document.getElementById('simple-score').textContent = score + '%';
@@ -628,10 +658,9 @@ fetchBTC();
 setInterval(fetchBTC, 30000); // toutes les 30 secondes
 
 // ═══ BULLETIN VPS (quand le moteur tournera) ═══
-const VPS_URL = 'http://51.254.136.91';
 async function fetchBulletin() {
   try {
-    const r = await fetch(VPS_URL + '/bulletin_mobile.json');
+    const r = await fetch('/bulletin_mobile.json');
     if (r.ok) {
       const d = await r.json();
       updateDashboard(d);
