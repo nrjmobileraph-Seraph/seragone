@@ -11,7 +11,6 @@ def read_json(path):
         return json.load(f)
 
 def count_signals():
-    """Signaux = jours ou distance > 0.25 ET shannon < 0.25 depuis le debut"""
     csv_path = os.path.join(SERAGONE_DIR, 'modules_historique_complet.csv')
     start = datetime.strptime(VALIDATION_START, '%Y-%m-%d')
     signaux = []
@@ -33,7 +32,6 @@ def count_signals():
             shan = float(row.get('shannon', 0))
             prix = float(row.get('prix', 0))
             if dist > 0.25 and shan < 0.25:
-                # Verifier si Bitcoin a monte 5 jours apres
                 resultat = 'EN ATTENTE'
                 gain = 0
                 if i + 5 < len(rows):
@@ -63,21 +61,28 @@ def generate():
     start = datetime.strptime(VALIDATION_START, '%Y-%m-%d')
     jours = min(60, max(1, (now - start).days + 1))
 
-    # Signaux
     signaux = count_signals()
     signaux_ok = sum(1 for s in signaux if s['resultat'] == 'OUI')
     signaux_rate = sum(1 for s in signaux if s['resultat'] == 'NON')
     signaux_attente = sum(1 for s in signaux if s['resultat'] == 'EN ATTENTE')
-    signaux_evalues = signaux_ok + signaux_rate
 
-    # Score = (jours/60) * (ok/evalues) * 100
-    if signaux_evalues > 0:
-        score = round((jours / 60) * (signaux_ok / signaux_evalues) * 100, 1)
-    else:
-        score = round((jours / 60) * 100, 1)
-    score = min(100, score)
+    # Score precedent - NE DESCEND JAMAIS
+    prev_score = 0
+    try:
+        with open(OUTPUT) as f:
+            prev = json.load(f)
+        prev_score = prev.get('score_seragone', 0)
+    except:
+        pass
 
-    # Confiance
+    # Score : chaque signal juste = +5 points definitifs (20 justes = 100%)
+    # Maturite = plafond temporel (jour/60 * 100)
+    # Score = min(acquis, maturite) puis max(score, precedent)
+    points_acquis = signaux_ok * 5
+    maturite = min(100, round(jours / 60 * 100, 1))
+    score_calcule = min(points_acquis, maturite)
+    score = max(score_calcule, prev_score)
+
     if jours < 15:
         confiance = 'TROP TOT'
     elif score < 30:
@@ -89,33 +94,25 @@ def generate():
     else:
         confiance = 'VALIDE'
 
-    # Prix
     prix = state.get('prix', 0)
-
-    # Convergence - deux sources
     recursifs_actifs = state.get('n_mondes_actifs', 0)
     paralleles_actifs = paralleles.get('n_actif', 0)
     paralleles_total = paralleles.get('n_mondes', 305)
     convergence_pct = paralleles.get('convergence_pct', 0)
-
-    # Brisance
     bris = brisance.get('etat', 'RAS')
 
-    # Shannon et distance depuis le CSV
     try:
         with open(os.path.join(SERAGONE_DIR, 'modules_historique_complet.csv')) as f:
             lines = f.readlines()
             last = lines[-1].strip().split(',')
-            shannon = float(last[15]) if len(last) > 15 else 0
+            shannon = float(last[16]) if len(last) > 16 else 0
             distance = float(last[7]) if len(last) > 7 else 0
     except:
         shannon = 0
         distance = 0
 
-    # Geste
     geste = qjour.get('m0_geste', 'MAINTENIR')
 
-    # Meteo
     tore_bear = geste in ['RETRECIR', 'ATTENDRE']
     if tore_bear:
         meteo = 'orageux'
@@ -130,7 +127,6 @@ def generate():
     else:
         meteo = 'tempete'
 
-    # Journal
     date_str = now.strftime('%d %B').lstrip('0')
     if geste == 'OUVRIR':
         journal = f"{date_str} - Signal clair. Distance {distance:.3f}, brouillard faible ({shannon:.3f}). J'y vais."
@@ -142,10 +138,6 @@ def generate():
         journal = f"{date_str} - Trop de brouillard. Je ne vois rien. J'attends."
     else:
         journal = f"{date_str} - Le village observe. Rien de special aujourd'hui."
-
-    # Processus
-    collecteur = True
-    cerveau = True
 
     bulletin = {
         'timestamp': now.isoformat(),
@@ -183,8 +175,8 @@ def generate():
         'meteo': meteo,
         'journal': journal,
         'processus': {
-            'collector': collecteur,
-            'brain': cerveau,
+            'collector': True,
+            'brain': True,
             'brisance': True
         }
     }
@@ -192,7 +184,7 @@ def generate():
     with open(OUTPUT, 'w') as f:
         json.dump(bulletin, f, indent=2, ensure_ascii=False)
 
-    print(f"[{now.strftime('%H:%M:%S')}] OK score:{score}% jour:{jours}/60 prix:{prix} meteo:{meteo} sig:{signaux_ok}/{len(signaux)}")
+    print(f"[{now.strftime('%H:%M:%S')}] OK score:{score}% (acquis:{points_acquis} mat:{maturite} prev:{prev_score}) jour:{jours}/60 sig:{signaux_ok}/{len(signaux)}")
 
 if __name__ == '__main__':
     print(f"Bulletin mobile - validation depuis {VALIDATION_START}")
