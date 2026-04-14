@@ -596,21 +596,36 @@ function updateDashboard(data) {
 // Initialize
 updateDashboard({score: 0, day: 1});
 
-// ═══ PRIX BTC EN DIRECT (CoinGecko) ═══
+// ═══ PRIX BTC EN DIRECT (Binance) ═══
 async function fetchBTC() {
   try {
-    const r = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=eur,usd');
-    if (r.ok) {
-      const d = await r.json();
-      const eur = d.bitcoin.eur.toLocaleString('fr-FR');
-      const usd = d.bitcoin.usd.toLocaleString('fr-FR');
+    const [rEur, rUsd] = await Promise.all([
+      fetch('https://api.binance.com/api/v3/ticker/price?symbol=BTCEUR'),
+      fetch('https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT')
+    ]);
+    if (rEur.ok && rUsd.ok) {
+      const dEur = await rEur.json();
+      const dUsd = await rUsd.json();
+      const eur = Math.round(parseFloat(dEur.price)).toLocaleString('fr-FR');
+      const usd = Math.round(parseFloat(dUsd.price)).toLocaleString('fr-FR');
       document.getElementById('btc-price').textContent = eur + ' € / $' + usd;
       document.getElementById('simple-btc').textContent = '₿ ' + eur + ' €';
     }
-  } catch(e) { console.log('BTC fetch error', e); }
+  } catch(e) {
+    // Fallback si Binance ne répond pas
+    try {
+      const r = await fetch('https://api.coinbase.com/v2/prices/BTC-EUR/spot');
+      if (r.ok) {
+        const d = await r.json();
+        const eur = Math.round(parseFloat(d.data.amount)).toLocaleString('fr-FR');
+        document.getElementById('btc-price').textContent = eur + ' €';
+        document.getElementById('simple-btc').textContent = '₿ ' + eur + ' €';
+      }
+    } catch(e2) { console.log('BTC fetch error', e2); }
+  }
 }
 fetchBTC();
-setInterval(fetchBTC, 60000); // toutes les 60 secondes
+setInterval(fetchBTC, 30000); // toutes les 30 secondes
 
 // ═══ BULLETIN VPS (quand le moteur tournera) ═══
 const VPS_URL = 'http://51.254.136.91';
