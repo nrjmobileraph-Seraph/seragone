@@ -596,21 +596,37 @@ function updateDashboard(data) {
 // Initialize
 updateDashboard({score: 0, day: 1});
 
-// Try to fetch from VPS every 5 minutes
+// ═══ PRIX BTC EN DIRECT (CoinGecko) ═══
+async function fetchBTC() {
+  try {
+    const r = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=eur,usd');
+    if (r.ok) {
+      const d = await r.json();
+      const eur = d.bitcoin.eur.toLocaleString('fr-FR');
+      const usd = d.bitcoin.usd.toLocaleString('fr-FR');
+      document.getElementById('btc-price').textContent = eur + ' € / $' + usd;
+      document.getElementById('simple-btc').textContent = '₿ ' + eur + ' €';
+    }
+  } catch(e) { console.log('BTC fetch error', e); }
+}
+fetchBTC();
+setInterval(fetchBTC, 60000); // toutes les 60 secondes
+
+// ═══ BULLETIN VPS (quand le moteur tournera) ═══
+const VPS_URL = 'http://51.254.136.91';
 async function fetchBulletin() {
   try {
-    // Replace with actual VPS URL when ready
-    const resp = await fetch('/bulletin_mobile.json');
-    if (resp.ok) {
-      const data = await resp.json();
-      updateDashboard(data);
+    const r = await fetch(VPS_URL + '/bulletin_mobile.json');
+    if (r.ok) {
+      const d = await r.json();
+      updateDashboard(d);
     }
   } catch(e) {
-    // VPS not connected yet — demo mode
+    // VPS pas encore configuré — mode attente
   }
 }
 fetchBulletin();
-setInterval(fetchBulletin, 300000);
+setInterval(fetchBulletin, 300000); // toutes les 5 minutes
 
 // Start film
 startFilm();
