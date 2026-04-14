@@ -564,63 +564,55 @@ beings.forEach(b => {
 // Will connect to bulletin_mobile.json when VPS is ready
 // For now: demo mode with starting values
 function updateDashboard(data) {
-  const score = data.score || 0;
-  const day = data.day || 1;
-  
-  // Score ring
+  const score = data.score_seragone || data.score || 0;
+  const day = data.jours_ecoules || data.day || 1;
+  const obj = data.jours_objectif || 60;
   const arc = document.getElementById('score-arc');
-  const pct = score / 100;
-  arc.setAttribute('stroke-dasharray', `${pct * 327} 327`);
-  
-  // Score color based on value
+  arc.setAttribute('stroke-dasharray', `${(score/100)*327} 327`);
   let color = '#999';
   if (score > 80) color = '#4CAF50';
   else if (score > 55) color = '#42A5F5';
   else if (score > 30) color = '#FF9800';
   arc.setAttribute('stroke', color);
-  
-  document.getElementById('score-num').textContent = score + '%';
-  document.getElementById('score-day').textContent = `JOUR ${day} / 60`;
-  
-  // Status
-  let status = 'EN DÉMARRAGE';
-  if (score > 80) status = 'VALIDÉ';
-  else if (score > 55) status = 'CONFIANCE CROISSANTE';
-  else if (score > 30) status = 'SIGNAUX ÉMERGENTS';
-  document.getElementById('score-status').textContent = status;
-  
-  // Gauges
-  if (data.convergence !== undefined) document.getElementById('g-conv').textContent = data.convergence;
-  if (data.convergence !== undefined) document.getElementById('g-conv-bar').style.width = Math.min(100, data.convergence * 100) + '%';
-  if (data.couverture) document.getElementById('g-couv').textContent = data.couverture;
+  document.getElementById('score-num').textContent = Math.round(score) + '%';
+  document.getElementById('score-day').textContent = `JOUR ${day} / ${obj}`;
+  const conf = data.confiance || 'EN DÉMARRAGE';
+  let statusText = conf;
+  if (data.signaux_total !== undefined) statusText += ` — ${data.signaux_ok||0} juste(s) sur ${data.signaux_total}`;
+  document.getElementById('score-status').textContent = statusText;
+  if (data.convergence && data.convergence.score !== undefined) {
+    document.getElementById('g-conv').textContent = data.convergence.score;
+    document.getElementById('g-conv-bar').style.width = Math.min(100, data.convergence.score) + '%';
+  }
   if (data.couverture) {
-    const parts = data.couverture.split('/');
-    document.getElementById('g-couv-bar').style.width = (parseInt(parts[0]) / parseInt(parts[1]) * 100) + '%';
+    document.getElementById('g-couv').textContent = data.couverture.pourcentage + '%';
+    document.getElementById('g-couv-bar').style.width = data.couverture.pourcentage + '%';
   }
-  if (data.protection) document.getElementById('g-prot').textContent = data.protection;
-  
-  // Météo
+  if (data.protection) {
+    document.getElementById('g-prot').textContent = data.protection.brisance || 'RAS';
+    document.getElementById('g-prot-bar').style.width = (data.protection.score||100) + '%';
+  }
   if (data.meteo) {
-    document.getElementById('meteo-val').textContent = data.meteo + ' — ' + (data.geste || '');
-    const icons = {'Grand soleil':'☀️','Ciel degage':'🌤','Nuages':'⛅','Tempete':'🌧','Brouillard':'🌫'};
-    document.getElementById('meteo-icon').textContent = icons[data.meteo] || '☀️';
-    document.getElementById('simple-meteo').textContent = icons[data.meteo] || '☀️';
+    const icons = {soleil:'\u2600\uFE0F','arc-en-ciel':'\uD83C\uDF08',nuageux:'\u26C5',pluie:'\uD83C\uDF27\uFE0F',tempete:'\u26C8\uFE0F',orageux:'\u26C8\uFE0F'};
+    const labels = {soleil:'Ciel dégagé','arc-en-ciel':'Signal actif !',nuageux:'Bruit modéré',pluie:'Bruit fort',tempete:'Tempête',orageux:'Régime bear'};
+    document.getElementById('meteo-icon').textContent = icons[data.meteo] || '\u2600\uFE0F';
+    document.getElementById('meteo-val').textContent = (labels[data.meteo]||data.meteo) + (data.systeme?' — '+data.systeme.geste:'');
+    document.getElementById('simple-meteo').textContent = icons[data.meteo] || '\u2600\uFE0F';
   }
-  
-  // Prix BTC
-  if (data.prix) {
-    const p = Math.round(data.prix).toLocaleString('fr-FR');
+  if (data.prix_btc) {
+    const p = Math.round(data.prix_btc).toLocaleString('fr-FR');
     document.getElementById('btc-price').textContent = p + ' €';
-    document.getElementById('simple-btc').textContent = '₿ ' + p + ' €';
+    document.getElementById('simple-btc').textContent = '\u20BF ' + p + ' €';
   }
-  
-  // Signaux
-  if (data.collecteur) document.getElementById('sig-coll').classList.add('on');
-  if (data.cerveau) document.getElementById('sig-cerv').classList.add('on');
-  if (data.brisance_active) document.getElementById('sig-bris').classList.add('warn');
-  
-  // Simple mode
-  document.getElementById('simple-score').textContent = score + '%';
+  if (data.processus) {
+    document.getElementById('sig-coll').classList.toggle('on', !!data.processus.collector);
+    document.getElementById('sig-cerv').classList.toggle('on', !!data.processus.brain);
+    document.getElementById('sig-bris').classList.toggle('on', !!data.processus.brisance);
+  }
+  if (data.protection && data.protection.brisance === 'ALERTE') document.getElementById('sig-bris').classList.add('warn');
+  document.getElementById('simple-score').textContent = Math.round(score) + '%';
+  const sp = document.getElementById('simple-phrase');
+  if (sp && data.journal) sp.textContent = data.journal;
 }
 
 // Initialize
