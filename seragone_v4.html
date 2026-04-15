@@ -655,7 +655,7 @@ setInterval(fetchBTC, 30000); // toutes les 30 secondes
 // ═══ BULLETIN VPS ═══
 async function fetchBulletin() {
   try {
-    const r = await fetch('https://vps-1e58449b.vps.ovh.net/bulletin_mobile.json');
+    const r = await fetch('https://raw.githubusercontent.com/nrjmobileraph-Seraph/seragone/main/bulletin_mobile.json?t=' + Date.now());
     if (r.ok) {
       const d = await r.json();
       updateDashboard(d);
