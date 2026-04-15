@@ -7,7 +7,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#1a0a0a">
 <title>Séragone</title>
-<link rel="manifest" href="data:application/json,{&quot;name&quot;:&quot;S\u00e9ragone&quot;,&quot;short_name&quot;:&quot;S\u00e9ragone&quot;,&quot;display&quot;:&quot;standalone&quot;,&quot;background_color&quot;:&quot;%231a0a0a&quot;,&quot;theme_color&quot;:&quot;%231a0a0a&quot;}">
+<link rel="manifest" href="data:application/json,{&quot;name&quot;:&quot;S\u00e9ragone&quot;,&quot;short_name&quot;:&quot;S\u00e9ragone&quot;,&quot;display&quot;:&quot;standalone&quot;,&quot;background_color&quot;:&quot;%231a0a0a&quot;,&quot;theme_color&quot;:&quot;%231a0a0a&quot;,&quot;icons&quot;:[{&quot;src&quot;:&quot;seragone-icon-192.png&quot;,&quot;sizes&quot;:&quot;192x192&quot;,&quot;type&quot;:&quot;image/png&quot;},{&quot;src&quot;:&quot;seragone-icon-512.png&quot;,&quot;sizes&quot;:&quot;512x512&quot;,&quot;type&quot;:&quot;image/png&quot;}]}">
+<link rel="apple-touch-icon" href="seragone-icon-192.png">
+<link rel="icon" type="image/png" href="seragone-icon-192.png">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
@@ -650,16 +652,19 @@ async function fetchBTC() {
 fetchBTC();
 setInterval(fetchBTC, 30000); // toutes les 30 secondes
 
-// ═══ BULLETIN VPS (quand le moteur tournera) ═══
+// ═══ BULLETIN VPS ═══
 async function fetchBulletin() {
   try {
-    const r = await fetch('/bulletin_mobile.json');
+    const r = await fetch('https://vps-1e58449b.vps.ovh.net/bulletin_mobile.json');
     if (r.ok) {
       const d = await r.json();
       updateDashboard(d);
     }
   } catch(e) {
-    // VPS pas encore configuré — mode attente
+    try {
+      const r2 = await fetch('/bulletin_mobile.json');
+      if (r2.ok) { updateDashboard(await r2.json()); }
+    } catch(e2) {}
   }
 }
 fetchBulletin();
