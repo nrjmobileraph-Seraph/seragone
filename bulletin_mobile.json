@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-04-15T19:38:46.979857",
+  "prix_btc": 74857.77,
+  "score_seragone": 15,
+  "confiance": "TROP TOT",
+  "jours_ecoules": 2,
+  "jours_objectif": 60,
+  "signaux_total": 3,
+  "signaux_ok": 3,
+  "signaux_rate": 0,
+  "signaux_attente": 0,
+  "derniers_signaux": [
+    {
+      "date": "2026-03-01",
+      "prix": 65776.47,
+      "distance": 0.4739,
+      "shannon": 0.1924,
+      "resultat": "OUI",
+      "gain_pct": 3.55
+    },
+    {
+      "date": "2026-03-08",
+      "prix": 65971.2,
+      "distance": 0.3016,
+      "shannon": 0.1371,
+      "resultat": "OUI",
+      "gain_pct": 7.52
+    },
+    {
+      "date": "2026-03-27",
+      "prix": 66407.28,
+      "distance": 0.3311,
+      "shannon": 0.1701,
+      "resultat": "OUI",
+      "gain_pct": 2.57
+    }
+  ],
+  "convergence": {
+    "score": 0.0,
+    "mondes_actifs": 0,
+    "mondes_total": 305,
+    "recursifs_actifs": 42
+  },
+  "couverture": {
+    "pourcentage": 74.0,
+    "mondes_total": 845
+  },
+  "protection": {
+    "score": 100,
+    "brisance": "RAS",
+    "gardien": "OUI"
+  },
+  "systeme": {
+    "distance": 0,
+    "shannon": 0,
+    "geste": "MAINTENIR",
+    "mode": "WAIT"
+  },
+  "meteo": "soleil",
+  "journal": "15 April - Je vois de la tension mais le bruit est encore present (shannon 0.000). J'attends mon moment.",
+  "processus": {
+    "collector": true,
+    "brain": true,
+    "brisance": true
+  }
+}
