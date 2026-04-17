@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-16T23:59:27.610313",
-  "prix_btc": 75063.61,
+  "timestamp": "2026-04-17T00:04:27.723045",
+  "prix_btc": 75154.29,
   "score_seragone": 15,
   "confiance": "TROP TOT",
-  "jours_ecoules": 3,
+  "jours_ecoules": 4,
   "jours_objectif": 60,
   "signaux_total": 3,
   "signaux_ok": 3,
@@ -57,7 +57,7 @@
     "mode": "WAIT"
   },
   "meteo": "soleil",
-  "journal": "16 April - Je vois de la tension mais le bruit est encore present (shannon 0.000). J'attends mon moment.",
+  "journal": "17 April - Je vois de la tension mais le bruit est encore present (shannon 0.000). J'attends mon moment.",
   "processus": {
     "collector": true,
     "brain": true,
