@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-17T23:55:01.845726",
+  "timestamp": "2026-04-18T00:00:01.932421",
   "prix_btc": 78154.54,
   "score_seragone": 15,
   "confiance": "TROP TOT",
-  "jours_ecoules": 4,
+  "jours_ecoules": 5,
   "jours_objectif": 60,
   "signaux_total": 3,
   "signaux_ok": 3,
@@ -57,7 +57,7 @@
     "mode": "WAIT"
   },
   "meteo": "orageux",
-  "journal": "17 April - Le vent tourne. Je reduis mon exposition. Prudence.",
+  "journal": "18 April - Le vent tourne. Je reduis mon exposition. Prudence.",
   "processus": {
     "collector": true,
     "brain": true,
