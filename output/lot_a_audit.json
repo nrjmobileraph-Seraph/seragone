@@ -1,0 +1,38 @@
+{
+  "btc_daily.csv": {
+    "exists": true,
+    "readable": true,
+    "header_ok": true,
+    "bad_lines": 0,
+    "duplicate_dates": 0,
+    "date_sorted": true,
+    "numeric_ok": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "eth_daily.csv": {
+    "exists": true,
+    "readable": true,
+    "header_ok": true,
+    "bad_lines": 0,
+    "duplicate_dates": 0,
+    "date_sorted": true,
+    "numeric_ok": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "sp500_daily.csv": {
+    "exists": true,
+    "readable": true,
+    "header_ok": true,
+    "bad_lines": 0,
+    "duplicate_dates": 0,
+    "date_sorted": true,
+    "numeric_ok": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  }
+}

@@ -116,3 +116,17 @@ Résultat : périmètre entièrement catégorisé
 - commit git : e1d17b4e9f613289e8916a4501849297954bfd3a
 - tag        : dataset-freeze-20260419T154059Z
 - sha256     : fda2fa7250714fc9adcc48a19f9599ae212af59959a72aad38b87e5fc855058d  output/global_manifest_20260419T154059Z.json
+
+## Clôture globale v2 — 20260419T154642Z
+- Manifest : output/global_manifest.json (137 entrées, Lot A inclus)
+- Snapshot : output/global_manifest_20260419T154642Z.json
+- sha256 snapshot : 6e1626a1b8e5f68d33fcac05c88d71fdd7b6cc61845e853f738a887ebf137f72
+- Orphelins : 0
+- Répartition lots : A=3, B=52, C=11, D=21, E=10, F=33, G=7
+- Classifications : ACTIVE_CANON=93, BACKUP_ONLY=30, TO_ARCHIVE=2, TECHNICAL_ARTIFACT=11, REDONDANT=1
+- Corrections v2 :
+  * intégration audit Lot A (output/lot_a_audit.json)
+  * intégration audit Lot C v1 (output/lot_c_audit_v1.json)
+  * normalisation des paths nus en data/<file>
+  * suppression des doublons hardcoded couverts par les audits
+- Note Lot F : les 8 chain_F*.csv bruts restent ACTIVE_CANON conformément à lot_f_audit_v1.json validé.
