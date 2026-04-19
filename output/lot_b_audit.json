@@ -1,0 +1,701 @@
+{
+  "data/M2SL.csv": {
+    "path": "/home/ubuntu/seragone/data/M2SL.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 805,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "data/btc_active_addresses.csv": {
+    "path": "/home/ubuntu/seragone/data/btc_active_addresses.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 1817,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      2
+    ],
+    "bad_lines": 1817,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "WARN",
+    "action": "INSPECT",
+    "sample_bad_lines": [
+      {
+        "line": 2,
+        "row": [
+          "1616457600",
+          "2021-03-23",
+          "783829"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 3,
+        "row": [
+          "1616544000",
+          "2021-03-24",
+          "782026.285714286"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 4,
+        "row": [
+          "1616630400",
+          "2021-03-25",
+          "778075.571428571"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 5,
+        "row": [
+          "1616716800",
+          "2021-03-26",
+          "772679.285714286"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 6,
+        "row": [
+          "1616803200",
+          "2021-03-27",
+          "766559.142857143"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      }
+    ]
+  },
+  "data/btc_difficulty_daily.csv": {
+    "path": "/home/ubuntu/seragone/data/btc_difficulty_daily.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 1818,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      2
+    ],
+    "bad_lines": 1818,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "WARN",
+    "action": "INSPECT",
+    "sample_bad_lines": [
+      {
+        "line": 2,
+        "row": [
+          "1616371200",
+          "2021-03-22",
+          "21865558044611"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 3,
+        "row": [
+          "1616457600",
+          "2021-03-23",
+          "21865558044611"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 4,
+        "row": [
+          "1616544000",
+          "2021-03-24",
+          "21865558044611"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 5,
+        "row": [
+          "1616630400",
+          "2021-03-25",
+          "21865558044611"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 6,
+        "row": [
+          "1616716800",
+          "2021-03-26",
+          "21865558044611"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      }
+    ]
+  },
+  "data/btc_hashrate_daily.csv": {
+    "path": "/home/ubuntu/seragone/data/btc_hashrate_daily.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 1817,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      2
+    ],
+    "bad_lines": 1817,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "WARN",
+    "action": "INSPECT",
+    "sample_bad_lines": [
+      {
+        "line": 2,
+        "row": [
+          "1616457600",
+          "2021-03-23",
+          "174997788.545989"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 3,
+        "row": [
+          "1616544000",
+          "2021-03-24",
+          "165215303.471989"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 4,
+        "row": [
+          "1616630400",
+          "2021-03-25",
+          "167389189.043989"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 5,
+        "row": [
+          "1616716800",
+          "2021-03-26",
+          "147824218.89599"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 6,
+        "row": [
+          "1616803200",
+          "2021-03-27",
+          "172823902.973989"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      }
+    ]
+  },
+  "data/btc_transactions_daily.csv": {
+    "path": "/home/ubuntu/seragone/data/btc_transactions_daily.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 1817,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      2
+    ],
+    "bad_lines": 1817,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "WARN",
+    "action": "INSPECT",
+    "sample_bad_lines": [
+      {
+        "line": 2,
+        "row": [
+          "1616457600",
+          "2021-03-23",
+          "297543.428571429"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 3,
+        "row": [
+          "1616544000",
+          "2021-03-24",
+          "296792.142857143"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 4,
+        "row": [
+          "1616630400",
+          "2021-03-25",
+          "298074.142857143"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 5,
+        "row": [
+          "1616716800",
+          "2021-03-26",
+          "296194.714285714"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 6,
+        "row": [
+          "1616803200",
+          "2021-03-27",
+          "292970.428571429"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      }
+    ]
+  },
+  "data/contagion_daily.csv": {
+    "path": "/home/ubuntu/seragone/data/contagion_daily.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 4094,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "data/exogene_daily.csv": {
+    "path": "/home/ubuntu/seragone/data/exogene_daily.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 3773,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "data/fear_greed.csv": {
+    "path": "/home/ubuntu/seragone/data/fear_greed.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 2996,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "data/funding_rate_btc.csv": {
+    "path": "/home/ubuntu/seragone/data/funding_rate_btc.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 2414,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1,
+      2,
+      3
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "data/binance_oi_btcusdt_daily.csv": {
+    "path": "/home/ubuntu/seragone/data/binance_oi_btcusdt_daily.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 28,
+    "time_col": 4,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1,
+      2,
+      3
+    ],
+    "bad_lines": 28,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "WARN",
+    "action": "INSPECT",
+    "sample_bad_lines": [
+      {
+        "line": 2,
+        "row": [
+          "BTCUSDT",
+          "80112.54000000",
+          "5443964929.05337100",
+          "19994356.00000000",
+          "1772064000000",
+          "2026-02-26"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 3,
+        "row": [
+          "BTCUSDT",
+          "79068.23900000",
+          "5333010397.71980000",
+          "19994846.00000000",
+          "1772150400000",
+          "2026-02-27"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 4,
+        "row": [
+          "BTCUSDT",
+          "79180.59600000",
+          "5213380080.16903600",
+          "19995275.00000000",
+          "1772236800000",
+          "2026-02-28"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 5,
+        "row": [
+          "BTCUSDT",
+          "77361.25100000",
+          "5179889735.56561300",
+          "19995718.00000000",
+          "1772323200000",
+          "2026-03-01"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 6,
+        "row": [
+          "BTCUSDT",
+          "77832.77600000",
+          "5116796743.73840000",
+          "19996178.00000000",
+          "1772409600000",
+          "2026-03-02"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      }
+    ]
+  },
+  "data/binance_taker_buysell_daily.csv": {
+    "path": "/home/ubuntu/seragone/data/binance_taker_buysell_daily.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 28,
+    "time_col": 3,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      0,
+      1,
+      2
+    ],
+    "bad_lines": 28,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "WARN",
+    "action": "INSPECT",
+    "sample_bad_lines": [
+      {
+        "line": 2,
+        "row": [
+          "1.1041",
+          "143040.2360",
+          "157928.8150",
+          "1771977600000",
+          "2026-02-25"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 3,
+        "row": [
+          "0.9688",
+          "90886.5300",
+          "88051.7760",
+          "1772064000000",
+          "2026-02-26"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 4,
+        "row": [
+          "0.9691",
+          "105414.7820",
+          "102153.4900",
+          "1772150400000",
+          "2026-02-27"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 5,
+        "row": [
+          "0.9921",
+          "129932.8530",
+          "128911.1760",
+          "1772236800000",
+          "2026-02-28"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      },
+      {
+        "line": 6,
+        "row": [
+          "0.9890",
+          "110638.9030",
+          "109420.9190",
+          "1772323200000",
+          "2026-03-01"
+        ],
+        "causes": [
+          "time_non_conforme"
+        ]
+      }
+    ]
+  },
+  "data/onchain/exchange_netflow.csv": {
+    "path": "/home/ubuntu/seragone/data/onchain/exchange_netflow.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 30,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "data/onchain/funding_rate.csv": {
+    "path": "/home/ubuntu/seragone/data/onchain/funding_rate.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 30,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "data/onchain/mvrv.csv": {
+    "path": "/home/ubuntu/seragone/data/onchain/mvrv.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 30,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "data/onchain/nupl.csv": {
+    "path": "/home/ubuntu/seragone/data/onchain/nupl.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 30,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1,
+      2,
+      3
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "data/onchain/open_interest.csv": {
+    "path": "/home/ubuntu/seragone/data/onchain/open_interest.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 30,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "data/onchain/puell_multiple.csv": {
+    "path": "/home/ubuntu/seragone/data/onchain/puell_multiple.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 30,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  },
+  "data/onchain/whale_ratio.csv": {
+    "path": "/home/ubuntu/seragone/data/onchain/whale_ratio.csv",
+    "exists": true,
+    "readable": true,
+    "header_present": true,
+    "rows": 30,
+    "time_col": 0,
+    "time_detection": "header_hint",
+    "numeric_cols": [
+      1
+    ],
+    "bad_lines": 0,
+    "duplicate_time_values": 0,
+    "date_sorted": true,
+    "status": "OK",
+    "action": "NONE",
+    "sample_bad_lines": []
+  }
+}

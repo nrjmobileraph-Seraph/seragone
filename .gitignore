@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+# Gros binaires et DB non versionnés (listés dans le manifest)
+data/klines_1min.db
+data/*.tar
+data/*.tar.*
