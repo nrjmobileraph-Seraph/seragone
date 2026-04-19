@@ -69,14 +69,8 @@ HARDCODED_INVENTORY = {
     "data/onchain/whale_ratio.csv.bak_sort_v2":          ("B", "BACKUP_ONLY"),
 
     # --- Lot C : intraday / microstructure ---
-    "data/agg_btcusdt_2026-03-30_5min.csv":              ("C", "ACTIVE_CANON"),
-    "data/agg_btcusdt_2026-03-30_15min.csv":             ("C", "ACTIVE_CANON"),
-    "data/agg_btcusdt_2026-03-30_60min.csv":             ("C", "ACTIVE_CANON"),
-    "data/liquidations_btcusdt_2026-03-30.csv":          ("C", "ACTIVE_CANON"),
 
     # --- Lot D : depth / trades multi-jours ---
-    "data/depth_btcusdt_2026-03-30.csv":                 ("D", "ACTIVE_CANON"),
-    "data/trades_btcusdt_2026-03-30.csv":                ("D", "ACTIVE_CANON"),
     "data/trades_btcusdt_2026-03-30.csv.bak_nul":        ("D", "TO_ARCHIVE"),
     "data/trades_btcusdt_2026-04-04.csv":                ("D", "ACTIVE_CANON"),
     "data/trades_btcusdt_2026-04-05.csv":                ("D", "ACTIVE_CANON"),
@@ -133,14 +127,16 @@ HARDCODED_INVENTORY = {
 }
 
 AUDIT_SOURCES = [
+    ("A", "output/lot_a_audit.json"),
     ("B", "output/lot_b_audit.json"),
-    ("C", "output/lot_c_audit.json"),
+    ("C", "output/lot_c_audit_v1.json"),
     ("D", "output/lot_d_audit_v2.json"),
     ("E", "output/lot_e_audit.json"),
     ("F", "output/lot_f_audit_v1.json"),
 ]
 
 DEFAULT_CLASSIFICATION_BY_LOT = {
+    "A": "ACTIVE_CANON",
     "B": "ACTIVE_CANON", "C": "ACTIVE_CANON", "D": "ACTIVE_CANON",
     "E": "TECHNICAL_ARTIFACT", "F": "ACTIVE_CANON", "G": None,
 }
@@ -153,29 +149,44 @@ def sha256_of(p: Path, bs: int = 1 << 20) -> str:
     return h.hexdigest()
 
 def extract_entries(obj):
-    out, seen = [], set()
+    """Renvoie une liste de tuples (rel_path, classification_or_None)."""
+    found = []
+    def looks_like_path(k):
+        return isinstance(k, str) and (
+            "/" in k or k.endswith((".csv", ".json", ".db", ".txt", ".parquet"))
+        )
     def walk(x):
         if isinstance(x, dict):
             p = x.get("path") or x.get("file") or x.get("filepath") or x.get("relpath")
             if isinstance(p, str):
                 cls = x.get("classification") or x.get("class")
-                out.append((p, cls if isinstance(cls, str) else None))
-            for v in x.values(): walk(v)
+                found.append((p, cls if isinstance(cls, str) else None))
+            for k, v in x.items():
+                if looks_like_path(k):
+                    cls = None
+                    if isinstance(v, dict):
+                        cls = v.get("classification") or v.get("class")
+                    found.append((k, cls if isinstance(cls, str) else None))
+                walk(v)
         elif isinstance(x, list):
-            for it in x: walk(it)
+            for it in x:
+                walk(it)
     walk(obj)
     norm = []
+    seen = set()
     ROOT_PREFIX = "home/ubuntu/seragone/"
-    for p, c in out:
-        p = p.strip()
-        # normalisations successives
-        if p.startswith("/"):
-            p = p[1:]
-        if p.startswith(ROOT_PREFIX):
-            p = p[len(ROOT_PREFIX):]
-        p = p.lstrip("./")
-        if p and p not in seen:
-            seen.add(p); norm.append((p, c))
+    for pth, c in found:
+        pth = pth.strip()
+        if pth.startswith("/"):
+            pth = pth[1:]
+        if pth.startswith(ROOT_PREFIX):
+            pth = pth[len(ROOT_PREFIX):]
+        pth = pth.lstrip("./")
+        if pth and "/" not in pth:
+            pth = "data/" + pth
+        if pth and pth not in seen:
+            seen.add(pth)
+            norm.append((pth, c))
     return norm
 
 def build(root: Path):
