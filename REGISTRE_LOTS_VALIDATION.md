@@ -140,3 +140,13 @@ Résultat : périmètre entièrement catégorisé
 - sha256 snapshot : 93aa19720f0852ce3b635011078a9fc90957bc788403a6fefe3c72d29639dfb2
 - Ancre : output/global_manifest_20260419T154908Z.json
 - .gitignore renforcé (racine projet non triée, backups/, logs/, modeles_V13_*/, app_cockpit_v*.py, deepseek_python_*.py, *.bak*, etc.)
+
+## Cleanup — 20260419T154908Z
+- Tag : dataset-cleanup-20260419T154908Z (commit b668ff4)
+- 17 BACKUP_ONLY hash-identiques au canon supprimés du disque et du script
+- Manifest : 120 entrées, 0 orphelin
+- Répartition lots : A=3, B=35, C=11, D=21, E=10, F=33, G=7
+- Classifications : ACTIVE_CANON=93, BACKUP_ONLY=13, TO_ARCHIVE=2, TECHNICAL_ARTIFACT=11, REDONDANT=1
+- sha256 snapshot : 93aa19720f0852ce3b635011078a9fc90957bc788403a6fefe3c72d29639dfb2
+- Ancre : output/global_manifest_20260419T154908Z.json (vérifiée OK via sha256sum -c)
+- .gitignore renforcé (racine non triée, backups/, logs/, modeles_V13_*/, app_cockpit_v*.py, deepseek_python_*.py, *.bak*, etc.)
