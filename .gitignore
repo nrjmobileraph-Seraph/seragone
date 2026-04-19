@@ -52,3 +52,4 @@ brain_log.txt
 /sous_signaux_18_complet.csv
 /village_final_resultats.csv
 /bloc1_daily_log.csv
+.pytest_cache/
