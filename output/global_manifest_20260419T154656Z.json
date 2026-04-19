@@ -1,6 +1,6 @@
 {
   "project": "seragone",
-  "generated_at_utc": "2026-04-19T16:45:18.259628+00:00",
+  "generated_at_utc": "2026-04-19T15:46:56.062668+00:00",
   "root": "/home/ubuntu/seragone",
   "data_dir": "data",
   "lots_included": [
@@ -20,22 +20,22 @@
     "F": "ACTIVE_CANON",
     "G": null
   },
-  "count": 120,
+  "count": 137,
   "stats": {
     "by_lot": {
       "A": 3,
-      "B": 35,
+      "B": 52,
       "C": 11,
       "D": 21,
-      "E": 11,
-      "F": 32,
+      "F": 33,
+      "E": 10,
       "G": 7
     },
     "by_classification": {
-      "ACTIVE_CANON": 92,
-      "TECHNICAL_ARTIFACT": 12,
-      "BACKUP_ONLY": 13,
+      "ACTIVE_CANON": 93,
+      "BACKUP_ONLY": 30,
       "TO_ARCHIVE": 2,
+      "TECHNICAL_ARTIFACT": 11,
       "REDONDANT": 1
     }
   },
@@ -45,7 +45,7 @@
       "path": "data/btc_daily.csv",
       "exists": true,
       "size_bytes": 355731,
-      "sha256": "1dc084c277d5099b637b8b971c1e3df3762f30786229bf26cbc22bb8e1c7fb7c",
+      "sha256": "608f46044c1b34313ad2b37ffd58fa75be493be81a9f1d494303a9ad8e845709",
       "classification": "ACTIVE_CANON"
     },
     {
@@ -90,11 +90,43 @@
     },
     {
       "lot": "B",
+      "path": "data/binance_oi_btcusdt_daily.csv.bak_sort",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
+      "path": "data/binance_oi_btcusdt_daily.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
       "path": "data/binance_taker_buysell_daily.csv",
       "exists": true,
       "size_bytes": 1619,
       "sha256": "f5fb5db69b6a85f170909e682bdba79b7f105613e68e9133ebe5404eae10d494",
       "classification": "ACTIVE_CANON"
+    },
+    {
+      "lot": "B",
+      "path": "data/binance_taker_buysell_daily.csv.bak_sort",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
+      "path": "data/binance_taker_buysell_daily.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
     },
     {
       "lot": "B",
@@ -146,6 +178,14 @@
     },
     {
       "lot": "B",
+      "path": "data/btc_active_addresses.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
       "path": "data/btc_difficulty_daily.csv",
       "exists": true,
       "size_bytes": 70772,
@@ -162,6 +202,14 @@
     },
     {
       "lot": "B",
+      "path": "data/btc_difficulty_daily.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
       "path": "data/btc_hashrate_daily.csv",
       "exists": true,
       "size_bytes": 72490,
@@ -174,6 +222,14 @@
       "exists": true,
       "size_bytes": 77946,
       "sha256": "e57968ceeafb3f016cff8543e0c4dd3303d09d2fd072f0550d17b87ec0eaad87",
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
+      "path": "data/btc_hashrate_daily.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
       "classification": "BACKUP_ONLY"
     },
     {
@@ -202,6 +258,14 @@
     },
     {
       "lot": "B",
+      "path": "data/btc_transactions_daily.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
       "path": "data/contagion_daily.csv",
       "exists": true,
       "size_bytes": 129595,
@@ -226,10 +290,26 @@
     },
     {
       "lot": "B",
+      "path": "data/fear_greed.csv.bak_sort",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
+      "path": "data/fear_greed.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
       "path": "data/funding_rate_btc.csv",
       "exists": true,
-      "size_bytes": 109888,
-      "sha256": "6b6244f8537b6afe5ce4959608f392a2f56a206a0019b2d4852d657c77afe0f0",
+      "size_bytes": 109889,
+      "sha256": "9434e77e84fc6fed4615a6cbb1f9647bdea2697f392c6359b9fed382f2daccd4",
       "classification": "ACTIVE_CANON"
     },
     {
@@ -250,6 +330,14 @@
     },
     {
       "lot": "B",
+      "path": "data/onchain/exchange_netflow.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
       "path": "data/onchain/funding_rate.csv",
       "exists": true,
       "size_bytes": 985,
@@ -262,6 +350,14 @@
       "exists": true,
       "size_bytes": 954,
       "sha256": "a0f785471901f0936473be55cfc64f820e78ac4838c437e0ac7f6e69ea3839ab",
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
+      "path": "data/onchain/funding_rate.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
       "classification": "BACKUP_ONLY"
     },
     {
@@ -282,6 +378,14 @@
     },
     {
       "lot": "B",
+      "path": "data/onchain/mvrv.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
       "path": "data/onchain/nupl.csv",
       "exists": true,
       "size_bytes": 1359,
@@ -294,6 +398,14 @@
       "exists": true,
       "size_bytes": 1328,
       "sha256": "86d5dd32cb0bb5a8734b9111c289c79989a51c440c63737c013b60c83b71c9a6",
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
+      "path": "data/onchain/nupl.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
       "classification": "BACKUP_ONLY"
     },
     {
@@ -314,6 +426,14 @@
     },
     {
       "lot": "B",
+      "path": "data/onchain/open_interest.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
       "path": "data/onchain/puell_multiple.csv",
       "exists": true,
       "size_bytes": 944,
@@ -330,6 +450,14 @@
     },
     {
       "lot": "B",
+      "path": "data/onchain/puell_multiple.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
       "path": "data/onchain/whale_ratio.csv",
       "exists": true,
       "size_bytes": 716,
@@ -342,6 +470,14 @@
       "exists": true,
       "size_bytes": 685,
       "sha256": "ac395eb33f9330984420a34f23321d99440db59659467c9117635d123c3d26f9",
+      "classification": "BACKUP_ONLY"
+    },
+    {
+      "lot": "B",
+      "path": "data/onchain/whale_ratio.csv.bak_sort_v2",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
       "classification": "BACKUP_ONLY"
     },
     {
@@ -492,8 +628,8 @@
       "lot": "D",
       "path": "data/depth_btcusdt_2026-04-19.csv",
       "exists": true,
-      "size_bytes": 3534832,
-      "sha256": "e883e31b883e1224bd9debf0272dea4e5cdfe603d45f3358abb53b678c87ee94",
+      "size_bytes": 3330097,
+      "sha256": "df096ec7011937e9992cdf3f9917910910d2a0219ef0963c1569317bc457e11b",
       "classification": "ACTIVE_CANON"
     },
     {
@@ -596,8 +732,8 @@
       "lot": "D",
       "path": "data/trades_btcusdt_2026-04-19.csv",
       "exists": true,
-      "size_bytes": 75797410,
-      "sha256": "f20c972aba864e5ab6f847d75efd0c4742534617deaabf12f5ac8ea8e6aa77d7",
+      "size_bytes": 68477026,
+      "sha256": "3c5128ee66fccb63ebf55d8c374108e159cd4b2690111e0eeccbfe7b7b776a2c",
       "classification": "ACTIVE_CANON"
     },
     {
@@ -629,7 +765,7 @@
       "path": "data/live_metrics.json",
       "exists": true,
       "size_bytes": 91,
-      "sha256": "d6ae952df1e483f4d8db3c7fe004d5cc1cd4864ccdc0eb50328328b260a16ea4",
+      "sha256": "f159c6582b694cc87c7dbbeaa98a08c1907dcc9a637a9239a9148dd810c44504",
       "classification": "TECHNICAL_ARTIFACT"
     },
     {
@@ -638,14 +774,6 @@
       "exists": true,
       "size_bytes": 157326,
       "sha256": "88c882ed9cc1603299eaaa22393fb5d03610de735e1c6067e7661e4f2eb51cb4",
-      "classification": "TECHNICAL_ARTIFACT"
-    },
-    {
-      "lot": "E",
-      "path": "data/mondes_paralleles_history.csv",
-      "exists": true,
-      "size_bytes": 687,
-      "sha256": "7d5faf2ef709f30f09eb153bdb04d0bc1fc5a4c3e0fc1d2d483e9d5e9b2e9091",
       "classification": "TECHNICAL_ARTIFACT"
     },
     {
@@ -882,6 +1010,14 @@
     },
     {
       "lot": "F",
+      "path": "data/mondes_paralleles_history.csv",
+      "exists": true,
+      "size_bytes": 687,
+      "sha256": "7d5faf2ef709f30f09eb153bdb04d0bc1fc5a4c3e0fc1d2d483e9d5e9b2e9091",
+      "classification": "ACTIVE_CANON"
+    },
+    {
+      "lot": "F",
       "path": "data/mondes_recursifs_100m.csv",
       "exists": true,
       "size_bytes": 25342402,
@@ -973,15 +1109,15 @@
       "path": "data/fear_greed_complet.csv",
       "exists": true,
       "size_bytes": 105887,
-      "sha256": "e149f77d28552ba224ea77b1c83a53a23452ae534de22b6c0a399f1c166d926c",
+      "sha256": "909cd1998d98126a2a368c202536e19340220a8b961b9512053795100cbc2436",
       "classification": "ACTIVE_CANON"
     },
     {
       "lot": "G",
       "path": "data/klines_1min.db",
       "exists": true,
-      "size_bytes": 3256320,
-      "sha256": "c8cda69362b27bf97448edf5cb7c1d0512a693ac00e5221afae01ce0c3402901",
+      "size_bytes": 3248128,
+      "sha256": "6da922323d90fb2079631ea979be6a93040b9633697a4d6368ced2a40f7413b8",
       "classification": "ACTIVE_CANON"
     },
     {
@@ -997,7 +1133,7 @@
       "path": "data/vitesse_24h.txt",
       "exists": true,
       "size_bytes": 9,
-      "sha256": "d76d20b5d8e307815d1bd57e657badfb6605e0d4527f5117e07b52c37757c4ed",
+      "sha256": "9f858bc2d145d8f9056c7a9e3125dc8591d46896d6e68cf9f33f7c715fd6a8a6",
       "classification": "TECHNICAL_ARTIFACT"
     }
   ]
