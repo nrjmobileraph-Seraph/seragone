@@ -111,3 +111,8 @@ Résultat : périmètre entièrement catégorisé
 - Classifications : ACTIVE_CANON=80, BACKUP_ONLY=30, TECHNICAL_ARTIFACT=16, REDONDANT=9, TO_ARCHIVE=2
 - Politique : B/C/D/F=ACTIVE_CANON par défaut, E=TECHNICAL_ARTIFACT, G en dur
 - Scripts : scripts/validators/build_global_manifest.py (+ HARDCODED_INVENTORY)
+
+### Ancre cryptographique du gel 20260419T154059Z
+- commit git : e1d17b4e9f613289e8916a4501849297954bfd3a
+- tag        : dataset-freeze-20260419T154059Z
+- sha256     : fda2fa7250714fc9adcc48a19f9599ae212af59959a72aad38b87e5fc855058d  output/global_manifest_20260419T154059Z.json
