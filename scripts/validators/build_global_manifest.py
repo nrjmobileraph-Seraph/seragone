@@ -32,20 +32,10 @@ LOT_G_CLASSIFICATION = {
 
 HARDCODED_INVENTORY = {
     # --- Lot B : macro / on-chain daily (scories de tri + séries 4ans) ---
-    "data/binance_oi_btcusdt_daily.csv.bak_sort":        ("B", "BACKUP_ONLY"),
-    "data/binance_oi_btcusdt_daily.csv.bak_sort_v2":     ("B", "BACKUP_ONLY"),
-    "data/binance_taker_buysell_daily.csv.bak_sort":     ("B", "BACKUP_ONLY"),
-    "data/binance_taker_buysell_daily.csv.bak_sort_v2":  ("B", "BACKUP_ONLY"),
     "data/btc_active_addresses.csv.bak_sort":            ("B", "BACKUP_ONLY"),
-    "data/btc_active_addresses.csv.bak_sort_v2":         ("B", "BACKUP_ONLY"),
     "data/btc_difficulty_daily.csv.bak_sort":            ("B", "BACKUP_ONLY"),
-    "data/btc_difficulty_daily.csv.bak_sort_v2":         ("B", "BACKUP_ONLY"),
     "data/btc_hashrate_daily.csv.bak_sort":              ("B", "BACKUP_ONLY"),
-    "data/btc_hashrate_daily.csv.bak_sort_v2":           ("B", "BACKUP_ONLY"),
     "data/btc_transactions_daily.csv.bak_sort":          ("B", "BACKUP_ONLY"),
-    "data/btc_transactions_daily.csv.bak_sort_v2":       ("B", "BACKUP_ONLY"),
-    "data/fear_greed.csv.bak_sort":                      ("B", "BACKUP_ONLY"),
-    "data/fear_greed.csv.bak_sort_v2":                   ("B", "BACKUP_ONLY"),
     "data/binance_fr_8h_4ans.csv":                       ("B", "ACTIVE_CANON"),
     "data/btc_15min_4ans.csv":                           ("B", "ACTIVE_CANON"),
     "data/btc_5min_4ans.csv":                            ("B", "ACTIVE_CANON"),
@@ -54,19 +44,12 @@ HARDCODED_INVENTORY = {
     "data/btc_hourly_4ans.csv":                          ("B", "ACTIVE_CANON"),
     "data/eth_daily.csv":                                ("B", "ACTIVE_CANON"),
     "data/onchain/exchange_netflow.csv.bak_sort":        ("B", "BACKUP_ONLY"),
-    "data/onchain/exchange_netflow.csv.bak_sort_v2":     ("B", "BACKUP_ONLY"),
     "data/onchain/funding_rate.csv.bak_sort":            ("B", "BACKUP_ONLY"),
-    "data/onchain/funding_rate.csv.bak_sort_v2":         ("B", "BACKUP_ONLY"),
     "data/onchain/mvrv.csv.bak_sort":                    ("B", "BACKUP_ONLY"),
-    "data/onchain/mvrv.csv.bak_sort_v2":                 ("B", "BACKUP_ONLY"),
     "data/onchain/nupl.csv.bak_sort":                    ("B", "BACKUP_ONLY"),
-    "data/onchain/nupl.csv.bak_sort_v2":                 ("B", "BACKUP_ONLY"),
     "data/onchain/open_interest.csv.bak_sort":           ("B", "BACKUP_ONLY"),
-    "data/onchain/open_interest.csv.bak_sort_v2":        ("B", "BACKUP_ONLY"),
     "data/onchain/puell_multiple.csv.bak_sort":          ("B", "BACKUP_ONLY"),
-    "data/onchain/puell_multiple.csv.bak_sort_v2":       ("B", "BACKUP_ONLY"),
     "data/onchain/whale_ratio.csv.bak_sort":             ("B", "BACKUP_ONLY"),
-    "data/onchain/whale_ratio.csv.bak_sort_v2":          ("B", "BACKUP_ONLY"),
 
     # --- Lot C : intraday / microstructure ---
 
