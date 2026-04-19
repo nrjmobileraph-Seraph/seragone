@@ -1,0 +1,223 @@
+{
+  "data/btc_active_addresses.csv": {
+    "exists": true,
+    "status": "OK",
+    "action": "NONE",
+    "rows": 1817,
+    "date_col": "time",
+    "numeric_cols": [
+      "active_addresses"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "ascending",
+    "empty_file": false,
+    "reason": []
+  },
+  "data/btc_difficulty_daily.csv": {
+    "exists": true,
+    "status": "OK",
+    "action": "NONE",
+    "rows": 1818,
+    "date_col": "time",
+    "numeric_cols": [
+      "difficulty"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "ascending",
+    "empty_file": false,
+    "reason": []
+  },
+  "data/btc_hashrate_daily.csv": {
+    "exists": true,
+    "status": "OK",
+    "action": "NONE",
+    "rows": 1817,
+    "date_col": "time",
+    "numeric_cols": [
+      "hashrate"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "ascending",
+    "empty_file": false,
+    "reason": []
+  },
+  "data/btc_transactions_daily.csv": {
+    "exists": true,
+    "status": "OK",
+    "action": "NONE",
+    "rows": 1817,
+    "date_col": "time",
+    "numeric_cols": [
+      "transactions"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "ascending",
+    "empty_file": false,
+    "reason": []
+  },
+  "data/fear_greed.csv": {
+    "exists": true,
+    "status": "OK",
+    "action": "NONE",
+    "rows": 2996,
+    "date_col": "date",
+    "numeric_cols": [
+      "value",
+      "timestamp"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "ascending",
+    "empty_file": false,
+    "reason": []
+  },
+  "data/binance_oi_btcusdt_daily.csv": {
+    "exists": true,
+    "status": "FAIL",
+    "action": "INSPECT",
+    "rows": 28,
+    "date_col": "timestamp",
+    "numeric_cols": [
+      "sumOpenInterest",
+      "sumOpenInterestValue",
+      "CMCCirculatingSupply"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "not_ascending",
+    "empty_file": false,
+    "reason": [
+      "date_order_not_ascending"
+    ]
+  },
+  "data/binance_taker_buysell_daily.csv": {
+    "exists": true,
+    "status": "FAIL",
+    "action": "INSPECT",
+    "rows": 28,
+    "date_col": "timestamp",
+    "numeric_cols": [
+      "buySellRatio",
+      "sellVol",
+      "buyVol"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "not_ascending",
+    "empty_file": false,
+    "reason": [
+      "date_order_not_ascending"
+    ]
+  },
+  "data/onchain/exchange_netflow.csv": {
+    "exists": true,
+    "status": "FAIL",
+    "action": "INSPECT",
+    "rows": 30,
+    "date_col": "date",
+    "numeric_cols": [
+      "netflow_total"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "not_ascending",
+    "empty_file": false,
+    "reason": [
+      "date_order_not_ascending"
+    ]
+  },
+  "data/onchain/funding_rate.csv": {
+    "exists": true,
+    "status": "FAIL",
+    "action": "INSPECT",
+    "rows": 30,
+    "date_col": "date",
+    "numeric_cols": [
+      "funding_rates"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "not_ascending",
+    "empty_file": false,
+    "reason": [
+      "date_order_not_ascending"
+    ]
+  },
+  "data/onchain/mvrv.csv": {
+    "exists": true,
+    "status": "FAIL",
+    "action": "INSPECT",
+    "rows": 30,
+    "date_col": "date",
+    "numeric_cols": [
+      "mvrv"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "not_ascending",
+    "empty_file": false,
+    "reason": [
+      "date_order_not_ascending"
+    ]
+  },
+  "data/onchain/nupl.csv": {
+    "exists": true,
+    "status": "FAIL",
+    "action": "INSPECT",
+    "rows": 30,
+    "date_col": "date",
+    "numeric_cols": [
+      "nupl",
+      "nup",
+      "nul"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "not_ascending",
+    "empty_file": false,
+    "reason": [
+      "date_order_not_ascending"
+    ]
+  },
+  "data/onchain/open_interest.csv": {
+    "exists": true,
+    "status": "FAIL",
+    "action": "INSPECT",
+    "rows": 30,
+    "date_col": "date",
+    "numeric_cols": [
+      "open_interest"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "not_ascending",
+    "empty_file": false,
+    "reason": [
+      "date_order_not_ascending"
+    ]
+  },
+  "data/onchain/puell_multiple.csv": {
+    "exists": true,
+    "status": "FAIL",
+    "action": "INSPECT",
+    "rows": 30,
+    "date_col": "date",
+    "numeric_cols": [
+      "puell_multiple"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "not_ascending",
+    "empty_file": false,
+    "reason": [
+      "date_order_not_ascending"
+    ]
+  },
+  "data/onchain/whale_ratio.csv": {
+    "exists": true,
+    "status": "FAIL",
+    "action": "INSPECT",
+    "rows": 30,
+    "date_col": "date",
+    "numeric_cols": [
+      "exchange_whale_ratio"
+    ],
+    "duplicates_on_date": 0,
+    "date_order": "not_ascending",
+    "empty_file": false,
+    "reason": [
+      "date_order_not_ascending"
+    ]
+  }
+}

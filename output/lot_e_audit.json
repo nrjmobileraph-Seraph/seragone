@@ -1,0 +1,79 @@
+{
+  "data/chaines_epurees_state.json": {
+    "classification": "TECHNICAL_ARTIFACT",
+    "status": "OK",
+    "format": "json",
+    "size_bytes": 1303,
+    "checks": ["json_wellformed", "non_empty", "root_dict"]
+  },
+  "data/communicants_history.json": {
+    "classification": "TECHNICAL_ARTIFACT",
+    "status": "OK",
+    "format": "json",
+    "size_bytes": 275664,
+    "checks": ["json_wellformed", "non_empty", "root_list"]
+  },
+  "data/ec_latest.json": {
+    "classification": "TECHNICAL_ARTIFACT",
+    "status": "OK",
+    "format": "json",
+    "size_bytes": 210,
+    "checks": ["json_wellformed", "non_empty", "root_dict"]
+  },
+  "data/live_metrics.json": {
+    "classification": "TECHNICAL_ARTIFACT",
+    "status": "OK",
+    "format": "json",
+    "size_bytes": 91,
+    "checks": ["json_wellformed", "non_empty", "root_dict"]
+  },
+  "data/mondes_paralleles_cache.json": {
+    "classification": "TECHNICAL_ARTIFACT",
+    "status": "OK",
+    "format": "json",
+    "size_bytes": 157326,
+    "checks": ["json_wellformed", "non_empty", "root_dict"]
+  },
+  "data/mondes_paralleles_history.csv": {
+    "classification": "TECHNICAL_ARTIFACT",
+    "status": "OK",
+    "format": "csv",
+    "size_bytes": 687,
+    "checks": ["csv_readable", "header_present", "non_empty"]
+  },
+  "data/phi_engine_memory.json": {
+    "classification": "TECHNICAL_ARTIFACT",
+    "status": "OK",
+    "format": "json",
+    "size_bytes": 135,
+    "checks": ["json_wellformed", "non_empty", "root_dict"]
+  },
+  "data/phi_local_100m.json": {
+    "classification": "TECHNICAL_ARTIFACT",
+    "status": "OK",
+    "format": "json",
+    "size_bytes": 9870,
+    "checks": ["json_wellformed", "non_empty", "root_dict"]
+  },
+  "data/phi_local_20m.json": {
+    "classification": "TECHNICAL_ARTIFACT",
+    "status": "OK",
+    "format": "json",
+    "size_bytes": 1862,
+    "checks": ["json_wellformed", "non_empty", "root_dict"]
+  },
+  "data/phi_local_500m.json": {
+    "classification": "TECHNICAL_ARTIFACT",
+    "status": "OK",
+    "format": "json",
+    "size_bytes": 49828,
+    "checks": ["json_wellformed", "non_empty", "root_dict"]
+  },
+  "data/recursif_v1_config.json": {
+    "classification": "TECHNICAL_ARTIFACT",
+    "status": "OK",
+    "format": "json",
+    "size_bytes": 75157,
+    "checks": ["json_wellformed", "non_empty", "root_dict"]
+  }
+}
