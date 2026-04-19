@@ -141,3 +141,12 @@ Résultat : périmètre entièrement catégorisé
 - Ancre : output/global_manifest_20260419T154908Z.json
 - .gitignore renforcé (racine projet non triée, backups/, logs/, modeles_V13_*/, app_cockpit_v*.py, deepseek_python_*.py, *.bak*, etc.)
 
+
+## Audit Lot E réel — 20260419T164732Z
+- Source : audit GPT, 11/11 OK, 0 FAIL, 0 INSPECT
+- Fichier : output/lot_e_audit.json (11 entrées TECHNICAL_ARTIFACT)
+- Manifest : 120 entrées, 0 orphelin (by_lot.E=11)
+- sha256 snapshot : 612f58d90ae3290bb2e20222d8696237ddb616fb4973d6b6bb1284b1145462c3
+- Ancre : output/global_manifest_20260419T154656Z.json
+- Tag : lot-e-audit-20260419T164732Z
+- Remplace l'injection HARDCODED_INVENTORY par la source audit
