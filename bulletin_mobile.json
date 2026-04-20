@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-20T08:01:18.644418",
+  "timestamp": "2026-04-20T08:06:18.725134",
   "prix_btc": 78154.54,
   "score_seragone": 15,
   "confiance": "TROP TOT",
@@ -53,11 +53,11 @@
   "systeme": {
     "distance": 0,
     "shannon": 0,
-    "geste": "MAINTENIR",
+    "geste": "RETRECIR",
     "mode": "WAIT"
   },
-  "meteo": "soleil",
-  "journal": "20 April - Je vois de la tension mais le bruit est encore present (shannon 0.000). J'attends mon moment.",
+  "meteo": "orageux",
+  "journal": "20 April - Le vent tourne. Je reduis mon exposition. Prudence.",
   "processus": {
     "collector": true,
     "brain": true,
