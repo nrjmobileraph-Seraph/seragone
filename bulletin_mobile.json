@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-04-22T23:57:48.024586",
+  "timestamp": "2026-04-23T00:02:48.133900",
   "prix_btc": 78035.44,
   "score_seragone": 15,
   "confiance": "TROP TOT",
-  "jours_ecoules": 9,
+  "jours_ecoules": 10,
   "jours_objectif": 60,
   "signaux_total": 3,
   "signaux_ok": 3,
@@ -57,7 +57,7 @@
     "mode": "WAIT"
   },
   "meteo": "orageux",
-  "journal": "22 April - Trop de brouillard. Je ne vois rien. J'attends.",
+  "journal": "23 April - Trop de brouillard. Je ne vois rien. J'attends.",
   "processus": {
     "collector": true,
     "brain": true,
