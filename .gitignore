@@ -53,3 +53,8 @@ brain_log.txt
 /village_final_resultats.csv
 /bloc1_daily_log.csv
 .pytest_cache/
+aplombstate.json
+aplombdailystate.json
+money_manager_state.json
+archive_legacy_aplomb/
+legacy_json_backup/
