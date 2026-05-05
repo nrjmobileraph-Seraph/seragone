@@ -1,0 +1,28 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZH_EXEC_ONE_BORN_SANDBOX_PANDAS",
+  "created_utc": "2026-05-05T19:53:17+00:00",
+  "mode": "one_script_sandbox_usrbinpython3_pandas_sitecustomize_redirect_no_patch",
+  "script": "born_temps_validation.py",
+  "python": "/usr/bin/python3",
+  "script_sha256": "d9acb122719206a370f1058254d1cfc6b51d3586cce1d379426915c2bac1367d",
+  "sitecustomize_sha256": "a462f7e49543e6c81dda93aff9fdcdcb602b0208aa1289f16aebcbf6a595aed5",
+  "cwd": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZD_SANDBOX_PRECHECK_BORN_20260505_194846/sandbox_born_inputs/outputs_v1zh",
+  "command": [
+    "timeout",
+    "60s",
+    "/usr/bin/python3",
+    "born_temps_validation.py"
+  ],
+  "returncode": 1,
+  "started_utc": "2026-05-05T19:53:17+00:00",
+  "ended_utc": "2026-05-05T19:53:17+00:00",
+  "stdout_tail": "",
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZD_SANDBOX_PRECHECK_BORN_20260505_194846/sandbox_born_inputs/outputs_v1zh/born_temps_validation.py\", line 16, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+  "created_files": [
+    "__pycache__/sitecustomize.cpython-312.pyc"
+  ],
+  "modified_files": [],
+  "absolute_input_exists": true,
+  "local_input_exists": true,
+  "local_input_sha256": "6850e7f0bb0673498c5db86910570dcf3f6dccb098422c8fd51754f1803ab634"
+}
