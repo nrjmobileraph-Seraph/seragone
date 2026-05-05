@@ -1,0 +1,24 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZF_EXEC_ONE_BORN_SANDBOX",
+  "created_utc": "2026-05-05T19:51:20+00:00",
+  "mode": "one_script_sandbox_timeout_no_network_env_no_patch",
+  "script": "born_temps_validation.py",
+  "script_sha256": "d9acb122719206a370f1058254d1cfc6b51d3586cce1d379426915c2bac1367d",
+  "cwd": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZD_SANDBOX_PRECHECK_BORN_20260505_194846/sandbox_born_inputs/outputs",
+  "command": [
+    "timeout",
+    "45s",
+    "python3",
+    "born_temps_validation.py"
+  ],
+  "returncode": 1,
+  "started_utc": "2026-05-05T19:51:20+00:00",
+  "ended_utc": "2026-05-05T19:51:20+00:00",
+  "stdout_tail": "",
+  "stderr_tail": "Traceback (most recent call last):\n  File \"/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZD_SANDBOX_PRECHECK_BORN_20260505_194846/sandbox_born_inputs/outputs/born_temps_validation.py\", line 16, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+  "created_files": [],
+  "modified_files": [],
+  "absolute_input_exists": true,
+  "local_input_exists": true,
+  "local_input_sha256": "6850e7f0bb0673498c5db86910570dcf3f6dccb098422c8fd51754f1803ab634"
+}

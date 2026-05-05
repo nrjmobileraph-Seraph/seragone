@@ -1,0 +1,9 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZF_EXEC_ONE_BORN_SANDBOX",
+  "created_utc": "2026-05-05T19:51:20+00:00",
+  "mode": "one_script_sandbox_timeout_no_network_env_no_patch",
+  "script": "born_temps_validation.py",
+  "returncode": 1,
+  "report_sha256": "d34e4b6eda735ab43d22841b6b201608f7ce3aac26b5760a7f49703827bf0f07",
+  "md_sha256": "652fda7dba2951b2dd24138897b7c708780f62b04c092f47cb9f3a6ed7eaa98d"
+}
