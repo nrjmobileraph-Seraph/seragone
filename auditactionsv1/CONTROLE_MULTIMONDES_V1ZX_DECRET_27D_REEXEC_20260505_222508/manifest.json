@@ -1,0 +1,113 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZX_DECRET_27D_REEXEC",
+  "created_utc": "2026-05-05T22:25:08+00:00",
+  "verdict": "V1ZX_DECRET_READY_NOEXEC",
+  "git_head": "4f2a18c3c1ded451d342742d4bc5f895ab454819",
+  "ancrages_git": {
+    "v1zw": "4f2a18c3"
+  },
+  "cible_canonique": {
+    "path": "./test_27d_4approches.py",
+    "sha256_attendu": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+    "taille_attendue": 14220,
+    "groupe_sha256_v1zw": "G01",
+    "occurrences_v1zw_meme_groupe": 14,
+    "mtime_racine_v1zw": "2026-04-16 06:56:55 UTC"
+  },
+  "selection_rationale": {
+    "racine": "RETENU canonique unique testable",
+    "research": "TEMOIN identique au bit pres, non execute",
+    "palette_claude": "NON RETENU position non canonique",
+    "autre_11_copies": "NON RETENU archives historiques"
+  },
+  "position_seragone": {
+    "type": "MOTEUR (provinces 27D, 4 approches)",
+    "n_est_pas": "MONDE",
+    "consequence": "pas de branchement direct Phase 115, pas d'alimentation decision_weight sans decret separe"
+  },
+  "phases_futures": [
+    {
+      "tag": "V1ZY_PHASE1_27D_PREPARE_SANDBOX",
+      "signature_requise": "phase1_signed.txt \"JE SIGNE V1ZX PHASE 1 PREPARE 27D\"",
+      "actions_principales": [
+        "mkdir sandbox",
+        "cp -p script",
+        "cp -p inputs (physiques uniquement)",
+        "sha256 verifications",
+        "snapshots caches"
+      ],
+      "interdits": [
+        "execution python",
+        "import",
+        "broker",
+        "cron",
+        "systemd",
+        "touch caches",
+        "cp hors sandbox",
+        "stdout_full/stderr_full/returncode/run_report"
+      ]
+    },
+    {
+      "tag": "V1ZZ_PHASE2_27D_EXEC",
+      "signature_requise": "phase2_signed.txt \"JE SIGNE V1ZX PHASE 2 EXEC 27D\"",
+      "actions_principales": [
+        "execution unique sandbox",
+        "timeout 120s",
+        "capture stdout/stderr/rc/run_report",
+        "snapshots caches",
+        "diff caches obligatoire vide"
+      ],
+      "interdits": [
+        "broker",
+        "reseau",
+        "cp hors sandbox",
+        "mv vers production",
+        "touch caches",
+        "cron",
+        "systemd"
+      ]
+    },
+    {
+      "tag": "V2AA_PHASE3_27D_CLOTURE",
+      "signature_requise": "phase3_signed.txt par Raphael apres relecture rapport",
+      "actions_principales": [
+        "attestation fidelite sha256",
+        "attestation non-pollution",
+        "rapport_utilite_27d.md",
+        "decision archivage vs proposition future"
+      ],
+      "interdits": [
+        "branchement runtime",
+        "promotion vers 92MONDES",
+        "modification decision_weight",
+        "modification vrais_yeux.py"
+      ]
+    }
+  ],
+  "compteurs": {
+    "cache_pollution_detectee": false
+  },
+  "artefacts_sha256": {
+    "md": "12231582b65ea7744b140e3741a936dc9f9c9eed4a5a110423b6265d8145ee5d",
+    "expected_inputs_27d": "70a724951dc0857735165a65b6af4f4277f46a0a85f1d37596e010184e0c150f",
+    "expected_outputs_27d": "74198c1d8079d32a6c36d732d9152185369855f50193a46c0f49bbd45e499add",
+    "phases_v1zx_plan": "807dfceffac1fc08aab42f3e88d24087502de4dbd93018d9afb8a3367e46f516",
+    "noexec_attestation": "4de55987db0bc88d55b324d7c594708c87eb21bdbdb6c1aab49b11cb660754c0",
+    "hashes_live_avant": "a3ddfcda690fcf76113286c48956f79c72a125416409b65d898c98b079e4d027",
+    "hashes_live_apres": "26a83f4768d943d28b5a46d4efe4e8383d0cb58bb534f8076a23ef243a92c6f4",
+    "diff_caches_v1zx": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "interdits_maintenus": [
+    "aucune execution Python du script",
+    "aucun import du script",
+    "aucun cp script vers sandbox active",
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucun touch caches live",
+    "aucune sortie Phase 115",
+    "vrais_yeux.py INTOUCHABLE"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0
+}

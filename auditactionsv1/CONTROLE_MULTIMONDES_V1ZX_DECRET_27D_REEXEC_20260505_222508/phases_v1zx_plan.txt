@@ -1,0 +1,151 @@
+PLAN DES 3 PHASES FUTURES POUR REEXEC test_27d_4approches.py
+============================================================
+Decret V1ZX = documentaire pur. Aucune execution n'est lancee ici.
+Chaque phase future devra etre redigee par decret separe et signee
+avant d'etre executee.
+
+Ancrage minimal commun : HEAD >= 4f2a18c3 (V1ZW) OU presence dossier
+auditactionsv1/CONTROLE_MULTIMONDES_V1ZW_PRECHECK_27D_DUPLICATION_*.
+
+==========================================================
+PHASE 1 FUTURE : V1ZY_PHASE1_27D_PREPARE_SANDBOX
+==========================================================
+
+Pre-conditions
+--------------
+- HEAD >= 4f2a18c3 (V1ZW)
+- Existence physique de ./test_27d_4approches.py
+- sha256 actuel script == 2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f
+- Taille script == 14220 octets
+- phase1_signed.txt present dans le dossier REEXEC futur,
+  signature litterale "JE SIGNE V1ZX PHASE 1 PREPARE 27D"
+
+Actions autorisees Phase 1
+--------------------------
+- mkdir auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_<ts>/sandbox_27d_reexec/
+- cp -p ./test_27d_4approches.py vers sandbox_27d_reexec/
+- cp -p inputs reels (copies physiques uniquement, AUCUN symlink) listes
+  dans expected_inputs_27d.txt et resolus dans /home/ubuntu/seragone
+- Production sandbox_inventaire.txt : ls -la recursif sandbox
+- Production sandbox_sha256.txt : sha256sum recursif sandbox
+- Production hashes_live_avant.sha256 et hashes_live_apres.sha256 (9 caches)
+- Production diff_phase1.txt : diff caches avant/apres Phase 1
+
+Actions interdites Phase 1
+--------------------------
+- AUCUN python3 sur le script (ni dans sandbox, ni ailleurs)
+- AUCUN import du script
+- AUCUN stdout_full.log, stderr_full.log, returncode.txt, run_report.json
+  (reserves Phase 2)
+- AUCUN cp hors sandbox dediee
+- AUCUN broker, AUCUN cron, AUCUN systemd
+- AUCUN touch des 9 caches live
+- AUCUNE modification de vrais_yeux.py
+
+Verdicts possibles Phase 1
+--------------------------
+- V1ZY_PHASE1_27D_OK : sandbox preparee, sha256 verifies, caches inchanges
+- V1ZY_PHASE1_27D_BLOQUE_SHA_MISMATCH : sha256 script change depuis V1ZW
+- V1ZY_PHASE1_27D_BLOQUE_INPUT_MANQUANT : input declare attendu absent
+- V1ZY_PHASE1_27D_BLOQUE_CACHE_POLLUTION : caches modifies pendant Phase 1
+
+==========================================================
+PHASE 2 FUTURE : V1ZZ_PHASE2_27D_EXEC
+==========================================================
+
+Pre-conditions
+--------------
+- Phase 1 V1ZY signee verdict V1ZY_PHASE1_27D_OK
+- Existence sandbox_27d_reexec/test_27d_4approches.py avec sha256 conforme
+- phase2_signed.txt present, signature litterale
+  "JE SIGNE V1ZX PHASE 2 EXEC 27D"
+
+Actions autorisees Phase 2
+--------------------------
+- Snapshot sandbox_inventaire_avant.txt + sandbox_sha256_avant.txt
+- Snapshot hashes_live_avant.sha256 (9 caches)
+- Execution UNIQUE :
+    cd sandbox_27d_reexec
+    timeout 120s /usr/bin/python3 test_27d_4approches.py \
+      > stdout_full.log 2> stderr_full.log
+    echo $? > returncode.txt
+- Capture run_report.json :
+    {
+      "timeout_seconds": 120,
+      "python_path": "/usr/bin/python3",
+      "cwd": "<absolute path sandbox>",
+      "env_filtered": ["PATH", "PYTHONHASHSEED=0", "LANG"],
+      "start_utc": "...", "end_utc": "...",
+      "duration_seconds": ...
+    }
+- Snapshot sandbox_inventaire_apres.txt + sandbox_sha256_apres.txt
+- Snapshot hashes_live_apres.sha256
+- Production diff_caches_phase2.txt (DOIT etre vide)
+- Production diff_sandbox_phase2.txt
+
+Actions interdites Phase 2
+--------------------------
+- AUCUN appel broker (kraken, binance, ccxt...)
+- AUCUN appel reseau (croisement avec AST V1ZW deja clean)
+- AUCUN cp hors sandbox
+- AUCUN mv vers /home/ubuntu/seragone/ ou production
+- AUCUN touch des 9 caches live
+- AUCUN cron / systemd
+- AUCUNE modification de vrais_yeux.py
+
+Verdicts possibles Phase 2
+--------------------------
+- V1ZZ_PHASE2_27D_EXEC_OK : rc=0, captures completes, caches inchanges, in timeout
+- V1ZZ_PHASE2_27D_EXEC_BLOQUE_TIMEOUT : timeout depasse
+- V1ZZ_PHASE2_27D_EXEC_BLOQUE_RC_NON_ZERO : returncode != 0
+- V1ZZ_PHASE2_27D_EXEC_BLOQUE_CACHE_POLLUTION : caches modifies (interdit)
+- V1ZZ_PHASE2_27D_EXEC_BLOQUE_SANDBOX_FUITE : ecriture detectee hors sandbox
+
+==========================================================
+PHASE 3 FUTURE : V2AA_PHASE3_27D_CLOTURE
+==========================================================
+
+Pre-conditions
+--------------
+- Phase 2 V1ZZ signee verdict V1ZZ_PHASE2_27D_EXEC_OK
+  (ou variante BLOQUE documentee qui ferme la chaine sans promotion)
+- Existence stdout_full.log, stderr_full.log, returncode.txt, run_report.json
+  en sandbox
+
+Actions autorisees Phase 3
+--------------------------
+- Lecture stdout_full.log, stderr_full.log, returncode.txt
+- Production attestation_fidelite_v1zw.txt :
+    sha256 script post-execution == 2debd5d6...
+    (interdit que le script se soit re-ecrit lui-meme)
+- Production attestation_non_pollution.txt :
+    diff_caches_phase2.txt vide
+    aucun nouveau fichier hors sandbox
+- Production rapport_utilite_27d.md : analyse subjective :
+    * Le script produit-il une information utile ?
+    * Doit-elle integrer un MONDE existant ? (decret separe requis)
+    * Doit-elle rester historique seule ?
+- phase3_signed.txt par Raphael apres relecture rapport
+
+Actions interdites Phase 3
+--------------------------
+- AUCUN branchement runtime du resultat 27D dans Phase 115
+- AUCUN move stdout_full.log ou tout artefact vers production/
+- AUCUNE promotion vers 92MONDES, multivers, born* sans decret separe
+- AUCUNE modification decision_weight (reste 0.0)
+- AUCUNE modification de vrais_yeux.py
+
+Verdicts possibles Phase 3
+--------------------------
+- V2AA_PHASE3_27D_CLOTURE_OK_HISTORIQUE : decret ferme, archive seule
+- V2AA_PHASE3_27D_CLOTURE_OK_PROPOSITION_FUTURE : Raphael note interet
+  promotion future MAIS aucune promotion immediate
+- V2AA_PHASE3_27D_CLOTURE_BLOQUE_FIDELITE : sha256 post-execution divergent
+
+==========================================================
+ARRET DEFINITIF
+==========================================================
+
+Au verdict V2AA_PHASE3_27D_CLOTURE_OK_*, la chaine 27D s'arrete.
+Toute exploitation runtime du resultat passe par un decret nouveau
+et un retour a la racine canonique de Seragone, jamais via Phase 3.

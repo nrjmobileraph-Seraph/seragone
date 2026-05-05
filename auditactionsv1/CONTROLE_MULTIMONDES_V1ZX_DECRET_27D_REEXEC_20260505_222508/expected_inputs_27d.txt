@@ -1,0 +1,25 @@
+# Inputs probables deduits par grep statique du script (lecture seule pure)
+# Source : ./test_27d_4approches.py
+# Mode : open() en lecture seule, AUCUN import du module.
+
+## Modules importes (deduplique top-level)
+- numpy
+- datetime
+- warnings;
+
+## open() en mode lecture (mode r/rb)
+(aucun open en mode lecture avec chemin litteral)
+
+## pandas read_* avec chemin litteral
+- historique_27eq.csv (read_csv)
+- couches_123_daily.csv (read_csv)
+
+## pathlib Path() avec chemin litteral
+(aucun)
+
+## numpy load avec chemin litteral
+(aucun)
+
+## Inputs candidats - existence dans /home/ubuntu/seragone (verification existence seule)
+- EXISTE : historique_27eq.csv (1836199 octets)
+- EXISTE : couches_123_daily.csv (239888 octets)

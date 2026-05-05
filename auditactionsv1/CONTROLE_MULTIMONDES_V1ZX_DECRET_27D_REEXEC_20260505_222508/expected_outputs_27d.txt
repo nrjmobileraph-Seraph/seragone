@@ -1,0 +1,25 @@
+# Outputs probables
+# Source : ./test_27d_4approches.py
+
+## AST scan V1ZW : compteurs strictement zero pour ecritures
+- 0 open(write) (modes w/a/x/+)
+- 0 write_attrs (to_csv, write_text, write_bytes, dump, save, savez, to_json...)
+- 0 fs_attrs (mkdir, makedirs, copy, copy2, copyfile, rename, remove, unlink...)
+- 0 subprocess_attrs (run, Popen, system, call...)
+- 0 broker_imports
+- 0 network_imports
+
+## Grep statique V1ZX (cross-check avec AST V1ZW)
+  open(write) detectes : 0 (coherent avec AST V1ZW)
+  np.save(z) detectes : 0 (coherent avec AST V1ZW)
+
+## Outputs attendus en Phase 2 (V1ZZ)
+- stdout exhaustif vers sandbox/stdout_full.log
+- stderr exhaustif vers sandbox/stderr_full.log
+- code retour Python : sandbox/returncode.txt
+- run_report.json : metadata execution (timeout, cwd, env, durees)
+
+## Aucune ecriture disque attendue en sandbox
+Selon AST V1ZW + grep statique V1ZX, aucun appel d'ecriture detectable.
+Une eventuelle ecriture dynamique (open dynamique, sys.stdout reroute) serait
+detectee par sandbox_inventaire_avant/apres et hashes_live_avant/apres en Phase 2.

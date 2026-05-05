@@ -1,0 +1,41 @@
+ATTESTATION DE NON-EXECUTION V1ZX
+=================================
+Date UTC  : 2026-05-05T22:25:08Z
+Operateur : Claude (sous decret de Raphael)
+Cible     : ./test_27d_4approches.py
+sha256    : 2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f
+Taille    : 14220 octets
+
+Pendant la production de V1ZX :
+- AUCUN python3 lance sur le script cible
+- AUCUN import Python du script cible (direct ou indirect)
+- AUCUN cp du script vers une sandbox active
+- AUCUN mkdir d'une sandbox d'execution
+- AUCUN appel broker (kraken, binance, ccxt, ...)
+- AUCUN cron edite, AUCUN systemd modifie
+- AUCUN touch des 9 caches live monitored :
+  data/mondes_paralleles_cache.json
+  cache/mondes_paralleles_cache.json
+  production/mondes/data/mondes_paralleles_cache.json
+  data/born_state.json
+  data/born_temps_state.json
+  data/multivers_state.json
+  data/communicants_history.json
+  voix_seragone_92/seragone_92_state.json
+  voix_seragone_92/data/seragone_92_state.json
+- AUCUNE modification de vrais_yeux.py (INTOUCHABLE)
+- Phase 115 LIVE_TEST_TOTAL_EN_CAGE preservee
+- decision_weight = 0.0 inchange
+
+Operations realisees pendant V1ZX (lecture seule pure) :
+- git merge-base --is-ancestor (ancrage)
+- sha256sum sur le script (hash, pas execution)
+- stat -c %s (taille, pas execution)
+- open(...,'r') du source pour grep statique (lecture, pas import)
+- Hashage des 9 caches AVANT et APRES, comparaison
+- mkdir uniquement de auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_DECRET_27D_REEXEC_*
+  (dossier d'audit, pas une sandbox d'execution)
+
+Cette attestation engage V1ZX comme strictement documentaire.
+La premiere action effective sur le script aura lieu en Phase 1 V1ZY,
+sous signature explicite separee.
