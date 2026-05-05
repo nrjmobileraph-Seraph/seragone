@@ -1,0 +1,13 @@
+# Variantes detectees (case-insensitive, underscores libres)
+  2026-04-16 06:56:55.1868736970  size=14220         ./AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/production_copies/test_27d_4approches.py
+  2026-04-16 06:56:55.1868736970  size=14220         ./AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/test_27d_4approches.py
+  2026-04-16 06:56:55.1868736970  size=14220         ./_bibliotheque_modules/production_copies/test_27d_4approches.py
+  2026-04-16 06:56:55.1868736970  size=14220         ./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/test_27d_4approches.py
+  2026-04-16 06:56:55.1868736970  size=14220         ./test_27d_4approches.py
+  2026-04-21 12:35:28.2455791950  size=14220         ./AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/palette_claude/test_27d_4approches.py
+  2026-04-21 12:35:28.2455791950  size=14220         ./palette_claude/test_27d_4approches.py
+  2026-04-22 23:20:00.7097431220  size=14220         ./AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/research_copies/test_27d_4approches.py
+  2026-04-22 23:20:00.7097431220  size=14220         ./AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/research/test_27d_4approches.py
+  2026-04-22 23:20:00.7097431220  size=14220         ./_bibliotheque_modules/research_copies/test_27d_4approches.py
+  2026-04-22 23:20:00.7097431220  size=14220         ./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/research/test_27d_4approches.py
+  2026-04-22 23:20:00.7097431220  size=14220         ./research/test_27d_4approches.py

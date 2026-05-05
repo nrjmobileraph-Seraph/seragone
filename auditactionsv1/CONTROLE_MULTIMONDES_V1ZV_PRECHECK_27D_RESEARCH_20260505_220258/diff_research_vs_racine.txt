@@ -1,0 +1,1 @@
+diff non execute - un ou les deux fichiers cibles absents

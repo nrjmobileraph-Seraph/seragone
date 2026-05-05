@@ -1,0 +1,48 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZV_PRECHECK_27D_RESEARCH",
+  "created_utc": "2026-05-05T22:02:58+00:00",
+  "verdict": "V1ZV_PRECHECK_27D_BLOQUE_CHEMIN_ABSENT",
+  "git_head": "97433924babf305c54b47b92efa921c052712cf6",
+  "ancrages_git": {
+    "v1zu": "97433924"
+  },
+  "cibles": {
+    "rech": null,
+    "racine": null
+  },
+  "diff_research_vs_racine": {
+    "done": false,
+    "non_vide": false,
+    "octets": 58,
+    "sha256": "5a8d3002253411bf0febf5a923b5c8db13d416630adacd1d1d0ebf6d01ea2c09"
+  },
+  "ast_scan_compteurs": {
+    "side_effects": 0,
+    "broker_imports": 0,
+    "network_imports": 0
+  },
+  "side_effects_bloquants": 0,
+  "cache_pollution_detectee": false,
+  "artefacts_sha256": {
+    "ast_scan_candidat_json": "47b2a117e0ffd2d0ba7eeb1254c2b54db037fbf7e4c76fe724b2de0338f3ed41",
+    "hashes_live_avant_sha256": "4a1fabece6225b677cac37d583d84398024897d9aec706eab272adee9a30297e",
+    "hashes_live_apres_sha256": "3a1a7a3554f892b919eec7876a883c893ff7cac76547f5257c5b8c7567e0d533",
+    "diff_caches_v1zv_txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recherche_stricte_txt": "f67dd24a1d61c31e8e9f22e31bcecd7398f85b88f94b2e2f575d46f62b63c2f8",
+    "recherche_elargie_txt": "f7832ed8986cb733005a559ef34849d864e7ca58ab9ec9a399ea4f7dd29c6dd8",
+    "cibles_strictes_sha256_txt": "d340f46a9543548bc27fd78ea7ac8ca62e8ef79907742357ae9d99ca8100dd26"
+  },
+  "md_sha256": "db8f1475b02a7a1fd819ca743bfaf698041352a55e5cee2a380bbc9d2c93167e",
+  "interdits_maintenus": [
+    "aucune execution Python du candidat",
+    "aucun import du candidat",
+    "aucun touch caches live",
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune sortie Phase 115",
+    "vrais_yeux.py INTOUCHABLE"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0
+}
