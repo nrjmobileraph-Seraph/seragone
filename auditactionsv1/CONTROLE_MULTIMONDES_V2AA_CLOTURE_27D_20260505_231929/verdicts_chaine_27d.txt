@@ -1,0 +1,50 @@
+# Verdicts chaine 27D consolides
+
+## V1ZW
+  manifest : auditactionsv1/CONTROLE_MULTIMONDES_V1ZW_PRECHECK_27D_DUPLICATION_20260505_221351/manifest.json
+  present  : True
+  verdict  : V1ZW_PRECHECK_27D_OK_IDENTIQUE_PRET_DECRET
+  date_utc : None
+
+## V1ZX
+  manifest : auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_DECRET_27D_REEXEC_20260505_223258/manifest.json
+  present  : True
+  verdict  : V1ZX_DECRET_READY_NOEXEC
+  date_utc : 2026-05-05T22:32:58Z
+
+## V1ZY
+  manifest : auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/manifest.json
+  present  : True
+  verdict  : V1ZY_PHASE1_27D_OK
+  date_utc : 2026-05-05T22:37:53Z
+
+## V1ZY-bis
+  manifest : auditactionsv1/CONTROLE_MULTIMONDES_V1ZYBIS_CROSSCHECK_27D_DEPENDANCES_20260505_224529/manifest.json
+  present  : True
+  verdict  : V1ZYBIS_27D_OK_DEPENDANCES_FERMEES_PRET_V1ZZ
+  date_utc : 2026-05-05T22:45:30Z
+
+## V1ZZ
+  manifest : auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/manifest_v1zz.json
+  present  : True
+  verdict  : V1ZZ_PHASE2_27D_EXEC_NONZERO
+  date_utc : 2026-05-05T22:54:07Z
+
+## V1ZZ-bis
+  manifest : auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/manifest_v1zzbis.json
+  present  : True
+  verdict  : V1ZZBIS_PHASE2BIS_27D_EXEC_NONZERO
+  date_utc : 2026-05-05T23:00:29Z
+
+## V1ZY-ter
+  manifest : auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/manifest_v1zyter.json
+  present  : True
+  verdict  : V1ZYTER_PHASE1TER_27D_LAYOUT_OK_PRET_V1ZZTER
+  date_utc : 2026-05-05T23:05:03Z
+
+## V1ZZ-ter
+  manifest : auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/manifest_v1zzter.json
+  present  : True
+  verdict  : V1ZZTER_PHASE2TER_27D_EXEC_OK
+  date_utc : 2026-05-05T23:12:20Z
+

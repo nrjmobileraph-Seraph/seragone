@@ -1,0 +1,149 @@
+{
+  "version": "V2AA",
+  "type": "phase3_cloture_documentaire_pure",
+  "date_utc": "2026-05-05T23:19:29Z",
+  "verdict": "V2AA_PHASE3_27D_CLOTURE_OK",
+  "verdict_motif": "Chaine 27D complete et propre. 8 phases (W X Y Y-bis Z Z-bis Y-ter Z-ter) executees avec succes, V1ZZ-ter exec OK (RC=0, 46s, 52 lignes stdout, 0 stderr), non-pollution attestee sur toute la chaine (caches live identiques debut/fin), 0 symlink, vrais_yeux.py intouche, 5 diff_phase*.txt tous vides. D12 candidate : VALIDATED (audit 27D 4 approches) != INSTALLED != PRODUCTION_ACTIVE.",
+  "scope": "chaine_27d_test_27d_4approches",
+  "ancrage_git": {
+    "head_au_lancement": "9a9df26b3b41c697d3ceff62122f275b2f56888c",
+    "chaine_commits": {
+      "V1ZW": "4f2a18c3",
+      "V1ZX": "b2cca117",
+      "V1ZY": "ad7afa27",
+      "V1ZY-bis": "cd39ea2b",
+      "V1ZZ": "717f9c8c",
+      "V1ZZ-bis": "ecdaa401",
+      "V1ZY-ter": "5e84ac3e",
+      "V1ZZ-ter": "9a9df26b"
+    },
+    "chaine_complete": [
+      "V1ZW (4f2a18c3)",
+      "V1ZX (b2cca117)",
+      "V1ZY (ad7afa27)",
+      "V1ZY-bis (cd39ea2b)",
+      "V1ZZ (717f9c8c)",
+      "V1ZZ-bis (ecdaa401)",
+      "V1ZY-ter (5e84ac3e)",
+      "V1ZZ-ter (9a9df26b)"
+    ]
+  },
+  "manifests_amont": {
+    "V1ZW": {
+      "present": true,
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZW_PRECHECK_27D_DUPLICATION_20260505_221351/manifest.json",
+      "verdict": "V1ZW_PRECHECK_27D_OK_IDENTIQUE_PRET_DECRET",
+      "date_utc": null,
+      "type": "CONTROLE_MULTIMONDES_V1ZW_PRECHECK_27D_DUPLICATION"
+    },
+    "V1ZX": {
+      "present": true,
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_DECRET_27D_REEXEC_20260505_223258/manifest.json",
+      "verdict": "V1ZX_DECRET_READY_NOEXEC",
+      "date_utc": "2026-05-05T22:32:58Z",
+      "type": "decret_documentaire_signable"
+    },
+    "V1ZY": {
+      "present": true,
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/manifest.json",
+      "verdict": "V1ZY_PHASE1_27D_OK",
+      "date_utc": "2026-05-05T22:37:53Z",
+      "type": "phase1_preparation_sandbox"
+    },
+    "V1ZY-bis": {
+      "present": true,
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZYBIS_CROSSCHECK_27D_DEPENDANCES_20260505_224529/manifest.json",
+      "verdict": "V1ZYBIS_27D_OK_DEPENDANCES_FERMEES_PRET_V1ZZ",
+      "date_utc": "2026-05-05T22:45:30Z",
+      "type": "crosscheck_dependances_lecture_seule_pure"
+    },
+    "V1ZZ": {
+      "present": true,
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/manifest_v1zz.json",
+      "verdict": "V1ZZ_PHASE2_27D_EXEC_NONZERO",
+      "date_utc": "2026-05-05T22:54:07Z",
+      "type": "phase2_exec_subprocess_sandbox"
+    },
+    "V1ZZ-bis": {
+      "present": true,
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/manifest_v1zzbis.json",
+      "verdict": "V1ZZBIS_PHASE2BIS_27D_EXEC_NONZERO",
+      "date_utc": "2026-05-05T23:00:29Z",
+      "type": "phase2bis_exec_subprocess_sandbox_env_compat"
+    },
+    "V1ZY-ter": {
+      "present": true,
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/manifest_v1zyter.json",
+      "verdict": "V1ZYTER_PHASE1TER_27D_LAYOUT_OK_PRET_V1ZZTER",
+      "date_utc": "2026-05-05T23:05:03Z",
+      "type": "phase1ter_sandbox_layout_fix"
+    },
+    "V1ZZ-ter": {
+      "present": true,
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/manifest_v1zzter.json",
+      "verdict": "V1ZZTER_PHASE2TER_27D_EXEC_OK",
+      "date_utc": "2026-05-05T23:12:20Z",
+      "type": "phase2ter_exec_subprocess_sandbox_layout_plat"
+    }
+  },
+  "non_pollution_attestation": {
+    "diff_caches_chaine_complete_vide": true,
+    "tous_diff_phase_vides": true,
+    "non_pollution_chaine_ok": true,
+    "snapshot_v1zw_compare_v2aa": "voir diff_caches_chaine_complete.txt"
+  },
+  "vrais_yeux_attestation": {
+    "sha256": "f8de03b6025d5a9fddbd9e9cfc69ac342e9f26e651e9be57a876910c499e5850",
+    "intouche_pendant_chaine_27d": true
+  },
+  "symlinks_total_chaine": 0,
+  "fichiers_cloture": {
+    "inventaire_chaine_27d.txt": {
+      "present": true,
+      "sha256": "a0e440e48f3c77a5dbb637b1e8dcc0f9a64868d8c5d954079494f378b89c6ad5",
+      "size": 12015
+    },
+    "sha256_chaine_27d.sha256": {
+      "present": true,
+      "sha256": "43d20d7865eb3f57752e7fb988d5943613242526d55a42e46b7594d4b6555795",
+      "size": 16862
+    },
+    "verdicts_chaine_27d.txt": {
+      "present": true,
+      "sha256": "75c3f586b33846583dbff0bbd222988e91e08a603af5650c77301d065fad93ae",
+      "size": 1726
+    },
+    "hashes_live_final.sha256": {
+      "present": true,
+      "sha256": "cb506716a8160011db53264685f9f4b4da334c55f13a7cda9acd559895ab1719",
+      "size": 688
+    },
+    "diff_caches_chaine_complete.txt": {
+      "present": true,
+      "sha256": "beceef096d843c6794504e43b1dfb2436adefd92b273b8b2e17dda42062b6a93",
+      "size": 41
+    },
+    "vrais_yeux_attestation.txt": {
+      "present": true,
+      "sha256": "19cf6b1aa4738a32a0b66833408ae32a044246f102bab519a6f1da0c0f612766",
+      "size": 189
+    }
+  },
+  "interdits_v2aa_attestes": [
+    "aucune relance du script test_27d_4approches.py",
+    "aucun patch script",
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune ecriture live (atteste via diff caches live debut vs fin chaine)",
+    "aucun move vers production",
+    "aucun branchement runtime",
+    "vrais_yeux.py INTOUCHABLE (sha256 atteste)",
+    "Phase 115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+    "decision_weight=0.0"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0,
+  "doctrine_d12_marquage": "VALIDATED (audit 27D 4 approches complet) != INSTALLED != PRODUCTION_ACTIVE",
+  "next_step_constraint": "Aucun branchement runtime, aucun deploiement, aucun cron/systemd. Le test_27d_4approches.py reste un outil de calibration/etude au statut VALIDATED. Tout passage INSTALLED ou PRODUCTION_ACTIVE necessite un decret distinct avec arbitrage explicite Raphael."
+}
