@@ -1,0 +1,13 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN",
+  "created_utc": "2026-05-05T19:47:28+00:00",
+  "source": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZB_ACTIVEPATHS_20260505_194417/controle_multimondes_v1zb_activepaths.csv",
+  "mode": "csv_plan_only_no_runtime_no_patch",
+  "rows": 20,
+  "counts": {
+    "PRET_SANDBOX": 19,
+    "A_LIRE_AVANT_TEST": 1
+  },
+  "csv_sha256": "996331d7a7a96fbc499a86cb26ac21473e1ac0477f13b75538d58424770e1c77",
+  "md_sha256": "12c1faeb662ebd03767d013f16a3d913be9cf4bf76e4f0a816ed7133641716ae"
+}
