@@ -1,0 +1,8 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZK_READ_BORN_RESULT",
+  "created_utc": "2026-05-05T19:57:49+00:00",
+  "mode": "read_v1zj_report_only_no_execution_no_patch",
+  "source_report": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZJ_EXEC_ONE_BORN_SANDBOX_HOME_OK_20260505_195442/run_report.json",
+  "source_report_sha256": "fc833c8c0705c5f42fdd9a6b72fc296ac890b603a20407dc418171b99aa31a80",
+  "md_sha256": "8d26efe8e963ace3c00784e6379b1981ee6e18c422a9c0efe94bae8292ccbb22"
+}
