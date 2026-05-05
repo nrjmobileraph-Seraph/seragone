@@ -1,0 +1,40 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZT_PHASE2_EXEC_BORN",
+  "created_utc": "2026-05-05T21:49:24+00:00",
+  "verdict": "V1ZT_PHASE2_OK",
+  "exit_code": 0,
+  "duration_s": 44,
+  "pollution_detected": false,
+  "reexec_dir": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351",
+  "sandbox_dir": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351/sandbox_born_full_log",
+  "git_head": "e759ab84c15126c803fcd49f8da95d6611c3d4c6",
+  "ancrages_git": {
+    "v1zq": "72f9b18f",
+    "v1zq_bis": "03fd4c75",
+    "v1zs": "9b41951f",
+    "v1zr_bis": "e759ab84"
+  },
+  "artefacts_reexec_phase2": {
+    "phase2_signed_sha256": "96bb657fd498a75667faba77f1c42ba45844f1c27ca274ff4b288c4909130461",
+    "stdout_full_log_sha256": "9b43795f9c0dbb77dd1352ef02e1a233ab70897d6ef68991c1038fddb3fa86ba",
+    "stderr_full_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "returncode_txt_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "duration_txt_sha256": "b1ce0aa6fdf3cf349d773243dab9fbbe09d30619f38b0c1e8977e28c4f0bc495",
+    "run_report_json_sha256": "2cbd12797327a1644caf08c532ea788322409deccfce97779ece5e5813bb8ad8",
+    "hashes_live_avant_phase2_exec_sha256": "b97fed65d5596c1016f64512cbe381c61d2bdb2bd96ba7af3c5a837f1199279b",
+    "hashes_live_apres_phase2_exec_sha256": "6cf2df6afb1779c18eb122aa0f7b646a38dca3a4c6851690a6c59bdf26b22f7e",
+    "diff_phase2_exec_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "interdits_maintenus": [
+    "aucun ordre exchange",
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune sortie Phase 115",
+    "aucune ecriture caches live hors sitecustomize redirect",
+    "vrais_yeux.py INTOUCHABLE"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0,
+  "md_sha256": "384c486a9013f308fa74b660e254169342fc03946646bd33565a3230ab4fe610"
+}

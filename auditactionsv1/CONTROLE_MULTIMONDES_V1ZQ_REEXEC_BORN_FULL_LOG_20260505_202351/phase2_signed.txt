@@ -1,0 +1,14 @@
+JE SIGNE V1ZQ DECRET PHASE 2 EXEC BORN
+Raphael Boussy 2026-05-05
+J autorise l execution de born_temps_validation.py dans la sandbox V1ZR-bis du REEXEC, avec :
+- timeout 60s (fidelite V1ZJ)
+- /usr/bin/python3 (fidelite V1ZJ)
+- cwd = sandbox_born_full_log
+- PYTHONPATH = sandbox (pour activer sitecustomize redirect pandas)
+- redirection stdout COMPLET vers stdout_full.log
+- redirection stderr COMPLET vers stderr_full.log
+- capture exit code dans returncode.txt et duree dans duration.txt
+- hash caches live JUSTE AVANT et JUSTE APRES execution (durcissement #3 V1ZQ-bis)
+J ai relu : V1ZQ decret 72f9b18f, V1ZQ-bis amendement 03fd4c75, V1ZR-bis prep e759ab84.
+Aucun broker. Aucun cron. Aucun systemd. Aucune sortie Phase 115. decision_weight=0.0.
+vrais_yeux.py INTOUCHABLE.
