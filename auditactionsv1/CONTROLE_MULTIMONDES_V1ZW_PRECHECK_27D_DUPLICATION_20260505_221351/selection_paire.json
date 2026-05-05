@@ -1,0 +1,17 @@
+{
+  "inventory_total": 14,
+  "groupes_uniques": 1,
+  "classification_counts": {
+    "RACINE_CANONIQUE_CANDIDATE": 1,
+    "RESEARCH_CANONIQUE_CANDIDATE": 1,
+    "PALETTE_CLAUDE_COPY": 1,
+    "AUTRE_COPY": 11
+  },
+  "racine_paire_canonique": "./test_27d_4approches.py",
+  "research_paire_canonique": "./research/test_27d_4approches.py",
+  "racine_candidates_si_ambigu": null,
+  "research_candidates_si_ambigu": null,
+  "racine_paire_sha256": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+  "research_paire_sha256": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+  "paire_meme_groupe_sha256": true
+}

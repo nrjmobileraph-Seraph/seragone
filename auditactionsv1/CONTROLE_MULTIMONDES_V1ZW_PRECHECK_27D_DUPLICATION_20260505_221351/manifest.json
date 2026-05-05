@@ -1,0 +1,57 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZW_PRECHECK_27D_DUPLICATION",
+  "created_utc": "2026-05-05T22:13:52+00:00",
+  "verdict": "V1ZW_PRECHECK_27D_OK_IDENTIQUE_PRET_DECRET",
+  "git_head": "4c1f2f706962cd0fe701a86a94ae474be3068c79",
+  "ancrages_git": {
+    "v1zv": "4c1f2f70"
+  },
+  "selection_paire": {
+    "inventory_total": 14,
+    "groupes_uniques": 1,
+    "classification_counts": {
+      "RACINE_CANONIQUE_CANDIDATE": 1,
+      "RESEARCH_CANONIQUE_CANDIDATE": 1,
+      "PALETTE_CLAUDE_COPY": 1,
+      "AUTRE_COPY": 11
+    },
+    "racine_paire_canonique": "./test_27d_4approches.py",
+    "research_paire_canonique": "./research/test_27d_4approches.py",
+    "racine_candidates_si_ambigu": null,
+    "research_candidates_si_ambigu": null,
+    "racine_paire_sha256": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+    "research_paire_sha256": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+    "paire_meme_groupe_sha256": true
+  },
+  "compteurs": {
+    "side_effects_bloquants_racine": 0,
+    "side_effects_bloquants_research": 0,
+    "diff_non_vide": false,
+    "cache_pollution_detectee": false
+  },
+  "artefacts_sha256": {
+    "inventory_tsv": "283154da8a83254be2a210ac2261bbf7c52afc8d4ebe64c25df28d3f5200b66f",
+    "inventory_sha256_grouping": "989e8a3f52ef7f0c19381540567b8becd4519a5706653411db4a7ffc51182ccf",
+    "selection_paire_json": "04d706f45ada32a2d5b68688f32a9ff45d91a6aceac3a8f6662ecf81e7a33574",
+    "diff_racine_vs_research_diff": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ast_scan_racine_json": "0ee192f862991f45c13d4a66b19f504cfeba9dc6d29db82e105668ab3a914ae7",
+    "ast_scan_research_json": "e8618f5efc6cba12a3c7f71e4f712e83ceee38825e02a61a23885315519145ca",
+    "hashes_live_avant": "fa4aad0656464ca3548a7bd1d3265795248cf69a137c13f7df6155ccbf5dd04b",
+    "hashes_live_apres": "02c0a3389c74fed3477550e9e8953a3189aa466612e2d48706452692ae75c924",
+    "diff_caches_v1zw": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "md_sha256": "d1fefaef0aa2a15a09df34f12ef42b536b2959bb419228da9a13b5460ade78c9",
+  "interdits_maintenus": [
+    "aucune execution Python du candidat",
+    "aucun import du candidat",
+    "aucun touch caches live",
+    "aucun mv/cp hors auditactionsv1",
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune sortie Phase 115",
+    "vrais_yeux.py INTOUCHABLE"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0
+}
