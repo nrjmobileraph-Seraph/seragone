@@ -1,0 +1,35 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZQ_BIS_AMENDEMENT_DURCISSEMENT",
+  "created_utc": "2026-05-05T20:30:35Z",
+  "mode": "amendement_nominal_documentaire_seul_no_execution_no_patch_no_cron_no_broker",
+  "pattern_canonique": "on ajoute, on n efface rien",
+  "v1zq_ancre": {
+    "md_path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_DECRET_REEXEC_BORN_FULL_LOG_20260505_202351/CONTROLE_MULTIMONDES_V1ZQ_DECRET_REEXEC_BORN_FULL_LOG.md",
+    "md_sha256": "a2a60a45dfa05fd230360cedd4ea78c4b2f700cab2c83cdfd71fd7f0c8a5f75d",
+    "manifest_path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_DECRET_REEXEC_BORN_FULL_LOG_20260505_202351/manifest.json",
+    "manifest_sha256": "e06004424b49abcea7e15200d10befaf17f5c7c6ae310682f0d209272d037ed2"
+  },
+  "expected_sha256": {
+    "born_temps_validation.py": "d9acb122719206a370f1058254d1cfc6b51d3586cce1d379426915c2bac1367d",
+    "sitecustomize.py": "9abaa362fcb7b78eb2f2e933794a3df9e8413012a9edf3b212f9ae0298d0fedf"
+  },
+  "durcissements_obligatoires": [
+    "Phase 1 echoue si sha256 script != d9acb122719206a370f1058254d1cfc6b51d3586cce1d379426915c2bac1367d",
+    "Phase 1 echoue si sha256 sitecustomize != 9abaa362fcb7b78eb2f2e933794a3df9e8413012a9edf3b212f9ae0298d0fedf",
+    "Phase 2 capture hash caches live juste avant execution",
+    "Phases 1/2/3 verifient phaseN_signed.txt avant lancement"
+  ],
+  "variations_acceptees_documentees": [
+    "Sandbox V1ZQ dans auditactionsv1 au lieu de HOME"
+  ],
+  "verdict": "V1ZQ_BIS_AMENDEMENT_OBLIGATOIRE",
+  "interdits_maintenus": [
+    "aucune execution",
+    "aucun script multimondes lance",
+    "aucun cron",
+    "aucun broker",
+    "Phase 115 preservee",
+    "decision_weight=0.0",
+    "vrais_yeux.py INTOUCHABLE"
+  ]
+}
