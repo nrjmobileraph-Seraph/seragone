@@ -1,0 +1,31 @@
+# Grep ecosysteme 27D dans ./test_27d_4approches.py
+# sha256 script : 2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f
+# date : 2026-05-05T22:45:29Z
+
+## pattern : mondes_27d
+  (aucune occurrence)
+
+## pattern : provinces_27d
+  (aucune occurrence)
+
+## pattern : provinces_thresholds
+  (aucune occurrence)
+
+## pattern : banc_27d
+  (aucune occurrence)
+
+## pattern : historique_27eq
+14:hist = pd.read_csv('historique_27eq.csv')
+
+## pattern : couches_123
+16:real_123 = pd.read_csv('couches_123_daily.csv')
+
+## pattern : generer_historique_27eq
+  (aucune occurrence)
+
+## pattern : calculer_couches_123_5min
+  (aucune occurrence)
+
+## pattern : mondes_27d_v2
+  (aucune occurrence)
+

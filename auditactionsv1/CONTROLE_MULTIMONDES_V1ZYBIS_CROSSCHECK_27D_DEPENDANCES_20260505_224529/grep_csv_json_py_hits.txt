@@ -1,0 +1,38 @@
+# Grep extensions et fonctions de lecture dans ./test_27d_4approches.py
+
+## pattern : \.csv
+14:hist = pd.read_csv('historique_27eq.csv')
+16:real_123 = pd.read_csv('couches_123_daily.csv')
+
+## pattern : \.json
+  (aucune occurrence)
+
+## pattern : \.py\b
+  (aucune occurrence)
+
+## pattern : open\(
+  (aucune occurrence)
+
+## pattern : read_csv
+14:hist = pd.read_csv('historique_27eq.csv')
+16:real_123 = pd.read_csv('couches_123_daily.csv')
+
+## pattern : read_json
+  (aucune occurrence)
+
+## pattern : json\.load
+  (aucune occurrence)
+
+## pattern : pd\.read
+14:hist = pd.read_csv('historique_27eq.csv')
+16:real_123 = pd.read_csv('couches_123_daily.csv')
+
+## pattern : np\.load
+  (aucune occurrence)
+
+## pattern : pickle
+  (aucune occurrence)
+
+## pattern : parquet
+  (aucune occurrence)
+

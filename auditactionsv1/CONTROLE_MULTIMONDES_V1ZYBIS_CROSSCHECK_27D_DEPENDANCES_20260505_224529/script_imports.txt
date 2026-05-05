@@ -1,0 +1,8 @@
+# Imports extraits de test_27d_4approches.py
+# Total : 5
+
+L   9 : import numpy as np
+L   9 : import pandas as pd
+L   9 : import json
+L  10 : from datetime import datetime
+L  11 : import warnings

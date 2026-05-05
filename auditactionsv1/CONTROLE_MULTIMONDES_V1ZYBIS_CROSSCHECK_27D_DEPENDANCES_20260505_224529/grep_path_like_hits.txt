@@ -1,0 +1,35 @@
+# Grep patterns dynamiques dans ./test_27d_4approches.py
+
+## pattern : glob\.
+  (aucune occurrence)
+
+## pattern : from glob
+  (aucune occurrence)
+
+## pattern : pathlib
+  (aucune occurrence)
+
+## pattern : os\.listdir
+  (aucune occurrence)
+
+## pattern : os\.scandir
+  (aucune occurrence)
+
+## pattern : os\.walk
+  (aucune occurrence)
+
+## pattern : \.glob\(
+  (aucune occurrence)
+
+## pattern : \.rglob\(
+  (aucune occurrence)
+
+## pattern : \.iterdir
+  (aucune occurrence)
+
+## pattern : fnmatch
+  (aucune occurrence)
+
+## pattern : PurePath
+  (aucune occurrence)
+
