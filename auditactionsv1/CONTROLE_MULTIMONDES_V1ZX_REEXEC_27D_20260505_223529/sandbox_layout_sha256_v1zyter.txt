@@ -1,0 +1,6 @@
+# sha256 complet sandbox APRES V1ZY-ter 2026-05-05T23:05:03Z
+2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f  ./test_27d_4approches.py
+550c948a5339e0483a0aa9d286ff2295e9bf0d2fc08fc1b628ad4cf6f4a045d8  ./historique_27eq.csv
+550c948a5339e0483a0aa9d286ff2295e9bf0d2fc08fc1b628ad4cf6f4a045d8  ./inputs/historique_27eq.csv
+ae7def2ecce126d13e5a3a82f316cb126e963f9813f1e495f5d5a4ea11651fec  ./couches_123_daily.csv
+ae7def2ecce126d13e5a3a82f316cb126e963f9813f1e495f5d5a4ea11651fec  ./inputs/couches_123_daily.csv

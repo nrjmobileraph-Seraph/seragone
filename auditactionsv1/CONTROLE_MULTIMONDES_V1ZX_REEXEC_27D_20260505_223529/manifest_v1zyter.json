@@ -1,0 +1,140 @@
+{
+  "version": "V1ZYTER",
+  "type": "phase1ter_sandbox_layout_fix",
+  "date_utc": "2026-05-05T23:05:03Z",
+  "verdict": "V1ZYTER_PHASE1TER_27D_LAYOUT_OK_PRET_V1ZZTER",
+  "verdict_motif": "Layout sandbox corrige : 2 CSV ajoutes a la racine sandbox (cp -p depuis inputs/ vers racine), sha256 verifies identiques, 0 symlink, caches live identiques avant/apres. inputs/ preserve intact. Sandbox prete pour V1ZZ-ter qui ne touchera plus au layout.",
+  "ancrage_git": {
+    "head_au_lancement": "ecdaa401df1e1972fd972d73e48784baf4a8418f",
+    "v1zzbis_commit": "ecdaa401",
+    "v1zz_commit": "717f9c8c",
+    "v1zybis_commit": "cd39ea2b",
+    "v1zy_commit": "ad7afa27",
+    "v1zx_commit": "b2cca117",
+    "v1zw_commit": "4f2a18c3"
+  },
+  "cause_origine": {
+    "v1zzbis_verdict": "V1ZZBIS_PHASE2BIS_27D_EXEC_NONZERO",
+    "stderr_extrait": "FileNotFoundError: [Errno 2] No such file or directory: 'historique_27eq.csv'",
+    "ligne_script_concernee": 14,
+    "instruction_concernee": "pd.read_csv('historique_27eq.csv')",
+    "cause_racine": "litteral chemin simple sans prefixe inputs/, V1ZY avait place les CSV dans sandbox/inputs/"
+  },
+  "operation_v1zyter": {
+    "type": "cp -p depuis inputs/ vers racine sandbox (ajout, pas deplacement)",
+    "fichiers_copies": [
+      {
+        "source": "sandbox_27d_reexec/inputs/historique_27eq.csv",
+        "destination": "sandbox_27d_reexec/historique_27eq.csv",
+        "sha256_source_et_dest": "550c948a5339e0483a0aa9d286ff2295e9bf0d2fc08fc1b628ad4cf6f4a045d8",
+        "size_octets": 1836199
+      },
+      {
+        "source": "sandbox_27d_reexec/inputs/couches_123_daily.csv",
+        "destination": "sandbox_27d_reexec/couches_123_daily.csv",
+        "sha256_source_et_dest": "ae7def2ecce126d13e5a3a82f316cb126e963f9813f1e495f5d5a4ea11651fec",
+        "size_octets": 239888
+      }
+    ],
+    "inputs_dossier_preserve": true,
+    "symlinks": 0
+  },
+  "non_pollution_attestation": {
+    "diff_caches_phase1ter_vide": true,
+    "non_pollution_ok": true
+  },
+  "sandbox_layout_final": {
+    "files_count": 5,
+    "files": [
+      {
+        "path": "couches_123_daily.csv",
+        "sha256": "ae7def2ecce126d13e5a3a82f316cb126e963f9813f1e495f5d5a4ea11651fec",
+        "size": 239888,
+        "is_symlink": false
+      },
+      {
+        "path": "historique_27eq.csv",
+        "sha256": "550c948a5339e0483a0aa9d286ff2295e9bf0d2fc08fc1b628ad4cf6f4a045d8",
+        "size": 1836199,
+        "is_symlink": false
+      },
+      {
+        "path": "inputs/couches_123_daily.csv",
+        "sha256": "ae7def2ecce126d13e5a3a82f316cb126e963f9813f1e495f5d5a4ea11651fec",
+        "size": 239888,
+        "is_symlink": false
+      },
+      {
+        "path": "inputs/historique_27eq.csv",
+        "sha256": "550c948a5339e0483a0aa9d286ff2295e9bf0d2fc08fc1b628ad4cf6f4a045d8",
+        "size": 1836199,
+        "is_symlink": false
+      },
+      {
+        "path": "test_27d_4approches.py",
+        "sha256": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+        "size": 14220,
+        "is_symlink": false
+      }
+    ]
+  },
+  "interdits_v1zyter_attestes": [
+    "aucune execution test_27d_4approches.py",
+    "aucun import du script",
+    "aucun patch script",
+    "aucun deplacement ou suppression des copies inputs/",
+    "aucun symlink",
+    "aucun broker, cron, systemd",
+    "aucune ecriture live (atteste via diff caches live vide)",
+    "aucun touch caches live",
+    "vrais_yeux.py INTOUCHABLE",
+    "Phase 115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+    "decision_weight=0.0"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0,
+  "doctrine_d12_marquage": "VALIDATED (correctif layout sandbox) != INSTALLED != PRODUCTION_ACTIVE",
+  "fichiers_v1zyter": {
+    "CONTROLE_MULTIMONDES_V1ZYTER_PHASE1TER_27D_SANDBOX_LAYOUT_FIX.md": {
+      "present": false,
+      "sha256": null,
+      "size": null
+    },
+    "manifest_v1zyter.json": {
+      "present": false,
+      "sha256": null,
+      "size": null
+    },
+    "hashes_live_avant_phase1ter.sha256": {
+      "present": true,
+      "sha256": "4daf96902f0b03434232fa2a74c2842dd507b30adf1fa4eed020662027586712",
+      "size": 683
+    },
+    "hashes_live_apres_phase1ter.sha256": {
+      "present": true,
+      "sha256": "dd43559cd254d9d48716a736cc6bb48a6804a617c032afc5ce1df4efe386afb0",
+      "size": 683
+    },
+    "diff_phase1ter.txt": {
+      "present": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "sandbox_layout_before_v1zyter.txt": {
+      "present": true,
+      "sha256": "38d97c9f44a0fc136687ca89225e6c60b60f6145a2fcecb26d028e094a22f953",
+      "size": 929
+    },
+    "sandbox_layout_after_v1zyter.txt": {
+      "present": true,
+      "sha256": "c8f9f6ca53ce0a38257d4535cb7cbdb604ef58d9ad4a30b16cf292932b74d2b2",
+      "size": 1247
+    },
+    "sandbox_layout_sha256_v1zyter.txt": {
+      "present": true,
+      "sha256": "846d686a69f66f6e624db4476f8ef35f5d236ec04ddd0831080452f91264fcb7",
+      "size": 522
+    }
+  },
+  "next_step_constraint": "git add/commit/push V1ZY-ter seul, relecture, puis nouvelle signature phase2ter_signed.txt + redaction V1ZZ-ter qui re-executera le script avec layout corrige (PYTHONPATH V1ZZ-bis + cwd racine sandbox = fichiers CSV directement accessibles)"
+}
