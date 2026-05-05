@@ -1,0 +1,48 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZQ_DECRET_REEXEC_BORN_FULL_LOG",
+  "created_utc": "2026-05-05T20:23:51+00:00",
+  "mode": "decret_documentaire_no_execution",
+  "v1zp_dir": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZP_PRECHECK_REEXEC_BORN_20260505_201427",
+  "v1zp_md_sha256": "68b4b4c4cbe17c1e90bc7ff3eba5829b3cf2495a438987cedee1e01acf5ab61e",
+  "v1zp_manifest_sha256": "d5e9cfa205513389b394385f4951beea8ab6c19ffbbb59e963eef960871825bc",
+  "v1zp_verdict": "PRECHECK_OK_PRET_DECRET",
+  "v1zj_run_report_sha256": "fc833c8c0705c5f42fdd9a6b72fc296ac890b603a20407dc418171b99aa31a80",
+  "v1zj_md_sha256": "53793630eb13991a434fa5b838bcccbba81c88c514a03ba7fcd1bb2a54e6ce62",
+  "v1zj_manifest_sha256": "30a35f14acac03c56e6a9299831c89fcf47fd48387e59e163c32f087111373bc",
+  "v1zc_md_sha256": "12c1faeb662ebd03767d013f16a3d913be9cf4bf76e4f0a816ed7133641716ae",
+  "v1zc_csv_sha256": "996331d7a7a96fbc499a86cb26ac21473e1ac0477f13b75538d58424770e1c77",
+  "script": "born_temps_validation.py",
+  "script_sha256_v1zj": "d9acb122719206a370f1058254d1cfc6b51d3586cce1d379426915c2bac1367d",
+  "command": [
+    "timeout",
+    "60s",
+    "/usr/bin/python3",
+    "born_temps_validation.py"
+  ],
+  "python": "/usr/bin/python3",
+  "mode_v1zj": "one_script_sandbox_home_real_usrbinpython3_pandas_sitecustomize_redirect_no_patch",
+  "sitecustomize_sha256": "9abaa362fcb7b78eb2f2e933794a3df9e8413012a9edf3b212f9ae0298d0fedf",
+  "local_input_sha256": "6850e7f0bb0673498c5db86910570dcf3f6dccb098422c8fd51754f1803ab634",
+  "cwd_v1zj": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZD_SANDBOX_PRECHECK_BORN_20260505_194846/sandbox_born_inputs/outputs_v1zj",
+  "sandbox_v1zq_target": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351/sandbox_born_full_log",
+  "stdout_full_target": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351/stdout_full.log",
+  "stderr_full_target": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351/stderr_full.log",
+  "run_report_target": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351/run_report.json",
+  "phases": [
+    "phase1_preparation_sandbox_hashes_avant",
+    "phase2_reexec_sandbox_stdout_full",
+    "phase3_collecte_hashes_apres_non_pollution"
+  ],
+  "interdits": [
+    "aucun broker",
+    "aucun ordre exchange",
+    "aucun cron",
+    "aucun systemd",
+    "aucune ecriture caches live",
+    "pas de symlink vers runtime",
+    "Phase 115 preservee",
+    "decision_weight=0.0",
+    "vrais_yeux.py INTOUCHABLE"
+  ],
+  "md_sha256": "a2a60a45dfa05fd230360cedd4ea78c4b2f700cab2c83cdfd71fd7f0c8a5f75d"
+}
