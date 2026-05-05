@@ -1,0 +1,15 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZD_SANDBOX_PRECHECK_BORN",
+  "created_utc": "2026-05-05T19:48:46+00:00",
+  "source": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN_20260505_194728/controle_multimondes_v1zc_offline_test_plan.csv",
+  "mode": "sandbox_precheck_copy_only_no_execution_no_import_no_patch",
+  "sandbox": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZD_SANDBOX_PRECHECK_BORN_20260505_194846/sandbox_born_inputs",
+  "rows": 7,
+  "counts": {
+    "SCRIPT_PRET_COPIE": 5,
+    "INPUT_PRET_COPIE": 2
+  },
+  "ready": true,
+  "csv_sha256": "f3ec3b362f61957a771b8e6c8e7bb1a558ed5c9ba1a451191e01a1051649a2b8",
+  "md_sha256": "c9d13658cc5f2c82fafb29d5da87efafb06fdf7644ddc797b7661cc39ad08950"
+}
