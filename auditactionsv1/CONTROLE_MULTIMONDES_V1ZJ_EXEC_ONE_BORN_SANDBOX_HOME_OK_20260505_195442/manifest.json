@@ -1,0 +1,10 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZJ_EXEC_ONE_BORN_SANDBOX_HOME_OK",
+  "created_utc": "2026-05-05T19:55:22+00:00",
+  "mode": "one_script_sandbox_home_real_usrbinpython3_pandas_sitecustomize_redirect_no_patch",
+  "script": "born_temps_validation.py",
+  "python": "/usr/bin/python3",
+  "returncode": 0,
+  "report_sha256": "fc833c8c0705c5f42fdd9a6b72fc296ac890b603a20407dc418171b99aa31a80",
+  "md_sha256": "53793630eb13991a434fa5b838bcccbba81c88c514a03ba7fcd1bb2a54e6ce62"
+}
