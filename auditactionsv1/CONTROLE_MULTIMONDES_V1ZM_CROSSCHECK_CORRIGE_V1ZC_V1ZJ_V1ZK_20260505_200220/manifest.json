@@ -1,0 +1,66 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZM_CROSSCHECK_CORRIGE_V1ZC_V1ZJ_V1ZK",
+  "created_utc": "2026-05-05T20:02:20+00:00",
+  "mode": "documentary_crosscheck_correctif_only_no_execution_no_patch_no_cron_no_broker",
+  "corrige_v1zl": {
+    "defaut_1": "chemin fixe sur V1ZC MD au lieu de glob",
+    "defaut_2": "regex etroite borntemps sans variante underscore/tiret"
+  },
+  "v1zc_csvs": [
+    {
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN_20260505_194728/controle_multimondes_v1zc_offline_test_plan.csv",
+      "sha256": "996331d7a7a96fbc499a86cb26ac21473e1ac0477f13b75538d58424770e1c77",
+      "size": 10619
+    }
+  ],
+  "v1zc_mds": [
+    {
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN_20260505_194728/CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN.md",
+      "sha256": "12c1faeb662ebd03767d013f16a3d913be9cf4bf76e4f0a816ed7133641716ae",
+      "size": 5550
+    }
+  ],
+  "borntemps_hits": [
+    {
+      "csv": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN_20260505_194728/controle_multimondes_v1zc_offline_test_plan.csv",
+      "line_num": 5,
+      "line": "10,BORN,born_temps_validation.py,True,OK,3,0,1,0,banc_27d_enrichi_v4.csv,AUCUN_STATE_DETECTE_OU_SORTIE_NON_IDENTIFIEE,,broker/api/ordre/cron/systemd/runtime/state racine/cle api,mkdir -p sandbox_multimondes_offline/inputs sandbox_multimondes_offline/outputs && cp --parents born_temps_validation.py sandbox_multimondes_offline/ && echo 'PLAN_ONLY: python3 sandbox_multimondes_offline/born_temps_validation.py',PRET_SANDBOX,peu_dangereux_selon_v1zb_et_aucun_danger_detecte",
+      "csv_sha256": "996331d7a7a96fbc499a86cb26ac21473e1ac0477f13b75538d58424770e1c77"
+    }
+  ],
+  "md_rules_evidence": {
+    "auditactionsv1/CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN_20260505_194728/CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN.md": {
+      "sha256": "12c1faeb662ebd03767d013f16a3d913be9cf4bf76e4f0a816ed7133641716ae",
+      "size": 5550,
+      "rules": {
+        "phase_115": false,
+        "decision_weight_0": false,
+        "no_broker": false,
+        "no_cron_systemd": false,
+        "no_caches_live": false,
+        "vrais_yeux_intouchable": false
+      }
+    }
+  },
+  "v1zj_report": {
+    "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZJ_EXEC_ONE_BORN_SANDBOX_HOME_OK_20260505_195442/run_report.json",
+    "sha256": "fc833c8c0705c5f42fdd9a6b72fc296ac890b603a20407dc418171b99aa31a80"
+  },
+  "v1zk_md": {
+    "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZK_READ_BORN_RESULT_20260505_195749/CONTROLE_MULTIMONDES_V1ZK_READ_BORN_RESULT.md",
+    "sha256": "8d26efe8e963ace3c00784e6379b1981ee6e18c422a9c0efe94bae8292ccbb22"
+  },
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0,
+  "interdits_maintenus": [
+    "aucun ordre exchange",
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune sortie Phase 115",
+    "aucune ecriture caches live",
+    "vrais_yeux.py INTOUCHABLE",
+    "aucun script multimondes relance"
+  ],
+  "md_sha256": "6cf159b3c582587ed6a724fc1776f4542ea1bf209a4c74d9f3eccb90b94f46b7"
+}
