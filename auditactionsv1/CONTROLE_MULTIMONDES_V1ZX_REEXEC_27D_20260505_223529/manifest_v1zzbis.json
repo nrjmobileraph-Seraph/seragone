@@ -1,0 +1,173 @@
+{
+  "version": "V1ZZBIS",
+  "type": "phase2bis_exec_subprocess_sandbox_env_compat",
+  "date_utc": "2026-05-05T23:00:29Z",
+  "verdict": "V1ZZBIS_PHASE2BIS_27D_EXEC_NONZERO",
+  "verdict_motif": "Subprocess RC=1. Voir stderr_full_v1zzbis.log.",
+  "ancrage_git": {
+    "head_au_lancement": "717f9c8c25903ac4c0984608b23ad44a06d788d2",
+    "v1zz_commit": "717f9c8c",
+    "v1zybis_commit": "cd39ea2b",
+    "v1zy_commit": "ad7afa27",
+    "v1zx_commit": "b2cca117",
+    "v1zw_commit": "4f2a18c3"
+  },
+  "exec_summary": {
+    "returncode": 1,
+    "duration_seconds": 0,
+    "timeout_atteint": false,
+    "stdout_lines": 0,
+    "stderr_lines": 20,
+    "script_sha_match": true
+  },
+  "non_pollution_attestation": {
+    "diff_caches_phase2bis_vide": true,
+    "non_pollution_ok": true
+  },
+  "pre_diagnostic_python": {
+    "python_executable": "/usr/bin/python3",
+    "python_version": "3.12.3",
+    "pandas_imported": true,
+    "pandas_file": "/home/ubuntu/.local/lib/python3.12/site-packages/pandas/__init__.py",
+    "pandas_version": "3.0.2",
+    "numpy_imported": true,
+    "numpy_file": "/home/ubuntu/.local/lib/python3.12/site-packages/numpy/__init__.py",
+    "numpy_version": "2.4.4",
+    "pythonpath_calcule": "/home/ubuntu/.local/lib/python3.12/site-packages",
+    "site_packages_parents": [
+      "/home/ubuntu/.local/lib/python3.12/site-packages"
+    ]
+  },
+  "subprocess_config": {
+    "cmd": [
+      "python3",
+      "test_27d_4approches.py"
+    ],
+    "cwd": "/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/sandbox_27d_reexec",
+    "env_strategy": "env -i + whitelist elargie minimale (vs V1ZZ : retrait PYTHONNOUSERSITE, ajout PYTHONPATH explicite)",
+    "env_whitelisted": [
+      "PATH=/usr/local/bin:/usr/bin:/bin",
+      "HOME=/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/_v1zzbis_isolated_home",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8",
+      "TERM=dumb",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "PYTHONUNBUFFERED=1",
+      "PYTHONPATH=/home/ubuntu/.local/lib/python3.12/site-packages"
+    ],
+    "env_excludes_explicit": [
+      "KRAKEN_*",
+      "OKX_*",
+      "BINANCE_*",
+      "API_KEY",
+      "SECRET",
+      "TOKEN",
+      "PRIVATE_KEY"
+    ],
+    "timeout_seconds": 120,
+    "timeout_atteint": false,
+    "returncode": 1,
+    "isolated_home": "/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/_v1zzbis_isolated_home"
+  },
+  "ascendance": {
+    "v1zz_origine_nonzero": "ModuleNotFoundError pandas (PYTHONNOUSERSITE=1 + env -i sans PYTHONPATH)",
+    "v1zzbis_correctif": "retrait PYTHONNOUSERSITE, injection PYTHONPATH explicite calcule par diag"
+  },
+  "interdits_v1zzbis_attestes": [
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune ecriture live (atteste via diff caches live)",
+    "aucun move vers production",
+    "aucun branchement runtime",
+    "vrais_yeux.py INTOUCHABLE",
+    "Phase 115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+    "decision_weight=0.0"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0,
+  "doctrine_d12_marquage": "VALIDATED (correctif env compat) != INSTALLED != PRODUCTION_ACTIVE",
+  "fichiers_v1zzbis": {
+    "stdout_full_v1zzbis.log": {
+      "present": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "stderr_full_v1zzbis.log": {
+      "present": true,
+      "sha256": "6c98e7f84c21d3d5b4958a36cf1aea615b360b4ae038b43cb39e2461d905166a",
+      "size": 1318
+    },
+    "returncode_v1zzbis.txt": {
+      "present": true,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "size": 2
+    },
+    "run_report_v1zzbis.json": {
+      "present": true,
+      "sha256": "674248b08d27ecf8d2074667643cf96ec1f7077282214eb5a70cbe544d87b547",
+      "size": 4421
+    },
+    "outputs_inventory_v1zzbis.txt": {
+      "present": true,
+      "sha256": "859574ce4382de60c3606286246e18e998816531e4fda22599ed44fcff898099",
+      "size": 715
+    },
+    "outputs_sha256_v1zzbis.txt": {
+      "present": true,
+      "sha256": "38f5a39506465ac17c5e012ce9bc0a98c811249cefe7dd0ff37c158433a4c569",
+      "size": 283
+    },
+    "hashes_live_avant_phase2bis.sha256": {
+      "present": true,
+      "sha256": "d6a7401412e82abd7219d474356a1aaa453c2e7fb44c9f032e112838ffd3dd28",
+      "size": 683
+    },
+    "hashes_live_apres_phase2bis.sha256": {
+      "present": true,
+      "sha256": "1dc2de2b8e7ea05dcc5a2ca50eea8e702874135dd7a72c90bc33eb7dd8e3b0f7",
+      "size": 683
+    },
+    "diff_phase2bis.txt": {
+      "present": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "_v1zzbis_sandbox_inventaire_avant.txt": {
+      "present": true,
+      "sha256": "38f5a39506465ac17c5e012ce9bc0a98c811249cefe7dd0ff37c158433a4c569",
+      "size": 283
+    },
+    "_v1zzbis_sandbox_inventaire_apres.txt": {
+      "present": true,
+      "sha256": "38f5a39506465ac17c5e012ce9bc0a98c811249cefe7dd0ff37c158433a4c569",
+      "size": 283
+    },
+    "_v1zzbis_diag_pythonpath.txt": {
+      "present": true,
+      "sha256": "d1af8bea736f6eb794d003dd38dff8c7480fa1ce060dc885da127b075a9f0ff5",
+      "size": 1242
+    },
+    "_v1zzbis_time_report.txt": {
+      "present": true,
+      "sha256": "bcb9eec4b0ea0d00a3125bfcd070b9e138c2e2e371cc320e436af8e0f005bcb0",
+      "size": 789
+    },
+    "phase2bis_signed.txt": {
+      "present": true,
+      "sha256": "9ecdce541b39ed235e5a2dd7e15052750b28f700ef0e161353b2a1b2ce0e24a5",
+      "size": 83
+    },
+    "CONTROLE_MULTIMONDES_V1ZZBIS_PHASE2BIS_27D_EXEC.md": {
+      "present": false,
+      "sha256": null,
+      "size": null
+    },
+    "manifest_v1zzbis.json": {
+      "present": false,
+      "sha256": null,
+      "size": null
+    }
+  },
+  "next_step_constraint": "git add/commit/push V1ZZ-bis seul, relecture, puis selon verdict autorisation V2AA Phase 3 cloture"
+}
