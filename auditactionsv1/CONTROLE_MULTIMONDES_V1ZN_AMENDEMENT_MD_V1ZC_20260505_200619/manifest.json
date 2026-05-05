@@ -1,0 +1,58 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZN_AMENDEMENT_MD_V1ZC",
+  "created_utc": "2026-05-05T20:06:19+00:00",
+  "mode": "amendement_nominal_documentaire_seul_no_execution_no_patch_no_cron_no_broker",
+  "pattern_canonique": "Doc 20 §8 : corrections nominales, on ajoute, on n efface rien",
+  "v1zc_canon_ancre": {
+    "dir": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN_20260505_194728",
+    "md_path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN_20260505_194728/CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN.md",
+    "md_sha256": "12c1faeb662ebd03767d013f16a3d913be9cf4bf76e4f0a816ed7133641716ae",
+    "md_size": 5550,
+    "csv_path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZC_OFFLINE_TEST_PLAN_20260505_194728/controle_multimondes_v1zc_offline_test_plan.csv",
+    "csv_sha256": "996331d7a7a96fbc499a86cb26ac21473e1ac0477f13b75538d58424770e1c77",
+    "csv_size": 10619
+  },
+  "v1zm_associe": {
+    "dir": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZM_CROSSCHECK_CORRIGE_V1ZC_V1ZJ_V1ZK_20260505_200220",
+    "md_path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZM_CROSSCHECK_CORRIGE_V1ZC_V1ZJ_V1ZK_20260505_200220/CONTROLE_MULTIMONDES_V1ZM_CROSSCHECK_CORRIGE_V1ZC_V1ZJ_V1ZK.md",
+    "md_sha256": "6cf159b3c582587ed6a724fc1776f4542ea1bf209a4c74d9f3eccb90b94f46b7"
+  },
+  "regles_reenoncees": [
+    "Phase 115 LIVE_TEST_TOTAL_EN_CAGE",
+    "decision_weight = 0.0",
+    "Aucun broker / aucun ordre exchange",
+    "Aucun cron / aucun systemd modifie",
+    "Aucune ecriture dans les caches live",
+    "vrais_yeux.py INTOUCHABLE (558 lignes, 22 equations canon)"
+  ],
+  "constantes_figees": {
+    "Phi_star_CANON_fige_16avril2026": {
+      "M": 0.28,
+      "V": 0.33,
+      "S": 0.26,
+      "H": 0.26,
+      "G": 0.42
+    },
+    "W_CANON": {
+      "M": 1.8,
+      "V": 1.25,
+      "S": 1.2,
+      "H": 1.42,
+      "G": 1.1
+    },
+    "capital_paper_eur": 35000,
+    "cible_exchange": "Kraken paper"
+  },
+  "interdits_maintenus": [
+    "aucun ordre exchange",
+    "aucun broker",
+    "aucun cron edite",
+    "aucun systemd modifie",
+    "aucune sortie Phase 115",
+    "aucune ecriture caches live",
+    "vrais_yeux.py INTOUCHABLE",
+    "aucune modification du V1ZC canon",
+    "aucune execution de script multimondes"
+  ],
+  "md_sha256": "ce367961d751d58952bb83df5a4e4d6babcce218b93b321aeaf7ff3d5d408338"
+}
