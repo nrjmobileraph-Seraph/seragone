@@ -1,0 +1,43 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZU_CLOTURE_CHAINE_REEXEC",
+  "created_utc": "2026-05-05T21:55:05+00:00",
+  "verdict": "V1ZU_CHAINE_REEXEC_BORN_FIDELITE_CONFIRMEE_NON_POLLUTION_TOTALE",
+  "diff_total_caches_vs_baseline": 0,
+  "git_head": "baca8ccb4dc1d088e0a1fcf5bf5b9d6b7d2b7a6f",
+  "ancrages_git": {
+    "v1zq": "72f9b18f",
+    "v1zq_bis": "03fd4c75",
+    "v1zs": "9b41951f",
+    "v1zr_bis": "e759ab84",
+    "v1zt": "baca8ccb"
+  },
+  "5_mesures_caches_live": {
+    "v1zr_avant_phase1_sha256": "261841c5c2a6506776aca3b3b30683abad912557f3d5c75435e34dbb2ade573c",
+    "v1zr_apres_phase1_sha256": "0888da4923c171cee26898166a155a8d89fd2892a23f1c6a5fa7aa955a529e69",
+    "v1zt_avant_phase2_exec_sha256": "b97fed65d5596c1016f64512cbe381c61d2bdb2bd96ba7af3c5a837f1199279b",
+    "v1zt_apres_phase2_exec_sha256": "6cf2df6afb1779c18eb122aa0f7b646a38dca3a4c6851690a6c59bdf26b22f7e",
+    "v1zu_final_sha256": "f15254673b0d46197ebc59e9a3131a3a0a3478b399715e6ccbbce79aa7f9ac4e"
+  },
+  "empreintes_canoniques": {
+    "script_sha256": "d9acb122719206a370f1058254d1cfc6b51d3586cce1d379426915c2bac1367d",
+    "sitecustomize_sha256": "9abaa362fcb7b78eb2f2e933794a3df9e8413012a9edf3b212f9ae0298d0fedf",
+    "input_csv_sha256": "6850e7f0bb0673498c5db86910570dcf3f6dccb098422c8fd51754f1803ab634",
+    "v1zt_stdout_full_sha256": "9b43795f9c0dbb77dd1352ef02e1a233ab70897d6ef68991c1038fddb3fa86ba",
+    "v1zt_stderr_full_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "v1zt_run_report_sha256": "2cbd12797327a1644caf08c532ea788322409deccfce97779ece5e5813bb8ad8"
+  },
+  "comparaison_v1zj_vs_v1zt_json_sha256": "b91a65ec0c7b19abc12eb8c7bf1af84ae4bd23f7179a19b9696e6762d24e8b31",
+  "registre_md_sha256": "88e03d9b7b7f5616ce5f269d48b4c3452814b4a889b0846d3a47859ac0ab1e48",
+  "md_sha256": "4aa61d477755a09ef844370cc0e9b4ac8647a971cc4c52ffc9e5061bcd1a7f0c",
+  "interdits_maintenus": [
+    "aucun ordre exchange",
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune sortie Phase 115",
+    "aucune ecriture caches live (5 mesures identiques)",
+    "vrais_yeux.py INTOUCHABLE"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0
+}

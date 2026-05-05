@@ -1,0 +1,11 @@
+{
+  "v1zj_exit_code": 0,
+  "v1zj_tail_octets_utf8": 7997,
+  "v1zj_tail_sha256_utf8": "9b43795f9c0dbb77dd1352ef02e1a233ab70897d6ef68991c1038fddb3fa86ba",
+  "v1zt_full_octets_brut": 7997,
+  "v1zt_full_sha256_brut": "9b43795f9c0dbb77dd1352ef02e1a233ab70897d6ef68991c1038fddb3fa86ba",
+  "v1zj_tail_INCLUS_dans_v1zt_full_str": true,
+  "v1zj_tail_strip_eq_v1zt_full_strip": true,
+  "v1zj_tail_eq_v1zt_full_str_exact": true,
+  "delta_octets_brut_vs_utf8": 0
+}
