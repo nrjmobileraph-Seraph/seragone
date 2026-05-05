@@ -1,0 +1,145 @@
+{
+  "version": "V1ZZ",
+  "type": "phase2_exec_subprocess_sandbox",
+  "date_utc": "2026-05-05T22:54:07Z",
+  "verdict": "V1ZZ_PHASE2_27D_EXEC_NONZERO",
+  "verdict_motif": "Subprocess RC=1. Voir stderr_full.log pour diagnostic.",
+  "ancrage_git": {
+    "head_au_lancement": "cd39ea2bc96d57909b12a40637975f0ff514048a",
+    "v1zybis_commit": "cd39ea2b",
+    "v1zy_commit": "ad7afa27",
+    "v1zx_commit": "b2cca117",
+    "v1zw_commit": "4f2a18c3"
+  },
+  "exec_summary": {
+    "returncode": 1,
+    "duration_seconds": 0,
+    "timeout_atteint": false,
+    "stdout_lines": 0,
+    "stderr_lines": 4,
+    "script_sha_match": true
+  },
+  "non_pollution_attestation": {
+    "diff_caches_phase2_vide": true,
+    "non_pollution_ok": true
+  },
+  "subprocess_config": {
+    "cmd": [
+      "python3",
+      "test_27d_4approches.py"
+    ],
+    "cwd": "/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/sandbox_27d_reexec",
+    "env_strategy": "env -i (whitelist : PATH, HOME, LANG, LC_ALL, TERM, PYTHONNOUSERSITE, PYTHONDONTWRITEBYTECODE, PYTHONUNBUFFERED)",
+    "env_whitelisted": [
+      "PATH=/usr/local/bin:/usr/bin:/bin",
+      "HOME=/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/_v1zz_isolated_home",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8",
+      "TERM=dumb",
+      "PYTHONNOUSERSITE=1",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "PYTHONUNBUFFERED=1"
+    ],
+    "env_excludes_explicit": [
+      "KRAKEN_*",
+      "OKX_*",
+      "BINANCE_*",
+      "API_KEY",
+      "SECRET",
+      "TOKEN",
+      "PRIVATE_KEY"
+    ],
+    "timeout_seconds": 120,
+    "timeout_atteint": false,
+    "returncode": 1,
+    "isolated_home": "/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/_v1zz_isolated_home"
+  },
+  "interdits_v1zz_attestes": [
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune ecriture live (atteste via diff caches live)",
+    "aucun move vers production",
+    "aucun branchement runtime",
+    "vrais_yeux.py INTOUCHABLE",
+    "Phase 115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+    "decision_weight=0.0"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0,
+  "doctrine_d12_marquage": "VALIDATED (exec sandbox audite) != INSTALLED != PRODUCTION_ACTIVE",
+  "fichiers_v1zz": {
+    "stdout_full.log": {
+      "present": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "stderr_full.log": {
+      "present": true,
+      "sha256": "8a3ee07bda1c5ba94f5912850a75fa86925f3825cc3365792cd8b026b28524eb",
+      "size": 286
+    },
+    "returncode.txt": {
+      "present": true,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "size": 2
+    },
+    "run_report.json": {
+      "present": true,
+      "sha256": "cb9f29b765c19ee26da90a61d827241b47bd68d1ff7d9741164c353f9941d7a8",
+      "size": 3539
+    },
+    "outputs_inventory.txt": {
+      "present": true,
+      "sha256": "90208d8a7e46eac5709a303b7a254be3ec804e2d428bb0d78b97288bcd2b5acb",
+      "size": 806
+    },
+    "outputs_sha256.txt": {
+      "present": true,
+      "sha256": "38f5a39506465ac17c5e012ce9bc0a98c811249cefe7dd0ff37c158433a4c569",
+      "size": 283
+    },
+    "hashes_live_avant_phase2.sha256": {
+      "present": true,
+      "sha256": "bc8d007db25541cfeec7091db0027fb77300742682e0f4978f1ccdb2d4e2c12b",
+      "size": 675
+    },
+    "hashes_live_apres_phase2.sha256": {
+      "present": true,
+      "sha256": "adff930a846233cdc1995c758ec0a5bdb712b805fec056bf6a6819c26ad4f872",
+      "size": 675
+    },
+    "diff_phase2.txt": {
+      "present": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "_v1zz_sandbox_inventaire_avant.txt": {
+      "present": true,
+      "sha256": "38f5a39506465ac17c5e012ce9bc0a98c811249cefe7dd0ff37c158433a4c569",
+      "size": 283
+    },
+    "_v1zz_sandbox_inventaire_apres.txt": {
+      "present": true,
+      "sha256": "38f5a39506465ac17c5e012ce9bc0a98c811249cefe7dd0ff37c158433a4c569",
+      "size": 283
+    },
+    "_v1zz_time_report.txt": {
+      "present": true,
+      "sha256": "fcdbc1541b3eac5f834929b258f3e2f27177c6ca4841ade8bd3debeb8604fc34",
+      "size": 787
+    },
+    "CONTROLE_MULTIMONDES_V1ZZ_PHASE2_27D_EXEC.md": {
+      "present": false,
+      "sha256": null,
+      "size": null
+    },
+    "manifest_v1zz.json": {
+      "present": false,
+      "sha256": null,
+      "size": null
+    }
+  },
+  "next_step_constraint": "git add/commit/push V1ZZ seul, relecture, puis attente autorisation V2AA Phase 3 cloture",
+  "note_naming": "manifest_v1zz.json (et non manifest.json) pour ne pas ecraser le manifest.json V1ZY deja present dans REEXEC_DIR"
+}

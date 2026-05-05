@@ -1,0 +1,102 @@
+{
+  "version": "V1ZZ_PHASE2_27D_EXEC",
+  "start_utc": "2026-05-05T22:54:06Z",
+  "end_utc": "2026-05-05T22:54:06Z",
+  "duration_seconds": 0,
+  "subprocess": {
+    "cmd": [
+      "python3",
+      "test_27d_4approches.py"
+    ],
+    "cwd": "/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/sandbox_27d_reexec",
+    "env_strategy": "env -i (whitelist : PATH, HOME, LANG, LC_ALL, TERM, PYTHONNOUSERSITE, PYTHONDONTWRITEBYTECODE, PYTHONUNBUFFERED)",
+    "env_whitelisted": [
+      "PATH=/usr/local/bin:/usr/bin:/bin",
+      "HOME=/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/_v1zz_isolated_home",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8",
+      "TERM=dumb",
+      "PYTHONNOUSERSITE=1",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "PYTHONUNBUFFERED=1"
+    ],
+    "env_excludes_explicit": [
+      "KRAKEN_*",
+      "OKX_*",
+      "BINANCE_*",
+      "API_KEY",
+      "SECRET",
+      "TOKEN",
+      "PRIVATE_KEY"
+    ],
+    "timeout_seconds": 120,
+    "timeout_atteint": false,
+    "returncode": 1,
+    "isolated_home": "/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/_v1zz_isolated_home"
+  },
+  "script": {
+    "path_sandbox": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/sandbox_27d_reexec/test_27d_4approches.py",
+    "sha256_attendu": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+    "sha256_observe": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+    "sha256_match": true,
+    "size_octets": 14220
+  },
+  "inputs_sandbox": {
+    "couches_123_daily.csv": {
+      "size": 239888,
+      "sha256": "ae7def2ecce126d13e5a3a82f316cb126e963f9813f1e495f5d5a4ea11651fec"
+    },
+    "historique_27eq.csv": {
+      "size": 1836199,
+      "sha256": "550c948a5339e0483a0aa9d286ff2295e9bf0d2fc08fc1b628ad4cf6f4a045d8"
+    }
+  },
+  "logs": {
+    "stdout_full.log": {
+      "size_octets": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lignes": 0
+    },
+    "stderr_full.log": {
+      "size_octets": 286,
+      "sha256": "8a3ee07bda1c5ba94f5912850a75fa86925f3825cc3365792cd8b026b28524eb",
+      "lignes": 4
+    }
+  },
+  "time_report_parsed": {
+    "Command being timed": "\"python3 test_27d_4approches.py\"",
+    "User time (seconds)": "0.25",
+    "System time (seconds)": "0.05",
+    "Percent of CPU this job got": "93%",
+    "Elapsed (wall clock) time (h": "mm:ss or m:ss): 0:00.32",
+    "Average shared text size (kbytes)": "0",
+    "Average unshared data size (kbytes)": "0",
+    "Average stack size (kbytes)": "0",
+    "Average total size (kbytes)": "0",
+    "Maximum resident set size (kbytes)": "44692",
+    "Average resident set size (kbytes)": "0",
+    "Major (requiring I/O) page faults": "2",
+    "Minor (reclaiming a frame) page faults": "6737",
+    "Voluntary context switches": "80",
+    "Involuntary context switches": "3",
+    "Swaps": "0",
+    "File system inputs": "4128",
+    "File system outputs": "8",
+    "Socket messages sent": "0",
+    "Socket messages received": "0",
+    "Signals delivered": "0",
+    "Page size (bytes)": "4096",
+    "Exit status": "1"
+  },
+  "interdits_v1zz_attestes": [
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune ecriture live (atteste via diff caches live)",
+    "aucun move vers production",
+    "aucun branchement runtime",
+    "vrais_yeux.py INTOUCHABLE",
+    "Phase 115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+    "decision_weight=0.0"
+  ]
+}
