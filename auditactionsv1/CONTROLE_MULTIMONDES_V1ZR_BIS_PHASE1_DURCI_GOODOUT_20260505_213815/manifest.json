@@ -1,0 +1,73 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZR_BIS_PHASE1_DURCI_GOODOUT",
+  "created_utc": "2026-05-05T21:38:15+00:00",
+  "verdict": "PHASE1_DURCI_OK_PRET_POUR_SIGNATURE_PHASE2",
+  "corrige": [
+    "bug_A_format_hashes_asymetrique",
+    "bug_B_inputs_chemin_incorrect"
+  ],
+  "reexec_dir": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351",
+  "sandbox_dir": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351/sandbox_born_full_log",
+  "git_head": "9b41951f6ddd913603fc5cb8556a1ca49a9e39d1",
+  "ancrages_git": {
+    "v1zq": "72f9b18f",
+    "v1zq_bis": "03fd4c75",
+    "v1zs": "9b41951f"
+  },
+  "durcissements": {
+    "1_script_sha256": "d9acb122719206a370f1058254d1cfc6b51d3586cce1d379426915c2bac1367d",
+    "2_sitecustomize_sha256": "9abaa362fcb7b78eb2f2e933794a3df9e8413012a9edf3b212f9ae0298d0fedf",
+    "4_phase1_signed": true,
+    "nouveau_csv_sha256": "6850e7f0bb0673498c5db86910570dcf3f6dccb098422c8fd51754f1803ab634"
+  },
+  "artefacts_reexec": {
+    "phase1_signed_txt_sha256": "e3491efe33f22fa14d3e3319c1052a7a0c9e28f6fb5e3d1b044b813dd6eea670",
+    "sandbox_path_txt_sha256": "47a3c9192338bfc26a2af6a86c81e2a7e0a7e45f1f15853ad4a2d5cc2b926000",
+    "hashes_live_avant_sha256": "261841c5c2a6506776aca3b3b30683abad912557f3d5c75435e34dbb2ade573c",
+    "hashes_live_apres_phase1_sha256": "0888da4923c171cee26898166a155a8d89fd2892a23f1c6a5fa7aa955a529e69",
+    "diff_phase1_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sandbox_inventaire_sha256": "a28c8f30bc7a9cd8e706564d309480a4e53000038055d4c8b23542ec269943ec",
+    "sandbox_sha256_file_sha256": "8fa22c517a8d806a5a3e28529fad9e7d1ca1ced25232f4fc53aebcac10ac63ae"
+  },
+  "sandbox_files": [
+    {
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351/sandbox_born_full_log/banc_27d_enrichi_v4.csv",
+      "size": 5020673,
+      "sha256": "6850e7f0bb0673498c5db86910570dcf3f6dccb098422c8fd51754f1803ab634"
+    },
+    {
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351/sandbox_born_full_log/born_temps_validation.py",
+      "size": 9401,
+      "sha256": "d9acb122719206a370f1058254d1cfc6b51d3586cce1d379426915c2bac1367d"
+    },
+    {
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351/sandbox_born_full_log/data/banc_27d_enrichi_v4.csv",
+      "size": 5020673,
+      "sha256": "6850e7f0bb0673498c5db86910570dcf3f6dccb098422c8fd51754f1803ab634"
+    },
+    {
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351/sandbox_born_full_log/sitecustomize.py",
+      "size": 839,
+      "sha256": "9abaa362fcb7b78eb2f2e933794a3df9e8413012a9edf3b212f9ae0298d0fedf"
+    }
+  ],
+  "phase2_artifacts_check": {
+    "stdout_full.log": false,
+    "stderr_full.log": false,
+    "returncode.txt": false,
+    "run_report.json": false
+  },
+  "interdits_maintenus": [
+    "aucun ordre exchange",
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune sortie Phase 115",
+    "aucune ecriture caches live",
+    "vrais_yeux.py INTOUCHABLE",
+    "aucune execution born_temps_validation.py"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0,
+  "md_sha256": "fa47c369ae4a2fc4335663bc13a975898b60ff552337037ed290c72006913731"
+}
