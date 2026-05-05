@@ -1,0 +1,58 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZS_ARCHIVE_PHASE1_PARTIELLE_PRE_DURCISSEMENT",
+  "created_utc": "2026-05-05T21:27:36+00:00",
+  "mode": "archivage_documentaire_par_renommage_no_execution_no_patch_no_cron_no_broker",
+  "verdict": "ARCHIVE_OK_PHASE2_NON_AUTORISEE_SUR_CES_ARTEFACTS",
+  "decret_dir": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_DECRET_REEXEC_BORN_FULL_LOG_20260505_202351",
+  "reexec_dir_target_for_v1zr": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_REEXEC_BORN_FULL_LOG_20260505_202351",
+  "archive_ts_mtime_artifacts": "20260505_203350",
+  "renamed_artifacts": {
+    "sandbox": {
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_DECRET_REEXEC_BORN_FULL_LOG_20260505_202351/sandbox_born_full_log_PRE_DURCISSEMENT_20260505_203350",
+      "exists": true,
+      "files_count": 1
+    },
+    "hashes_live_avant": {
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_DECRET_REEXEC_BORN_FULL_LOG_20260505_202351/hashes_live_avant_PRE_DURCISSEMENT_20260505_203350.sha256",
+      "exists": true,
+      "sha256": "12c3282aebf3a05db429dd7bcc4712f5f0d2cdd876ae12bc9f379e3f4688e035"
+    },
+    "sandbox_path_txt": {
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_DECRET_REEXEC_BORN_FULL_LOG_20260505_202351/sandbox_path_PRE_DURCISSEMENT_20260505_203350.txt",
+      "exists": true,
+      "sha256": "ef81b93ff8a14c8b55179fe0a62b42dd4387f9bb27c61581f69f0c71da882f3e"
+    }
+  },
+  "archived_sandbox_files": [
+    {
+      "path": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZQ_DECRET_REEXEC_BORN_FULL_LOG_20260505_202351/sandbox_born_full_log_PRE_DURCISSEMENT_20260505_203350/born_temps_validation.py",
+      "size": 9401,
+      "sha256": "d9acb122719206a370f1058254d1cfc6b51d3586cce1d379426915c2bac1367d"
+    }
+  ],
+  "phase2_artifacts_check": {
+    "stdout_full.log": false,
+    "stderr_full.log": false,
+    "returncode.txt": false,
+    "run_report.json": false
+  },
+  "interdits_maintenus": [
+    "aucun ordre exchange",
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune sortie Phase 115",
+    "aucune ecriture caches live",
+    "vrais_yeux.py INTOUCHABLE",
+    "aucune execution born_temps_validation.py",
+    "aucune modification V1ZQ ni V1ZQ-bis committes"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0,
+  "ancrages_git": {
+    "v1zq_decret_committe": "72f9b18f",
+    "v1zq_bis_amendement_committe": "03fd4c75"
+  },
+  "next_step_constraint": "V1ZR_PHASE1_DURCI_GOODOUT cible REEXEC uniquement, signature fraiche dans REEXEC, durcissements V1ZQ-bis appliques",
+  "md_sha256": "176d9e6405ce6e724de37731c9bddff7320dcfbf3a3e8f2b143f13906797ea3a"
+}

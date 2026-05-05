@@ -1,0 +1,9 @@
+total 40
+drwxrwxr-x  3 ubuntu ubuntu 4096 May  5 20:33 .
+drwxrwxr-x 22 ubuntu ubuntu 4096 May  5 21:27 ..
+-rw-rw-r--  1 ubuntu ubuntu 8358 May  5 20:23 CONTROLE_MULTIMONDES_V1ZQ_DECRET_REEXEC_BORN_FULL_LOG.md
+-rw-rw-r--  1 ubuntu ubuntu  897 May  5 20:33 hashes_live_avant.sha256
+-rw-rw-r--  1 ubuntu ubuntu 2612 May  5 20:23 manifest.json
+-rw-rw-r--  1 ubuntu ubuntu   79 May  5 20:35 phase1_signed.txt
+drwxrwxr-x  3 ubuntu ubuntu 4096 May  5 20:33 sandbox_born_full_log
+-rw-rw-r--  1 ubuntu ubuntu  107 May  5 20:33 sandbox_path.txt
