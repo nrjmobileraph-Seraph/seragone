@@ -1,0 +1,126 @@
+{
+  "version": "V1ZZTER_PHASE2TER_27D_EXEC_LAYOUT_PLAT",
+  "start_utc": "2026-05-05T23:11:34Z",
+  "end_utc": "2026-05-05T23:12:20Z",
+  "duration_seconds": 46,
+  "pre_diagnostic_python": {
+    "python_executable": "/usr/bin/python3",
+    "python_version": "3.12.3",
+    "pandas_imported": true,
+    "pandas_file": "/home/ubuntu/.local/lib/python3.12/site-packages/pandas/__init__.py",
+    "pandas_version": "3.0.2",
+    "numpy_imported": true,
+    "numpy_file": "/home/ubuntu/.local/lib/python3.12/site-packages/numpy/__init__.py",
+    "numpy_version": "2.4.4",
+    "pythonpath_calcule": "/home/ubuntu/.local/lib/python3.12/site-packages"
+  },
+  "subprocess": {
+    "cmd": [
+      "python3",
+      "test_27d_4approches.py"
+    ],
+    "cwd": "/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/sandbox_27d_reexec",
+    "env_strategy": "env -i + whitelist (V1ZZ-bis approach) + layout plat (V1ZY-ter)",
+    "env_whitelisted": [
+      "PATH=/usr/local/bin:/usr/bin:/bin",
+      "HOME=/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/_v1zzter_isolated_home",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8",
+      "TERM=dumb",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "PYTHONUNBUFFERED=1",
+      "PYTHONPATH=/home/ubuntu/.local/lib/python3.12/site-packages"
+    ],
+    "env_excludes_explicit": [
+      "KRAKEN_*",
+      "OKX_*",
+      "BINANCE_*",
+      "API_KEY",
+      "SECRET",
+      "TOKEN",
+      "PRIVATE_KEY"
+    ],
+    "timeout_seconds": 120,
+    "timeout_atteint": false,
+    "returncode": 0,
+    "isolated_home": "/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/_v1zzter_isolated_home"
+  },
+  "script": {
+    "path_sandbox": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/sandbox_27d_reexec/test_27d_4approches.py",
+    "sha256_attendu": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+    "sha256_observe": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+    "sha256_match": true
+  },
+  "inputs_sandbox": {
+    "historique_27eq.csv": {
+      "size": 1836199,
+      "sha256": "550c948a5339e0483a0aa9d286ff2295e9bf0d2fc08fc1b628ad4cf6f4a045d8"
+    },
+    "couches_123_daily.csv": {
+      "size": 239888,
+      "sha256": "ae7def2ecce126d13e5a3a82f316cb126e963f9813f1e495f5d5a4ea11651fec"
+    },
+    "inputs/historique_27eq.csv": {
+      "size": 1836199,
+      "sha256": "550c948a5339e0483a0aa9d286ff2295e9bf0d2fc08fc1b628ad4cf6f4a045d8"
+    },
+    "inputs/couches_123_daily.csv": {
+      "size": 239888,
+      "sha256": "ae7def2ecce126d13e5a3a82f316cb126e963f9813f1e495f5d5a4ea11651fec"
+    }
+  },
+  "logs": {
+    "stdout_full_v1zzter.log": {
+      "size_octets": 2016,
+      "sha256": "f67a37439786101abd2f02945c12f09a82a8f3edc9e03d415764c3f3121ac364",
+      "lignes": 52
+    },
+    "stderr_full_v1zzter.log": {
+      "size_octets": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lignes": 0
+    }
+  },
+  "time_report_parsed": {
+    "Command being timed": "\"python3 test_27d_4approches.py\"",
+    "User time (seconds)": "45.31",
+    "System time (seconds)": "0.14",
+    "Percent of CPU this job got": "100%",
+    "Elapsed (wall clock) time (h": "mm:ss or m:ss): 0:45.21",
+    "Average shared text size (kbytes)": "0",
+    "Average unshared data size (kbytes)": "0",
+    "Average stack size (kbytes)": "0",
+    "Average total size (kbytes)": "0",
+    "Maximum resident set size (kbytes)": "91268",
+    "Average resident set size (kbytes)": "0",
+    "Major (requiring I/O) page faults": "8",
+    "Minor (reclaiming a frame) page faults": "19305",
+    "Voluntary context switches": "20",
+    "Involuntary context switches": "228",
+    "Swaps": "0",
+    "File system inputs": "1208",
+    "File system outputs": "40",
+    "Socket messages sent": "0",
+    "Socket messages received": "0",
+    "Signals delivered": "0",
+    "Page size (bytes)": "4096",
+    "Exit status": "0"
+  },
+  "ascendance": {
+    "v1zz_origine_nonzero": "ModuleNotFoundError pandas (V1ZZ initial)",
+    "v1zzbis_correctif_env": "PYTHONPATH explicite + retrait PYTHONNOUSERSITE -> import OK mais FileNotFoundError CSV",
+    "v1zyter_correctif_layout": "cp -p CSV depuis inputs/ vers racine sandbox -> CSV trouvables au cwd",
+    "v1zzter_combine": "env compat V1ZZ-bis + layout V1ZY-ter, execution propre attendue"
+  },
+  "interdits_v1zzter_attestes": [
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune ecriture live (atteste via diff caches live)",
+    "aucun move vers production",
+    "aucun branchement runtime",
+    "vrais_yeux.py INTOUCHABLE",
+    "Phase 115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+    "decision_weight=0.0"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "date_utc": "2026-05-05T23:11:34Z",
+  "python_executable": "/usr/bin/python3",
+  "python_version": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+  "modules": {
+    "pandas": {
+      "imported": true,
+      "file": "/home/ubuntu/.local/lib/python3.12/site-packages/pandas/__init__.py",
+      "version": "3.0.2"
+    },
+    "numpy": {
+      "imported": true,
+      "file": "/home/ubuntu/.local/lib/python3.12/site-packages/numpy/__init__.py",
+      "version": "2.4.4"
+    },
+    "json": {
+      "imported": true,
+      "file": "/usr/lib/python3.12/json/__init__.py",
+      "version": "2.0.9"
+    }
+  },
+  "pythonpath_calcule": "/home/ubuntu/.local/lib/python3.12/site-packages",
+  "site_packages_parents": [
+    "/home/ubuntu/.local/lib/python3.12/site-packages"
+  ]
+}

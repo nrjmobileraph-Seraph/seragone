@@ -1,0 +1,174 @@
+{
+  "version": "V1ZZTER",
+  "type": "phase2ter_exec_subprocess_sandbox_layout_plat",
+  "date_utc": "2026-05-05T23:12:20Z",
+  "verdict": "V1ZZTER_PHASE2TER_27D_EXEC_OK",
+  "verdict_motif": "Subprocess RC=0, env compat V1ZZ-bis + layout plat V1ZY-ter combines avec succes, caches live identiques avant/apres. Chaine 27D complete PRECHECK -> DECRET -> PHASE1 -> CROSSCHECK -> PHASE2 -> PHASE2BIS -> PHASE1TER -> PHASE2TER reussie.",
+  "ancrage_git": {
+    "head_au_lancement": "5e84ac3eac576014d8b59bdefedba9b38706db5e",
+    "v1zyter_commit": "5e84ac3e",
+    "v1zzbis_commit": "ecdaa401",
+    "v1zz_commit": "717f9c8c",
+    "v1zybis_commit": "cd39ea2b",
+    "v1zy_commit": "ad7afa27",
+    "v1zx_commit": "b2cca117",
+    "v1zw_commit": "4f2a18c3"
+  },
+  "exec_summary": {
+    "returncode": 0,
+    "duration_seconds": 46,
+    "timeout_atteint": false,
+    "stdout_lines": 52,
+    "stderr_lines": 0,
+    "script_sha_match": true
+  },
+  "non_pollution_attestation": {
+    "diff_caches_phase2ter_vide": true,
+    "non_pollution_ok": true
+  },
+  "pre_diagnostic_python": {
+    "python_executable": "/usr/bin/python3",
+    "python_version": "3.12.3",
+    "pandas_imported": true,
+    "pandas_file": "/home/ubuntu/.local/lib/python3.12/site-packages/pandas/__init__.py",
+    "pandas_version": "3.0.2",
+    "numpy_imported": true,
+    "numpy_file": "/home/ubuntu/.local/lib/python3.12/site-packages/numpy/__init__.py",
+    "numpy_version": "2.4.4",
+    "pythonpath_calcule": "/home/ubuntu/.local/lib/python3.12/site-packages"
+  },
+  "subprocess_config": {
+    "cmd": [
+      "python3",
+      "test_27d_4approches.py"
+    ],
+    "cwd": "/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/sandbox_27d_reexec",
+    "env_strategy": "env -i + whitelist (V1ZZ-bis approach) + layout plat (V1ZY-ter)",
+    "env_whitelisted": [
+      "PATH=/usr/local/bin:/usr/bin:/bin",
+      "HOME=/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/_v1zzter_isolated_home",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8",
+      "TERM=dumb",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "PYTHONUNBUFFERED=1",
+      "PYTHONPATH=/home/ubuntu/.local/lib/python3.12/site-packages"
+    ],
+    "env_excludes_explicit": [
+      "KRAKEN_*",
+      "OKX_*",
+      "BINANCE_*",
+      "API_KEY",
+      "SECRET",
+      "TOKEN",
+      "PRIVATE_KEY"
+    ],
+    "timeout_seconds": 120,
+    "timeout_atteint": false,
+    "returncode": 0,
+    "isolated_home": "/home/ubuntu/seragone/auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/_v1zzter_isolated_home"
+  },
+  "ascendance": {
+    "v1zz_origine_nonzero": "ModuleNotFoundError pandas (V1ZZ initial)",
+    "v1zzbis_correctif_env": "PYTHONPATH explicite + retrait PYTHONNOUSERSITE -> import OK mais FileNotFoundError CSV",
+    "v1zyter_correctif_layout": "cp -p CSV depuis inputs/ vers racine sandbox -> CSV trouvables au cwd",
+    "v1zzter_combine": "env compat V1ZZ-bis + layout V1ZY-ter, execution propre attendue"
+  },
+  "interdits_v1zzter_attestes": [
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucune ecriture live (atteste via diff caches live)",
+    "aucun move vers production",
+    "aucun branchement runtime",
+    "vrais_yeux.py INTOUCHABLE",
+    "Phase 115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+    "decision_weight=0.0"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0,
+  "doctrine_d12_marquage": "VALIDATED (exec sandbox layout plat) != INSTALLED != PRODUCTION_ACTIVE",
+  "fichiers_v1zzter": {
+    "stdout_full_v1zzter.log": {
+      "present": true,
+      "sha256": "f67a37439786101abd2f02945c12f09a82a8f3edc9e03d415764c3f3121ac364",
+      "size": 2016
+    },
+    "stderr_full_v1zzter.log": {
+      "present": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "returncode_v1zzter.txt": {
+      "present": true,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size": 2
+    },
+    "run_report_v1zzter.json": {
+      "present": true,
+      "sha256": "7c59a91c06fe3b774061b3314e21f727d12a0e175e9a6900c6d25213fcf256d7",
+      "size": 4751
+    },
+    "outputs_inventory_v1zzter.txt": {
+      "present": true,
+      "sha256": "b78b5eefbe605ac8156db6aba1f08e8d884666676ba85a0f6df3c22a3d3b8ffc",
+      "size": 1029
+    },
+    "outputs_sha256_v1zzter.txt": {
+      "present": true,
+      "sha256": "82916b375cf351b6325d8f20f9a794eb7e50db4b22f279979f071daae2e36b69",
+      "size": 461
+    },
+    "hashes_live_avant_phase2ter.sha256": {
+      "present": true,
+      "sha256": "316b128698eb81885091767c6c193e00605eed536e4a63456c34178f6465cfd3",
+      "size": 683
+    },
+    "hashes_live_apres_phase2ter.sha256": {
+      "present": true,
+      "sha256": "30b9daba92e3aaed4683fbb6dd5ff93e5aa88377ae83297875271740be7d6fca",
+      "size": 683
+    },
+    "diff_phase2ter.txt": {
+      "present": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "_v1zzter_sandbox_inventaire_avant.txt": {
+      "present": true,
+      "sha256": "82916b375cf351b6325d8f20f9a794eb7e50db4b22f279979f071daae2e36b69",
+      "size": 461
+    },
+    "_v1zzter_sandbox_inventaire_apres.txt": {
+      "present": true,
+      "sha256": "82916b375cf351b6325d8f20f9a794eb7e50db4b22f279979f071daae2e36b69",
+      "size": 461
+    },
+    "_v1zzter_diag_pythonpath.txt": {
+      "present": true,
+      "sha256": "a39023293349f8c6b4473d0937f37131fc2eb1e1d664c37954796bfd282f193e",
+      "size": 776
+    },
+    "_v1zzter_time_report.txt": {
+      "present": true,
+      "sha256": "3e27c297c1e262c153a26174fa0ac28c2fd37cb7eb6fd6ec37a49936deeafd51",
+      "size": 755
+    },
+    "phase2ter_signed.txt": {
+      "present": true,
+      "sha256": "ac7608714099c177e7f78532b5d5a2ca5871beff7b752e60784a8dfc3a97845c",
+      "size": 71
+    },
+    "CONTROLE_MULTIMONDES_V1ZZTER_PHASE2TER_27D_EXEC.md": {
+      "present": false,
+      "sha256": null,
+      "size": null
+    },
+    "manifest_v1zzter.json": {
+      "present": false,
+      "sha256": null,
+      "size": null
+    }
+  },
+  "next_step_constraint": "git add/commit/push V1ZZ-ter seul, relecture, puis selon verdict autorisation V2AA Phase 3 cloture (uniquement si V1ZZ-ter tombe en EXEC_OK)"
+}

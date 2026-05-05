@@ -1,0 +1,52 @@
+Train : 1096, Test : 439
+Régimes train : {'CRISE': 447, 'RESPIRATION': 369, 'EXPLOSION': 280}
+Régimes test  : {'RESPIRATION': 234, 'CRISE': 146, 'EXPLOSION': 59}
+
+============================================================
+TEST 1 — 27D comme FILTRE du 10D
+============================================================
+Mondes 10D sélectionnés : 7
+Mondes 27D-only sélectionnés : 1
+Seuil bear 27D : 0 (percentile 80)
+
+============================================================
+TEST 2 — Métriques alternatives
+============================================================
+Construction mondes 27D complets...
+  136 mondes 27D complets
+
+LIFT par seuil de convergence (return 5d vs baseline) :
+  ≥  1 : 438 jours, return moyen -0.23% (baseline -0.23%), lift +0.00%
+  ≥ 10 : 137 jours, return moyen +0.07% (baseline -0.23%), lift +0.30%
+  ≥ 20 :  13 jours, return moyen +2.27% (baseline -0.23%), lift +2.50%
+
+RECALL BEAR (136 jours bear dans test) :
+  ≥ 10 mondes détecte 38/136 jours bear (28% recall)
+  ≥ 20 mondes détecte 0/136 jours bear (0% recall)
+  ≥ 40 mondes détecte 0/136 jours bear (0% recall)
+
+DRAWDOWN FUTUR sur fenêtre 5j (min 5d) :
+  ≥  1 : DD moyen -2.41%, DD min -20.11%
+  ≥ 10 : DD moyen -1.94%, DD min -9.67%
+  ≥ 20 : DD moyen -0.28%, DD min -2.68%
+
+============================================================
+TEST 3 — Mondes calibrés par régime
+============================================================
+
+CRISE: 37 mondes, 146 jours test
+
+RESPIRATION: 48 mondes, 234 jours test
+  ≥10 conv : 1 tirs, WR 0.0%, return -2.21%
+
+EXPLOSION: 36 mondes, 59 jours test
+  ≥10 conv : 1 tirs, WR 100.0%, return +7.22%
+
+============================================================
+TEST 4 — Cible SOUPLE (peut-on capter un PIC dans les 5j ?)
+============================================================
+Mondes cible souple : 11
+
+============================================================
+RÉSUMÉ DES 4 TESTS
+============================================================
