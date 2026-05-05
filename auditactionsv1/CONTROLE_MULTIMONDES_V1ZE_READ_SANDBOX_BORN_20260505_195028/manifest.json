@@ -1,0 +1,13 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZE_READ_SANDBOX_BORN",
+  "created_utc": "2026-05-05T19:50:28+00:00",
+  "source_sandbox": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZD_SANDBOX_PRECHECK_BORN_20260505_194846/sandbox_born_inputs",
+  "mode": "ast_read_only_no_import_no_execution_no_patch",
+  "rows": 4,
+  "counts": {
+    "CANDIDAT_EXECUTION_OFFLINE": 4
+  },
+  "first_candidate": "born_temps_validation.py",
+  "csv_sha256": "3d5d60ed723cdd278ab1f7d1555bdb0868ddc8a3507f20bb389c08e254ad2bc1",
+  "md_sha256": "86dc205015dab3f26891e3c7218a081d4f65d9425547c3a4e755976696c6f1cc"
+}
