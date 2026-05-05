@@ -1,0 +1,61 @@
+{
+  "version": "V1ZY_PHASE1_27D_PREPARE_SANDBOX",
+  "date_utc": "2026-05-05T22:37:52Z",
+  "script": "test_27d_4approches.py",
+  "script_sha256": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+  "sandbox": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/sandbox_27d_reexec",
+  "ast_method": "ast.parse + walk Constant str (aucun import, aucun exec)",
+  "extensions_scannees": [
+    ".csv",
+    ".json",
+    ".parquet",
+    ".pkl",
+    ".txt",
+    ".h5",
+    ".npy",
+    ".npz",
+    ".tsv",
+    ".feather"
+  ],
+  "indices_chemins": [
+    "data/",
+    "cache/",
+    "production/",
+    "voix_seragone_92/",
+    "canon/",
+    "inputs/",
+    "btc_",
+    "eth_",
+    "sol_",
+    "multivers",
+    "monde2",
+    "fear_greed",
+    "funding_rate",
+    "M2SL",
+    "dxy_",
+    "sp500_"
+  ],
+  "candidats_detectes": 2,
+  "copies": 2,
+  "manquants_optionnels": 0,
+  "refuses_proteges": 0,
+  "non_fichier": 0,
+  "results": [
+    {
+      "candidate": "couches_123_daily.csv",
+      "resolved": "/home/ubuntu/seragone/couches_123_daily.csv",
+      "status": "COPIED",
+      "dest": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/sandbox_27d_reexec/inputs/couches_123_daily.csv",
+      "sha256": "ae7def2ecce126d13e5a3a82f316cb126e963f9813f1e495f5d5a4ea11651fec",
+      "size": 239888
+    },
+    {
+      "candidate": "historique_27eq.csv",
+      "resolved": "/home/ubuntu/seragone/historique_27eq.csv",
+      "status": "COPIED",
+      "dest": "auditactionsv1/CONTROLE_MULTIMONDES_V1ZX_REEXEC_27D_20260505_223529/sandbox_27d_reexec/inputs/historique_27eq.csv",
+      "sha256": "550c948a5339e0483a0aa9d286ff2295e9bf0d2fc08fc1b628ad4cf6f4a045d8",
+      "size": 1836199
+    }
+  ]
+}

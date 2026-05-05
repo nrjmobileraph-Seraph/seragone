@@ -1,0 +1,108 @@
+{
+  "version": "V1ZY",
+  "type": "phase1_preparation_sandbox",
+  "date_utc": "2026-05-05T22:37:53Z",
+  "verdict": "V1ZY_PHASE1_27D_OK",
+  "ancrage_git": {
+    "head_au_lancement": "b2cca117c04dc5b654d2b445e91c10dd72fa5da6",
+    "v1zx_commit": "b2cca117",
+    "v1zw_commit": "4f2a18c3"
+  },
+  "candidat_27d": {
+    "script_source": "./test_27d_4approches.py",
+    "script_sandbox": "sandbox_27d_reexec/test_27d_4approches.py",
+    "sha256_canonique": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+    "taille_octets": 14220
+  },
+  "inputs_detection": {
+    "candidats_detectes": 2,
+    "copies": 2,
+    "manquants_optionnels": 0,
+    "refuses_proteges": 0
+  },
+  "sandbox_files_count": 3,
+  "sandbox_files": [
+    {
+      "path": "inputs/couches_123_daily.csv",
+      "sha256": "ae7def2ecce126d13e5a3a82f316cb126e963f9813f1e495f5d5a4ea11651fec",
+      "size": 239888,
+      "is_symlink": false
+    },
+    {
+      "path": "inputs/historique_27eq.csv",
+      "sha256": "550c948a5339e0483a0aa9d286ff2295e9bf0d2fc08fc1b628ad4cf6f4a045d8",
+      "size": 1836199,
+      "is_symlink": false
+    },
+    {
+      "path": "test_27d_4approches.py",
+      "sha256": "2debd5d63c04d64ca8311e7f316c282e5c1ba32b2ced8056334b9bd9364ae36f",
+      "size": 14220,
+      "is_symlink": false
+    }
+  ],
+  "diff_caches_vide": true,
+  "phase2_artefacts_absents": {
+    "stdout_full.log": true,
+    "stderr_full.log": true,
+    "returncode.txt": true,
+    "run_report.json": true
+  },
+  "interdits_v1zy_attestes": [
+    "aucune execution test_27d_4approches.py",
+    "aucun import Python du candidat",
+    "aucun broker",
+    "aucun cron",
+    "aucun systemd",
+    "aucun touch caches live",
+    "aucun symlink en sandbox",
+    "aucune copie de cache live ni de vrais_yeux.py",
+    "vrais_yeux.py INTOUCHABLE"
+  ],
+  "phase_seragone": "115 LIVE_TEST_TOTAL_EN_CAGE preservee",
+  "decision_weight": 0.0,
+  "doctrine_d12_marquage": "VALIDATED (sandbox prete) != INSTALLED != PRODUCTION_ACTIVE",
+  "fichiers": {
+    "phase1_signed.txt": {
+      "present": true,
+      "sha256": "79c64cf1ee377cf80982011106575624918219ab6f217cff13bd96c8bb1d275e",
+      "size": 71
+    },
+    "hashes_live_avant.sha256": {
+      "present": true,
+      "sha256": "20650894b2e6240dde08ee4a6ee5d9bf001563076ee973ab36a715babe72edcf",
+      "size": 675
+    },
+    "hashes_live_apres_phase1.sha256": {
+      "present": true,
+      "sha256": "06a1e088df0684b6774056afcdc940f8e1ab501337d0e59f7709159828634e5b",
+      "size": 675
+    },
+    "diff_phase1.txt": {
+      "present": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "sandbox_inventaire.txt": {
+      "present": true,
+      "sha256": "ec776d0c4a322ab4ba14e34a3bd1d0bf630f46c6e01e14703518f123a84cf0e9",
+      "size": 487
+    },
+    "sandbox_sha256.txt": {
+      "present": true,
+      "sha256": "418b392f406e0b382049e24606cd1228e6177faf71ba81174a27af1f0602426b",
+      "size": 283
+    },
+    "inputs_copied_manifest.json": {
+      "present": true,
+      "sha256": "bc8c10b9b6811053885954a4b7eee0f8f819437b4be691eeed4c289b57448340",
+      "size": 1723
+    },
+    "CONTROLE_MULTIMONDES_V1ZY_PHASE1_27D_PREPARE_SANDBOX.md": {
+      "present": true,
+      "sha256": "ae4365e2fc6150946aad43da296bd7993ea53a2053802097a728c5b6d282a860",
+      "size": 4561
+    }
+  },
+  "next_step_constraint": "git add/commit/push V1ZY seul, relecture, arbitrage Raphael sur inputs manquants, signature fraiche phase2_signed.txt avant redaction V1ZZ"
+}
