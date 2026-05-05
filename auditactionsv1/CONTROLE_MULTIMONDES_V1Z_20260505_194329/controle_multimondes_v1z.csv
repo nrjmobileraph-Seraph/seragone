@@ -1,0 +1,115 @@
+familles,script,ast,nb_imports,nb_functions,read_hits,write_hits,states_detectes,dangers_detectes,verdict
+MULTIVERS,_archives_windows_2026-04-19/multivers_v2 (1).py,OK,4,9,1,0,seragone_v3_final.csv,,TESTER_OFFLINE
+BRAINCHEF,_archives_windows_2026-04-19/seragone_brain (1).py,OK,13,17,4,5,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|state.json|taker_1min.db,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_brain_cwt (1).py,OK,8,16,5,3,STATE.JSON|brain_cwt_production.csv|btc_daily.csv|fear_greed_complet.csv|funding_rate_btc.csv|sp500_daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_brain_cwt (2).py,OK,8,17,6,3,STATE.JSON|brain_cwt_production.csv|btc_1min_90j.csv|btc_daily.csv|fear_greed_complet.csv|funding_rate_btc.csv|sp500_daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_brain_cwt (3).py,OK,8,18,6,3,STATE.JSON|brain_cwt_production.csv|btc_1min_90j.csv|btc_daily.csv|fear_greed_complet.csv|funding_rate_btc.csv|sp500_daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_brain_cwt (4).py,OK,9,18,6,3,STATE.JSON|brain_cwt_production.csv|btc_1min_90j.csv|btc_daily.csv|fear_greed_complet.csv|funding_rate_btc.csv|sp500_daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_brain_cwt (5).py,OK,9,18,6,3,STATE.JSON|brain_cwt_production.csv|btc_1min_90j.csv|btc_daily.csv|fear_greed_complet.csv|funding_rate_btc.csv|sp500_daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_brain_cwt (6).py,OK,9,18,6,3,STATE.JSON|brain_cwt_production.csv|btc_1min_90j.csv|btc_daily.csv|fear_greed_complet.csv|funding_rate_btc.csv|sp500_daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_brain_cwt (7).py,OK,9,18,6,3,STATE.JSON|brain_cwt_production.csv|btc_1min_90j.csv|btc_daily.csv|fear_greed_complet.csv|funding_rate_btc.csv|sp500_daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_brain_cwt (8).py,OK,12,17,5,5,btc_daily.csv|btc_daily_clean.csv|state.json|taker_1min.db,ORDER,NEPASBRANCHER
+BRAINCHEF,_archives_windows_2026-04-19/seragone_brain_v2 (1).py,OK,9,18,7,5,.csv|state.json,Binance,NEPASBRANCHER
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre (1).py,OK,13,14,2,2,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre (2).py,OK,13,14,2,2,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre (3).py,OK,13,14,2,2,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre (4).py,OK,17,18,5,2,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|fear_greed.csv|funding_rate_btc.csv|sp500_daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre (5).py,OK,17,18,5,2,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|fear_greed.csv|funding_rate_btc.csv|sp500_daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (1).py,OK,27,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (10).py,OK,36,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (11).py,OK,36,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (12).py,OK,36,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (13).py,OK,36,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (2).py,OK,28,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (3).py,OK,30,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (4).py,OK,32,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (5).py,OK,33,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (6).py,OK,33,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (7).py,OK,33,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (8).py,OK,35,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (9).py,OK,36,19,7,3,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|fear_greed.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|signaux_v13.csv|sp500_daily.csv|sp500daily.csv|state.json,,GARDER_CANON_DORMANT
+SUBDAILY,aggregate_subdaily.py,OK,2,3,2,1,.csv|min.csv,,GARDER_CANON_DORMANT
+BORN,backtest_born.py,OK,3,6,1,0,seragone_v3_final.csv,,TESTER_OFFLINE
+RECURSIFS,batch_mondes_recursifs.py,OK,9,5,4,3,btc_daily.csv|fear_greed_complet.csv|m.csv|seragone_4117j_complet.csv,,GARDER_CANON_DORMANT
+COMMUNICANTS,bootstrap_communicants.py,OK,5,1,2,3,modules_historique_complet.csv,,GARDER_CANON_DORMANT
+BORN,born_local.py,OK,3,1,1,0,seragone_v3_final.csv,,TESTER_OFFLINE
+BORN,born_recalibre.py,OK,3,1,1,0,seragone_v3_final.csv,,TESTER_OFFLINE
+"RECURSIFS,BORN",born_recursif.py,OK,4,0,4,1,btc_daily.csv|mondes_recursifs_20m.csv,,GARDER_CANON_DORMANT
+BORN,born_temps_live.py,OK,6,2,4,3,banc_27d_enrichi_v4.csv|born_temps_state.json,,GARDER_CANON_DORMANT
+BORN,born_temps_validation.py,OK,3,0,1,0,banc_27d_enrichi_v4.csv,,TESTER_OFFLINE
+CHAINES,chaines_epurees.py,OK,10,7,3,3,chaines_epurees_state.json|mondes_recursifs_20m.csv,,GARDER_CANON_DORMANT
+27D,mondes_27d_constructeur.py,OK,5,2,3,4,historique_27eq.csv,,GARDER_CANON_DORMANT
+27D,mondes_27d_v2.py,OK,5,1,3,2,couches_123_daily.csv|historique_27eq.csv,,GARDER_CANON_DORMANT
+AUTONOMES,mondes_autonomes.py,OK,11,3,3,3,mondes_autonomes_state.json|state.json,,GARDER_CANON_DORMANT
+COMMUNICANTS,mondes_communicants.py,OK,8,9,10,10,STATE.JSON|brisance_state.json|modules_historique_complet.csv|mondes_communicants_state.json|mondes_paralleles_state.json|multivers_state.json|recursif_v1_journal.csv|state.json,,GARDER_CANON_DORMANT
+PARALLELES,mondes_paralleles_adapter.py,OK,3,2,2,1,mondes_paralleles_state.json,,GARDER_CANON_DORMANT
+PARALLELES,mondes_paralleles_engine.py,OK,15,14,16,4,M2SL.csv|btc_active_addresses.csv|btc_daily.csv|btc_difficulty_daily.csv|btc_hashrate_daily.csv|btc_transactions_daily.csv|dxy_daily.csv|eth_daily.csv|funding_rate_btc.csv|mondes_paralleles_history.csv|mondes_paralleles_state.json|seragone_4117j_complet.csv|sous_signaux_18.csv|sous_signaux_18_complet.csv|sp500_daily.csv,,GARDER_CANON_DORMANT
+PARALLELES,mondes_paralleles_engine_v4_canon.py,OK,1,1,0,0,,,TESTER_OFFLINE
+PARALLELES,mondesparallelesengine.py,OK,1,0,0,0,,,TESTER_OFFLINE
+MULTIVERS,multivers_adapter.py,OK,3,6,2,1,multivers_state.json,,GARDER_CANON_DORMANT
+MULTIVERS,multivers_progressif.py,OK,6,15,4,3,multivers_state.json|seragone_4117j_complet.csv,,GARDER_CANON_DORMANT
+MULTIVERS,multivers_v2.py,OK,4,9,1,0,seragone_v3_final.csv,,TESTER_OFFLINE
+92MONDES,nourrir_92_mondes.py,OK,4,1,4,3,brisance_state.json|modules_historique_complet.csv|state.json,,GARDER_CANON_DORMANT
+CHAINES,phase55_selection_chaines_shadow.py,OK,5,6,6,4,phase51_outputs_a_controler.csv|phase51_outputs_exploitables_shadow.csv|phase51_resume_par_script.csv|phase55_chaines_prioritaires_shadow.csv|phase55_detail_outputs_familles.csv|phase55_resume_familles_shadow.csv|phase55_scripts_a_auditer_phase56.csv,binance,NEPASBRANCHER
+RECURSIFS,production/mondes/batch_mondes_recursifs.py,OK,9,5,4,3,btc_daily.csv|fear_greed_complet.csv|m.csv|seragone_4117j_complet.csv,,GARDER_CANON_DORMANT
+AUTONOMES,production/mondes/mondes_autonomes.py,OK,11,3,3,3,mondes_autonomes_state.json|state.json,,GARDER_CANON_DORMANT
+COMMUNICANTS,production/mondes/mondes_communicants.py,OK,8,9,10,10,STATE.JSON|brisance_state.json|modules_historique_complet.csv|mondes_communicants_state.json|mondes_paralleles_state.json|multivers_state.json|recursif_v1_journal.csv|state.json,,GARDER_CANON_DORMANT
+PARALLELES,production/mondes/mondes_paralleles_adapter.py,OK,3,2,2,1,mondes_paralleles_state.json,,GARDER_CANON_DORMANT
+PARALLELES,production/mondes/mondes_paralleles_engine.py,OK,11,13,17,7,M2SL.csv|btc_active_addresses.csv|btc_daily.csv|btc_difficulty_daily.csv|btc_hashrate_daily.csv|btc_transactions_daily.csv|dxy_daily.csv|eth_daily.csv|funding_rate_btc.csv|mondes_paralleles_history.csv|mondes_paralleles_state.json|seragone_4117j_complet.csv|sous_signaux_18.csv|sous_signaux_18_complet.csv|sp500_daily.csv,,GARDER_CANON_DORMANT
+MULTIVERS,production/mondes/multivers_v2.py,OK,4,9,1,0,seragone_v3_final.csv,,TESTER_OFFLINE
+BRAINCHEF,production/moteurs/seragone_brain.py,OK,9,16,3,3,.csv|state.json,binance,NEPASBRANCHER
+BRAINCHEF,production/moteurs/seragone_brain_cwt.py,OK,12,17,5,5,btc_daily.csv|btc_daily_clean.csv|state.json|taker_1min.db,ORDER,NEPASBRANCHER
+BRAINCHEF,production/orchestration/seragone_chef_orchestre.py,OK,12,19,2,2,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,production/orchestration/seragone_chef_orchestre_v1_state.py,OK,43,19,19,15,STATE.JSON|born_temps_state.json|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|chaines_epurees_state.json|chronometer_state.json|cycle_state.json|exhaustion_state.json|fear_greed.csv|fear_greed_complet.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|mondes_autonomes_state.json|mondes_communicants_state.json|nc_state.json|portance_state.json|q_jour_state.json|signaux_v13.csv|sp500_daily.csv|sp500daily.csv,,GARDER_CANON_DORMANT
+SUBDAILY,production/orchestration/subdaily_runner.py,OK,9,3,6,5,binance_oi_btcusdt_daily.csv|funding_rate_btc.csv|klines_1min.db|subdaily_state.json,ORDER|binance,NEPASBRANCHER
+27D,provinces_27d_live.py,OK,10,6,13,10,banc_27d_enrichi_v4.csv|exhaustion_state.json|portance_state.json|state.json,,GARDER_CANON_DORMANT
+RECURSIFS,recursif_nc_bridge.py,OK,5,6,7,5,nc_state.json|recursif_nc_journal.csv|recursif_v1_journal.csv,,GARDER_CANON_DORMANT
+RECURSIFS,recursif_v1_signal.py,OK,9,8,5,2,btc_daily.csv|mondes_recursifs_100m.csv|recursif_v1_journal.csv,Kraken|Pionex,NEPASBRANCHER
+BORN,research/backtest_born.py,OK,3,6,1,0,seragone_v3_final.csv,,TESTER_OFFLINE
+27D,research/test_27d_4approches.py,OK,5,2,2,0,couches_123_daily.csv|historique_27eq.csv,,TESTER_OFFLINE
+BRAINCHEF,seragone_brain.py,OK,9,16,3,3,.csv|state.json,binance,NEPASBRANCHER
+BRAINCHEF,seragone_brain_cwt.py,OK,12,17,5,5,btc_daily.csv|btc_daily_clean.csv|state.json|taker_1min.db,ORDER,NEPASBRANCHER
+BRAINCHEF,seragone_brain_cwt_PRODUCTION_VPS.py,OK,9,18,6,3,STATE.JSON|brain_cwt_production.csv|btc_1min_90j.csv|btc_daily.csv|fear_greed_complet.csv|funding_rate_btc.csv|sp500_daily.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,seragone_brain_v2.py,OK,9,18,5,4,.csv|state.json,Binance,NEPASBRANCHER
+BRAINCHEF,seragone_brain_v3.py,OK,8,14,4,1,btc_daily.csv|fear_greed_complet.csv|funding_rate_btc.csv|seragone_brain_v3_results.csv|sp500_daily.csv,order,NEPASBRANCHER
+BRAINCHEF,seragone_chef_orchestre.py,OK,12,19,2,2,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|state.json,,GARDER_CANON_DORMANT
+BRAINCHEF,seragone_chef_orchestre_v1_state.py,OK,44,19,19,15,STATE.JSON|born_temps_state.json|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|btcdaily.csv|btcdailyclean.csv|btcusd.csv|chaines_epurees_state.json|chronometer_state.json|cycle_state.json|exhaustion_state.json|fear_greed.csv|fear_greed_complet.csv|feargreed.csv|funding_rate_btc.csv|fundingratebtc.csv|mondes_autonomes_state.json|mondes_communicants_state.json|nc_state.json|portance_state.json|q_jour_state.json|signaux_v13.csv|sp500_daily.csv|sp500daily.csv,,GARDER_CANON_DORMANT
+BRAINCHEF,seragone_chef_orchestre_v2_state.py,OK,17,18,5,2,STATE.JSON|btc_daily.csv|btc_daily_clean.csv|btc_usd.csv|fear_greed.csv|funding_rate_btc.csv|sp500_daily.csv|state.json,,GARDER_CANON_DORMANT
+SUBDAILY,subdaily_pipeline.py,OK,3,6,1,3,min.csv,,GARDER_CANON_DORMANT
+SUBDAILY,subdaily_runner.py,OK,9,3,6,5,binance_oi_btcusdt_daily.csv|funding_rate_btc.csv|klines_1min.db|subdaily_state.json,ORDER|binance,NEPASBRANCHER
+PARALLELES,t_import_mondes_paralleles.py,FAIL,0,0,6,6,,,A_REVOIR_HUMAIN
+27D,test_27d_4approches.py,OK,5,2,2,0,couches_123_daily.csv|historique_27eq.csv,,TESTER_OFFLINE
+PARALLELES,test_import_mondes_paralleles.py,OK,2,0,0,0,,,TESTER_OFFLINE
+92MONDES,voix_seragone_92/adapter_seragone_92.py,OK,6,10,3,0,ajustement_combine_resultats.csv|base_propre_survivants.csv|eq22_historique.csv|modules_historique_complet.csv,,TESTER_OFFLINE
+92MONDES,voix_seragone_92/ajustement_piste3.py,OK,4,4,3,1,ajustement_piste3_resultats.csv|comparaison_V9_vs_Seragone92.csv|fear_greed_complet.csv|modules_historique_complet.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/analyse_inversion_short.py,OK,3,0,2,1,analyse_inversion_short.csv|base_propre_survivants.csv|etiquetage_chutes.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/comparaison_toutes_approches.py,OK,3,2,5,1,comparaison_V9_vs_Seragone92.csv|comparaison_toutes_approches.csv|modules_historique_complet.csv|regle_raphael_resultats.csv|regle_raphael_v2_resultats.csv|regle_raphael_v3_finale.csv|signal_baisse_raphael_V9.csv|simulation_guardian_dynamique.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/comparaison_v9_sizing_final.py,OK,3,2,1,1,comparaison_V9_vs_Seragone92.csv|comparaison_v9_sizing_final.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/comparaison_v9_sizing_seragone.py,OK,3,2,2,1,comparaison_V9_vs_Seragone92.csv|comparaison_V9_vs_sizing_seragone.csv|signal_baisse_raphael_V9.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/compare_v9_vs_seragone92.py,OK,5,0,2,1,comparaison_V9_vs_Seragone92.csv|modules_historique_complet.csv|signal_baisse_raphael_V9.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/crash_guard_test.py,OK,3,5,1,1,crash_guard_test.csv|signal_baisse_raphael_V9.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/diag_avril_2024.py,OK,4,3,3,0,comparaison_V9_vs_Seragone92.csv|fear_greed_complet.csv|modules_historique_complet.csv,,TESTER_OFFLINE
+92MONDES,voix_seragone_92/diag_nc_engine_labels.py,OK,3,1,3,0,comparaison_V9_vs_Seragone92.csv|modules_historique_complet.csv|nc_history_complet.csv,,TESTER_OFFLINE
+92MONDES,voix_seragone_92/diag_nc_vs_V9.py,OK,5,3,6,0,bear40_historique.csv|early_warning_omori.csv|modules_historique_complet.csv|nc_history_complet.csv|signal_baisse_raphael.csv|signal_baisse_raphael_V9.csv,,TESTER_OFFLINE
+92MONDES,voix_seragone_92/diag_nouveaux_modules.py,OK,2,0,6,0,.csv|bear40_historique.csv|binance_oi_btcusdt_daily.csv|derives_history.csv|derives_state.json|early_warning_omori.csv|features_22_historique.csv|funding_rate.csv|funding_rate_btc.csv|nc_history_complet.csv|open_interest.csv|signal_baisse_raphael_V9.csv|signal_baisse_raphael_V9_5.csv,Binance|binance,NEPASBRANCHER
+92MONDES,voix_seragone_92/diagnostic_nc_seuils_glissants.py,OK,3,2,1,1,diagnostic_nc_seuils_glissants.csv|nc_history_complet.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/gardien_silencieux_backtest.py,OK,5,2,2,1,gardien_silencieux_backtest.csv|modules_historique_complet.csv|signal_baisse_raphael_V9.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/horloge_phi_modulation_v9.py,OK,4,4,1,1,horloge_phi_modulation_v9.csv|signal_baisse_raphael_V9.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/journees_des_tireurs.py,OK,3,8,2,1,bear40_historique.csv|comparaison_V9_vs_Seragone92.csv|journees_des_tireurs.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/mesure_reelle_seragone_trades.py,OK,3,3,1,3,comparaison_V9_vs_Seragone92.csv|trades_seragone_basic_complet.csv|trades_seragone_premium_complet.csv|trades_seragone_snipers_complet.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/mesure_village_complet.py,OK,4,2,3,1,comparaison_V9_vs_Seragone92.csv|fear_greed_complet.csv|modules_historique_complet.csv|village_complet.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/moteur_alerte_top_test.py,OK,3,2,4,1,fear_greed.csv|fear_greed_complet.csv|funding_rate_btc.csv|moteur_alerte_top_test.csv|signal_baisse_raphael_V9.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/nc_dyn_vs_v9.py,OK,3,2,2,1,nc_dyn_vs_v9.csv|nc_history_complet.csv|signal_baisse_raphael_V9.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/ou_gagnent_92_mondes.py,OK,3,2,3,1,ajustement_combine_resultats.csv|comparaison_V9_vs_Seragone92.csv|etiquetage_chutes.csv|ou_gagnent_92_mondes.csv|seragone_92_historique.csv|signal_baisse_raphael_V9.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/ou_gagnent_92_mondes_v2.py,OK,3,2,1,1,comparaison_V9_vs_Seragone92.csv|ou_gagnent_92_mondes.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/simulation_finale_v9_seragone_guardian.py,OK,5,4,2,0,comparaison_V9_vs_Seragone92.csv|modules_historique_complet.csv,,TESTER_OFFLINE
+92MONDES,voix_seragone_92/simulation_guardian_dynamique.py,OK,6,7,3,1,comparaison_V9_vs_Seragone92.csv|early_warning_omori.csv|modules_historique_complet.csv|simulation_guardian_dynamique.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/test_regle_raphael.py,OK,4,9,3,1,comparaison_V9_vs_Seragone92.csv|fear_greed_complet.csv|modules_historique_complet.csv|regle_raphael_resultats.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/test_regle_raphael_v2.py,OK,4,4,3,1,comparaison_V9_vs_Seragone92.csv|fear_greed_complet.csv|modules_historique_complet.csv|regle_raphael_v2_resultats.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/test_regle_raphael_v3.py,OK,4,4,3,1,comparaison_V9_vs_Seragone92.csv|fear_greed_complet.csv|modules_historique_complet.csv|regle_raphael_v3_finale.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/test_regle_v2G.py,OK,4,4,3,0,comparaison_V9_vs_Seragone92.csv|fear_greed_complet.csv|modules_historique_complet.csv,,TESTER_OFFLINE
+92MONDES,voix_seragone_92/test_v2G10j_15crashs.py,OK,4,6,4,1,comparaison_V9_vs_Seragone92.csv|early_warning_omori.csv|fear_greed_complet.csv|modules_historique_complet.csv|v2G10j_vs_15crashs.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/test_v2G_fenetres.py,OK,4,4,3,0,comparaison_V9_vs_Seragone92.csv|fear_greed_complet.csv|modules_historique_complet.csv,,TESTER_OFFLINE
+92MONDES,voix_seragone_92/tir_quotidien_leviers.py,OK,3,3,2,1,bear40_historique.csv|comparaison_V9_vs_Seragone92.csv|tir_quotidien_leviers.csv,,GARDER_CANON_DORMANT
+92MONDES,voix_seragone_92/trading_quotidien_seragone.py,OK,3,2,1,1,comparaison_V9_vs_Seragone92.csv|trading_quotidien_seragone.csv,,GARDER_CANON_DORMANT
+SUBDAILY,vrais_yeux_subdaily.py,OK,4,5,1,1,,,TESTER_OFFLINE

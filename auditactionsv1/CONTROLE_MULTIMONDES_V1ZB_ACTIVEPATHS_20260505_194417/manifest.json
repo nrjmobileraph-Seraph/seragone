@@ -1,0 +1,28 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZB_ACTIVEPATHS",
+  "created_utc": "2026-05-05T19:44:17+00:00",
+  "source": "auditactionsv1/CONTROLE_MULTIMONDES_V1Z_20260505_194329/controle_multimondes_v1z.csv",
+  "mode": "csv_filter_only_no_script_read_no_runtime_no_patch",
+  "rows": 85,
+  "verdicts": {
+    "GARDER_CANON_DORMANT": 53,
+    "TESTER_OFFLINE": 20,
+    "NEPASBRANCHER": 11,
+    "A_REVOIR_HUMAIN": 1
+  },
+  "families": {
+    "SUBDAILY": 5,
+    "BORN": 7,
+    "RECURSIFS": 5,
+    "COMMUNICANTS": 3,
+    "CHAINES": 2,
+    "27D": 5,
+    "AUTONOMES": 2,
+    "PARALLELES": 8,
+    "MULTIVERS": 4,
+    "92MONDES": 33,
+    "BRAINCHEF": 12
+  },
+  "csv_sha256": "79c5096ca41d694bd3bad3e7d4a6b6c512ffef0222e0066348dcfec7ac1f8bc7",
+  "md_sha256": "9a52d39fa3eef6b40c96d8bde8bcf09acb25535a2cebd51b2f293aa59bf09753"
+}

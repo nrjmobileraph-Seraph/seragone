@@ -1,0 +1,28 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1Z",
+  "created_utc": "2026-05-05T19:43:31Z",
+  "mode": "readonly_ast_no_import_no_runtime_no_patch",
+  "csv": "auditactionsv1/CONTROLE_MULTIMONDES_V1Z_20260505_194329/controle_multimondes_v1z.csv",
+  "md": "auditactionsv1/CONTROLE_MULTIMONDES_V1Z_20260505_194329/CONTROLE_MULTIMONDES_V1Z.md",
+  "csv_sha256": "0b7333251f47924dc110847552bbc65c13b43c1c88fa21d16d124b751c553561",
+  "rows": 114,
+  "verdicts": {
+    "TESTER_OFFLINE": 21,
+    "GARDER_CANON_DORMANT": 79,
+    "NEPASBRANCHER": 13,
+    "A_REVOIR_HUMAIN": 1
+  },
+  "families": {
+    "MULTIVERS": 5,
+    "BRAINCHEF": 40,
+    "SUBDAILY": 5,
+    "BORN": 7,
+    "RECURSIFS": 5,
+    "COMMUNICANTS": 3,
+    "CHAINES": 2,
+    "27D": 5,
+    "AUTONOMES": 2,
+    "PARALLELES": 8,
+    "92MONDES": 33
+  }
+}
