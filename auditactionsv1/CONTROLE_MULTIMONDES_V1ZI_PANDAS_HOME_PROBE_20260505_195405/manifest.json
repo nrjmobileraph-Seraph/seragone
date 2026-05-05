@@ -1,0 +1,6 @@
+{
+  "type": "CONTROLE_MULTIMONDES_V1ZI_PANDAS_HOME_PROBE",
+  "created_utc": "2026-05-05T19:54:06+00:00",
+  "mode": "env_probe_only_no_born_execution_no_patch",
+  "md_sha256": "52cf7c56bc5ba7c2229748a66c0930a293bc10898728f7de3dfac82c6328cabc"
+}
