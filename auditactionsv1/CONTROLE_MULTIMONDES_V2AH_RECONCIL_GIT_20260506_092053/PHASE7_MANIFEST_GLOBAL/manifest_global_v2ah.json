@@ -1,0 +1,112 @@
+{
+  "tag": "V2AH_RECONCIL_GIT_MANIFEST_GLOBAL",
+  "verdict_chaine_finale_nette": "V2AH_RECONCIL_GIT_OK",
+  "verdict_parcours_complet": "V2AH_PARCOURS_7FINALES_3TENTATIVES",
+  "date_utc": "2026-05-06T10:02:10.791288+00:00",
+  "context": "Reconciliation Git suite chaine transverse runtime V2AB-V2AG (6 mai 2026 matin). 7 phases finales effectives + 3 tentatives intermediaires tracees pour transparence. HEAD local <-> origin/main synchronises, vrais_yeux preserve, 9 ancetres 27D conserves.",
+  "phases_finales_count": 7,
+  "phases_finales_ok": 7,
+  "phases_supersedees_count": 3,
+  "phases_finales": [
+    {
+      "phase": "PHASE0_PRECHECK",
+      "status": "FINALE_EFFECTIVE",
+      "superseded_by": null,
+      "verdict": "V2AH_PHASE0_PRECHECK_OK",
+      "tag": "V2AH_PHASE0_PRECHECK",
+      "head_ref": ""
+    },
+    {
+      "phase": "PHASE1_FETCH",
+      "status": "FINALE_EFFECTIVE",
+      "superseded_by": null,
+      "verdict": "V2AH_PHASE1_FETCH_OK",
+      "tag": "V2AH_PHASE1_FETCH",
+      "head_ref": ""
+    },
+    {
+      "phase": "PHASE2_FASTFORWARD",
+      "status": "FINALE_EFFECTIVE",
+      "superseded_by": null,
+      "verdict": "V2AH_PHASE2_FASTFORWARD_OK",
+      "tag": "V2AH_PHASE2_FASTFORWARD",
+      "head_ref": "dce573d86eefaae93e08ea17c0616c10ce8db13c"
+    },
+    {
+      "phase": "PHASE3BIS_RESET_RECOMMIT",
+      "status": "FINALE_EFFECTIVE",
+      "superseded_by": null,
+      "verdict": "V2AH_PHASE3_COMMITS_OK_CLEAN",
+      "tag": "V2AH_PHASE3BIS_RESET_RECOMMIT",
+      "head_ref": "5d66f386bd3b7da3b226affaba797e24cc3d8ff0"
+    },
+    {
+      "phase": "PHASE4_COMMIT_MPE",
+      "status": "FINALE_EFFECTIVE",
+      "superseded_by": null,
+      "verdict": "V2AH_PHASE4_COMMIT_MPE_OK",
+      "tag": "V2AH_PHASE4_COMMIT_MPE",
+      "head_ref": "962b11eb796bfe1fe30f208d8a11e0d06bee8df7"
+    },
+    {
+      "phase": "PHASE5_CLEAN_BAK",
+      "status": "FINALE_EFFECTIVE",
+      "superseded_by": null,
+      "verdict": "V2AH_PHASE5_CLEAN_BAK_OK",
+      "tag": "V2AH_PHASE5_CLEAN_BAK",
+      "head_ref": ""
+    },
+    {
+      "phase": "PHASE6TER_RETRY_PUSH_POST_UNBLOCK",
+      "status": "FINALE_EFFECTIVE",
+      "superseded_by": null,
+      "verdict": "V2AH_PHASE6TER_PUSH_OK",
+      "tag": "V2AH_PHASE6TER_RETRY_PUSH_POST_UNBLOCK",
+      "head_ref": "5e9a13df5650f37bd366dd1d22a28eade50043b2"
+    }
+  ],
+  "phases_supersedees": [
+    {
+      "phase": "PHASE3_COMMITS",
+      "status": "SUPERSEDEE_MAIS_TRACEE",
+      "superseded_by": "PHASE3BIS_RESET_RECOMMIT",
+      "verdict": "V2AH_PHASE3_PARTIAL_6_de_7",
+      "tag": "V2AH_PHASE3_COMMITS",
+      "head_ref": "d8d11d768c3219282473ee9c4e69b22744708440"
+    },
+    {
+      "phase": "PHASE6BIS_RETRY_PUSH",
+      "status": "SUPERSEDEE_MAIS_TRACEE",
+      "superseded_by": "PHASE6TER_RETRY_PUSH_POST_UNBLOCK",
+      "verdict": "V2AH_PHASE6BIS_PUSH_OK",
+      "tag": "V2AH_PHASE6BIS_RETRY_PUSH",
+      "head_ref": "0d91ca764e7ade1d2d43bbe8f38740b0a9601056"
+    },
+    {
+      "phase": "PHASE6_PUSH",
+      "status": "SUPERSEDEE_MAIS_TRACEE",
+      "superseded_by": "PHASE6TER_RETRY_PUSH_POST_UNBLOCK",
+      "verdict": "V2AH_PHASE6_BLOQUE_NON_SYNCED",
+      "tag": "V2AH_PHASE6_PUSH",
+      "head_ref": "962b11eb796bfe1fe30f208d8a11e0d06bee8df7"
+    }
+  ],
+  "head_local_final": "5e9a13df5650f37bd366dd1d22a28eade50043b2",
+  "origin_main_final": "5e9a13df5650f37bd366dd1d22a28eade50043b2",
+  "synced": true,
+  "vrais_yeux_inchange": true,
+  "ancetres_27d_ok": true,
+  "incidents_resolus": [
+    "Token GitHub PAT ghp_LcNK revoque a 08:30 UTC apres detection en clair dans /tmp/push_bulletin.sh",
+    "Backup local /tmp/push_bulletin.sh.bak.20260506_083001 supprime (Phase 5)",
+    "3 bugs assistant Phase 6/6-bis: git pull -m non supporte, NB_CONFLICT pollu par || echo 0, exit 1 fermant SSH (corriges Phase 6-ter)",
+    "GitHub Push Protection sur ancien token detecte dans commit 40d572ac path V2ACBIS/push_bulletin_sh_content.txt - resolu Option delta",
+    "bulletin_mobile.json modifie en continu par cron update_live.py - gere par checkout HEAD avant chaque merge"
+  ],
+  "retombees_chaines_futures": [
+    "V2AG-bis: rectifier inscription cage statique (14 inscrits != 9 reels) + sortir data/communicants_history.json du perimetre P1",
+    "V2AG-ter: caviarder ancien token revoque dans push_bulletin_sh_content.txt commit 40d572ac",
+    "V2AI_CHANTIER6_VILLAGE: reprise (doublon village_le_vrai.py vs village_le_vrai_vps.py sha 19055958)",
+    "V2AJ_HARDENING_API_DASHBOARD: audit transitif production.utils.config_manager + firewall port 5000"
+  ]
+}
