@@ -1,0 +1,76 @@
+{
+  "tag": "V2AB_PRECHECK_CHANTIER6_VILLAGE_RUNTIME",
+  "chantier": 6,
+  "chantier_name": "Village runtime",
+  "verdict": "V2AB_PRECHECK_CHANTIER6_VILLAGE_OK_IDENTIFIE_CANONIQUE",
+  "head_actual": "782a6f70bb5c9641fa3cc91d7b8df0212af01e8c",
+  "head_short": "782a6f70",
+  "vrais_yeux_sha256_actual": "f8de03b6025d5a9fddbd9e9cfc69ac342e9f26e651e9be57a876910c499e5850",
+  "vrais_yeux_intouche": true,
+  "vrais_yeux_mtime": "2026-04-05 22:45:53.784275696 +0000",
+  "diff_caches_bytes": 0,
+  "non_pollution": true,
+  "phase115_preserved": true,
+  "decision_weight_0_0_preserved": true,
+  "candidats_village_total": 14,
+  "candidats_village_presents": 14,
+  "candidats_village_absents": [],
+  "groupes_uniques": 13,
+  "groupes_doublons": {
+    "190559583954d8cbeba64efe106b822fb721dbd8dfd8cca49096dbd3fc58c5aa": [
+      "village_le_vrai.py",
+      "village_le_vrai_vps.py"
+    ]
+  },
+  "symlinks_count": 0,
+  "processus_village_actifs": 0,
+  "ancrages_chaine_27d": [
+    "4f2a18c3 V1ZW",
+    "b2cca117 V1ZX",
+    "ad7afa27 V1ZY",
+    "cd39ea2b V1ZY-bis",
+    "717f9c8c V1ZZ",
+    "ecdaa401 V1ZZ-bis",
+    "5e84ac3e V1ZY-ter",
+    "9a9df26b V1ZZ-ter",
+    "782a6f70 V2AA"
+  ],
+  "ancetres_ko_count": 0,
+  "interdits_respectes": {
+    "aucun_import_cible": true,
+    "aucune_execution_cible": true,
+    "aucun_touch_cache_live": true,
+    "aucun_broker": true,
+    "aucun_cron_systemd_invoque": true,
+    "vraisyeux_intouchable": true,
+    "phase_115_preservee": true,
+    "decision_weight_0_0": true
+  },
+  "artefacts": [
+    "CONTROLE_MULTIMONDES_V2AB_PRECHECK_CHANTIER6_VILLAGE.md",
+    "caches_live_apres.sha256",
+    "caches_live_avant.sha256",
+    "diff_caches_v2ab.txt",
+    "doublons_groups.json",
+    "imports_graph.txt",
+    "sha256_candidats_village.txt",
+    "stat_candidats_village.txt",
+    "state_logs_inventory.txt",
+    "symlinks_check.txt",
+    "verdict.txt"
+  ],
+  "artefacts_sha256": {
+    "CONTROLE_MULTIMONDES_V2AB_PRECHECK_CHANTIER6_VILLAGE.md": "d5fb5a7440ee2abc270f0de9720d39edce51a17ae84e31c2a051b8b65e071d58",
+    "caches_live_apres.sha256": "e62e5806b9c990ed44dbbd40fc9a4aa13e1103addb070a5fe53b81b2c1080535",
+    "caches_live_avant.sha256": "e62e5806b9c990ed44dbbd40fc9a4aa13e1103addb070a5fe53b81b2c1080535",
+    "diff_caches_v2ab.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "doublons_groups.json": "c32e215b4ce6cd674689222233628cbdacf6f4345b0da27ef0f23ff858de07d2",
+    "imports_graph.txt": "87a0947498d81675915b3378ccfcffd96cfea8d3798c054ee4ccd9e0370fe016",
+    "sha256_candidats_village.txt": "4bb40c98243437145b38351c5d2c379ad381655862669376b657bc3467bef36e",
+    "stat_candidats_village.txt": "d62f4343ed6ef4985c35913f3a0d7ee5b200f9473fc1b82c4dfe9d95c509387b",
+    "state_logs_inventory.txt": "aa030f649bb65d742dc3592258f8d8d58fd678b1ae15cbc8e9067afdae116236",
+    "symlinks_check.txt": "85c338bdb05fff9972914b90a5c0b5c226178e924c3f51dc9260504db931f324",
+    "verdict.txt": "5973c513797841a8e4872d84acc5abfad4b828397683d3fb6f10ad95b240c284"
+  },
+  "next_step": "V2AC decret PLAN_ONLY signable, doit trancher la paire village_le_vrai.py == village_le_vrai_vps.py (meme sha256)"
+}

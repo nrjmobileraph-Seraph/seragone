@@ -1,0 +1,12 @@
+# village*_state.json / *village*.json
+# *village*.log
+# bulletins/ (existence seule)
+drwxrwxr-x 2 ubuntu ubuntu 4096 Apr 25 09:00 bulletins
+# state/ (existence seule)
+drwxrwxr-x 2 ubuntu ubuntu 4096 Apr 19 23:29 state
+# states/ (existence seule)
+drwxrwxr-x 5 ubuntu ubuntu 12288 May  6 07:49 states
+# qg_village / recalibre
+-rw-rw-r-- 1 ubuntu ubuntu 12464 Apr  5 22:45 qg_village_recalibre.py
+# processus village vivants
+(aucun processus village/qg_village detecte)

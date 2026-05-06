@@ -1,0 +1,2 @@
+# symlinks parmi candidats
+# symlinks village* globale (maxdepth 2)

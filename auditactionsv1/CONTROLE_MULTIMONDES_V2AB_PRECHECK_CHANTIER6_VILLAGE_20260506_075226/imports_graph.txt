@@ -1,0 +1,42 @@
+village_des_mondes.py
+  village_related: []
+  total_imports: 4
+village_final.py
+  village_related: []
+  total_imports: 3
+village_le_vrai.py
+  village_related: []
+  total_imports: 3
+village_le_vrai_vps.py
+  village_related: []
+  total_imports: 3
+village_pilotage_v1.py
+  village_related: []
+  total_imports: 1
+village_reel_adapter.py
+  village_related: []
+  total_imports: 3
+village_regles.py
+  village_related: []
+  total_imports: 0
+village_simulation.py
+  village_related: ['village_regles']
+  total_imports: 9
+village_adapter.py
+  village_related: []
+  total_imports: 3
+qg_village_recalibre.py
+  village_related: []
+  total_imports: 5
+bridge_queues_village.py
+  village_related: []
+  total_imports: 8
+adapter_ricochet_village.py
+  village_related: ['ricochet_regimes']
+  total_imports: 1
+backtest_village_v2.py
+  village_related: []
+  total_imports: 4
+backtest_village_v2_vps.py
+  village_related: []
+  total_imports: 4

@@ -1,0 +1,12 @@
+{
+  "total_candidats": 14,
+  "presents": 14,
+  "absents": [],
+  "groupes_uniques": 13,
+  "groupes_doublons": {
+    "190559583954d8cbeba64efe106b822fb721dbd8dfd8cca49096dbd3fc58c5aa": [
+      "village_le_vrai.py",
+      "village_le_vrai_vps.py"
+    ]
+  }
+}
