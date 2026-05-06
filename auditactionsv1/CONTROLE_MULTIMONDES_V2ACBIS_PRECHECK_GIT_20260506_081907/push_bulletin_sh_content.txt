@@ -1,5 +1,5 @@
 #!/bin/bash
-TOKEN="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"
+TOKEN="ghp_***REDACTED_REVOKED_2026-05-06_08-30-UTC_voir_V2AG_TER_CORRECTIF***"
 REPO="nrjmobileraph-Seraph/seragone"
 FILE="bulletin_mobile.json"
 CONTENT=$(base64 -w0 /var/www/html/bulletin_mobile.json)

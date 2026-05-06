@@ -1,0 +1,16 @@
+{
+  "tag": "V2AG_TER_CORRECTIF",
+  "verdict": "V2AG_TER_CORRECTIF_KO_RESTE_5_OCCURRENCES",
+  "annule_et_remplace_commit": "fe97428d",
+  "raison": "Le commit fe97428d avait un caviardage echoue silencieusement (regex sed sans guillemet) et un backup qui contenait aussi le token. Subject commit fige en OK alors que manifest disait KO.",
+  "date_utc": "2026-05-06T11:33:57.596998+00:00",
+  "nb_occurrences_token_apres_correctif": 5,
+  "token_absent_du_working_tree": false,
+  "fichiers_caviardes": [
+    "auditactionsv1/CONTROLE_MULTIMONDES_V2ACBIS_PRECHECK_GIT_20260506_081907/push_bulletin_sh_content.txt",
+    "auditactionsv1/CONTROLE_MULTIMONDES_V2AG_TER_CAVIARDAGE_TOKEN_*/push_bulletin_sh_content_AVANT_caviardage.backup"
+  ],
+  "historique_git_intact": "Commits 40d572ac (V2ACBIS) et fe97428d (V2AG-ter rate) restent dans l'historique avec le token original. Inoffensifs car token revoque depuis 08:30 UTC. Visibles via git show.",
+  "vrais_yeux_inchange": true,
+  "type": "caviardage_documentaire_correctif"
+}
