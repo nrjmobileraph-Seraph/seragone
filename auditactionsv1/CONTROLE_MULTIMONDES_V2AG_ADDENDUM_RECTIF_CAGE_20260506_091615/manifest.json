@@ -1,0 +1,113 @@
+{
+  "tag": "V2AG_ADDENDUM_RECTIF_CAGE",
+  "verdict": "V2AG_ADDENDUM_RECTIF_CAGE_OK",
+  "type": "ADDENDUM_DOCUMENTAIRE_META_RECTIFICATION",
+  "date_utc": "2026-05-06T09:16:15.703117+00:00",
+  "head_actual": "782a6f70bb5c9641fa3cc91d7b8df0212af01e8c",
+  "vrais_yeux_sha256": "f8de03b6025d5a9fddbd9e9cfc69ac342e9f26e651e9be57a876910c499e5850",
+  "ne_mute_pas_commits_anciens": true,
+  "principe": "complement par commit additionnel meta-rectification, pas reecriture",
+  "commits_concernes_chaine_27d": [
+    {
+      "sha": "4f2a18c3",
+      "tag": "V1ZW",
+      "verdict": "V1ZW_PRECHECK_27D_OK_IDENTIQUE_PRET_DECRET"
+    },
+    {
+      "sha": "b2cca117",
+      "tag": "V1ZX",
+      "verdict": "V1ZX_DECRET_READY_NOEXEC"
+    },
+    {
+      "sha": "ad7afa27",
+      "tag": "V1ZY",
+      "verdict": "V1ZY_PHASE1_27D_OK"
+    },
+    {
+      "sha": "cd39ea2b",
+      "tag": "V1ZY-bis",
+      "verdict": "V1ZYBIS_27D_OK_DEPENDANCES_FERMEES_PRET_V1ZZ"
+    },
+    {
+      "sha": "717f9c8c",
+      "tag": "V1ZZ",
+      "verdict": "V1ZZ_PHASE2_27D_EXEC_NONZERO"
+    },
+    {
+      "sha": "ecdaa401",
+      "tag": "V1ZZ-bis",
+      "verdict": "V1ZZBIS_PHASE2BIS_27D_EXEC_NONZERO"
+    },
+    {
+      "sha": "5e84ac3e",
+      "tag": "V1ZY-ter",
+      "verdict": "V1ZYTER_PHASE1TER_27D_LAYOUT_OK_PRET_V1ZZTER"
+    },
+    {
+      "sha": "9a9df26b",
+      "tag": "V1ZZ-ter",
+      "verdict": "V1ZZTER_PHASE2TER_27D_EXEC_OK"
+    },
+    {
+      "sha": "782a6f70",
+      "tag": "V2AA",
+      "verdict": "V2AA_PHASE3_27D_CLOTURE_OK"
+    }
+  ],
+  "formule_originale_a_rectifier": "Phase 115 LIVE_TEST_TOTAL_EN_CAGE preservee, decision_weight=0.0 preservee",
+  "formule_rectifiee": "Phase 115 LIVE_TEST_AUDIT_STATIQUE_DANS_RUNTIME_ACTIF preservee, runtime non gele, cage statique seule attestee mecaniquement, decision_weight=0.0 dans verdict statique fige (non verifie a l'execution dans les daemons vivants)",
+  "preuves_mecaniques_runtime_actif": {
+    "source": "V2AC PRECHECK_RUNTIME",
+    "daemons_vivants_count": 6,
+    "daemons": [
+      "seragone_brain.py 17j",
+      "collecteur_1min.py 12j",
+      "brisance.py 8j14h",
+      "production/execution/api.py 4j23h",
+      "sentinelle_seragone.py 1j",
+      "securite_seragone.py 1j"
+    ],
+    "timer_systemd_actif_depuis": "2026-04-01 11:00:41 UTC (35 jours au moment de V2AC)",
+    "crontab_entries_actives": 81,
+    "lsof_writes_handles": 25
+  },
+  "preuves_mecaniques_git_pollue": {
+    "source": "V2AC' PRECHECK_GIT",
+    "commits_auto_total": 16091,
+    "commits_auto_depuis_v2aa": 497,
+    "premier_auto": {
+      "sha": "8c001d69",
+      "date": "2026-04-15 19:50:01 UTC"
+    },
+    "mecanisme": "cron * * * * * /tmp/push_bulletin.sh, curl PUT GitHub API",
+    "frequence": "60 commits/heure"
+  },
+  "ce_qui_reste_mecaniquement_vrai_dans_v1zw_v2aa": [
+    "sha256 fichiers source canoniques (vrais_yeux.py, mondes_paralleles_engine.py, born_temps_validation.py, test_27d_4approches.py)",
+    "diff caches surveilles vides sur les perimetres V1ZW (9 caches canoniques + 14 perimetre 1)",
+    "ancrages git valides : 9 SHA stables 4f2a18c3 -> 782a6f70",
+    "vrais_yeux.py sha256 f8de03b6...e5850 inchange du debut a la fin",
+    "execution sandbox isolee de test_27d_4approches.py, sortie capturee fideles",
+    "verdict statique D12 VALIDATED only (assertion mecaniquement vraie sur le test)"
+  ],
+  "ce_qui_etait_decoratif_dans_v1zw_v2aa": [
+    "interpretation runtime de la formule 'LIVE_TEST_TOTAL_EN_CAGE preservee'",
+    "aucun mecanisme dans la chaine 27D ne verifiait que les daemons Seragone etaient arretes",
+    "aucun mecanisme dans la chaine 27D ne verifiait que les crons etaient desactives",
+    "aucun mecanisme dans la chaine 27D ne verifiait que les timers systemd etaient inactifs",
+    "decision_weight=0.0 etait une assertion sur le verdict fige phase115_book_cycle_v3_fusion_verdict.json, pas sur l'execution des daemons"
+  ],
+  "principe_manifests_futurs": [
+    "distinguer explicitement 'cage statique attestee' de 'cage runtime non attestee'",
+    "preciser le perimetre exact de la cage dans chaque manifest (liste de fichiers + criteres)",
+    "si la cage runtime est cible, la verifier mecaniquement (ps, cron, systemctl, lsof)",
+    "si la cage Git est cible, la verifier mecaniquement (git log auteur, frequence commits)",
+    "ne pas inscrire d'assertion non sourcee dans le manifest"
+  ],
+  "references_chaine_transverse": {
+    "v2ac_ref": "auditactionsv1/CONTROLE_MULTIMONDES_V2AC_PRECHECK_RUNTIME_20260506_081102",
+    "v2acbis_ref": "auditactionsv1/CONTROLE_MULTIMONDES_V2ACBIS_PRECHECK_GIT_20260506_081907",
+    "v2af_ref": "auditactionsv1/CONTROLE_MULTIMONDES_V2AF_CLOTURE_TRANSVERSE_RUNTIME_20260506_090835"
+  },
+  "noexec_attestation": true
+}
