@@ -1,0 +1,333 @@
+=== collector_binance.py (freq=@reboot) ===
+  open           a    ?
+  open           a    ?
+
+=== seragone_brain.py (freq=@reboot) ===
+  open           w    ?
+  dump           w    (dump)
+  open           a    ?
+
+=== sniper_live.py (freq=@reboot) ===
+  open           a    ?
+  open           w    ?
+  open           w    ?
+  dump           w    (dump)
+
+=== update_live.py (freq=* * * * *) ===
+  open           w    ?
+  dump           w    (dump)
+  open           w    ?
+
+=== seragone_pilot.py (freq=* * * * *) ===
+  open           a    ?
+  open           w    ?
+  dump           w    (dump)
+  open           w    ?
+  dump           w    (dump)
+
+=== temps_seragone.py (freq=*/5 * * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== multivers_progressif.py (freq=*/30 * * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== multivers_v2.py (freq=*/30 * * * *) ===
+
+=== update_data.py (freq=0 * * * *) ===
+  open           w    ?
+  open           w    ?
+  open           w    ?
+  open           w    ?
+
+=== compute_ec_daily.py (freq=55 7 * * *) ===
+  pandas_write   w    e_df.to_csv
+  pandas_write   w    c_df.to_csv
+  open           w    ?
+  dump           w    (dump)
+
+=== cryptoquant_scraper.py (freq=0 8 * * *) ===
+  open           w    ?
+
+=== q_jour_calc.py (freq=2 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+  open           w    ?
+  dump           w    (dump)
+
+=== gardien_onchain.py (freq=5 8 * * *) ===
+  open           w    ?
+
+=== moteur_cyclique.py (freq=8 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== symetrie_module.py (freq=7 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+  open           a    ?
+
+=== prudence_module.py (freq=9 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+  open           a    ?
+
+=== seragone_chef_orchestre_v1_state.py (freq=10 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== souffle_live.py (freq=13 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== mondes_communicants.py (freq=12 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+  open           w    ?
+  dump           w    (dump)
+
+=== mondes_paralleles_engine.py (freq=15 8 * * *) ===
+  open           a    ?
+
+=== seragone_7d_clean.py (freq=20 8 * * *) ===
+  open           w    optimisation_7d_result.json
+  dump           w    (dump)
+
+=== batch_mondes_recursifs.py (freq=25 8 * * *) ===
+  pandas_write   w    df.to_csv
+  open           w    ?
+  dump           w    (dump)
+
+=== vrais_yeux_subdaily.py (freq=30 8 * * *) ===
+
+=== recursif_v1_signal.py (freq=35 8 * * *) ===
+  open           a    ?
+
+=== recursif_nc_bridge.py (freq=40 8 * * *) ===
+  open           a    ?
+
+=== notif_pionex.py (freq=45 8 * * *) ===
+
+=== seragone_redundance_monitor.py (freq=30 0 * * *) ===
+  pandas_write   w    work.to_csv
+
+=== nc_engine.py (freq=30 7 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== provinces_27d_live.py (freq=18 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+  open           w    ?
+  dump           w    (dump)
+  open           w    ?
+  dump           w    (dump)
+
+=== mondes_autonomes.py (freq=48 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== subdaily_runner.py (freq=*/5 * * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== chronometer_fluide.py (freq=*/5 * * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== born_temps_live.py (freq=50 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== chaines_epurees.py (freq=6,36 * * * *) ===
+  open           a    ?
+  open           w    ?
+  dump           w    (dump)
+
+=== nc_history_writer.py (freq=31 7 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== nc_history_writer.py (freq=31 7 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== nourrir_92_mondes.py (freq=11 8 * * *) ===
+  open           a    ?
+
+=== tireur_pulse.py (freq=@reboot) ===
+  open           w    ?
+  dump           w    (dump)
+  open           a    ?
+  open           w    ?
+  dump           w    (dump)
+  open           w    ?
+  dump           w    (dump)
+
+=== tireur_5min.py (freq=*/5 * * * *) ===
+  open           w    ?
+  dump           w    (dump)
+  open           a    ?
+
+=== extract_18ss.py (freq=8 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== calc_dH5j.py (freq=15 8 * * *) ===
+  pandas_write   w    out.to_csv
+  open           w    ?
+  dump           w    (dump)
+
+=== tireur_presence.py (freq=0 * * * *) ===
+  dump           w    (dump)
+  open           a    ?
+  open           a    ?
+
+=== tireur_tenue.py (freq=*/30 * * * *) ===
+  dump           w    (dump)
+  open           a    ?
+  open           a    ?
+
+=== tireur_vigie.py (freq=*/15 * * * *) ===
+  dump           w    (dump)
+  open           a    ?
+  open           a    ?
+
+=== tireur_agilite.py (freq=*/5 * * * *) ===
+  dump           w    (dump)
+  open           a    ?
+  open           a    ?
+
+=== tireur_precision.py (freq=* * * * *) ===
+  dump           w    (dump)
+  open           a    ?
+  open           a    ?
+
+=== make_btc_1s.py (freq=* * * * *) ===
+  pandas_write   w    bars_1s.to_csv
+
+=== tireur_etincelle.py (freq=* * * * *) ===
+  dump           w    (dump)
+  open           a    ?
+  open           a    ?
+
+=== money_manager.py (freq=* * * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== tireur_aplomb.py (freq=*/5 * * * *) ===
+  open           w    ?
+  dump           w    (dump)
+  open           a    ?
+  open           w    ?
+  dump           w    (dump)
+  open           w    ?
+  dump           w    (dump)
+
+=== journees_des_tireurs_v2.py (freq=50 8 * * *) ===
+  open           w    ?
+  dump           w    (dump)
+  open           w    ?
+  dump           w    (dump)
+  open           a    ?
+
+=== watchdog_seragone.py (freq=*/10 * * * *) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== securite_seragone.py (freq=@reboot) ===
+  open           w    ?
+  dump           w    (dump)
+  open           w    ?
+  dump           w    (dump)
+
+=== sentinelle_seragone.py (freq=@reboot) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== sentinelle_exchange_runner.py (freq=*/5 * * * *) ===
+  dump           w    (dump)
+  open           a    ?
+
+=== divergences_alts.py (freq=7 7 * * *) ===
+  open           a    ?
+  open           w    ?
+  dump           w    (dump)
+  open           a    ?
+
+=== production/allocation/meta_controller.py (freq=30 8 * * 0) ===
+  open           w    ?
+  dump           w    (dump)
+
+=== production/meta/memoire_evenementielle.py (freq=0 12 * * 6) ===
+  open           w    ?
+  dump           w    (dump)
+  open           a    ?
+
+=== moteur_pepite_1_M08_sbforce.py (freq=44 8 * * *) ===
+  dump           w    (dump)
+
+=== moteur_pepite_2_OUVRIR_SOUFFLE.py (freq=45 8 * * *) ===
+  dump           w    (dump)
+
+=== moteur_pepite_3_souffle_M0.py (freq=46 8 * * *) ===
+  dump           w    (dump)
+
+=== moteur_pepite_4_L3_mom_haut.py (freq=47 8 * * *) ===
+  dump           w    (dump)
+
+=== moteur_pepite_5_L5_L7_SHORT.py (freq=48 8 * * *) ===
+  dump           w    (dump)
+
+=== pepites_tier1_adapter.py (freq=49 8 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_6_H_shannon.py (freq=50 8 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_7_H_dd_ath.py (freq=51 8 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_8_M_V_H_calme.py (freq=52 8 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_9_M_V_G_extreme.py (freq=53 8 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_10_S_xtbas_10j.py (freq=54 8 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_11_m2_crise_dd.py (freq=55 8 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_12_m2_tension_Gbas.py (freq=56 8 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_13_m2_tension_fg.py (freq=57 8 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_14_m4_crise_Gbas.py (freq=58 8 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_15_m4_crise_Hbas.py (freq=59 8 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_16_m4_crise_Sbas.py (freq=00 9 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_17_m5_ouvrir_dd.py (freq=01 9 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_18_m6_ouvrir_Mmilieu.py (freq=02 9 * * *) ===
+  dump           w    (dump)
+
+=== production/pepites/moteur_pepite_19_m7_tension_Ghaut.py (freq=03 9 * * *) ===
+  dump           w    (dump)
+
+=== normalise_states_compat.py (freq=16 8 * * *) ===
+
+=== normalise_states_compat.py (freq=58 8 * * *) ===
+
+=== seragone_demo_health.py (freq=*/5 * * * *) ===
+

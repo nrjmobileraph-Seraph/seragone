@@ -1,0 +1,178 @@
+freq	script	write_target	write_mode
+@reboot	collector_binance.py	?	a
+@reboot	collector_binance.py	?	a
+@reboot	seragone_brain.py	?	w
+@reboot	seragone_brain.py	(dump)	w
+@reboot	seragone_brain.py	?	a
+@reboot	sniper_live.py	?	a
+@reboot	sniper_live.py	?	w
+@reboot	sniper_live.py	?	w
+@reboot	sniper_live.py	(dump)	w
+* * * * *	update_live.py	?	w
+* * * * *	update_live.py	(dump)	w
+* * * * *	update_live.py	?	w
+* * * * *	seragone_pilot.py	?	a
+* * * * *	seragone_pilot.py	?	w
+* * * * *	seragone_pilot.py	(dump)	w
+* * * * *	seragone_pilot.py	?	w
+* * * * *	seragone_pilot.py	(dump)	w
+*/5 * * * *	temps_seragone.py	?	w
+*/5 * * * *	temps_seragone.py	(dump)	w
+*/30 * * * *	multivers_progressif.py	?	w
+*/30 * * * *	multivers_progressif.py	(dump)	w
+*/30 * * * *	multivers_v2.py	(no_explicit_write)	-
+0 * * * *	update_data.py	?	w
+0 * * * *	update_data.py	?	w
+0 * * * *	update_data.py	?	w
+0 * * * *	update_data.py	?	w
+55 7 * * *	compute_ec_daily.py	e_df.to_csv	w
+55 7 * * *	compute_ec_daily.py	c_df.to_csv	w
+55 7 * * *	compute_ec_daily.py	?	w
+55 7 * * *	compute_ec_daily.py	(dump)	w
+0 8 * * *	cryptoquant_scraper.py	?	w
+2 8 * * *	q_jour_calc.py	?	w
+2 8 * * *	q_jour_calc.py	(dump)	w
+2 8 * * *	q_jour_calc.py	?	w
+2 8 * * *	q_jour_calc.py	(dump)	w
+5 8 * * *	gardien_onchain.py	?	w
+8 8 * * *	moteur_cyclique.py	?	w
+8 8 * * *	moteur_cyclique.py	(dump)	w
+7 8 * * *	symetrie_module.py	?	w
+7 8 * * *	symetrie_module.py	(dump)	w
+7 8 * * *	symetrie_module.py	?	a
+9 8 * * *	prudence_module.py	?	w
+9 8 * * *	prudence_module.py	(dump)	w
+9 8 * * *	prudence_module.py	?	a
+10 8 * * *	seragone_chef_orchestre_v1_state.py	?	w
+10 8 * * *	seragone_chef_orchestre_v1_state.py	(dump)	w
+13 8 * * *	souffle_live.py	?	w
+13 8 * * *	souffle_live.py	(dump)	w
+12 8 * * *	mondes_communicants.py	?	w
+12 8 * * *	mondes_communicants.py	(dump)	w
+12 8 * * *	mondes_communicants.py	?	w
+12 8 * * *	mondes_communicants.py	(dump)	w
+15 8 * * *	mondes_paralleles_engine.py	?	a
+20 8 * * *	seragone_7d_clean.py	optimisation_7d_result.json	w
+20 8 * * *	seragone_7d_clean.py	(dump)	w
+25 8 * * *	batch_mondes_recursifs.py	df.to_csv	w
+25 8 * * *	batch_mondes_recursifs.py	?	w
+25 8 * * *	batch_mondes_recursifs.py	(dump)	w
+30 8 * * *	vrais_yeux_subdaily.py	(no_explicit_write)	-
+35 8 * * *	recursif_v1_signal.py	?	a
+40 8 * * *	recursif_nc_bridge.py	?	a
+45 8 * * *	notif_pionex.py	(no_explicit_write)	-
+30 0 * * *	seragone_redundance_monitor.py	work.to_csv	w
+30 7 * * *	nc_engine.py	?	w
+30 7 * * *	nc_engine.py	(dump)	w
+18 8 * * *	provinces_27d_live.py	?	w
+18 8 * * *	provinces_27d_live.py	(dump)	w
+18 8 * * *	provinces_27d_live.py	?	w
+18 8 * * *	provinces_27d_live.py	(dump)	w
+18 8 * * *	provinces_27d_live.py	?	w
+18 8 * * *	provinces_27d_live.py	(dump)	w
+48 8 * * *	mondes_autonomes.py	?	w
+48 8 * * *	mondes_autonomes.py	(dump)	w
+*/5 * * * *	subdaily_runner.py	?	w
+*/5 * * * *	subdaily_runner.py	(dump)	w
+*/5 * * * *	chronometer_fluide.py	?	w
+*/5 * * * *	chronometer_fluide.py	(dump)	w
+50 8 * * *	born_temps_live.py	?	w
+50 8 * * *	born_temps_live.py	(dump)	w
+6,36 * * * *	chaines_epurees.py	?	a
+6,36 * * * *	chaines_epurees.py	?	w
+6,36 * * * *	chaines_epurees.py	(dump)	w
+31 7 * * *	nc_history_writer.py	?	w
+31 7 * * *	nc_history_writer.py	(dump)	w
+31 7 * * *	nc_history_writer.py	?	w
+31 7 * * *	nc_history_writer.py	(dump)	w
+11 8 * * *	nourrir_92_mondes.py	?	a
+@reboot	tireur_pulse.py	?	w
+@reboot	tireur_pulse.py	(dump)	w
+@reboot	tireur_pulse.py	?	a
+@reboot	tireur_pulse.py	?	w
+@reboot	tireur_pulse.py	(dump)	w
+@reboot	tireur_pulse.py	?	w
+@reboot	tireur_pulse.py	(dump)	w
+*/5 * * * *	tireur_5min.py	?	w
+*/5 * * * *	tireur_5min.py	(dump)	w
+*/5 * * * *	tireur_5min.py	?	a
+8 8 * * *	extract_18ss.py	?	w
+8 8 * * *	extract_18ss.py	(dump)	w
+15 8 * * *	calc_dH5j.py	out.to_csv	w
+15 8 * * *	calc_dH5j.py	?	w
+15 8 * * *	calc_dH5j.py	(dump)	w
+0 * * * *	tireur_presence.py	(dump)	w
+0 * * * *	tireur_presence.py	?	a
+0 * * * *	tireur_presence.py	?	a
+*/30 * * * *	tireur_tenue.py	(dump)	w
+*/30 * * * *	tireur_tenue.py	?	a
+*/30 * * * *	tireur_tenue.py	?	a
+*/15 * * * *	tireur_vigie.py	(dump)	w
+*/15 * * * *	tireur_vigie.py	?	a
+*/15 * * * *	tireur_vigie.py	?	a
+*/5 * * * *	tireur_agilite.py	(dump)	w
+*/5 * * * *	tireur_agilite.py	?	a
+*/5 * * * *	tireur_agilite.py	?	a
+* * * * *	tireur_precision.py	(dump)	w
+* * * * *	tireur_precision.py	?	a
+* * * * *	tireur_precision.py	?	a
+* * * * *	make_btc_1s.py	bars_1s.to_csv	w
+* * * * *	tireur_etincelle.py	(dump)	w
+* * * * *	tireur_etincelle.py	?	a
+* * * * *	tireur_etincelle.py	?	a
+* * * * *	money_manager.py	?	w
+* * * * *	money_manager.py	(dump)	w
+*/5 * * * *	tireur_aplomb.py	?	w
+*/5 * * * *	tireur_aplomb.py	(dump)	w
+*/5 * * * *	tireur_aplomb.py	?	a
+*/5 * * * *	tireur_aplomb.py	?	w
+*/5 * * * *	tireur_aplomb.py	(dump)	w
+*/5 * * * *	tireur_aplomb.py	?	w
+*/5 * * * *	tireur_aplomb.py	(dump)	w
+50 8 * * *	journees_des_tireurs_v2.py	?	w
+50 8 * * *	journees_des_tireurs_v2.py	(dump)	w
+50 8 * * *	journees_des_tireurs_v2.py	?	w
+50 8 * * *	journees_des_tireurs_v2.py	(dump)	w
+50 8 * * *	journees_des_tireurs_v2.py	?	a
+*/10 * * * *	watchdog_seragone.py	?	w
+*/10 * * * *	watchdog_seragone.py	(dump)	w
+@reboot	securite_seragone.py	?	w
+@reboot	securite_seragone.py	(dump)	w
+@reboot	securite_seragone.py	?	w
+@reboot	securite_seragone.py	(dump)	w
+@reboot	sentinelle_seragone.py	?	w
+@reboot	sentinelle_seragone.py	(dump)	w
+*/5 * * * *	sentinelle_exchange_runner.py	(dump)	w
+*/5 * * * *	sentinelle_exchange_runner.py	?	a
+7 7 * * *	divergences_alts.py	?	a
+7 7 * * *	divergences_alts.py	?	w
+7 7 * * *	divergences_alts.py	(dump)	w
+7 7 * * *	divergences_alts.py	?	a
+30 8 * * 0	production/allocation/meta_controller.py	?	w
+30 8 * * 0	production/allocation/meta_controller.py	(dump)	w
+0 12 * * 6	production/meta/memoire_evenementielle.py	?	w
+0 12 * * 6	production/meta/memoire_evenementielle.py	(dump)	w
+0 12 * * 6	production/meta/memoire_evenementielle.py	?	a
+44 8 * * *	moteur_pepite_1_M08_sbforce.py	(dump)	w
+45 8 * * *	moteur_pepite_2_OUVRIR_SOUFFLE.py	(dump)	w
+46 8 * * *	moteur_pepite_3_souffle_M0.py	(dump)	w
+47 8 * * *	moteur_pepite_4_L3_mom_haut.py	(dump)	w
+48 8 * * *	moteur_pepite_5_L5_L7_SHORT.py	(dump)	w
+49 8 * * *	pepites_tier1_adapter.py	(dump)	w
+50 8 * * *	production/pepites/moteur_pepite_6_H_shannon.py	(dump)	w
+51 8 * * *	production/pepites/moteur_pepite_7_H_dd_ath.py	(dump)	w
+52 8 * * *	production/pepites/moteur_pepite_8_M_V_H_calme.py	(dump)	w
+53 8 * * *	production/pepites/moteur_pepite_9_M_V_G_extreme.py	(dump)	w
+54 8 * * *	production/pepites/moteur_pepite_10_S_xtbas_10j.py	(dump)	w
+55 8 * * *	production/pepites/moteur_pepite_11_m2_crise_dd.py	(dump)	w
+56 8 * * *	production/pepites/moteur_pepite_12_m2_tension_Gbas.py	(dump)	w
+57 8 * * *	production/pepites/moteur_pepite_13_m2_tension_fg.py	(dump)	w
+58 8 * * *	production/pepites/moteur_pepite_14_m4_crise_Gbas.py	(dump)	w
+59 8 * * *	production/pepites/moteur_pepite_15_m4_crise_Hbas.py	(dump)	w
+00 9 * * *	production/pepites/moteur_pepite_16_m4_crise_Sbas.py	(dump)	w
+01 9 * * *	production/pepites/moteur_pepite_17_m5_ouvrir_dd.py	(dump)	w
+02 9 * * *	production/pepites/moteur_pepite_18_m6_ouvrir_Mmilieu.py	(dump)	w
+03 9 * * *	production/pepites/moteur_pepite_19_m7_tension_Ghaut.py	(dump)	w
+16 8 * * *	normalise_states_compat.py	(no_explicit_write)	-
+58 8 * * *	normalise_states_compat.py	(no_explicit_write)	-
+*/5 * * * *	seragone_demo_health.py	(no_explicit_write)	-

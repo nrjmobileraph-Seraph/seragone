@@ -1,0 +1,21 @@
+1c1
+< # cache/ (hors mondes_paralleles_cache.json)
+---
+> # cache/
+3c3
+< # data/*.json (hors canoniques P1)
+---
+> # data/*.json
+317d316
+< 2026-05-06 08:10:03   11324636 logs/pilot.log
+321d319
+< 2026-05-06 08:10:07     276827 data/btc_1s_recent.csv
+330d327
+< 2026-05-06 08:10:59    1733305 data/depth_btcusdt_2026-05-06.csv
+335c332,335
+< 2026-05-06 08:11:02   37105485 data/trades_btcusdt_2026-05-06.csv
+---
+> 2026-05-06 08:11:02   11325375 logs/pilot.log
+> 2026-05-06 08:11:04     276780 data/btc_1s_recent.csv
+> 2026-05-06 08:11:04    1733605 data/depth_btcusdt_2026-05-06.csv
+> 2026-05-06 08:11:05   37117121 data/trades_btcusdt_2026-05-06.csv

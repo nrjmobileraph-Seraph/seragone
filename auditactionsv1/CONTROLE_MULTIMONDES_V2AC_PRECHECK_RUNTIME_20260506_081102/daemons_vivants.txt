@@ -1,0 +1,8 @@
+## pgrep seragone-related patterns
+## ps python3 running from /home/ubuntu/seragone
+ 828204       1 17-00:54:10 ubuntu   python3 seragone_brain.py
+1208322       1 12-01:51:28 ubuntu   /usr/bin/python3 /home/ubuntu/seragone/collecteur_1min.py --backfill-days 7
+1593923       1  8-14:20:33 ubuntu   python3 /home/ubuntu/seragone/production/protection/brisance.py
+1759106       1  4-23:40:37 ubuntu   /usr/bin/python3 /home/ubuntu/seragone/production/execution/api.py
+1980868       1  1-00:30:49 ubuntu   /home/ubuntu/seragone/.venv/bin/python3 /home/ubuntu/seragone/sentinelle_seragone.py
+1980869       1  1-00:30:49 ubuntu   /home/ubuntu/seragone/.venv/bin/python3 /home/ubuntu/seragone/securite_seragone.py

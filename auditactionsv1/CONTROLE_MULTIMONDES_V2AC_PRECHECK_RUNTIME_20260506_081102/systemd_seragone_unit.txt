@@ -1,0 +1,53 @@
+### seragone.timer
+# /etc/systemd/system/seragone.timer
+[Unit]
+Description=Seragone Timer
+[Timer]
+OnBootSec=60
+OnUnitActiveSec=300
+AccuracySec=10
+Persistent=true
+[Install]
+WantedBy=timers.target
+### status seragone.timer
+● seragone.timer - Seragone Timer
+     Loaded: loaded (/etc/systemd/system/seragone.timer; enabled; preset: enabled)
+     Active: active (waiting) since Wed 2026-04-01 11:00:41 UTC; 1 month 4 days ago
+    Trigger: Wed 2026-05-06 08:15:01 UTC; 3min 58s left
+   Triggers: ● seragone.service
+
+Apr 01 11:00:41 vps-1e58449b systemd[1]: Started seragone.timer - Seragone Timer.
+---
+### seragone.service
+# /etc/systemd/system/seragone.service
+[Unit]
+Description=Seragone Chef
+After=network.target
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/opt/seragone/app
+ExecStart=/usr/bin/python3 /opt/seragone/app/seragone_chef_orchestre.py
+StandardOutput=append:/opt/seragone/logs/chef.log
+StandardError=append:/opt/seragone/logs/chef.log
+
+# /etc/systemd/system/seragone.service.d/override.conf
+[Service]
+ExecStartPost=/usr/bin/python3 /opt/seragone/app/mirror_chef_state_to_health.py
+### status seragone.service
+○ seragone.service - Seragone Chef
+     Loaded: loaded (/etc/systemd/system/seragone.service; static)
+    Drop-In: /etc/systemd/system/seragone.service.d
+             └─override.conf
+     Active: inactive (dead) since Wed 2026-05-06 08:10:08 UTC; 55s ago
+TriggeredBy: ● seragone.timer
+    Process: 2048873 ExecStart=/usr/bin/python3 /opt/seragone/app/seragone_chef_orchestre.py (code=exited, status=0/SUCCESS)
+    Process: 2048987 ExecStartPost=/usr/bin/python3 /opt/seragone/app/mirror_chef_state_to_health.py (code=exited, status=0/SUCCESS)
+   Main PID: 2048873 (code=exited, status=0/SUCCESS)
+        CPU: 3.027s
+
+May 06 08:10:01 vps-1e58449b systemd[1]: Starting seragone.service - Seragone Chef...
+May 06 08:10:08 vps-1e58449b systemd[1]: seragone.service: Deactivated successfully.
+May 06 08:10:08 vps-1e58449b systemd[1]: Finished seragone.service - Seragone Chef.
+May 06 08:10:08 vps-1e58449b systemd[1]: seragone.service: Consumed 3.027s CPU time.
+---
