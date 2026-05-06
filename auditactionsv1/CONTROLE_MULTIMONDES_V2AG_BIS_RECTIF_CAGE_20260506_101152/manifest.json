@@ -1,0 +1,24 @@
+{
+  "tag": "V2AG_BIS_RECTIF_CAGE",
+  "verdict": "V2AG_BIS_RECTIF_CAGE_OK_9_REELS_INSCRITS",
+  "date_utc": "2026-05-06T10:11:52.533800+00:00",
+  "context": "Rectification documentaire de l'inscription cage statique (14 inscrits historiquement, 9 reels). Decoulee de la decouverte D1 du precheck Phase 0 V2AH.",
+  "perimetre_p1_reel_count": 1,
+  "perimetre_p1_inscrit_historique": 14,
+  "fichiers_absents_corriges": 13,
+  "communicants_history_sortie_de_p1": true,
+  "communicants_history_raison_sortie": "Modifie dynamiquement par runtime (hash 4a8fca11 -> 707c8e96 entre V2AC et V2AH Phase 0)",
+  "vrais_yeux_inchange": true,
+  "type": "rectification_documentaire_pas_de_mutation_runtime",
+  "supersede_inscriptions": [
+    "V1ZW",
+    "V1ZX",
+    "V1ZY",
+    "V1ZY-bis",
+    "V1ZY-ter",
+    "V1ZZ",
+    "V1ZZ-bis",
+    "V1ZZ-ter",
+    "V2AA"
+  ]
+}
