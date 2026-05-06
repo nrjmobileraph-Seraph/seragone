@@ -699,8 +699,31 @@ def main():
         writestateatomic(cache, cache_file)
         log.info(f"Cache sauvé : {cache_file}")
 
-    # Évaluer le dernier jour
-    t_last = len(data['dates']) - 1
+    # Évaluer le dernier jour sain
+    requested_t_last = len(data['dates']) - 1
+
+    def _base18_saine(row):
+        base18 = np.asarray(row[:18], dtype=float)
+        if np.isnan(base18).any():
+            return False
+        # Les derniers jours sans CSV 18D ont typiquement 14 zéros sur 18.
+        return int(np.sum(np.isclose(base18, 0.0))) < 10
+
+    t_last = requested_t_last
+    while t_last > 0 and not _base18_saine(sub[t_last]):
+        t_last -= 1
+
+    input_lag_days = int(requested_t_last - t_last)
+    stale_input = input_lag_days > 0
+
+    if stale_input:
+        log.warning(
+            "Sous-signaux 18D incomplets sur la date finale; évaluation décalée de %d jours (%s -> %s)",
+            input_lag_days,
+            str(data['dates'][requested_t_last])[:10],
+            str(data['dates'][t_last])[:10],
+        )
+
     result = engine.eval_today(t_last)
 
     # Écrire le state
@@ -708,11 +731,14 @@ def main():
         'timestamp': datetime.now(timezone.utc).isoformat(),
         'prix': float(data['prix'][t_last]),
         'date': str(data['dates'][t_last])[:10],
+        'requested_date': str(data['dates'][requested_t_last])[:10],
+        'input_lag_days': input_lag_days,
+        'stale_input': stale_input,
         'n_mondes': result['n_total'],
         'n_actif': result['n_actif'],
         'convergence_pct': result['convergence_pct'],
-        'signal_bear': result['n_actif'] >= 40,
-        'signal_fort': result['n_actif'] >= 20,
+        'signal_bear': (result['n_actif'] >= 40) and not stale_input,
+        'signal_fort': (result['n_actif'] >= 20) and not stale_input,
         'details': result['details'],
     }
 
