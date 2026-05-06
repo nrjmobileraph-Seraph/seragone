@@ -1,0 +1,123 @@
+{
+  "tag": "V2AF_CLOTURE_TRANSVERSE_RUNTIME",
+  "verdict": "V2AF_CLOTURE_TRANSVERSE_RUNTIME_OK",
+  "type": "DECRET_CLOTURE_DOCUMENTAIRE_PUR",
+  "date_utc": "2026-05-06T09:10:23.045076+00:00",
+  "head_actual": "782a6f70bb5c9641fa3cc91d7b8df0212af01e8c",
+  "vrais_yeux_sha256": "f8de03b6025d5a9fddbd9e9cfc69ac342e9f26e651e9be57a876910c499e5850",
+  "ancetres_27d": [
+    "4f2a18c3",
+    "b2cca117",
+    "ad7afa27",
+    "cd39ea2b",
+    "717f9c8c",
+    "ecdaa401",
+    "5e84ac3e",
+    "9a9df26b",
+    "782a6f70"
+  ],
+  "references_chaine_transverse": {
+    "v2ac_ref": "auditactionsv1/CONTROLE_MULTIMONDES_V2AC_PRECHECK_RUNTIME_20260506_081102",
+    "v2acbis_ref": "auditactionsv1/CONTROLE_MULTIMONDES_V2ACBIS_PRECHECK_GIT_20260506_081907",
+    "v2ad_ref": "auditactionsv1/CONTROLE_MULTIMONDES_V2AD_DECRET_3_CAGES_20260506_085108",
+    "v2ae_ref": "auditactionsv1/CONTROLE_MULTIMONDES_V2AE_AUDIT_API_20260506_085940"
+  },
+  "noexec_attestation": true,
+  "bilan_3_cages": {
+    "statique": {
+      "verdict_v2af": "VRAIE",
+      "preuve": "DIFF_P1_BYTES=0 a V2AC et V2AE"
+    },
+    "runtime": {
+      "verdict_v2af": "FAUSSE_ATTENDUE",
+      "note": "daemons LIVE_PRODUCTIF intentionnels depuis 1 avril 2026"
+    },
+    "git": {
+      "verdict_v2af": "FAUSSE",
+      "traitement_delegue": "V2AH_RECONCIL_GIT"
+    }
+  },
+  "classification_finale_daemons": [
+    {
+      "pid": 828204,
+      "process": "seragone_brain.py",
+      "uptime": "17j",
+      "cat_v2af": "LIVE_PRODUCTIF_INTOUCHABLE"
+    },
+    {
+      "pid": 1208322,
+      "process": "collecteur_1min.py",
+      "uptime": "12j",
+      "cat_v2af": "LIVE_PRODUCTIF_INTOUCHABLE"
+    },
+    {
+      "pid": 1593923,
+      "process": "production/protection/brisance.py",
+      "uptime": "8j14h",
+      "cat_v2af": "OBSERVATION_TOLEREE"
+    },
+    {
+      "pid": 1759106,
+      "process": "production/execution/api.py",
+      "uptime": "4j23h",
+      "cat_v2af": "OBSERVATION_TOLEREE_CONDITIONNELLE",
+      "reserve": "transitive config_manager non auditee, definitive apres V2AJ"
+    },
+    {
+      "pid": 1980868,
+      "process": "sentinelle_seragone.py",
+      "uptime": "1j",
+      "cat_v2af": "OBSERVATION_TOLEREE"
+    },
+    {
+      "pid": 1980869,
+      "process": "securite_seragone.py",
+      "uptime": "1j",
+      "cat_v2af": "OBSERVATION_TOLEREE"
+    }
+  ],
+  "points_attention_residuels": [
+    {
+      "id": "port_5000_0.0.0.0",
+      "gravite": "moyenne",
+      "action": "V2AJ"
+    },
+    {
+      "id": "config_manager_transitive",
+      "gravite": "a_lever",
+      "action": "V2AJ"
+    },
+    {
+      "id": "push_bulletin_bak_residuel",
+      "gravite": "basse",
+      "action": "V2AH"
+    },
+    {
+      "id": "date_1mai_daemon_api",
+      "gravite": "info",
+      "action": "V2AI_ou_V2AJ"
+    }
+  ],
+  "planification_chaines_suivantes": [
+    {
+      "tag": "V2AG_ADDENDUM_RECTIF_CAGE",
+      "priorite": 1,
+      "type": "documentaire_pur"
+    },
+    {
+      "tag": "V2AH_RECONCIL_GIT",
+      "priorite": 2,
+      "type": "action_git"
+    },
+    {
+      "tag": "V2AI_CHANTIER6_VILLAGE",
+      "priorite": 3,
+      "type": "audit_chantier"
+    },
+    {
+      "tag": "V2AJ_HARDENING_API_DASHBOARD",
+      "priorite": 3,
+      "type": "audit_hardening"
+    }
+  ]
+}
