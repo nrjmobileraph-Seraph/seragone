@@ -1,0 +1,5 @@
+ABSENT_CONFIRME data/born_state.json
+ABSENT_CONFIRME data/born_temps_state.json
+ABSENT_CONFIRME data/multivers_state.json
+ABSENT_CONFIRME voix_seragone_92/data/seragone_92_state.json
+ABSENT_CONFIRME voix_seragone_92/seragone_92_state.json

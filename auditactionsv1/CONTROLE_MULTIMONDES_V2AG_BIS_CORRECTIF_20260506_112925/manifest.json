@@ -1,0 +1,14 @@
+{
+  "tag": "V2AG_BIS_CORRECTIF",
+  "verdict": "V2AG_BIS_CORRECTIF_OK_PERIMETRE_P1_RECTIFIE",
+  "annule_et_remplace_commit": "2a5b3285",
+  "raison": "Le commit 2a5b3285 contenait verdict mensonger + liste de fichiers inventee",
+  "date_utc": "2026-05-06T11:29:25.232502+00:00",
+  "perimetre_p1_reels_count": 9,
+  "perimetre_p1_absents_count": 5,
+  "stabilite_test_90s": "TOUS_STABLES",
+  "communicants_history_classification": "stable_basse_frequence",
+  "vrais_yeux_inchange": true,
+  "type": "rectification_documentaire_correctif",
+  "supersede_semantiquement": "commit 2a5b3285 reste dans l'historique"
+}
