@@ -1,0 +1,9 @@
+    PID    PPID     ELAPSED                  STARTED STAT USER     CMD
+1759106       1  5-00:29:14 Fri May  1 08:30:24 2026 Ss   ubuntu   /usr/bin/python3 /home/ubuntu/seragone/production/execution/api.py
+PROCESS_ALIVE
+--- cmdline ---
+/usr/bin/python3 /home/ubuntu/seragone/production/execution/api.py 
+--- cwd ---
+lrwxrwxrwx 1 ubuntu ubuntu 0 May  1 09:57 /proc/1759106/cwd -> /home/ubuntu/seragone
+--- exe ---
+lrwxrwxrwx 1 ubuntu ubuntu 0 May  1 08:30 /proc/1759106/exe -> /usr/bin/python3.12

@@ -1,0 +1,30 @@
+COMMAND     PID   USER   FD   TYPE             DEVICE SIZE/OFF     NODE NAME
+python3 1759106 ubuntu  cwd    DIR                8,1    69632   262145 /home/ubuntu/seragone
+python3 1759106 ubuntu  rtd    DIR                8,1     4096        2 /
+python3 1759106 ubuntu  txt    REG                8,1  8020928     3313 /usr/bin/python3.12
+python3 1759106 ubuntu  mem    REG                8,1    47672     6365 /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4
+python3 1759106 ubuntu  mem    REG                8,1   372904    46783 /usr/lib/python3.12/lib-dynload/_decimal.cpython-312-x86_64-linux-gnu.so
+python3 1759106 ubuntu  mem    REG                8,1    64368     8921 /usr/lib/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so
+python3 1759106 ubuntu  mem    REG                8,1   202904     5151 /usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5
+python3 1759106 ubuntu  mem    REG                8,1    49256    46786 /usr/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so
+python3 1759106 ubuntu  mem    REG                8,1  5309400    12563 /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+python3 1759106 ubuntu  mem    REG                8,1   696512    12572 /usr/lib/x86_64-linux-gnu/libssl.so.3
+python3 1759106 ubuntu  mem    REG                8,1   225488     8922 /usr/lib/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so
+python3 1759106 ubuntu  mem    REG                8,1  3055776     1959 /usr/lib/locale/locale-archive
+python3 1759106 ubuntu  mem    REG                8,1    78944     5129 /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+python3 1759106 ubuntu  mem    REG                8,1    32112    46769 /usr/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so
+python3 1759106 ubuntu  mem    REG                8,1   137968    46778 /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so
+python3 1759106 ubuntu  mem    REG                8,1   360460     4065 /usr/lib/locale/C.utf8/LC_CTYPE
+python3 1759106 ubuntu  mem    REG                8,1  2125328     4039 /usr/lib/x86_64-linux-gnu/libc.so.6
+python3 1759106 ubuntu  mem    REG                8,1    14584    18550 /usr/lib/python3/dist-packages/markupsafe/_speedups.cpython-312-x86_64-linux-gnu.so
+python3 1759106 ubuntu  mem    REG                8,1    14560    46776 /usr/lib/python3.12/lib-dynload/_contextvars.cpython-312-x86_64-linux-gnu.so
+python3 1759106 ubuntu  mem    REG                8,1    48952    46784 /usr/lib/python3.12/lib-dynload/_json.cpython-312-x86_64-linux-gnu.so
+python3 1759106 ubuntu  mem    REG                8,1    27028     4027 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+python3 1759106 ubuntu  mem    REG                8,1   174336    11816 /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1
+python3 1759106 ubuntu  mem    REG                8,1   113000     5155 /usr/lib/x86_64-linux-gnu/libz.so.1.3
+python3 1759106 ubuntu  mem    REG                8,1   952616     4042 /usr/lib/x86_64-linux-gnu/libm.so.6
+python3 1759106 ubuntu  mem    REG                8,1   236616     4036 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+python3 1759106 ubuntu    0r   CHR                1,3      0t0        5 /dev/null
+python3 1759106 ubuntu    1u  unix 0x0000000000000000      0t0 18068294 type=STREAM (CONNECTED)
+python3 1759106 ubuntu    2u  unix 0x0000000000000000      0t0 18068294 type=STREAM (CONNECTED)
+python3 1759106 ubuntu    3u  IPv4           18068295      0t0      TCP *:5000 (LISTEN)

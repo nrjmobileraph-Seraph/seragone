@@ -1,0 +1,112 @@
+{
+  "tag": "V2AE_AUDIT_API_PROFOND",
+  "ts_utc": "20260506_085940",
+  "generated_at": "2026-05-06T08:59:40.910966+00:00",
+  "cible_pid": "1759106",
+  "cible_source": "/home/ubuntu/seragone/production/execution/api.py",
+  "v2ad_ref": "auditactionsv1/CONTROLE_MULTIMONDES_V2AD_DECRET_3_CAGES_20260506_085108",
+  "process_alive": true,
+  "ps_extract": [
+    "    PID    PPID     ELAPSED                  STARTED STAT USER     CMD",
+    "1759106       1  5-00:29:14 Fri May  1 08:30:24 2026 Ss   ubuntu   /usr/bin/python3 /home/ubuntu/seragone/production/execution/api.py",
+    "PROCESS_ALIVE",
+    "--- cmdline ---",
+    "/usr/bin/python3 /home/ubuntu/seragone/production/execution/api.py ",
+    "--- cwd ---",
+    "lrwxrwxrwx 1 ubuntu ubuntu 0 May  1 09:57 /proc/1759106/cwd -> /home/ubuntu/seragone",
+    "--- exe ---",
+    "lrwxrwxrwx 1 ubuntu ubuntu 0 May  1 08:30 /proc/1759106/exe -> /usr/bin/python3.12"
+  ],
+  "lsof_lines": 30,
+  "lsof_extract": [
+    "COMMAND     PID   USER   FD   TYPE             DEVICE SIZE/OFF     NODE NAME",
+    "python3 1759106 ubuntu  cwd    DIR                8,1    69632   262145 /home/ubuntu/seragone",
+    "python3 1759106 ubuntu  rtd    DIR                8,1     4096        2 /",
+    "python3 1759106 ubuntu  txt    REG                8,1  8020928     3313 /usr/bin/python3.12",
+    "python3 1759106 ubuntu  mem    REG                8,1    47672     6365 /usr/lib/x86_64-linux-gnu/libffi.so.8.1.4",
+    "python3 1759106 ubuntu  mem    REG                8,1   372904    46783 /usr/lib/python3.12/lib-dynload/_decimal.cpython-312-x86_64-linux-gnu.so",
+    "python3 1759106 ubuntu  mem    REG                8,1    64368     8921 /usr/lib/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so",
+    "python3 1759106 ubuntu  mem    REG                8,1   202904     5151 /usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5",
+    "python3 1759106 ubuntu  mem    REG                8,1    49256    46786 /usr/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so",
+    "python3 1759106 ubuntu  mem    REG                8,1  5309400    12563 /usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+    "python3 1759106 ubuntu  mem    REG                8,1   696512    12572 /usr/lib/x86_64-linux-gnu/libssl.so.3",
+    "python3 1759106 ubuntu  mem    REG                8,1   225488     8922 /usr/lib/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so",
+    "python3 1759106 ubuntu  mem    REG                8,1  3055776     1959 /usr/lib/locale/locale-archive",
+    "python3 1759106 ubuntu  mem    REG                8,1    78944     5129 /usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4",
+    "python3 1759106 ubuntu  mem    REG                8,1    32112    46769 /usr/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so",
+    "python3 1759106 ubuntu  mem    REG                8,1   137968    46778 /usr/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so",
+    "python3 1759106 ubuntu  mem    REG                8,1   360460     4065 /usr/lib/locale/C.utf8/LC_CTYPE",
+    "python3 1759106 ubuntu  mem    REG                8,1  2125328     4039 /usr/lib/x86_64-linux-gnu/libc.so.6",
+    "python3 1759106 ubuntu  mem    REG                8,1    14584    18550 /usr/lib/python3/dist-packages/markupsafe/_speedups.cpython-312-x86_64-linux-gnu.so",
+    "python3 1759106 ubuntu  mem    REG                8,1    14560    46776 /usr/lib/python3.12/lib-dynload/_contextvars.cpython-312-x86_64-linux-gnu.so",
+    "python3 1759106 ubuntu  mem    REG                8,1    48952    46784 /usr/lib/python3.12/lib-dynload/_json.cpython-312-x86_64-linux-gnu.so",
+    "python3 1759106 ubuntu  mem    REG                8,1    27028     4027 /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache",
+    "python3 1759106 ubuntu  mem    REG                8,1   174336    11816 /usr/lib/x86_64-linux-gnu/libexpat.so.1.9.1",
+    "python3 1759106 ubuntu  mem    REG                8,1   113000     5155 /usr/lib/x86_64-linux-gnu/libz.so.1.3",
+    "python3 1759106 ubuntu  mem    REG                8,1   952616     4042 /usr/lib/x86_64-linux-gnu/libm.so.6",
+    "python3 1759106 ubuntu  mem    REG                8,1   236616     4036 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+    "python3 1759106 ubuntu    0r   CHR                1,3      0t0        5 /dev/null",
+    "python3 1759106 ubuntu    1u  unix 0x0000000000000000      0t0 18068294 type=STREAM (CONNECTED)",
+    "python3 1759106 ubuntu    2u  unix 0x0000000000000000      0t0 18068294 type=STREAM (CONNECTED)",
+    "python3 1759106 ubuntu    3u  IPv4           18068295      0t0      TCP *:5000 (LISTEN)"
+  ],
+  "ss_extract": [
+    "## tcp listen par PID",
+    "LISTEN 0      128          0.0.0.0:5000      0.0.0.0:*    users:((\"python3\",pid=1759106,fd=3))",
+    "",
+    "## tcp connections etablies par PID",
+    "(aucune connexion etablie)",
+    "",
+    "## udp par PID",
+    "(aucun udp)"
+  ],
+  "network_extract": [
+    "## handles TCP extraits de lsof",
+    "python3 1759106 ubuntu    3u  IPv4           18068295      0t0      TCP *:5000 (LISTEN)",
+    "",
+    "## noms DNS probables dans les sockets (depuis lsof)"
+  ],
+  "metadata": [
+    "path=/home/ubuntu/seragone/production/execution/api.py",
+    "sha256=5a40094957e6482f9bd35987b21f31310e2f359eb2a70dedbe0865f157ac74a3",
+    "size=3036/home/ubuntu/seragone/production/execution/api.pymtime=2026-05-01 08:30:24.748568311 +0000/home/ubuntu/seragone/production/execution/api.pyctime=2026-05-01 08:30:24.748568311 +0000/home/ubuntu/seragone/production/execution/api.pypermissions=664/home/ubuntu/seragone/production/execution/api.pyowner=ubuntu:ubuntu",
+    "wc_lines=111"
+  ],
+  "ast_imports": [
+    "total_imports=7",
+    "broker_imports=[]",
+    "exec_imports=[]",
+    "local_imports_count=6",
+    "---",
+    "  flask",
+    "  glob",
+    "  json",
+    "  os",
+    "  production.utils.config_manager",
+    "  sys"
+  ],
+  "ast_calls_suspects": [
+    "exec_token_calls_count=0",
+    "---"
+  ],
+  "grep_execution_lines": 1,
+  "grep_execution_extract": [
+    "(aucune occurrence)"
+  ],
+  "grep_exchanges_lines": 1,
+  "grep_exchanges_extract": [
+    "(aucune occurrence)"
+  ],
+  "grep_credentials_lines": 1,
+  "grep_credentials_extract": [
+    "(aucune occurrence)"
+  ],
+  "classification_inputs": {
+    "exec_calls_count": 0,
+    "exec_imports_empty": true,
+    "dry_run_hit": false,
+    "kraken_in_net": false,
+    "non_kraken_in_net": false,
+    "dashboard_framework": true
+  }
+}

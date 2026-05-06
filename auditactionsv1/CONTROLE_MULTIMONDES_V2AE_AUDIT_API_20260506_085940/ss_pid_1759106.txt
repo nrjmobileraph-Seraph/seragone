@@ -1,0 +1,8 @@
+## tcp listen par PID
+LISTEN 0      128          0.0.0.0:5000      0.0.0.0:*    users:(("python3",pid=1759106,fd=3))
+
+## tcp connections etablies par PID
+(aucune connexion etablie)
+
+## udp par PID
+(aucun udp)

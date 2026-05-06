@@ -1,0 +1,4 @@
+## handles TCP extraits de lsof
+python3 1759106 ubuntu    3u  IPv4           18068295      0t0      TCP *:5000 (LISTEN)
+
+## noms DNS probables dans les sockets (depuis lsof)
