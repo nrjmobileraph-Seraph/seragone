@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-04-26T15:39:51.501493",
+  "prix_btc": 78110.72,
+  "score_seragone": 15,
+  "confiance": "TROP TOT",
+  "jours_ecoules": 13,
+  "jours_objectif": 60,
+  "signaux_total": 3,
+  "signaux_ok": 3,
+  "signaux_rate": 0,
+  "signaux_attente": 0,
+  "derniers_signaux": [
+    {
+      "date": "2026-03-01",
+      "prix": 65776.47,
+      "distance": 0.4739,
+      "shannon": 0.1924,
+      "resultat": "OUI",
+      "gain_pct": 3.55
+    },
+    {
+      "date": "2026-03-08",
+      "prix": 65971.2,
+      "distance": 0.3016,
+      "shannon": 0.1371,
+      "resultat": "OUI",
+      "gain_pct": 7.52
+    },
+    {
+      "date": "2026-03-27",

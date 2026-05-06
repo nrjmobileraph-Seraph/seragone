@@ -1,0 +1,9 @@
+# DAEMONS (gérés par @reboot, pas par cron régulier)
+@reboot cd /home/ubuntu/seragone && nohup python3 collector_binance.py >> logs/collector.log 2>&1 &
+@reboot cd /home/ubuntu/seragone && nohup python3 seragone_brain.py >> logs/brain.log 2>&1 &
+@reboot cd /home/ubuntu/seragone && nohup python3 sniper_live.py >> logs/sniper.log 2>&1 &
+# NEUTRALISE_V1L_BRISANCE_V4_CANON_PROD: @reboot cd /home/ubuntu/seragone && nohup python3 brisance_v4.py >/dev/null 2>&1 &
+* * * * * /tmp/push_bulletin.sh >> /home/ubuntu/seragone/logs/github_push.log 2>&1
+@reboot cd /home/ubuntu/seragone && nohup python3 tireur_pulse.py >> logs/tireur_seconde.log 2>&1 &
+@reboot cd /home/ubuntu/seragone && sleep 10 && nohup python3 securite_seragone.py >> logs/securite.log 2>&1 &
+@reboot cd /home/ubuntu/seragone && sleep 5 && nohup python3 sentinelle_seragone.py >> logs/sentinelle.log 2>&1 &

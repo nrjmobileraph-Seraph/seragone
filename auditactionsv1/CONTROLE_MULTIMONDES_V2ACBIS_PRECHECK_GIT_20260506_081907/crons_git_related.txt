@@ -1,0 +1,3 @@
+# Bulletin mobile (push GitHub toutes les minutes)
+* * * * * /tmp/push_bulletin.sh >> /home/ubuntu/seragone/logs/github_push.log 2>&1
+48 8 * * * cd /home/ubuntu/seragone && python3 mondes_autonomes.py >> logs/mondes_auto.log 2>&1
