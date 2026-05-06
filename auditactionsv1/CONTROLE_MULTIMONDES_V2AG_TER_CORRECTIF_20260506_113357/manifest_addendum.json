@@ -1,0 +1,9 @@
+{
+  "tag": "V2AG_TER_CORRECTIF_ADDENDUM",
+  "verdict_reel": "V2AG_TER_CORRECTIF_OK_TOKEN_COMPLET_ABSENT_HEAD",
+  "verdict_initial_errone": "V2AG_TER_CORRECTIF_KO_RESTE_5_OCCURRENCES (faux positif grep large)",
+  "date_utc": "2026-05-06T11:37:56.099531+00:00",
+  "nb_tokens_complets": 0,
+  "nb_mentions_partielles": 10,
+  "vrais_yeux_inchange": true
+}
