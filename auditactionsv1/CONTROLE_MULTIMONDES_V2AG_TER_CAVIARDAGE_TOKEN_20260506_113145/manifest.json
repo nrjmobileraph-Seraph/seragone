@@ -1,0 +1,12 @@
+{
+  "tag": "V2AG_TER_CAVIARDAGE_TOKEN",
+  "verdict": "V2AG_TER_CAVIARDAGE_KO_TOKEN_TOUJOURS_PRESENT",
+  "date_utc": "2026-05-06T11:31:45.486372+00:00",
+  "fichier_cible": "auditactionsv1/CONTROLE_MULTIMONDES_V2ACBIS_PRECHECK_GIT_20260506_081907/push_bulletin_sh_content.txt",
+  "sha256_apres_caviardage": "8b420db08d7ad04bf3806f448c95ff44f0182564a49766c295d747224370c8bc",
+  "token_present_apres_caviardage": true,
+  "token_revoque_le": "2026-05-06 08:30 UTC",
+  "historique_git_intact": "Commit 40d572ac garde le token original (visible git show), inoffensif car revoque",
+  "vrais_yeux_inchange": true,
+  "type": "caviardage_documentaire_lecture_humaine"
+}
