@@ -151,3 +151,64 @@ Invariants 6x6 post-scellement final (immutables toute la session) :
 - Stade 3 SOLLICITATION : VERROUILLE (Q5 §3.1 respecté)
 - Legacy déclassé : mondes_paralleles_state.json → LEGACY_OBSOLETE_20260423
 - Chantier futur : DECRET Q6 déverrouillage après démo
+2026-05-11 21:48 UTC  ATTESTATION_BASCULE_CANON_V2 — DECRET_RETROACTIF_11 FULFILLED_EMPIRICALLY (multivers V2 actif) — audit/decisions/ATTESTATION_BASCULE_CANON_V2_2026-05-11.md 348a5a57a093df946610b6a850ddb934b537d869756f409ab22e3a18a0e3248a
+2026-05-11 21:51 UTC  ATTESTATION_P1_DIAGNOSTICS_I1_I4 — 4 incohérences résolues documentairement — audit/decisions/ATTESTATION_P1_DIAGNOSTICS_I1_I4_2026-05-11.md 03642ab897c6883ad481a33044045f04397e53cc7669e7ff33f799d7cdf60c51
+
+## ATTESTATION_P2_LECTURE_CANONIQUE_A4_A7_ZETA1_2026-05-11
+- fichier : audit/decisions/ATTESTATION_P2_LECTURE_CANONIQUE_A4_A7_ZETA1_2026-05-11.md
+- sha256 : 422357d3b076d03fabf675880ebe2c0859792f2d1de599b2c2065a14077dc2cf
+- date UTC : 2026-05-11T21:57:00Z
+- chantier ζ1 RÉSOLU DOCUMENTAIREMENT (CARTOGRAPHIE §12.C)
+- lecture canonique formelle : DECRET_A4 + DECRET_A5 + DECRET_A6 + DECRET_A7
+- annexes lues : ATT_A6_OPE + ATT_A7_OPE + VALIDATION_FILTRE_SECURITE_A7 + ATT_V4_H5_GO_A5
+- trace Phase O : p2_phase_O_20260511T215452Z (sha256 56ee2833505616a163768ddc4a17203d7f371c549d764334f85e84a11f139518)
+- trace Phase A : p2_phase_A_20260511T215706Z (sha256 bee01ef2ba575e04d89a6c1c15c3694b92d0ac2db38fe0f5d0042ee129b966fd)
+- 6x6 AVANT == APRÈS (scellement doctrinal pur, zéro runtime)
+
+## ATTESTATION_B_LECTURE_MONDES_GAMMA3_2026-05-11
+- fichier : audit/decisions/ATTESTATION_B_LECTURE_MONDES_GAMMA3_2026-05-11.md
+- sha256 : 18d9088a250df33063af056d09cda902b4e68159225275ff857f68c5f2080c85
+- lecture canonique : mondes_communicants + mondes_autonomes + mondes_paralleles_engine + inventaire γ3 (7 familles)
+- trace Phase O : b_lecture_mondes_phase_O_20260511T215902Z
+
+## CORRECTION_GAMMA3_VRAIS_YEUX_STRETCHED_HARMONISATION_RHO2_2026-05-11
+- fichier : audit/decisions/CORRECTION_GAMMA3_VRAIS_YEUX_STRETCHED_HARMONISATION_RHO2_2026-05-11.md
+- sha256 : 6e80fe968ec8a97e2813ab9418b2668a4f4384486687e087fd7edb3b231bccd0
+- action : vrais_yeux_stretched.py racine harmonisé sur production (13010758f417… → a5d633bb81cf…)
+- backup cryptographique : archive/vrais_yeux_stretched_v130_20260409_backup_20260511T220351Z.py
+
+## CONSTAT_I4_HYPOTHESE_COMPUTE_ALL_DIMS_2026-05-11
+- fichier : audit/decisions/CONSTAT_I4_HYPOTHESE_COMPUTE_ALL_DIMS_2026-05-11.md
+- sha256 : 9fb6d0e311c9bf032ef6c36bfad1ae310daf100792d70cb3fb52aba9d94482a0
+- H1 (compute_all_dims manquant) potentiellement résolu par ρ2 — à confirmer session I4-focus future
+
+## CONSTAT_I4_CLARIFICATION_POST_SONDE_EMPIRIQUE_2026-05-11
+- fichier : audit/decisions/CONSTAT_I4_CLARIFICATION_POST_SONDE_EMPIRIQUE_2026-05-11.md
+- sha256 : 75b21fb663003a699efed76968a2015299af3fc6f0ed85795130b69e24bba2c4
+- sonde empirique : exit 0 en 54s, mondes_paralleles_engine.py tourne sans crash
+- H1 (compute_all_dims) FALSIFIÉE comme cause d'I4
+- ρ2 préservée (utile préventivement, pas cause I4)
+- nouvelles hypothèses H5 (wrapper timer), H6 (v4.bak), H7 (mondes_autonomes), H8 (cache 7 mondes)
+
+## CONSTAT_I4_CAUSE_CONFIRMEE_H10_BROADCAST_10D_18D_2026-05-12
+- fichier : audit/decisions/CONSTAT_I4_CAUSE_CONFIRMEE_H10_BROADCAST_10D_18D_2026-05-12.md
+- sha256 : e4d1e20bf2fb023d79e8b6db06e54f553c9f7dad02f6265b64ddc2c26e0d29f7
+- cause I4 : ValueError broadcast (10,) vs (18,) ligne 555 eval_today — cache 18D vs code 10D
+- H10 CONFIRMÉE empiriquement, H1-H9 falsifiées ou partielles
+- timer systemd reste désactivé, résolution ρ3-a à exécuter session dédiée
+
+## ATTESTATION_RHO3A_REBUILD_CACHE_10D_SUCCES_2026-05-12
+- fichier : audit/decisions/ATTESTATION_RHO3A_REBUILD_CACHE_10D_SUCCES_2026-05-12.md
+- sha256 : 27c3a3d8bc1defa442162b70da2d9134dd6b2fc92ecf5c93a8e085caff91ceb5
+- action : mondes_paralleles_engine.py --rebuild (210s, exit 0)
+- cache avant : 6a7bd5a7074c… (191 mondes 18D, 144374 o)
+- cache après : c9aa23aa7f11… (628 mondes 10D, 451134 o)
+- test reprod : exit 0, 86s, 23/628 actifs
+- I4 CLOS empiriquement, timer reste désactivé (réactivation séparée)
+
+## ATTESTATION_TIMER_I4_REACTIVATION_2026-05-12
+- fichier : audit/decisions/ATTESTATION_TIMER_I4_REACTIVATION_2026-05-12.md
+- sha256 : 1d36927f09c8ff5e97d18f241192103ca4ad7768abd2394500bc61a6a9a281bf
+- action : enable + start timer après 3 runs EXIT 0 consécutifs
+- observation 5 min : 2 success / 0 fail
+- I4 runtime pleinement restauré
