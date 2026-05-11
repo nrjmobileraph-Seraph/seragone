@@ -1,0 +1,41 @@
+═══════════════════════════════════════════════════════════════
+   ACTE 23-bis — ANNULATION acte 23 (faux diagnostic)
+   Généré : 2026-05-11T20:45:36Z
+═══════════════════════════════════════════════════════════════
+
+=== A. RECONNAISSANCE ERREUR ===
+Le service seragone-multivers était un ONESHOT fonctionnel.
+status=0/SUCCESS toutes les 30 min depuis 2 jours.
+'inactive (dead)' = état normal entre deux ticks oneshot.
+L'acte 23 a masqué un service qui MARCHAIT.
+
+=== B. RÉACTIVATION ===
+>>> enable timer
+Created symlink /etc/systemd/system/timers.target.wants/seragone-multivers.timer → /etc/systemd/system/seragone-multivers.timer.
+>>> start timer
+>>> daemon-reload
+
+=== C. ÉTAT APRÈS ===
+service : disabled / activating
+timer   : enabled / active
+
+-                                  - Mon 2026-05-11 20:45:37 UTC         475ms ago seragone-multivers.timer       seragone-multivers.service
+
+=== D. PREUVE DU FONCTIONNEMENT (logs récents) ===
+May 11 18:59:28 vps-1e58449b systemd[1]: Finished seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer.
+May 11 18:59:28 vps-1e58449b systemd[1]: seragone-multivers.service: Consumed 3min 56.599s CPU time.
+May 11 19:25:41 vps-1e58449b systemd[1]: Starting seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer...
+May 11 19:29:58 vps-1e58449b systemd[1]: seragone-multivers.service: Deactivated successfully.
+May 11 19:29:58 vps-1e58449b systemd[1]: Finished seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer.
+May 11 19:29:58 vps-1e58449b systemd[1]: seragone-multivers.service: Consumed 4min 14.877s CPU time.
+May 11 19:56:00 vps-1e58449b systemd[1]: Starting seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer...
+May 11 20:01:04 vps-1e58449b systemd[1]: seragone-multivers.service: Deactivated successfully.
+May 11 20:01:04 vps-1e58449b systemd[1]: Finished seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer.
+May 11 20:01:04 vps-1e58449b systemd[1]: seragone-multivers.service: Consumed 4min 59.299s CPU time.
+May 11 20:26:01 vps-1e58449b systemd[1]: Starting seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer...
+May 11 20:30:03 vps-1e58449b systemd[1]: seragone-multivers.service: Deactivated successfully.
+May 11 20:30:03 vps-1e58449b systemd[1]: Finished seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer.
+May 11 20:30:03 vps-1e58449b systemd[1]: seragone-multivers.service: Consumed 3min 58.043s CPU time.
+May 11 20:45:37 vps-1e58449b systemd[1]: Starting seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer...
+
+=== FIN ACTE 23-bis ===

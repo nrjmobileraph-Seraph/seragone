@@ -113,3 +113,9 @@ Invariants 6x6 post-scellement final (immutables toute la session) :
 - Action : systemctl mask service + timer (réversible)
 - Raison : service dead + writer cassé (voir suite6g1-g5)
 - Successeur : ACTE 24 futur voie 3prime
+
+## ACTE 23-bis — ANNULATION acte 23 (20260511T204536Z)
+- Chemin : `audit/acte23bis_ANNULATION_20260511T204536Z/`
+- Motif : acte 23 basé sur diagnostic faux (oneshot confondu avec dead)
+- Action : re-enable + start timer
+- Leçon : toujours lire journalctl avant mask
