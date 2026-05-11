@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-05-11T23:37:58Z",
+  "total_files": 25651,
+  "total_size": "22G",
+  "artifacts": {
+    "md": {
+      "path": "canon/SERAGONE_ONE_TOTAL.md",
+      "sha256": "63cb850ff28f74697938226b19aefc5c405656403617c2b25ec84b57c317564a",
+      "size": 53470
+    },
+    "tree": {
+      "path": "canon/SERAGONE_ONE_TOTAL_TREE.txt",
+      "sha256": "d907137f5e29efb67802d1bd8526734e2d8ab09e61f3aaa829ee00cf47dcbb29"
+    },
+    "git": {
+      "path": "canon/SERAGONE_ONE_TOTAL_GIT.txt",
+      "sha256": "62e163888c7e415f2c2372bf2fe5b60d5621162aa34ee5957eb2fa7c011a3a2a"
+    }
+  }
+}
