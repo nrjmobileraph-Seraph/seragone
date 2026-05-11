@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-11T08:03:04.591895",
-  "prix_btc": 80740.41,
+  "timestamp": "2026-05-11T08:08:04.664585",
+  "prix_btc": 80747.48,
   "score_seragone": 15,
   "confiance": "INSUFFISANT",
   "jours_ecoules": 28,
@@ -39,7 +39,7 @@
     "score": 0.0,
     "mondes_actifs": 0,
     "mondes_total": 191,
-    "recursifs_actifs": 56
+    "recursifs_actifs": 49
   },
   "couverture": {
     "pourcentage": 74.0,
@@ -53,11 +53,11 @@
   "systeme": {
     "distance": 0,
     "shannon": 0,
-    "geste": "RETRECIR",
+    "geste": "ATTENDRE",
     "mode": "WAIT"
   },
   "meteo": "orageux",
-  "journal": "11 May - Le vent tourne. Je reduis mon exposition. Prudence.",
+  "journal": "11 May - Trop de brouillard. Je ne vois rien. J'attends.",
   "processus": {
     "collector": true,
     "brain": true,
