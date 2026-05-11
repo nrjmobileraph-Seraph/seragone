@@ -107,3 +107,9 @@ Invariants 6x6 post-scellement final (immutables toute la session) :
 - Générateur : `tools/seragone_one.py` (cron horaire min 15)
 - Wrapper : `seragone-total`
 - Hash univers : `439cc638637886ae`
+
+## ACTE 23 — MASK seragone-multivers (20260511T204342Z)
+- Chemin : `audit/acte23_mask_multivers_20260511T204342Z/`
+- Action : systemctl mask service + timer (réversible)
+- Raison : service dead + writer cassé (voir suite6g1-g5)
+- Successeur : ACTE 24 futur voie 3prime

@@ -1,0 +1,9 @@
+{
+  "acte": 23,
+  "titre": "MASK_SERAGONE_MULTIVERS",
+  "timestamp_utc": "2026-05-11T20:44:02Z",
+  "hash_universe": "439cc638637886ae",
+  "action": "systemctl mask seragone-multivers.{service,timer}",
+  "reversible": true,
+  "successeur_prevu": "ACTE_24_voie3prime_nouveau_service"
+}

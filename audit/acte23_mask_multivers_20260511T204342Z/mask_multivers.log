@@ -1,0 +1,95 @@
+═══════════════════════════════════════════════════════════════
+   ACTE 23 — MASK seragone-multivers (service+timer)
+   Généré : 2026-05-11T20:43:42Z
+═══════════════════════════════════════════════════════════════
+
+=== A. ÉTAT AVANT ===
+
+--- Service ---
+○ seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer
+     Loaded: loaded (/etc/systemd/system/seragone-multivers.service; disabled; preset: enabled)
+     Active: inactive (dead) since Mon 2026-05-11 20:30:03 UTC; 13min ago
+   Duration: 40.936s
+TriggeredBy: ● seragone-multivers.timer
+    Process: 2905033 ExecStart=/usr/bin/python3 /home/ubuntu/seragone/multivers_v2.py (code=exited, status=0/SUCCESS)
+   Main PID: 2905033 (code=exited, status=0/SUCCESS)
+        CPU: 3min 58.043s
+
+May 11 20:26:01 vps-1e58449b systemd[1]: Starting seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer...
+May 11 20:30:03 vps-1e58449b systemd[1]: seragone-multivers.service: Deactivated successfully.
+May 11 20:30:03 vps-1e58449b systemd[1]: Finished seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer.
+May 11 20:30:03 vps-1e58449b systemd[1]: seragone-multivers.service: Consumed 3min 58.043s CPU time.
+
+--- Timer ---
+● seragone-multivers.timer - Seragone Multivers V2 - tick toutes les 30 min
+     Loaded: loaded (/etc/systemd/system/seragone-multivers.timer; enabled; preset: enabled)
+     Active: active (waiting) since Sat 2026-05-09 18:52:42 UTC; 2 days ago
+    Trigger: Mon 2026-05-11 20:56:01 UTC; 12min left
+   Triggers: ● seragone-multivers.service
+
+May 09 18:52:42 vps-1e58449b systemd[1]: Started seragone-multivers.timer - Seragone Multivers V2 - tick toutes les 30 min.
+
+--- list-timers ---
+Mon 2026-05-11 20:56:01 UTC    12min Mon 2026-05-11 20:26:01 UTC         17min ago seragone-multivers.timer       seragone-multivers.service
+
+--- is-enabled ---
+service : disabled
+timer   : enabled
+
+--- unit files ---
+-rw-r--r-- 1 root root 433 May  9 18:52 /etc/systemd/system/seragone-multivers.service
+-rw-r--r-- 1 root root 441 May  9 18:52 /etc/systemd/system/seragone-multivers.service.bak_avant_timer_1778352761
+-rw-r--r-- 1 root root 230 May  9 18:52 /etc/systemd/system/seragone-multivers.timer
+
+--- dernières lignes journal ---
+May 11 18:25:19 vps-1e58449b systemd[1]: Starting seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer...
+May 11 18:29:10 vps-1e58449b systemd[1]: seragone-multivers.service: Deactivated successfully.
+May 11 18:29:10 vps-1e58449b systemd[1]: Finished seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer.
+May 11 18:29:10 vps-1e58449b systemd[1]: seragone-multivers.service: Consumed 3min 48.693s CPU time.
+May 11 18:55:29 vps-1e58449b systemd[1]: Starting seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer...
+May 11 18:59:28 vps-1e58449b systemd[1]: seragone-multivers.service: Deactivated successfully.
+May 11 18:59:28 vps-1e58449b systemd[1]: Finished seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer.
+May 11 18:59:28 vps-1e58449b systemd[1]: seragone-multivers.service: Consumed 3min 56.599s CPU time.
+May 11 19:25:41 vps-1e58449b systemd[1]: Starting seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer...
+May 11 19:29:58 vps-1e58449b systemd[1]: seragone-multivers.service: Deactivated successfully.
+May 11 19:29:58 vps-1e58449b systemd[1]: Finished seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer.
+May 11 19:29:58 vps-1e58449b systemd[1]: seragone-multivers.service: Consumed 4min 14.877s CPU time.
+May 11 19:56:00 vps-1e58449b systemd[1]: Starting seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer...
+May 11 20:01:04 vps-1e58449b systemd[1]: seragone-multivers.service: Deactivated successfully.
+May 11 20:01:04 vps-1e58449b systemd[1]: Finished seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer.
+May 11 20:01:04 vps-1e58449b systemd[1]: seragone-multivers.service: Consumed 4min 59.299s CPU time.
+May 11 20:26:01 vps-1e58449b systemd[1]: Starting seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer...
+May 11 20:30:03 vps-1e58449b systemd[1]: seragone-multivers.service: Deactivated successfully.
+May 11 20:30:03 vps-1e58449b systemd[1]: Finished seragone-multivers.service - Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer.
+May 11 20:30:03 vps-1e58449b systemd[1]: seragone-multivers.service: Consumed 3min 58.043s CPU time.
+
+=== B. ACTIONS ===
+
+>>> stop timer
+>>> stop service
+>>> disable timer
+Removed "/etc/systemd/system/timers.target.wants/seragone-multivers.timer".
+>>> disable service
+>>> mask timer
+Failed to mask unit: File /etc/systemd/system/seragone-multivers.timer already exists.
+>>> mask service
+Failed to mask unit: File /etc/systemd/system/seragone-multivers.service already exists.
+>>> daemon-reload
+
+=== C. ÉTAT APRÈS ===
+
+service : disabled / inactive
+timer   : disabled / inactive
+
+✅ plus aucun timer multivers actif
+
+=== D. VÉRIFICATION GLOBALE services seragone ===
+  seragone-1min.service                          loaded    active     running       Séragone Collecteur 1min Binance BTCUSDT
+  seragone-api.service                           loaded    active     running       Seragone API Service
+  seragone-brain.service                         loaded    active     running       Seragone Brain (production)
+  seragone-brisance.service                      loaded    active     running       Seragone Brisance (protection volatilité)
+  seragone-mondes-oneshot.service                loaded    active     running       Seragone Mondes OneShot (communicants + autonomes, loop 60s)
+  seragone-securite.service                      loaded    active     running       Seragone Securite (barrière protection)
+  seragone-sentinelle.service                    loaded    active     running       Seragone Sentinelle (veille comportementale)
+
+=== FIN ACTE 23 ===
