@@ -119,3 +119,8 @@ Invariants 6x6 post-scellement final (immutables toute la session) :
 - Motif : acte 23 basé sur diagnostic faux (oneshot confondu avec dead)
 - Action : re-enable + start timer
 - Leçon : toujours lire journalctl avant mask
+
+## DOCTRINE 12 — LIRE AVANT DE CONCLURE (20260511T204701Z)
+- Chemin : `canon/DOCTRINE_12_LIRE_AVANT_DE_CONCLURE.md`
+- Contexte : fait suite au couple ACTE 23 + 23-bis
+- Règle cœur : logs réels avant tout diagnostic, jamais les noms de dossiers
