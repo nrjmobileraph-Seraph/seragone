@@ -1,0 +1,16 @@
+{
+  "acte": 22,
+  "titre": "SERAGONE_ONE_V1_SOCLE_VISION_TOTALE",
+  "timestamp_utc": "2026-05-11T20:39:17Z",
+  "hash_universe": "439cc638637886ae",
+  "hash_script": "dff3b21aa41c2212",
+  "hash_one_md": "cc557fdcb70945f2",
+  "files": [
+    "ACTE_22_SERAGONE_ONE_V1_SOCLE_VISION_TOTALE.md",
+    "seragone_one.py",
+    "SERAGONE_ONE.md",
+    "SERAGONE_ONE.json",
+    "SERAGONE_ONE_HASH.txt",
+    "crontab_at_gravure.txt"
+  ]
+}
