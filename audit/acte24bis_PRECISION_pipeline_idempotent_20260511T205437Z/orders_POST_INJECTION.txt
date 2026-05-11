@@ -1,0 +1,5 @@
+total 40
+-rw-rw-r-- 1 ubuntu ubuntu  399 May 11 20:55 AUTO_A7_20260511T205502.json
+drwxrwxr-x 2 ubuntu ubuntu 4096 May 11 08:53 processed
+drwxrwxr-x 2 ubuntu ubuntu 4096 May 11 08:53 validated
+drwxrwxr-x 2 ubuntu ubuntu 4096 May 10 18:20 failed

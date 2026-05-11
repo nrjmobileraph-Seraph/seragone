@@ -130,3 +130,9 @@ Invariants 6x6 post-scellement final (immutables toute la session) :
 - Cause : $SERAGONE non défini en env cron
 - Fix : chemins absolus dans crontab
 - Preuve : logs remplis après fix
+
+## ACTE 24-bis — Précision idempotence A7 (20260511T205437Z)
+- Chemin : `audit/acte24bis_PRECISION_pipeline_idempotent_20260511T205437Z/`
+- Précise : le silence A7 est du DESIGN (SKIP_IDEMPOTENT)
+- Démo : injection hash reset + observation end-to-end
+- Deuxième leçon Doctrine 12 dans la soirée

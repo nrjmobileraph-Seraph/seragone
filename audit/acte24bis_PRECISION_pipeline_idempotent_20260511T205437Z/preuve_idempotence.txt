@@ -1,0 +1,8 @@
+  6. Compare avec hash précédent dans demo/states/decision_to_order_state.json
+  7. Identique → SKIP_IDEMPOTENT + exit 0
+  8. Différent → écrit ordre 12 champs + update hash + ORDER_GENERATED
+  9. Exit 0
+--
+        log_event("SKIP_IDEMPOTENT", hash=new_h, direction=direction,
+                  finale=finale, tireurs=tireurs)
+        return 0
