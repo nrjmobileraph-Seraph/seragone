@@ -1,0 +1,199 @@
+##############################################################################
+# CRON MAÎTRE SÉRAGONE — VERSION DÉFINITIVE
+# Fichier : /home/ubuntu/seragone/CRON_MAITRE.cron
+# 
+# RÈGLE ABSOLUE : Ce fichier est la SEULE source de vérité du cron.
+# Pour modifier le cron : modifier CE FICHIER puis exécuter :
+#   crontab /home/ubuntu/seragone/CRON_MAITRE.cron
+#
+# JAMAIS de "crontab -e" directement.
+# JAMAIS de "echo ... | crontab -"
+# JAMAIS d'ajout de tâche sans modifier ce fichier d'abord.
+#
+# Si un Claude ou une IA modifie le cron autrement, le restaurer avec :
+#   crontab /home/ubuntu/seragone/CRON_MAITRE.cron
+#
+# Dernière mise à jour : 16 avril 2026
+# Source : AUDIT_DEFINITIF_SERAGONE + diagnostic VPS
+##############################################################################
+
+# Variables d'environnement
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin:/home/ubuntu/.local/bin
+SERAGONE=/home/ubuntu/seragone
+
+##############################################################################
+# DAEMONS (gérés par @reboot, pas par cron régulier)
+##############################################################################
+
+@reboot cd /home/ubuntu/seragone && nohup python3 collector_binance.py >> logs/collector.log 2>&1 &
+@reboot cd /home/ubuntu/seragone && nohup python3 sniper_live.py >> logs/sniper.log 2>&1 &
+# NEUTRALISE_V1L_BRISANCE_V4_CANON_PROD: @reboot cd /home/ubuntu/seragone && nohup python3 brisance_v4.py >/dev/null 2>&1 &
+
+##############################################################################
+# HAUTE FRÉQUENCE
+##############################################################################
+
+# Bulletin mobile (push GitHub toutes les minutes)
+* * * * * /tmp/push_bulletin.sh >> /home/ubuntu/seragone/logs/github_push.log 2>&1
+
+# Pilote + mise à jour live (toutes les minutes)
+* * * * * cd /home/ubuntu/seragone && python3 update_live.py >> logs/update_live.log 2>&1
+* * * * * cd /home/ubuntu/seragone && python3 seragone_pilot.py >> logs/pilot.log 2>&1
+
+# 27 équations du temps (toutes les 5 minutes)
+*/5 * * * * cd /home/ubuntu/seragone && python3 temps_seragone.py >> logs/temps_seragone.log 2>&1
+
+# Multivers progressif 110 mondes (toutes les 30 minutes)
+*/30 * * * * cd /home/ubuntu/seragone && python3 multivers_progressif.py >> logs/multivers_prog.log 2>&1
+
+# Mise à jour données (toutes les heures)
+0 * * * * cd /home/ubuntu/seragone && python3 update_data.py >> logs/update_data.log 2>&1
+
+##############################################################################
+# QUOTIDIEN — SÉQUENCE DU MATIN (dans l'ordre chronologique)
+##############################################################################
+
+# 07:30 — Noise Control (14 modules) + Shadow + Range
+
+# 07:55 — 3 éclaireurs (W1, Contre-Éclairé, Pur_GARCH)
+55 7 * * * cd /home/ubuntu/seragone && python3 compute_ec_daily.py >> logs/eclaireurs.log 2>&1
+
+# 08:00 — Scraper CryptoQuant (données onchain)
+0 8 * * * cd /home/ubuntu/seragone && python3 cryptoquant_scraper.py >> logs/cryptoquant.log 2>&1
+
+# 08:02 — Q_jour (7 mondes récursifs, monotonie, geste)
+2 8 * * * cd /home/ubuntu/seragone && python3 q_jour_calc.py >> logs/q_jour.log 2>&1
+
+# 08:05 — Gardien onchain (7 CSV CryptoQuant)
+5 8 * * * cd /home/ubuntu/seragone && python3 gardien_onchain.py >> logs/onchain.log 2>&1
+
+# 08:08 — Moteur cyclique (12 phases, position dans le cycle 4 ans)
+8 8 * * * cd /home/ubuntu/seragone && python3 moteur_cyclique.py >> logs/cycle.log 2>&1
+
+# 08:10 — Chef d'orchestre (56 mondes = 7 fenêtres × 8 sous-signaux)
+7 8 * * * cd /home/ubuntu/seragone && python3 symetrie_module.py >> logs/symetrie_cron.log 2>&1
+9 8 * * * cd /home/ubuntu/seragone && python3 prudence_module.py >> logs/prudence_cron.log 2>&1
+# 08:13 — Souffle Premier Air (standalone, 13e voix d'attestation)
+13 8 * * * cd /home/ubuntu/seragone && python3 souffle_live.py >> logs/souffle_premier.log 2>&1
+
+# 08:12 — Mondes communicants (pont récursion ↔ CWT)
+
+# 08:15 — Mondes parallèles (579 mondes)
+
+# 08:20 — 7D clean (dimensions T et Θ)
+20 8 * * * cd /home/ubuntu/seragone && python3 seragone_7d_clean.py >> logs/7d_clean.log 2>&1
+
+# 08:25 — Batch mondes récursifs (Φ* locaux, distances locales)
+25 8 * * * cd /home/ubuntu/seragone && python3 batch_mondes_recursifs.py >> logs/batch_recursifs.log 2>&1
+
+# 08:30 — Vrais yeux subdaily (débloquer S et H intraday)
+30 8 * * * cd /home/ubuntu/seragone && python3 vrais_yeux_subdaily.py >> logs/vrais_yeux_subdaily.log 2>&1
+
+# 08:35 — Récursif V1 signal (100 mondes PAPER)
+35 8 * * * cd /home/ubuntu/seragone && python3 recursif_v1_signal.py >> logs/recursif_v1.log 2>&1
+
+# 08:40 — Récursif NC bridge (NC × récursif, PAPER)
+40 8 * * * cd /home/ubuntu/seragone && python3 recursif_nc_bridge.py >> logs/recursif_nc.log 2>&1
+
+# 08:45 — Notification Pionex
+45 8 * * * cd /home/ubuntu/seragone && python3 notif_pionex.py >> logs/notif.log 2>&1
+
+##############################################################################
+# QUOTIDIEN — MAINTENANCE
+##############################################################################
+
+# 00:30 — Moniteur de redondance
+30 0 * * * cd /home/ubuntu/seragone && python3 seragone_redundance_monitor.py >> logs/redundance.log 2>&1
+
+##############################################################################
+# FIN DU CRON MAÎTRE
+# Pour appliquer : crontab /home/ubuntu/seragone/CRON_MAITRE.cron
+# Pour vérifier : crontab -l
+# Pour restaurer : même commande
+##############################################################################
+30 7 * * * cd /home/ubuntu/seragone && python3 nc_engine.py >> logs/nc_engine.log 2>&1
+18 8 * * * cd /home/ubuntu/seragone && python3 provinces_27d_live.py >> logs/provinces.log 2>&1
+*/5 * * * * cd /home/ubuntu/seragone && python3 subdaily_runner.py >> logs/subdaily.log 2>&1
+*/5 * * * * cd /home/ubuntu/seragone && python3 chronometer_fluide.py >> logs/chronometer.log 2>&1
+50 8 * * * cd /home/ubuntu/seragone && python3 born_temps_live.py >> logs/born_temps.log 2>&1
+6,36 * * * * cd /home/ubuntu/seragone && /usr/bin/python3 chaines_epurees.py >> logs/chaines_cron.log 2>&1
+31 7 * * * cd /home/ubuntu/seragone && python3 nc_history_writer.py >> logs/nc_history.log 2>&1
+31 7 * * * cd /home/ubuntu/seragone && python3 nc_history_writer.py >> logs/nc_history.log 2>&1
+11 8 * * * cd /home/ubuntu/seragone && python3 nourrir_92_mondes.py >> logs/nourrir_92.log 2>&1
+@reboot cd /home/ubuntu/seragone && nohup python3 tireur_pulse.py >> logs/tireur_seconde.log 2>&1 &
+*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_5min.py >> logs/tireur_5min.log 2>&1
+8 8 * * * cd /home/ubuntu/seragone && python3 extract_18ss.py >> logs/extract_18ss.log 2>&1
+15 8 * * * cd /home/ubuntu/seragone && python3 calc_dH5j.py >> logs/dH5j.log 2>&1
+
+# === TIREURS V6 SÉRAGONE (22 avril 2026) ===
+0 * * * * cd /home/ubuntu/seragone && python3 tireur_presence.py >> logs/tireur_presence.log 2>&1
+*/30 * * * * cd /home/ubuntu/seragone && python3 tireur_tenue.py >> logs/tireur_tenue.log 2>&1
+*/15 * * * * cd /home/ubuntu/seragone && python3 tireur_vigie.py >> logs/tireur_vigie.log 2>&1
+*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_agilite.py >> logs/tireur_agilite.log 2>&1
+* * * * * cd /home/ubuntu/seragone && python3 tireur_precision.py >> logs/tireur_precision.log 2>&1
+* * * * * cd /home/ubuntu/seragone && python3 make_btc_1s.py > /dev/null 2>&1 && python3 tireur_fulgurance.py --input data/btc_1s_recent.csv >> logs/tireur_fulgurance.log 2>&1
+* * * * * cd /home/ubuntu/seragone && python3 tireur_etincelle.py >> logs/tireur_etincelle.log 2>&1
+* * * * * cd /home/ubuntu/seragone && python3 money_manager.py >/dev/null 2>&1
+*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_aplomb.py >/dev/null 2>&1
+50 8 * * * cd /home/ubuntu/seragone && python3 journees_des_tireurs_v2.py >> logs/tireurs.log 2>&1
+*/10 * * * * cd /home/ubuntu/seragone && python3 watchdog_seragone.py >> logs/watchdog.log 2>&1
+*/5 * * * * cd /home/ubuntu/seragone && python3 sentinelle_exchange_runner.py >> logs/sentinelle_exchange.log 2>&1
+7 7 * * * cd /home/ubuntu/seragone && python3 divergences_alts.py >> logs/divergences_alts.log 2>&1
+#5 8 * * * cd /home/ubuntu/seragone && python3 gardien_silencieux.py >> logs/gardien_silencieux.log 2>&1
+# Orchestrateur quotidien (après le chef à 08:10)
+12 8 * * * cd /home/ubuntu/seragone && bash orchestrateur.sh >> logs/orchestrateur.log 2>&1
+# Meta controller hebdo (dimanche 08:30)
+30 8 * * 0 cd /home/ubuntu/seragone && python3 production/allocation/meta_controller.py >> logs/meta_controller.log 2>&1
+
+# === MÉMOIRE ÉVÉNEMENTIELLE — validation croisée hebdomadaire ===
+# Exécution le samedi à 12:00, sans bloquer la boucle quotidienne
+0 12 * * 6 cd /home/ubuntu/seragone && python3 production/meta/memoire_evenementielle.py >> logs/memoire_evenementielle.log 2>&1
+
+# PEPITES_TIER1_OBSERVATOIRE_START
+# Mode OBSERVATOIRE uniquement : écrit des states, aucune attestation active.
+44 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_1_M08_sbforce.py >> logs/pepites.log 2>&1
+45 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_2_OUVRIR_SOUFFLE.py >> logs/pepites.log 2>&1
+46 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_3_souffle_M0.py >> logs/pepites.log 2>&1
+47 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_4_L3_mom_haut.py >> logs/pepites.log 2>&1
+48 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_5_L5_L7_SHORT.py >> logs/pepites.log 2>&1
+# PEPITES_TIER1_OBSERVATOIRE_END
+
+# PEPITES_TIER1_ADAPTER
+49 8 * * * cd /home/ubuntu/seragone && python3 pepites_tier1_adapter.py >> logs/pepites_adapter.log 2>&1
+
+# === PEPITES P6-P19 OBSERVATOIRE — 26 avril 2026 ===
+# Aucun branchement chef/Aplomb. States dédiés uniquement.
+50 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_6_H_shannon.py >> logs/pepites_6_19.log 2>&1
+51 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_7_H_dd_ath.py >> logs/pepites_6_19.log 2>&1
+52 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_8_M_V_H_calme.py >> logs/pepites_6_19.log 2>&1
+53 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_9_M_V_G_extreme.py >> logs/pepites_6_19.log 2>&1
+54 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_10_S_xtbas_10j.py >> logs/pepites_6_19.log 2>&1
+55 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_11_m2_crise_dd.py >> logs/pepites_6_19.log 2>&1
+56 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_12_m2_tension_Gbas.py >> logs/pepites_6_19.log 2>&1
+57 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_13_m2_tension_fg.py >> logs/pepites_6_19.log 2>&1
+58 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_14_m4_crise_Gbas.py >> logs/pepites_6_19.log 2>&1
+59 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_15_m4_crise_Hbas.py >> logs/pepites_6_19.log 2>&1
+00 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_16_m4_crise_Sbas.py >> logs/pepites_6_19.log 2>&1
+01 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_17_m5_ouvrir_dd.py >> logs/pepites_6_19.log 2>&1
+02 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_18_m6_ouvrir_Mmilieu.py >> logs/pepites_6_19.log 2>&1
+03 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_19_m7_tension_Ghaut.py >> logs/pepites_6_19.log 2>&1
+16 8 * * * cd /home/ubuntu/seragone && python3 normalise_states_compat.py >> logs/normalise_states_compat.log 2>&1
+58 8 * * * cd /home/ubuntu/seragone && python3 normalise_states_compat.py >> logs/normalise_states_compat.log 2>&1
+*/5 * * * * cd /home/ubuntu/seragone && python3 seragone_demo_health.py >> logs/seragone_demo_health_cron.log 2>&1
+* * * * * cd /home/ubuntu/seragone && python3 observer_price_live_from_btc_1s.py >> logs/observer_price_live_from_btc_1s_cron.log 2>&1
+7 * * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragone_audit_prune.lock ./seragone_audit_prune.sh 288 >> logs/seragone_audit_prune_cron.log 2>&1
+12 0 * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragone_logs_rotate.lock ./seragone_logs_rotate.sh >> logs/seragone_logs_rotate_cron.log 2>&1
+* * * * * cd /home/ubuntu/seragone && /usr/bin/python3 /home/ubuntu/seragone/seragone_live_logger.py >> /home/ubuntu/seragone/logs/seragone_live_logger_cron.log 2>&1
+* * * * * cd /home/ubuntu/seragone && /usr/bin/python3 /home/ubuntu/seragone/seragone_alerts.py >> /home/ubuntu/seragone/logs/seragone_alerts_cron.log 2>&1
+*/5 * * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragoneauditnow.lock ./seragoneauditnow.sh >> logs/seragoneauditnow_cron.log 2>&1
+17 3 * * 0 cd /home/ubuntu/seragone && ./seragoneauditretention.sh 7 --dry-run >> logs/seragoneauditretention_cron.log 2>&1
+* * * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragone_fusion_aval.lock /usr/bin/python3 /home/ubuntu/seragone/seragone_fusion_aval.py >> /home/ubuntu/seragone/logs/seragone_fusion_aval.log 2>&1
+
+# === DEMOBROKER_RUNNER A6 OPTION α — Phase 2 activé 2026-05-10 ===
+* * * * * cd /home/ubuntu/seragone && python3 demo/broker/demobroker_runner.py >> logs/demobroker_runner.log 2>&1
+# === DECISION_TO_ORDER A7 — PHASE 2 activé 2026-05-10 ===
+* * * * * cd /home/ubuntu/seragone && python3 demo/generator/decision_to_order.py >> logs/decision_to_order.log 2>&1
+# === PRUDENCE_DEMO_RUNNER A7 — PHASE 2 activé 2026-05-10 ===
+* * * * * cd /home/ubuntu/seragone && python3 demo/prudence/prudence_demo_runner.py >> logs/prudence_demo_runner.log 2>&1
+15 * * * * cd /home/ubuntu/seragone && /usr/bin/python3 tools/seragone_one.py >> logs/seragone_one.log 2>&1

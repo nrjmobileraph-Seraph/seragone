@@ -124,3 +124,9 @@ Invariants 6x6 post-scellement final (immutables toute la session) :
 - Chemin : `canon/DOCTRINE_12_LIRE_AVANT_DE_CONCLURE.md`
 - Contexte : fait suite au couple ACTE 23 + 23-bis
 - Règle cœur : logs réels avant tout diagnostic, jamais les noms de dossiers
+
+## ACTE 24 — Pipeline A7 end-to-end + fix $SERAGONE (20260511T205215Z)
+- Chemin : `audit/acte24_A7_endtoend_FIX_SERAGONE_20260511T205215Z/`
+- Cause : $SERAGONE non défini en env cron
+- Fix : chemins absolus dans crontab
+- Preuve : logs remplis après fix

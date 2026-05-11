@@ -1,10 +1,10 @@
 # SERAGONE_ONE — Vision Totale
 
-**Généré (UTC)**: 2026-05-11T20:47:01.169618Z  
-**Hash univers**: `efea64be79b3af5b`  
+**Généré (UTC)**: 2026-05-11T20:52:16.127077Z  
+**Hash univers**: `2f1e2cccff95252a`  
 **Hôte**: vps-1e58449b | **IP**: 51.254.136.91 2001:41d0:305:2100::8748 | **User**: ubuntu  
 **Disque**: /dev/sda1        72G   41G   32G  57% /  
-**Uptime**: up 7 weeks, 6 days, 21 hours, 40 minutes
+**Uptime**: up 7 weeks, 6 days, 21 hours, 45 minutes
 
 ## 0. Doctrine de lecture
 - Ce fichier est **LA** source de vérité unique de Séragone.
@@ -13,19 +13,19 @@
 - Si ce fichier ne mentionne pas X, c'est que X n'existe pas (ou que le hash est périmé).
 
 ## 1. Volumétrie réelle
-- Fichiers totaux: **16779**
+- Fichiers totaux: **16789**
 - Taille: **21G**
 - Dossiers racine: **221**
 
 | Extension | Compte |
 |---|---|
 | .py | 5287 |
-| .md | 994 |
-| .txt | 2392 |
+| .md | 995 |
+| .txt | 2395 |
 | .json | 1861 |
 | .csv | 1558 |
 | .sh | 51 |
-| .log | 755 |
+| .log | 758 |
 | .yaml | 0 |
 | .toml | 1 |
 | .ini | 0 |
@@ -98,22 +98,22 @@
 
 ## 8. Runtime (exécutions vivantes)
 - Crons actifs: **90**
-- Processus Python: **18**
+- Processus Python: **17**
 ### Services systemd
 ```
-  seragone-1min.service                          loaded    active     running       Séragone Collecteur 1min Binance BTCUSDT
-  seragone-api.service                           loaded    active     running       Seragone API Service
-  seragone-brain.service                         loaded    active     running       Seragone Brain (production)
-  seragone-brisance.service                      loaded    active     running       Seragone Brisance (protection volatilité)
-  seragone-mondes-oneshot.service                loaded    active     running       Seragone Mondes OneShot (communicants + autonomes, loop 60s)
-  seragone-multivers.service                     loaded    activating start   start Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer
-  seragone-securite.service                      loaded    active     running       Seragone Securite (barrière protection)
-  seragone-sentinelle.service                    loaded    active     running       Seragone Sentinelle (veille comportementale)
+  seragone-1min.service                          loaded    active   running Séragone Collecteur 1min Binance BTCUSDT
+  seragone-api.service                           loaded    active   running Seragone API Service
+  seragone-brain.service                         loaded    active   running Seragone Brain (production)
+  seragone-brisance.service                      loaded    active   running Seragone Brisance (protection volatilité)
+  seragone-mondes-oneshot.service                loaded    active   running Seragone Mondes OneShot (communicants + autonomes, loop 60s)
+  seragone-multivers.service                     loaded    inactive dead    Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer
+  seragone-securite.service                      loaded    active   running Seragone Securite (barrière protection)
+  seragone-sentinelle.service                    loaded    active   running Seragone Sentinelle (veille comportementale)
 
 ```
 ### Timers systemd
 ```
--                                  - Mon 2026-05-11 20:45:37 UTC       2min 2s ago seragone-multivers.timer       seragone-multivers.service
+Mon 2026-05-11 21:15:37 UTC    22min Mon 2026-05-11 20:45:37 UTC          7min ago seragone-multivers.timer       seragone-multivers.service
 
 ```
 ### Processus actifs (top 30)
@@ -121,35 +121,34 @@
 root         981       1  0 Mar16 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
 ubuntu    234990       1  0 Mar30 ?        00:00:00 SCREEN -S seragone
 ubuntu    628146       1  0 Apr14 ?        00:14:56 python3 bulletin_mobile.py
-ubuntu    668794       1  0 Apr16 ?        01:38:05 python3 sniper_live.py
-ubuntu    741042       1  4 Apr17 ?        1-04:34:17 python3 collector_binance.py
+ubuntu    668794       1  0 Apr16 ?        01:38:06 python3 sniper_live.py
+ubuntu    741042       1  4 Apr17 ?        1-04:34:25 python3 collector_binance.py
 ubuntu   1208322       1  0 Apr24 ?        00:32:41 /usr/bin/python3 /home/ubuntu/seragone/collecteur_1min.py --backfill-days 7
-ubuntu   1979934       1  0 May05 ?        01:02:12 python3 -m streamlit run /home/ubuntu/cockpit/app/cockpit_v113.py --server.port 8501 --server.address 0.0.0.0
+ubuntu   1979934       1  0 May05 ?        01:02:14 python3 -m streamlit run /home/ubuntu/cockpit/app/cockpit_v113.py --server.port 8501 --server.address 0.0.0.0
 ubuntu   2397580       1  0 May08 ?        00:00:00 inotifywait -m -e close_write /home/ubuntu/seragone/state.json --timefmt %Y-%m-%d %H:%M:%S --format %T CLOSE_WRITE
 ubuntu   2519871       1  0 May09 ?        00:00:05 /bin/bash /home/ubuntu/seragone/run_mondes_one_shot_loop.sh
-ubuntu   2520010       1  3 May09 ?        01:48:37 /usr/bin/python3 /home/ubuntu/seragone/seragone_brain.py
+ubuntu   2520010       1  3 May09 ?        01:48:51 /usr/bin/python3 /home/ubuntu/seragone/seragone_brain.py
 ubuntu   2520605       1  0 May09 ?        00:00:49 /usr/bin/python3 /home/ubuntu/seragone/sentinelle_seragone.py
-ubuntu   2520658       1  0 May09 ?        00:13:15 python3 production/protection/brisance.py
+ubuntu   2520658       1  0 May09 ?        00:13:16 python3 production/protection/brisance.py
 ubuntu   2520661       1  0 May09 ?        00:01:00 /home/ubuntu/seragone/.venv/bin/python3 /home/ubuntu/seragone/securite_seragone.py
-ubuntu   2520838       1  0 May09 ?        00:13:16 /usr/bin/python3 /home/ubuntu/seragone/production/protection/brisance.py
-ubuntu   2524641       1  0 May09 ?        00:01:02 python3 tireur_pulse.py
+ubuntu   2520838       1  0 May09 ?        00:13:17 /usr/bin/python3 /home/ubuntu/seragone/production/protection/brisance.py
+ubuntu   2524641       1  0 May09 ?        00:01:03 python3 tireur_pulse.py
 ubuntu   2528753       1  0 May09 ?        00:00:34 /usr/bin/python3 /home/ubuntu/seragone/production/execution/api.py
-ubuntu   2914609       1 98 20:45 ?        00:02:01 /usr/bin/python3 /home/ubuntu/seragone/multivers_v2.py
-ubuntu   2916862 2903307  0 20:47 pts/2    00:00:00 python3 tools/seragone_one.py
+ubuntu   2919896 2903307  1 20:52 pts/2    00:00:00 python3 tools/seragone_one.py
 
 ```
 
 ## 9. Runtime states
 - states/: 101 | state/: 2
-- snapshots/: 2352 | snapshots_valides/: 12
-- checkpoints/: 1176 | checkpoints_valides/: 6
+- snapshots/: 2354 | snapshots_valides/: 12
+- checkpoints/: 1177 | checkpoints_valides/: 6
 - logs/: 683
 
 ## 10. Recherche & phases
 - SERAGONE_PHASE*: **85** dossiers
 - PEPITES_ASSEMBLAGES_PHASE*: **27** dossiers
 - auditactionsv1/*: **48**
-- audit/*: **156**
+- audit/*: **157**
 
 ## 11. Modèles ML V13
 - `modeles_V13_PHOENIX`
@@ -163,6 +162,7 @@ ubuntu   2916862 2903307  0 20:47 pts/2    00:00:00 python3 tools/seragone_one.p
 ## 12. Git
 ### 20 derniers commits
 ```
+3e69188a DOCTRINE 12 — LIRE AVANT DE CONCLURE (leçon acte 23 + 23-bis)
 5cafa91a ACTE 23-bis — ANNULATION acte 23 (seragone-multivers était un oneshot fonctionnel)
 8ddf516d ACTE 23 — MASK seragone-multivers (service dead + timer orphelin)
 8662fcad ACTE 22 — SERAGONE_ONE V1 socle vision totale (hash 439cc638637886ae)
@@ -182,7 +182,6 @@ efe5c694 auto
 bf58ec74 Patch Paralleles stale input guard
 df216913 auto
 50150691 auto
-57517ee6 auto
 
 ```
 ### État non committé
@@ -258,22 +257,22 @@ SERAGONE=/home/ubuntu/seragone
 31 7 * * * cd /home/ubuntu/seragone && python3 nc_history_writer.py >> logs/nc_history.log 2>&1
 11 8 * * * cd /home/ubuntu/seragone && python3 nourrir_92_mondes.py >> logs/nourrir_92.log 2>&1
 @reboot cd /home/ubuntu/seragone && nohup python3 tireur_pulse.py >> logs/tireur_seconde.log 2>&1 &
-*/5 * * * * cd $SERAGONE && python3 tireur_5min.py >> logs/tireur_5min.log 2>&1
-8 8 * * * cd $SERAGONE && python3 extract_18ss.py >> logs/extract_18ss.log 2>&1
-15 8 * * * cd $SERAGONE && python3 calc_dH5j.py >> logs/dH5j.log 2>&1
-0 * * * * cd $SERAGONE && python3 tireur_presence.py >> logs/tireur_presence.log 2>&1
-*/30 * * * * cd $SERAGONE && python3 tireur_tenue.py >> logs/tireur_tenue.log 2>&1
-*/15 * * * * cd $SERAGONE && python3 tireur_vigie.py >> logs/tireur_vigie.log 2>&1
-*/5 * * * * cd $SERAGONE && python3 tireur_agilite.py >> logs/tireur_agilite.log 2>&1
-* * * * * cd $SERAGONE && python3 tireur_precision.py >> logs/tireur_precision.log 2>&1
-* * * * * cd $SERAGONE && python3 make_btc_1s.py > /dev/null 2>&1 && python3 tireur_fulgurance.py --input data/btc_1s_recent.csv >> logs/tireur_fulgurance.log 2>&1
-* * * * * cd $SERAGONE && python3 tireur_etincelle.py >> logs/tireur_etincelle.log 2>&1
-* * * * * cd $SERAGONE && python3 money_manager.py >/dev/null 2>&1
-*/5 * * * * cd $SERAGONE && python3 tireur_aplomb.py >/dev/null 2>&1
-50 8 * * * cd $SERAGONE && python3 journees_des_tireurs_v2.py >> logs/tireurs.log 2>&1
-*/10 * * * * cd $SERAGONE && python3 watchdog_seragone.py >> logs/watchdog.log 2>&1
-*/5 * * * * cd $SERAGONE && python3 sentinelle_exchange_runner.py >> logs/sentinelle_exchange.log 2>&1
-7 7 * * * cd $SERAGONE && python3 divergences_alts.py >> logs/divergences_alts.log 2>&1
+*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_5min.py >> logs/tireur_5min.log 2>&1
+8 8 * * * cd /home/ubuntu/seragone && python3 extract_18ss.py >> logs/extract_18ss.log 2>&1
+15 8 * * * cd /home/ubuntu/seragone && python3 calc_dH5j.py >> logs/dH5j.log 2>&1
+0 * * * * cd /home/ubuntu/seragone && python3 tireur_presence.py >> logs/tireur_presence.log 2>&1
+*/30 * * * * cd /home/ubuntu/seragone && python3 tireur_tenue.py >> logs/tireur_tenue.log 2>&1
+*/15 * * * * cd /home/ubuntu/seragone && python3 tireur_vigie.py >> logs/tireur_vigie.log 2>&1
+*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_agilite.py >> logs/tireur_agilite.log 2>&1
+* * * * * cd /home/ubuntu/seragone && python3 tireur_precision.py >> logs/tireur_precision.log 2>&1
+* * * * * cd /home/ubuntu/seragone && python3 make_btc_1s.py > /dev/null 2>&1 && python3 tireur_fulgurance.py --input data/btc_1s_recent.csv >> logs/tireur_fulgurance.log 2>&1
+* * * * * cd /home/ubuntu/seragone && python3 tireur_etincelle.py >> logs/tireur_etincelle.log 2>&1
+* * * * * cd /home/ubuntu/seragone && python3 money_manager.py >/dev/null 2>&1
+*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_aplomb.py >/dev/null 2>&1
+50 8 * * * cd /home/ubuntu/seragone && python3 journees_des_tireurs_v2.py >> logs/tireurs.log 2>&1
+*/10 * * * * cd /home/ubuntu/seragone && python3 watchdog_seragone.py >> logs/watchdog.log 2>&1
+*/5 * * * * cd /home/ubuntu/seragone && python3 sentinelle_exchange_runner.py >> logs/sentinelle_exchange.log 2>&1
+7 7 * * * cd /home/ubuntu/seragone && python3 divergences_alts.py >> logs/divergences_alts.log 2>&1
 12 8 * * * cd /home/ubuntu/seragone && bash orchestrateur.sh >> logs/orchestrateur.log 2>&1
 30 8 * * 0 cd /home/ubuntu/seragone && python3 production/allocation/meta_controller.py >> logs/meta_controller.log 2>&1
 0 12 * * 6 cd /home/ubuntu/seragone && python3 production/meta/memoire_evenementielle.py >> logs/memoire_evenementielle.log 2>&1
@@ -299,9 +298,8 @@ SERAGONE=/home/ubuntu/seragone
 03 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_19_m7_tension_Ghaut.py >> logs/pepites_6_19.log 2>&1
 16 8 * * * cd /home/ubuntu/seragone && python3 normalise_states_compat.py >> logs/normalise_states_compat.log 2>&1
 58 8 * * * cd /home/ubuntu/seragone && python3 normalise_states_compat.py >> logs/normalise_states_compat.log 2>&1
-*/5 * * * * cd $SERAGONE && python3 seragone_demo_health.py >> logs/seragone_demo_health_cron.log 2>&1
-* * * * * cd /home/ubuntu/seragone && python3 observer_price_live_from_btc_1s.py >> logs/observer_price_live_from_btc_1s_cron.log 2>&1
-7 * * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragone_audit_prune.lock ./seragone_aud
+*/5 * * * * cd /home/ubuntu/seragone && python3 seragone_demo_health.py >> logs/seragone_demo_health_cron.log 2>&1
+* * * * * cd /home/ubuntu/serago
 ```
 
 ## 14. Hash par dossier racine (221)
@@ -450,7 +448,7 @@ SERAGONE=/home/ubuntu/seragone
 | `archive_legacy_aplomb` | 2 | `15d6a1c7bd04` |
 | `archives_pollution_cockpit_20260505_072104` | 2 | `b0655c244632` |
 | `attestations` | 1 | `e3520d1448ee` |
-| `audit` | 897 | `f3133b869a42` |
+| `audit` | 902 | `26d876bbe1ce` |
 | `audit_actions_v1` | 404 | `a35ec7efc7e1` |
 | `audit_cartographie_multimondes_moteurs_20260506_204436` | 17 | `8eaaacb9ef98` |
 | `audit_cloture_paralleles_stale_guard_20260506_203227` | 9 | `04d97daa525b` |
@@ -468,7 +466,7 @@ SERAGONE=/home/ubuntu/seragone
 | `auditrapports` | 28 | `486a952a1e90` |
 | `backups` | 203 | `3b9caf5a1162` |
 | `backups_alias_paralleles_20260505_233502` | 4 | `85f16a79ec1d` |
-| `backups_crontab` | 5 | `dfd969d33366` |
+| `backups_crontab` | 6 | `bcedbd0b7788` |
 | `backups_demo_health_20260506_000028` | 0 | `empty` |
 | `backups_logging_20260507_193151` | 4 | `6d4b515d48db` |
 | `backups_logging_autopath_20260507_193550` | 1 | `12330b1a17d6` |
@@ -485,18 +483,18 @@ SERAGONE=/home/ubuntu/seragone
 | `backups_sentinelle_20260505_073558` | 1 | `7e5d8876f448` |
 | `bulletins` | 2 | `203e5e4fdf2c` |
 | `cache` | 5 | `83419922b6df` |
-| `canon` | 29 | `1451779c8b53` |
-| `checkpoints` | 1176 | `8332b192ecb9` |
+| `canon` | 30 | `a7f87958cd30` |
+| `checkpoints` | 1177 | `23a27ba72593` |
 | `checkpoints_valides` | 6 | `e95d70001403` |
 | `config` | 5 | `cdb6d29d5a3c` |
-| `data` | 170 | `6bef8299c3e8` |
-| `demo` | 63 | `e624e350a936` |
+| `data` | 170 | `13b3e39d2145` |
+| `demo` | 63 | `8f915f1cd3a4` |
 | `demoreports` | 2 | `2b01d95cca6b` |
 | `diagnostics` | 1 | `ba1a448e6608` |
 | `documentswindows` | 29 | `f96004a55c04` |
 | `legacy` | 1 | `6127a3f745a8` |
 | `legacy_json_backup` | 3 | `7361e46ffec7` |
-| `logs` | 683 | `bee46834fd32` |
+| `logs` | 683 | `9e28474dfd43` |
 | `modeles_V13_PHOENIX` | 10 | `ba17ca20e2e1` |
 | `modeles_V13_PHOENIX_OOS` | 10 | `ff0f19b9f620` |
 | `modeles_V13_SHIELD` | 10 | `263a1df1a02d` |
@@ -513,21 +511,21 @@ SERAGONE=/home/ubuntu/seragone
 | `observabiliteseragone` | 36 | `54fa58926e84` |
 | `observatoire` | 1 | `ee0d679f5f24` |
 | `output` | 26 | `fda53a9ff21b` |
-| `output_bt_v2` | 8 | `c18c33b078c2` |
+| `output_bt_v2` | 8 | `86f1eecfa149` |
 | `palette_claude` | 494 | `75d50a82032e` |
 | `precheck_305_20260505_233202` | 4 | `53b4c7c87a69` |
 | `production` | 148 | `358bddd190a9` |
 | `reports` | 2 | `4326a92dda50` |
 | `research` | 81 | `7ea15954dd6e` |
 | `scripts` | 11 | `2be82f6771f9` |
-| `snapshots` | 2352 | `31b6e4b69c36` |
+| `snapshots` | 2354 | `310a87ba819d` |
 | `snapshots_valides` | 12 | `ac2fcf4b6ed0` |
 | `state` | 2 | `0a525cc58c13` |
-| `states` | 101 | `2a34353f86bc` |
+| `states` | 101 | `0ed58a20a94b` |
 | `tests` | 1 | `5e8165ca91f3` |
 | `tmp` | 0 | `empty` |
 | `tools` | 23 | `f1288bbf2ef9` |
 | `voix_seragone_92` | 59 | `565ceca9a361` |
 
 ---
-**FIN SERAGONE_ONE** | hash: `efea64be79b3af5b` | généré: 2026-05-11T20:47:01.169618Z
+**FIN SERAGONE_ONE** | hash: `2f1e2cccff95252a` | généré: 2026-05-11T20:52:16.127077Z
