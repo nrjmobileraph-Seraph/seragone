@@ -1,0 +1,14 @@
+    981 Mon Mar 16 23:07:14 2026 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+ 234990 Mon Mar 30 20:35:57 2026 SCREEN -S seragone
+ 628146 Tue Apr 14 21:23:13 2026 python3 bulletin_mobile.py
+ 668794 Thu Apr 16 02:40:26 2026 python3 sniper_live.py
+ 741042 Fri Apr 17 16:30:17 2026 python3 collector_binance.py
+ 828204 Sun Apr 19 07:16:51 2026 python3 seragone_brain.py
+ 971621 Tue Apr 21 20:21:41 2026 python3 tireur_pulse.py
+1208322 Fri Apr 24 06:19:34 2026 /usr/bin/python3 /home/ubuntu/seragone/collecteur_1min.py --backfill-days 7
+1759106 Fri May  1 08:30:24 2026 /usr/bin/python3 /home/ubuntu/seragone/production/execution/api.py
+1979934 Tue May  5 07:02:48 2026 python3 -m streamlit run /home/ubuntu/cockpit/app/cockpit_v113.py --server.port 8501 --server.address 0.0.0.0
+2225245 Thu May  7 19:05:22 2026 python3 sentinelle_seragone.py
+2226155 Thu May  7 19:16:01 2026 .venv/bin/python3 securite_seragone.py
+2229580 Thu May  7 19:43:41 2026 python3 /home/ubuntu/seragone/production/protection/brisance.py
+2237275 Thu May  7 21:15:58 2026 tee demo/reports/RACCORDEMENT_CHAINE_REELLE_VERS_DEMO_20260507_211559/processus_python_actifs.txt

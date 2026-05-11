@@ -1,0 +1,91 @@
+keys_count 90
+T float 0.0
+Theta float 0.5469
+ailes_dd float 0.3669
+ailes_directionnel float 0.0
+ailes_etat str 'MONTEE_LENTE'
+ailes_explication str 'Temperance seule'
+ailes_grid_mult float 1.0
+ailes_ma200 float 83170.61
+ailes_ma50 float 73245.3
+ailes_prix float 79899.99
+ailes_pulsation_ok bool True
+ailes_r20 float 0.0556
+ailes_r5 float 0.0169
+ailes_regle str 'BRUIT'
+ailes_tbr float 0.0
+ailes_timestamp str '2026-05-07T21:15:02.382377+00:00'
+ailes_vitesse_24h float -0.019193
+attestation dict subkeys= ['n_voix', 'voix', 'multiplicateur', 'label', 'taille_avant', 'taille_apres']
+c1 dict subkeys= ['force_du_jour', 'taille_max_c1', 'blocage_dur', 'raison', 'details']
+calc_s float 2.6
+chance_gain_pct int 50
+communicants dict subkeys= ['C1_conv', 'C1_conv_pond', 'C1_sizing', 'C2_recur_pct', 'C2_paral_pct', 'C2_total', 'C3_shannon', 'C3_distance', 'C3_capacite', 'C4_etat', 'C4_r1min', 'C4_r5min', 'C5_label', 'C5_sizing', 'C5_regime', 'C6_taker', 'C6_vitesse', 'C6_oracle', 'C7_taille', 'C7_Q_jour']
+contre_eclaire dict subkeys= ['decision', 'sizing', 'raison']
+conv_energy float 0.5669
+conv_struct float 1.0
+convergence float 0.0036
+dH5j dict subkeys= ['value', 'P10', 'crash', 'timestamp']
+data dict subkeys= ['btcdernierjour', 'btcnjours', 'fgdisponible', 'frdisponible', 'sp500disponible']
+dataqualite dict subkeys= ['etat', 'commentaire']
+diagnostic dict subkeys= ['runok', 'commentaire']
+direction float 3.0448
+distance_phi_star dict subkeys= ['M', 'V', 'S', 'H', 'G', 'T', 'Theta']
+eclaireur dict subkeys= ['decision', 'sizing', 'raison']
+execution dict subkeys= ['etat', 'commentaire']
+fgvalue float 47.0
+fichiers dict subkeys= ['btc', 'feargreed', 'sp500', 'fundingrate']
+force_du_jour str 'brouille'
+gardien_silencieux dict subkeys= ['etat', 'commentaire']
+geste str 'A'
+gesteconfiance NoneType None
+gestesource str 'tore+souffle+distance'
+horodatage dict subkeys= ['utc', 'source']
+integration dict subkeys= ['village', 'v13', 'bridge', 'c1', 'pilotage_village', 'oracle', 'phi_engine', 'multivers']
+kuramoto_R float 0.9731
+lecture_oncle str 'NUAGEUX'
+m0_actif bool True
+maturite dict subkeys= ['etat', 'commentaire']
+mode str 'full'
+mondes dict subkeys= ['ntotal', 'nact', 'distances', 'distanceglobale', 'bornscore', 'etat']
+multivers dict subkeys= ['etat', 'commentaire', 'n_mondes', 'n_vivants', 'n_long_hist', 'n_short_hist', 'n_neutre_hist', 'n_dernier_long', 'n_dernier_short', 'n_dernier_neutre', 'g_libre', 'biais', 'convergence_mondes', 'age_minutes', 'source_file']
+n_act int 666
+n_scales int 666
+n_total int 666
+nc_modulation dict subkeys= ['label', 'mult', 'avant', 'apres']
+oracle dict subkeys= ['etat', 'version', 'regime', 'score', 'confiance', 'source', 'briques', 'lecture', 'commentaire']
+oracle_doseur dict subkeys= ['etat', 'version', 'entropy_20j', 'entropy_60j', 'entropy_200j', 'regime_entropy', 'tendance', 'dosage_pct', 'convergence_utilisee', 'commentaire']
+paralleles dict subkeys= ['etat', 'n_actif', 'n_total', 'convergence_pct', 'signal_bear', 'signal_fort', 'force', 'stale_input', 'input_lag_days', 'requested_date', 'commentaire']
+periods str '3.0j – 1111.0j'
+phi dict subkeys= ['M', 'V', 'S', 'H', 'G', 'T', 'Theta']
+phi_engine dict subkeys= ['etat', 'version', 'n_steps', 'phi_fused', 'distance_obs', 'distance_fused', 'zone_fused', 'tensions', 'divergence', 'dim_dominante', 'commentaire']
+phi_star dict subkeys= ['M', 'V', 'S', 'H', 'G', 'T', 'Theta']
+pilotage dict subkeys= ['version_sortie', 'fichier_actif', 'etat']
+pilotage_village dict subkeys= ['etat_village', 'taille_reference_chef', 'taille_max_c1', 'taille_autorisee_village', 'permissions', 'autorisations', 'commentaire']
+pluie_or_pct int 50
+prix float 81527.47
+prixageminutes int 0
+prixsource str 'csv_daily'
+pur_garch dict subkeys= ['decision', 'sizing', 'raison']
+q_jour int 1
+resume dict subkeys= ['geste', 'taille', 'souffleactif', 'commentaire']
+resume_court str 'Conditions incertaines, patience.'
+risque dict subkeys= ['etat', 'commentaire']
+score float 0.5786
+securite dict subkeys= ['niveau', 'dd', 'taille_avant', 'taille_apres', 'kill']
+seuils dict subkeys= ['conv', 'R']
+shannon float 0.6054
+souffle dict subkeys= ['actif', 'invers', 'frema7', 'spmom14']
+souffle_actif bool True
+souffle_premier dict subkeys= ['etat', 'signal', 'voix', 'age_min', 'frais', 'prix', 'distance', 'geste', 'fr_ema7', 'bull50', 'commentaire']
+souffle_score float 0.5786
+supra_convergence bool False
+taille float 0.0
+taille_max_c1 float 0.08002500000000001
+timestamp str '2026-05-07 08:10:05'
+tore dict subkeys= ['signal', 'direction', 'magnitude', 'tension', 'confiance', 'stabilite', 'n_ondes_lentes', 'delta_t_jours']
+triptyque dict subkeys= ['etat', 'version', 'action', 'geste_original', 'geste_filtre', 'confiance', 'grille_beta', 'is_bruit', 'is_signal', 'signature', 'regime', 'commentaire']
+v13 dict subkeys= ['etat', 'source', 'quorum', 'ordre', 'alerte', 'timestamp_signal', 'age_minutes', 'frais', 'commentaire']
+version str 'V3-CWT-666'
+village_mult float 0.97
+wavelet str 'cmor1.5-1.0'

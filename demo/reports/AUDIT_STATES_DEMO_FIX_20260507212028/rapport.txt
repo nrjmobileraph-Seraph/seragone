@@ -1,0 +1,37 @@
+AUDIT STATES DEMO FIX 20260507212028
+Thu May  7 21:20:28 UTC 2026
+/home/ubuntu/seragone
+\n1. MODE LOCK
+MODE=MODE_DEMO_TOTAL
+DATE_POSE=2026-05-07
+PRINCIPE=SERAGONE_COMPLET_BROKER_SIMULE
+FINANCE_EXTERNE=INTERDITE
+ARGENT_REEL=INTERDIT
+EXCHANGE_REEL=INTERDIT
+ORDRES_INTERNES=AUTORISES
+EXECUTION_DEMO=AUTORISEE
+\n2. STATEDEMO JSON
+
+FILE demo/states/statedemo.json exists= True
+keys= ['argent_reel', 'created_at', 'exchange_reel', 'execution_demo_autorisee', 'finance_externe', 'last_decision', 'last_execution', 'last_order', 'mode', 'ordres_internes_autorises', 'principe', 'status', 'updated_at']
+ordrereel = None
+executionreelle = None
+geste = None
+mode = MODE_DEMO_TOTAL
+decision = None
+timestamp = None
+status = DERNIERE_EXECUTION_DEMO
+reason = None
+
+FILE demo/states/prudence_demo_state.json exists= True
+keys= ['last_order_id', 'last_output', 'last_reason', 'last_status', 'mode', 'real_finance_allowed', 'real_finance_used', 'timestamp']
+ordrereel = None
+executionreelle = None
+geste = None
+mode = MODE_DEMO_TOTAL
+decision = None
+timestamp = 2026-05-07T21:13:36.271827+00:00
+status = None
+reason = None
+\n3. CODE DANGER DIRECT SEULEMENT
+\nOUT=demo/reports/AUDIT_STATES_DEMO_FIX_20260507212028

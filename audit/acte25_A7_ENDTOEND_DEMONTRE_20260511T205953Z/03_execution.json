@@ -1,0 +1,20 @@
+{
+  "execution_id": "DEMO_EXEC_ccd1b550a4d7",
+  "order_id": "AUTO_A7_20260511T205502",
+  "timestamp": "2026-05-11T20:57:01.580971+00:00",
+  "mode": "MODE_DEMO_TOTAL",
+  "symbol": "BTC-USDT",
+  "side": "SHORT",
+  "quantity": 0.001,
+  "fill_price_demo": 81904.06,
+  "fees_demo": 0.04095203,
+  "pnl_demo": 0.0,
+  "position_after_demo": {
+    "symbol": "BTC-USDT",
+    "side": "SHORT",
+    "quantity": 0.001
+  },
+  "cash_after_demo": null,
+  "status": "FILLED_DEMO",
+  "real_finance_used": false
+}

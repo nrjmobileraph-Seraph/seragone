@@ -1,0 +1,16 @@
+{
+  "mode": "MODE_DEMO_TOTAL",
+  "order_id": "AUTO_A7_20260511T205502",
+  "timestamp": "2026-05-11T20:55:02.017950+00:00",
+  "source": "AUTO_A7_DECISION_TO_ORDER",
+  "symbol": "BTC-USDT",
+  "side": "SHORT",
+  "order_type": "MARKET_DEMO",
+  "quantity": 0.001,
+  "price_reference": 81904.06,
+  "reason": "auto_a7_position_nette_short",
+  "prudence_status": "PASS",
+  "real_finance_allowed": false,
+  "prudence_checked": true,
+  "prudence_checked_at": "2026-05-11T20:56:01.685546+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "acte": 25,
+  "titre": "A7_ENDTOEND_DEMONTRE",
+  "timestamp_utc": "2026-05-11T20:59:53Z",
+  "hash_universe": "abce706ad1af08d9",
+  "chaine_verifiee": ["generator", "prudence_V2_D85", "demobroker"],
+  "order_id_preuve": "AUTO_A7_20260511T205502",
+  "exec_id_preuve": "DEMO_EXEC_ccd1b550a4d7",
+  "duree_endtoend_minutes": 3,
+  "real_finance_used": false
+}

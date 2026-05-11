@@ -136,3 +136,10 @@ Invariants 6x6 post-scellement final (immutables toute la session) :
 - Précise : le silence A7 est du DESIGN (SKIP_IDEMPOTENT)
 - Démo : injection hash reset + observation end-to-end
 - Deuxième leçon Doctrine 12 dans la soirée
+
+## ACTE 25 — Pipeline A7 END-TO-END démontré (20260511T205953Z)
+- Chemin : `audit/acte25_A7_ENDTOEND_DEMONTRE_20260511T205953Z/`
+- Chaîne : generator → prudence V2 D85 → demobroker (3 min end-to-end)
+- Preuves : ordre AUTO_A7_20260511T205502 + exec DEMO_EXEC_ccd1b550a4d7
+- Rapport : `demo/reports/RAPPORT_A7_ENDTOEND_20260511.md`
+- Garde-fous : real_finance_used: false ✅
