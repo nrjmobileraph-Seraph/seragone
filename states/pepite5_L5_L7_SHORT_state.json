@@ -1,0 +1,34 @@
+{
+  "module": "pepite5_L5_L7_SHORT",
+  "timestamp": "2026-05-11T08:48:01.807030+00:00",
+  "version": "1.0.0",
+  "validation": {
+    "wr_train": 0.84,
+    "n_train": 56,
+    "wr_test": 0.84,
+    "n_test": 37,
+    "delta_tt": 0.4,
+    "verdict": "TIER_1_CONFIRME",
+    "remarque": "PREMIERE_VRAIE_PEPITE_SHORT"
+  },
+  "config": {
+    "L5_bas_threshold": 0.35,
+    "L7_basse_threshold": 0.4,
+    "horizon_jours": 20
+  },
+  "L5_mom": 0.345,
+  "L5_mom_bas": true,
+  "L7_vol": 0.4,
+  "L7_vol_basse": true,
+  "tire": true,
+  "voix": "pepite5_L5L7_SHORT",
+  "label": "ATTESTE_SHORT",
+  "sens": "SHORT",
+  "horizon_jours": 20,
+  "temps_dispo": true,
+  "avertissement_integration": "Cette voix est SHORT \u2014 ne pas l'ajouter au compteur d'attestation BULL. L'int\u00e9grer c\u00f4t\u00e9 permission SHORT (Aplomb/Ours_v2) ou comme alerte de sortie.",
+  "raison": "L5_mom=0.345\u22640.35 ET L7_vol=0.400\u22640.4 \u2192 SHORT 20j",
+  "sources": {
+    "temps_seragone": "temps_seragone.json (L5 SEMAINE direction, L7 TRIMESTRE bruit)"
+  }
+}

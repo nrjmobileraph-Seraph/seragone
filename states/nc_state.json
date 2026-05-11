@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-04-22T07:30:03.633934",
+  "date": "2026-04-22",
+  "prix": 78015.79,
+  "modules": {
+    "M01_trend_ma": 0.2,
+    "M02_momentum": 0.4135,
+    "M03_vol_regime": 0.3344,
+    "M04_vol_volume": -1.0,
+    "M05_fear_greed": -0.36,
+    "M06_funding": -0.0022,
+    "M07_sp500_corr": 0.0,
+    "M08_drawdown": 0.2517,
+    "M09_hurst": 0.0813,
+    "M10_range_compress": 0.1079,
+    "M11_mayer": 0.0,
+    "M12_session": 0.1,
+    "M13_skewness": 0.0586,
+    "M14_autocorr": -0.5005
+  },
+  "score_agrege": 0.0294,
+  "label": "BULL_STANDARD",
+  "multiplicateur": 1.0,
+  "geste_natif": "MAINTENIR",
+  "bull_trend": "False",
+  "policy_rule": "NATIF",
+  "geste_final": "MAINTENIR",
+  "mult_final": 1.0,
+  "historique_5j": [
+    {
+      "date": "2026-04-18",
+      "score": 0.0031,
+      "label": "BULL_STANDARD"
+    },
+    {
+      "date": "2026-04-19",
+      "score": 0.0055,
+      "label": "BULL_STANDARD"
+    },
+    {
+      "date": "2026-04-20",
+      "score": 0.0894,
+      "label": "BULL_STANDARD"
+    },
+    {
+      "date": "2026-04-21",
+      "score": 0.0557,
+      "label": "BULL_STANDARD"
+    },
+    {
+      "date": "2026-04-22",
+      "score": 0.0294,
+      "label": "BULL_STANDARD"
+    }
+  ]
+}

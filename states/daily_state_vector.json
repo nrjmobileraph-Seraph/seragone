@@ -1,0 +1,50 @@
+{
+  "date": "2026-04-23",
+  "dimensions": {
+    "G": null,
+    "V": null,
+    "H": null,
+    "S": null,
+    "M": null
+  },
+  "convergence": {
+    "Q_jour": null,
+    "nb_mondes_haussiers": null,
+    "nb_mondes_baissiers": null
+  },
+  "range": {
+    "phase": null,
+    "width_percentile": null,
+    "boussole": null
+  },
+  "ricochet": {
+    "label_nc": null,
+    "edge_score": null,
+    "damping_ratio": null,
+    "n_echoes": null
+  },
+  "protection": {
+    "Gardien_actif": false,
+    "V13_active": false,
+    "queue_detectee": false,
+    "drawdown_global": 0.0
+  },
+  "multivers": {
+    "proba_baissier": null,
+    "proba_haussier": null,
+    "proba_neutre": null
+  },
+  "moteurs": {},
+  "policy": {
+    "action": "SHORT",
+    "sizing": -1.0,
+    "geste_natif": "OUVRIR",
+    "regime_fond": "bear_trend",
+    "override_source": "local_rule"
+  },
+  "capital": {
+    "capital": 100000.0,
+    "prix_btc": 78152.3
+  },
+  "timestamp_ecriture": "2026-04-23T22:49:21.353857+00:00"
+}

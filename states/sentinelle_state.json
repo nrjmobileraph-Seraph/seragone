@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-04-22T23:19:04.945778+00:00",
+  "cycle": 2529,
+  "status": "ALERTE",
+  "alerts": [
+    "STATE_PERIME:tireurs_minute_state.json(60361s>180s)",
+    "STATE_PERIME:etincellestate.json(60362s>180s)",
+    "STATE_PERIME:money_manager_state.json(5212s>180s)",
+    "STATE_PERIME:tireur_5min_state.json(60540s>600s)"
+  ],
+  "actions": [],
+  "consecutive_ok": 0,
+  "n_relances_total": 0,
+  "derniere_alerte": "2026-04-22T23:19:04.945778+00:00"
+}

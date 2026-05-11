@@ -1,0 +1,142 @@
+{
+  "module": "visibility_cercle_recursif",
+  "timestamp": "2026-04-26T10:45:25.905516+00:00",
+  "version": "1.0.0",
+  "validation": {
+    "mode": "OBSERVATOIRE_VISIBILITE",
+    "verdict": "LECTURE_SEULE",
+    "decision_live": false,
+    "paper": true
+  },
+  "tire": false,
+  "voix": null,
+  "label": "PRESENT_CONSOMME_SANS_STATE_CLAIR",
+  "sens": "NEUTRE",
+  "horizonjours": 0,
+  "raison": "cercle_recursif est détecté dans le dépôt et dans des fichiers consommateurs, mais sans state propre évident.",
+  "lecture": "digestion successive des mondes / récursion profonde",
+  "shadow": true,
+  "decision_allowed": false,
+  "presence": {
+    "present": true,
+    "references_count": 243,
+    "references_sample": [
+      "04_signal_bear_consensus.py",
+      "AUDIT_CIBLE_20avril2026_matin.md",
+      "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "CRON_MAITRE.cron",
+      "TEST_BRIDGE_SUR_116_SILENCES.py",
+      "VERITE_FIGEE_92_MONDES_22avril2026.md",
+      "_archives_windows_2026-04-19/les_vrais_mondes (1).py",
+      "_archives_windows_2026-04-19/les_vrais_mondes (2).py",
+      "_archives_windows_2026-04-19/les_vrais_mondes (3).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (1).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (10).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (11).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (12).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (13).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (2).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (3).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (4).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (5).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (6).py"
+    ],
+    "consomme_probable": true,
+    "consumer_files_count": 48,
+    "consumer_files_sample": [
+      "04_signal_bear_consensus.py",
+      "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (1).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (10).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (11).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (12).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (13).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (2).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (3).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (4).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (5).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (6).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (7).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (8).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (9).py",
+      "_bibliotheque_modules/production_copies/04_signal_bear_consensus.py",
+      "_bibliotheque_modules/production_copies/q_local_p10_state.json",
+      "_bibliotheque_modules/production_copies/seragone_chef_orchestre_v1_state.py",
+      "_bibliotheque_modules/production_copies/state.json"
+    ],
+    "state_visible": false,
+    "state_files": []
+  },
+  "poids": {
+    "detecte": true,
+    "weight_files_count": 189,
+    "weight_files_sample": [
+      "AUDIT_CIBLE_20avril2026_matin.md",
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "CRON_MAITRE.cron",
+      "TEST_BRIDGE_SUR_116_SILENCES.py",
+      "VERITE_FIGEE_92_MONDES_22avril2026.md",
+      "_archives_windows_2026-04-19/les_vrais_mondes (1).py",
+      "_archives_windows_2026-04-19/les_vrais_mondes (2).py",
+      "_archives_windows_2026-04-19/les_vrais_mondes (3).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (1).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (10).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (11).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (12).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (13).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (2).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (3).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (4).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (5).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (6).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (7).py",
+      "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (8).py"
+    ],
+    "poids_effectif": 0.0,
+    "commentaire": "poids volontairement nul : visibilité shadow uniquement"
+  },
+  "preuves": [
+    {
+      "file": "bootstrap_communicants.py",
+      "line": "signals['convergence_recursif'] = n_active"
+    },
+    {
+      "file": "load_fg.py",
+      "line": "en 1970 par pd.to_datetime unit='s'). Les modules batch_mondes_recursifs"
+    },
+    {
+      "file": "vrais_yeux_v2.py",
+      "line": "\"\"\"GARCH(1,1) récursif : σ²(t) = ω + α·r²(t-1) + β·σ²(t-1)."
+    },
+    {
+      "file": "born_recursif.py",
+      "line": "BORN SUR MONDES RÉCURSIFS — VRAIE DIVERSITÉ"
+    },
+    {
+      "file": "born_recursif.py",
+      "line": "Les mondes récursifs ont de la VRAIE diversité :"
+    },
+    {
+      "file": "recursif_v1_config.json",
+      "line": "\"_version\": \"RECURSIF_V1_PROD\","
+    },
+    {
+      "file": "recursif_v1_config.json",
+      "line": "\"_description\": \"100 mondes recursifs, signal V pondere, seuils par regime\","
+    },
+    {
+      "file": "04_signal_bear_consensus.py",
+      "line": "# Mondes récursifs : accélération de distance (tension qui monte)"
+    },
+    {
+      "file": "04_signal_bear_consensus.py",
+      "line": "# ─── Regard 6 : au moins 3 mondes récursifs en tension montante ───"
+    },
+    {
+      "file": "seragone_chef_orchestre_v1_state.py",
+      "line": "\"commentaire\": \"mondes communicants recursifs G_libre\","
+    }
+  ]
+}

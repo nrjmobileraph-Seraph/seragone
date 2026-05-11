@@ -1,0 +1,32 @@
+{
+  "module": "pepite2_OUVRIR_SOUFFLE",
+  "timestamp": "2026-05-11T08:45:02.171236+00:00",
+  "version": "1.0.0",
+  "validation": {
+    "wr_train": 0.9474,
+    "n_train": 38,
+    "wr_test": 0.96,
+    "n_test": 25,
+    "delta_tt": 3.7,
+    "verdict": "TIER_1_CONFIRME"
+  },
+  "config": {
+    "score_souffle_haut": 0.55,
+    "horizon_jours": 20
+  },
+  "tire": false,
+  "voix": null,
+  "label": "SILENCE",
+  "sens": "LONG",
+  "horizon_jours": 20,
+  "voie_detection": "aucune voie OUVRIR d\u00e9tect\u00e9e",
+  "souffle_dispo": true,
+  "souffle_voix": null,
+  "souffle_geste": "ATTENDRE",
+  "souffle_couche": null,
+  "souffle_score": null,
+  "raison": "Pas d'OUVRIR : aucune voie OUVRIR d\u00e9tect\u00e9e",
+  "sources": {
+    "souffle_state": "souffle_premier_air_state.json (fallbacks: souffle_state.json, souffle_live_state.json)"
+  }
+}

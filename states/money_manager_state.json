@@ -1,0 +1,137 @@
+{
+  "timestamp": "2026-04-22T21:52:12.736840+00:00",
+  "engine": "MONEY_MANAGER",
+  "version": "1.0",
+  "mode": "OBSERVATOIRE",
+  "capital_total_eur": 35000.0,
+  "couches_eur": {
+    "V9_PREMIUM": 12250.0,
+    "TIREURS": 14000.0,
+    "TEMPERANCE": 7000.0,
+    "RESERVE": 1750.0
+  },
+  "contexte": {
+    "permission_aplomb": "SHORT",
+    "v9_bear": true,
+    "etincelle_horloge": "HABITABLE",
+    "etincelle_veto": false,
+    "brisance_active": false,
+    "sous_ma200": true
+  },
+  "positions_tireurs": [
+    {
+      "nom": "Presence",
+      "direction": "WAIT",
+      "intensite": 0.0,
+      "allocation_eur": 3080.0,
+      "multiplicateur_aplomb": 0.0,
+      "position_signee": 0.0,
+      "book": "STRAT"
+    },
+    {
+      "nom": "Tenue",
+      "direction": "WAIT",
+      "intensite": 0.0,
+      "allocation_eur": 2520.0,
+      "multiplicateur_aplomb": 0.0,
+      "position_signee": 0.0,
+      "book": "STRAT"
+    },
+    {
+      "nom": "Vigie",
+      "direction": "WAIT",
+      "intensite": 0.0,
+      "allocation_eur": 2100.0,
+      "multiplicateur_aplomb": 0.0,
+      "position_signee": 0.0,
+      "book": "TACT"
+    },
+    {
+      "nom": "Agilite",
+      "direction": "WAIT",
+      "intensite": 0.0,
+      "allocation_eur": 1820.0,
+      "multiplicateur_aplomb": 0.0,
+      "position_signee": 0.0,
+      "book": "TACT"
+    },
+    {
+      "nom": "Precision",
+      "direction": "WAIT",
+      "intensite": 0.0,
+      "allocation_eur": 1540.0,
+      "multiplicateur_aplomb": 0.0,
+      "position_signee": 0.0,
+      "book": "TACT"
+    },
+    {
+      "nom": "Fulgurance",
+      "direction": "WAIT",
+      "intensite": 0.0,
+      "allocation_eur": 1120.0,
+      "multiplicateur_aplomb": 0.0,
+      "position_signee": 0.0,
+      "book": "TACT"
+    },
+    {
+      "nom": "Etincelle",
+      "direction": "WAIT",
+      "intensite": 0.0,
+      "allocation_eur": 1400.0,
+      "multiplicateur_aplomb": 0.0,
+      "position_signee": 0.0,
+      "book": "RESERVE"
+    },
+    {
+      "nom": "Aplomb",
+      "direction": "SHORT",
+      "intensite": 0.0967,
+      "allocation_eur": 420.0,
+      "multiplicateur_aplomb": 1.0,
+      "position_signee": -0.0011604,
+      "book": "OTHER"
+    },
+    {
+      "nom": "Auto_Anti-V",
+      "direction": "SHORT",
+      "intensite": 0.1458,
+      "allocation_eur": 5103.0,
+      "multiplicateur_aplomb": 1.0,
+      "position_signee": -0.1458,
+      "book": "STRAT"
+    },
+    {
+      "nom": "Auto_Rythme",
+      "direction": "SHORT",
+      "intensite": 0.18,
+      "allocation_eur": 6300.0,
+      "multiplicateur_aplomb": 1.0,
+      "position_signee": -0.18,
+      "book": "STRAT"
+    },
+    {
+      "nom": "M4_Short_Tactique",
+      "direction": "SHORT",
+      "intensite": 0.1,
+      "allocation_eur": 3500.0,
+      "multiplicateur_aplomb": 1.0,
+      "position_signee": -0.1,
+      "book": "TACT"
+    }
+  ],
+  "compensation_books": {
+    "strat_brut": -0.3258,
+    "tact_brut": -0.1,
+    "strat_final": -0.3258,
+    "tact_final": -0.1,
+    "compensation_appliquee": false
+  },
+  "position_nette": {
+    "avant_gardes": -0.4269604,
+    "finale": -0.4269604,
+    "direction": "SHORT",
+    "tireurs_alignes": 4
+  },
+  "exposition_eur": -14943.614000000001,
+  "gardes_fous_alerts": []
+}

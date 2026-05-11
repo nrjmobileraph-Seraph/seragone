@@ -1,0 +1,42 @@
+{
+  "module": "pepite14_m4_crise_Gbas",
+  "timestamp": "2026-05-11T08:58:02.820796+00:00",
+  "version": "1.0.0",
+  "mode": "OBSERVATOIRE_READONLY",
+  "side_effect_safe": true,
+  "execution_allowed": false,
+  "exchange_allowed": false,
+  "live_allowed": false,
+  "validation": {
+    "wr_train": 79.59,
+    "n_train": 49,
+    "wr_test": 77.27,
+    "n_test": 22,
+    "delta_tt": 2.32,
+    "verdict": "TIER_1_PLUS_AUDITE"
+  },
+  "tire": true,
+  "status": "ATTESTE",
+  "raison": "m4_regime=CRISE et G<=P25 | monde={'m2_geste': 'ATTENDRE', 'm2_regime': 'CRISE', 'm3_geste': 'ATTENDRE', 'm3_regime': 'CRISE', 'm4_geste': 'RETRECIR', 'm4_regime': 'CRISE', 'm5_geste': 'RETRECIR', 'm5_regime': 'CRISE', 'm6_geste': 'ATTENDRE', 'm6_regime': 'TENSION', 'm7_geste': 'RETRECIR', 'm7_regime': 'CRISE'}",
+  "valeurs": {
+    "G": 0.1
+  },
+  "quantiles": {
+    "G_P25": 0.1081238041595635,
+    "G_P75": 0.1710958684315377,
+    "G_P90": 0.21189204744882603,
+    "G_P10": 0.08927227336520603
+  },
+  "sources_valeurs": {
+    "G": "today_state"
+  },
+  "voix": "pepite14_m4_crise_Gbas",
+  "label": "ATTESTE",
+  "sens": "LONG",
+  "horizon_jours": 30,
+  "sources": {
+    "history": "/home/ubuntu/seragone/seragone_v3_final.csv",
+    "today": "/home/ubuntu/seragone/state.json",
+    "monde": "/home/ubuntu/seragone/multivers_state.json"
+  }
+}

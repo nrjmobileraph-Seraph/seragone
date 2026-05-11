@@ -1,0 +1,35 @@
+{
+  "module": "pepite1_M08_sbforce",
+  "timestamp": "2026-05-11T08:44:02.769309+00:00",
+  "version": "1.0.0",
+  "validation": {
+    "wr_train": 0.9792,
+    "n_train": 48,
+    "wr_test": 0.963,
+    "n_test": 27,
+    "delta_tt": 3.7,
+    "verdict": "TIER_1_CONFIRME"
+  },
+  "config": {
+    "drawdown_threshold": -0.12,
+    "force_low_limit": 0.3,
+    "horizon_jours": 30,
+    "rolling_window": 30
+  },
+  "drawdown_30j": -0.017952788508755813,
+  "M08_drawdown_neg": false,
+  "force_du_jour": "correcte",
+  "force_score": 0.5,
+  "sb_force_LOW": false,
+  "tire": false,
+  "voix": null,
+  "label": "SILENCE",
+  "sens": "LONG",
+  "horizon_jours": 30,
+  "raison": "dd_30=-1.8% (need \u2264 -12) ; force=correcte (score=0.50, need < 0.3)",
+  "sources": {
+    "btc_daily": "/home/ubuntu/seragone/data/btc_daily.csv",
+    "chef_state": "/home/ubuntu/seragone/state.json",
+    "drawdown_window": 30
+  }
+}

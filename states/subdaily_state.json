@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-04-22T23:15:02",
+  "prix": 78563.83,
+  "dimensions": {
+    "M": 0.212,
+    "V": 0.048,
+    "S": 0.1545,
+    "H": 0.1656,
+    "G": 0.0012
+  },
+  "market": {
+    "r1h": -0.0025,
+    "r4h": -0.0037,
+    "r24h": 0.0368,
+    "vol_annualisee_1h": 0.2756,
+    "taker_ratio": 0.5,
+    "funding_rate": 2e-06,
+    "drawdown": -0.0109
+  },
+  "source": "klines_1min.db",
+  "n_bougies": 1440
+}

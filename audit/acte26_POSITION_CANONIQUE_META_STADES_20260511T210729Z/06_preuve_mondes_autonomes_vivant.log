@@ -1,0 +1,30 @@
+2026-05-11 21:04:23,000 [INFO]   0/4 mondes tirent
+2026-05-11 21:04:23,000 [INFO]   Sauve : mondes_autonomes_state.json
+2026-05-11 21:05:26,207 [INFO] 4 MONDES AUTONOMES — Rythme, Anti-V, Persistance, Rebond
+2026-05-11 21:05:26,207 [INFO]   Phi courant : M=0.300, V=0.116, S=0.196, H=0.431, G=0.100
+2026-05-11 21:05:26,207 [INFO]   Phi*_CANON  : M=0.280, V=0.330, S=0.260, H=0.260, G=0.420
+2026-05-11 21:05:26,207 [INFO] 
+2026-05-11 21:05:26,207 [INFO]   Monde             Dist Geste        Raison                             
+2026-05-11 21:05:26,207 [INFO]   ------------------------------------------------------------------------
+2026-05-11 21:05:26,207 [INFO]   Rythme           0.345 MAINTENIR    vigilance                          
+2026-05-11 21:05:26,207 [INFO]   Anti-V           0.462 RETRECIR     tension elevee                     
+2026-05-11 21:05:26,207 [INFO]   Persistance      0.619 RETRECIR     loin mais pas hostile              
+2026-05-11 21:05:26,207 [INFO]   Rebond           0.476 RETRECIR     tension elevee                     
+2026-05-11 21:05:26,207 [INFO] 
+2026-05-11 21:05:26,207 [INFO]   SILENCE — aucun monde ne tire
+2026-05-11 21:05:26,208 [INFO]   0/4 mondes tirent
+2026-05-11 21:05:26,208 [INFO]   Sauve : mondes_autonomes_state.json
+2026-05-11 21:06:29,402 [INFO] 4 MONDES AUTONOMES — Rythme, Anti-V, Persistance, Rebond
+2026-05-11 21:06:29,402 [INFO]   Phi courant : M=0.300, V=0.116, S=0.194, H=0.382, G=0.100
+2026-05-11 21:06:29,402 [INFO]   Phi*_CANON  : M=0.280, V=0.330, S=0.260, H=0.260, G=0.420
+2026-05-11 21:06:29,402 [INFO] 
+2026-05-11 21:06:29,402 [INFO]   Monde             Dist Geste        Raison                             
+2026-05-11 21:06:29,402 [INFO]   ------------------------------------------------------------------------
+2026-05-11 21:06:29,402 [INFO]   Rythme           0.329 MAINTENIR    vigilance                          
+2026-05-11 21:06:29,402 [INFO]   Anti-V           0.434 RETRECIR     tension elevee                     
+2026-05-11 21:06:29,403 [INFO]   Persistance      0.583 RETRECIR     tension elevee                     
+2026-05-11 21:06:29,403 [INFO]   Rebond           0.437 RETRECIR     tension elevee                     
+2026-05-11 21:06:29,403 [INFO] 
+2026-05-11 21:06:29,403 [INFO]   SILENCE — aucun monde ne tire
+2026-05-11 21:06:29,403 [INFO]   0/4 mondes tirent
+2026-05-11 21:06:29,403 [INFO]   Sauve : mondes_autonomes_state.json

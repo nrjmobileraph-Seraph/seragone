@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-04-22T08:13:02.035568+00:00",
+  "date": "2026-04-22",
+  "signal": "RETRAIT",
+  "prix": 78035.44,
+  "distance": 1.0,
+  "geste": "RETRECIR",
+  "fr_ema7": -3.669e-05,
+  "fr_p15": -1.011e-05,
+  "fr_p85": 6.037e-05,
+  "ma50": 70914.43,
+  "bull50": true,
+  "souffle_bas": true,
+  "souffle_haut": false
+}

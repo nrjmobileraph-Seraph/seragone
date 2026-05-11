@@ -1,0 +1,254 @@
+{
+  "timestamp_utc": "2026-05-11T21:08:01+00:00",
+  "module": "seragone_fusion_aval",
+  "version": "1.0-decision-bus-canon",
+  "source_files": {
+    "chef": {
+      "path": "state.json",
+      "exists": true,
+      "json_ok": true,
+      "age_seconds": 59.513,
+      "mtime_epoch": 1778533621.9810479
+    },
+    "moneymanager": {
+      "path": "money_manager_state.json",
+      "exists": true,
+      "json_ok": true,
+      "age_seconds": 59.998,
+      "mtime_epoch": 1778533621.4960446
+    },
+    "aplomb": {
+      "path": "aplombstate.json",
+      "exists": true,
+      "json_ok": true,
+      "age_seconds": 179.307,
+      "mtime_epoch": 1778533502.188265
+    },
+    "brisance": {
+      "path": "brisance_state.json",
+      "exists": true,
+      "json_ok": true,
+      "age_seconds": 4.485,
+      "mtime_epoch": 1778533677.0104058
+    },
+    "prudence": {
+      "path": "state/prudence_state.json",
+      "exists": true,
+      "json_ok": true,
+      "age_seconds": 46738.179,
+      "mtime_epoch": 1778486943.315972
+    },
+    "health": {
+      "path": "seragone_demo_health_state.json",
+      "exists": true,
+      "json_ok": true,
+      "age_seconds": 179.349,
+      "mtime_epoch": 1778533502.1462648
+    }
+  },
+  "chef": {
+    "geste_natif": null,
+    "taille_native": 1.0,
+    "score": null,
+    "resume": null,
+    "execution": {},
+    "risque": {},
+    "multivers": {},
+    "pilotage_village": {},
+    "gardiens_silencieux": {}
+  },
+  "aval": {
+    "aplomb": {
+      "permission": "SHORT",
+      "direction": "SHORT",
+      "target_position": -0.097,
+      "intensity": 0.097,
+      "raison": "MAINTENIR + bear_trend -> micro short",
+      "source": "local_policy_fallback",
+      "override_source": "local_rule"
+    },
+    "moneymanager": {
+      "mode": "OBSERVATOIRE",
+      "capital_total_eur": 35000.0,
+      "exposition_eur": -3500.0,
+      "position_nette": {
+        "avant_gardes": -0.1,
+        "finale": -0.1,
+        "direction": "SHORT",
+        "tireurs_alignes": 1
+      },
+      "contexte": {
+        "permission_aplomb": "SHORT",
+        "v9_bear": true,
+        "etincelle_horloge": "HABITABLE",
+        "etincelle_veto": false,
+        "brisance_active": false,
+        "sous_ma200": false
+      },
+      "gardes_fous_alerts": [
+        {
+          "nom": "V9+SHORT",
+          "action": "SHORT confirmé",
+          "seuil": "combo",
+          "declenche": true
+        }
+      ],
+      "positions_tireurs": [
+        {
+          "nom": "Presence",
+          "direction": "WAIT",
+          "intensite": 0.0,
+          "allocation_eur": 4235.0,
+          "multiplicateur_aplomb": 0.0,
+          "position_signee": 0.0,
+          "book": "STRAT"
+        },
+        {
+          "nom": "Tenue",
+          "direction": "WAIT",
+          "intensite": 0.0,
+          "allocation_eur": 3465.0,
+          "multiplicateur_aplomb": 0.0,
+          "position_signee": 0.0,
+          "book": "STRAT"
+        },
+        {
+          "nom": "Vigie",
+          "direction": "WAIT",
+          "intensite": 0.0,
+          "allocation_eur": 2887.5,
+          "multiplicateur_aplomb": 0.0,
+          "position_signee": 0.0,
+          "book": "TACT"
+        },
+        {
+          "nom": "Agilite",
+          "direction": "WAIT",
+          "intensite": 0.0,
+          "allocation_eur": 2502.5,
+          "multiplicateur_aplomb": 0.0,
+          "position_signee": 0.0,
+          "book": "TACT"
+        },
+        {
+          "nom": "Precision",
+          "direction": "WAIT",
+          "intensite": 0.0,
+          "allocation_eur": 2117.5,
+          "multiplicateur_aplomb": 0.0,
+          "position_signee": 0.0,
+          "book": "TACT"
+        },
+        {
+          "nom": "Fulgurance",
+          "direction": "WAIT",
+          "intensite": 0.0,
+          "allocation_eur": 1540.0,
+          "multiplicateur_aplomb": 0.0,
+          "position_signee": 0.0,
+          "book": "TACT"
+        },
+        {
+          "nom": "Etincelle",
+          "direction": "WAIT",
+          "intensite": 0.0,
+          "allocation_eur": 1925.0,
+          "multiplicateur_aplomb": 0.0,
+          "position_signee": 0.0,
+          "book": "RESERVE"
+        },
+        {
+          "nom": "M4_Short_Tactique",
+          "direction": "SHORT",
+          "intensite": 0.1,
+          "allocation_eur": 3500.0,
+          "multiplicateur_aplomb": 1.0,
+          "position_signee": -0.1,
+          "book": "TACT"
+        }
+      ],
+      "couches_eur": {
+        "V9_PREMIUM": 8750.0,
+        "TIREURS": 19250.0,
+        "TEMPERANCE": 5250.0,
+        "RESERVE": 1750.0
+      },
+      "compensation_books": {
+        "strat_brut": 0.0,
+        "tact_brut": -0.1,
+        "strat_final": 0.0,
+        "tact_final": -0.1,
+        "compensation_appliquee": false
+      },
+      "double_tempo": {
+        "regime": "TEMPO1",
+        "reason": "hold",
+        "drawdown_from_peak": 0.0
+      }
+    },
+    "brisance": {
+      "etat": "RAS",
+      "r1min_pct": 0.0,
+      "r5min_pct": -0.056,
+      "prix": 81800.01,
+      "phase": "scan",
+      "rachat_prevu": null,
+      "funding_rate": 4.555e-05,
+      "timestamp": "2026-05-11 21:07:57",
+      "dry_run": true
+    },
+    "prudence": {
+      "verdict": "SILENCE",
+      "n_mondes": 18,
+      "zone_min": 55,
+      "zone_max": 65,
+      "raison": "hors zone grégaire",
+      "timestamp": "2026-05-11T08:09:03.316665"
+    },
+    "health": {
+      "verdict": "WARN",
+      "failcount": 0,
+      "alerts": [
+        {
+          "level": "WARN",
+          "module": "m2_v2",
+          "message": "state_age_gt_48h",
+          "age_hours": 96.864
+        },
+        {
+          "level": "WARN",
+          "module": "money_manager",
+          "message": "gardes_fous_alerts",
+          "count": 1
+        }
+      ],
+      "warn_money_guard_is_business_signal": false,
+      "doctrine": {
+        "argent_reel": false,
+        "execution_financiere": "simulee_ou_absente",
+        "lecture_states": true
+      }
+    }
+  },
+  "protection": {
+    "brisance_block": false,
+    "brisance_etat": "RAS",
+    "health_fail": false,
+    "health_warn_metier_accepte": false,
+    "argent_reel_env": false
+  },
+  "decision": {
+    "direction": "SHORT",
+    "target_position": -0.1,
+    "target_abs": 0.1,
+    "exposition_eur": -3500.0,
+    "reason": "MONEYMANAGER_APLOMB_ALIGNES",
+    "money_manager_is_sovereign": true,
+    "chef_native_remains_observed": true
+  },
+  "execution": {
+    "allowed": false,
+    "status": "OBSERVATION_ONLY",
+    "reason": "SERAGONE_ARGENT_REEL=1 requis + mode non observatoire + protections OK"
+  }
+}

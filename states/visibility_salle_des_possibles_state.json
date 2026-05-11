@@ -1,0 +1,142 @@
+{
+  "module": "visibility_salle_des_possibles",
+  "timestamp": "2026-04-26T10:45:25.905516+00:00",
+  "version": "1.0.0",
+  "validation": {
+    "mode": "OBSERVATOIRE_VISIBILITE",
+    "verdict": "LECTURE_SEULE",
+    "decision_live": false,
+    "paper": true
+  },
+  "tire": false,
+  "voix": null,
+  "label": "PRESENT_CONSOMME_SANS_STATE_CLAIR",
+  "sens": "NEUTRE",
+  "horizonjours": 0,
+  "raison": "salle_des_possibles est détecté dans le dépôt et dans des fichiers consommateurs, mais sans state propre évident.",
+  "lecture": "espace de convergence forte entre mondes",
+  "shadow": true,
+  "decision_allowed": false,
+  "presence": {
+    "present": true,
+    "references_count": 75,
+    "references_sample": [
+      "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "INTEGRATION_NOTICE_PEPITES.md",
+      "SERAGONE_NATIVE_OUT/RAPPORT_PHASE2_TRI_NATIF.md",
+      "_archives_windows_2026-04-19/cryptoquant_reader (1).py",
+      "_archives_windows_2026-04-19/deepseek_python_20260316_f114dc (1).py",
+      "_archives_windows_2026-04-19/matrice_convergence (1).py",
+      "_archives_windows_2026-04-19/matrice_convergence (2).py",
+      "_archives_windows_2026-04-19/module_constitution_patched (1).py",
+      "_archives_windows_2026-04-19/village_le vrai.py",
+      "_bibliotheque_modules/production_copies/cryptoquant_reader.py",
+      "_bibliotheque_modules/production_copies/deepseek_python_20260316_cb3a25.py",
+      "_bibliotheque_modules/production_copies/deepseek_python_20260316_f114dc.py",
+      "_bibliotheque_modules/production_copies/journees_des_tireurs_v2.py",
+      "_bibliotheque_modules/production_copies/lecteur_onchain.py",
+      "_bibliotheque_modules/production_copies/m1_long_engine.py",
+      "_bibliotheque_modules/production_copies/matrice_convergence.py",
+      "_bibliotheque_modules/production_copies/module_atr_patched.py",
+      "_bibliotheque_modules/production_copies/module_constitution_patched.py",
+      "_bibliotheque_modules/production_copies/module_router_patched.py"
+    ],
+    "consomme_probable": true,
+    "consumer_files_count": 25,
+    "consumer_files_sample": [
+      "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "_archives_windows_2026-04-19/village_le vrai.py",
+      "_bibliotheque_modules/production_copies/journees_des_tireurs_v2.py",
+      "_bibliotheque_modules/production_copies/m1_long_engine.py",
+      "_bibliotheque_modules/production_copies/village_le_vrai.py",
+      "_bibliotheque_modules/production_copies/village_le_vrai_vps.py",
+      "_bibliotheque_modules/production_copies/village_reel_adapter.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/journees_des_tireurs_v2.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/m1_long_engine.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/village_le_vrai.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/village_le_vrai_vps.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/village_reel_adapter.py",
+      "audit_m1_m8_couverture_mondes.py",
+      "backups/moteur_pepite_4_L3_mom_haut_avant_C3_20260426T073734Z.py",
+      "journees_des_tireurs_v2.py",
+      "m1_long_engine.py",
+      "moteur_pepite_2_OUVRIR_SOUFFLE.py",
+      "moteur_pepite_4_L3_mom_haut.py",
+      "palette_claude/village_le_vrai.py"
+    ],
+    "state_visible": false,
+    "state_files": []
+  },
+  "poids": {
+    "detecte": true,
+    "weight_files_count": 72,
+    "weight_files_sample": [
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "INTEGRATION_NOTICE_PEPITES.md",
+      "_archives_windows_2026-04-19/cryptoquant_reader (1).py",
+      "_archives_windows_2026-04-19/deepseek_python_20260316_f114dc (1).py",
+      "_archives_windows_2026-04-19/matrice_convergence (1).py",
+      "_archives_windows_2026-04-19/matrice_convergence (2).py",
+      "_archives_windows_2026-04-19/module_constitution_patched (1).py",
+      "_archives_windows_2026-04-19/village_le vrai.py",
+      "_bibliotheque_modules/production_copies/cryptoquant_reader.py",
+      "_bibliotheque_modules/production_copies/deepseek_python_20260316_cb3a25.py",
+      "_bibliotheque_modules/production_copies/deepseek_python_20260316_f114dc.py",
+      "_bibliotheque_modules/production_copies/journees_des_tireurs_v2.py",
+      "_bibliotheque_modules/production_copies/lecteur_onchain.py",
+      "_bibliotheque_modules/production_copies/m1_long_engine.py",
+      "_bibliotheque_modules/production_copies/matrice_convergence.py",
+      "_bibliotheque_modules/production_copies/module_atr_patched.py",
+      "_bibliotheque_modules/production_copies/module_constitution_patched.py",
+      "_bibliotheque_modules/production_copies/module_router_patched.py",
+      "_bibliotheque_modules/production_copies/village_le_vrai.py",
+      "_bibliotheque_modules/production_copies/village_le_vrai_vps.py"
+    ],
+    "poids_effectif": 0.0,
+    "commentaire": "poids volontairement nul : visibilité shadow uniquement"
+  },
+  "preuves": [
+    {
+      "file": "deepseek_python_20260316_cb3a25.py",
+      "line": "self.etats_possibles = [\"ACCELERATION\", \"CROISSANCE\", \"PRUDENCE\","
+    },
+    {
+      "file": "deepseek_python_20260316_f114dc.py",
+      "line": "self.etats_possibles = [\"ACCELERATION\", \"CROISSANCE\", \"PRUDENCE\","
+    },
+    {
+      "file": "chercheur_hyper_pepites.py",
+      "line": "print(f\"Analyse de {len(combos_5)} combinaisons possibles...\")"
+    },
+    {
+      "file": "journees_des_tireurs_v2.py",
+      "line": "# Chercher dans plusieurs fichiers possibles"
+    },
+    {
+      "file": "module_constitution_patched.py",
+      "line": "self.etats_possibles = [\"ACCELERATION\", \"CROISSANCE\", \"PRUDENCE\","
+    },
+    {
+      "file": "m1_long_engine.py",
+      "line": "# Exemples possibles : \"mondes_paralleles_cache.json\", \"bull_worlds.json\""
+    },
+    {
+      "file": "lecteur_onchain.py",
+      "line": "# Exemples possibles : 'timestamp', 'time', 'date'"
+    },
+    {
+      "file": "INTEGRATION_NOTICE_PEPITES.md",
+      "line": "Plusieurs voies possibles selon votre architecture VPS actuelle. **À VOUS DE CHOISIR** :"
+    },
+    {
+      "file": "module_atr_patched.py",
+      "line": "self.etats_possibles = [\"ACCELERATION\", \"CROISSANCE\", \"PRUDENCE\","
+    },
+    {
+      "file": "audit_m1_m8_couverture_mondes.py",
+      "line": "\"salle_des_possibles\": [\"salle_des_possibles\", \"Salle des Possibles\", \"salle parallèle\", \"salle parallele\"],"
+    }
+  ]
+}

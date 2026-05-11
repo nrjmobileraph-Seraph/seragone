@@ -1,0 +1,366 @@
+{
+  "document": "execution_topology_state",
+  "version": "1.0",
+  "generated_at_utc": "2026-04-27T16:47:49.458062+00:00",
+  "host": "vps-1e58449b",
+  "orchestrateur_processes": [
+    {
+      "raw": "1217336 1217327 Ss   Fri Apr 24 08:12:01 2026  3-08:35:47  0.0  0.0 /bin/bash -c cd /home/ubuntu/seragone && bash orchestrateur.sh >> logs/orchestrateur.log 2>&1",
+      "pid": 1217336,
+      "ppid": 1217327,
+      "state": "S (sleeping)",
+      "wchan": "do_wait",
+      "cwd": "/home/ubuntu/seragone",
+      "cmdline": "/bin/bash -c cd /home/ubuntu/seragone && bash orchestrateur.sh >> logs/orchestrateur.log 2>&1 ",
+      "children": [
+        "1217340 bash orchestrateur.sh"
+      ],
+      "fds_head": [
+        "total 0",
+        "dr-x------ 2 ubuntu ubuntu  3 Apr 27 16:40 .",
+        "dr-xr-xr-x 9 ubuntu ubuntu  0 Apr 26 09:19 ..",
+        "lr-x------ 1 ubuntu ubuntu 64 Apr 27 16:40 0 -> pipe:[13538673]",
+        "lrwx------ 1 ubuntu ubuntu 64 Apr 27 16:40 1 -> /tmp/#568 (deleted)",
+        "lrwx------ 1 ubuntu ubuntu 64 Apr 27 16:40 2 -> /tmp/#568 (deleted)"
+      ]
+    },
+    {
+      "raw": "1217340 1217336 S    Fri Apr 24 08:12:01 2026  3-08:35:47  0.0  0.0 bash orchestrateur.sh",
+      "pid": 1217340,
+      "ppid": 1217336,
+      "state": "S (sleeping)",
+      "wchan": "do_wait",
+      "cwd": "/home/ubuntu/seragone",
+      "cmdline": "bash orchestrateur.sh ",
+      "children": [
+        "1217383 python3 /home/ubuntu/seragone/production/protection/brisance.py"
+      ],
+      "fds_head": [
+        "total 0",
+        "dr-x------ 2 ubuntu ubuntu  4 Apr 27 16:40 .",
+        "dr-xr-xr-x 9 ubuntu ubuntu  0 Apr 26 09:19 ..",
+        "lr-x------ 1 ubuntu ubuntu 64 Apr 27 16:40 0 -> pipe:[13538673]",
+        "l-wx------ 1 ubuntu ubuntu 64 Apr 27 16:40 1 -> /home/ubuntu/seragone/logs/orchestrateur.log",
+        "l-wx------ 1 ubuntu ubuntu 64 Apr 27 16:40 2 -> /home/ubuntu/seragone/logs/orchestrateur.log",
+        "lr-x------ 1 ubuntu ubuntu 64 Apr 27 16:40 255 -> /home/ubuntu/seragone/orchestrateur.sh"
+      ]
+    },
+    {
+      "raw": "1355039 1355026 Ss   Sat Apr 25 08:12:00 2026  2-08:35:47  0.0  0.0 /bin/bash -c cd /home/ubuntu/seragone && bash orchestrateur.sh >> logs/orchestrateur.log 2>&1",
+      "pid": 1355039,
+      "ppid": 1355026,
+      "state": "S (sleeping)",
+      "wchan": "do_wait",
+      "cwd": "/home/ubuntu/seragone",
+      "cmdline": "/bin/bash -c cd /home/ubuntu/seragone && bash orchestrateur.sh >> logs/orchestrateur.log 2>&1 ",
+      "children": [
+        "1355047 bash orchestrateur.sh"
+      ],
+      "fds_head": [
+        "total 0",
+        "dr-x------ 2 ubuntu ubuntu  3 Apr 27 16:40 .",
+        "dr-xr-xr-x 9 ubuntu ubuntu  0 Apr 26 09:19 ..",
+        "lr-x------ 1 ubuntu ubuntu 64 Apr 27 16:40 0 -> pipe:[14512542]",
+        "lrwx------ 1 ubuntu ubuntu 64 Apr 27 16:40 1 -> /tmp/#2682 (deleted)",
+        "lrwx------ 1 ubuntu ubuntu 64 Apr 27 16:40 2 -> /tmp/#2682 (deleted)"
+      ]
+    },
+    {
+      "raw": "1355047 1355039 S    Sat Apr 25 08:12:00 2026  2-08:35:47  0.0  0.0 bash orchestrateur.sh",
+      "pid": 1355047,
+      "ppid": 1355039,
+      "state": "S (sleeping)",
+      "wchan": "do_wait",
+      "cwd": "/home/ubuntu/seragone",
+      "cmdline": "bash orchestrateur.sh ",
+      "children": [
+        "1355082 python3 /home/ubuntu/seragone/production/protection/brisance.py"
+      ],
+      "fds_head": [
+        "total 0",
+        "dr-x------ 2 ubuntu ubuntu  4 Apr 27 16:40 .",
+        "dr-xr-xr-x 9 ubuntu ubuntu  0 Apr 26 09:19 ..",
+        "lr-x------ 1 ubuntu ubuntu 64 Apr 27 16:40 0 -> pipe:[14512542]",
+        "l-wx------ 1 ubuntu ubuntu 64 Apr 27 16:40 1 -> /home/ubuntu/seragone/logs/orchestrateur.log",
+        "l-wx------ 1 ubuntu ubuntu 64 Apr 27 16:40 2 -> /home/ubuntu/seragone/logs/orchestrateur.log",
+        "lr-x------ 1 ubuntu ubuntu 64 Apr 27 16:40 255 -> /home/ubuntu/seragone/orchestrateur.sh"
+      ]
+    },
+    {
+      "raw": "1465577 1465566 Ss   Sun Apr 26 08:12:00 2026  1-08:35:48  0.0  0.0 /bin/bash -c cd /home/ubuntu/seragone && bash orchestrateur.sh >> logs/orchestrateur.log 2>&1",
+      "pid": 1465577,
+      "ppid": 1465566,
+      "state": "S (sleeping)",
+      "wchan": "do_wait",
+      "cwd": "/home/ubuntu/seragone",
+      "cmdline": "/bin/bash -c cd /home/ubuntu/seragone && bash orchestrateur.sh >> logs/orchestrateur.log 2>&1 ",
+      "children": [
+        "1465587 bash orchestrateur.sh"
+      ],
+      "fds_head": [
+        "total 0",
+        "dr-x------ 2 ubuntu ubuntu  3 Apr 27 16:40 .",
+        "dr-xr-xr-x 9 ubuntu ubuntu  0 Apr 26 09:19 ..",
+        "lr-x------ 1 ubuntu ubuntu 64 Apr 27 16:40 0 -> pipe:[15452247]",
+        "lrwx------ 1 ubuntu ubuntu 64 Apr 27 16:40 1 -> /tmp/#4481 (deleted)",
+        "lrwx------ 1 ubuntu ubuntu 64 Apr 27 16:40 2 -> /tmp/#4481 (deleted)"
+      ]
+    },
+    {
+      "raw": "1465587 1465577 S    Sun Apr 26 08:12:00 2026  1-08:35:48  0.0  0.0 bash orchestrateur.sh",
+      "pid": 1465587,
+      "ppid": 1465577,
+      "state": "S (sleeping)",
+      "wchan": "do_wait",
+      "cwd": "/home/ubuntu/seragone",
+      "cmdline": "bash orchestrateur.sh ",
+      "children": [
+        "1465628 python3 /home/ubuntu/seragone/production/protection/brisance.py"
+      ],
+      "fds_head": [
+        "total 0",
+        "dr-x------ 2 ubuntu ubuntu  4 Apr 27 16:40 .",
+        "dr-xr-xr-x 9 ubuntu ubuntu  0 Apr 26 09:19 ..",
+        "lr-x------ 1 ubuntu ubuntu 64 Apr 27 16:40 0 -> pipe:[15452247]",
+        "l-wx------ 1 ubuntu ubuntu 64 Apr 27 16:40 1 -> /home/ubuntu/seragone/logs/orchestrateur.log",
+        "l-wx------ 1 ubuntu ubuntu 64 Apr 27 16:40 2 -> /home/ubuntu/seragone/logs/orchestrateur.log",
+        "lr-x------ 1 ubuntu ubuntu 64 Apr 27 16:40 255 -> /home/ubuntu/seragone/orchestrateur.sh"
+      ]
+    }
+  ],
+  "cron_systemd": {
+    "cron_total_lines": 34,
+    "cron_orchestrateur": [],
+    "systemd_seragone": [
+      "seragone-1min.service                          loaded active running Séragone Collecteur 1min Binance BTCUSDT",
+      "  seragone-api.service                           loaded active running Seragone API Service"
+    ],
+    "timers_seragone": [
+      "Mon 2026-04-27 16:51:10 UTC      3min 20s Mon 2026-04-27 16:46:10 UTC  1min 39s ago seragone.timer                 seragone.service"
+    ]
+  },
+  "orchestrateur_log": {
+    "log_exists": true,
+    "log_path": "/home/ubuntu/seragone/logs/orchestrateur.log",
+    "size": 52866,
+    "mtime_utc": "2026-04-27T16:45:34.677801+00:00",
+    "lsof_openers": [
+      "COMMAND     PID   USER   FD   TYPE DEVICE SIZE/OFF   NODE NAME",
+      "bash    1217340 ubuntu    1w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log",
+      "bash    1217340 ubuntu    2w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log",
+      "python3 1217383 ubuntu    1w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log",
+      "python3 1217383 ubuntu    2w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log",
+      "bash    1355047 ubuntu    1w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log",
+      "bash    1355047 ubuntu    2w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log",
+      "python3 1355082 ubuntu    1w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log",
+      "python3 1355082 ubuntu    2w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log",
+      "bash    1465587 ubuntu    1w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log",
+      "bash    1465587 ubuntu    2w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log",
+      "python3 1465628 ubuntu    1w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log",
+      "python3 1465628 ubuntu    2w   REG    8,1    52866 263614 /home/ubuntu/seragone/logs/orchestrateur.log"
+    ],
+    "tail_scan_lines": [
+      "2026-04-27 08:31:57,261 INFO Scan #8550 | 77564$ | r1m=-0.03% | r5m=-0.04% | FR=-0.00009",
+      "2026-04-27 08:37:21,618 INFO Scan #4320 | 77632$ | r1m=+0.02% | r5m=+0.08% | FR=-0.00009",
+      "2026-04-27 08:57:23,539 INFO Scan #12870 | 77813$ | r1m=+0.02% | r5m=+0.04% | FR=-0.00009",
+      "2026-04-27 09:02:28,428 INFO Scan #8640 | 77829$ | r1m=+0.03% | r5m=+0.03% | FR=-0.00009",
+      "2026-04-27 09:07:52,220 INFO Scan #4410 | 77828$ | r1m=+0.01% | r5m=+0.02% | FR=-0.00009",
+      "2026-04-27 09:27:54,983 INFO Scan #12960 | 77739$ | r1m=+0.03% | r5m=+0.02% | FR=-0.00009",
+      "2026-04-27 09:33:00,147 INFO Scan #8730 | 77796$ | r1m=-0.01% | r5m=+0.06% | FR=-0.00009",
+      "2026-04-27 09:38:23,152 INFO Scan #4500 | 77885$ | r1m=-0.06% | r5m=-0.08% | FR=-0.00009",
+      "2026-04-27 09:58:25,720 INFO Scan #13050 | 77915$ | r1m=-0.02% | r5m=-0.06% | FR=-0.00009",
+      "2026-04-27 10:03:31,656 INFO Scan #8820 | 77871$ | r1m=-0.03% | r5m=-0.06% | FR=-0.00009",
+      "2026-04-27 10:08:53,553 INFO Scan #4590 | 77803$ | r1m=-0.02% | r5m=-0.07% | FR=-0.00009",
+      "2026-04-27 10:28:57,001 INFO Scan #13140 | 77800$ | r1m=+0.00% | r5m=-0.04% | FR=-0.00009",
+      "2026-04-27 10:34:02,105 INFO Scan #8910 | 77813$ | r1m=-0.00% | r5m=+0.00% | FR=-0.00009",
+      "2026-04-27 10:39:24,068 INFO Scan #4680 | 77883$ | r1m=+0.00% | r5m=+0.07% | FR=-0.00009",
+      "2026-04-27 10:59:27,444 INFO Scan #13230 | 77859$ | r1m=-0.00% | r5m=+0.01% | FR=-0.00009",
+      "2026-04-27 11:04:32,605 INFO Scan #9000 | 77818$ | r1m=-0.05% | r5m=-0.04% | FR=-0.00009",
+      "2026-04-27 11:09:54,914 INFO Scan #4770 | 77755$ | r1m=-0.01% | r5m=-0.06% | FR=-0.00009",
+      "2026-04-27 11:29:59,151 INFO Scan #13320 | 77860$ | r1m=-0.02% | r5m=+0.02% | FR=-0.00009",
+      "2026-04-27 11:35:04,397 INFO Scan #9090 | 77831$ | r1m=-0.01% | r5m=-0.05% | FR=-0.00009",
+      "2026-04-27 11:40:25,034 INFO Scan #4860 | 77810$ | r1m=+0.02% | r5m=-0.04% | FR=-0.00009",
+      "2026-04-27 12:00:30,191 INFO Scan #13410 | 77838$ | r1m=-0.01% | r5m=+0.02% | FR=-0.00009",
+      "2026-04-27 12:05:35,282 INFO Scan #9180 | 77752$ | r1m=+0.01% | r5m=-0.08% | FR=-0.00009",
+      "2026-04-27 12:10:56,061 INFO Scan #4950 | 77818$ | r1m=+0.05% | r5m=+0.07% | FR=-0.00009",
+      "2026-04-27 12:31:01,398 INFO Scan #13500 | 77749$ | r1m=+0.00% | r5m=-0.00% | FR=-0.00009",
+      "2026-04-27 12:36:06,522 INFO Scan #9270 | 77764$ | r1m=-0.01% | r5m=-0.01% | FR=-0.00009",
+      "2026-04-27 12:41:26,308 INFO Scan #5040 | 77676$ | r1m=+0.01% | r5m=-0.06% | FR=-0.00009",
+      "2026-04-27 13:01:31,977 INFO Scan #13590 | 77666$ | r1m=-0.02% | r5m=-0.00% | FR=-0.00009",
+      "2026-04-27 13:06:36,983 INFO Scan #9360 | 77655$ | r1m=+0.02% | r5m=-0.01% | FR=-0.00009",
+      "2026-04-27 13:11:57,373 INFO Scan #5130 | 77732$ | r1m=-0.05% | r5m=+0.09% | FR=-0.00009",
+      "2026-04-27 13:32:03,830 INFO Scan #13680 | 77747$ | r1m=+0.01% | r5m=+0.09% | FR=-0.00009",
+      "2026-04-27 13:37:08,986 INFO Scan #9450 | 77786$ | r1m=-0.01% | r5m=+0.05% | FR=-0.00009",
+      "2026-04-27 13:42:28,082 INFO Scan #5220 | 77911$ | r1m=-0.03% | r5m=+0.12% | FR=-0.00009",
+      "2026-04-27 14:02:34,859 INFO Scan #13770 | 77796$ | r1m=-0.01% | r5m=+0.06% | FR=-0.00009",
+      "2026-04-27 14:07:39,857 INFO Scan #9540 | 77823$ | r1m=-0.04% | r5m=+0.09% | FR=-0.00009",
+      "2026-04-27 14:12:58,954 INFO Scan #5310 | 77868$ | r1m=+0.05% | r5m=+0.06% | FR=-0.00009",
+      "2026-04-27 14:33:06,107 INFO Scan #13860 | 77918$ | r1m=+0.06% | r5m=+0.04% | FR=-0.00009",
+      "2026-04-27 14:38:10,901 INFO Scan #9630 | 78149$ | r1m=+0.05% | r5m=+0.28% | FR=-0.00009",
+      "2026-04-27 14:43:31,015 INFO Scan #5400 | 78089$ | r1m=+0.06% | r5m=-0.05% | FR=-0.00009",
+      "2026-04-27 15:03:36,739 INFO Scan #13950 | 77709$ | r1m=-0.05% | r5m=-0.15% | FR=-0.00009",
+      "2026-04-27 15:08:41,886 INFO Scan #9720 | 77476$ | r1m=-0.03% | r5m=-0.28% | FR=-0.00009",
+      "2026-04-27 15:14:01,767 INFO Scan #5490 | 77436$ | r1m=-0.00% | r5m=-0.02% | FR=-0.00009",
+      "2026-04-27 15:34:08,240 INFO Scan #14040 | 76939$ | r1m=+0.04% | r5m=+0.11% | FR=-0.00009",
+      "2026-04-27 15:39:12,315 INFO Scan #9810 | 77037$ | r1m=-0.01% | r5m=-0.02% | FR=-0.00009",
+      "2026-04-27 15:44:32,814 INFO Scan #5580 | 77050$ | r1m=-0.03% | r5m=+0.01% | FR=-0.00009",
+      "2026-04-27 16:04:38,946 INFO Scan #14130 | 76789$ | r1m=+0.10% | r5m=-0.00% | FR=-0.00009",
+      "2026-04-27 16:09:42,756 INFO Scan #9900 | 76729$ | r1m=+0.09% | r5m=-0.05% | FR=-0.00006",
+      "2026-04-27 16:15:03,749 INFO Scan #5670 | 76765$ | r1m=-0.01% | r5m=+0.03% | FR=-0.00006",
+      "2026-04-27 16:35:10,575 INFO Scan #14220 | 76755$ | r1m=-0.02% | r5m=-0.05% | FR=-0.00006",
+      "2026-04-27 16:40:13,187 INFO Scan #9990 | 76674$ | r1m=-0.05% | r5m=-0.05% | FR=-0.00006",
+      "2026-04-27 16:45:34,678 INFO Scan #5760 | 76616$ | r1m=+0.02% | r5m=-0.04% | FR=-0.00006"
+    ],
+    "orchestrateur_markers": [
+      "[Fri Apr 24 06:05:09 UTC 2026] === ORCHESTRATEUR SERAGONE ===",
+      "[Fri Apr 24 06:05:50 UTC 2026] === ORCHESTRATEUR SERAGONE ===",
+      "[Fri Apr 24 06:07:33 UTC 2026] === ORCHESTRATEUR SERAGONE ===",
+      "[Fri Apr 24 06:11:13 UTC 2026] === FIN ORCHESTRATEUR ===",
+      "[Fri Apr 24 08:12:01 UTC 2026] === ORCHESTRATEUR SERAGONE ===",
+      "[Sat Apr 25 08:12:01 UTC 2026] === ORCHESTRATEUR SERAGONE ===",
+      "[Sun Apr 26 08:12:01 UTC 2026] === ORCHESTRATEUR SERAGONE ==="
+    ],
+    "scan_lines_count": 333,
+    "orchestrateur_markers_count": 7
+  },
+  "source_hits": [
+    {
+      "path": "/home/ubuntu/seragone/backups/rename_brisance_20260418_133844/brisance_OLD_8avril.py",
+      "patterns": [
+        "Scan #"
+      ],
+      "lines": [
+        {
+          "line": 413,
+          "pattern": "Scan #",
+          "text": "log.info(f\"Scan #{n_scans} | {prix:.0f}$ | r1m={r1*100:+.2f}% | r5m={r5*100:+.2f}% | FR={fr_str}\")"
+        }
+      ]
+    },
+    {
+      "path": "/home/ubuntu/seragone/brisance_OLD_8avril.py",
+      "patterns": [
+        "Scan #"
+      ],
+      "lines": [
+        {
+          "line": 413,
+          "pattern": "Scan #",
+          "text": "log.info(f\"Scan #{n_scans} | {prix:.0f}$ | r1m={r1*100:+.2f}% | r5m={r5*100:+.2f}% | FR={fr_str}\")"
+        }
+      ]
+    },
+    {
+      "path": "/home/ubuntu/seragone/brisance_v3_backup.py",
+      "patterns": [
+        "Scan #"
+      ],
+      "lines": [
+        {
+          "line": 325,
+          "pattern": "Scan #",
+          "text": "log.info(f\"Scan #{n_scans} | {prix:.0f}$ | r1m={r1min*100:+.2f}% | r5m={r5min*100:+.2f}% | RAS\")"
+        }
+      ]
+    },
+    {
+      "path": "/home/ubuntu/seragone/brisance_v4.py",
+      "patterns": [
+        "Scan #"
+      ],
+      "lines": [
+        {
+          "line": 425,
+          "pattern": "Scan #",
+          "text": "log.info(f\"Scan #{n_scans} | {prix:.0f}$ | r1m={r1*100:+.2f}% | r5m={r5*100:+.2f}% | FR={fr_str}\")"
+        }
+      ]
+    },
+    {
+      "path": "/home/ubuntu/seragone/production/protection/brisance.py",
+      "patterns": [
+        "Scan #"
+      ],
+      "lines": [
+        {
+          "line": 413,
+          "pattern": "Scan #",
+          "text": "log.info(f\"Scan #{n_scans} | {prix:.0f}$ | r1m={r1*100:+.2f}% | r5m={r5*100:+.2f}% | FR={fr_str}\")"
+        }
+      ]
+    },
+    {
+      "path": "/home/ubuntu/seragone/production/protection/brisance_v4.py",
+      "patterns": [
+        "Scan #"
+      ],
+      "lines": [
+        {
+          "line": 425,
+          "pattern": "Scan #",
+          "text": "log.info(f\"Scan #{n_scans} | {prix:.0f}$ | r1m={r1*100:+.2f}% | r5m={r5*100:+.2f}% | FR={fr_str}\")"
+        }
+      ]
+    },
+    {
+      "path": "/home/ubuntu/seragone/tools/audit_topologie_execution_seragone.py",
+      "patterns": [
+        "orchestrateur.log",
+        "Scan #",
+        "scan_count"
+      ],
+      "lines": [
+        {
+          "line": 13,
+          "pattern": "orchestrateur.log",
+          "text": "- Pollueurs du log orchestrateur.log"
+        },
+        {
+          "line": 14,
+          "pattern": "orchestrateur.log",
+          "text": "- Sources Python qui écrivent dans orchestrateur.log ou produisent \"Scan #N\""
+        },
+        {
+          "line": 14,
+          "pattern": "Scan #",
+          "text": "- Sources Python qui écrivent dans orchestrateur.log ou produisent \"Scan #N\""
+        },
+        {
+          "line": 33,
+          "pattern": "orchestrateur.log",
+          "text": "ORCHESTRATEUR_LOG = LOGS / 'orchestrateur.log'"
+        },
+        {
+          "line": 37,
+          "pattern": "orchestrateur.log",
+          "text": "'orchestrateur.log',"
+        },
+        {
+          "line": 38,
+          "pattern": "Scan #",
+          "text": "'Scan #',"
+        },
+        {
+          "line": 39,
+          "pattern": "scan_count",
+          "text": "'scan_count',"
+        },
+        {
+          "line": 200,
+          "pattern": "Scan #",
+          "text": "# Lignes \"Scan #N\" dans le log"
+        },
+        {
+          "line": 208,
+          "pattern": "Scan #",
+          "text": "if 'Scan #' in line:"
+        },
+        {
+          "line": 223,
+          "pattern": "orchestrateur.log",
+          "text": "# 4. SOURCES PYTHON — qui écrit dans orchestrateur.log ?"
+        }
+      ]
+    }
+  ]
+}

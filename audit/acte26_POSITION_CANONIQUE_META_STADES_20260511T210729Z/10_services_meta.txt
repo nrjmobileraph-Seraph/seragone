@@ -1,0 +1,2 @@
+  seragone-mondes-oneshot.service                loaded    active   running Seragone Mondes OneShot (communicants + autonomes, loop 60s)
+  seragone-multivers.service                     loaded    inactive dead    Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer

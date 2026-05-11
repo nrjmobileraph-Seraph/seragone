@@ -1,0 +1,30 @@
+{
+  "module": "pepite4_L3_mom_haut",
+  "timestamp": "2026-05-11T08:47:01.381140+00:00",
+  "version": "1.0.0",
+  "validation": {
+    "wr_train": 0.703,
+    "n_train": 397,
+    "wr_test": 0.7075,
+    "n_test": 106,
+    "delta_tt": 0.7,
+    "verdict": "TIER_1_CONFIRME",
+    "remarque": "ANCRAGE_ROBUSTE_n_max"
+  },
+  "config": {
+    "L3_haut_threshold": 0.65,
+    "horizon_jours": 30
+  },
+  "L3_direction": 1.0,
+  "L3_mom_haut": true,
+  "tire": true,
+  "voix": "pepite4_L3_mom_haut",
+  "label": "ATTESTE",
+  "sens": "LONG",
+  "horizon_jours": 30,
+  "temps_dispo": true,
+  "raison": "L3_direction=1.000 \u2265 0.65 \u2192 LONG 30j (n_train=397)",
+  "sources": {
+    "temps_seragone": "temps_seragone.json (27 \u00e9quations, 9 couches \u00d7 3)"
+  }
+}

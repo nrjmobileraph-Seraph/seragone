@@ -1,0 +1,244 @@
+{
+  "q_jour": 1,
+  "m0_actif": false,
+  "m0_geste": "ATTENDRE",
+  "supra_convergence": false,
+  "village_mult": 0.97,
+  "mondes": {
+    "M0": {
+      "distance": 0.5271,
+      "quintile": 4,
+      "dans_zone": false
+    },
+    "M1": {
+      "distance": 0.5567,
+      "quintile": 2,
+      "dans_zone": true
+    },
+    "M2": {
+      "distance": 0.6398,
+      "quintile": 3,
+      "dans_zone": false
+    },
+    "M3": {
+      "distance": 0.7091,
+      "quintile": 4,
+      "dans_zone": false
+    },
+    "M4": {
+      "distance": 0.8262,
+      "quintile": 5,
+      "dans_zone": false
+    },
+    "M5": {
+      "distance": 0.6164,
+      "quintile": 3,
+      "dans_zone": false
+    },
+    "M6": {
+      "distance": 0.7307,
+      "quintile": 4,
+      "dans_zone": false
+    }
+  },
+  "prix_btc": 78035.44,
+  "n_jours": 4130,
+  "calcul_duree_s": 234.4,
+  "timestamp": "2026-04-22T08:05:57.015987",
+  "q_jour_local_7": 1,
+  "village_mult_local_7": 0.97,
+  "mondes_local_7": {
+    "M0": {
+      "distance_local": 0.2507,
+      "quintile_local": 2,
+      "dans_zone_local": false,
+      "phi_local": [
+        0.4338,
+        0.2621,
+        0.1588,
+        0.245,
+        0.1081
+      ]
+    },
+    "M1": {
+      "distance_local": 0.2217,
+      "quintile_local": 1,
+      "dans_zone_local": false,
+      "phi_local": [
+        0.5303,
+        0.3535,
+        0.3222,
+        0.452,
+        0.0338
+      ]
+    },
+    "M2": {
+      "distance_local": 0.2275,
+      "quintile_local": 1,
+      "dans_zone_local": true,
+      "phi_local": [
+        0.7127,
+        0.383,
+        0.323,
+        0.4986,
+        0.1
+      ]
+    },
+    "M3": {
+      "distance_local": 0.2209,
+      "quintile_local": 1,
+      "dans_zone_local": false,
+      "phi_local": [
+        0.7209,
+        0.3733,
+        0.3243,
+        0.4986,
+        0.1
+      ]
+    },
+    "M4": {
+      "distance_local": 0.436,
+      "quintile_local": 2,
+      "dans_zone_local": false,
+      "phi_local": [
+        0.7164,
+        0.3928,
+        0.3261,
+        0.4986,
+        0.1041
+      ]
+    },
+    "M5": {
+      "distance_local": 0.1802,
+      "quintile_local": 1,
+      "dans_zone_local": false,
+      "phi_local": [
+        0.7235,
+        0.3871,
+        0.3225,
+        0.4986,
+        0.1077
+      ]
+    },
+    "M6": {
+      "distance_local": 0.1292,
+      "quintile_local": 1,
+      "dans_zone_local": false,
+      "phi_local": [
+        0.7198,
+        0.4086,
+        0.3268,
+        0.4986,
+        0.1009
+      ]
+    }
+  },
+  "q_jour_local_all": 6,
+  "born_local": 0.3,
+  "mondes_local_all": {
+    "M0": {
+      "distance_local": 0.2507,
+      "p25_local": 0.3408,
+      "dans_p25": true
+    },
+    "M1": {
+      "distance_local": 0.2217,
+      "p25_local": 0.1688,
+      "dans_p25": false
+    },
+    "M2": {
+      "distance_local": 0.2275,
+      "p25_local": 0.1932,
+      "dans_p25": false
+    },
+    "M3": {
+      "distance_local": 0.2209,
+      "p25_local": 0.1793,
+      "dans_p25": false
+    },
+    "M4": {
+      "distance_local": 0.436,
+      "p25_local": 0.1819,
+      "dans_p25": false
+    },
+    "M5": {
+      "distance_local": 0.1802,
+      "p25_local": 0.1851,
+      "dans_p25": true
+    },
+    "M6": {
+      "distance_local": 0.1292,
+      "p25_local": 0.1694,
+      "dans_p25": true
+    },
+    "M7": {
+      "distance_local": 0.335,
+      "p25_local": 0.213,
+      "dans_p25": false
+    },
+    "M8": {
+      "distance_local": 0.2616,
+      "p25_local": 0.2245,
+      "dans_p25": false
+    },
+    "M9": {
+      "distance_local": 0.3915,
+      "p25_local": 0.2019,
+      "dans_p25": false
+    },
+    "M10": {
+      "distance_local": 0.2843,
+      "p25_local": 0.1587,
+      "dans_p25": false
+    },
+    "M11": {
+      "distance_local": 0.1489,
+      "p25_local": 0.1897,
+      "dans_p25": true
+    },
+    "M12": {
+      "distance_local": 0.2261,
+      "p25_local": 0.1778,
+      "dans_p25": false
+    },
+    "M13": {
+      "distance_local": 0.1206,
+      "p25_local": 0.167,
+      "dans_p25": true
+    },
+    "M14": {
+      "distance_local": 0.2559,
+      "p25_local": 0.1828,
+      "dans_p25": false
+    },
+    "M15": {
+      "distance_local": 0.4592,
+      "p25_local": 0.1696,
+      "dans_p25": false
+    },
+    "M16": {
+      "distance_local": 0.3024,
+      "p25_local": 0.2072,
+      "dans_p25": false
+    },
+    "M17": {
+      "distance_local": 0.4473,
+      "p25_local": 0.1605,
+      "dans_p25": false
+    },
+    "M18": {
+      "distance_local": 0.3486,
+      "p25_local": 0.1757,
+      "dans_p25": false
+    },
+    "M19": {
+      "distance_local": 0.162,
+      "p25_local": 0.1885,
+      "dans_p25": true
+    }
+  },
+  "n_mondes_local": 20,
+  "phi_local_src": "phi_local_500m.json",
+  "refonte_active": true,
+  "refonte_mode": "observation"
+}

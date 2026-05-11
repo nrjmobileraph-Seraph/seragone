@@ -1,0 +1,11 @@
+{
+  "etat": "RAS",
+  "r1min_pct": 0.0,
+  "r5min_pct": -0.03,
+  "prix": 78538.95,
+  "phase": "scan",
+  "rachat_prevu": null,
+  "funding_rate": -7.49e-06,
+  "timestamp": "2026-04-22 23:19:12",
+  "dry_run": true
+}

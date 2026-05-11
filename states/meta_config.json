@@ -1,0 +1,124 @@
+{
+  "poids_moteurs": {},
+  "bonus_confiance": {
+    "L7_q top20": 0.12,
+    "L3_k top20": 0.1094,
+    "L8_p top10": 0.1077,
+    "L3_a top10": 0.1075,
+    "L3_a top20": 0.1075,
+    "L8_d bot20": 0.1053,
+    "L8_q bot10": 0.1019,
+    "L8_q bot20": 0.097,
+    "L8_n bot10": 0.0961,
+    "L8_k top10": 0.0961,
+    "L8_p top20": 0.0833,
+    "L4_d bot10": 0.0714
+  },
+  "sizing_micro_biais_long": 0.075,
+  "sizing_micro_biais_short": -0.075,
+  "qualificateurs_actifs": [
+    {
+      "condition": "L7_q top20",
+      "bonus": 0.11997756496385197,
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L3_k top20",
+      "bonus": 0.10940668954572057,
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L8_p top10",
+      "bonus": 0.10774608443881195,
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L3_a top10",
+      "bonus": 0.10745074105205246,
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L3_a top20",
+      "bonus": 0.10745074105205246,
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L8_d bot20",
+      "bonus": 0.10531251340883041,
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L8_q bot10",
+      "bonus": 0.10185080335537752,
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L8_q bot20",
+      "bonus": 0.0970220260753748,
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L8_n bot10",
+      "bonus": 0.09613833661141045,
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L8_k top10",
+      "bonus": 0.09613833661141045,
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L8_p top20",
+      "bonus": 0.08328199348327679,
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L4_d bot10",
+      "bonus": 0.07137622538613692,
+      "date_ajout": "2026-04-23"
+    }
+  ],
+  "vetos_actifs": [
+    {
+      "condition": "L8_p bot20 (VETO)",
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L8_n top20 (VETO)",
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L8_k bot20 (VETO)",
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L9_s top20 (VETO)",
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L9_k top20 (VETO)",
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L9_p top10 (VETO)",
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L6_p bot10 (VETO)",
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L6_n top10 (VETO)",
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L9_p top20 (VETO)",
+      "date_ajout": "2026-04-23"
+    },
+    {
+      "condition": "L6_k bot10 (VETO)",
+      "date_ajout": "2026-04-23"
+    }
+  ],
+  "derniere_modification": "2026-04-23T23:06:25.922858+00:00"
+}

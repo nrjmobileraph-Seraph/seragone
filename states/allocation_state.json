@@ -1,0 +1,38 @@
+{
+  "date": "2026-04-23",
+  "action": "LONG",
+  "action_input": "LONG",
+  "sizing_input": 0.075,
+  "exposition_cible": 0.075,
+  "exposition_long": 0.075,
+  "exposition_short": 0.0,
+  "qty_btc": 0.09596647,
+  "prix_btc_usd": 78152.3,
+  "blocked": false,
+  "raison": "Signal souverain +0.0750 + Moteurs +0.0000 = +0.0750. Réduction risque x1.00 (aucune). Exposition cible finale : +0.0750.",
+  "ordres": [
+    {
+      "type": "MARKET",
+      "side": "BUY",
+      "size": 0.09596647,
+      "product": "BTC-USD"
+    }
+  ],
+  "metadonnees": {
+    "geste_natif": "MAINTENIR",
+    "label_nc": null,
+    "composite_label": null,
+    "confluence_score": null,
+    "regime_fond": "bull_trend",
+    "holding_bias": "court",
+    "override_source": "micro_biais",
+    "policy_raison": "Fallback MAINTENIR. Direction via régime de fond (bull_trend).",
+    "contribution_moteurs": 0.0,
+    "exposition_brute": 0.075,
+    "facteur_risque": 1.0,
+    "risques_actifs": [],
+    "capital": 100000.0,
+    "compensation_mode": "net"
+  },
+  "timestamp_ecriture": "2026-04-23T13:07:46.909183Z"
+}

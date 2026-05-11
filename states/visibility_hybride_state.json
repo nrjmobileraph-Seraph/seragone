@@ -1,0 +1,122 @@
+{
+  "module": "visibility_hybride",
+  "timestamp": "2026-04-26T10:45:25.905516+00:00",
+  "version": "1.0.0",
+  "validation": {
+    "mode": "OBSERVATOIRE_VISIBILITE",
+    "verdict": "LECTURE_SEULE",
+    "decision_live": false,
+    "paper": true
+  },
+  "tire": false,
+  "voix": null,
+  "label": "PRESENT_CONSOMME_SANS_STATE_CLAIR",
+  "sens": "NEUTRE",
+  "horizonjours": 0,
+  "raison": "hybride est détecté dans le dépôt et dans des fichiers consommateurs, mais sans state propre évident.",
+  "lecture": "geste binaire + force continue",
+  "shadow": true,
+  "decision_allowed": false,
+  "presence": {
+    "present": true,
+    "references_count": 19,
+    "references_sample": [
+      "AUDIT_CIBLE_20avril2026_matin.md",
+      "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "VERITE_FIGEE_92_MONDES_22avril2026.md",
+      "_archives_windows_2026-04-19/seragone_brain_cwt (3).py",
+      "_archives_windows_2026-04-19/seragone_brain_cwt (4).py",
+      "_archives_windows_2026-04-19/seragone_brain_cwt (5).py",
+      "_archives_windows_2026-04-19/seragone_brain_cwt (6).py",
+      "_archives_windows_2026-04-19/seragone_brain_cwt (7).py",
+      "_bibliotheque_modules/production_copies/seragone_brain_cwt_PRODUCTION_VPS.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/docs/AUDIT_CIBLE_20avril2026_matin.md",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/docs/VERITE_FIGEE_92_MONDES_22avril2026.md",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/seragone_brain_cwt_PRODUCTION_VPS.py",
+      "archive/seragone_brain_cwt_OLD.py",
+      "audit_m1_m8_couverture_mondes.py",
+      "palette_claude/seragone_brain_cwt_PRODUCTION_VPS.py",
+      "seragone_brain_cwt_PRODUCTION_VPS.py",
+      "voix_seragone_92/adapter_seragone_92.py",
+      "voix_seragone_92/ou_gagnent_92_mondes.py"
+    ],
+    "consomme_probable": true,
+    "consumer_files_count": 3,
+    "consumer_files_sample": [
+      "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "audit_m1_m8_couverture_mondes.py"
+    ],
+    "state_visible": false,
+    "state_files": []
+  },
+  "poids": {
+    "detecte": true,
+    "weight_files_count": 18,
+    "weight_files_sample": [
+      "AUDIT_CIBLE_20avril2026_matin.md",
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "VERITE_FIGEE_92_MONDES_22avril2026.md",
+      "_archives_windows_2026-04-19/seragone_brain_cwt (3).py",
+      "_archives_windows_2026-04-19/seragone_brain_cwt (4).py",
+      "_archives_windows_2026-04-19/seragone_brain_cwt (5).py",
+      "_archives_windows_2026-04-19/seragone_brain_cwt (6).py",
+      "_archives_windows_2026-04-19/seragone_brain_cwt (7).py",
+      "_bibliotheque_modules/production_copies/seragone_brain_cwt_PRODUCTION_VPS.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/docs/AUDIT_CIBLE_20avril2026_matin.md",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/docs/VERITE_FIGEE_92_MONDES_22avril2026.md",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/seragone_brain_cwt_PRODUCTION_VPS.py",
+      "archive/seragone_brain_cwt_OLD.py",
+      "audit_m1_m8_couverture_mondes.py",
+      "palette_claude/seragone_brain_cwt_PRODUCTION_VPS.py",
+      "seragone_brain_cwt_PRODUCTION_VPS.py",
+      "voix_seragone_92/adapter_seragone_92.py",
+      "voix_seragone_92/ou_gagnent_92_mondes.py"
+    ],
+    "poids_effectif": 0.0,
+    "commentaire": "poids volontairement nul : visibilité shadow uniquement"
+  },
+  "preuves": [
+    {
+      "file": "seragone_brain_cwt_PRODUCTION_VPS.py",
+      "line": "Kuramoto HYBRIDE : R sur phases brutes + direction sur phases Omega."
+    },
+    {
+      "file": "seragone_brain_cwt_PRODUCTION_VPS.py",
+      "line": "Scan du 1er avril 2026 : hybride K=1.0 = 82% WR + 60.6% sync (vs 59.3%)."
+    },
+    {
+      "file": "AUDIT_CIBLE_20avril2026_matin.md",
+      "line": "### Famille HYBRIDE/INHABITUEL (3 fichiers)"
+    },
+    {
+      "file": "audit_m1_m8_couverture_mondes.py",
+      "line": "\"hybride\": [\"hybride\", \"hybrid\"],"
+    },
+    {
+      "file": "VERITE_FIGEE_92_MONDES_22avril2026.md",
+      "line": "28 mars — G_libre hybride (79% WR) ABSORBÉ"
+    },
+    {
+      "file": "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+      "line": "| `hybride` | `PRESENT_CONSOMME_SANS_STATE_CLAIR` | `M1,M2,M3,M4,M5,M6,M7,M8` | 0 | 0 | 3 | 11 | AUDIT_CIBLE_20avril2026_matin.md | VERITE_FIGEE_92_MONDES_22avril2026.md | _archives_windows_2026-04-19/seragone_brain_cwt (3).py | _archives_w"
+    },
+    {
+      "file": "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "line": "\"hybride\": {"
+    },
+    {
+      "file": "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "line": "\"hybride\","
+    },
+    {
+      "file": "_archives_windows_2026-04-19/seragone_brain_cwt (7).py",
+      "line": "Kuramoto HYBRIDE : R sur phases brutes + direction sur phases Omega."
+    },
+    {
+      "file": "_archives_windows_2026-04-19/seragone_brain_cwt (7).py",
+      "line": "Scan du 1er avril 2026 : hybride K=1.0 = 82% WR + 60.6% sync (vs 59.3%)."
+    }
+  ]
+}

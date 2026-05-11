@@ -143,3 +143,11 @@ Invariants 6x6 post-scellement final (immutables toute la session) :
 - Preuves : ordre AUTO_A7_20260511T205502 + exec DEMO_EXEC_ccd1b550a4d7
 - Rapport : `demo/reports/RAPPORT_A7_ENDTOEND_20260511.md`
 - Garde-fous : real_finance_used: false ✅
+
+## ACTE 26 — Position canonique MOTEUR META Stades 1/2/3 (20260511T210729Z)
+- Chemin : `audit/acte26_POSITION_CANONIQUE_META_STADES_20260511T210729Z/`
+- Stade 1 OBSERVATOIRE : ACTIF (mondes_autonomes + multivers + perf_weight)
+- Stade 2 CROISEMENT : VERROUILLE (Q5 §3.1 respecté)
+- Stade 3 SOLLICITATION : VERROUILLE (Q5 §3.1 respecté)
+- Legacy déclassé : mondes_paralleles_state.json → LEGACY_OBSOLETE_20260423
+- Chantier futur : DECRET Q6 déverrouillage après démo

@@ -1,0 +1,54 @@
+{
+  "module": "pepite8_M_V_H_calme",
+  "timestamp": "2026-05-11T08:52:02.909847+00:00",
+  "version": "1.0.0",
+  "mode": "OBSERVATOIRE_READONLY",
+  "side_effect_safe": true,
+  "execution_allowed": false,
+  "exchange_allowed": false,
+  "live_allowed": false,
+  "validation": {
+    "wr_train": 76.92,
+    "n_train": 39,
+    "wr_test": 76.47,
+    "n_test": 17,
+    "delta_tt": 0.45,
+    "verdict": "TIER_1_PLUS_AUDITE"
+  },
+  "tire": false,
+  "status": "SILENCE",
+  "raison": "M<=P25 et V/H milieu",
+  "valeurs": {
+    "H": 0.2032,
+    "V": 0.2298,
+    "M": 0.3
+  },
+  "quantiles": {
+    "H_P25": 0.185549246819823,
+    "H_P75": 0.3462690547119726,
+    "H_P90": 0.43497541431166653,
+    "H_P10": 0.12982799337216788,
+    "V_P25": 0.1362343975815569,
+    "V_P75": 0.2596220595779245,
+    "V_P90": 0.36945996183028423,
+    "V_P10": 0.10996018583238458,
+    "M_P25": 0.204515821038582,
+    "M_P75": 0.3067855349882662,
+    "M_P90": 0.3577758587036752,
+    "M_P10": 0.17052321409002763
+  },
+  "sources_valeurs": {
+    "H": "today_state",
+    "V": "today_state",
+    "M": "today_state"
+  },
+  "voix": null,
+  "label": "SILENCE",
+  "sens": "LONG",
+  "horizon_jours": 30,
+  "sources": {
+    "history": "/home/ubuntu/seragone/seragone_v3_final.csv",
+    "today": "/home/ubuntu/seragone/state.json",
+    "monde": "/home/ubuntu/seragone/multivers_state.json"
+  }
+}

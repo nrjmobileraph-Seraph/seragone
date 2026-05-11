@@ -1,0 +1,13 @@
+{
+  "module": "observer_price_live_from_state",
+  "timestamp": "2026-05-05T07:33:01.517506+00:00",
+  "source": "/home/ubuntu/seragone/tireur_minute_state.json",
+  "sortie": "/home/ubuntu/seragone/observer_price_live_from_state.csv",
+  "wrote": true,
+  "row": {
+    "timestamp": "2026-05-05T07:32:42.124714+00:00",
+    "close": 81020.25
+  },
+  "decision_live": false,
+  "mode": "OBSERVATOIRE"
+}

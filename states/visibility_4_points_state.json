@@ -1,0 +1,560 @@
+{
+  "module": "visibility_4_points",
+  "timestamp": "2026-04-26T10:45:25.905516+00:00",
+  "version": "1.0.0",
+  "validation": {
+    "mode": "OBSERVATOIRE_VISIBILITE",
+    "verdict": "LECTURE_SEULE",
+    "decision_live": false,
+    "paper": true
+  },
+  "tire": false,
+  "voix": null,
+  "label": "OBSERVATOIRE",
+  "sens": "NEUTRE",
+  "horizonjours": 0,
+  "raison": "Donner une parole/state aux 4 briques présentes mais peu visibles.",
+  "shadow": true,
+  "decision_allowed": false,
+  "counts": {
+    "points_total": 4,
+    "state_visible": 0,
+    "present_consomme_sans_state_clair": 4,
+    "present_non_consomme_sans_state_clair": 0,
+    "absent_ou_non_detecte": 0,
+    "poids_detecte": 4
+  },
+  "points": {
+    "cercle_recursif": {
+      "module": "visibility_cercle_recursif",
+      "timestamp": "2026-04-26T10:45:25.905516+00:00",
+      "version": "1.0.0",
+      "validation": {
+        "mode": "OBSERVATOIRE_VISIBILITE",
+        "verdict": "LECTURE_SEULE",
+        "decision_live": false,
+        "paper": true
+      },
+      "tire": false,
+      "voix": null,
+      "label": "PRESENT_CONSOMME_SANS_STATE_CLAIR",
+      "sens": "NEUTRE",
+      "horizonjours": 0,
+      "raison": "cercle_recursif est détecté dans le dépôt et dans des fichiers consommateurs, mais sans state propre évident.",
+      "lecture": "digestion successive des mondes / récursion profonde",
+      "shadow": true,
+      "decision_allowed": false,
+      "presence": {
+        "present": true,
+        "references_count": 243,
+        "references_sample": [
+          "04_signal_bear_consensus.py",
+          "AUDIT_CIBLE_20avril2026_matin.md",
+          "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "CRON_MAITRE.cron",
+          "TEST_BRIDGE_SUR_116_SILENCES.py",
+          "VERITE_FIGEE_92_MONDES_22avril2026.md",
+          "_archives_windows_2026-04-19/les_vrais_mondes (1).py",
+          "_archives_windows_2026-04-19/les_vrais_mondes (2).py",
+          "_archives_windows_2026-04-19/les_vrais_mondes (3).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (1).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (10).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (11).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (12).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (13).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (2).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (3).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (4).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (5).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (6).py"
+        ],
+        "consomme_probable": true,
+        "consumer_files_count": 48,
+        "consumer_files_sample": [
+          "04_signal_bear_consensus.py",
+          "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (1).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (10).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (11).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (12).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (13).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (2).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (3).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (4).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (5).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (6).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (7).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (8).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (9).py",
+          "_bibliotheque_modules/production_copies/04_signal_bear_consensus.py",
+          "_bibliotheque_modules/production_copies/q_local_p10_state.json",
+          "_bibliotheque_modules/production_copies/seragone_chef_orchestre_v1_state.py",
+          "_bibliotheque_modules/production_copies/state.json"
+        ],
+        "state_visible": false,
+        "state_files": []
+      },
+      "poids": {
+        "detecte": true,
+        "weight_files_count": 189,
+        "weight_files_sample": [
+          "AUDIT_CIBLE_20avril2026_matin.md",
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "CRON_MAITRE.cron",
+          "TEST_BRIDGE_SUR_116_SILENCES.py",
+          "VERITE_FIGEE_92_MONDES_22avril2026.md",
+          "_archives_windows_2026-04-19/les_vrais_mondes (1).py",
+          "_archives_windows_2026-04-19/les_vrais_mondes (2).py",
+          "_archives_windows_2026-04-19/les_vrais_mondes (3).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (1).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (10).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (11).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (12).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (13).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (2).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (3).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (4).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (5).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (6).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (7).py",
+          "_archives_windows_2026-04-19/seragone_chef_orchestre_v1_state (8).py"
+        ],
+        "poids_effectif": 0.0,
+        "commentaire": "poids volontairement nul : visibilité shadow uniquement"
+      },
+      "preuves": [
+        {
+          "file": "bootstrap_communicants.py",
+          "line": "signals['convergence_recursif'] = n_active"
+        },
+        {
+          "file": "load_fg.py",
+          "line": "en 1970 par pd.to_datetime unit='s'). Les modules batch_mondes_recursifs"
+        },
+        {
+          "file": "vrais_yeux_v2.py",
+          "line": "\"\"\"GARCH(1,1) récursif : σ²(t) = ω + α·r²(t-1) + β·σ²(t-1)."
+        },
+        {
+          "file": "born_recursif.py",
+          "line": "BORN SUR MONDES RÉCURSIFS — VRAIE DIVERSITÉ"
+        },
+        {
+          "file": "born_recursif.py",
+          "line": "Les mondes récursifs ont de la VRAIE diversité :"
+        },
+        {
+          "file": "recursif_v1_config.json",
+          "line": "\"_version\": \"RECURSIF_V1_PROD\","
+        },
+        {
+          "file": "recursif_v1_config.json",
+          "line": "\"_description\": \"100 mondes recursifs, signal V pondere, seuils par regime\","
+        },
+        {
+          "file": "04_signal_bear_consensus.py",
+          "line": "# Mondes récursifs : accélération de distance (tension qui monte)"
+        },
+        {
+          "file": "04_signal_bear_consensus.py",
+          "line": "# ─── Regard 6 : au moins 3 mondes récursifs en tension montante ───"
+        },
+        {
+          "file": "seragone_chef_orchestre_v1_state.py",
+          "line": "\"commentaire\": \"mondes communicants recursifs G_libre\","
+        }
+      ]
+    },
+    "hybride": {
+      "module": "visibility_hybride",
+      "timestamp": "2026-04-26T10:45:25.905516+00:00",
+      "version": "1.0.0",
+      "validation": {
+        "mode": "OBSERVATOIRE_VISIBILITE",
+        "verdict": "LECTURE_SEULE",
+        "decision_live": false,
+        "paper": true
+      },
+      "tire": false,
+      "voix": null,
+      "label": "PRESENT_CONSOMME_SANS_STATE_CLAIR",
+      "sens": "NEUTRE",
+      "horizonjours": 0,
+      "raison": "hybride est détecté dans le dépôt et dans des fichiers consommateurs, mais sans state propre évident.",
+      "lecture": "geste binaire + force continue",
+      "shadow": true,
+      "decision_allowed": false,
+      "presence": {
+        "present": true,
+        "references_count": 19,
+        "references_sample": [
+          "AUDIT_CIBLE_20avril2026_matin.md",
+          "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "VERITE_FIGEE_92_MONDES_22avril2026.md",
+          "_archives_windows_2026-04-19/seragone_brain_cwt (3).py",
+          "_archives_windows_2026-04-19/seragone_brain_cwt (4).py",
+          "_archives_windows_2026-04-19/seragone_brain_cwt (5).py",
+          "_archives_windows_2026-04-19/seragone_brain_cwt (6).py",
+          "_archives_windows_2026-04-19/seragone_brain_cwt (7).py",
+          "_bibliotheque_modules/production_copies/seragone_brain_cwt_PRODUCTION_VPS.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/docs/AUDIT_CIBLE_20avril2026_matin.md",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/docs/VERITE_FIGEE_92_MONDES_22avril2026.md",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/seragone_brain_cwt_PRODUCTION_VPS.py",
+          "archive/seragone_brain_cwt_OLD.py",
+          "audit_m1_m8_couverture_mondes.py",
+          "palette_claude/seragone_brain_cwt_PRODUCTION_VPS.py",
+          "seragone_brain_cwt_PRODUCTION_VPS.py",
+          "voix_seragone_92/adapter_seragone_92.py",
+          "voix_seragone_92/ou_gagnent_92_mondes.py"
+        ],
+        "consomme_probable": true,
+        "consumer_files_count": 3,
+        "consumer_files_sample": [
+          "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "audit_m1_m8_couverture_mondes.py"
+        ],
+        "state_visible": false,
+        "state_files": []
+      },
+      "poids": {
+        "detecte": true,
+        "weight_files_count": 18,
+        "weight_files_sample": [
+          "AUDIT_CIBLE_20avril2026_matin.md",
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "VERITE_FIGEE_92_MONDES_22avril2026.md",
+          "_archives_windows_2026-04-19/seragone_brain_cwt (3).py",
+          "_archives_windows_2026-04-19/seragone_brain_cwt (4).py",
+          "_archives_windows_2026-04-19/seragone_brain_cwt (5).py",
+          "_archives_windows_2026-04-19/seragone_brain_cwt (6).py",
+          "_archives_windows_2026-04-19/seragone_brain_cwt (7).py",
+          "_bibliotheque_modules/production_copies/seragone_brain_cwt_PRODUCTION_VPS.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/docs/AUDIT_CIBLE_20avril2026_matin.md",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/docs/VERITE_FIGEE_92_MONDES_22avril2026.md",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/seragone_brain_cwt_PRODUCTION_VPS.py",
+          "archive/seragone_brain_cwt_OLD.py",
+          "audit_m1_m8_couverture_mondes.py",
+          "palette_claude/seragone_brain_cwt_PRODUCTION_VPS.py",
+          "seragone_brain_cwt_PRODUCTION_VPS.py",
+          "voix_seragone_92/adapter_seragone_92.py",
+          "voix_seragone_92/ou_gagnent_92_mondes.py"
+        ],
+        "poids_effectif": 0.0,
+        "commentaire": "poids volontairement nul : visibilité shadow uniquement"
+      },
+      "preuves": [
+        {
+          "file": "seragone_brain_cwt_PRODUCTION_VPS.py",
+          "line": "Kuramoto HYBRIDE : R sur phases brutes + direction sur phases Omega."
+        },
+        {
+          "file": "seragone_brain_cwt_PRODUCTION_VPS.py",
+          "line": "Scan du 1er avril 2026 : hybride K=1.0 = 82% WR + 60.6% sync (vs 59.3%)."
+        },
+        {
+          "file": "AUDIT_CIBLE_20avril2026_matin.md",
+          "line": "### Famille HYBRIDE/INHABITUEL (3 fichiers)"
+        },
+        {
+          "file": "audit_m1_m8_couverture_mondes.py",
+          "line": "\"hybride\": [\"hybride\", \"hybrid\"],"
+        },
+        {
+          "file": "VERITE_FIGEE_92_MONDES_22avril2026.md",
+          "line": "28 mars — G_libre hybride (79% WR) ABSORBÉ"
+        },
+        {
+          "file": "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+          "line": "| `hybride` | `PRESENT_CONSOMME_SANS_STATE_CLAIR` | `M1,M2,M3,M4,M5,M6,M7,M8` | 0 | 0 | 3 | 11 | AUDIT_CIBLE_20avril2026_matin.md | VERITE_FIGEE_92_MONDES_22avril2026.md | _archives_windows_2026-04-19/seragone_brain_cwt (3).py | _archives_w"
+        },
+        {
+          "file": "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "line": "\"hybride\": {"
+        },
+        {
+          "file": "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "line": "\"hybride\","
+        },
+        {
+          "file": "_archives_windows_2026-04-19/seragone_brain_cwt (7).py",
+          "line": "Kuramoto HYBRIDE : R sur phases brutes + direction sur phases Omega."
+        },
+        {
+          "file": "_archives_windows_2026-04-19/seragone_brain_cwt (7).py",
+          "line": "Scan du 1er avril 2026 : hybride K=1.0 = 82% WR + 60.6% sync (vs 59.3%)."
+        }
+      ]
+    },
+    "filtre_R": {
+      "module": "visibility_filtre_R",
+      "timestamp": "2026-04-26T10:45:25.905516+00:00",
+      "version": "1.0.0",
+      "validation": {
+        "mode": "OBSERVATOIRE_VISIBILITE",
+        "verdict": "LECTURE_SEULE",
+        "decision_live": false,
+        "paper": true
+      },
+      "tire": false,
+      "voix": null,
+      "label": "PRESENT_CONSOMME_SANS_STATE_CLAIR",
+      "sens": "NEUTRE",
+      "horizonjours": 0,
+      "raison": "filtre_R est détecté dans le dépôt et dans des fichiers consommateurs, mais sans state propre évident.",
+      "lecture": "équilibre du chœur / pénalisation voix isolée",
+      "shadow": true,
+      "decision_allowed": false,
+      "presence": {
+        "present": true,
+        "references_count": 33,
+        "references_sample": [
+          "09_filtre_tendance_v4.py",
+          "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "_bibliotheque_modules/archive_runs/20260423T215432Z/modules_registry_snapshot_current.json",
+          "_bibliotheque_modules/archive_runs/20260423T215432Z/modules_registry_snapshot_previous.json",
+          "_bibliotheque_modules/archive_runs/20260424T201412Z/modules_registry_snapshot_current.json",
+          "_bibliotheque_modules/archive_runs/20260424T201412Z/modules_registry_snapshot_previous.json",
+          "_bibliotheque_modules/index/inventory_python.json",
+          "_bibliotheque_modules/index/ranking_abc_d.json",
+          "_bibliotheque_modules/modules_registry.json",
+          "_bibliotheque_modules/production_copies/09_filtre_tendance_v4.py",
+          "_bibliotheque_modules/production_copies/chaines_epurees.py",
+          "_bibliotheque_modules/production_copies/seragone_murmure.py",
+          "_bibliotheque_modules/production_copies/test_directionnels_et_temperance.py",
+          "_bibliotheque_modules/research_copies/test_directionnels_et_temperance.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/09_filtre_tendance_v4.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/chaines_epurees.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/seragone_murmure.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/test_directionnels_et_temperance.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/research/test_directionnels_et_temperance.py"
+        ],
+        "consomme_probable": true,
+        "consumer_files_count": 3,
+        "consumer_files_sample": [
+          "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "audit_m1_m8_couverture_mondes.py"
+        ],
+        "state_visible": false,
+        "state_files": []
+      },
+      "poids": {
+        "detecte": true,
+        "weight_files_count": 28,
+        "weight_files_sample": [
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "_bibliotheque_modules/archive_runs/20260423T215432Z/modules_registry_snapshot_current.json",
+          "_bibliotheque_modules/archive_runs/20260423T215432Z/modules_registry_snapshot_previous.json",
+          "_bibliotheque_modules/archive_runs/20260424T201412Z/modules_registry_snapshot_current.json",
+          "_bibliotheque_modules/archive_runs/20260424T201412Z/modules_registry_snapshot_previous.json",
+          "_bibliotheque_modules/index/inventory_python.json",
+          "_bibliotheque_modules/index/ranking_abc_d.json",
+          "_bibliotheque_modules/modules_registry.json",
+          "_bibliotheque_modules/production_copies/chaines_epurees.py",
+          "_bibliotheque_modules/production_copies/seragone_murmure.py",
+          "_bibliotheque_modules/production_copies/test_directionnels_et_temperance.py",
+          "_bibliotheque_modules/research_copies/test_directionnels_et_temperance.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/chaines_epurees.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/seragone_murmure.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/test_directionnels_et_temperance.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/research/test_directionnels_et_temperance.py",
+          "_bibliotheque_modules/snapshots/modules_registry_20260423T214644Z.json",
+          "_bibliotheque_modules/snapshots/modules_registry_20260423T215008Z.json",
+          "_bibliotheque_modules/snapshots/modules_registry_20260423T215432Z.json",
+          "_bibliotheque_modules/snapshots/modules_registry_20260424T201412Z.json"
+        ],
+        "poids_effectif": 0.0,
+        "commentaire": "poids volontairement nul : visibilité shadow uniquement"
+      },
+      "preuves": [
+        {
+          "file": "test_directionnels_et_temperance.py",
+          "line": "def filtre_res(i):"
+        },
+        {
+          "file": "test_directionnels_et_temperance.py",
+          "line": "horizon=20, mise_pct=0.50, stop=-0.07, tp=0.12, filtre_fn=filtre_res)"
+        },
+        {
+          "file": "audit_m1_m8_couverture_mondes.py",
+          "line": "\"filtre_R\": [\"filtre_R\", \"filtre R\", \"equilibre des voix\", \"équilibre des voix\"],"
+        },
+        {
+          "file": "chaines_epurees.py",
+          "line": "en train). Filtre reste à -6.31% (inchangé). Données conservées dans"
+        },
+        {
+          "file": "09_filtre_tendance_v4.py",
+          "line": "# Le meilleur filtre recalculé sur tout l'historique"
+        },
+        {
+          "file": "seragone_murmure.py",
+          "line": "\"ratio_range_vs_3_semaines\": ["
+        },
+        {
+          "file": "seragone_murmure.py",
+          "line": "\"ratio_range_vs_3_semaines\": 0.20,"
+        },
+        {
+          "file": "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+          "line": "| `filtre_R` | `PRESENT_CONSOMME_SANS_STATE_CLAIR` | `M1,M2,M3,M4,M5,M6,M7,M8` | 0 | 0 | 8 | 2 | 09_filtre_tendance_v4.py | SERAGONE_NATIVE_OUT/PHASE2_top_300_scripts_a_lire_brancher.csv | SERAGONE_NATIVE_OUT/PHASE4_modules_uniques_dedoublo"
+        },
+        {
+          "file": "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "line": "\"filtre_R\": {"
+        },
+        {
+          "file": "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "line": "\"filtre_R\","
+        }
+      ]
+    },
+    "salle_des_possibles": {
+      "module": "visibility_salle_des_possibles",
+      "timestamp": "2026-04-26T10:45:25.905516+00:00",
+      "version": "1.0.0",
+      "validation": {
+        "mode": "OBSERVATOIRE_VISIBILITE",
+        "verdict": "LECTURE_SEULE",
+        "decision_live": false,
+        "paper": true
+      },
+      "tire": false,
+      "voix": null,
+      "label": "PRESENT_CONSOMME_SANS_STATE_CLAIR",
+      "sens": "NEUTRE",
+      "horizonjours": 0,
+      "raison": "salle_des_possibles est détecté dans le dépôt et dans des fichiers consommateurs, mais sans state propre évident.",
+      "lecture": "espace de convergence forte entre mondes",
+      "shadow": true,
+      "decision_allowed": false,
+      "presence": {
+        "present": true,
+        "references_count": 75,
+        "references_sample": [
+          "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "INTEGRATION_NOTICE_PEPITES.md",
+          "SERAGONE_NATIVE_OUT/RAPPORT_PHASE2_TRI_NATIF.md",
+          "_archives_windows_2026-04-19/cryptoquant_reader (1).py",
+          "_archives_windows_2026-04-19/deepseek_python_20260316_f114dc (1).py",
+          "_archives_windows_2026-04-19/matrice_convergence (1).py",
+          "_archives_windows_2026-04-19/matrice_convergence (2).py",
+          "_archives_windows_2026-04-19/module_constitution_patched (1).py",
+          "_archives_windows_2026-04-19/village_le vrai.py",
+          "_bibliotheque_modules/production_copies/cryptoquant_reader.py",
+          "_bibliotheque_modules/production_copies/deepseek_python_20260316_cb3a25.py",
+          "_bibliotheque_modules/production_copies/deepseek_python_20260316_f114dc.py",
+          "_bibliotheque_modules/production_copies/journees_des_tireurs_v2.py",
+          "_bibliotheque_modules/production_copies/lecteur_onchain.py",
+          "_bibliotheque_modules/production_copies/m1_long_engine.py",
+          "_bibliotheque_modules/production_copies/matrice_convergence.py",
+          "_bibliotheque_modules/production_copies/module_atr_patched.py",
+          "_bibliotheque_modules/production_copies/module_constitution_patched.py",
+          "_bibliotheque_modules/production_copies/module_router_patched.py"
+        ],
+        "consomme_probable": true,
+        "consumer_files_count": 25,
+        "consumer_files_sample": [
+          "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "_archives_windows_2026-04-19/village_le vrai.py",
+          "_bibliotheque_modules/production_copies/journees_des_tireurs_v2.py",
+          "_bibliotheque_modules/production_copies/m1_long_engine.py",
+          "_bibliotheque_modules/production_copies/village_le_vrai.py",
+          "_bibliotheque_modules/production_copies/village_le_vrai_vps.py",
+          "_bibliotheque_modules/production_copies/village_reel_adapter.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/journees_des_tireurs_v2.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/m1_long_engine.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/village_le_vrai.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/village_le_vrai_vps.py",
+          "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/village_reel_adapter.py",
+          "audit_m1_m8_couverture_mondes.py",
+          "backups/moteur_pepite_4_L3_mom_haut_avant_C3_20260426T073734Z.py",
+          "journees_des_tireurs_v2.py",
+          "m1_long_engine.py",
+          "moteur_pepite_2_OUVRIR_SOUFFLE.py",
+          "moteur_pepite_4_L3_mom_haut.py",
+          "palette_claude/village_le_vrai.py"
+        ],
+        "state_visible": false,
+        "state_files": []
+      },
+      "poids": {
+        "detecte": true,
+        "weight_files_count": 72,
+        "weight_files_sample": [
+          "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+          "INTEGRATION_NOTICE_PEPITES.md",
+          "_archives_windows_2026-04-19/cryptoquant_reader (1).py",
+          "_archives_windows_2026-04-19/deepseek_python_20260316_f114dc (1).py",
+          "_archives_windows_2026-04-19/matrice_convergence (1).py",
+          "_archives_windows_2026-04-19/matrice_convergence (2).py",
+          "_archives_windows_2026-04-19/module_constitution_patched (1).py",
+          "_archives_windows_2026-04-19/village_le vrai.py",
+          "_bibliotheque_modules/production_copies/cryptoquant_reader.py",
+          "_bibliotheque_modules/production_copies/deepseek_python_20260316_cb3a25.py",
+          "_bibliotheque_modules/production_copies/deepseek_python_20260316_f114dc.py",
+          "_bibliotheque_modules/production_copies/journees_des_tireurs_v2.py",
+          "_bibliotheque_modules/production_copies/lecteur_onchain.py",
+          "_bibliotheque_modules/production_copies/m1_long_engine.py",
+          "_bibliotheque_modules/production_copies/matrice_convergence.py",
+          "_bibliotheque_modules/production_copies/module_atr_patched.py",
+          "_bibliotheque_modules/production_copies/module_constitution_patched.py",
+          "_bibliotheque_modules/production_copies/module_router_patched.py",
+          "_bibliotheque_modules/production_copies/village_le_vrai.py",
+          "_bibliotheque_modules/production_copies/village_le_vrai_vps.py"
+        ],
+        "poids_effectif": 0.0,
+        "commentaire": "poids volontairement nul : visibilité shadow uniquement"
+      },
+      "preuves": [
+        {
+          "file": "deepseek_python_20260316_cb3a25.py",
+          "line": "self.etats_possibles = [\"ACCELERATION\", \"CROISSANCE\", \"PRUDENCE\","
+        },
+        {
+          "file": "deepseek_python_20260316_f114dc.py",
+          "line": "self.etats_possibles = [\"ACCELERATION\", \"CROISSANCE\", \"PRUDENCE\","
+        },
+        {
+          "file": "chercheur_hyper_pepites.py",
+          "line": "print(f\"Analyse de {len(combos_5)} combinaisons possibles...\")"
+        },
+        {
+          "file": "journees_des_tireurs_v2.py",
+          "line": "# Chercher dans plusieurs fichiers possibles"
+        },
+        {
+          "file": "module_constitution_patched.py",
+          "line": "self.etats_possibles = [\"ACCELERATION\", \"CROISSANCE\", \"PRUDENCE\","
+        },
+        {
+          "file": "m1_long_engine.py",
+          "line": "# Exemples possibles : \"mondes_paralleles_cache.json\", \"bull_worlds.json\""
+        },
+        {
+          "file": "lecteur_onchain.py",
+          "line": "# Exemples possibles : 'timestamp', 'time', 'date'"
+        },
+        {
+          "file": "INTEGRATION_NOTICE_PEPITES.md",
+          "line": "Plusieurs voies possibles selon votre architecture VPS actuelle. **À VOUS DE CHOISIR** :"
+        },
+        {
+          "file": "module_atr_patched.py",
+          "line": "self.etats_possibles = [\"ACCELERATION\", \"CROISSANCE\", \"PRUDENCE\","
+        },
+        {
+          "file": "audit_m1_m8_couverture_mondes.py",
+          "line": "\"salle_des_possibles\": [\"salle_des_possibles\", \"Salle des Possibles\", \"salle parallèle\", \"salle parallele\"],"
+        }
+      ]
+    }
+  }
+}

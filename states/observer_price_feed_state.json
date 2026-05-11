@@ -1,0 +1,25 @@
+{
+  "module": "build_observer_price_feed",
+  "timestamp": "2026-05-05T07:34:03.731052+00:00",
+  "ok": true,
+  "sortie": "/home/ubuntu/seragone/data/btc_1m.csv",
+  "sources_utilisees": [
+    "/home/ubuntu/seragone/observer_price_live_from_state.csv",
+    "/home/ubuntu/seragone/tireur_minute_journal.csv",
+    "/home/ubuntu/seragone/tireur_5min_journal.csv",
+    "/home/ubuntu/seragone/tireurs_agilite_5m_journal.csv",
+    "/home/ubuntu/seragone/tireurs_journal.csv",
+    "/home/ubuntu/seragone/signal_V9_2020_2026.csv",
+    "/home/ubuntu/seragone/signal_baisse_raphael_FINAL.csv",
+    "/home/ubuntu/seragone/signal_baisse_raphael_V9.csv",
+    "/home/ubuntu/seragone/voix_seragone_92/trading_quotidien_seragone.csv"
+  ],
+  "rows": 2342,
+  "latest_timestamp": "2026-05-05T07:32:42.124714+00:00",
+  "age_minutes": 1.36,
+  "colonnes": [
+    "timestamp",
+    "close"
+  ],
+  "mode": "OBSERVATOIRE"
+}

@@ -1,0 +1,1964 @@
+{
+  "timestamp": "2026-04-22T13:14:40.435787+00:00",
+  "prix": 72089.11,
+  "date": "2026-04-09",
+  "nmondes": 278,
+  "ntotal": 278,
+  "nactif": 277,
+  "nproche": 277,
+  "convergencepct": 99.64028776978417,
+  "convergencepctproche": 99.64028776978417,
+  "signalbear": true,
+  "signalfort": true,
+  "signalbear20": true,
+  "signalproche": true,
+  "signalmurmure": false,
+  "details": [
+    {
+      "name": "B000",
+      "dist": 0.0,
+      "tau": 0.0,
+      "actif": false,
+      "proche": false
+    },
+    {
+      "name": "B001",
+      "dist": 0.185413,
+      "tau": 0.836431,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B002",
+      "dist": 0.370827,
+      "tau": 1.672862,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B003",
+      "dist": 0.046406,
+      "tau": 0.277475,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B004",
+      "dist": 0.092812,
+      "tau": 0.55495,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B005",
+      "dist": 0.191133,
+      "tau": 0.856914,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B006",
+      "dist": 0.373719,
+      "tau": 1.677486,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B007",
+      "dist": 0.207346,
+      "tau": 0.927912,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B008",
+      "dist": 0.382265,
+      "tau": 1.713827,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B009",
+      "dist": 0.04893,
+      "tau": 0.157438,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B010",
+      "dist": 0.191761,
+      "tau": 0.837189,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B011",
+      "dist": 0.374041,
+      "tau": 1.673241,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B012",
+      "dist": 0.097861,
+      "tau": 0.314877,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B013",
+      "dist": 0.209654,
+      "tau": 0.850969,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B014",
+      "dist": 0.383522,
+      "tau": 1.674378,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B015",
+      "dist": 0.067437,
+      "tau": 0.318637,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B016",
+      "dist": 0.022207,
+      "tau": 0.060101,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B017",
+      "dist": 0.104921,
+      "tau": 0.574815,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B018",
+      "dist": 0.108307,
+      "tau": 0.408758,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B019",
+      "dist": 0.197296,
+      "tau": 0.862862,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B020",
+      "dist": 0.376909,
+      "tau": 1.677628,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B021",
+      "dist": 0.213041,
+      "tau": 0.942943,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B022",
+      "dist": 0.385384,
+      "tau": 1.718167,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B023",
+      "dist": 0.053734,
+      "tau": 0.16553,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B024",
+      "dist": 0.134874,
+      "tau": 0.637275,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B025",
+      "dist": 0.100349,
+      "tau": 0.318033,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B026",
+      "dist": 0.051446,
+      "tau": 0.283041,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B027",
+      "dist": 0.044415,
+      "tau": 0.120202,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B028",
+      "dist": 0.070999,
+      "tau": 0.323311,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B029",
+      "dist": 0.066082,
+      "tau": 0.192038,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B030",
+      "dist": 0.214729,
+      "tau": 0.882682,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B031",
+      "dist": 0.38632,
+      "tau": 1.678053,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B032",
+      "dist": 0.095432,
+      "tau": 0.557342,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B033",
+      "dist": 0.229279,
+      "tau": 0.97909,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B034",
+      "dist": 0.394593,
+      "tau": 1.725725,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B035",
+      "dist": 0.11056,
+      "tau": 0.410796,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B036",
+      "dist": 0.064236,
+      "tau": 0.299695,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B037",
+      "dist": 0.107468,
+      "tau": 0.33106,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B038",
+      "dist": 0.186739,
+      "tau": 0.837459,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B039",
+      "dist": 0.107245,
+      "tau": 0.578272,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B040",
+      "dist": 0.080749,
+      "tau": 0.338216,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B041",
+      "dist": 0.371491,
+      "tau": 1.673377,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B042",
+      "dist": 0.13669,
+      "tau": 0.639625,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B043",
+      "dist": 0.11706,
+      "tau": 0.417616,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B044",
+      "dist": 0.102892,
+      "tau": 0.566081,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B045",
+      "dist": 0.113934,
+      "tau": 0.587298,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B046",
+      "dist": 0.193043,
+      "tau": 0.838216,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B047",
+      "dist": 0.141999,
+      "tau": 0.646623,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B048",
+      "dist": 0.190659,
+      "tau": 0.841069,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B049",
+      "dist": 0.192418,
+      "tau": 0.858156,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B050",
+      "dist": 0.210827,
+      "tau": 0.852511,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B051",
+      "dist": 0.3747,
+      "tau": 1.673756,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B052",
+      "dist": 0.198542,
+      "tau": 0.863733,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B053",
+      "dist": 0.196838,
+      "tau": 0.842128,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B054",
+      "dist": 0.374378,
+      "tau": 1.678057,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B055",
+      "dist": 0.373477,
+      "tau": 1.674918,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B056",
+      "dist": 0.208532,
+      "tau": 0.929294,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B057",
+      "dist": 0.384165,
+      "tau": 1.674892,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B058",
+      "dist": 0.196225,
+      "tau": 0.861872,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B059",
+      "dist": 0.215874,
+      "tau": 0.883908,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B060",
+      "dist": 0.214307,
+      "tau": 0.856759,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B061",
+      "dist": 0.202234,
+      "tau": 0.866337,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B062",
+      "dist": 0.214195,
+      "tau": 0.944444,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B063",
+      "dist": 0.377562,
+      "tau": 1.678199,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B064",
+      "dist": 0.38291,
+      "tau": 1.714449,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B065",
+      "dist": 0.219274,
+      "tau": 0.887578,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B066",
+      "dist": 0.376669,
+      "tau": 1.675297,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B067",
+      "dist": 0.230352,
+      "tau": 0.981034,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B068",
+      "dist": 0.212049,
+      "tau": 0.933427,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B069",
+      "dist": 0.386957,
+      "tau": 1.678624,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B070",
+      "dist": 0.217622,
+      "tau": 0.953174,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B071",
+      "dist": 0.376349,
+      "tau": 1.679769,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B072",
+      "dist": 0.386023,
+      "tau": 1.718786,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B073",
+      "dist": 0.233542,
+      "tau": 0.98652,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B074",
+      "dist": 0.386085,
+      "tau": 1.676432,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B075",
+      "dist": 0.379517,
+      "tau": 1.679911,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B076",
+      "dist": 0.395217,
+      "tau": 1.72616,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B077",
+      "dist": 0.388864,
+      "tau": 1.680335,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B078",
+      "dist": 0.384837,
+      "tau": 1.716312,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B079",
+      "dist": 0.387935,
+      "tau": 1.720644,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B080",
+      "dist": 0.397085,
+      "tau": 1.727465,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B081",
+      "dist": 0.032757,
+      "tau": 0.100133,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B082",
+      "dist": 0.039575,
+      "tau": 0.116437,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B083",
+      "dist": 0.058883,
+      "tau": 0.178316,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B084",
+      "dist": 0.062932,
+      "tau": 0.186171,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B085",
+      "dist": 0.103198,
+      "tau": 0.32414,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B086",
+      "dist": 0.056803,
+      "tau": 0.293416,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B087",
+      "dist": 0.055188,
+      "tau": 0.159026,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B088",
+      "dist": 0.10556,
+      "tau": 0.328433,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B089",
+      "dist": 0.06099,
+      "tau": 0.297485,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B090",
+      "dist": 0.074972,
+      "tau": 0.332068,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B091",
+      "dist": 0.065515,
+      "tau": 0.200265,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B092",
+      "dist": 0.073756,
+      "tau": 0.216335,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B093",
+      "dist": 0.069176,
+      "tau": 0.20811,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B094",
+      "dist": 0.078192,
+      "tau": 0.336907,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B095",
+      "dist": 0.098424,
+      "tau": 0.56272,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B096",
+      "dist": 0.08177,
+      "tau": 0.247172,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B097",
+      "dist": 0.113152,
+      "tau": 0.415801,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B098",
+      "dist": 0.084732,
+      "tau": 0.253573,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B099",
+      "dist": 0.072106,
+      "tau": 0.313014,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B100",
+      "dist": 0.11235,
+      "tau": 0.342367,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B101",
+      "dist": 0.079151,
+      "tau": 0.232875,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B102",
+      "dist": 0.100898,
+      "tau": 0.565046,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B103",
+      "dist": 0.115311,
+      "tau": 0.418063,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B104",
+      "dist": 0.109915,
+      "tau": 0.583448,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B105",
+      "dist": 0.08714,
+      "tau": 0.349412,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B106",
+      "dist": 0.080285,
+      "tau": 0.329988,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B107",
+      "dist": 0.117767,
+      "tau": 0.356632,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B108",
+      "dist": 0.093054,
+      "tau": 0.271782,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B109",
+      "dist": 0.0833,
+      "tau": 0.335541,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B110",
+      "dist": 0.119842,
+      "tau": 0.361852,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B111",
+      "dist": 0.112136,
+      "tau": 0.586326,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B112",
+      "dist": 0.188285,
+      "tau": 0.839389,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B113",
+      "dist": 0.094021,
+      "tau": 0.369937,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B114",
+      "dist": 0.096608,
+      "tau": 0.37554,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B115",
+      "dist": 0.138795,
+      "tau": 0.641488,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B116",
+      "dist": 0.121557,
+      "tau": 0.428613,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B117",
+      "dist": 0.091752,
+      "tau": 0.356477,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B118",
+      "dist": 0.125864,
+      "tau": 0.372343,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B119",
+      "dist": 0.107981,
+      "tau": 0.577245,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B120",
+      "dist": 0.14056,
+      "tau": 0.643822,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B121",
+      "dist": 0.18959,
+      "tau": 0.840529,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B122",
+      "dist": 0.103984,
+      "tau": 0.386179,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B123",
+      "dist": 0.12658,
+      "tau": 0.445033,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B124",
+      "dist": 0.128513,
+      "tau": 0.448134,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B125",
+      "dist": 0.11855,
+      "tau": 0.594236,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B126",
+      "dist": 0.113606,
+      "tau": 0.586832,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B127",
+      "dist": 0.372271,
+      "tau": 1.674157,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B128",
+      "dist": 0.115756,
+      "tau": 0.588232,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B129",
+      "dist": 0.134146,
+      "tau": 0.45838,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B130",
+      "dist": 0.123695,
+      "tau": 0.607145,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B131",
+      "dist": 0.125673,
+      "tau": 0.608008,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B132",
+      "dist": 0.194539,
+      "tau": 0.839774,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B133",
+      "dist": 0.145728,
+      "tau": 0.653327,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B134",
+      "dist": 0.12198,
+      "tau": 0.59497,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B135",
+      "dist": 0.372933,
+      "tau": 1.674671,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B136",
+      "dist": 0.149944,
+      "tau": 0.664135,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B137",
+      "dist": 0.193452,
+      "tau": 0.844144,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B138",
+      "dist": 0.131428,
+      "tau": 0.611031,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B139",
+      "dist": 0.195802,
+      "tau": 0.840812,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B140",
+      "dist": 0.151579,
+      "tau": 0.666763,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B141",
+      "dist": 0.193919,
+      "tau": 0.859269,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B142",
+      "dist": 0.156384,
+      "tau": 0.673815,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B143",
+      "dist": 0.212198,
+      "tau": 0.855876,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B144",
+      "dist": 0.195187,
+      "tau": 0.86038,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B145",
+      "dist": 0.196648,
+      "tau": 0.849105,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B146",
+      "dist": 0.197898,
+      "tau": 0.85026,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B147",
+      "dist": 0.199997,
+      "tau": 0.865092,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B148",
+      "dist": 0.375473,
+      "tau": 1.674536,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B149",
+      "dist": 0.199545,
+      "tau": 0.845207,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B150",
+      "dist": 0.213357,
+      "tau": 0.857007,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B151",
+      "dist": 0.201226,
+      "tau": 0.86596,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B152",
+      "dist": 0.201601,
+      "tau": 0.855501,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B153",
+      "dist": 0.198941,
+      "tau": 0.864086,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B154",
+      "dist": 0.202644,
+      "tau": 0.849335,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B155",
+      "dist": 0.375152,
+      "tau": 1.679067,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B156",
+      "dist": 0.376129,
+      "tau": 1.67505,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B157",
+      "dist": 0.203857,
+      "tau": 0.850489,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B158",
+      "dist": 0.217213,
+      "tau": 0.886835,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B159",
+      "dist": 0.209917,
+      "tau": 0.933273,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B160",
+      "dist": 0.374911,
+      "tau": 1.676317,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B161",
+      "dist": 0.20487,
+      "tau": 0.86818,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B162",
+      "dist": 0.202049,
+      "tau": 0.867613,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B163",
+      "dist": 0.218345,
+      "tau": 0.888055,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B164",
+      "dist": 0.216796,
+      "tau": 0.860392,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B165",
+      "dist": 0.203266,
+      "tau": 0.86867,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B166",
+      "dist": 0.384919,
+      "tau": 1.675672,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B167",
+      "dist": 0.207454,
+      "tau": 0.856431,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B168",
+      "dist": 0.211089,
+      "tau": 0.933822,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B169",
+      "dist": 0.375809,
+      "tau": 1.679637,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B170",
+      "dist": 0.215545,
+      "tau": 0.947667,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B171",
+      "dist": 0.20789,
+      "tau": 0.869044,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B172",
+      "dist": 0.219652,
+      "tau": 0.864508,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B173",
+      "dist": 0.206873,
+      "tau": 0.871385,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B174",
+      "dist": 0.209072,
+      "tau": 0.869701,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B175",
+      "dist": 0.37833,
+      "tau": 1.679209,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B176",
+      "dist": 0.220772,
+      "tau": 0.869009,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B177",
+      "dist": 0.216686,
+      "tau": 0.952272,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B178",
+      "dist": 0.37657,
+      "tau": 1.678778,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B179",
+      "dist": 0.221707,
+      "tau": 0.891705,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B180",
+      "dist": 0.385559,
+      "tau": 1.676185,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B181",
+      "dist": 0.377224,
+      "tau": 1.679348,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B182",
+      "dist": 0.212581,
+      "tau": 0.872051,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B183",
+      "dist": 0.214565,
+      "tau": 0.935468,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B184",
+      "dist": 0.224098,
+      "tau": 0.871136,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B185",
+      "dist": 0.378981,
+      "tau": 1.679779,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B186",
+      "dist": 0.231608,
+      "tau": 0.985519,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B187",
+      "dist": 0.378091,
+      "tau": 1.67659,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B188",
+      "dist": 0.224501,
+      "tau": 0.896344,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B189",
+      "dist": 0.225597,
+      "tau": 0.897985,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B190",
+      "dist": 0.23267,
+      "tau": 0.987334,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B191",
+      "dist": 0.220073,
+      "tau": 0.958165,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B192",
+      "dist": 0.21745,
+      "tau": 0.939353,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B193",
+      "dist": 0.383666,
+      "tau": 1.714942,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B194",
+      "dist": 0.218581,
+      "tau": 0.941764,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B195",
+      "dist": 0.228852,
+      "tau": 0.905455,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B196",
+      "dist": 0.377772,
+      "tau": 1.681347,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B197",
+      "dist": 0.387706,
+      "tau": 1.679633,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B198",
+      "dist": 0.37918,
+      "tau": 1.681059,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B199",
+      "dist": 0.222887,
+      "tau": 0.965428,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B200",
+      "dist": 0.223991,
+      "tau": 0.967069,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B201",
+      "dist": 0.379735,
+      "tau": 1.678919,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B202",
+      "dist": 0.22194,
+      "tau": 0.947613,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B203",
+      "dist": 0.235828,
+      "tau": 0.991142,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B204",
+      "dist": 0.380384,
+      "tau": 1.67949,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B205",
+      "dist": 0.388341,
+      "tau": 1.680204,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B206",
+      "dist": 0.384308,
+      "tau": 1.715563,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B207",
+      "dist": 0.227269,
+      "tau": 0.971261,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B208",
+      "dist": 0.386774,
+      "tau": 1.719278,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B209",
+      "dist": 0.380928,
+      "tau": 1.681489,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B210",
+      "dist": 0.379418,
+      "tau": 1.683899,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B211",
+      "dist": 0.238456,
+      "tau": 0.997508,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B212",
+      "dist": 0.387473,
+      "tau": 1.677725,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B213",
+      "dist": 0.239488,
+      "tau": 0.999995,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B214",
+      "dist": 0.380068,
+      "tau": 1.684481,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B215",
+      "dist": 0.242557,
+      "tau": 1.007436,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B216",
+      "dist": 0.382324,
+      "tau": 1.6812,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B217",
+      "dist": 0.387411,
+      "tau": 1.719897,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B218",
+      "dist": 0.38256,
+      "tau": 1.684014,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B219",
+      "dist": 0.383204,
+      "tau": 1.684597,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B220",
+      "dist": 0.389078,
+      "tau": 1.679547,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B221",
+      "dist": 0.382009,
+      "tau": 1.686228,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B222",
+      "dist": 0.389711,
+      "tau": 1.68006,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B223",
+      "dist": 0.39595,
+      "tau": 1.726841,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B224",
+      "dist": 0.390242,
+      "tau": 1.681913,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B225",
+      "dist": 0.386228,
+      "tau": 1.717426,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B226",
+      "dist": 0.38513,
+      "tau": 1.686344,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B227",
+      "dist": 0.396572,
+      "tau": 1.727276,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B228",
+      "dist": 0.391835,
+      "tau": 1.684364,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B229",
+      "dist": 0.391605,
+      "tau": 1.681624,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B230",
+      "dist": 0.392464,
+      "tau": 1.684944,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B231",
+      "dist": 0.389316,
+      "tau": 1.721753,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B232",
+      "dist": 0.387839,
+      "tau": 1.718539,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B233",
+      "dist": 0.388474,
+      "tau": 1.719073,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B234",
+      "dist": 0.394345,
+      "tau": 1.686691,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B235",
+      "dist": 0.390913,
+      "tau": 1.722607,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B236",
+      "dist": 0.391543,
+      "tau": 1.723225,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B237",
+      "dist": 0.398433,
+      "tau": 1.72858,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B238",
+      "dist": 0.390374,
+      "tau": 1.72076,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B239",
+      "dist": 0.393428,
+      "tau": 1.725077,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B240",
+      "dist": 0.399995,
+      "tau": 1.730184,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B241",
+      "dist": 0.400611,
+      "tau": 1.730618,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B242",
+      "dist": 0.402453,
+      "tau": 1.73192,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B243",
+      "dist": 0.079221,
+      "tau": 0.209617,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B244",
+      "dist": 0.158442,
+      "tau": 0.419234,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B245",
+      "dist": 0.091812,
+      "tau": 0.333475,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B246",
+      "dist": 0.122025,
+      "tau": 0.586156,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B247",
+      "dist": 0.093114,
+      "tau": 0.258782,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B248",
+      "dist": 0.018973,
+      "tau": 0.066865,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B249",
+      "dist": 0.165098,
+      "tau": 0.473972,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B250",
+      "dist": 0.125908,
+      "tau": 0.368178,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B251",
+      "dist": 0.183624,
+      "tau": 0.66695,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B252",
+      "dist": 0.165825,
+      "tau": 0.44753,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B253",
+      "dist": 0.05248,
+      "tau": 0.166124,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B254",
+      "dist": 0.029209,
+      "tau": 0.089326,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B255",
+      "dist": 0.081461,
+      "tau": 0.218158,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B256",
+      "dist": 0.037856,
+      "tau": 0.119917,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B257",
+      "dist": 0.099683,
+      "tau": 0.318717,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B258",
+      "dist": 0.082275,
+      "tau": 0.216636,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B259",
+      "dist": 0.186227,
+      "tau": 0.517565,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B260",
+      "dist": 0.037948,
+      "tau": 0.13373,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B261",
+      "dist": 0.050135,
+      "tau": 0.282832,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B262",
+      "dist": 0.056986,
+      "tau": 0.174954,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B263",
+      "dist": 0.043889,
+      "tau": 0.136908,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B264",
+      "dist": 0.095027,
+      "tau": 0.267621,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B265",
+      "dist": 0.084434,
+      "tau": 0.225321,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B266",
+      "dist": 0.043968,
+      "tau": 0.146007,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B267",
+      "dist": 0.095725,
+      "tau": 0.265658,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B268",
+      "dist": 0.104037,
+      "tau": 0.370707,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B269",
+      "dist": 0.159574,
+      "tau": 0.422201,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B270",
+      "dist": 0.061865,
+      "tau": 0.188515,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B271",
+      "dist": 0.085726,
+      "tau": 0.228437,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B272",
+      "dist": 0.201629,
+      "tau": 0.83913,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B273",
+      "dist": 0.070055,
+      "tau": 0.323293,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B274",
+      "dist": 0.143728,
+      "tau": 0.318686,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B275",
+      "dist": 0.142378,
+      "tau": 0.304271,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B276",
+      "dist": 0.047034,
+      "tau": 0.126147,
+      "actif": true,
+      "proche": true
+    },
+    {
+      "name": "B277",
+      "dist": 0.028678,
+      "tau": 0.156638,
+      "actif": true,
+      "proche": true
+    }
+  ]
+}

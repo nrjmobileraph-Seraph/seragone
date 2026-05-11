@@ -1,0 +1,11 @@
+{
+  "last_update": "2026-04-22T21:52:11.704544",
+  "taille_actuelle": 0.0,
+  "oracle_score": 2,
+  "amortisseur": 0.6552297531690132,
+  "boost_tendance": 1.0,
+  "filtre_euphorie": 1.0,
+  "sous_ma200": true,
+  "micro_recup_active": false,
+  "commentaire": "Base=0.0 Oracle=1.00 Amort=0.66 Boost=1.00 Filtre=1.00"
+}

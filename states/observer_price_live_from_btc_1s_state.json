@@ -1,0 +1,13 @@
+{
+  "module": "observer_price_live_from_btc_1s",
+  "timestamp": "2026-05-11T21:08:01.636775+00:00",
+  "source": "/home/ubuntu/seragone/data/btc_1s_recent.csv",
+  "sortie": "/home/ubuntu/seragone/observer_price_live_from_btc_1s.csv",
+  "wrote": true,
+  "row": {
+    "timestamp": "2026-05-11 21:07:01",
+    "close": 81800.0
+  },
+  "decision_live": false,
+  "mode": "OBSERVATOIRE"
+}

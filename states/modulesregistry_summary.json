@@ -1,0 +1,19 @@
+{
+  "generated_at_utc": "2026-04-27T18:04:19.803921+00:00",
+  "resume_probe": {
+    "processes": 11,
+    "systemd": 2,
+    "timers": 1,
+    "cron": 37,
+    "matched_files": 1127,
+    "states_and_data": 341
+  },
+  "resume_registry": {
+    "modules": 82,
+    "statuts": {
+      "ACTIF": 9,
+      "STATE_PRESENT": 41,
+      "ACTIF_CRON": 32
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "module": "core_eq06_haut_observatoire",
+  "timestamp_utc": "2026-04-26T22:23:18.935129+00:00",
+  "phase": "OBSERVATOIRE_PASSIF_CORE_EQ06_HAUT",
+  "label": "PAPER_TRADE_SHADOW",
+  "canonisable": false,
+  "tire": null,
+  "decision_live": false,
+  "poids_effectif": 0.0,
+  "live_autorise": "NON",
+  "ordre_autorise": "NON",
+  "exchange_autorise": "NON",
+  "lecture_seule": "OUI",
+  "statut_recherche": "BOUCLE_CORE_WR80_CLOTUREE",
+  "raison": "CORE déjà optimisé : règle conservée uniquement en observation événementielle.",
+  "reference_audit": {
+    "n_jours_colles": 41,
+    "n_events_gap20": 14,
+    "n_events_gap60": 9,
+    "wr_event_h20_point_fixe": 0.857,
+    "wr_sortie_zone": 0.786,
+    "wr_tp5_sl5_path_dependent": 0.902,
+    "verdict": "signal_reel_mais_non_canonisable"
+  },
+  "condition_reouverture": {
+    "events_reels_independants_min": 30,
+    "wr_min": 0.75,
+    "aucun_filtre_apres_coup": true,
+    "poids_decisionnel": 0
+  },
+  "sources_surveillees": [
+    {
+      "path": "/home/ubuntu/seragone/audit_core_eq06.json",
+      "exists": "OUI",
+      "size": 15556,
+      "mtime_utc": "2026-04-26T22:08:49.634585+00:00",
+      "sha256": "d5f0a5c6a282dfdbab3be56f2f25ca7603e3ad55ba738229344ae5256d8b51e6"
+    },
+    {
+      "path": "/home/ubuntu/seragone/features_22_historique.csv",
+      "exists": "OUI",
+      "size": 1959927,
+      "mtime_utc": "2026-04-20T21:43:40.463238+00:00",
+      "sha256": "23ff6fb3d6cc8e623cebe152f348e3c51594a70274f2051e1a60db189dcb3318"
+    },
+    {
+      "path": "/home/ubuntu/seragone/data/features_22_historique.csv",
+      "exists": "NON"
+    }
+  ],
+  "history_added": "OUI",
+  "history_reason": "nouveau_hash_observatoire",
+  "hash_state": "b64424b3e8eb8200ca668e5f830367cb623c793641d505a18513abe143b8ac4a"
+}

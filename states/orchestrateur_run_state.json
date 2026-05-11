@@ -1,0 +1,17 @@
+{
+  "module_id": "CHEF_ORCHESTRATEUR",
+  "version": "1.0",
+  "timestamp_utc": "2026-05-11T08:12:03Z",
+  "start_utc": "2026-05-11T08:12:01Z",
+  "end_utc": "2026-05-11T08:12:03Z",
+  "duration_seconds": 2,
+  "status": "DONE_PARTIAL",
+  "exit_code": 0,
+  "script": "orchestrateur.sh",
+  "hostname": "vps-1e58449b",
+  "pid": 2814168,
+  "etapes": { "health_check": "KO_exit_1", "nourrir_92_mondes": "OK", "tireur_aplomb": "OK", "brisance_check_passive": "OK", "meta_controller": "OK", "drift_detector": "OK" },
+  "n_etapes_ok": 5,
+  "n_etapes_ko": 1,
+  "log_path": "logs/orchestrateur.log"
+}

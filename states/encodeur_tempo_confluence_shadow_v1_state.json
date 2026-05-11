@@ -1,0 +1,150 @@
+{
+  "module": "encodeur_tempo_confluence_shadow_v1",
+  "timestamp": "2026-04-26T08:02:43.301792+00:00",
+  "version": "1.0.0",
+  "mode": "SHADOW_READONLY",
+  "status": "DEGRADE_PARTIAL_SOURCE",
+  "side_effect_safe": true,
+  "execution_allowed": false,
+  "exchange_allowed": false,
+  "live_allowed": false,
+  "respiration_state": "SOURCE_INSUFFISANTE",
+  "phase_systeme": "OBSERVATION_DEGRADEE",
+  "temporalite_dominante": "INCONNU",
+  "tempo_dominant": "INCONNU",
+  "coherence_temporelle": 0.7,
+  "coherence_directionnelle": 0.5,
+  "tension_interne": 0.2,
+  "risque_desalignement": "FAIBLE",
+  "protection_shadow": {
+    "active": false,
+    "niveau": 0.0,
+    "gardien_etat": "INCONNU",
+    "sentinelle_ok": true,
+    "raison": "aucune protection dominante detectee"
+  },
+  "veto_shadow": {
+    "candidate": false,
+    "type": "AUCUN",
+    "raison": "veto shadow candidat uniquement, sans effet reel"
+  },
+  "droit_profond_shadow": "OBSERVER",
+  "pepites_tier1": {
+    "active_long_count": 0,
+    "active_short_count": 0,
+    "active_long_voix": [],
+    "active_short_voix": [],
+    "short_guard_candidate_shadow": false,
+    "details": {
+      "pepite1M08sbforce": {
+        "present": false,
+        "source": null,
+        "tire": false,
+        "sens": "LONG",
+        "voix": "pepite1M08sbforce",
+        "label": "INDISPONIBLE",
+        "horizonjours": null
+      },
+      "pepite2OUVRIRSOUFFLE": {
+        "present": false,
+        "source": null,
+        "tire": false,
+        "sens": "LONG",
+        "voix": "pepite2OUVRIRSOUFFLE",
+        "label": "INDISPONIBLE",
+        "horizonjours": null
+      },
+      "pepite3souffleM0": {
+        "present": false,
+        "source": null,
+        "tire": false,
+        "sens": "LONG",
+        "voix": "pepite3souffleM0",
+        "label": "INDISPONIBLE",
+        "horizonjours": null
+      },
+      "pepite4L3momhaut": {
+        "present": false,
+        "source": null,
+        "tire": false,
+        "sens": "LONG",
+        "voix": "pepite4L3momhaut",
+        "label": "INDISPONIBLE",
+        "horizonjours": null
+      },
+      "pepite5L5L7SHORT": {
+        "present": false,
+        "source": null,
+        "tire": false,
+        "sens": "SHORT",
+        "voix": "pepite5L5L7SHORT",
+        "label": "INDISPONIBLE",
+        "horizonjours": null
+      }
+    }
+  },
+  "pepites_candidates": {
+    "count_total": 0,
+    "count_long": 0,
+    "count_short": 0,
+    "count_protection": 0,
+    "count_sortie": 0,
+    "active_modules": []
+  },
+  "features_confluence": {
+    "F_TC_01_long_sur_retention": false,
+    "F_TC_02_short_latent": false,
+    "F_TC_03_tempo_signal_aligne": false,
+    "F_TC_04_protection_signal_conflit": false,
+    "F_TC_05_pepite_tier1_active": false,
+    "F_TC_06_candidate_renforce_tier1": false,
+    "F_TC_07_contradiction_fertile": false,
+    "F_TC_08_desalignement_temporel_fort": false,
+    "F_TC_09_pepite5_short_guard_shadow": false,
+    "F_TC_10_tempo_transition_signal_present": false,
+    "F_TC_11_signal_sans_tempo": false,
+    "F_TC_12_tempo_sans_signal": false
+  },
+  "memoire_trace": {
+    "etat": "SOURCE_INSUFFISANTE",
+    "phase_systeme": "OBSERVATION_DEGRADEE",
+    "horizon_naturel": "J5_J10_J20_J30",
+    "features_active": [],
+    "pepites_long": 0,
+    "pepites_short": 0,
+    "candidates_total": 0,
+    "sources_count": 1,
+    "sources_missing_count": 11,
+    "resultats_futurs": null,
+    "raison": "SOURCE_INSUFFISANTE | features actives: aucune"
+  },
+  "context_shadow": {
+    "tempo_dominant": "INCONNU",
+    "action_policy": "INCONNU",
+    "sizing_souverain": 0.0,
+    "exposition_cible": 0.0,
+    "gardien_score": 0.0,
+    "gardien_etat": "INCONNU",
+    "protection_active": false,
+    "etincelle_veto": false,
+    "sentinelle_ok": true,
+    "cash_forced": false
+  },
+  "sources_lues": [
+    "/home/ubuntu/seragone/states/doubletempostate.json"
+  ],
+  "sources_manquantes": [
+    "allocation:/home/ubuntu/seragone/states/allocationstate.json|/home/ubuntu/seragone/allocationstate.json",
+    "gardien:/home/ubuntu/seragone/states/gardiensilencieuxstate.json|/home/ubuntu/seragone/gardiensilencieuxstate.json|/home/ubuntu/seragone/states/riskstate.json|/home/ubuntu/seragone/riskstate.json",
+    "money_manager:/home/ubuntu/seragone/states/moneymanagerstate.json|/home/ubuntu/seragone/moneymanagerstate.json|/home/ubuntu/seragone/states/moneymanagerstateproduction.json",
+    "pepite1M08sbforce:/home/ubuntu/seragone/states/pepite1M08sbforcestate.json|/home/ubuntu/seragone/pepite1M08sbforcestate.json",
+    "pepite2OUVRIRSOUFFLE:/home/ubuntu/seragone/states/pepite2OUVRIRSOUFFLEstate.json|/home/ubuntu/seragone/pepite2OUVRIRSOUFFLEstate.json",
+    "pepite3souffleM0:/home/ubuntu/seragone/states/pepite3souffleM0state.json|/home/ubuntu/seragone/pepite3souffleM0state.json",
+    "pepite4L3momhaut:/home/ubuntu/seragone/states/pepite4L3momhautstate.json|/home/ubuntu/seragone/pepite4L3momhautstate.json",
+    "pepite5L5L7SHORT:/home/ubuntu/seragone/states/pepite5L5L7SHORTstate.json|/home/ubuntu/seragone/pepite5L5L7SHORTstate.json",
+    "pepites_candidates:/home/ubuntu/seragone/states/pepites_candidates_shadow_state.json|/home/ubuntu/seragone/pepites_candidates_shadow_state.json",
+    "policy:/home/ubuntu/seragone/states/policystate.json|/home/ubuntu/seragone/policystate.json",
+    "sentinelle:/home/ubuntu/seragone/states/sentinelleexchangestate.json|/home/ubuntu/seragone/sentinelleexchangestate.json|/home/ubuntu/seragone/states/sentinelleexchangerunnerstate.json"
+  ],
+  "raison": "SOURCE_INSUFFISANTE | features actives: aucune"
+}

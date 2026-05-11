@@ -1,0 +1,35 @@
+{
+  "module": "pepite3_souffle_M0",
+  "timestamp": "2026-05-11T08:46:02.227805+00:00",
+  "version": "1.0.0",
+  "validation": {
+    "wr_train": 0.8571,
+    "n_train": 84,
+    "wr_test": 0.8571,
+    "n_test": 63,
+    "delta_tt": 0.0,
+    "verdict": "TIER_1_CONFIRME",
+    "remarque": "STABILITE_PARFAITE_delta_zero"
+  },
+  "config": {
+    "souffle_score_bas": 0.4,
+    "horizon_jours": 20
+  },
+  "souffle_bas": false,
+  "souffle_bas_voie": "aucune voie souffle_bas",
+  "geste_M0": "ATTENDRE",
+  "q_geste_M0_MAINTENIR": false,
+  "tire": false,
+  "voix": null,
+  "label": "SILENCE",
+  "sens": "LONG",
+  "horizon_jours": 20,
+  "souffle_dispo": true,
+  "souffle_score": null,
+  "souffle_geste": "ATTENDRE",
+  "raison": "souffle_bas=False (aucune voie souffle_bas), M0=ATTENDRE",
+  "sources": {
+    "souffle_state": "souffle_premier_air_state.json (fallbacks)",
+    "geste_M0": "state.json[geste] OU q_jour_state.json[M0][geste]"
+  }
+}

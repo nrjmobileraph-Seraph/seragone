@@ -1,0 +1,14 @@
+{
+  "date": "2026-05-11",
+  "action": "SHORT",
+  "sizing": -0.097,
+  "holding_bias": "court",
+  "override_source": "local_rule",
+  "raison": "MAINTENIR + bear_trend -> micro short",
+  "geste_natif": "MAINTENIR",
+  "label_nc": null,
+  "composite_label": null,
+  "confluence_score": null,
+  "regime_fond": "bear_trend",
+  "timestamp_ecriture": "2026-05-11T21:05:02.162511+00:00"
+}

@@ -1,0 +1,42 @@
+{
+  "module": "pepite13_m2_tension_fg",
+  "timestamp": "2026-05-11T08:57:02.585140+00:00",
+  "version": "1.0.0",
+  "mode": "OBSERVATOIRE_READONLY",
+  "side_effect_safe": true,
+  "execution_allowed": false,
+  "exchange_allowed": false,
+  "live_allowed": false,
+  "validation": {
+    "wr_train": 77.14,
+    "n_train": 35,
+    "wr_test": 81.25,
+    "n_test": 16,
+    "delta_tt": 4.11,
+    "verdict": "TIER_1_PLUS_AUDITE"
+  },
+  "tire": false,
+  "status": "SILENCE",
+  "raison": "m2_regime=TENSION et fg milieu | monde={'m2_geste': 'ATTENDRE', 'm2_regime': 'CRISE', 'm3_geste': 'ATTENDRE', 'm3_regime': 'CRISE', 'm4_geste': 'RETRECIR', 'm4_regime': 'CRISE', 'm5_geste': 'RETRECIR', 'm5_regime': 'CRISE', 'm6_geste': 'ATTENDRE', 'm6_regime': 'TENSION', 'm7_geste': 'RETRECIR', 'm7_regime': 'CRISE'}",
+  "valeurs": {
+    "fg": 21.0
+  },
+  "quantiles": {
+    "fg_P25": 30.0,
+    "fg_P75": 67.0,
+    "fg_P90": 73.0,
+    "fg_P10": 22.0
+  },
+  "sources_valeurs": {
+    "fg": "history:fg"
+  },
+  "voix": null,
+  "label": "SILENCE",
+  "sens": "LONG",
+  "horizon_jours": 30,
+  "sources": {
+    "history": "/home/ubuntu/seragone/seragone_v3_final.csv",
+    "today": "/home/ubuntu/seragone/state.json",
+    "monde": "/home/ubuntu/seragone/multivers_state.json"
+  }
+}

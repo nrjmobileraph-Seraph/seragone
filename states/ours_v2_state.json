@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-04-22T21:52:11.107233",
+  "multiplicateur_final": 0.17298065483661948,
+  "permission_aplomb": "SHORT",
+  "bear40_actif": false,
+  "bearv2_signal": false,
+  "dh5j_crash": false,
+  "n_gp_actif": 0,
+  "v13_quorum": 3,
+  "gardien_score": 0.0,
+  "sous_ma200": true,
+  "rebond_detecte": true,
+  "oracle_score": 0,
+  "amortisseur": 0.0,
+  "boost_baissier": 1.0,
+  "filtre_panique": 1.0,
+  "commentaire": "Base=0.00 Oracle=0 Bear40=False",
+  "diagnostic": {
+    "sous_ma200": true,
+    "rebond_detecte": true,
+    "oracle_score": 0,
+    "gp_mod": 1.2,
+    "v13_mod": 1.0,
+    "gardien_mod": 1.0,
+    "taille_finale": 0.17298065483661948
+  }
+}

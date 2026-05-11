@@ -1,0 +1,59 @@
+{
+  "module": "observer_reaction_live_outils",
+  "timestamp": "2026-05-05T07:07:02.120375+00:00",
+  "version": "1.0.0",
+  "mode": "OBSERVATOIRE",
+  "observations": [
+    {
+      "id": "d6f20dd3ce848f36",
+      "fingerprint": "d6f20dd3ce848f360e164f9a952539fc8bfbfc80bfb273bb1cfa0cef84ad2312",
+      "timestamp": "2026-04-26T15:37:33.765810+00:00",
+      "outil": "bookmap",
+      "famille": "microstructure",
+      "signal": "test_observatoire_liquidite",
+      "sens": "LONG",
+      "intensite": 0.72,
+      "horizon_demande": "1h_4h_1d",
+      "source": "/home/ubuntu/seragone/data/outils_live_signals/test_bookmap_manual.json",
+      "mode": "OBSERVATOIRE",
+      "shadow": true,
+      "decision_live": false,
+      "poids_effectif": 0.0,
+      "label": "OBSERVATOIRE",
+      "seragone_context": {
+        "sources_lues": [
+          "/home/ubuntu/seragone/state.json",
+          "/home/ubuntu/seragone/states/brisance_state.json"
+        ],
+        "dimensions": {
+          "shannon": 0.5142
+        },
+        "labels": {
+          "state.geste": "F"
+        },
+        "voix_actives_detectees": 3,
+        "mode": "OBSERVATOIRE"
+      },
+      "reactions": {
+        "1h": {
+          "statut": "CLOTURE",
+          "target_timestamp": "2026-04-26T16:37:33.765810+00:00",
+          "reaction_pct": 0.0,
+          "accord_signal": "DESACCORD"
+        },
+        "4h": {
+          "statut": "CLOTURE",
+          "target_timestamp": "2026-04-26T19:37:33.765810+00:00",
+          "reaction_pct": 0.0,
+          "accord_signal": "DESACCORD"
+        },
+        "1d": {
+          "statut": "CLOTURE",
+          "target_timestamp": "2026-04-27T15:37:33.765810+00:00",
+          "reaction_pct": 0.0,
+          "accord_signal": "DESACCORD"
+        }
+      }
+    }
+  ]
+}

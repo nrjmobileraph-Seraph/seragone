@@ -1,0 +1,42 @@
+{
+  "module": "pepite10_S_xtbas_10j",
+  "timestamp": "2026-05-11T08:54:01.984314+00:00",
+  "version": "1.0.0",
+  "mode": "OBSERVATOIRE_READONLY",
+  "side_effect_safe": true,
+  "execution_allowed": false,
+  "exchange_allowed": false,
+  "live_allowed": false,
+  "validation": {
+    "wr_train": 75.76,
+    "n_train": 33,
+    "wr_test": 80.0,
+    "n_test": 15,
+    "delta_tt": 4.24,
+    "verdict": "TIER_1_PLUS_AUDITE"
+  },
+  "tire": false,
+  "status": "SILENCE",
+  "raison": "S<=P10 tenu 10j | n_last=10 P10=0.15967004426912",
+  "valeurs": {
+    "S": 0.3326
+  },
+  "quantiles": {
+    "S_P25": 0.1893353272898927,
+    "S_P75": 0.2815259120184363,
+    "S_P90": 0.31040913805784925,
+    "S_P10": 0.15967004426912
+  },
+  "sources_valeurs": {
+    "S": "today_state"
+  },
+  "voix": null,
+  "label": "SILENCE",
+  "sens": "SHORT",
+  "horizon_jours": 20,
+  "sources": {
+    "history": "/home/ubuntu/seragone/seragone_v3_final.csv",
+    "today": "/home/ubuntu/seragone/state.json",
+    "monde": "/home/ubuntu/seragone/multivers_state.json"
+  }
+}

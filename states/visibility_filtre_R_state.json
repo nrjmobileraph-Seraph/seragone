@@ -1,0 +1,125 @@
+{
+  "module": "visibility_filtre_R",
+  "timestamp": "2026-04-26T10:45:25.905516+00:00",
+  "version": "1.0.0",
+  "validation": {
+    "mode": "OBSERVATOIRE_VISIBILITE",
+    "verdict": "LECTURE_SEULE",
+    "decision_live": false,
+    "paper": true
+  },
+  "tire": false,
+  "voix": null,
+  "label": "PRESENT_CONSOMME_SANS_STATE_CLAIR",
+  "sens": "NEUTRE",
+  "horizonjours": 0,
+  "raison": "filtre_R est détecté dans le dépôt et dans des fichiers consommateurs, mais sans state propre évident.",
+  "lecture": "équilibre du chœur / pénalisation voix isolée",
+  "shadow": true,
+  "decision_allowed": false,
+  "presence": {
+    "present": true,
+    "references_count": 33,
+    "references_sample": [
+      "09_filtre_tendance_v4.py",
+      "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "_bibliotheque_modules/archive_runs/20260423T215432Z/modules_registry_snapshot_current.json",
+      "_bibliotheque_modules/archive_runs/20260423T215432Z/modules_registry_snapshot_previous.json",
+      "_bibliotheque_modules/archive_runs/20260424T201412Z/modules_registry_snapshot_current.json",
+      "_bibliotheque_modules/archive_runs/20260424T201412Z/modules_registry_snapshot_previous.json",
+      "_bibliotheque_modules/index/inventory_python.json",
+      "_bibliotheque_modules/index/ranking_abc_d.json",
+      "_bibliotheque_modules/modules_registry.json",
+      "_bibliotheque_modules/production_copies/09_filtre_tendance_v4.py",
+      "_bibliotheque_modules/production_copies/chaines_epurees.py",
+      "_bibliotheque_modules/production_copies/seragone_murmure.py",
+      "_bibliotheque_modules/production_copies/test_directionnels_et_temperance.py",
+      "_bibliotheque_modules/research_copies/test_directionnels_et_temperance.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/09_filtre_tendance_v4.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/chaines_epurees.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/seragone_murmure.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/test_directionnels_et_temperance.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/research/test_directionnels_et_temperance.py"
+    ],
+    "consomme_probable": true,
+    "consumer_files_count": 3,
+    "consumer_files_sample": [
+      "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "audit_m1_m8_couverture_mondes.py"
+    ],
+    "state_visible": false,
+    "state_files": []
+  },
+  "poids": {
+    "detecte": true,
+    "weight_files_count": 28,
+    "weight_files_sample": [
+      "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "_bibliotheque_modules/archive_runs/20260423T215432Z/modules_registry_snapshot_current.json",
+      "_bibliotheque_modules/archive_runs/20260423T215432Z/modules_registry_snapshot_previous.json",
+      "_bibliotheque_modules/archive_runs/20260424T201412Z/modules_registry_snapshot_current.json",
+      "_bibliotheque_modules/archive_runs/20260424T201412Z/modules_registry_snapshot_previous.json",
+      "_bibliotheque_modules/index/inventory_python.json",
+      "_bibliotheque_modules/index/ranking_abc_d.json",
+      "_bibliotheque_modules/modules_registry.json",
+      "_bibliotheque_modules/production_copies/chaines_epurees.py",
+      "_bibliotheque_modules/production_copies/seragone_murmure.py",
+      "_bibliotheque_modules/production_copies/test_directionnels_et_temperance.py",
+      "_bibliotheque_modules/research_copies/test_directionnels_et_temperance.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/chaines_epurees.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/seragone_murmure.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/test_directionnels_et_temperance.py",
+      "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/research/test_directionnels_et_temperance.py",
+      "_bibliotheque_modules/snapshots/modules_registry_20260423T214644Z.json",
+      "_bibliotheque_modules/snapshots/modules_registry_20260423T215008Z.json",
+      "_bibliotheque_modules/snapshots/modules_registry_20260423T215432Z.json",
+      "_bibliotheque_modules/snapshots/modules_registry_20260424T201412Z.json"
+    ],
+    "poids_effectif": 0.0,
+    "commentaire": "poids volontairement nul : visibilité shadow uniquement"
+  },
+  "preuves": [
+    {
+      "file": "test_directionnels_et_temperance.py",
+      "line": "def filtre_res(i):"
+    },
+    {
+      "file": "test_directionnels_et_temperance.py",
+      "line": "horizon=20, mise_pct=0.50, stop=-0.07, tp=0.12, filtre_fn=filtre_res)"
+    },
+    {
+      "file": "audit_m1_m8_couverture_mondes.py",
+      "line": "\"filtre_R\": [\"filtre_R\", \"filtre R\", \"equilibre des voix\", \"équilibre des voix\"],"
+    },
+    {
+      "file": "chaines_epurees.py",
+      "line": "en train). Filtre reste à -6.31% (inchangé). Données conservées dans"
+    },
+    {
+      "file": "09_filtre_tendance_v4.py",
+      "line": "# Le meilleur filtre recalculé sur tout l'historique"
+    },
+    {
+      "file": "seragone_murmure.py",
+      "line": "\"ratio_range_vs_3_semaines\": ["
+    },
+    {
+      "file": "seragone_murmure.py",
+      "line": "\"ratio_range_vs_3_semaines\": 0.20,"
+    },
+    {
+      "file": "AUDIT_M1_M8_COUVERTURE/RAPPORT_AUDIT_M1_M8_COUVERTURE.md",
+      "line": "| `filtre_R` | `PRESENT_CONSOMME_SANS_STATE_CLAIR` | `M1,M2,M3,M4,M5,M6,M7,M8` | 0 | 0 | 8 | 2 | 09_filtre_tendance_v4.py | SERAGONE_NATIVE_OUT/PHASE2_top_300_scripts_a_lire_brancher.csv | SERAGONE_NATIVE_OUT/PHASE4_modules_uniques_dedoublo"
+    },
+    {
+      "file": "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "line": "\"filtre_R\": {"
+    },
+    {
+      "file": "AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json",
+      "line": "\"filtre_R\","
+    }
+  ]
+}

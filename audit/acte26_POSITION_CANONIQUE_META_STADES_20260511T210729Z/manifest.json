@@ -1,0 +1,14 @@
+{
+  "acte": 26,
+  "titre": "POSITION_CANONIQUE_META_STADES",
+  "timestamp_utc": "2026-05-11T21:07:29Z",
+  "hash_universe_pre": "4d3aec8db73484ca",
+  "stades": {
+    "1_observatoire": "ACTIF",
+    "2_croisement_assim_projection": "VERROUILLE_Q5",
+    "3_sollicitation_creation": "VERROUILLE_Q5"
+  },
+  "declassement_legacy": "mondes_paralleles_state.json -> LEGACY_OBSOLETE_20260423",
+  "doctrine_respectee": "Q5_SECTION_3_1",
+  "chantier_futur": "DECRET_Q6_DEVERROUILLAGE_stades_2_3_apres_demo"
+}

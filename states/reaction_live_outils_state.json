@@ -1,0 +1,173 @@
+{
+  "module": "observer_reaction_live_outils",
+  "timestamp": "2026-05-05T07:07:02.147428+00:00",
+  "version": "1.0.0",
+  "mode": "OBSERVATOIRE",
+  "validation": {
+    "verdict": "SHADOW_ZERO_WEIGHT",
+    "poids_effectif": 0.0,
+    "decision_live": false,
+    "branche_chef": false
+  },
+  "tire": false,
+  "voix": null,
+  "label": "OBSERVATOIRE",
+  "sens": "NEUTRE",
+  "horizonjours": 0,
+  "raison": "signals outils observes sans poids decisionnel",
+  "registre_outils": [
+    {
+      "outil": "tradingview",
+      "famille": "lecture_rapide",
+      "role_seragone": "alertes_charting_replay",
+      "statut": "source_attendue",
+      "poids_effectif": 0.0,
+      "decision_live": false
+    },
+    {
+      "outil": "bookmap",
+      "famille": "microstructure",
+      "role_seragone": "liquidite_orderflow_dom_replay",
+      "statut": "source_attendue",
+      "poids_effectif": 0.0,
+      "decision_live": false
+    },
+    {
+      "outil": "glassnode",
+      "famille": "crypto_onchain",
+      "role_seragone": "cycles_flux_cohortes",
+      "statut": "source_attendue",
+      "poids_effectif": 0.0,
+      "decision_live": false
+    },
+    {
+      "outil": "coinmetrics",
+      "famille": "crypto_onchain_marketdata",
+      "role_seragone": "network_data_market_data_api",
+      "statut": "source_attendue",
+      "poids_effectif": 0.0,
+      "decision_live": false
+    },
+    {
+      "outil": "nansen",
+      "famille": "wallet_flows",
+      "role_seragone": "smart_money_labels_flux",
+      "statut": "source_attendue",
+      "poids_effectif": 0.0,
+      "decision_live": false
+    },
+    {
+      "outil": "dune",
+      "famille": "dashboards_onchain",
+      "role_seragone": "sql_dashboards_auditables",
+      "statut": "source_attendue",
+      "poids_effectif": 0.0,
+      "decision_live": false
+    },
+    {
+      "outil": "defillama",
+      "famille": "defi",
+      "role_seragone": "tvl_fees_revenue_yields_stablecoins",
+      "statut": "source_attendue",
+      "poids_effectif": 0.0,
+      "decision_live": false
+    },
+    {
+      "outil": "macro_vintages",
+      "famille": "macro_memoire",
+      "role_seragone": "donnees_as_reported_vintages",
+      "statut": "source_attendue",
+      "poids_effectif": 0.0,
+      "decision_live": false
+    },
+    {
+      "outil": "options_surface",
+      "famille": "options_volatilite",
+      "role_seragone": "surface_iv_greeks_regime_vol",
+      "statut": "source_attendue",
+      "poids_effectif": 0.0,
+      "decision_live": false
+    },
+    {
+      "outil": "data_alternative",
+      "famille": "altdata_sentiment",
+      "role_seragone": "texte_sentiment_evenements_flux_externes",
+      "statut": "source_attendue",
+      "poids_effectif": 0.0,
+      "decision_live": false
+    }
+  ],
+  "sources_signaux": {
+    "json": 1,
+    "csv": 0,
+    "dir": "/home/ubuntu/seragone/data/outils_live_signals"
+  },
+  "prix_historique_detecte": true,
+  "seragone_context": {
+    "sources_lues": [
+      "/home/ubuntu/seragone/state.json",
+      "/home/ubuntu/seragone/states/brisance_state.json"
+    ],
+    "dimensions": {
+      "shannon": 0.5142
+    },
+    "labels": {
+      "state.geste": "F"
+    },
+    "voix_actives_detectees": 6,
+    "mode": "OBSERVATOIRE"
+  },
+  "observations": {
+    "total": 1,
+    "nouvelles_ce_run": 0,
+    "ouvertes": 0,
+    "avec_reaction_cloturee": 1
+  },
+  "stats_par_outil": {
+    "bookmap": {
+      "observations": 1,
+      "accords": 0,
+      "desaccords": 3,
+      "neutres": 0,
+      "inconnus": 0,
+      "pending": 0,
+      "poids_effectif": 0.0,
+      "decision_live": false
+    }
+  },
+  "derniers_signaux": [
+    {
+      "timestamp": "2026-04-26T15:37:33.765810+00:00",
+      "outil": "bookmap",
+      "famille": "microstructure",
+      "signal": "test_observatoire_liquidite",
+      "sens": "LONG",
+      "intensite": 0.72,
+      "reactions": {
+        "1h": {
+          "statut": "CLOTURE",
+          "target_timestamp": "2026-04-26T16:37:33.765810+00:00",
+          "reaction_pct": 0.0,
+          "accord_signal": "DESACCORD"
+        },
+        "4h": {
+          "statut": "CLOTURE",
+          "target_timestamp": "2026-04-26T19:37:33.765810+00:00",
+          "reaction_pct": 0.0,
+          "accord_signal": "DESACCORD"
+        },
+        "1d": {
+          "statut": "CLOTURE",
+          "target_timestamp": "2026-04-27T15:37:33.765810+00:00",
+          "reaction_pct": 0.0,
+          "accord_signal": "DESACCORD"
+        }
+      },
+      "poids_effectif": 0.0,
+      "decision_live": false
+    }
+  ],
+  "poids_effectif": 0.0,
+  "decision_live": false,
+  "shadow": true
+}

@@ -1,0 +1,36 @@
+{
+  "module": "pepite29_G_milieu_r30_xthaut",
+  "timestamp": "2026-05-04T09:19:02.094350+00:00",
+  "version": "1.0.0",
+  "validation": {
+    "wr_train": 0.7151,
+    "n_train": 179,
+    "wr_test": 0.7051,
+    "n_test": 78,
+    "delta_tt": 1.0,
+    "verdict": "TIER_1+_AUDITE",
+    "couverture_pct": 67,
+    "remarque": "Validee chasse V4 sur 8 ans 2018-2026"
+  },
+  "config": {
+    "window_quantile": 365,
+    "min_history": 180,
+    "horizon_jours": 30,
+    "conditions": "1. P25 < G_proxy < P75 ET 2. returns_30d >= P90"
+  },
+  "G_today": 0.0725,
+  "G_milieu": true,
+  "r30_today": 0.175,
+  "r30_q90": 0.13,
+  "tire": true,
+  "voix": "pepite29_G_milieu_r30_xthaut",
+  "label": "ATTESTE",
+  "sens": "LONG",
+  "horizon_jours": 30,
+  "raison": "1. P25 < G_proxy < P75 ET 2. returns_30d >= P90 validees",
+  "sources": {
+    "btc": "btc_daily.csv (Yahoo Finance OHLCV)",
+    "fg": "fear_greed_complet.csv",
+    "funding": "funding_rate_btc.csv"
+  }
+}

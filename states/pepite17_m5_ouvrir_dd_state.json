@@ -1,0 +1,42 @@
+{
+  "module": "pepite17_m5_ouvrir_dd",
+  "timestamp": "2026-05-11T09:01:02.163086+00:00",
+  "version": "1.0.0",
+  "mode": "OBSERVATOIRE_READONLY",
+  "side_effect_safe": true,
+  "execution_allowed": false,
+  "exchange_allowed": false,
+  "live_allowed": false,
+  "validation": {
+    "wr_train": 75.51,
+    "n_train": 49,
+    "wr_test": 77.27,
+    "n_test": 22,
+    "delta_tt": 1.76,
+    "verdict": "TIER_1_PLUS_AUDITE"
+  },
+  "tire": false,
+  "status": "SILENCE",
+  "raison": "m5_geste=OUVRIR et dd_ath milieu | monde={'m2_geste': 'ATTENDRE', 'm2_regime': 'CRISE', 'm3_geste': 'ATTENDRE', 'm3_regime': 'CRISE', 'm4_geste': 'RETRECIR', 'm4_regime': 'CRISE', 'm5_geste': 'RETRECIR', 'm5_regime': 'CRISE', 'm6_geste': 'ATTENDRE', 'm6_regime': 'TENSION', 'm7_geste': 'RETRECIR', 'm7_regime': 'CRISE'}",
+  "valeurs": {
+    "dd_ath": 0.298540660873364
+  },
+  "quantiles": {
+    "dd_ath_P25": 0.041396699209794,
+    "dd_ath_P75": 0.1883407933127652,
+    "dd_ath_P90": 0.2673774404878057,
+    "dd_ath_P10": 0.01662087370677428
+  },
+  "sources_valeurs": {
+    "dd_ath": "history:dd_ath"
+  },
+  "voix": null,
+  "label": "SILENCE",
+  "sens": "LONG",
+  "horizon_jours": 20,
+  "sources": {
+    "history": "/home/ubuntu/seragone/seragone_v3_final.csv",
+    "today": "/home/ubuntu/seragone/state.json",
+    "monde": "/home/ubuntu/seragone/multivers_state.json"
+  }
+}
