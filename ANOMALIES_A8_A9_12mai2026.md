@@ -107,6 +107,20 @@ Rollback complet possible vers n'importe quel état intermédiaire.
 
 ## A10 — 15 fossiles satellites à investiguer
 
+### ⚠ RÉSOLUTION 12 mai 11:09 UTC — ORPHELINS-INERTES confirmés
+
+Sonde ρ-3 a prouvé mécaniquement :
+- Seul `money_manager.py` racine (hash `f9b1580c`, patché A9 v1) est exécuté par cron (`* * * * *`)
+- Les 2 autres "money managers" du repo (`money_manager_perplexity_97L.py`, `production/allocation/money_manager.py`) ont mtime 22-23 avril → fossiles A9 eux-mêmes, jamais exécutés
+- Les ~13 consommateurs Python de fossiles A10 (m7_micro, m1_long, gardien_silencieux, detecteur_derives, etc.) sont **tous orphelins** : ni cron, ni service systemd, ni processus actif
+- Services Séragone runtime actifs = `seragone-brisance.service` + `seragone-securite.service` uniquement → disjoints du périmètre A10
+
+**Aucun patch runtime nécessaire.** A10 fermée comme dette doctrinale d'hygiène (archiver ultérieurement les 13 scripts orphelins). Le mode démo n'est pas compromis.
+
+### Constat initial (préservé)
+
+
+
 ### Constat
 
 La sonde exhaustive O1 du 12 mai 2026 10:37 UTC (commande `find ~/seragone -name "*_state.json"`) a révélé 15 fichiers state supplémentaires avec mtimes anciens (19 avril → 27 avril) que je n'avais pas détectés lors de mes sondes dirigées initiales.
