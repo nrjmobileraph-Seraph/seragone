@@ -363,3 +363,50 @@ cd ~/seragone && git log -S "production/pepites/moteur_pepite_6" --oneline --all
 Date de gravure : 12 mai 2026 10:40 CEST.
 Document à compléter dans la session ouverture A10 (date à définir).
 
+
+---
+
+## Dette 2 (post-ACTE 30) — FAUX PROBLÈME confirmé
+
+**Date** : 12 mai 2026 11:14 CEST
+**Méthode** : Sonde Porte 0 sur `state_freshness_watchdog.py`
+
+**Résultat** :
+- Logique exit_code ligne 114-116 correcte : `high_stale` exclut `ABSORBED_BY_PATCH`
+- Run réel : exit code 0, 0 HIGH stale non absorbé / 36 vérifiés
+- Registre v0.4 cohérent : A10_resolution=ORPHELINS_INERTES_CONFIRMES, porte5_natif_trous (2H+5M) présents
+
+**Verdict** : Dette 2 = faux problème mémoire, comme A12-bis.
+
+**Méta-leçon (4e) confirmée** : Porte 0 s'applique aussi aux propres outils. Toute "dette" doit être sondée avant d'être patchée.
+
+---
+
+## A14 (post-ACTE 30) — FAUX PROBLÈME confirmé
+
+**Date** : 12 mai 2026 11:18 CEST
+**Méthode** : Sonde Porte 0 lecture documents canon (10 .md identifiés)
+
+**Découvertes mécaniques** :
+- 5 pépites Tier 1 (P1-P5) validées walk-forward, ACTIVES en crontab via `pepites_tier1_adapter.py`
+- 14 pépites P6-P19 ACTIVES en crontab via `production/pepites/`
+- 3 pépites propres Phase 18 actives en watchlist shadow
+- Document maître `DECISION_PERCEPTION_REPERTOIRE_4_STATUTS_2026-05-11.md` : statut canonique fermé "AUCUN fichier à supprimer/renommer aujourd'hui"
+- `village_adapter.py` orphelin runtime mais DECRET_B4 = préservation intacte
+- Pipeline démo A6/A7 OPÉRATIONNEL en production (3 cron `* * * * *` actifs depuis 10 mai)
+
+**Verdict** : A14 = faux problème mémoire. Le canon est déjà clair sur tous les périmètres invoqués.
+
+**Méta-leçon (5e) gravée** : Quand la mémoire dérive sur le périmètre d'une anomalie, ne pas patcher selon la mémoire — relire le document source canonique. 3 fausses alarmes consécutives dans cette session (A12-bis, Dette 2, A14) confirment la nécessité absolue de Porte 0 préalable.
+
+---
+
+## Post-patch A10 (12 mai 11:21 CEST) — ROLLBACK + Méta-leçon 6
+
+**Incident mécanique** : ma sonde Porte 0 a interrogé `A10_resolution.get('date_resolution')` qui retournait `None`, faisant croire à un squelette. Réalité : `A10_resolution` contenait déjà 8 clés bien documentées (résolution ρ-3 du 11:09 UTC) sous d'autres noms (`date`, `sonde_preuve`, `verdict`, etc.). Mon patch a ajouté 10 clés par-dessus, créant une redondance documentaire (18 clés au total dont 6 dupliquées sémantiquement).
+
+**Action** : rollback via backup `state_registry.json.bak_pre_A10_complete_12mai_1120`. Retour aux 8 clés originales ρ-3.
+
+**Méta-leçon (6e) gravée** : Sonde Porte 0 sur JSON doit énumérer TOUTES les clés présentes (`for k in dict.keys()`), pas interroger seulement les noms supposés via `.get()`. Sinon faux verdict "section vide".
+
+**Bilan session — 4 fausses alarmes confirmées** : A12-bis, Dette 2, A14, A10-squelettique. Toutes résolues par Porte 0 et/ou rollback. Aucun runtime touché à tort.
