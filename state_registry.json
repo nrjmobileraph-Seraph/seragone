@@ -1,0 +1,99 @@
+{
+  "_meta": {
+    "version": "0.3",
+    "created": "2026-05-12T10:48:00+02:00",
+    "auteur": "session A9 v1 + A10 + A12-bis (faux positif) + doctrine Porte 0",
+    "doc_canonique": "ANOMALIES_A8_A9_12mai2026.md",
+    "audit_source": "sonde O1 12 mai 10:37 UTC + sondes A12-ter/A12-quater 10:45-10:47 UTC + audit watchdog natif 10:47 UTC",
+    "completude_declared": "PARTIELLE — TTL alignes sur watchdog_seragone.py natif, consommateurs aval A10 non verifies",
+    "lecon_porte_0": "Avant de creer un nouveau composant, sonder l'existant (grep -rln). watchdog_seragone.py natif aurait du etre lu avant creation de state_freshness_watchdog.py."
+  },
+  "anomalies_referenced": {
+    "A8": "DoubleTempo vivant, gamma par design 4 couches comptables — FERMEE",
+    "A9_v1": "3 fossiles synchrones 22 avril 21:52 (M4/M5/Clones) patches TTL 1h — FERMEE runtime",
+    "A10_open": "15 fossiles satellites identifies par O1, non lus par MM, consommateurs aval hors MM a investiguer",
+    "A12_bis": "FAUX POSITIF du registre v0.2 — TTL tireurs/multivers/paralleles mal calibres (declares 120s alors que cycle quotidien 1500min). Corriges v0.3 selon STATES_CHECK natif."
+  },
+  "watchdogs_existants": {
+    "watchdog_seragone.py": {
+      "role": "Watchdog natif Seragone — surveille daemons + states + klines + auto-restart",
+      "trigger": "cron */10 * * * *",
+      "last_run_check": "2026-05-12T08:40:01Z",
+      "last_status": "SAIN (6/6 daemons OK, 11/11 states OK)",
+      "states_surveilles": 11,
+      "TTL_unite": "minutes",
+      "auto_restart": true,
+      "log": "logs/watchdog.log",
+      "state_output": "watchdog_state.json"
+    },
+    "state_freshness_watchdog.py": {
+      "role": "Inventaire enrichi via state_registry.json — complementaire au natif",
+      "trigger": "manuel (a la demande)",
+      "auto_restart": false,
+      "couverture": "29 entrees registre (vivants + A9 v1 + A10 satellites)",
+      "TTL_unite": "secondes",
+      "exit_codes": "0 OK / 1 HIGH stale non absorbe / 2 registre absent",
+      "bug_connu_v0_1": "exit code parfois affiche 0 alors que high_stale > 0 — a corriger"
+    }
+  },
+  "states_vivants": {
+    "money_manager_state.json": {"producer": "money_manager.py", "ttl_seconds": 300, "ttl_minutes_natif": 5, "criticality": "HIGH"},
+    "tireurs_state.json": {"producer": "journees_des_tireurs_v2.py (declenchement indirect, ~08:50 UTC quotidien)", "ttl_seconds": 90000, "ttl_minutes_natif": 1500, "criticality": "HIGH", "cycle": "quotidien", "garde_fou_horaire_natif": "ignore avant 9h UTC"},
+    "brisance_state.json": {"producer": "brisance.py", "ttl_seconds": 300, "ttl_minutes_natif": 5, "criticality": "MEDIUM"},
+    "sentinelle_state.json": {"producer": "sentinelle (service)", "ttl_seconds": 300, "criticality": "MEDIUM"},
+    "securite_state.json": {"producer": "securite (service)", "ttl_seconds": 300, "criticality": "MEDIUM"},
+    "sniper_state.json": {"producer": "sniper (service)", "ttl_seconds": 300, "criticality": "MEDIUM"},
+    "mondes_paralleles_state.json": {"producer": "seragone-mondes-paralleles.timer (cycle ~2min)", "ttl_seconds": 90000, "ttl_minutes_natif": 1500, "criticality": "HIGH", "note_v0_2": "TTL corrige depuis 120s a 90000s"},
+    "mondes_autonomes_state.json": {"producer": "run_mondes_one_shot_loop.sh", "ttl_seconds": 90000, "ttl_minutes_natif": 1500, "criticality": "HIGH"},
+    "multivers_state.json": {"producer": "seragone-multivers.timer", "ttl_seconds": 1800, "criticality": "HIGH", "note": "TTL relache a 30min car fichier 147Mo couteux a ecrire"},
+    "chronometer_state.json": {"producer": "chronometer_fluide.py (cron */5)", "ttl_seconds": 900, "ttl_minutes_natif": 15, "criticality": "MEDIUM"},
+    "subdaily_state.json": {"producer": "subdaily_runner.py (cron */5)", "ttl_seconds": 900, "ttl_minutes_natif": 15, "criticality": "MEDIUM"},
+    "tireur_5min_state.json": {"producer": "tireur_5min.py", "ttl_seconds": 900, "ttl_minutes_natif": 15, "criticality": "MEDIUM"},
+    "tireurs_minute_state.json": {"producer": "tireur_pulse.py (boot)", "ttl_seconds": 300, "ttl_minutes_natif": 5, "criticality": "MEDIUM"},
+    "etincellestate.json": {"producer": "etincelles (a sonder)", "ttl_seconds": 300, "ttl_minutes_natif": 5, "criticality": "MEDIUM"},
+    "state.json": {"producer": "chef (matin)", "ttl_seconds": 7200, "ttl_minutes_natif": 120, "criticality": "HIGH"},
+    "states/observer_price_live_from_btc_1s_state.json": {"producer": "seragone-1min.service", "ttl_seconds": 300, "criticality": "HIGH"},
+    "states/policy_state.json": {"producer": "inconnu (a sonder)", "ttl_seconds": 900, "criticality": "MEDIUM"},
+    "watchdog_state.json": {"producer": "watchdog_seragone.py (cron */10)", "ttl_seconds": 900, "criticality": "MEDIUM"}
+  },
+  "states_fossiles_A9_v1_patches": {
+    "states/ours_v2_state.json": {"consumer": "money_manager.load_m4_state", "patch_TTL_runtime": "1h depuis 08:24 UTC", "last_mtime": "2026-04-22T21:52:11Z", "criticality_effective": "ABSORBED_BY_PATCH"},
+    "states/grappillage_state.json": {"consumer": "money_manager.load_m5_state", "patch_TTL_runtime": "1h depuis 08:28 UTC", "last_mtime": "2026-04-22T21:52:11Z", "criticality_effective": "ABSORBED_BY_PATCH"},
+    "clones_v6_state.json": {"consumer": "money_manager.load_clones_state", "patch_TTL_runtime": "1h depuis 08:31 UTC", "last_mtime": "2026-04-22T21:52:12Z", "criticality_effective": "ABSORBED_BY_PATCH"}
+  },
+  "states_fossiles_A10_satellites_a_investiguer": {
+    "m7_state.json": {"last_mtime": "2026-04-22T21:52:11Z", "lu_par_MM": false},
+    "moteurs/m8_tresorerie_state.json": {"last_mtime": "2026-04-22T21:17:27Z", "lu_par_MM": false},
+    "moteurs/m3_temperance_state.json": {"last_mtime": "2026-04-22T21:17:27Z", "lu_par_MM": false},
+    "m3_temperance_state.json": {"last_mtime": "2026-04-22T15:51:17Z", "lu_par_MM": false, "note": "doublon"},
+    "mondes_long_state.json": {"last_mtime": "2026-04-22T20:09:06Z", "lu_par_MM": false},
+    "tireur_pulse_state.json": {"last_mtime": "2026-04-21T20:21:28Z", "lu_par_MM": false},
+    "bulletin_decision_state.json": {"last_mtime": "2026-04-25T09:00:02Z", "lu_par_MM": false},
+    "gardien_silencieux_state.json": {"last_mtime": "2026-04-24T06:34:59Z", "lu_par_MM": false},
+    "states/allocation_state.json": {"last_mtime": "2026-04-23T13:07:46Z", "lu_par_MM": false},
+    "states/ricochet_state.json": {"last_mtime": "2026-04-23T13:07:46Z", "lu_par_MM": false},
+    "states/regime_state.json": {"last_mtime": "2026-04-23T13:07:46Z", "lu_par_MM": false},
+    "states/capital_state.json": {"last_mtime": "2026-04-23T11:25:41Z", "lu_par_MM": false},
+    "derives_state.json": {"last_mtime": "2026-04-27T15:49:39Z", "lu_par_MM": false},
+    "q_local_p10_state.json": {"last_mtime": "2026-04-19T03:49:55Z", "lu_par_MM": false},
+    "states/freshness_state.json": {"last_mtime": "2026-04-27T18:56:00Z", "lu_par_MM": false, "note": "ironique"}
+  },
+  "pepites_cron_quotidien_actives": {
+    "states/pepite1_M08_sbforce_state.json": {"producer": "moteur_pepite_1 (cron quotidien)"},
+    "states/pepite14_m4_crise_Gbas_state.json": {"producer": "moteur_pepite_14 (cron 08:58 UTC)", "consumer": "ORPHELIN"},
+    "states/pepite15_m4_crise_Hbas_state.json": {"producer": "moteur_pepite_15 (cron 08:59 UTC)", "consumer": "ORPHELIN"},
+    "states/pepite16_m4_crise_Sbas_state.json": {"producer": "moteur_pepite_16 (cron 09:00 UTC)", "consumer": "ORPHELIN"},
+    "states/pepite17_m5_ouvrir_dd_state.json": {"producer": "moteur_pepite_17 (cron 09:01 UTC)", "consumer": "ORPHELIN"},
+    "_note": "Pepites 2-13, 18-19 omises pour brievete"
+  },
+  "pepites_dormantes_a_investiguer": {
+    "_compte": 32,
+    "_plage": "pepite20 a pepite51",
+    "_last_mtime": "2026-05-04T09:10 a 09:41Z (~8 jours)",
+    "_status": "A_INVESTIGUER"
+  },
+  "archives_hors_perimetre": {
+    "_bibliotheque_modules/production_copies/": "snapshots historiques 21-23 avril",
+    "audit/*/": "snapshots horodates de sondes anterieures"
+  }
+}
