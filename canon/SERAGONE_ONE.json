@@ -1,27 +1,27 @@
 {
-  "generated_at_utc": "2026-05-11T23:15:01.972527Z",
-  "hash_universe": "950248f1004c5564",
+  "generated_at_utc": "2026-05-12T17:15:02.393800Z",
+  "hash_universe": "e71d90af902c3a96",
   "host": "vps-1e58449b",
   "user": "ubuntu",
   "seragone_ip": "51.254.136.91 2001:41d0:305:2100::8748",
-  "uptime": "up 8 weeks, 8 minutes",
-  "disk": "/dev/sda1        72G   41G   32G  57% /",
+  "uptime": "up 8 weeks, 18 hours, 8 minutes",
+  "disk": "/dev/sda1        72G   36G   36G  51% /",
   "files_by_ext": {
-    "py": 5289,
-    "md": 1015,
-    "txt": 2460,
-    "json": 1880,
-    "csv": 1558,
-    "sh": 51,
-    "log": 774,
+    "py": 2696,
+    "md": 666,
+    "txt": 2340,
+    "json": 1069,
+    "csv": 860,
+    "sh": 32,
+    "log": 441,
     "yaml": 0,
     "toml": 1,
     "ini": 0,
     "env": 3,
     "conf": 1
   },
-  "total_files": 16980,
-  "total_size": "21G",
+  "total_files": 12459,
+  "total_size": "9.7G",
   "root_dirs": [
     [
       ".backups_d9_atomic_20260502_180506",
@@ -67,21 +67,6 @@
       "ACTION_NATIVE_SERAGONE",
       0,
       "empty"
-    ],
-    [
-      "AUDIT_CHRONO_SERAGONE_LITE_20260501_101502",
-      12,
-      "febb6eb3a37a"
-    ],
-    [
-      "AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502",
-      5216,
-      "e42caf3db2d4"
-    ],
-    [
-      "AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502_PARTS",
-      92,
-      "042eb3e5e91b"
     ],
     [
       "AUDIT_M1_M8_COUVERTURE",
@@ -740,8 +725,8 @@
     ],
     [
       "audit",
-      987,
-      "3ee044f8cc46"
+      1001,
+      "30f03ccab9ba"
     ],
     [
       "audit_actions_v1",
@@ -915,13 +900,13 @@
     ],
     [
       "canon",
-      41,
-      "811fd5c161a8"
+      46,
+      "3c94917dbe0c"
     ],
     [
       "checkpoints",
-      1206,
-      "1e001c775215"
+      1422,
+      "bce6f3a29e6e"
     ],
     [
       "checkpoints_valides",
@@ -935,13 +920,13 @@
     ],
     [
       "data",
-      170,
-      "9e5658c8ba06"
+      172,
+      "ebf8e956af14"
     ],
     [
       "demo",
-      66,
-      "5ba41b1d1142"
+      85,
+      "2432b8b7b869"
     ],
     [
       "demoreports",
@@ -970,8 +955,8 @@
     ],
     [
       "logs",
-      685,
-      "ddc92c8ccfd1"
+      778,
+      "f6fe0016018d"
     ],
     [
       "modeles_V13_PHOENIX",
@@ -1056,7 +1041,7 @@
     [
       "output_bt_v2",
       8,
-      "8913f3e94cf3"
+      "38fdcbc651ca"
     ],
     [
       "palette_claude",
@@ -1090,8 +1075,8 @@
     ],
     [
       "snapshots",
-      2412,
-      "2c902def099d"
+      2844,
+      "565d69ff394f"
     ],
     [
       "snapshots_valides",
@@ -1101,12 +1086,12 @@
     [
       "state",
       2,
-      "0a525cc58c13"
+      "612e41a1a212"
     ],
     [
       "states",
       102,
-      "139415c5f87d"
+      "3145a3c509e2"
     ],
     [
       "tests",
@@ -1129,13 +1114,13 @@
       "565ceca9a361"
     ]
   ],
-  "root_dirs_count": 221,
-  "cron_lines": "90",
-  "cron_raw": "SHELL=/bin/bash\nPATH=/usr/local/bin:/usr/bin:/bin:/home/ubuntu/.local/bin\nSERAGONE=/home/ubuntu/seragone\n@reboot cd /home/ubuntu/seragone && nohup python3 collector_binance.py >> logs/collector.log 2>&1 &\n@reboot cd /home/ubuntu/seragone && nohup python3 sniper_live.py >> logs/sniper.log 2>&1 &\n* * * * * /tmp/push_bulletin.sh >> /home/ubuntu/seragone/logs/github_push.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 update_live.py >> logs/update_live.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 seragone_pilot.py >> logs/pilot.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 temps_seragone.py >> logs/temps_seragone.log 2>&1\n*/30 * * * * cd /home/ubuntu/seragone && python3 multivers_progressif.py >> logs/multivers_prog.log 2>&1\n0 * * * * cd /home/ubuntu/seragone && python3 update_data.py >> logs/update_data.log 2>&1\n55 7 * * * cd /home/ubuntu/seragone && python3 compute_ec_daily.py >> logs/eclaireurs.log 2>&1\n0 8 * * * cd /home/ubuntu/seragone && python3 cryptoquant_scraper.py >> logs/cryptoquant.log 2>&1\n2 8 * * * cd /home/ubuntu/seragone && python3 q_jour_calc.py >> logs/q_jour.log 2>&1\n5 8 * * * cd /home/ubuntu/seragone && python3 gardien_onchain.py >> logs/onchain.log 2>&1\n8 8 * * * cd /home/ubuntu/seragone && python3 moteur_cyclique.py >> logs/cycle.log 2>&1\n7 8 * * * cd /home/ubuntu/seragone && python3 symetrie_module.py >> logs/symetrie_cron.log 2>&1\n9 8 * * * cd /home/ubuntu/seragone && python3 prudence_module.py >> logs/prudence_cron.log 2>&1\n13 8 * * * cd /home/ubuntu/seragone && python3 souffle_live.py >> logs/souffle_premier.log 2>&1\n20 8 * * * cd /home/ubuntu/seragone && python3 seragone_7d_clean.py >> logs/7d_clean.log 2>&1\n25 8 * * * cd /home/ubuntu/seragone && python3 batch_mondes_recursifs.py >> logs/batch_recursifs.log 2>&1\n30 8 * * * cd /home/ubuntu/seragone && python3 vrais_yeux_subdaily.py >> logs/vrais_yeux_subdaily.log 2>&1\n35 8 * * * cd /home/ubuntu/seragone && python3 recursif_v1_signal.py >> logs/recursif_v1.log 2>&1\n40 8 * * * cd /home/ubuntu/seragone && python3 recursif_nc_bridge.py >> logs/recursif_nc.log 2>&1\n45 8 * * * cd /home/ubuntu/seragone && python3 notif_pionex.py >> logs/notif.log 2>&1\n30 0 * * * cd /home/ubuntu/seragone && python3 seragone_redundance_monitor.py >> logs/redundance.log 2>&1\n30 7 * * * cd /home/ubuntu/seragone && python3 nc_engine.py >> logs/nc_engine.log 2>&1\n18 8 * * * cd /home/ubuntu/seragone && python3 provinces_27d_live.py >> logs/provinces.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 subdaily_runner.py >> logs/subdaily.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 chronometer_fluide.py >> logs/chronometer.log 2>&1\n50 8 * * * cd /home/ubuntu/seragone && python3 born_temps_live.py >> logs/born_temps.log 2>&1\n6,36 * * * * cd /home/ubuntu/seragone && /usr/bin/python3 chaines_epurees.py >> logs/chaines_cron.log 2>&1\n31 7 * * * cd /home/ubuntu/seragone && python3 nc_history_writer.py >> logs/nc_history.log 2>&1\n31 7 * * * cd /home/ubuntu/seragone && python3 nc_history_writer.py >> logs/nc_history.log 2>&1\n11 8 * * * cd /home/ubuntu/seragone && python3 nourrir_92_mondes.py >> logs/nourrir_92.log 2>&1\n@reboot cd /home/ubuntu/seragone && nohup python3 tireur_pulse.py >> logs/tireur_seconde.log 2>&1 &\n*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_5min.py >> logs/tireur_5min.log 2>&1\n8 8 * * * cd /home/ubuntu/seragone && python3 extract_18ss.py >> logs/extract_18ss.log 2>&1\n15 8 * * * cd /home/ubuntu/seragone && python3 calc_dH5j.py >> logs/dH5j.log 2>&1\n0 * * * * cd /home/ubuntu/seragone && python3 tireur_presence.py >> logs/tireur_presence.log 2>&1\n*/30 * * * * cd /home/ubuntu/seragone && python3 tireur_tenue.py >> logs/tireur_tenue.log 2>&1\n*/15 * * * * cd /home/ubuntu/seragone && python3 tireur_vigie.py >> logs/tireur_vigie.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_agilite.py >> logs/tireur_agilite.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 tireur_precision.py >> logs/tireur_precision.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 make_btc_1s.py > /dev/null 2>&1 && python3 tireur_fulgurance.py --input data/btc_1s_recent.csv >> logs/tireur_fulgurance.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 tireur_etincelle.py >> logs/tireur_etincelle.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 money_manager.py >/dev/null 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_aplomb.py >/dev/null 2>&1\n50 8 * * * cd /home/ubuntu/seragone && python3 journees_des_tireurs_v2.py >> logs/tireurs.log 2>&1\n*/10 * * * * cd /home/ubuntu/seragone && python3 watchdog_seragone.py >> logs/watchdog.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 sentinelle_exchange_runner.py >> logs/sentinelle_exchange.log 2>&1\n7 7 * * * cd /home/ubuntu/seragone && python3 divergences_alts.py >> logs/divergences_alts.log 2>&1\n12 8 * * * cd /home/ubuntu/seragone && bash orchestrateur.sh >> logs/orchestrateur.log 2>&1\n30 8 * * 0 cd /home/ubuntu/seragone && python3 production/allocation/meta_controller.py >> logs/meta_controller.log 2>&1\n0 12 * * 6 cd /home/ubuntu/seragone && python3 production/meta/memoire_evenementielle.py >> logs/memoire_evenementielle.log 2>&1\n44 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_1_M08_sbforce.py >> logs/pepites.log 2>&1\n45 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_2_OUVRIR_SOUFFLE.py >> logs/pepites.log 2>&1\n46 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_3_souffle_M0.py >> logs/pepites.log 2>&1\n47 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_4_L3_mom_haut.py >> logs/pepites.log 2>&1\n48 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_5_L5_L7_SHORT.py >> logs/pepites.log 2>&1\n49 8 * * * cd /home/ubuntu/seragone && python3 pepites_tier1_adapter.py >> logs/pepites_adapter.log 2>&1\n50 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_6_H_shannon.py >> logs/pepites_6_19.log 2>&1\n51 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_7_H_dd_ath.py >> logs/pepites_6_19.log 2>&1\n52 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_8_M_V_H_calme.py >> logs/pepites_6_19.log 2>&1\n53 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_9_M_V_G_extreme.py >> logs/pepites_6_19.log 2>&1\n54 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_10_S_xtbas_10j.py >> logs/pepites_6_19.log 2>&1\n55 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_11_m2_crise_dd.py >> logs/pepites_6_19.log 2>&1\n56 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_12_m2_tension_Gbas.py >> logs/pepites_6_19.log 2>&1\n57 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_13_m2_tension_fg.py >> logs/pepites_6_19.log 2>&1\n58 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_14_m4_crise_Gbas.py >> logs/pepites_6_19.log 2>&1\n59 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_15_m4_crise_Hbas.py >> logs/pepites_6_19.log 2>&1\n00 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_16_m4_crise_Sbas.py >> logs/pepites_6_19.log 2>&1\n01 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_17_m5_ouvrir_dd.py >> logs/pepites_6_19.log 2>&1\n02 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_18_m6_ouvrir_Mmilieu.py >> logs/pepites_6_19.log 2>&1\n03 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_19_m7_tension_Ghaut.py >> logs/pepites_6_19.log 2>&1\n16 8 * * * cd /home/ubuntu/seragone && python3 normalise_states_compat.py >> logs/normalise_states_compat.log 2>&1\n58 8 * * * cd /home/ubuntu/seragone && python3 normalise_states_compat.py >> logs/normalise_states_compat.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 seragone_demo_health.py >> logs/seragone_demo_health_cron.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 observer_price_live_from_btc_1s.py >> logs/observer_price_live_from_btc_1s_cron.log 2>&1\n7 * * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragone_audit_prune.lock ./seragone_audit_prune.sh 288 >> logs/seragone_audit_prune_cron.log 2>&1\n12 0 * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragone_logs_rotate.lock ./seragone_logs_rotate.sh >> logs/seragone_logs_rotate_cron.log 2>&1\n* * * * * cd /home/ubuntu/seragone && /usr/bin/python3 /home/ubuntu/seragone/seragone_live_logger.py >> /home/ubuntu/seragone/logs/seragone_live_logger_cron.log 2>&1\n* * * * * cd /home/ubuntu/seragone && /usr/bin/python3 /home/ubuntu/seragone/seragone_alerts.py >> /home/ubuntu/seragone/logs/seragone_alerts_cron.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragoneauditnow.lock ./seragoneauditnow.sh >> logs/seragoneauditnow_cron.log 2>&1\n17 3 * * 0 cd /home/ubuntu/seragone && ./seragoneauditretention.sh 7 --dry-run >> logs/seragoneauditretention_cron.log 2>&1\n* * * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragone_fusion_aval.lock /usr/bin/python3 /home/ubuntu/seragone/seragone_fusion_aval.py >> /home/ubuntu/seragone/logs/seragone_fusion_aval.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 demo/broker/demobroker_runner.py >> logs/demobroker_runner.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 demo/generator/decision_to_order.py >> logs/decision_to_order.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 demo/prudence/prudence_demo_runner.py >> logs/prudence_demo_runner.log 2>&1\n15 * * * * cd /home/ubuntu/seragone && /usr/bin/python3 tools/seragone_one.py >> logs/seragone_one.log 2>&1\n",
+  "root_dirs_count": 218,
+  "cron_lines": "91",
+  "cron_raw": "SHELL=/bin/bash\nPATH=/usr/local/bin:/usr/bin:/bin:/home/ubuntu/.local/bin\nSERAGONE=/home/ubuntu/seragone\n@reboot cd /home/ubuntu/seragone && nohup python3 collector_binance.py >> logs/collector.log 2>&1 &\n@reboot cd /home/ubuntu/seragone && nohup python3 sniper_live.py >> logs/sniper.log 2>&1 &\n* * * * * /tmp/push_bulletin.sh >> /home/ubuntu/seragone/logs/github_push.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 update_live.py >> logs/update_live.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 seragone_pilot.py >> logs/pilot.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 temps_seragone.py >> logs/temps_seragone.log 2>&1\n*/30 * * * * cd /home/ubuntu/seragone && python3 multivers_progressif.py >> logs/multivers_prog.log 2>&1\n0 * * * * cd /home/ubuntu/seragone && python3 update_data.py >> logs/update_data.log 2>&1\n55 7 * * * cd /home/ubuntu/seragone && python3 compute_ec_daily.py >> logs/eclaireurs.log 2>&1\n0 8 * * * cd /home/ubuntu/seragone && python3 cryptoquant_scraper.py >> logs/cryptoquant.log 2>&1\n2 8 * * * cd /home/ubuntu/seragone && python3 q_jour_calc.py >> logs/q_jour.log 2>&1\n5 8 * * * cd /home/ubuntu/seragone && python3 gardien_onchain.py >> logs/onchain.log 2>&1\n8 8 * * * cd /home/ubuntu/seragone && python3 moteur_cyclique.py >> logs/cycle.log 2>&1\n7 8 * * * cd /home/ubuntu/seragone && python3 symetrie_module.py >> logs/symetrie_cron.log 2>&1\n9 8 * * * cd /home/ubuntu/seragone && python3 prudence_module.py >> logs/prudence_cron.log 2>&1\n13 8 * * * cd /home/ubuntu/seragone && python3 souffle_live.py >> logs/souffle_premier.log 2>&1\n20 8 * * * cd /home/ubuntu/seragone && python3 seragone_7d_clean.py >> logs/7d_clean.log 2>&1\n25 8 * * * cd /home/ubuntu/seragone && python3 batch_mondes_recursifs.py >> logs/batch_recursifs.log 2>&1\n30 8 * * * cd /home/ubuntu/seragone && python3 vrais_yeux_subdaily.py >> logs/vrais_yeux_subdaily.log 2>&1\n35 8 * * * cd /home/ubuntu/seragone && python3 recursif_v1_signal.py >> logs/recursif_v1.log 2>&1\n40 8 * * * cd /home/ubuntu/seragone && python3 recursif_nc_bridge.py >> logs/recursif_nc.log 2>&1\n45 8 * * * cd /home/ubuntu/seragone && python3 notif_pionex.py >> logs/notif.log 2>&1\n30 0 * * * cd /home/ubuntu/seragone && python3 seragone_redundance_monitor.py >> logs/redundance.log 2>&1\n30 7 * * * cd /home/ubuntu/seragone && python3 nc_engine.py >> logs/nc_engine.log 2>&1\n18 8 * * * cd /home/ubuntu/seragone && python3 provinces_27d_live.py >> logs/provinces.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 subdaily_runner.py >> logs/subdaily.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 chronometer_fluide.py >> logs/chronometer.log 2>&1\n50 8 * * * cd /home/ubuntu/seragone && python3 born_temps_live.py >> logs/born_temps.log 2>&1\n6,36 * * * * cd /home/ubuntu/seragone && /usr/bin/python3 chaines_epurees.py >> logs/chaines_cron.log 2>&1\n31 7 * * * cd /home/ubuntu/seragone && python3 nc_history_writer.py >> logs/nc_history.log 2>&1\n31 7 * * * cd /home/ubuntu/seragone && python3 nc_history_writer.py >> logs/nc_history.log 2>&1\n11 8 * * * cd /home/ubuntu/seragone && python3 nourrir_92_mondes.py >> logs/nourrir_92.log 2>&1\n@reboot cd /home/ubuntu/seragone && nohup python3 tireur_pulse.py >> logs/tireur_seconde.log 2>&1 &\n*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_5min.py >> logs/tireur_5min.log 2>&1\n8 8 * * * cd /home/ubuntu/seragone && python3 extract_18ss.py >> logs/extract_18ss.log 2>&1\n15 8 * * * cd /home/ubuntu/seragone && python3 calc_dH5j.py >> logs/dH5j.log 2>&1\n0 * * * * cd /home/ubuntu/seragone && python3 tireur_presence.py >> logs/tireur_presence.log 2>&1\n*/30 * * * * cd /home/ubuntu/seragone && python3 tireur_tenue.py >> logs/tireur_tenue.log 2>&1\n*/15 * * * * cd /home/ubuntu/seragone && python3 tireur_vigie.py >> logs/tireur_vigie.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_agilite.py >> logs/tireur_agilite.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 tireur_precision.py >> logs/tireur_precision.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 make_btc_1s.py > /dev/null 2>&1 && python3 tireur_fulgurance.py --input data/btc_1s_recent.csv >> logs/tireur_fulgurance.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 tireur_etincelle.py >> logs/tireur_etincelle.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 money_manager.py >/dev/null 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 tireur_aplomb.py >/dev/null 2>&1\n50 8 * * * cd /home/ubuntu/seragone && python3 journees_des_tireurs_v2.py >> logs/tireurs.log 2>&1\n*/10 * * * * cd /home/ubuntu/seragone && python3 watchdog_seragone.py >> logs/watchdog.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 sentinelle_exchange_runner.py >> logs/sentinelle_exchange.log 2>&1\n7 7 * * * cd /home/ubuntu/seragone && python3 divergences_alts.py >> logs/divergences_alts.log 2>&1\n12 8 * * * cd /home/ubuntu/seragone && bash orchestrateur.sh >> logs/orchestrateur.log 2>&1\n30 8 * * 0 cd /home/ubuntu/seragone && python3 production/allocation/meta_controller.py >> logs/meta_controller.log 2>&1\n0 12 * * 6 cd /home/ubuntu/seragone && python3 production/meta/memoire_evenementielle.py >> logs/memoire_evenementielle.log 2>&1\n44 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_1_M08_sbforce.py >> logs/pepites.log 2>&1\n45 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_2_OUVRIR_SOUFFLE.py >> logs/pepites.log 2>&1\n46 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_3_souffle_M0.py >> logs/pepites.log 2>&1\n47 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_4_L3_mom_haut.py >> logs/pepites.log 2>&1\n48 8 * * * cd /home/ubuntu/seragone && python3 moteur_pepite_5_L5_L7_SHORT.py >> logs/pepites.log 2>&1\n49 8 * * * cd /home/ubuntu/seragone && python3 pepites_tier1_adapter.py >> logs/pepites_adapter.log 2>&1\n50 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_6_H_shannon.py >> logs/pepites_6_19.log 2>&1\n51 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_7_H_dd_ath.py >> logs/pepites_6_19.log 2>&1\n52 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_8_M_V_H_calme.py >> logs/pepites_6_19.log 2>&1\n53 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_9_M_V_G_extreme.py >> logs/pepites_6_19.log 2>&1\n54 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_10_S_xtbas_10j.py >> logs/pepites_6_19.log 2>&1\n55 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_11_m2_crise_dd.py >> logs/pepites_6_19.log 2>&1\n56 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_12_m2_tension_Gbas.py >> logs/pepites_6_19.log 2>&1\n57 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_13_m2_tension_fg.py >> logs/pepites_6_19.log 2>&1\n58 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_14_m4_crise_Gbas.py >> logs/pepites_6_19.log 2>&1\n59 8 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_15_m4_crise_Hbas.py >> logs/pepites_6_19.log 2>&1\n00 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_16_m4_crise_Sbas.py >> logs/pepites_6_19.log 2>&1\n01 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_17_m5_ouvrir_dd.py >> logs/pepites_6_19.log 2>&1\n02 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_18_m6_ouvrir_Mmilieu.py >> logs/pepites_6_19.log 2>&1\n03 9 * * * cd /home/ubuntu/seragone && python3 production/pepites/moteur_pepite_19_m7_tension_Ghaut.py >> logs/pepites_6_19.log 2>&1\n16 8 * * * cd /home/ubuntu/seragone && python3 normalise_states_compat.py >> logs/normalise_states_compat.log 2>&1\n58 8 * * * cd /home/ubuntu/seragone && python3 normalise_states_compat.py >> logs/normalise_states_compat.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && python3 seragone_demo_health.py >> logs/seragone_demo_health_cron.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 observer_price_live_from_btc_1s.py >> logs/observer_price_live_from_btc_1s_cron.log 2>&1\n7 * * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragone_audit_prune.lock ./seragone_audit_prune.sh 288 >> logs/seragone_audit_prune_cron.log 2>&1\n12 0 * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragone_logs_rotate.lock ./seragone_logs_rotate.sh >> logs/seragone_logs_rotate_cron.log 2>&1\n* * * * * cd /home/ubuntu/seragone && /usr/bin/python3 /home/ubuntu/seragone/seragone_live_logger.py >> /home/ubuntu/seragone/logs/seragone_live_logger_cron.log 2>&1\n* * * * * cd /home/ubuntu/seragone && /usr/bin/python3 /home/ubuntu/seragone/seragone_alerts.py >> /home/ubuntu/seragone/logs/seragone_alerts_cron.log 2>&1\n*/5 * * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragoneauditnow.lock ./seragoneauditnow.sh >> logs/seragoneauditnow_cron.log 2>&1\n17 3 * * 0 cd /home/ubuntu/seragone && ./seragoneauditretention.sh 7 --dry-run >> logs/seragoneauditretention_cron.log 2>&1\n* * * * * cd /home/ubuntu/seragone && /usr/bin/flock -n /tmp/seragone_fusion_aval.lock /usr/bin/python3 /home/ubuntu/seragone/seragone_fusion_aval.py >> /home/ubuntu/seragone/logs/seragone_fusion_aval.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 demo/broker/demobroker_runner.py >> logs/demobroker_runner.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 demo/generator/decision_to_order.py >> logs/decision_to_order.log 2>&1\n* * * * * cd /home/ubuntu/seragone && python3 demo/prudence/prudence_demo_runner.py >> logs/prudence_demo_runner.log 2>&1\n15 * * * * cd /home/ubuntu/seragone && /usr/bin/python3 tools/seragone_one.py >> logs/seragone_one.log 2>&1\n5 4 * * * cd /home/ubuntu/seragone && bash SERAGONE_ONE_TOTAL.sh >> logs/seragone_one_total.log 2>&1\n",
   "systemd_seragone": "  seragone-1min.service                          loaded    active     running       S\u00e9ragone Collecteur 1min Binance BTCUSDT\n  seragone-api.service                           loaded    active     running       Seragone API Service\n  seragone-brain.service                         loaded    active     running       Seragone Brain (production)\n  seragone-brisance.service                      loaded    active     running       Seragone Brisance (protection volatilit\u00e9)\n  seragone-mondes-oneshot.service                loaded    active     running       Seragone Mondes OneShot (communicants + autonomes, loop 60s)\n  seragone-mondes-paralleles.service             loaded    activating start   start Seragone Mondes Paralleles Engine - oneshot via timer\n  seragone-multivers.service                     loaded    inactive   dead          Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer\n  seragone-securite.service                      loaded    active     running       Seragone Securite (barri\u00e8re protection)\n  seragone-sentinelle.service                    loaded    active     running       Seragone Sentinelle (veille comportementale)\n",
-  "systemd_timers": "Mon 2026-05-11 23:16:01 UTC      24s Mon 2026-05-11 22:46:01 UTC        29min ago seragone-multivers.timer         seragone-multivers.service\n-                                  - Mon 2026-05-11 23:15:19 UTC          18s ago seragone-mondes-paralleles.timer seragone-mondes-paralleles.service\n",
-  "ps_python": "root         981       1  0 Mar16 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal\nubuntu    234990       1  0 Mar30 ?        00:00:00 SCREEN -S seragone\nubuntu    628146       1  0 Apr14 ?        00:15:00 python3 bulletin_mobile.py\nubuntu    668794       1  0 Apr16 ?        01:38:30 python3 sniper_live.py\nubuntu    741042       1  4 Apr17 ?        1-04:37:50 python3 collector_binance.py\nubuntu   1208322       1  0 Apr24 ?        00:32:53 /usr/bin/python3 /home/ubuntu/seragone/collecteur_1min.py --backfill-days 7\nubuntu   1979934       1  0 May05 ?        01:03:13 python3 -m streamlit run /home/ubuntu/cockpit/app/cockpit_v113.py --server.port 8501 --server.address 0.0.0.0\nubuntu   2397580       1  0 May08 ?        00:00:00 inotifywait -m -e close_write /home/ubuntu/seragone/state.json --timefmt %Y-%m-%d %H:%M:%S --format %T CLOSE_WRITE\nubuntu   2519871       1  0 May09 ?        00:00:06 /bin/bash /home/ubuntu/seragone/run_mondes_one_shot_loop.sh\nubuntu   2520010       1  3 May09 ?        01:55:29 /usr/bin/python3 /home/ubuntu/seragone/seragone_brain.py\nubuntu   2520605       1  0 May09 ?        00:00:51 /usr/bin/python3 /home/ubuntu/seragone/sentinelle_seragone.py\nubuntu   2520658       1  0 May09 ?        00:13:54 python3 production/protection/brisance.py\nubuntu   2520661       1  0 May09 ?        00:01:03 /home/ubuntu/seragone/.venv/bin/python3 /home/ubuntu/seragone/securite_seragone.py\nubuntu   2520838       1  0 May09 ?        00:13:55 /usr/bin/python3 /home/ubuntu/seragone/production/protection/brisance.py\nubuntu   2524641       1  0 May09 ?        00:01:06 python3 tireur_pulse.py\nubuntu   2528753       1  0 May09 ?        00:00:35 /usr/bin/python3 /home/ubuntu/seragone/production/execution/api.py\nubuntu   2954809       1  0 23:06 ?        00:00:00 tmux new -d -s m2rebuild python3 m2_bear_engine_v2.py --rebuild 2>&1 | tee logs/m2_bear_v2_rebuild_20260511_230629.log\nubuntu   2954810 2954809  0 23:06 pts/3    00:00:00 bash -c python3 m2_bear_engine_v2.py --rebuild 2>&1 | tee logs/m2_bear_v2_rebuild_20260511_230629.log\nubuntu   2954811 2954810 99 23:06 pts/3    00:09:08 python3 m2_bear_engine_v2.py --rebuild\nubuntu   2955846 2955782  0 23:15 ?        00:00:00 /bin/bash -c cd /home/ubuntu/seragone && /usr/bin/python3 tools/seragone_one.py >> logs/seragone_one.log 2>&1\nubuntu   2955853 2955846  0 23:15 ?        00:00:00 /usr/bin/python3 tools/seragone_one.py\nubuntu   2957250       1 99 23:15 ?        00:00:18 /usr/bin/python3 /home/ubuntu/seragone/mondes_paralleles_engine.py\n",
-  "ps_count": 22,
+  "systemd_timers": "Tue 2026-05-12 17:16:40 UTC   1min 9s Tue 2026-05-12 16:46:40 UTC        28min ago seragone-multivers.timer         seragone-multivers.service\n-                                   - Tue 2026-05-12 17:15:21 UTC           8s ago seragone-mondes-paralleles.timer seragone-mondes-paralleles.service\n",
+  "ps_python": "root         981       1  0 Mar16 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal\nubuntu    234990       1  0 Mar30 ?        00:00:00 SCREEN -S seragone\nubuntu    628146       1  0 Apr14 ?        00:15:26 python3 bulletin_mobile.py\nubuntu    668794       1  0 Apr16 ?        01:41:29 python3 sniper_live.py\nubuntu    741042       1  4 Apr17 ?        1-05:27:23 python3 collector_binance.py\nubuntu   1208322       1  0 Apr24 ?        00:34:18 /usr/bin/python3 /home/ubuntu/seragone/collecteur_1min.py --backfill-days 7\nubuntu   1979934       1  0 May05 ?        01:09:53 python3 -m streamlit run /home/ubuntu/cockpit/app/cockpit_v113.py --server.port 8501 --server.address 0.0.0.0\nubuntu   2397580       1  0 May08 ?        00:00:00 inotifywait -m -e close_write /home/ubuntu/seragone/state.json --timefmt %Y-%m-%d %H:%M:%S --format %T CLOSE_WRITE\nubuntu   2519871       1  0 May09 ?        00:00:08 /bin/bash /home/ubuntu/seragone/run_mondes_one_shot_loop.sh\nubuntu   2520605       1  0 May09 ?        00:01:09 /usr/bin/python3 /home/ubuntu/seragone/sentinelle_seragone.py\nubuntu   2520658       1  0 May09 ?        00:18:41 python3 production/protection/brisance.py\nubuntu   2520661       1  0 May09 ?        00:01:24 /home/ubuntu/seragone/.venv/bin/python3 /home/ubuntu/seragone/securite_seragone.py\nubuntu   2520838       1  0 May09 ?        00:18:41 /usr/bin/python3 /home/ubuntu/seragone/production/protection/brisance.py\nubuntu   2524641       1  0 May09 ?        00:01:27 python3 tireur_pulse.py\nubuntu   2528753       1  0 May09 ?        00:00:47 /usr/bin/python3 /home/ubuntu/seragone/production/execution/api.py\nubuntu   3048122       1  4 08:25 ?        00:26:08 /usr/bin/python3 /home/ubuntu/seragone/seragone_brain.py\nubuntu   3128070 3128016  0 17:15 ?        00:00:00 /bin/bash -c cd /home/ubuntu/seragone && /usr/bin/python3 tools/seragone_one.py >> logs/seragone_one.log 2>&1\nubuntu   3128090 3128070  1 17:15 ?        00:00:00 /usr/bin/python3 tools/seragone_one.py\nubuntu   3129773       1 99 17:15 ?        00:00:09 /usr/bin/python3 /home/ubuntu/seragone/mondes_paralleles_engine.py\n",
+  "ps_count": 19,
   "decrets": [
     "audit/decisions/DECRET_12bis_AMENDEMENT_NON_CANONIQUE_USAGE_2026-05-10.md",
     "audit/decisions/DECRET_13_SOUVERAINETE_APLOMB_MONEY_MANAGER_2026-05-10.md",
@@ -1148,6 +1133,7 @@
     "audit/decisions/DECRET_B4_DECROCHAGE_VILLAGE_MULTIVERS_OPTION_B_2026-05-10.md",
     "audit/decisions/DECRET_B4_RESOLU_PAR_NON_USAGE_2026-05-10.md",
     "audit/decisions/DECRET_LEVIERS_AMELIORATION_2026-05-11.md",
+    "audit/decisions/DECRET_MULTIVERS_RESULTATS_RESOLU_PAR_NON_USAGE_2026-05-12.md",
     "audit/decisions/DECRET_PASSE_1_MEMOIRE_TOTALE_2026-05-11.md",
     "audit/decisions/DECRET_Q2_REGULARISATION_INDEX_AMENDEMENTS_D32_2026-05-10.md",
     "audit/decisions/DECRET_Q3_REGULARISATION_INDEX_AMENDEMENTS_D48_2026-05-10.md",
@@ -1224,8 +1210,8 @@
     "dependency_edges_count": 675,
     "generated_at_utc": "2026-04-24T20:14:12.149563+00:00"
   },
-  "git_log": "d3e8bc98 ACTE 26 \u2014 Position canonique META Stades 1/2/3 + d\u00e9classement legacy state\nfe041a2f ACTE 25 \u2014 Pipeline A7 END-TO-END d\u00e9montr\u00e9 op\u00e9rationnel (3 min cha\u00eene)\naf9e0c3b ACTE 24-bis \u2014 Pr\u00e9cision : silence A7 = idempotence design, pas $SERAGONE\n89bbb32d ACTE 24 \u2014 Pipeline A7 end-to-end + fix variable $SERAGONE dans cron\n3e69188a DOCTRINE 12 \u2014 LIRE AVANT DE CONCLURE (le\u00e7on acte 23 + 23-bis)\n5cafa91a ACTE 23-bis \u2014 ANNULATION acte 23 (seragone-multivers \u00e9tait un oneshot fonctionnel)\n8ddf516d ACTE 23 \u2014 MASK seragone-multivers (service dead + timer orphelin)\n8662fcad ACTE 22 \u2014 SERAGONE_ONE V1 socle vision totale (hash 439cc638637886ae)\n7b44a650 auto\n95c75513 auto\ndb108394 auto\n368a9187 auto\nc7d61b40 auto\n32c7d642 auto\n2ac6be8f auto\ndac808ca auto\nd39825ca auto\n173b1b2c auto\n87602830 auto\nf58fa5da auto\n",
-  "git_status": " M canon/INDEX_CANON_SERAGONE.md\n M canon/SERAGONE_ONE.json\n M canon/SERAGONE_ONE.md\n M canon/SERAGONE_ONE_HASH.txt\n M demo/states/statedemo.json\n M states/doubletempostate.json\n M states/observer_price_live_from_btc_1s_state.json\n M states/policy_state.json\n M states/seragonedecisionstate.json\n?? .backups_d9_atomic_20260502_180506/\n?? .backups_d9_atomic_alias_20260502_181648/\n?? .backups_d9_atomic_exact_20260502_181117/\n?? .backups_d9_atomic_fix_20260502_180724/\n?? .backups_d9_neutralize_v4canon_20260502_181307/\n?? .backups_d9_readme_stale_20260502_182610/\n?? .gitignore.bak.20260423_194532\n?? .gitignore.bak.20260423_194627\n?? .securite.lock\n?? .sentinelle.lock\n?? .streamlit/\n?? 0.0\n?? 0.01\n?? 01_inspection_vps.sh\n?? 02_recalib_phi_vente_vps.py\n?? 04_signal_bear_consensus.py\n?? 05_diagnostic_regards.py\n?? 06_signal_bear_v2.py\n?? 07_signal_bear_v3.py\n?? 08_validation_v3.py\n?? 09_filtre_tendance_v4.py\n",
+  "git_log": "b53c5bc9 ACTE 31 (12 mai 11:22) \u2014 Fermeture session : 4 fausses alarmes confirm\u00e9es + m\u00e9ta-le\u00e7ons 5 et 6 grav\u00e9es\nf327277b ACTE 30 \u2014 A10 ferm\u00e9e ORPHELINS-INERTES apr\u00e8s sonde \u03c1-3 : aucun consommateur fossile en cron/service/process actif. Seul money_manager.py racine f9b1580c tourne. Registre v0.4 e04acd99 + Markdown v3 b48baef5. M\u00e9ta-le\u00e7on r\u00e9cidive Porte 0 : v\u00e9rifier l'ex\u00e9cution (cron/systemd/ps), pas seulement la pr\u00e9sence en code (grep). 7 trous Porte 5 natif document\u00e9s, couverts par state_freshness_watchdog.py mien. Dettes restantes toutes doctrinales : A14 p\u00e9pites, Dette 2 exit code, archivage 13 scripts orphelins.\na29e9649 ACTE 29 \u2014 Session A9 close : 3 patchs TTL M4/M5/Clones (money_manager.py f9b1580c) + state_registry v0.3 (5f227b74) + ANOMALIES_A8_A9_12mai2026.md canon 13 sections (1a3f0753) + BATTERIES doctrine 6 Portes (daadfc56) + state_freshness_watchdog.py (7c59378c). A8 ferm\u00e9e constat, A9 v1 ferm\u00e9e runtime, A10/A14 ouvertes, A12-bis faux positif. M\u00e9ta-le\u00e7on : sonde exhaustive AVANT dirig\u00e9e + Porte 0 sonder avant cr\u00e9er. 3 sessions futures planifi\u00e9es : Patch watchdog v0.2, A10, A14.\n413385cc ACTE 28 \u2014 SERAGONE_ONE_TOTAL.sh v1 : snapshot canonique exhaustif 14 sections pour reprise session IA (25651 fichiers, 22G, hash global 63cb850ff28f7469)\nb816e0f0 ACTE 27 \u2014 Canon finalis\u00e9 : I4 r\u00e9solu (H10 broadcast 10D/18D), \u03c13-a rebuild cache succ\u00e8s, timer r\u00e9activ\u00e9, +7 attestations, hash univers 950248f1004c5564 (16980 fichiers, 21G)\nd3e8bc98 ACTE 26 \u2014 Position canonique META Stades 1/2/3 + d\u00e9classement legacy state\nfe041a2f ACTE 25 \u2014 Pipeline A7 END-TO-END d\u00e9montr\u00e9 op\u00e9rationnel (3 min cha\u00eene)\naf9e0c3b ACTE 24-bis \u2014 Pr\u00e9cision : silence A7 = idempotence design, pas $SERAGONE\n89bbb32d ACTE 24 \u2014 Pipeline A7 end-to-end + fix variable $SERAGONE dans cron\n3e69188a DOCTRINE 12 \u2014 LIRE AVANT DE CONCLURE (le\u00e7on acte 23 + 23-bis)\n5cafa91a ACTE 23-bis \u2014 ANNULATION acte 23 (seragone-multivers \u00e9tait un oneshot fonctionnel)\n8ddf516d ACTE 23 \u2014 MASK seragone-multivers (service dead + timer orphelin)\n8662fcad ACTE 22 \u2014 SERAGONE_ONE V1 socle vision totale (hash 439cc638637886ae)\n7b44a650 auto\n95c75513 auto\ndb108394 auto\n368a9187 auto\nc7d61b40 auto\n32c7d642 auto\n2ac6be8f auto\n",
+  "git_status": " M .gitignore\n M ANOMALIES_A8_A9_12mai2026.md\n M canon/SERAGONE_ONE.json\n M canon/SERAGONE_ONE.md\n M canon/SERAGONE_ONE_HASH.txt\n M canon/SERAGONE_ONE_TOTAL.json\n M canon/SERAGONE_ONE_TOTAL.md\n M canon/SERAGONE_ONE_TOTAL_GIT.txt\n M canon/SERAGONE_ONE_TOTAL_HASH.txt\n M canon/SERAGONE_ONE_TOTAL_TREE.txt\n M demo/states/decision_to_order_state.json\n M demo/states/prudence_demo_state.json\n M demo/states/statedemo.json\n M states/doubletempostate.json\n M states/observer_price_live_from_btc_1s_state.json\n M states/orchestrateur_history.jsonl\n M states/orchestrateur_run_state.json\n M states/pepite10_S_xtbas_10j_state.json\n M states/pepite11_m2_crise_dd_state.json\n M states/pepite12_m2_tension_Gbas_state.json\n M states/pepite13_m2_tension_fg_state.json\n M states/pepite14_m4_crise_Gbas_state.json\n M states/pepite15_m4_crise_Hbas_state.json\n M states/pepite16_m4_crise_Sbas_state.json\n M states/pepite17_m5_ouvrir_dd_state.json\n M states/pepite18_m6_ouvrir_Mmilieu_state.json\n M states/pepite19_m7_tension_Ghaut_state.json\n M states/pepite1_M08_sbforce_state.json\n M states/pepite2_OUVRIR_SOUFFLE_state.json\n M states/pepite3_souffle_M0_state.json\n",
   "phases_seragone": 85,
   "phases_pepites": 27,
   "audit_actions": 48,
@@ -1241,9 +1227,9 @@
   ],
   "count_states": 102,
   "count_state": 2,
-  "count_snapshots": 2412,
+  "count_snapshots": 2844,
   "count_snapshots_valides": 12,
-  "count_checkpoints": 1206,
+  "count_checkpoints": 1422,
   "count_checkpoints_valides": 6,
-  "count_logs": 685
+  "count_logs": 778
 }

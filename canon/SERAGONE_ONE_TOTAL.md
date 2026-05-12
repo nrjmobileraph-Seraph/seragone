@@ -1,8 +1,8 @@
 # SERAGONE_ONE_TOTAL
 
-**Généré (UTC)** : 2026-05-11T23:37:58Z
+**Généré (UTC)** : 2026-05-12T04:05:01Z
 **Hôte** : vps-1e58449b | **User** : ubuntu | **IP** : 51.254.136.91 2001:41d0:305:2100::8748 
-**Uptime** : up 8 weeks, 31 minutes
+**Uptime** : up 8 weeks, 4 hours, 58 minutes
 **Kernel** : Linux 6.8.0-86-generic x86_64
 **Disque** : /dev/sda1        72G   41G   32G  57% /
 
@@ -12,31 +12,32 @@
 - Re-générer à chaque début de session : `bash SERAGONE_ONE_TOTAL.sh`
 
 ## 1. Volumétrie
-- Total fichiers : 25651
+- Total fichiers : 25911
 - Taille totale : 22G
 - Dossiers racine : 226
-- Lignes arbre niveau 4 : 14519
+- Lignes arbre niveau 4 : 14779
 
 | Extension | Compte |
 |---|---|
 | .conf | 1 |
-| .csv | 1588 |
+| .csv | 1590 |
 | .env | 3 |
-| .gz | 1714 |
+| .gz | 1859 |
 | .ini | 3 |
-| .json | 1881 |
-| .log | 775 |
-| .md | 1026 |
+| .json | 1882 |
+| .log | 776 |
+| .md | 1027 |
 | .py | 9046 |
 | .sh | 52 |
 | .tar | 0 |
 | .toml | 2 |
-| .txt | 2521 |
+| .txt | 2578 |
 | .yaml | 0 |
 | .zip | 3 |
 
 ## 2. GIT (voir fichier détaillé)
 ```
+413385cc ACTE 28 — SERAGONE_ONE_TOTAL.sh v1 : snapshot canonique exhaustif 14 sections pour reprise session IA (25651 fichiers, 22G, hash global 63cb850ff28f7469)
 b816e0f0 ACTE 27 — Canon finalisé : I4 résolu (H10 broadcast 10D/18D), ρ3-a rebuild cache succès, timer réactivé, +7 attestations, hash univers 950248f1004c5564 (16980 fichiers, 21G)
 d3e8bc98 ACTE 26 — Position canonique META Stades 1/2/3 + déclassement legacy state
 fe041a2f ACTE 25 — Pipeline A7 END-TO-END démontré opérationnel (3 min chaîne)
@@ -46,10 +47,10 @@ af9e0c3b ACTE 24-bis — Précision : silence A7 = idempotence design, pas $SERA
 5cafa91a ACTE 23-bis — ANNULATION acte 23 (seragone-multivers était un oneshot fonctionnel)
 8ddf516d ACTE 23 — MASK seragone-multivers (service dead + timer orphelin)
 8662fcad ACTE 22 — SERAGONE_ONE V1 socle vision totale (hash 439cc638637886ae)
-7b44a650 auto
 ```
 Commits locaux non poussés :
 ```
+413385cc ACTE 28 — SERAGONE_ONE_TOTAL.sh v1 : snapshot canonique exhaustif 14 sections pour reprise session IA (25651 fichiers, 22G, hash global 63cb850ff28f7469)
 b816e0f0 ACTE 27 — Canon finalisé : I4 résolu (H10 broadcast 10D/18D), ρ3-a rebuild cache succès, timer réactivé, +7 attestations, hash univers 950248f1004c5564 (16980 fichiers, 21G)
 d3e8bc98 ACTE 26 — Position canonique META Stades 1/2/3 + déclassement legacy state
 fe041a2f ACTE 25 — Pipeline A7 END-TO-END démontré opérationnel (3 min chaîne)
@@ -75,12 +76,12 @@ mondes_communicants.py | 16277 o | 2026-05-07 19:31:51.731112237 +0000 | sha256=
 
 ## 4. States canoniques
 ```
-aplombdailystate.json | mtime=2026-05-11 23:35:02.520033030 +0000 | size=67446 | sha16=1b348163103c2b55
-aplombstate.json | mtime=2026-05-11 23:35:02.492032871 +0000 | size=67446 | sha16=1b348163103c2b55
+aplombdailystate.json | mtime=2026-05-12 04:05:01.733375085 +0000 | size=67195 | sha16=b10207da7d92d6bd
+aplombstate.json | mtime=2026-05-12 04:05:01.714374981 +0000 | size=67195 | sha16=b10207da7d92d6bd
 born_temps_state.json | mtime=2026-05-11 08:50:04.323803912 +0000 | size=1936 | sha16=9cbbefcf1288c57e
-brisance_state.json | mtime=2026-05-11 23:37:58.111030185 +0000 | size=213 | sha16=bec954d6afe31c27
+brisance_state.json | mtime=2026-05-12 04:04:53.247328476 +0000 | size=214 | sha16=92ed9ae92886e0f0
 bulletin_decision_state.json | mtime=2026-04-25 09:00:02.105942920 +0000 | size=728 | sha16=ad4d33702791dc33
-chronometer_state.json | mtime=2026-05-11 23:35:08.025064264 +0000 | size=7055 | sha16=f0f31b8f310b6aae
+chronometer_state.json | mtime=2026-05-12 04:05:04.151388369 +0000 | size=7047 | sha16=2cb79c96fdade5e5
 clones_v6_state.json | mtime=2026-04-22 21:52:12.503250946 +0000 | size=127 | sha16=1a4d8b8992851192
 cycle_state.json | mtime=2026-05-11 08:08:02.138561358 +0000 | size=926 | sha16=2dff5bea909a28dd
 demo/states/decision_to_order_state.json | mtime=2026-05-11 20:55:02.017229000 +0000 | size=144 | sha16=1d45141a03a28646
@@ -90,40 +91,40 @@ derives_state.json | mtime=2026-04-27 15:49:39.517458139 +0000 | size=604 | sha1
 divergences_state.json | mtime=2026-05-11 07:07:02.837185893 +0000 | size=1482 | sha16=7e564c0f34331936
 doubletempostate.json | mtime=2026-04-22 21:19:42.418138743 +0000 | size=262 | sha16=12e025f03e23b3bd
 drift_state.json | mtime=2026-05-11 08:12:03.643176974 +0000 | size=191 | sha16=a357e125c80e363a
-etincellestate.json | mtime=2026-05-11 23:37:03.037717247 +0000 | size=438 | sha16=30dd659bde0326b2
+etincellestate.json | mtime=2026-05-12 04:05:02.949381766 +0000 | size=438 | sha16=20b61620efa3f522
 exhaustion_state.json | mtime=2026-05-11 08:18:02.115553276 +0000 | size=336 | sha16=df54ee4df267d2cd
 gardien_silencieux_state.json | mtime=2026-04-24 06:34:59.596795700 +0000 | size=230 | sha16=924ca58e7537f24a
 health_state.json | mtime=2026-05-11 08:12:02.440168963 +0000 | size=119 | sha16=12faaca6a560ffe1
 m2_bear_state.json | mtime=2026-05-11 08:58:01.915987721 +0000 | size=34921 | sha16=2783d334c8293559
-m2_bear_state_v2.json | mtime=2026-05-11 08:58:01.928987749 +0000 | size=573 | sha16=381a62eb50d1e3fe
+m2_bear_state_v2.json | mtime=2026-05-12 02:06:56.418197387 +0000 | size=366 | sha16=2c3f99e686dd52c4
 m2bearstate.json | mtime=2026-05-05 23:41:05.000000000 +0000 | size=18 | sha16=2783d334c8293559
-m2bearstatev2.json | mtime=2026-05-05 23:41:05.000000000 +0000 | size=21 | sha16=381a62eb50d1e3fe
+m2bearstatev2.json | mtime=2026-05-05 23:41:05.000000000 +0000 | size=21 | sha16=2c3f99e686dd52c4
 m3_temperance_state.json | mtime=2026-04-22 15:51:17.036880664 +0000 | size=278 | sha16=6b7c1cb03303fcb8
 m7_state.json | mtime=2026-04-22 21:52:11.995247853 +0000 | size=210 | sha16=223bb023cc74a8f7
 memoire_state.json | mtime=2026-05-09 12:00:05.571263580 +0000 | size=5015 | sha16=66b16ad971ad90af
 meta_state.json | mtime=2026-05-11 08:12:03.207174071 +0000 | size=360 | sha16=c0699b472feaea44
-mondes_autonomes_state.json | mtime=2026-05-11 23:37:11.036762689 +0000 | size=1620 | sha16=946f58eb6b276d81
-mondes_communicants_state.json | mtime=2026-05-11 23:37:10.847761616 +0000 | size=822 | sha16=19e6450a2f3ef7c0
+mondes_autonomes_state.json | mtime=2026-05-12 04:05:01.476373673 +0000 | size=1649 | sha16=92c4d3254c400ce0
+mondes_communicants_state.json | mtime=2026-05-12 04:05:00.966370871 +0000 | size=824 | sha16=d949723a31b44639
 mondes_long_state.json | mtime=2026-04-22 20:09:06.309708712 +0000 | size=88 | sha16=e22d838938511c3b
-mondes_paralleles_state.json | mtime=2026-05-11 23:37:37.583913528 +0000 | size=53547 | sha16=68dd3e173c2dbd3a
-mondesparallelesstate.json | mtime=2026-05-05 23:35:02.000000000 +0000 | size=28 | sha16=68dd3e173c2dbd3a
-money_manager_state.json | mtime=2026-05-11 23:37:02.502714207 +0000 | size=2763 | sha16=db452621d4cb8531
+mondes_paralleles_state.json | mtime=2026-05-12 04:03:14.361787010 +0000 | size=53527 | sha16=74f26daba7c1d558
+mondesparallelesstate.json | mtime=2026-05-05 23:35:02.000000000 +0000 | size=28 | sha16=74f26daba7c1d558
+money_manager_state.json | mtime=2026-05-12 04:05:01.846375706 +0000 | size=2763 | sha16=d6251239580314f8
 money_manager_state_production.json | mtime=2026-04-23 19:08:59.664288645 +0000 | size=3431 | sha16=523448e3722a8a29
-multivers_state.json | mtime=2026-05-11 23:30:39.546543813 +0000 | size=144638383 | sha16=7141d2b7da864ced
+multivers_state.json | mtime=2026-05-12 04:00:38.646941724 +0000 | size=146145801 | sha16=52e97d3d1f9286f3
 nc_state.json | mtime=2026-05-11 07:30:06.244735288 +0000 | size=1204 | sha16=69f05958f2910074
 portance_state.json | mtime=2026-05-11 08:18:02.115553276 +0000 | size=264 | sha16=0542f655dbb0f6da
-presence1hstate.json | mtime=2026-05-11 23:00:03.942446478 +0000 | size=409 | sha16=fc516a29d133a87d
+presence1hstate.json | mtime=2026-05-12 04:00:03.999755120 +0000 | size=409 | sha16=786024076614ba82
 q_jour_state.json | mtime=2026-05-11 08:04:47.823247217 +0000 | size=4713 | sha16=9845fd8818e161b0
 q_local_p10_state.json | mtime=2026-04-19 03:49:55.240446715 +0000 | size=239 | sha16=2f5904439cce4705
-securite_state.json | mtime=2026-05-11 23:37:55.003012521 +0000 | size=379 | sha16=a05117e94d838a85
-sentinelle_exchange_state.json | mtime=2026-05-11 23:35:03.999041421 +0000 | size=14684 | sha16=c3378149a55c2eae
-sentinelle_state.json | mtime=2026-05-11 23:38:01.090047117 +0000 | size=231 | sha16=98c3c916e33d27a9
-seragone_demo_health_state.json | mtime=2026-05-11 23:35:02.234031407 +0000 | size=2425 | sha16=dedc28551251983b
-seragonedecisionstate.json | mtime=2026-05-11 23:37:02.203712509 +0000 | size=6661 | sha16=d8d5c77c8f7c88b3
-seragonedecisionstate.summary.json | mtime=2026-05-11 23:37:02.204712515 +0000 | size=707 | sha16=1d1ecc3d88a5cd4b
-sniper_state.json | mtime=2026-05-11 23:37:18.183803295 +0000 | size=12858 | sha16=96de599a5bac8648
+securite_state.json | mtime=2026-05-12 04:04:57.614352459 +0000 | size=379 | sha16=29c6362d0a457b4b
+sentinelle_exchange_state.json | mtime=2026-05-12 04:05:03.142382826 +0000 | size=14684 | sha16=5a4f636a85b08ea7
+sentinelle_state.json | mtime=2026-05-12 04:04:44.272279205 +0000 | size=231 | sha16=f98ba2259bf5a483
+seragone_demo_health_state.json | mtime=2026-05-12 04:05:01.462373596 +0000 | size=2372 | sha16=cd284861d8fcfd91
+seragonedecisionstate.json | mtime=2026-05-12 04:05:01.548374069 +0000 | size=6632 | sha16=69da2dbb1e17d596
+seragonedecisionstate.summary.json | mtime=2026-05-12 04:05:01.549374074 +0000 | size=707 | sha16=986a0631f29a92e0
+sniper_state.json | mtime=2026-05-12 04:04:15.751122788 +0000 | size=12858 | sha16=31a200bef1ce6eb5
 souffle_premier_air_state.json | mtime=2026-05-11 08:13:02.475568415 +0000 | size=321 | sha16=a0d14b524b6ea6d9
-state.json | mtime=2026-05-11 23:37:03.123717735 +0000 | size=4666 | sha16=8feb71565006f242
+state.json | mtime=2026-05-12 04:05:05.320394793 +0000 | size=4225 | sha16=90ee408beef11696
 state_canon.json | mtime=2026-04-29 14:58:37.884893630 +0000 | size=27653 | sha16=298a31002a103ec4
 states/allocation_state.json | mtime=2026-04-23 13:07:46.908588795 +0000 | size=1073 | sha16=f4a9478a2d5c1415
 states/brisance_state.json | mtime=2026-04-22 23:19:31.846568375 +0000 | size=210 | sha16=ea99bcd978a82a48
@@ -131,7 +132,7 @@ states/capital_state.json | mtime=2026-04-23 11:25:41.466939107 +0000 | size=74 
 states/confluence_rules.json | mtime=2026-04-23 23:05:59.330966532 +0000 | size=7647 | sha16=c623a12d12687874
 states/core_eq06_haut_observatoire_state.json | mtime=2026-04-26 22:23:18.944804064 +0000 | size=1769 | sha16=e9adf8d756ce5eb2
 states/daily_state_vector.json | mtime=2026-04-23 22:49:21.353684580 +0000 | size=976 | sha16=09a6ea766bf7ba26
-states/doubletempostate.json | mtime=2026-05-11 23:37:02.500714196 +0000 | size=282 | sha16=c213dc47e118f68c
+states/doubletempostate.json | mtime=2026-05-12 04:05:01.818375552 +0000 | size=282 | sha16=35867eb9f1919ec5
 states/encodeur_tempo_confluence_shadow_v1_state.json | mtime=2026-04-26 08:02:43.302141837 +0000 | size=5541 | sha16=8d611c6b39c66624
 states/execution_topology_state.json | mtime=2026-04-27 16:47:50.331583618 +0000 | size=17201 | sha16=bc27d5d50063e94f
 states/freshness_state.json | mtime=2026-04-27 18:56:00.667079646 +0000 | size=41674 | sha16=2f3c95e7d6c3e152
@@ -145,7 +146,7 @@ states/mondes_paralleles_state.json | mtime=2026-05-11 21:07:29.865229272 +0000 
 states/money_manager_state.json | mtime=2026-04-22 23:19:31.842568351 +0000 | size=3212 | sha16=7019449bcf5180ce
 states/nc_state.json | mtime=2026-04-22 23:19:31.869568514 +0000 | size=1206 | sha16=a0eea5700e7abdbb
 states/observer_price_feed_state.json | mtime=2026-05-05 07:34:03.731053078 +0000 | size=893 | sha16=6ee66e86997bc8fe
-states/observer_price_live_from_btc_1s_state.json | mtime=2026-05-11 23:37:02.321713179 +0000 | size=380 | sha16=e4e5d27a4c881747
+states/observer_price_live_from_btc_1s_state.json | mtime=2026-05-12 04:05:01.699374898 +0000 | size=380 | sha16=21ccce1f22ade7d4
 states/observer_price_live_from_state_state.json | mtime=2026-05-05 07:33:01.516678245 +0000 | size=393 | sha16=09964ad29d5bec56
 states/orchestrateur_run_state.json | mtime=2026-05-11 08:12:03.711177427 +0000 | size=586 | sha16=f60d6648e1817130
 states/ours_v2_state.json | mtime=2026-04-22 21:52:11.106242441 +0000 | size=657 | sha16=0febb9ac619516f0
@@ -202,7 +203,7 @@ states/pepite7_H_dd_ath_state.json | mtime=2026-05-11 08:51:04.975172629 +0000 |
 states/pepite8_M_V_H_calme_state.json | mtime=2026-05-11 08:52:05.408540518 +0000 | size=1350 | sha16=db889b213dc05050
 states/pepite9_M_V_G_extreme_state.json | mtime=2026-05-11 08:53:05.676713937 +0000 | size=1347 | sha16=37d3395d3af7095a
 states/pepites_tier1_synthese_state.json | mtime=2026-05-11 08:49:02.240427075 +0000 | size=1763 | sha16=c10a4dcd554844ad
-states/policy_state.json | mtime=2026-05-11 23:35:02.448032621 +0000 | size=378 | sha16=204882e118a8b3aa
+states/policy_state.json | mtime=2026-05-12 04:05:01.676374772 +0000 | size=378 | sha16=9945b3a563de2d6f
 states/q_jour_state.json | mtime=2026-04-22 23:19:31.864568484 +0000 | size=4720 | sha16=43ada73c494a3a6e
 states/reaction_live_outils_ledger.json | mtime=2026-05-05 07:07:02.147050996 +0000 | size=1766 | sha16=607c00793a6ccf61
 states/reaction_live_outils_state.json | mtime=2026-05-05 07:07:02.148051003 +0000 | size=4552 | sha16=e30292a4aab14543
@@ -213,7 +214,7 @@ states/ricochet_label.json | mtime=2026-04-23 13:07:46.776587977 +0000 | size=47
 states/ricochet_state.json | mtime=2026-04-23 13:07:46.772587952 +0000 | size=102 | sha16=9df31dbcb6f712ae
 states/sentinelle_exchange_state.json | mtime=2026-04-22 23:19:31.854568423 +0000 | size=14680 | sha16=629b5cf54c2ab554
 states/sentinelle_state.json | mtime=2026-04-22 23:19:31.850568399 +0000 | size=457 | sha16=0179a2f8bf95d37b
-states/seragonedecisionstate.json | mtime=2026-05-11 23:38:01.608050061 +0000 | size=6661 | sha16=7e13d9f7f835a256
+states/seragonedecisionstate.json | mtime=2026-05-12 04:05:01.548374069 +0000 | size=6632 | sha16=69da2dbb1e17d596
 states/souffle_premier_air_state.json | mtime=2026-04-22 23:19:31.859568454 +0000 | size=320 | sha16=9cfed68f58802451
 states/subdaily_state.json | mtime=2026-04-22 23:19:31.874568545 +0000 | size=403 | sha16=5096a3b3fca992bb
 states/visibility_4_points_state.json | mtime=2026-04-26 10:45:59.708293945 +0000 | size=27230 | sha16=ded210551acb3c7c
@@ -221,25 +222,25 @@ states/visibility_cercle_recursif_state.json | mtime=2026-04-26 10:45:35.4981367
 states/visibility_filtre_R_state.json | mtime=2026-04-26 10:45:52.577247664 +0000 | size=5952 | sha16=b40ae2d1488c9ac5
 states/visibility_hybride_state.json | mtime=2026-04-26 10:45:43.745190313 +0000 | size=5210 | sha16=19910839c4b18bf8
 states/visibility_salle_des_possibles_state.json | mtime=2026-04-26 10:45:59.707293939 +0000 | size=6635 | sha16=2e4855b13ccc26b2
-subdaily_state.json | mtime=2026-05-11 23:35:04.138042210 +0000 | size=407 | sha16=2577f9b69e0486da
-tenue30mstate.json | mtime=2026-05-11 23:30:03.909342521 +0000 | size=403 | sha16=0094cec4bcd4c4c1
-tireur_5min_state.json | mtime=2026-05-11 23:35:04.240042788 +0000 | size=868 | sha16=e8aaf0709b274238
-tireur_minute_state.json | mtime=2026-05-11 23:38:00.325042769 +0000 | size=179 | sha16=8cff0385a6311414
+subdaily_state.json | mtime=2026-05-12 04:05:02.946381749 +0000 | size=406 | sha16=c721531c6a0c237f
+tenue30mstate.json | mtime=2026-05-12 04:00:03.995755098 +0000 | size=403 | sha16=0687577a34ca5641
+tireur_5min_state.json | mtime=2026-05-12 04:05:02.934381683 +0000 | size=98 | sha16=c0f437d4d50b1462
+tireur_minute_state.json | mtime=2026-05-11 23:59:30.906805514 +0000 | size=179 | sha16=06449932c5489fbd
 tireur_pulse_state.json | mtime=2026-04-21 20:21:28.784866164 +0000 | size=179 | sha16=28b96fd014a1265d
-tireurs_agilite_5m_state.json | mtime=2026-05-11 23:35:04.495044235 +0000 | size=1232 | sha16=3c2bd87b040797d7
-tireurs_minute_state.json | mtime=2026-05-11 23:38:02.297053977 +0000 | size=594 | sha16=58b5eac849f76fe6
+tireurs_agilite_5m_state.json | mtime=2026-05-12 04:05:02.977381919 +0000 | size=543 | sha16=d9de53fbfe215f13
+tireurs_minute_state.json | mtime=2026-05-12 04:05:03.354383991 +0000 | size=592 | sha16=7dfa3e0e6d12eb9a
 tireurs_state.json | mtime=2026-05-11 08:50:03.986801865 +0000 | size=1655 | sha16=20435f14d84b6d29
-vigie15mstate.json | mtime=2026-05-11 23:30:03.910342526 +0000 | size=403 | sha16=eb3f7efdcbe4fbca
-watchdog_state.json | mtime=2026-05-11 23:30:02.904336846 +0000 | size=188 | sha16=d9befcd7595653e4
+vigie15mstate.json | mtime=2026-05-12 04:00:04.061755453 +0000 | size=403 | sha16=5351f2ba988fbf6b
+watchdog_state.json | mtime=2026-05-12 04:00:03.114750361 +0000 | size=188 | sha16=a7fdd193af3a2555
 
 ```
 
 ## 5. Caches critiques
 ```
-cache_mondes_bear_v2.json | mtime=2026-04-22 18:26:15.404437831 +0000 | size=73583 | sha16=5f9fb67d54ddf1f7
+cache_mondes_bear_v2.json | mtime=2026-05-12 02:06:51.362161736 +0000 | size=73231 | sha16=762ee4e1fb2957a6
 cache_mondes_bull.json | mtime=2026-04-22 23:15:26.543082121 +0000 | size=74679 | sha16=e469ec4759a1c22f
 data/m2_bear_cache.json | mtime=2026-04-22 13:14:40.000000000 +0000 | size=82415 | sha16=2095eb859b4b5717
-mondes_paralleles_state.json | mtime=2026-05-11 23:37:37.583913528 +0000 | size=53547 | sha16=68dd3e173c2dbd3a
+mondes_paralleles_state.json | mtime=2026-05-12 04:03:14.361787010 +0000 | size=53527 | sha16=74f26daba7c1d558
 
 ```
 
@@ -335,32 +336,33 @@ SERAGONE=/home/ubuntu/seragone
 * * * * * cd /home/ubuntu/seragone && python3 demo/generator/decision_to_order.py >> logs/decision_to_order.log 2>&1
 * * * * * cd /home/ubuntu/seragone && python3 demo/prudence/prudence_demo_runner.py >> logs/prudence_demo_runner.log 2>&1
 15 * * * * cd /home/ubuntu/seragone && /usr/bin/python3 tools/seragone_one.py >> logs/seragone_one.log 2>&1
+5 4 * * * cd /home/ubuntu/seragone && bash SERAGONE_ONE_TOTAL.sh >> logs/seragone_one_total.log 2>&1
 ```
 
 ## 7. Timers systemd Séragone
 ```
-Mon 2026-05-11 23:38:09 UTC       9s Mon 2026-05-11 23:36:09 UTC     1min 50s ago seragone-mondes-paralleles.timer seragone-mondes-paralleles.service
-Mon 2026-05-11 23:46:01 UTC     8min Mon 2026-05-11 23:16:01 UTC        21min ago seragone-multivers.timer         seragone-multivers.service
+Tue 2026-05-12 04:16:04 UTC    11min Tue 2026-05-12 03:46:04 UTC        18min ago seragone-multivers.timer         seragone-multivers.service
+-                                  - Tue 2026-05-12 04:03:49 UTC     1min 14s ago seragone-mondes-paralleles.timer seragone-mondes-paralleles.service
 ```
 
 ## 8. Services systemd Séragone
 ```
-  seragone-1min.service                          loaded    active   running Séragone Collecteur 1min Binance BTCUSDT
-  seragone-api.service                           loaded    active   running Seragone API Service
-  seragone-brain.service                         loaded    active   running Seragone Brain (production)
-  seragone-brisance.service                      loaded    active   running Seragone Brisance (protection volatilité)
-  seragone-mondes-oneshot.service                loaded    active   running Seragone Mondes OneShot (communicants + autonomes, loop 60s)
-  seragone-mondes-paralleles.service             loaded    inactive dead    Seragone Mondes Paralleles Engine - oneshot via timer
-  seragone-multivers.service                     loaded    inactive dead    Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer
-  seragone-securite.service                      loaded    active   running Seragone Securite (barrière protection)
-  seragone-sentinelle.service                    loaded    active   running Seragone Sentinelle (veille comportementale)
+  seragone-1min.service                          loaded    active     running       Séragone Collecteur 1min Binance BTCUSDT
+  seragone-api.service                           loaded    active     running       Seragone API Service
+  seragone-brain.service                         loaded    active     running       Seragone Brain (production)
+  seragone-brisance.service                      loaded    active     running       Seragone Brisance (protection volatilité)
+  seragone-mondes-oneshot.service                loaded    active     running       Seragone Mondes OneShot (communicants + autonomes, loop 60s)
+  seragone-mondes-paralleles.service             loaded    activating start   start Seragone Mondes Paralleles Engine - oneshot via timer
+  seragone-multivers.service                     loaded    inactive   dead          Seragone Multivers V2 (191 mondes x 8 couches) - oneshot via timer
+  seragone-securite.service                      loaded    active     running       Seragone Securite (barrière protection)
+  seragone-sentinelle.service                    loaded    active     running       Seragone Sentinelle (veille comportementale)
 ```
 
 ## 9. Sentinelles / watchdogs vivants
 ```
 root          66  0.0  0.0      0     0 ?        S    Mar16   0:00 [watchdogd]
-ubuntu   2520605  0.0  0.2  23612 16000 ?        Ss   May09   0:51 /usr/bin/python3 /home/ubuntu/seragone/sentinelle_seragone.py
-ubuntu   2958885 99.9  2.1 618944 167776 pts/2   Rl   23:23  14:11 python3 -u m2_bear_engine_v2.py --rebuild
+ubuntu   2520605  0.0  0.2  23612 16000 ?        Ss   May09   0:56 /usr/bin/python3 /home/ubuntu/seragone/sentinelle_seragone.py
+ubuntu   3004636 97.1  1.0 324084 80932 ?        Rsl  04:03   1:13 /usr/bin/python3 /home/ubuntu/seragone/mondes_paralleles_engine.py
 ```
 Locks : -rw-r--r-- 1 ubuntu ubuntu 7 May  9 17:46 .securite.lock
 -rw-r--r-- 1 ubuntu ubuntu 7 May  9 17:46 .sentinelle.lock
@@ -661,6 +663,6 @@ Invariants 6x6 post-scellement final (immutables toute la session) :
 
 ---
 Fichiers annexes :
-- canon/SERAGONE_ONE_TOTAL_TREE.txt (14519 lignes)
+- canon/SERAGONE_ONE_TOTAL_TREE.txt (14779 lignes)
 - canon/SERAGONE_ONE_TOTAL_GIT.txt
 - canon/SERAGONE_ONE_TOTAL_HASH.txt

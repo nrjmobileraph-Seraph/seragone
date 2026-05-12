@@ -1,20 +1,20 @@
 {
-  "generated_at_utc": "2026-05-11T23:37:58Z",
-  "total_files": 25651,
+  "generated_at_utc": "2026-05-12T04:05:01Z",
+  "total_files": 25911,
   "total_size": "22G",
   "artifacts": {
     "md": {
       "path": "canon/SERAGONE_ONE_TOTAL.md",
-      "sha256": "63cb850ff28f74697938226b19aefc5c405656403617c2b25ec84b57c317564a",
-      "size": 53470
+      "sha256": "461423627117f1b7169f402a5b0289272846c039cda43944ca9d7717772191b8",
+      "size": 53991
     },
     "tree": {
       "path": "canon/SERAGONE_ONE_TOTAL_TREE.txt",
-      "sha256": "d907137f5e29efb67802d1bd8526734e2d8ab09e61f3aaa829ee00cf47dcbb29"
+      "sha256": "2eb0f8d74f10f64b2c5df000571c93a88acc60ec7e3011f3b244f91a3c035649"
     },
     "git": {
       "path": "canon/SERAGONE_ONE_TOTAL_GIT.txt",
-      "sha256": "62e163888c7e415f2c2372bf2fe5b60d5621162aa34ee5957eb2fa7c011a3a2a"
+      "sha256": "bdd79c889fbb3bf9b42aa3c53147806fd18a9cd1d46fed9d8a5926fdce85f2f3"
     }
   }
 }

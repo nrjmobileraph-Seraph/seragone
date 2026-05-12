@@ -1,6 +1,6 @@
 {
   "module": "pepite6_H_shannon",
-  "timestamp": "2026-05-11T08:50:03.808856+00:00",
+  "timestamp": "2026-05-12T08:50:03.292506+00:00",
   "version": "1.0.0",
   "mode": "OBSERVATOIRE_READONLY",
   "side_effect_safe": true,
@@ -17,24 +17,24 @@
   },
   "tire": false,
   "status": "SILENCE",
-  "raison": "H>=P75 et shannon<=P10 | H=0.1972 P75=0.3462690547119726 shannon=0.7757 P10=0.12096686345300448",
+  "raison": "H>=P75 et shannon<=P10 | H=0.3039 P75=0.3462690547119726 shannon=0.7497 P10=0.12096686345300448",
   "valeurs": {
-    "shannon": 0.7757,
-    "H": 0.1972
+    "H": 0.3039,
+    "shannon": 0.7497
   },
   "quantiles": {
-    "shannon_P25": 0.1912044722858638,
-    "shannon_P75": 0.3277817301764022,
-    "shannon_P90": 0.43849336141789313,
-    "shannon_P10": 0.12096686345300448,
     "H_P25": 0.185549246819823,
     "H_P75": 0.3462690547119726,
     "H_P90": 0.43497541431166653,
-    "H_P10": 0.12982799337216788
+    "H_P10": 0.12982799337216788,
+    "shannon_P25": 0.1912044722858638,
+    "shannon_P75": 0.3277817301764022,
+    "shannon_P90": 0.43849336141789313,
+    "shannon_P10": 0.12096686345300448
   },
   "sources_valeurs": {
-    "shannon": "today_state",
-    "H": "today_state"
+    "H": "today_state",
+    "shannon": "today_state"
   },
   "voix": null,
   "label": "SILENCE",

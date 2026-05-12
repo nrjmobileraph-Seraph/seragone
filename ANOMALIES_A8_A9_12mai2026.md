@@ -410,3 +410,125 @@ Document à compléter dans la session ouverture A10 (date à définir).
 **Méta-leçon (6e) gravée** : Sonde Porte 0 sur JSON doit énumérer TOUTES les clés présentes (`for k in dict.keys()`), pas interroger seulement les noms supposés via `.get()`. Sinon faux verdict "section vide".
 
 **Bilan session — 4 fausses alarmes confirmées** : A12-bis, Dette 2, A14, A10-squelettique. Toutes résolues par Porte 0 et/ou rollback. Aucun runtime touché à tort.
+
+---
+
+## Dette 1 (post-ACTE 31, 12 mai 11:33 CEST) — COMPORTEMENT NOMINAL confirmé
+
+**Méthode** : Sonde Porte 0 L.6 → L.11 (verbose -u, run manuel, lecture statedemo)
+
+**Découvertes** :
+- Les 3 scripts démo cron sont conçus SILENCIEUX (anti-flood doctrinal ATTESTATION_A7)
+- Run manuel verbose `-u` : exit 0, 0 output stdout/stderr
+- `statedemo.json` contient triple trace canonique fraîche 08:52→08:54 UTC :
+  * Decision : auto_a7_position_nette_short
+  * Order : AUTO_A7_20260512T085201 SHORT 0.001 BTC-USDT @ 80940.01
+  * Prudence : PASS checked
+  * Execution : DEMO_EXEC_7a7cb2e60f94 FILLED_DEMO
+- Pipeline 4 maillons opérationnel : Decision→Generator→Prudence→Broker en 121s
+- Cron 3 jobs `* * * * *` actifs (cron.service depuis 1m25j, ACTIVE)
+- Idempotence : tant que decision metier ne change pas, scripts exit early sans réécrire state
+
+**Verdict** : Dette 1 = 6e fausse alarme. Comportement nominal idempotent.
+
+**Méta-leçon (7e) gravée** : Pour pipeline idempotent anti-flood, ne pas mesurer vivacité par mtime fichiers. Lire le timestamp interne du state, qui révèle dernière exécution réelle indépendamment du mtime.
+
+**5 limites V1 mécaniquement observables dans statedemo.json** (préparation Mode démo V2) :
+1. symbol "BTC-USDT" hardcoded
+2. quantity 0.001 constante
+3. side direct (SHORT actuellement)
+4. pnl_demo 0.0 + cash_after_demo null (absent)
+5. Pas de champ reconciliation
+
+---
+
+## Dette 2 (post-ACTE 31, 12 mai 11:35 CEST) — FERMÉE source identifiée
+
+**Méthode** : Sonde D2.1 → D2.7 (systemd, cron, ps, grep writers)
+
+**Découvertes** :
+- `watchdog_state.json` mis à jour toutes les 10 min, mtime 09:30 UTC (4 min avant sonde)
+- Source : cron `*/10 * * * * cd /home/ubuntu/seragone && python3 watchdog_seragone.py >> logs/watchdog.log 2>&1`
+- 11 services systemd `seragone-*` actifs (brain, brisance, api, sentinelle, securite, paralleles timer, multivers timer, 1min, mondes-oneshot, etc.)
+- **PAS** de service systemd nommé `watchdog_seragone` (par design : c'est un cron)
+- `chef_dependency_manifest.py` ligne 99 : `"watchdog_state.json": "watchdog"` = simple clé de dict registre, PAS un writer
+- **Doctrine 9 RESPECTÉE** : 1 seul writer (`watchdog_seragone.py`), 1 manifeste documentaire
+
+**Verdict** : Dette 2 = 7e fausse alarme. Comportement nominal cron. Pas de service systemd attendu.
+
+**Méta-leçon (8e) gravée** : Un nom de state dans un fichier `manifest`/`registry` n'implique pas un writer. Vérifier le contexte (clé de dict vs `open()` write) avant de crier violation Doctrine 9.
+
+**Registre canonique enrichi** :
+- `watchdog_state.json` → writer = `watchdog_seragone.py` (cron `*/10`)
+- À ajouter dans `state_registry.json` section writers si pas encore présent
+
+---
+
+## Dette 3 (post-ACTE 31, 12 mai 11:38 CEST) — DÉCISION OPPOSABLE confirmée
+
+**Méthode** : Sonde D3.1 → D3.6 (find, grep, lecture canonique 2 docs perception)
+
+**Découvertes** :
+- 2 documents de décision gravés 11 mai dans `audit/decisions/` :
+  1. `DECISION_PERCEPTION_REPERTOIRE_4_STATUTS_2026-05-11.md` (20260511T064740Z)
+  2. `DECISION_NC_ENGINE_PERCEPTION_DEPRECATED_2026-05-11.md` (20260511T064347Z)
+- 8 fichiers `production/perception/` tous STATUÉS :
+  * STATUT A (5 fichiers orphelins chambre travail) : convergence.py, dimensions.py, range_engine.py, state_vector.py, strategie_range_complete.py
+  * STATUT B (1 fork expansif expérimental) : ricochet_regimes.py
+  * STATUT C (1 duplication cross-dossier volontaire) : vrais_yeux_stretched.py (perception + mondes byte-identique)
+  * STATUT D (1 fork régression neutralisé) : nc_engine.py.DEPRECATED_FORK_REGRESSION_2026-05-11
+- 0 référence "perception" dans `state_registry.json` (cohérent : orphelin canonique)
+- 0 process Python actif touche `production/perception/`
+- 0 entrée "perception" dans `canon/INDEX_CANON_SERAGONE.md` (mini-trou doctrinal, à graver session future)
+
+**Action canonique 12 mai** : AUCUNE (décision 11 mai opposable, conforme directive minimaliste session).
+
+**Verdict** : Dette 3 = 8e fausse alarme. Décision déjà gravée hier dans `audit/decisions/`. Ma recherche initiale à la racine était trop étroite.
+
+**Méta-leçon (9e) gravée** : Avant de crier "doc introuvable", chercher dans `audit/decisions/` ET sous-arbres. Les décisions canoniques de Séragone vivent dans cette arborescence, pas systématiquement à la racine.
+
+**Mini-dette future détectée (non bloquante)** :
+- `canon/INDEX_CANON_SERAGONE.md` n'indexe pas les 2 décisions perception/
+- À graver en session dédiée "indexation des décisions audit/decisions/"
+
+---
+
+## Dette 4 (post-ACTE 31, 12 mai 12:00 CEST) — FERMÉE à 80% (hygiène git massive)
+
+**Méthode** : Phases P1 → P3 mécaniques (archive externe + rm + .gitignore durci)
+
+### P1+P2 — Archive externe + rm AUDIT_CHRONO (9 Go libérés)
+- Archive `~/external_archives/AUDIT_CHRONO_20260501_archive_20260512T094723Z.tar.gz` (4.4 Go, 5603 fichiers)
+- sha256 archive : `0cc0052cae17da76bc06dd4049458f2bc7d848912f1eba0e1561117d062a6548`
+- Sources supprimées : AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/ (6.8 Go), _PARTS/ (2.3 Go), _LITE/ (1.5 Mo)
+- 2 tar.gz originaux 1er mai déplacés vers external_archives (cleanup racine)
+- Manifest joint pour récupération future
+- Hash global ACTE 28 (`63cb850ff28f7469`) reste preuve canonique
+
+### P3 — .gitignore durci (54 → 187 lignes)
+- Backup : `.gitignore.backup_pre_dette4_20260512T095831Z`
+- sha256 nouveau : `2935769e83c4d4f38435ad18fdf5c0d2013a7487a24a2e70ec3eef511e9e10e3`
+- Patterns ajoutés : backups horodatés, audits éphémères, DEMO logs lourds, PEPITES chambre travail, scripts 0[0-9]_*, déchets crash shell, etc.
+- Exception canonique préservée : audit/decisions/, audit/rapports/, audit/meta/, audit/packs/
+
+### Métriques avant/après
+- Fichiers `??` git : 1316 → **846** (-36%, -470 fichiers)
+- Fichiers `M` git : 38 → 40 (runtime tick normal)
+- Disque used : 63% → **51%** (-9 Go)
+- Seragone repo : 22 Go → **13 Go**
+
+### Architecture remote révélée (diagnostic divergence)
+- `origin/main` = canal "auto" (cron `* * * * * /tmp/push_bulletin.sh`, 7375 commits "auto")
+- `origin/canon` = canal canonique humain (dernier = ACTE 28 `413385cc` du 11 mai)
+- Local main = 13 commits ACTE 19-31 humains
+- ACTE 32 → push sur `origin/canon` (canal canonique cohérent)
+
+### Mini-dettes futures (non bloquantes)
+1. Raffinement `.gitignore` v2 pour passer de 846 → <100 fichiers `??` (session dédiée)
+2. Tri humain racine seragone : 483 `.py`, 108 `.json`, 50 docs canoniques à committer/ranger
+3. Indexation `audit/decisions/` dans `canon/INDEX_CANON_SERAGONE.md` (Dette 3 résiduelle)
+4. Bug pattern .gitignore : `.candidat` / `.validated` non happés (probable guillemet/espace)
+
+**Verdict** : Dette 4 = FERMÉE à 80%. Action mécanique majeure réussie. 9 Go libérés, hygiène git nettement améliorée.
+
+**Méta-leçon (10e) gravée** : Pour un repo avec divergence remote (canal auto + canal humain), pousser ACTE doctrinal sur le canal canonique (`origin/canon`), pas sur `origin/main`. Évite conflits massifs avec bot.

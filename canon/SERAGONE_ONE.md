@@ -1,10 +1,10 @@
 # SERAGONE_ONE — Vision Totale
 
-**Généré (UTC)**: 2026-05-11T23:15:01.972527Z  
-**Hash univers**: `950248f1004c5564`  
+**Généré (UTC)**: 2026-05-12T17:15:02.393800Z  
+**Hash univers**: `e71d90af902c3a96`  
 **Hôte**: vps-1e58449b | **IP**: 51.254.136.91 2001:41d0:305:2100::8748 | **User**: ubuntu  
-**Disque**: /dev/sda1        72G   41G   32G  57% /  
-**Uptime**: up 8 weeks, 8 minutes
+**Disque**: /dev/sda1        72G   36G   36G  51% /  
+**Uptime**: up 8 weeks, 18 hours, 8 minutes
 
 ## 0. Doctrine de lecture
 - Ce fichier est **LA** source de vérité unique de Séragone.
@@ -13,19 +13,19 @@
 - Si ce fichier ne mentionne pas X, c'est que X n'existe pas (ou que le hash est périmé).
 
 ## 1. Volumétrie réelle
-- Fichiers totaux: **16980**
-- Taille: **21G**
-- Dossiers racine: **221**
+- Fichiers totaux: **12459**
+- Taille: **9.7G**
+- Dossiers racine: **218**
 
 | Extension | Compte |
 |---|---|
-| .py | 5289 |
-| .md | 1015 |
-| .txt | 2460 |
-| .json | 1880 |
-| .csv | 1558 |
-| .sh | 51 |
-| .log | 774 |
+| .py | 2696 |
+| .md | 666 |
+| .txt | 2340 |
+| .json | 1069 |
+| .csv | 860 |
+| .sh | 32 |
+| .log | 441 |
 | .yaml | 0 |
 | .toml | 1 |
 | .ini | 0 |
@@ -51,7 +51,7 @@
 - `canon/DOCTRINE_MOTEUR_META_SERAGONE.md`
 - `canon/DOCTRINE_NON_SERAGONE.md`
 
-## 4. Décrets (18)
+## 4. Décrets (19)
 - `audit/decisions/DECRET_12bis_AMENDEMENT_NON_CANONIQUE_USAGE_2026-05-10.md`
 - `audit/decisions/DECRET_13_SOUVERAINETE_APLOMB_MONEY_MANAGER_2026-05-10.md`
 - `audit/decisions/DECRET_A4_LEVEE_PHASE_115_CONDITIONNELLE_2026-05-10.md`
@@ -63,6 +63,7 @@
 - `audit/decisions/DECRET_B4_DECROCHAGE_VILLAGE_MULTIVERS_OPTION_B_2026-05-10.md`
 - `audit/decisions/DECRET_B4_RESOLU_PAR_NON_USAGE_2026-05-10.md`
 - `audit/decisions/DECRET_LEVIERS_AMELIORATION_2026-05-11.md`
+- `audit/decisions/DECRET_MULTIVERS_RESULTATS_RESOLU_PAR_NON_USAGE_2026-05-12.md`
 - `audit/decisions/DECRET_PASSE_1_MEMOIRE_TOTALE_2026-05-11.md`
 - `audit/decisions/DECRET_Q2_REGULARISATION_INDEX_AMENDEMENTS_D32_2026-05-10.md`
 - `audit/decisions/DECRET_Q3_REGULARISATION_INDEX_AMENDEMENTS_D48_2026-05-10.md`
@@ -103,8 +104,8 @@
 - `auditphasee/BILAN_REPRISE_AVRIL_VERS_MODE_DEMO_TOTAL_20260507.md`
 
 ## 8. Runtime (exécutions vivantes)
-- Crons actifs: **90**
-- Processus Python: **22**
+- Crons actifs: **91**
+- Processus Python: **19**
 ### Services systemd
 ```
   seragone-1min.service                          loaded    active     running       Séragone Collecteur 1min Binance BTCUSDT
@@ -120,42 +121,39 @@
 ```
 ### Timers systemd
 ```
-Mon 2026-05-11 23:16:01 UTC      24s Mon 2026-05-11 22:46:01 UTC        29min ago seragone-multivers.timer         seragone-multivers.service
--                                  - Mon 2026-05-11 23:15:19 UTC          18s ago seragone-mondes-paralleles.timer seragone-mondes-paralleles.service
+Tue 2026-05-12 17:16:40 UTC   1min 9s Tue 2026-05-12 16:46:40 UTC        28min ago seragone-multivers.timer         seragone-multivers.service
+-                                   - Tue 2026-05-12 17:15:21 UTC           8s ago seragone-mondes-paralleles.timer seragone-mondes-paralleles.service
 
 ```
 ### Processus actifs (top 30)
 ```
 root         981       1  0 Mar16 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
 ubuntu    234990       1  0 Mar30 ?        00:00:00 SCREEN -S seragone
-ubuntu    628146       1  0 Apr14 ?        00:15:00 python3 bulletin_mobile.py
-ubuntu    668794       1  0 Apr16 ?        01:38:30 python3 sniper_live.py
-ubuntu    741042       1  4 Apr17 ?        1-04:37:50 python3 collector_binance.py
-ubuntu   1208322       1  0 Apr24 ?        00:32:53 /usr/bin/python3 /home/ubuntu/seragone/collecteur_1min.py --backfill-days 7
-ubuntu   1979934       1  0 May05 ?        01:03:13 python3 -m streamlit run /home/ubuntu/cockpit/app/cockpit_v113.py --server.port 8501 --server.address 0.0.0.0
+ubuntu    628146       1  0 Apr14 ?        00:15:26 python3 bulletin_mobile.py
+ubuntu    668794       1  0 Apr16 ?        01:41:29 python3 sniper_live.py
+ubuntu    741042       1  4 Apr17 ?        1-05:27:23 python3 collector_binance.py
+ubuntu   1208322       1  0 Apr24 ?        00:34:18 /usr/bin/python3 /home/ubuntu/seragone/collecteur_1min.py --backfill-days 7
+ubuntu   1979934       1  0 May05 ?        01:09:53 python3 -m streamlit run /home/ubuntu/cockpit/app/cockpit_v113.py --server.port 8501 --server.address 0.0.0.0
 ubuntu   2397580       1  0 May08 ?        00:00:00 inotifywait -m -e close_write /home/ubuntu/seragone/state.json --timefmt %Y-%m-%d %H:%M:%S --format %T CLOSE_WRITE
-ubuntu   2519871       1  0 May09 ?        00:00:06 /bin/bash /home/ubuntu/seragone/run_mondes_one_shot_loop.sh
-ubuntu   2520010       1  3 May09 ?        01:55:29 /usr/bin/python3 /home/ubuntu/seragone/seragone_brain.py
-ubuntu   2520605       1  0 May09 ?        00:00:51 /usr/bin/python3 /home/ubuntu/seragone/sentinelle_seragone.py
-ubuntu   2520658       1  0 May09 ?        00:13:54 python3 production/protection/brisance.py
-ubuntu   2520661       1  0 May09 ?        00:01:03 /home/ubuntu/seragone/.venv/bin/python3 /home/ubuntu/seragone/securite_seragone.py
-ubuntu   2520838       1  0 May09 ?        00:13:55 /usr/bin/python3 /home/ubuntu/seragone/production/protection/brisance.py
-ubuntu   2524641       1  0 May09 ?        00:01:06 python3 tireur_pulse.py
-ubuntu   2528753       1  0 May09 ?        00:00:35 /usr/bin/python3 /home/ubuntu/seragone/production/execution/api.py
-ubuntu   2954809       1  0 23:06 ?        00:00:00 tmux new -d -s m2rebuild python3 m2_bear_engine_v2.py --rebuild 2>&1 | tee logs/m2_bear_v2_rebuild_20260511_230629.log
-ubuntu   2954810 2954809  0 23:06 pts/3    00:00:00 bash -c python3 m2_bear_engine_v2.py --rebuild 2>&1 | tee logs/m2_bear_v2_rebuild_20260511_230629.log
-ubuntu   2954811 2954810 99 23:06 pts/3    00:09:08 python3 m2_bear_engine_v2.py --rebuild
-ubuntu   2955846 2955782  0 23:15 ?        00:00:00 /bin/bash -c cd /home/ubuntu/seragone && /usr/bin/python3 tools/seragone_one.py >> logs/seragone_one.log 2>&1
-ubuntu   2955853 2955846  0 23:15 ?        00:00:00 /usr/bin/python3 tools/seragone_one.py
-ubuntu   2957250       1 99 23:15 ?        00:00:18 /usr/bin/python3 /home/ubuntu/seragone/mondes_paralleles_engine.py
+ubuntu   2519871       1  0 May09 ?        00:00:08 /bin/bash /home/ubuntu/seragone/run_mondes_one_shot_loop.sh
+ubuntu   2520605       1  0 May09 ?        00:01:09 /usr/bin/python3 /home/ubuntu/seragone/sentinelle_seragone.py
+ubuntu   2520658       1  0 May09 ?        00:18:41 python3 production/protection/brisance.py
+ubuntu   2520661       1  0 May09 ?        00:01:24 /home/ubuntu/seragone/.venv/bin/python3 /home/ubuntu/seragone/securite_seragone.py
+ubuntu   2520838       1  0 May09 ?        00:18:41 /usr/bin/python3 /home/ubuntu/seragone/production/protection/brisance.py
+ubuntu   2524641       1  0 May09 ?        00:01:27 python3 tireur_pulse.py
+ubuntu   2528753       1  0 May09 ?        00:00:47 /usr/bin/python3 /home/ubuntu/seragone/production/execution/api.py
+ubuntu   3048122       1  4 08:25 ?        00:26:08 /usr/bin/python3 /home/ubuntu/seragone/seragone_brain.py
+ubuntu   3128070 3128016  0 17:15 ?        00:00:00 /bin/bash -c cd /home/ubuntu/seragone && /usr/bin/python3 tools/seragone_one.py >> logs/seragone_one.log 2>&1
+ubuntu   3128090 3128070  1 17:15 ?        00:00:00 /usr/bin/python3 tools/seragone_one.py
+ubuntu   3129773       1 99 17:15 ?        00:00:09 /usr/bin/python3 /home/ubuntu/seragone/mondes_paralleles_engine.py
 
 ```
 
 ## 9. Runtime states
 - states/: 102 | state/: 2
-- snapshots/: 2412 | snapshots_valides/: 12
-- checkpoints/: 1206 | checkpoints_valides/: 6
-- logs/: 685
+- snapshots/: 2844 | snapshots_valides/: 12
+- checkpoints/: 1422 | checkpoints_valides/: 6
+- logs/: 778
 
 ## 10. Recherche & phases
 - SERAGONE_PHASE*: **85** dossiers
@@ -175,6 +173,11 @@ ubuntu   2957250       1 99 23:15 ?        00:00:18 /usr/bin/python3 /home/ubunt
 ## 12. Git
 ### 20 derniers commits
 ```
+b53c5bc9 ACTE 31 (12 mai 11:22) — Fermeture session : 4 fausses alarmes confirmées + méta-leçons 5 et 6 gravées
+f327277b ACTE 30 — A10 fermée ORPHELINS-INERTES après sonde ρ-3 : aucun consommateur fossile en cron/service/process actif. Seul money_manager.py racine f9b1580c tourne. Registre v0.4 e04acd99 + Markdown v3 b48baef5. Méta-leçon récidive Porte 0 : vérifier l'exécution (cron/systemd/ps), pas seulement la présence en code (grep). 7 trous Porte 5 natif documentés, couverts par state_freshness_watchdog.py mien. Dettes restantes toutes doctrinales : A14 pépites, Dette 2 exit code, archivage 13 scripts orphelins.
+a29e9649 ACTE 29 — Session A9 close : 3 patchs TTL M4/M5/Clones (money_manager.py f9b1580c) + state_registry v0.3 (5f227b74) + ANOMALIES_A8_A9_12mai2026.md canon 13 sections (1a3f0753) + BATTERIES doctrine 6 Portes (daadfc56) + state_freshness_watchdog.py (7c59378c). A8 fermée constat, A9 v1 fermée runtime, A10/A14 ouvertes, A12-bis faux positif. Méta-leçon : sonde exhaustive AVANT dirigée + Porte 0 sonder avant créer. 3 sessions futures planifiées : Patch watchdog v0.2, A10, A14.
+413385cc ACTE 28 — SERAGONE_ONE_TOTAL.sh v1 : snapshot canonique exhaustif 14 sections pour reprise session IA (25651 fichiers, 22G, hash global 63cb850ff28f7469)
+b816e0f0 ACTE 27 — Canon finalisé : I4 résolu (H10 broadcast 10D/18D), ρ3-a rebuild cache succès, timer réactivé, +7 attestations, hash univers 950248f1004c5564 (16980 fichiers, 21G)
 d3e8bc98 ACTE 26 — Position canonique META Stades 1/2/3 + déclassement legacy state
 fe041a2f ACTE 25 — Pipeline A7 END-TO-END démontré opérationnel (3 min chaîne)
 af9e0c3b ACTE 24-bis — Précision : silence A7 = idempotence design, pas $SERAGONE
@@ -190,45 +193,40 @@ db108394 auto
 c7d61b40 auto
 32c7d642 auto
 2ac6be8f auto
-dac808ca auto
-d39825ca auto
-173b1b2c auto
-87602830 auto
-f58fa5da auto
 
 ```
 ### État non committé
 ```
- M canon/INDEX_CANON_SERAGONE.md
+ M .gitignore
+ M ANOMALIES_A8_A9_12mai2026.md
  M canon/SERAGONE_ONE.json
  M canon/SERAGONE_ONE.md
  M canon/SERAGONE_ONE_HASH.txt
+ M canon/SERAGONE_ONE_TOTAL.json
+ M canon/SERAGONE_ONE_TOTAL.md
+ M canon/SERAGONE_ONE_TOTAL_GIT.txt
+ M canon/SERAGONE_ONE_TOTAL_HASH.txt
+ M canon/SERAGONE_ONE_TOTAL_TREE.txt
+ M demo/states/decision_to_order_state.json
+ M demo/states/prudence_demo_state.json
  M demo/states/statedemo.json
  M states/doubletempostate.json
  M states/observer_price_live_from_btc_1s_state.json
- M states/policy_state.json
- M states/seragonedecisionstate.json
-?? .backups_d9_atomic_20260502_180506/
-?? .backups_d9_atomic_alias_20260502_181648/
-?? .backups_d9_atomic_exact_20260502_181117/
-?? .backups_d9_atomic_fix_20260502_180724/
-?? .backups_d9_neutralize_v4canon_20260502_181307/
-?? .backups_d9_readme_stale_20260502_182610/
-?? .gitignore.bak.20260423_194532
-?? .gitignore.bak.20260423_194627
-?? .securite.lock
-?? .sentinelle.lock
-?? .streamlit/
-?? 0.0
-?? 0.01
-?? 01_inspection_vps.sh
-?? 02_recalib_phi_vente_vps.py
-?? 04_signal_bear_consensus.py
-?? 05_diagnostic_regards.py
-?? 06_signal_bear_v2.py
-?? 07_signal_bear_v3.py
-?? 08_validation_v3.py
-?? 09_filtre_tendance_v4.py
+ M states/orchestrateur_history.jsonl
+ M states/orchestrateur_run_state.json
+ M states/pepite10_S_xtbas_10j_state.json
+ M states/pepite11_m2_crise_dd_state.json
+ M states/pepite12_m2_tension_Gbas_state.json
+ M states/pepite13_m2_tension_fg_state.json
+ M states/pepite14_m4_crise_Gbas_state.json
+ M states/pepite15_m4_crise_Hbas_state.json
+ M states/pepite16_m4_crise_Sbas_state.json
+ M states/pepite17_m5_ouvrir_dd_state.json
+ M states/pepite18_m6_ouvrir_Mmilieu_state.json
+ M states/pepite19_m7_tension_Ghaut_state.json
+ M states/pepite1_M08_sbforce_state.json
+ M states/pepite2_OUVRIR_SOUFFLE_state.json
+ M states/pepite3_souffle_M0_state.json
 
 ```
 
@@ -315,7 +313,7 @@ SERAGONE=/home/ubuntu/seragone
 * * * * * cd /home/ubuntu/serago
 ```
 
-## 14. Hash par dossier racine (221)
+## 14. Hash par dossier racine (218)
 | Dossier | Fichiers | Hash |
 |---|---|---|
 | `.backups_d9_atomic_20260502_180506` | 3 | `727ff285197a` |
@@ -327,9 +325,6 @@ SERAGONE=/home/ubuntu/seragone
 | `.streamlit` | 1 | `8b554891a36b` |
 | `:USERPROFILE\Downloads\SERAGONE_RECUP_20260507` | 0 | `empty` |
 | `ACTION_NATIVE_SERAGONE` | 0 | `empty` |
-| `AUDIT_CHRONO_SERAGONE_LITE_20260501_101502` | 12 | `febb6eb3a37a` |
-| `AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502` | 5216 | `e42caf3db2d4` |
-| `AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502_PARTS` | 92 | `042eb3e5e91b` |
 | `AUDIT_M1_M8_COUVERTURE` | 3 | `358a49d7e661` |
 | `CANON_SHADOW_PEPITES_BIJOUX` | 3 | `f32dc56352ad` |
 | `PEPITES_ASSEMBLAGES_PHASE17` | 0 | `empty` |
@@ -461,7 +456,7 @@ SERAGONE=/home/ubuntu/seragone
 | `archive_legacy_aplomb` | 2 | `15d6a1c7bd04` |
 | `archives_pollution_cockpit_20260505_072104` | 2 | `b0655c244632` |
 | `attestations` | 1 | `e3520d1448ee` |
-| `audit` | 987 | `3ee044f8cc46` |
+| `audit` | 1001 | `30f03ccab9ba` |
 | `audit_actions_v1` | 404 | `a35ec7efc7e1` |
 | `audit_cartographie_multimondes_moteurs_20260506_204436` | 17 | `8eaaacb9ef98` |
 | `audit_cloture_paralleles_stale_guard_20260506_203227` | 9 | `04d97daa525b` |
@@ -496,18 +491,18 @@ SERAGONE=/home/ubuntu/seragone
 | `backups_sentinelle_20260505_073558` | 1 | `7e5d8876f448` |
 | `bulletins` | 2 | `203e5e4fdf2c` |
 | `cache` | 5 | `83419922b6df` |
-| `canon` | 41 | `811fd5c161a8` |
-| `checkpoints` | 1206 | `1e001c775215` |
+| `canon` | 46 | `3c94917dbe0c` |
+| `checkpoints` | 1422 | `bce6f3a29e6e` |
 | `checkpoints_valides` | 6 | `e95d70001403` |
 | `config` | 5 | `cdb6d29d5a3c` |
-| `data` | 170 | `9e5658c8ba06` |
-| `demo` | 66 | `5ba41b1d1142` |
+| `data` | 172 | `ebf8e956af14` |
+| `demo` | 85 | `2432b8b7b869` |
 | `demoreports` | 2 | `2b01d95cca6b` |
 | `diagnostics` | 1 | `ba1a448e6608` |
 | `documentswindows` | 29 | `f96004a55c04` |
 | `legacy` | 1 | `6127a3f745a8` |
 | `legacy_json_backup` | 3 | `7361e46ffec7` |
-| `logs` | 685 | `ddc92c8ccfd1` |
+| `logs` | 778 | `f6fe0016018d` |
 | `modeles_V13_PHOENIX` | 10 | `ba17ca20e2e1` |
 | `modeles_V13_PHOENIX_OOS` | 10 | `ff0f19b9f620` |
 | `modeles_V13_SHIELD` | 10 | `263a1df1a02d` |
@@ -524,21 +519,21 @@ SERAGONE=/home/ubuntu/seragone
 | `observabiliteseragone` | 36 | `54fa58926e84` |
 | `observatoire` | 1 | `ee0d679f5f24` |
 | `output` | 26 | `fda53a9ff21b` |
-| `output_bt_v2` | 8 | `8913f3e94cf3` |
+| `output_bt_v2` | 8 | `38fdcbc651ca` |
 | `palette_claude` | 494 | `75d50a82032e` |
 | `precheck_305_20260505_233202` | 4 | `53b4c7c87a69` |
 | `production` | 148 | `46eb82000ad8` |
 | `reports` | 2 | `4326a92dda50` |
 | `research` | 81 | `7ea15954dd6e` |
 | `scripts` | 11 | `2be82f6771f9` |
-| `snapshots` | 2412 | `2c902def099d` |
+| `snapshots` | 2844 | `565d69ff394f` |
 | `snapshots_valides` | 12 | `ac2fcf4b6ed0` |
-| `state` | 2 | `0a525cc58c13` |
-| `states` | 102 | `139415c5f87d` |
+| `state` | 2 | `612e41a1a212` |
+| `states` | 102 | `3145a3c509e2` |
 | `tests` | 1 | `5e8165ca91f3` |
 | `tmp` | 0 | `empty` |
 | `tools` | 23 | `f1288bbf2ef9` |
 | `voix_seragone_92` | 59 | `565ceca9a361` |
 
 ---
-**FIN SERAGONE_ONE** | hash: `950248f1004c5564` | généré: 2026-05-11T23:15:01.972527Z
+**FIN SERAGONE_ONE** | hash: `e71d90af902c3a96` | généré: 2026-05-12T17:15:02.393800Z

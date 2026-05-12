@@ -1,6 +1,6 @@
 {
   "module": "pepites_tier1_synthese",
-  "timestamp": "2026-05-11T08:49:02.240078+00:00",
+  "timestamp": "2026-05-12T08:49:01.476021+00:00",
   "version": "1.0.0",
   "mode": "OBSERVATOIRE_ADAPTER",
   "states_lus": 5,
@@ -23,7 +23,7 @@
       "tire": false,
       "label": "SILENCE",
       "voix": "pepite1_M08_sbforce",
-      "raison": "dd_30=-1.8% (need ≤ -12) ; force=correcte (score=0.50, need < 0.3)"
+      "raison": "dd_30=-1.7% (need ≤ -12) ; force=correcte (score=0.50, need < 0.3)"
     },
     {
       "module": "pepite2_OUVRIR_SOUFFLE",
@@ -39,7 +39,7 @@
       "tire": false,
       "label": "SILENCE",
       "voix": "pepite3_souffle_M0",
-      "raison": "souffle_bas=False (aucune voie souffle_bas), M0=ATTENDRE"
+      "raison": "souffle_bas=False (aucune voie souffle_bas), M0=RETRECIR"
     },
     {
       "module": "pepite4_L3_mom_haut",
@@ -55,7 +55,7 @@
       "tire": true,
       "label": "ATTESTE_SHORT",
       "voix": "pepite5_L5L7_SHORT",
-      "raison": "L5_mom=0.345≤0.35 ET L7_vol=0.400≤0.4 → SHORT 20j"
+      "raison": "L5_mom=0.295≤0.35 ET L7_vol=0.400≤0.4 → SHORT 20j"
     }
   ],
   "regle_short": "Pépite 5 exclue du BULL ; utilisable côté permission SHORT, Ours_v2 ou alerte sortie."

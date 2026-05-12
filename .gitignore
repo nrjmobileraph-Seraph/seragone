@@ -1,13 +1,18 @@
+# ============================================================
+# .gitignore SERAGONE — durci ACTE 32 (12 mai 2026, Dette 4)
+# Backup pré-durcissement : .gitignore.backup_pre_dette4_20260512T095831Z
+# ============================================================
+
+# --- ORIGINAL (préservé) ---
 __pycache__/
 *.pyc
 .venv/
 .env
-# Gros binaires et DB non versionnés (listés dans le manifest)
 data/klines_1min.db
 data/*.tar
 data/*.tar.*
 
-# === Racine projet non triée — ne PAS versionner avant rangement ===
+# === Racine projet non triée ===
 /_archives_windows_2026-04-19/
 /backups/
 /logs/
@@ -37,18 +42,146 @@ brain_log.txt
 *.tar.gz
 /seragone_donnees_manquantes.tar.gz
 /seragone_onchain_pack.tar.gz
-# CSV racine (hors data/) non canonisés
-/btc_*.csv
-/eth_daily.csv
-/sp500_daily.csv
-/M2SL.csv
-/dxy_daily.csv
-/funding_rate_btc.csv
-/historique_27eq.csv
-/modules_historique_complet.csv
-/couches_123_daily.csv
-/seragone_v3_final.csv
-/seragone_4117j_complet.csv
-/sous_signaux_18_complet.csv
-/village_final_resultats.csv
-/bloc1_daily_log.csv
+
+# ============================================================
+# === AJOUTS ACTE 32 — Dette 4 hygiène git ===
+# ============================================================
+
+# --- Backups horodatés in-place ---
+*.backup_*
+*.before_*
+*.bak.*
+*.bak_pre_*
+*.candidat
+*.validated
+.gitignore.bak.*
+
+# --- Backups doctrine 9 ---
+.backups_d9_*/
+.backups_*_2026*/
+
+# --- AUDIT_CHRONO archivés externes ---
+/AUDIT_CHRONO_*/
+/AUDIT_CHRONO_*.tar.gz
+/AUDIT_M1_M8_COUVERTURE/
+/AUDIT_SECURITE_*.txt
+/AUDIT_CIBLE_*.md
+/audit_*/
+/audit_commit_paralleles_*/
+/audit_patch_paralleles_*/
+/audit_cartographie_*/
+/audit_cloture_*/
+/audit_push_paralleles_*/
+/audit_rebase_paralleles_*/
+/auditactionsv1/
+
+# --- audit/* sauf canoniques ---
+audit/*
+!audit/decisions/
+!audit/decisions/**
+!audit/rapports/
+!audit/rapports/**
+!audit/meta/
+!audit/meta/**
+!audit/packs/
+!audit/packs/**
+
+# --- canon/* backups ---
+canon/*.backup_*
+canon/*.before_*
+
+# --- DEMO logs lourds ---
+/DEMO_SECURITY_FILTERED_*.txt
+/DEMO_LAST_GATE_*.txt
+/DEMO_PREFLIGHT_*.txt
+/DEMO_SECURITY_FILTERED_*.txt.sha256
+/DEMO_LAST_GATE_*.txt.sha256
+/DEMO_PREFLIGHT_*.txt.sha256
+/GO_DEMO_*.md
+/GO_DEMO_*.md.sha256
+/VERDICT_BOITE_NOIRE_*.md
+/VERDICT_BOITE_NOIRE_*.md.sha256
+
+# --- Checkpoints et recovery ---
+/checkpoint_*.tar.gz
+/checkpoint_*.tar.gz.sha256
+/checkpoint_*.txt
+/checkpoint_*.txt.sha256
+/RECUP_*.tar.gz.sha256
+/RECUP_*.sha256
+/RECUP_*/
+
+# --- CRON backups ---
+/CRON_MAITRE*.backup_*
+/CRON_MAITRE*.before_*
+/CRON_PEPITES_*.addon
+/CRONMAITRE.cron.backup_*
+/CRON_BACKUP_*.txt
+/backup_crontab_*.txt
+/backups_crontab_*.txt
+
+# --- Sessions et rapports ponctuels ---
+/RAPPORT_PALIER_*.md
+/RAPPORT_PALIER_*.md.sha256
+/RAPPORT_TRAVAUX_*.md
+/RAPPORT_TRAVAUX_*.md.sha256
+/RAPPORT_PHASE*.md
+/REPRISE_*.md
+/REPRISE_*.md.sha256
+/JOURNAL_RECUP_*.md
+/JOURNAL_RECUP_*.md.sha256
+/JOURNAL_*.md
+/HANDOFF_*.md
+/HEALTH_WARN_*.md
+/SERAGONE_DEMO_READINESS_*.tar.gz.sha256
+/SERAGONE_DEMO_READINESS_*.txt
+/SERAGONE_DEMO_READINESS_*.txt.sha256
+
+# --- PEPITES_ASSEMBLAGES (chambre travail) ---
+/PEPITES_ASSEMBLAGES_PHASE*/
+/CANON_SHADOW_PEPITES_BIJOUX/
+/SERAGONE_PHASE*/
+/SERAGONE_SHADOW_LOGS/
+/SERAGONE_NATIVE_OUT/
+
+# --- SERAGONE_* audits ponctuels ---
+/SERAGONE_AUDIT_*.md
+/SERAGONE_UNIVERS_PHASE*/
+
+# --- Outputs résultats ---
+/output/
+
+# --- Streamlit cache ---
+/.streamlit/
+
+# --- Locks runtime ---
+/.securite.lock
+/.sentinelle.lock
+
+# --- Q_MONDES bruits ---
+/QMONDESDOCXPIVOTSTXT.zip
+/Q_MONDES_DOCX_PIVOTS_TXT.zip
+
+# --- Fichiers déchet crash shell ---
+/0,
+/=
+/^C
+/20%
+
+# --- Scripts numérotés exploration (0/1/2_*) ---
+/0[0-9]_*.py
+/0[0-9]_*.sh
+/1[0-9]_*.py
+/1[0-9]_*.sh
+/2[0-9]_*.py
+/2[0-9]_*.sh
+
+# --- Latest audit pointers ---
+/latest_audit_*.sha256
+/latest_audit_*.txt
+/latestaudit*.sha256
+/latestaudit*.txt
+
+# --- Misc ---
+/_documents_windows_downloads_docx_pivots_txt/
+/_vision_totale/

@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-05-11T21:08:01+00:00",
+  "timestamp_utc": "2026-05-12T17:59:01+00:00",
   "module": "seragone_fusion_aval",
   "version": "1.0-decision-bus-canon",
   "source_files": {
@@ -7,43 +7,43 @@
       "path": "state.json",
       "exists": true,
       "json_ok": true,
-      "age_seconds": 59.513,
-      "mtime_epoch": 1778533621.9810479
+      "age_seconds": 59.063,
+      "mtime_epoch": 1778608682.6096663
     },
     "moneymanager": {
       "path": "money_manager_state.json",
       "exists": true,
       "json_ok": true,
-      "age_seconds": 59.998,
-      "mtime_epoch": 1778533621.4960446
+      "age_seconds": 59.408,
+      "mtime_epoch": 1778608682.2646637
     },
     "aplomb": {
       "path": "aplombstate.json",
       "exists": true,
       "json_ok": true,
-      "age_seconds": 179.307,
-      "mtime_epoch": 1778533502.188265
+      "age_seconds": 240.05,
+      "mtime_epoch": 1778608501.6332526
     },
     "brisance": {
       "path": "brisance_state.json",
       "exists": true,
       "json_ok": true,
-      "age_seconds": 4.485,
-      "mtime_epoch": 1778533677.0104058
+      "age_seconds": 4.597,
+      "mtime_epoch": 1778608737.0860708
     },
     "prudence": {
       "path": "state/prudence_state.json",
       "exists": true,
       "json_ok": true,
-      "age_seconds": 46738.179,
-      "mtime_epoch": 1778486943.315972
+      "age_seconds": 35398.261,
+      "mtime_epoch": 1778573343.4227421
     },
     "health": {
       "path": "seragone_demo_health_state.json",
       "exists": true,
       "json_ok": true,
-      "age_seconds": 179.349,
-      "mtime_epoch": 1778533502.1462648
+      "age_seconds": 240.178,
+      "mtime_epoch": 1778608501.5062516
     }
   },
   "chef": {
@@ -70,10 +70,10 @@
     "moneymanager": {
       "mode": "OBSERVATOIRE",
       "capital_total_eur": 35000.0,
-      "exposition_eur": -3500.0,
+      "exposition_eur": -4592.0,
       "position_nette": {
-        "avant_gardes": -0.1,
-        "finale": -0.1,
+        "avant_gardes": -0.1312,
+        "finale": -0.1312,
         "direction": "SHORT",
         "tireurs_alignes": 1
       },
@@ -83,7 +83,7 @@
         "etincelle_horloge": "HABITABLE",
         "etincelle_veto": false,
         "brisance_active": false,
-        "sous_ma200": false
+        "sous_ma200": true
       },
       "gardes_fous_alerts": [
         {
@@ -158,13 +158,13 @@
           "book": "RESERVE"
         },
         {
-          "nom": "M4_Short_Tactique",
+          "nom": "Auto_Anti-V",
           "direction": "SHORT",
-          "intensite": 0.1,
-          "allocation_eur": 3500.0,
+          "intensite": 0.1312,
+          "allocation_eur": 4592.0,
           "multiplicateur_aplomb": 1.0,
-          "position_signee": -0.1,
-          "book": "TACT"
+          "position_signee": -0.1312,
+          "book": "STRAT"
         }
       ],
       "couches_eur": {
@@ -174,10 +174,10 @@
         "RESERVE": 1750.0
       },
       "compensation_books": {
-        "strat_brut": 0.0,
-        "tact_brut": -0.1,
-        "strat_final": 0.0,
-        "tact_final": -0.1,
+        "strat_brut": -0.1312,
+        "tact_brut": 0.0,
+        "strat_final": -0.1312,
+        "tact_final": 0.0,
         "compensation_appliquee": false
       },
       "double_tempo": {
@@ -188,13 +188,13 @@
     },
     "brisance": {
       "etat": "RAS",
-      "r1min_pct": 0.0,
-      "r5min_pct": -0.056,
-      "prix": 81800.01,
+      "r1min_pct": -0.024,
+      "r5min_pct": -0.051,
+      "prix": 80506.01,
       "phase": "scan",
       "rachat_prevu": null,
-      "funding_rate": 4.555e-05,
-      "timestamp": "2026-05-11 21:07:57",
+      "funding_rate": 5.822e-05,
+      "timestamp": "2026-05-12 17:58:57",
       "dry_run": true
     },
     "prudence": {
@@ -203,7 +203,7 @@
       "zone_min": 55,
       "zone_max": 65,
       "raison": "hors zone grégaire",
-      "timestamp": "2026-05-11T08:09:03.316665"
+      "timestamp": "2026-05-12T08:09:03.423048"
     },
     "health": {
       "verdict": "WARN",
@@ -211,9 +211,8 @@
       "alerts": [
         {
           "level": "WARN",
-          "module": "m2_v2",
-          "message": "state_age_gt_48h",
-          "age_hours": 96.864
+          "module": "paralleles",
+          "message": "schema_compat_absent"
         },
         {
           "level": "WARN",
@@ -239,9 +238,9 @@
   },
   "decision": {
     "direction": "SHORT",
-    "target_position": -0.1,
-    "target_abs": 0.1,
-    "exposition_eur": -3500.0,
+    "target_position": -0.1312,
+    "target_abs": 0.1312,
+    "exposition_eur": -4592.0,
     "reason": "MONEYMANAGER_APLOMB_ALIGNES",
     "money_manager_is_sovereign": true,
     "chef_native_remains_observed": true

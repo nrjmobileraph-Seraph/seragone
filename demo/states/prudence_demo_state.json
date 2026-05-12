@@ -1,10 +1,10 @@
 {
   "mode": "MODE_DEMO_TOTAL",
-  "timestamp": "2026-05-11T20:56:01.685817+00:00",
-  "last_order_id": "AUTO_A7_20260511T205502",
+  "timestamp": "2026-05-12T16:02:01.538313+00:00",
+  "last_order_id": "AUTO_A7_20260512T160201",
   "last_status": "PASS",
   "last_reason": null,
-  "last_output": "/home/ubuntu/seragone/demo/orders/validated/AUTO_A7_20260511T205502.json",
+  "last_output": "/home/ubuntu/seragone/demo/orders/validated/AUTO_A7_20260512T160201.json",
   "real_finance_allowed": false,
   "real_finance_used": false
 }

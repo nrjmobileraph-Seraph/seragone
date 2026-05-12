@@ -1,6 +1,6 @@
 {
   "module": "pepite5_short_guard",
-  "timestamp": "2026-05-11T08:49:02.240078+00:00",
+  "timestamp": "2026-05-12T08:49:01.476021+00:00",
   "version": "1.0.0",
   "source": "states/pepite5_L5_L7_SHORT_state.json",
   "mode": "OBSERVATOIRE_ADAPTER",
@@ -10,6 +10,6 @@
   "alerte_sortie_long_candidate": true,
   "label": "SHORT_GUARD_ON",
   "sens": "SHORT",
-  "raison": "L5_mom=0.345≤0.35 ET L7_vol=0.400≤0.4 → SHORT 20j",
+  "raison": "L5_mom=0.295≤0.35 ET L7_vol=0.400≤0.4 → SHORT 20j",
   "note": "Adaptateur aval uniquement. Ne modifie ni chef, ni Aplomb, ni Money Manager."
 }

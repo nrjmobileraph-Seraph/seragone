@@ -11,30 +11,30 @@
   "last_decision": "auto_a7_position_nette_short",
   "last_order": {
     "mode": "MODE_DEMO_TOTAL",
-    "order_id": "AUTO_A7_20260511T085202",
-    "timestamp": "2026-05-11T08:52:02.060557+00:00",
+    "order_id": "AUTO_A7_20260512T160201",
+    "timestamp": "2026-05-12T16:02:01.317731+00:00",
     "source": "AUTO_A7_DECISION_TO_ORDER",
     "symbol": "BTC-USDT",
     "side": "SHORT",
     "order_type": "MARKET_DEMO",
     "quantity": 0.001,
-    "price_reference": 80825.94,
+    "price_reference": 80364.11,
     "reason": "auto_a7_position_nette_short",
     "prudence_status": "PASS",
     "real_finance_allowed": false,
     "prudence_checked": true,
-    "prudence_checked_at": "2026-05-11T08:53:02.214338+00:00"
+    "prudence_checked_at": "2026-05-12T16:02:01.536045+00:00"
   },
   "last_execution": {
-    "execution_id": "DEMO_EXEC_744ac736c9e2",
-    "order_id": "AUTO_A7_20260511T085202",
-    "timestamp": "2026-05-11T08:53:02.353587+00:00",
+    "execution_id": "DEMO_EXEC_3dc2a1c938c2",
+    "order_id": "AUTO_A7_20260512T160201",
+    "timestamp": "2026-05-12T16:03:01.598632+00:00",
     "mode": "MODE_DEMO_TOTAL",
     "symbol": "BTC-USDT",
     "side": "SHORT",
     "quantity": 0.001,
-    "fill_price_demo": 80825.94,
-    "fees_demo": 0.04041297,
+    "fill_price_demo": 80364.11,
+    "fees_demo": 0.04018206,
     "pnl_demo": 0.0,
     "position_after_demo": {
       "symbol": "BTC-USDT",
@@ -45,5 +45,5 @@
     "status": "FILLED_DEMO",
     "real_finance_used": false
   },
-  "updated_at": "2026-05-11T08:53:02.353926+00:00"
+  "updated_at": "2026-05-12T16:03:01.598946+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "module": "pepite7_H_dd_ath",
-  "timestamp": "2026-05-11T08:51:02.205628+00:00",
+  "timestamp": "2026-05-12T08:51:02.308357+00:00",
   "version": "1.0.0",
   "mode": "OBSERVATOIRE_READONLY",
   "side_effect_safe": true,
@@ -17,10 +17,10 @@
   },
   "tire": false,
   "status": "SILENCE",
-  "raison": "H>=P90 et dd_ath<=P25 | H=0.1972 P90=0.43497541431166653 dd_ath=0.298540660873364 P25=0.041396699209794",
+  "raison": "H>=P90 et dd_ath<=P25 | H=0.3039 P90=0.43497541431166653 dd_ath=0.298540660873364 P25=0.041396699209794",
   "valeurs": {
     "dd_ath": 0.298540660873364,
-    "H": 0.1972
+    "H": 0.3039
   },
   "quantiles": {
     "dd_ath_P25": 0.041396699209794,

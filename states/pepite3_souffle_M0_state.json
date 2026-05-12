@@ -1,6 +1,6 @@
 {
   "module": "pepite3_souffle_M0",
-  "timestamp": "2026-05-11T08:46:02.227805+00:00",
+  "timestamp": "2026-05-12T08:46:02.149587+00:00",
   "version": "1.0.0",
   "validation": {
     "wr_train": 0.8571,
@@ -17,7 +17,7 @@
   },
   "souffle_bas": false,
   "souffle_bas_voie": "aucune voie souffle_bas",
-  "geste_M0": "ATTENDRE",
+  "geste_M0": "RETRECIR",
   "q_geste_M0_MAINTENIR": false,
   "tire": false,
   "voix": null,
@@ -27,7 +27,7 @@
   "souffle_dispo": true,
   "souffle_score": null,
   "souffle_geste": "ATTENDRE",
-  "raison": "souffle_bas=False (aucune voie souffle_bas), M0=ATTENDRE",
+  "raison": "souffle_bas=False (aucune voie souffle_bas), M0=RETRECIR",
   "sources": {
     "souffle_state": "souffle_premier_air_state.json (fallbacks)",
     "geste_M0": "state.json[geste] OU q_jour_state.json[M0][geste]"

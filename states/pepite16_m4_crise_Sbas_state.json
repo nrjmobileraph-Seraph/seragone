@@ -1,6 +1,6 @@
 {
   "module": "pepite16_m4_crise_Sbas",
-  "timestamp": "2026-05-11T09:00:03.862788+00:00",
+  "timestamp": "2026-05-12T09:00:03.505794+00:00",
   "version": "1.0.0",
   "mode": "OBSERVATOIRE_READONLY",
   "side_effect_safe": true,
@@ -19,7 +19,7 @@
   "status": "SILENCE",
   "raison": "m4_regime=CRISE et S<=P25 | monde={'m2_geste': 'ATTENDRE', 'm2_regime': 'CRISE', 'm3_geste': 'ATTENDRE', 'm3_regime': 'CRISE', 'm4_geste': 'RETRECIR', 'm4_regime': 'CRISE', 'm5_geste': 'RETRECIR', 'm5_regime': 'CRISE', 'm6_geste': 'ATTENDRE', 'm6_regime': 'TENSION', 'm7_geste': 'RETRECIR', 'm7_regime': 'CRISE'}",
   "valeurs": {
-    "S": 0.3327
+    "S": 0.3153
   },
   "quantiles": {
     "S_P25": 0.1893353272898927,

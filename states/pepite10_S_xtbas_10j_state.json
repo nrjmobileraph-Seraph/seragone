@@ -1,6 +1,6 @@
 {
   "module": "pepite10_S_xtbas_10j",
-  "timestamp": "2026-05-11T08:54:01.984314+00:00",
+  "timestamp": "2026-05-12T08:54:02.718656+00:00",
   "version": "1.0.0",
   "mode": "OBSERVATOIRE_READONLY",
   "side_effect_safe": true,
@@ -19,7 +19,7 @@
   "status": "SILENCE",
   "raison": "S<=P10 tenu 10j | n_last=10 P10=0.15967004426912",
   "valeurs": {
-    "S": 0.3326
+    "S": 0.3186
   },
   "quantiles": {
     "S_P25": 0.1893353272898927,
