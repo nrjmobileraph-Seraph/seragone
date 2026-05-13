@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-05-12T23:59:01.514723",
-  "prix_btc": 80472.66,
+  "timestamp": "2026-05-13T00:04:01.630081",
+  "prix_btc": 80533.59,
   "score_seragone": 15,
   "confiance": "INSUFFISANT",
-  "jours_ecoules": 29,
+  "jours_ecoules": 30,
   "jours_objectif": 60,
   "signaux_total": 3,
   "signaux_ok": 3,
@@ -57,7 +57,7 @@
     "mode": "WAIT"
   },
   "meteo": "orageux",
-  "journal": "12 May - Le vent tourne. Je reduis mon exposition. Prudence.",
+  "journal": "13 May - Le vent tourne. Je reduis mon exposition. Prudence.",
   "processus": {
     "collector": true,
     "brain": true,
