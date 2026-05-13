@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-13T08:04:12.279048",
+  "timestamp": "2026-05-13T08:09:12.435091",
   "prix_btc": 81064.0,
   "score_seragone": 15,
   "confiance": "INSUFFISANT",
@@ -53,11 +53,11 @@
   "systeme": {
     "distance": 0,
     "shannon": 0,
-    "geste": "RETRECIR",
+    "geste": "ATTENDRE",
     "mode": "WAIT"
   },
   "meteo": "orageux",
-  "journal": "13 May - Le vent tourne. Je reduis mon exposition. Prudence.",
+  "journal": "13 May - Trop de brouillard. Je ne vois rien. J'attends.",
   "processus": {
     "collector": true,
     "brain": true,
