@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-15T12:10:24.895072",
-  "prix_btc": 80438.0,
+  "timestamp": "2026-05-15T12:15:25.022358",
+  "prix_btc": 80554.88,
   "score_seragone": 15,
   "confiance": "INSUFFISANT",
   "jours_ecoules": 32,
@@ -39,7 +39,7 @@
     "score": 3.7,
     "mondes_actifs": 23,
     "mondes_total": 628,
-    "recursifs_actifs": 49
+    "recursifs_actifs": 56
   },
   "couverture": {
     "pourcentage": 74.0,
