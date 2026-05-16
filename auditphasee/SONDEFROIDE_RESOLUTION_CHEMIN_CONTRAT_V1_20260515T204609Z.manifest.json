@@ -1,0 +1,36 @@
+{
+  "date_utc": "2026-05-15T20:46:09.529311+00:00",
+  "name": "SONDEFROIDE_RESOLUTION_CHEMIN_CONTRAT_V1",
+  "root": "/home/ubuntu/seragone",
+  "md": "/home/ubuntu/seragone/auditphasee/SONDEFROIDE_RESOLUTION_CHEMIN_CONTRAT_V1_20260515T204609Z.md",
+  "csv": "/home/ubuntu/seragone/auditphasee/SONDEFROIDE_RESOLUTION_CHEMIN_CONTRAT_V1_20260515T204609Z.csv",
+  "manifest": "/home/ubuntu/seragone/auditphasee/SONDEFROIDE_RESOLUTION_CHEMIN_CONTRAT_V1_20260515T204609Z.manifest.json",
+  "contracts_confirmed": [],
+  "skeletons_confirmed": [],
+  "sha_check": [],
+  "readonly_targeted": true,
+  "searched_dirs": [
+    "/home/ubuntu/seragone",
+    "/home/ubuntu/seragone/auditphasee",
+    "/home/ubuntu/seragone/auditdecisions"
+  ],
+  "exact_paths_tested": [
+    "auditphasee/CONTRATORCHESTRATEURDEMOV12026-05-132330VALIDATED.md",
+    "auditphaseeCONTRATORCHESTRATEURDEMOV12026-05-132330VALIDATED.md",
+    "auditphasee/orchestrateurdemov1skeleton2026-05-132352SYNTAXOK.py",
+    "auditphaseeorchestrateurdemov1skeleton2026-05-132352SYNTAXOK.py",
+    "auditphasee/orchestrateurdemov1skeleton2026-05-132352SYNTAXOK.sha256.txt",
+    "auditphaseeorchestrateurdemov1skeleton2026-05-132352SYNTAXOK.sha256.txt"
+  ],
+  "import_business_modules": false,
+  "called_legacy_modules": false,
+  "modified_runtime_files": false,
+  "cron_changed": false,
+  "systemd_changed": false,
+  "restart_done": false,
+  "process_launched": false,
+  "real_finance_authorized": false,
+  "branching_authorized": false,
+  "decree_created": false,
+  "only_writes_under_auditphasee": true
+}

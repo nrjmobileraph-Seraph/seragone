@@ -1,0 +1,5 @@
+path,exists,sha256,bytes,lines,syntax_ast_ok,imports_count,legacy_hits,runtime_hits,write_hits,top_level_side_effect_hits,classification,blocking_reasons
+auditphasee/wrapper_aplomb_v1_inert.py,True,a42ba83d38b7160e6ed2ac70feb9bbb9c6b5e6e39af0ded4f6e5479624759132,1168,44,True,0,,,,,WRAPPER_INERTE_CONFORME,
+auditphasee/wrapper_double_tempo_v1_inert.py,True,f9d9ab24227c0fdd3d40559a2061fb6bbbf02f6c0d0acc24984f3c7166de3f01,1289,45,True,0,,,,,WRAPPER_INERTE_CONFORME,
+auditphasee/wrapper_prudence_measure_v1_inert.py,True,bf0ca6a0a27f8f72a551d95d85512f8990f0def9bb658336dee0b9c8495d561c,1562,53,True,0,,,,,WRAPPER_INERTE_CONFORME,
+auditphasee/wrapper_allocation_v1_inert.py,True,72be41068f46c274f3ec5bb52d62ff44744ed520bc95594937179e9208a4834b,1613,55,True,0,,,,,WRAPPER_INERTE_CONFORME,

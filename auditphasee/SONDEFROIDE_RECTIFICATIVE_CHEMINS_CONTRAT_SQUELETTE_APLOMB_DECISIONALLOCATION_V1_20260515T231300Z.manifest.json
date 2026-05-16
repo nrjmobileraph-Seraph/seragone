@@ -1,0 +1,80 @@
+{
+  "created_at_utc": "2026-05-15T23:13:00.256925+00:00",
+  "classification": "RECTIFICATIF_CHEMINS_ET_APLOMB_POSSIBLE",
+  "blocking_count": 0,
+  "rows_count": 3,
+  "bornage": {
+    "global_scan": false,
+    "zones": [
+      "auditphasee",
+      "root_direct_candidates"
+    ],
+    "imports": false,
+    "execution": false,
+    "runtime_modified": false,
+    "cron_modified": false,
+    "systemd_modified": false,
+    "activation_authorized": false,
+    "branching_authorized": false
+  },
+  "rows": [
+    {
+      "key": "contrat_v1",
+      "expected_sha256": "2445e4776e234169e4d0e3c4be3bd14df284c1d593c8feefdfe18c02dcdf8c2d",
+      "resolved_path": "auditphasee/CONTRAT_ORCHESTRATEUR_DEMO_V1_2026-05-13_2330_VALIDATED.md",
+      "resolved_sha256": "2445e4776e234169e4d0e3c4be3bd14df284c1d593c8feefdfe18c02dcdf8c2d",
+      "hash_exact": true,
+      "exists": true,
+      "bytes": 8290,
+      "lines": 176,
+      "functions": "",
+      "args": "",
+      "return_lines": "",
+      "dict_keys": "",
+      "text_has_marketcontext": "",
+      "text_has_aplomb": "",
+      "text_has_aplombcontext": "",
+      "classification": "RECTIFIABLE_OU_LISIBLE",
+      "blocking_reasons": ""
+    },
+    {
+      "key": "squelette_v1",
+      "expected_sha256": "f3f5512fc4a5453d005a8dc4dbc1aff8b41d889f281ef3d541b5f2c3c0f3353d",
+      "resolved_path": "auditphasee/orchestrateur_demo_v1_skeleton_2026-05-13_2352_SYNTAX_OK.py",
+      "resolved_sha256": "f3f5512fc4a5453d005a8dc4dbc1aff8b41d889f281ef3d541b5f2c3c0f3353d",
+      "hash_exact": true,
+      "exists": true,
+      "bytes": 8077,
+      "lines": 225,
+      "functions": "",
+      "args": "",
+      "return_lines": "",
+      "dict_keys": "",
+      "text_has_marketcontext": "",
+      "text_has_aplomb": "",
+      "text_has_aplombcontext": "",
+      "classification": "RECTIFIABLE_OU_LISIBLE",
+      "blocking_reasons": ""
+    },
+    {
+      "key": "wrapper_aplomb",
+      "expected_sha256": "a42ba83d38b7160e6ed2ac70feb9bbb9c6b5e6e39af0ded4f6e5479624759132",
+      "resolved_path": "auditphasee/wrapper_aplomb_v1_inert.py",
+      "resolved_sha256": "a42ba83d38b7160e6ed2ac70feb9bbb9c6b5e6e39af0ded4f6e5479624759132",
+      "hash_exact": true,
+      "exists": true,
+      "bytes": 1168,
+      "lines": 44,
+      "functions": "wrapper_aplomb_v1_inert",
+      "args": "marketcontext|parameters",
+      "return_lines": "21",
+      "dict_keys": "schema|role|mode|realfinanceallowed|branching_allowed|final_decision",
+      "text_has_marketcontext": "True",
+      "text_has_aplomb": "True",
+      "text_has_aplombcontext": "False",
+      "classification": "RECTIFIABLE_OU_LISIBLE",
+      "blocking_reasons": ""
+    }
+  ],
+  "blocking": []
+}

@@ -1,0 +1,77 @@
+{
+  "date_utc": "2026-05-15T20:38:31.011733+00:00",
+  "name": "SONDEFROIDE_DECISIONALLOCATION_V1",
+  "root": "/home/ubuntu/seragone",
+  "csv": "/home/ubuntu/seragone/auditphasee/SONDEFROIDE_DECISIONALLOCATION_V1_20260515T203830Z.csv",
+  "md": "/home/ubuntu/seragone/auditphasee/SONDEFROIDE_DECISIONALLOCATION_V1_20260515T203830Z.md",
+  "manifest": "/home/ubuntu/seragone/auditphasee/SONDEFROIDE_DECISIONALLOCATION_V1_20260515T203830Z.manifest.json",
+  "files_read": 42,
+  "status_counts": {
+    "BLOQUER_VERIFIER_WRITE_LEGACY": 8,
+    "CANDIDAT_CALCULATEUR_OU_WRAPPER": 11,
+    "CANON_OR_DOC_READONLY": 15,
+    "CANDIDAT_DEMO_ISOLE": 4,
+    "A_CLASSER": 3,
+    "BLOQUER_VERIFIER_RISQUE_REEL": 1
+  },
+  "role_counts": {
+    "APLOMB": 9,
+    "DECISION_TO_ORDER": 6,
+    "POLICY_ENGINE": 2,
+    "DEMO_BROKER": 11,
+    "MONEY_MANAGER": 3,
+    "CANON_DOC": 1,
+    "PRUDENCE_MEASURE": 3,
+    "ALLOCATION": 4,
+    "DOUBLE_TEMPO": 3
+  },
+  "tag_counts": {
+    "LEGACY_WRITE_WORDS": 20,
+    "DEMO_WORDS": 23,
+    "CLOSE_WORDS": 10,
+    "CRON_SYSTEMD": 10,
+    "REAL_EXCHANGE": 3,
+    "SECRET_ENV": 7,
+    "SUBPROCESS": 3,
+    "REAL_ORDER": 1
+  },
+  "blockers": [
+    "aplomb.py",
+    "demo/generator/decision_to_order.py",
+    "demo/prudence/prudence_demo.py",
+    "demo/reports/RACCORDEMENT_CHAINE_REELLE_VERS_DEMO_20260507_211559/grep_ordre_execution_broker_head2000.txt",
+    "doubletempo.py",
+    "money_manager.py",
+    "money_manager_perplexity_97L.py",
+    "prudence_module.py",
+    "tireur_aplomb.py"
+  ],
+  "demo_candidates": [
+    "demo/broker/demobroker.py",
+    "demo/broker/demobroker_runner.py",
+    "demo/prudence/prudence_demo_runner.py",
+    "demo/reports/RACCORDEMENT_CHAINE_REELLE_VERS_DEMO_20260507_211559/fichiers_execution_broker_router.txt"
+  ],
+  "calculator_candidates": [
+    "aplomb_state.json",
+    "aplombdailycheckpoint.json",
+    "aplombdailyevents.jsonl",
+    "aplombdailyheartbeat.json",
+    "aplombdailypersist.json",
+    "aplombdailystate.json",
+    "aplombstate.json",
+    "demo/states/prudence_demo_state.json",
+    "doubletempostate.json",
+    "money_manager_state.json",
+    "money_manager_state_production.json"
+  ],
+  "readonly_static": true,
+  "import_business_modules": false,
+  "modified_runtime_files": false,
+  "cron_changed": false,
+  "systemd_changed": false,
+  "restart_done": false,
+  "process_launched": false,
+  "real_finance_authorized": false,
+  "only_writes_under_auditphasee": true
+}

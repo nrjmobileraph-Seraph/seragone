@@ -1,0 +1,181 @@
+{
+  "created_at_utc": "2026-05-15T23:11:25.699668+00:00",
+  "classification": "CONCEPTION_BRANCHEMENT_BLOCKING",
+  "blocking_count": 3,
+  "rows_count": 6,
+  "root": "/home/ubuntu/seragone",
+  "md": "auditphasee/SONDEFROIDE_CONCEPTION_BRANCHEMENT_WRAPPERS_DECISIONALLOCATION_V1_20260515T231125Z.md",
+  "csv": "auditphasee/SONDEFROIDE_CONCEPTION_BRANCHEMENT_WRAPPERS_DECISIONALLOCATION_V1_20260515T231125Z.csv",
+  "targets": [
+    {
+      "key": "contrat_v1",
+      "path": "auditphasee/CONTRATORCHESTRATEURDEMOV12026-05-132330VALIDATED.md",
+      "exists": false,
+      "sha256": "",
+      "expected_sha256": "2445e4776e234169e4d0e3c4be3bd14df284c1d593c8feefdfe18c02dcdf8c2d",
+      "hash_match": false,
+      "bytes": 0,
+      "lines": 0,
+      "syntax_ast_ok": "",
+      "imports": "",
+      "functions": "",
+      "top_level_candidates": "",
+      "contract_hits": "",
+      "concept_hits": "",
+      "runtime_hits": "",
+      "write_hits": "",
+      "classification": "BLOCKING",
+      "blocking_reasons": "MISSING"
+    },
+    {
+      "key": "squelette_v1",
+      "path": "auditphasee/orchestrateurdemov1skeleton2026-05-132352SYNTAXOK.py",
+      "exists": false,
+      "sha256": "",
+      "expected_sha256": "f3f5512fc4a5453d005a8dc4dbc1aff8b41d889f281ef3d541b5f2c3c0f3353d",
+      "hash_match": false,
+      "bytes": 0,
+      "lines": 0,
+      "syntax_ast_ok": "",
+      "imports": "",
+      "functions": "",
+      "top_level_candidates": "",
+      "contract_hits": "",
+      "concept_hits": "",
+      "runtime_hits": "",
+      "write_hits": "",
+      "classification": "BLOCKING",
+      "blocking_reasons": "MISSING"
+    },
+    {
+      "key": "wrapper_aplomb",
+      "path": "auditphasee/wrapper_aplomb_v1_inert.py",
+      "exists": true,
+      "sha256": "a42ba83d38b7160e6ed2ac70feb9bbb9c6b5e6e39af0ded4f6e5479624759132",
+      "expected_sha256": "a42ba83d38b7160e6ed2ac70feb9bbb9c6b5e6e39af0ded4f6e5479624759132",
+      "hash_match": true,
+      "bytes": 1168,
+      "lines": 44,
+      "syntax_ast_ok": true,
+      "imports": "",
+      "functions": "wrapper_aplomb_v1_inert",
+      "top_level_candidates": "",
+      "contract_hits": "",
+      "concept_hits": "marketcontext",
+      "runtime_hits": "",
+      "write_hits": "",
+      "classification": "BLOCKING",
+      "blocking_reasons": "BRIDGE_CONCEPTS_INCOMPLETE"
+    },
+    {
+      "key": "wrapper_double_tempo",
+      "path": "auditphasee/wrapper_double_tempo_v1_inert.py",
+      "exists": true,
+      "sha256": "f9d9ab24227c0fdd3d40559a2061fb6bbbf02f6c0d0acc24984f3c7166de3f01",
+      "expected_sha256": "f9d9ab24227c0fdd3d40559a2061fb6bbbf02f6c0d0acc24984f3c7166de3f01",
+      "hash_match": true,
+      "bytes": 1289,
+      "lines": 45,
+      "syntax_ast_ok": true,
+      "imports": "",
+      "functions": "wrapper_double_tempo_v1_inert",
+      "top_level_candidates": "",
+      "contract_hits": "",
+      "concept_hits": "marketcontext|policydecision|tempobudgets",
+      "runtime_hits": "",
+      "write_hits": "",
+      "classification": "CONCEPTION_BRANCHEMENT_LISIBLE",
+      "blocking_reasons": ""
+    },
+    {
+      "key": "wrapper_prudence_measure",
+      "path": "auditphasee/wrapper_prudence_measure_v1_inert.py",
+      "exists": true,
+      "sha256": "bf0ca6a0a27f8f72a551d95d85512f8990f0def9bb658336dee0b9c8495d561c",
+      "expected_sha256": "bf0ca6a0a27f8f72a551d95d85512f8990f0def9bb658336dee0b9c8495d561c",
+      "hash_match": true,
+      "bytes": 1562,
+      "lines": 53,
+      "syntax_ast_ok": true,
+      "imports": "",
+      "functions": "wrapper_prudence_measure_v1_inert",
+      "top_level_candidates": "",
+      "contract_hits": "",
+      "concept_hits": "marketcontext|policydecision|allocationcandidate|prudencemeasure",
+      "runtime_hits": "",
+      "write_hits": "",
+      "classification": "CONCEPTION_BRANCHEMENT_LISIBLE",
+      "blocking_reasons": ""
+    },
+    {
+      "key": "wrapper_allocation",
+      "path": "auditphasee/wrapper_allocation_v1_inert.py",
+      "exists": true,
+      "sha256": "72be41068f46c274f3ec5bb52d62ff44744ed520bc95594937179e9208a4834b",
+      "expected_sha256": "72be41068f46c274f3ec5bb52d62ff44744ed520bc95594937179e9208a4834b",
+      "hash_match": true,
+      "bytes": 1613,
+      "lines": 55,
+      "syntax_ast_ok": true,
+      "imports": "",
+      "functions": "wrapper_allocation_v1_inert",
+      "top_level_candidates": "",
+      "contract_hits": "",
+      "concept_hits": "capital|policydecision|tempobudgets|prudencemeasure|allocationstate",
+      "runtime_hits": "",
+      "write_hits": "",
+      "classification": "CONCEPTION_BRANCHEMENT_LISIBLE",
+      "blocking_reasons": ""
+    }
+  ],
+  "blocking": [
+    {
+      "key": "contrat_v1",
+      "reasons": [
+        "MISSING"
+      ]
+    },
+    {
+      "key": "squelette_v1",
+      "reasons": [
+        "MISSING"
+      ]
+    },
+    {
+      "key": "wrapper_aplomb",
+      "reasons": [
+        "BRIDGE_CONCEPTS_INCOMPLETE"
+      ]
+    }
+  ],
+  "bornage": {
+    "scan_global": false,
+    "files_read": [
+      "auditphasee/CONTRATORCHESTRATEURDEMOV12026-05-132330VALIDATED.md",
+      "auditphasee/orchestrateurdemov1skeleton2026-05-132352SYNTAXOK.py",
+      "auditphasee/wrapper_aplomb_v1_inert.py",
+      "auditphasee/wrapper_double_tempo_v1_inert.py",
+      "auditphasee/wrapper_prudence_measure_v1_inert.py",
+      "auditphasee/wrapper_allocation_v1_inert.py"
+    ],
+    "modules_imported": false,
+    "wrappers_executed": false,
+    "orchestrator_executed": false,
+    "runtime_modified": false,
+    "cron_modified": false,
+    "systemd_modified": false,
+    "legacy_state_written": false,
+    "real_finance": false,
+    "activation_authorized": false
+  },
+  "bridge_design_candidate": {
+    "apprentissage": "lecture_conceptuelle_uniquement",
+    "chain": [
+      "marketcontext -> wrapper_aplomb -> aplombcontext",
+      "marketcontext + policydecision -> wrapper_double_tempo -> tempobudgets",
+      "marketcontext + policydecision + allocationcandidate -> wrapper_prudence_measure -> prudencemeasure",
+      "capital + policydecision + tempobudgets + prudencemeasure -> wrapper_allocation -> allocationstate"
+    ],
+    "writer": "orchestrateur_demo_v1_only_if_decreed_later"
+  }
+}

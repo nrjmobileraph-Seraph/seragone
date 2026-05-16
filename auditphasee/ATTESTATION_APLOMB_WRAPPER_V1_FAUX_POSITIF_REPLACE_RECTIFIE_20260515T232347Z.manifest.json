@@ -1,0 +1,20 @@
+{
+  "attestation": "APLOMB_WRAPPER_V1_FAUX_POSITIF_REPLACE_RECTIFIE",
+  "branching_authorized": false,
+  "cron_modified": false,
+  "date_utc": "2026-05-15T23:23:47.918274+00:00",
+  "microsonde_sha256": "21c16ccacdab54f05be603f58dfcbc18cbbbe50c324bd2eb8523246fe6c103e0",
+  "microsonde_source": "auditphasee/MICROSONDEFROIDE_APLOMB_WRITE_POTENTIEL_DECISIONALLOCATION_V1_20260515T232150Z.md",
+  "next_allowed_step": "SONDE_FROIDE_DECISIONALLOCATION_OU_ATTESTATION_CONTRAT_INTERFACE",
+  "real_finance_authorized": false,
+  "rectificatif_sha256": "8fbea425c1c27e3a07cf7b7ab9030bae7e5a15c375c5491682f37d6ed9f59b34",
+  "rectificatif_source": "auditphasee/RECTIFICATIF_MICROSONDE_APLOMB_STR_REPLACE_V1_20260515T232238Z.md",
+  "runtime_modified": false,
+  "status": "DOCUMENTAIRE_FROID",
+  "systemd_modified": false,
+  "target": "auditphasee/wrapper_aplomb_v1_inert.py",
+  "target_executed": false,
+  "target_imported": false,
+  "target_sha256": "a42ba83d38b7160e6ed2ac70feb9bbb9c6b5e6e39af0ded4f6e5479624759132",
+  "verdict": "APLOMB_WRAPPER_V1_AST_OK_FAUX_POSITIF_REPLACE_RECTIFIE_NON_BRANCHABLE"
+}

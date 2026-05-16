@@ -1,0 +1,19 @@
+{
+  "branching_authorized": false,
+  "cron_modified": false,
+  "csv": "auditphasee/MICROSONDEFROIDE_APLOMB_WRITE_POTENTIEL_DECISIONALLOCATION_V1_20260515T232150Z.csv",
+  "date_utc": "2026-05-15T23:21:50.130716+00:00",
+  "details": "auditphasee/MICROSONDEFROIDE_APLOMB_WRITE_POTENTIEL_DECISIONALLOCATION_V1_20260515T232150Z.details.json",
+  "manifest": "auditphasee/MICROSONDEFROIDE_APLOMB_WRITE_POTENTIEL_DECISIONALLOCATION_V1_20260515T232150Z.manifest.json",
+  "md": "auditphasee/MICROSONDEFROIDE_APLOMB_WRITE_POTENTIEL_DECISIONALLOCATION_V1_20260515T232150Z.md",
+  "name": "MICROSONDEFROIDE_APLOMB_WRITE_POTENTIEL_DECISIONALLOCATION_V1",
+  "readonly_documentary_bounded": true,
+  "real_finance_authorized": false,
+  "runtime_modified": false,
+  "systemd_modified": false,
+  "target": "auditphasee/wrapper_aplomb_v1_inert.py",
+  "target_executed": false,
+  "target_imported": false,
+  "target_sha256": "a42ba83d38b7160e6ed2ac70feb9bbb9c6b5e6e39af0ded4f6e5479624759132",
+  "verdict": "ALERTE_WRITE_NESTED_NON_EXECUTEE_PAR_SONDE"
+}

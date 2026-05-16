@@ -1,0 +1,170 @@
+SONDE FROIDE — TOP LARGE FICHIERS SERAGONE
+TS_UTC=20260515T202216Z
+AUDIT_DIR=auditdecisions
+
+=== GIT HEAD ===
+f80c3e5b
+
+=== TOP 80 FICHIERS PAR TAILLE ===
+2.24G	2026-05-01 11:37	./PACK_SERAGONE_MARS_AVRIL_COMPLET_20260501.tar.gz
+508.90M	2026-04-21 12:35	./palette_claude/btc_1min_historique_complet.csv
+508.90M	2026-04-16 01:21	./btc_1min_historique_complet.csv
+294.95M	2026-04-22 06:52	./danger_silencieux.csv
+194.11M	2026-04-02 23:59	./data/trades_btcusdt_2026-04-02.csv
+193.63M	2026-04-21 12:36	./palette_claude/palette_seragone_21avril.tar.gz
+173.82M	2026-04-22 23:59	./data/trades_btcusdt_2026-04-22.csv
+173.10M	2026-04-01 23:59	./data/trades_btcusdt_2026-04-01.csv
+170.57M	2026-05-04 23:59	./data/trades_btcusdt_2026-05-04.csv
+168.96M	2026-05-07 21:28	./AUDIT_SECURITE_DEMO_NO_LIVE_20260507_212746.txt
+167.55M	2026-05-15 20:00	./multivers_state.json
+167.47M	2026-04-21 23:59	./data/trades_btcusdt_2026-04-21.csv
+165.30M	2026-04-20 23:59	./data/trades_btcusdt_2026-04-20.csv
+164.96M	2026-04-23 23:59	./data/trades_btcusdt_2026-04-23.csv
+156.55M	2026-03-31 23:59	./data/trades_btcusdt_2026-03-31.csv
+144.01M	2026-05-14 23:59	./data/trades_btcusdt_2026-05-14.csv
+140.39M	2026-04-29 23:59	./data/trades_btcusdt_2026-04-29.csv
+137.88M	2026-04-27 23:59	./data/trades_btcusdt_2026-04-27.csv
+137.39M	2026-05-15 20:22	./data/trades_btcusdt_2026-05-15.csv
+129.91M	2026-05-06 23:59	./data/trades_btcusdt_2026-05-06.csv
+126.82M	2026-04-19 23:59	./data/trades_btcusdt_2026-04-19.csv
+125.73M	2026-04-26 19:23	./SERAGONE_PHASE56B_LITE_AUDIT_TOUS_SCRIPTS/phase56b_P1_api_exchange_grep.txt
+121.16M	2026-04-20 13:21	./data/mondes_recursifs_500m.csv
+120.66M	2026-04-20 10:55	./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+120.66M	2026-04-20 10:05	./backups/20avril2026_PM/mondes_recursifs_500m.csv
+119.89M	2026-04-24 23:59	./data/trades_btcusdt_2026-04-24.csv
+119.70M	2026-05-11 23:59	./data/trades_btcusdt_2026-05-11.csv
+119.30M	2026-04-30 23:59	./data/trades_btcusdt_2026-04-30.csv
+117.98M	2026-05-07 23:59	./data/trades_btcusdt_2026-05-07.csv
+115.60M	2026-05-05 23:59	./data/trades_btcusdt_2026-05-05.csv
+111.11M	2026-05-01 23:59	./data/trades_btcusdt_2026-05-01.csv
+109.35M	2026-04-28 23:59	./data/trades_btcusdt_2026-04-28.csv
+109.16M	2026-05-13 23:59	./data/trades_btcusdt_2026-05-13.csv
+109.03M	2026-05-12 23:59	./data/trades_btcusdt_2026-05-12.csv
+105.29M	2026-05-08 23:59	./data/trades_btcusdt_2026-05-08.csv
+93.91M	2026-05-15 20:21	./auditdecisions/SONDEFROIDEINDEXLEDGERDEMONETTE20260515T202133Z.txt
+90.24M	2026-04-18 23:59	./data/trades_btcusdt_2026-04-18.csv
+83.87M	2026-05-10 23:59	./data/trades_btcusdt_2026-05-10.csv
+79.54M	2026-04-19 09:44	./data/trades_btcusdt_2026-03-30.csv.bak_nul
+79.50M	2026-04-19 09:44	./data/trades_btcusdt_2026-03-30.csv
+77.01M	2026-04-23 21:06	./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+77.01M	2026-04-23 21:06	./_bibliotheque_modules/production_copies/multivers_state.json
+68.77M	2026-04-26 23:59	./data/trades_btcusdt_2026-04-26.csv
+62.93M	2026-05-03 23:59	./data/trades_btcusdt_2026-05-03.csv
+59.42M	2026-04-17 23:59	./data/trades_btcusdt_2026-04-17.csv
+53.43M	2026-05-07 21:18	./demoreports/AUDIT_DEMO_WRITERS_20260507211756/audit_demo_writers.txt
+51.86M	2026-03-31 10:01	./data/depth_btcusdt_2026-03-30.csv
+50.73M	2026-04-20 10:54	./backups/migration_canon_20avril2026/multivers_state.json
+48.16M	2026-05-08 12:10	./DEMO_SECURITY_FILTERED_20260508_120947.txt
+48.14M	2026-04-26 20:54	./SERAGONE_PHASE99_FALSIFICATION_G_EQ05_EQ19_EQ22/phase99_definitions_eq19_eq22.txt
+47.01M	2026-05-01 10:07	./audit/chrono_truth_20260501_100620/02_extraits_documents_pivots.json
+46.79M	2026-05-09 23:59	./data/trades_btcusdt_2026-05-09.csv
+43.69M	2026-05-02 23:59	./data/trades_btcusdt_2026-05-02.csv
+39.44M	2026-05-01 10:07	./audit/chrono_truth_20260501_100620/02_extraits_documents_pivots.md
+37.77M	2026-04-25 23:59	./data/trades_btcusdt_2026-04-25.csv
+37.56M	2026-05-07 22:05	./DEMO_SECURITY_FILTERED_20260507_220516.txt
+34.25M	2026-05-05 23:27	./audit_actions_v1/PRECHECK_305_PARALLELES_20260505T232746Z/05_grep_305.txt
+31.37M	2026-04-26 19:25	./SERAGONE_PHASE56B_LITE_AUDIT_TOUS_SCRIPTS/phase56b_api_exchange_PROPRES.txt
+30.36M	2026-03-31 10:01	./data/btc_5min_4ans.csv
+26.51M	2026-05-07 22:06	./DEMO_LAST_GATE_20260507_220633.txt
+25.63M	2026-05-01 07:18	./audit_actions_v1/RUNTIME_EVIDENCE_V1G.raw.txt
+24.77M	2026-04-26 06:03	./SERAGONE_NATIVE_OUT/fonctions_classes_imports.csv
+24.17M	2026-04-20 10:55	./backups/migration_canon_20avril2026/mondes_recursifs_100m.csv
+24.17M	2026-04-15 09:02	./data/mondes_recursifs_100m.csv
+18.94M	2026-05-01 08:14	./audit_actions_v1/WRITERS_STATES_V4H.csv
+18.94M	2026-05-01 08:14	./audit_actions_v1/FREEZE_V4_RUNTIME_MONDES_20260501_082019/WRITERS_STATES_V4H.csv
+17.50M	2026-04-20 00:55	./data/mondes_500_dist_local_only.csv
+15.19M	2026-03-31 10:01	./data/btc_5min_part1.csv
+15.17M	2026-03-31 10:01	./data/btc_5min_part2.csv
+15.11M	2026-05-15 20:22	./pilot.log
+13.61M	2026-05-08 21:16	./audit/observabilite_mondes/seragone_v11b_references_sans_corps_diagnostic_read_only_20260508T211534Z_hits.csv
+10.33M	2026-03-31 10:01	./data/btc_15min_4ans.csv
+9.88M	2026-04-23 21:30	./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/logs/chronometer.log
+9.34M	2026-04-26 18:09	./SERAGONE_UNIVERS_PHASE33_INDEX/fonctions_classes_univers_seragone.csv
+9.14M	2026-04-09 20:25	./multivers_state.json.bak_162mondes
+8.91M	2026-05-07 09:58	./audit_multivers_fix_20260507/tmp_multivers_discovery_readonly_20260507.txt
+8.46M	2026-05-07 22:04	./DEMO_PREFLIGHT_20260507_220412.txt
+8.26M	2026-04-23 21:30	./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/logs/temps_seragone.log
+8.08M	2026-04-29 07:01	./audit/phase_e/q5_b13/q5_b13_state_signature_20260429_070147.txt
+7.64M	2026-04-23 21:34	./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/logs/pilot.log
+
+=== TOP 80 DOSSIERS/FICHIERS DU -AH ===
+11G	.
+4.4G	./data
+2.3G	./PACK_SERAGONE_MARS_AVRIL_COMPLET_20260501.tar.gz
+769M	./palette_claude
+509M	./palette_claude/btc_1min_historique_complet.csv
+509M	./btc_1min_historique_complet.csv
+366M	./_bibliotheque_modules
+327M	./backups
+295M	./danger_silencieux.csv
+201M	./backups/migration_canon_20avril2026
+195M	./data/trades_btcusdt_2026-04-02.csv
+194M	./palette_claude/palette_seragone_21avril.tar.gz
+194M	./_bibliotheque_modules/snapshots
+185M	./audit
+174M	./data/trades_btcusdt_2026-04-22.csv
+174M	./data/trades_btcusdt_2026-04-01.csv
+173M	./_bibliotheque_modules/snapshots/2026-04-23_21-34-30
+171M	./data/trades_btcusdt_2026-05-04.csv
+169M	./AUDIT_SECURITE_DEMO_NO_LIVE_20260507_212746.txt
+168M	./multivers_state.json
+168M	./data/trades_btcusdt_2026-04-21.csv
+166M	./data/trades_btcusdt_2026-04-20.csv
+165M	./data/trades_btcusdt_2026-04-23.csv
+158M	./SERAGONE_PHASE56B_LITE_AUDIT_TOUS_SCRIPTS
+157M	./data/trades_btcusdt_2026-03-31.csv
+145M	./data/trades_btcusdt_2026-05-14.csv
+141M	./data/trades_btcusdt_2026-04-29.csv
+138M	./data/trades_btcusdt_2026-05-15.csv
+138M	./data/trades_btcusdt_2026-04-27.csv
+132M	./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine
+132M	./_bibliotheque_modules/production_copies
+130M	./data/trades_btcusdt_2026-05-06.csv
+127M	./data/trades_btcusdt_2026-04-19.csv
+126M	./SERAGONE_PHASE56B_LITE_AUDIT_TOUS_SCRIPTS/phase56b_P1_api_exchange_grep.txt
+122M	./data/mondes_recursifs_500m.csv
+121M	./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+121M	./backups/20avril2026_PM/mondes_recursifs_500m.csv
+121M	./backups/20avril2026_PM
+120M	./data/trades_btcusdt_2026-05-11.csv
+120M	./data/trades_btcusdt_2026-04-30.csv
+120M	./data/trades_btcusdt_2026-04-24.csv
+118M	./data/trades_btcusdt_2026-05-07.csv
+117M	./audit_actions_v1
+116M	./data/trades_btcusdt_2026-05-05.csv
+112M	./data/trades_btcusdt_2026-05-01.csv
+110M	./data/trades_btcusdt_2026-05-13.csv
+110M	./data/trades_btcusdt_2026-05-12.csv
+110M	./data/trades_btcusdt_2026-04-28.csv
+106M	./data/trades_btcusdt_2026-05-08.csv
+95M	./auditdecisions
+94M	./auditdecisions/SONDEFROIDEINDEXLEDGERDEMONETTE20260515T202133Z.txt
+91M	./data/trades_btcusdt_2026-04-18.csv
+88M	./audit/chrono_truth_20260501_100620
+84M	./data/trades_btcusdt_2026-05-10.csv
+80M	./data/trades_btcusdt_2026-03-30.csv.bak_nul
+80M	./data/trades_btcusdt_2026-03-30.csv
+78M	./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+78M	./_bibliotheque_modules/production_copies/multivers_state.json
+69M	./data/trades_btcusdt_2026-04-26.csv
+63M	./data/trades_btcusdt_2026-05-03.csv
+60M	./data/trades_btcusdt_2026-04-17.csv
+54M	./demoreports/AUDIT_DEMO_WRITERS_20260507211756/audit_demo_writers.txt
+54M	./demoreports/AUDIT_DEMO_WRITERS_20260507211756
+54M	./demoreports
+52M	./data/depth_btcusdt_2026-03-30.csv
+51M	./backups/migration_canon_20avril2026/multivers_state.json
+49M	./SERAGONE_PHASE99_FALSIFICATION_G_EQ05_EQ19_EQ22/phase99_definitions_eq19_eq22.txt
+49M	./SERAGONE_PHASE99_FALSIFICATION_G_EQ05_EQ19_EQ22
+49M	./DEMO_SECURITY_FILTERED_20260508_120947.txt
+48M	./audit/chrono_truth_20260501_100620/02_extraits_documents_pivots.json
+47M	./data/trades_btcusdt_2026-05-09.csv
+44M	./data/trades_btcusdt_2026-05-02.csv
+40M	./audit/chrono_truth_20260501_100620/02_extraits_documents_pivots.md
+40M	./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/logs
+38M	./data/trades_btcusdt_2026-04-25.csv
+38M	./DEMO_SECURITY_FILTERED_20260507_220516.txt
+35M	./logs
+35M	./audit_actions_v1/PRECHECK_305_PARALLELES_20260505T232746Z/05_grep_305.txt
+35M	./audit_actions_v1/PRECHECK_305_PARALLELES_20260505T232746Z
+33M	./audit/rapports

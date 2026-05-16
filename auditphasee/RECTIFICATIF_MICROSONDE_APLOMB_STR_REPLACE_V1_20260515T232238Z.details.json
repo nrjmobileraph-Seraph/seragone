@@ -1,0 +1,21 @@
+{
+  "branching_authorized": false,
+  "date_utc": "2026-05-15T23:22:39.061396+00:00",
+  "final_verdict": "RECTIFICATION_FAUX_POSITIF_STR_REPLACE",
+  "findings": [
+    {
+      "base_kind": "Constant",
+      "base_repr": "'aplom bcontext'",
+      "callee": "'aplom bcontext'.replace",
+      "expr": "'aplom bcontext'.replace(' ', '')",
+      "lineno": 25,
+      "verdict": "FAUX_POSITIF_STR_REPLACE_NON_FILE"
+    }
+  ],
+  "mode": "READONLY_AST_ONLY",
+  "runtime_modified": false,
+  "target": "auditphasee/wrapper_aplomb_v1_inert.py",
+  "target_executed": false,
+  "target_imported": false,
+  "target_sha256": "a42ba83d38b7160e6ed2ac70feb9bbb9c6b5e6e39af0ded4f6e5479624759132"
+}

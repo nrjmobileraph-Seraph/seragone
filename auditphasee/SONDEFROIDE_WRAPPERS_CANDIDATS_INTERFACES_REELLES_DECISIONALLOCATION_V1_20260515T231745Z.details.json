@@ -1,0 +1,256 @@
+{
+  "policy": {
+    "candidate_executed": false,
+    "candidate_imported": false,
+    "cron_modified": false,
+    "finance_reelle": false,
+    "runtime_modified": false,
+    "scan_type": "AST_READ_ONLY_TARGETED_CANDIDATES",
+    "systemd_modified": false,
+    "wrapper_executed": false
+  },
+  "roles": {
+    "wrapper_allocation": {
+      "candidate_status": "EXACT_CANDIDATE_FOUND",
+      "exact_paths_checked": [
+        "auditphasee/wrapper_allocation_v1_inert.py",
+        "wrapper_allocation_v1_inert.py",
+        "wrapper_allocation.py"
+      ],
+      "expected_input": "capital|policydecision|tempobudgets|prudencemeasure",
+      "expected_output": "allocationstate",
+      "fallback_paths_checked": [
+        "moneymanager.py",
+        "moneymanagerperplexity97L.py"
+      ],
+      "files": [
+        {
+          "ast_error": "",
+          "classes": [],
+          "dangerous_imports": [],
+          "exec_calls": [],
+          "exists": true,
+          "functions": [
+            {
+              "args": [
+                "capital",
+                "policydecision",
+                "tempobudgets",
+                "prudencemeasure"
+              ],
+              "lineno": 13,
+              "name": "wrapper_allocation_v1_inert"
+            }
+          ],
+          "imports": [],
+          "lines": 55,
+          "parse_status": "AST_OK",
+          "path": "auditphasee/wrapper_allocation_v1_inert.py",
+          "path_literals": [
+            {
+              "lineno": 54,
+              "value": "build_allocation_state"
+            },
+            {
+              "lineno": 32,
+              "value": "allocationstate"
+            }
+          ],
+          "sha256": "72be41068f46c274f3ec5bb52d62ff44744ed520bc95594937179e9208a4834b",
+          "size_bytes": 1613,
+          "top_level_calls": [
+            {
+              "calls": [
+                "TypeError",
+                "float",
+                "isinstance",
+                "policydecision.keys",
+                "prudencemeasure.keys",
+                "sorted",
+                "str",
+                "tempobudgets.keys"
+              ],
+              "lineno": 13
+            }
+          ],
+          "write_calls": []
+        }
+      ]
+    },
+    "wrapper_aplomb": {
+      "candidate_status": "EXACT_CANDIDATE_FOUND",
+      "exact_paths_checked": [
+        "auditphasee/wrapper_aplomb_v1_inert.py",
+        "wrapper_aplomb_v1_inert.py",
+        "wrapper_aplomb.py"
+      ],
+      "expected_input": "marketcontext|parameters",
+      "expected_output": "aplombcontext ou equivalent semantique",
+      "fallback_paths_checked": [
+        "aplomb.py"
+      ],
+      "files": [
+        {
+          "ast_error": "",
+          "classes": [],
+          "dangerous_imports": [],
+          "exec_calls": [],
+          "exists": true,
+          "functions": [
+            {
+              "args": [
+                "marketcontext",
+                "parameters"
+              ],
+              "lineno": 13,
+              "name": "wrapper_aplomb_v1_inert"
+            }
+          ],
+          "imports": [],
+          "lines": 44,
+          "parse_status": "AST_OK",
+          "path": "auditphasee/wrapper_aplomb_v1_inert.py",
+          "path_literals": [],
+          "sha256": "a42ba83d38b7160e6ed2ac70feb9bbb9c6b5e6e39af0ded4f6e5479624759132",
+          "size_bytes": 1168,
+          "top_level_calls": [
+            {
+              "calls": [
+                "TypeError",
+                "isinstance",
+                "marketcontext.keys",
+                "parameters.keys",
+                "replace",
+                "sorted",
+                "str"
+              ],
+              "lineno": 13
+            }
+          ],
+          "write_calls": [
+            {
+              "call": "replace",
+              "lineno": 25
+            }
+          ]
+        }
+      ]
+    },
+    "wrapper_double_tempo": {
+      "candidate_status": "EXACT_CANDIDATE_FOUND",
+      "exact_paths_checked": [
+        "auditphasee/wrapper_double_tempo_v1_inert.py",
+        "wrapper_double_tempo_v1_inert.py",
+        "wrapper_double_tempo.py"
+      ],
+      "expected_input": "marketcontext|policydecision|capital",
+      "expected_output": "tempobudgets",
+      "fallback_paths_checked": [
+        "doubletempo.py"
+      ],
+      "files": [
+        {
+          "ast_error": "",
+          "classes": [],
+          "dangerous_imports": [],
+          "exec_calls": [],
+          "exists": true,
+          "functions": [
+            {
+              "args": [
+                "marketcontext",
+                "policydecision"
+              ],
+              "lineno": 13,
+              "name": "wrapper_double_tempo_v1_inert"
+            }
+          ],
+          "imports": [],
+          "lines": 45,
+          "parse_status": "AST_OK",
+          "path": "auditphasee/wrapper_double_tempo_v1_inert.py",
+          "path_literals": [],
+          "sha256": "f9d9ab24227c0fdd3d40559a2061fb6bbbf02f6c0d0acc24984f3c7166de3f01",
+          "size_bytes": 1289,
+          "top_level_calls": [
+            {
+              "calls": [
+                "TypeError",
+                "isinstance",
+                "marketcontext.keys",
+                "policydecision.keys",
+                "sorted",
+                "str"
+              ],
+              "lineno": 13
+            }
+          ],
+          "write_calls": []
+        }
+      ]
+    },
+    "wrapper_prudence_measure": {
+      "candidate_status": "EXACT_CANDIDATE_FOUND",
+      "exact_paths_checked": [
+        "auditphasee/wrapper_prudence_measure_v1_inert.py",
+        "wrapper_prudence_measure_v1_inert.py",
+        "wrapper_prudence_measure.py"
+      ],
+      "expected_input": "marketcontext|policydecision|allocationcandidate",
+      "expected_output": "prudencemeasure",
+      "fallback_paths_checked": [
+        "prudencemodule.py"
+      ],
+      "files": [
+        {
+          "ast_error": "",
+          "classes": [],
+          "dangerous_imports": [],
+          "exec_calls": [],
+          "exists": true,
+          "functions": [
+            {
+              "args": [
+                "marketcontext",
+                "policydecision",
+                "allocationcandidate"
+              ],
+              "lineno": 13,
+              "name": "wrapper_prudence_measure_v1_inert"
+            }
+          ],
+          "imports": [],
+          "lines": 53,
+          "parse_status": "AST_OK",
+          "path": "auditphasee/wrapper_prudence_measure_v1_inert.py",
+          "path_literals": [],
+          "sha256": "bf0ca6a0a27f8f72a551d95d85512f8990f0def9bb658336dee0b9c8495d561c",
+          "size_bytes": 1562,
+          "top_level_calls": [
+            {
+              "calls": [
+                "TypeError",
+                "allocationcandidate.keys",
+                "isinstance",
+                "marketcontext.keys",
+                "policydecision.keys",
+                "sorted",
+                "str"
+              ],
+              "lineno": 13
+            }
+          ],
+          "write_calls": []
+        }
+      ]
+    }
+  },
+  "sonde": "SONDEFROIDE_WRAPPERS_CANDIDATS_INTERFACES_REELLES_DECISIONALLOCATION_V1",
+  "summary": {
+    "blocking_or_alert_count": 1,
+    "roles": 4,
+    "rows": 4,
+    "verdict_global": "SONDE_A_LIRE_AVANT_DECISION"
+  },
+  "timestamp_utc": "2026-05-15T23:17:45.576637+00:00"
+}

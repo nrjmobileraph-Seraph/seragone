@@ -1,0 +1,22 @@
+{
+  "schema": "seragone.v1.snapshot_readonly",
+  "timestamp_utc": "2026-05-13T22:13:00Z",
+  "cycle": "V1_MINICYCLE_2_SNAPSHOT_READONLY",
+  "mode": "READONLY_COMMANDS_ONLY",
+  "observations": {
+    "pwd": "/home/ubuntu/seragone",
+    "v1states_count": 3,
+    "auditdecisions_count": 4,
+    "root_state_exists": true,
+    "root_state_mtime": "2026-05-13 22:13:01",
+    "crontab_active_lines": 91
+  },
+  "actions_done": {
+    "legacy_modified": false,
+    "cron_systemd_modified": false,
+    "root_state_modified": false,
+    "real_order_sent": false,
+    "legacy_module_imported": false
+  },
+  "next": "V1_MINICYCLE_3_CONTRACTS_INERTES"
+}

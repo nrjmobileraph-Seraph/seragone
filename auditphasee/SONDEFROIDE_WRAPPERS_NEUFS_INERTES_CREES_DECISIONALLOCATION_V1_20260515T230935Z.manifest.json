@@ -1,0 +1,88 @@
+{
+  "created_at_utc": "2026-05-15T23:09:35.499538+00:00",
+  "root": "/home/ubuntu/seragone",
+  "classification": "WRAPPERS_INERTES_CONFORMES",
+  "blocking_count": 0,
+  "rows_count": 4,
+  "md": "auditphasee/SONDEFROIDE_WRAPPERS_NEUFS_INERTES_CREES_DECISIONALLOCATION_V1_20260515T230935Z.md",
+  "csv": "auditphasee/SONDEFROIDE_WRAPPERS_NEUFS_INERTES_CREES_DECISIONALLOCATION_V1_20260515T230935Z.csv",
+  "files": [
+    {
+      "path": "auditphasee/wrapper_aplomb_v1_inert.py",
+      "exists": true,
+      "sha256": "a42ba83d38b7160e6ed2ac70feb9bbb9c6b5e6e39af0ded4f6e5479624759132",
+      "bytes": 1168,
+      "lines": 44,
+      "syntax_ast_ok": true,
+      "imports_count": 0,
+      "legacy_hits": "",
+      "runtime_hits": "",
+      "write_hits": "",
+      "top_level_side_effect_hits": "",
+      "classification": "WRAPPER_INERTE_CONFORME",
+      "blocking_reasons": ""
+    },
+    {
+      "path": "auditphasee/wrapper_double_tempo_v1_inert.py",
+      "exists": true,
+      "sha256": "f9d9ab24227c0fdd3d40559a2061fb6bbbf02f6c0d0acc24984f3c7166de3f01",
+      "bytes": 1289,
+      "lines": 45,
+      "syntax_ast_ok": true,
+      "imports_count": 0,
+      "legacy_hits": "",
+      "runtime_hits": "",
+      "write_hits": "",
+      "top_level_side_effect_hits": "",
+      "classification": "WRAPPER_INERTE_CONFORME",
+      "blocking_reasons": ""
+    },
+    {
+      "path": "auditphasee/wrapper_prudence_measure_v1_inert.py",
+      "exists": true,
+      "sha256": "bf0ca6a0a27f8f72a551d95d85512f8990f0def9bb658336dee0b9c8495d561c",
+      "bytes": 1562,
+      "lines": 53,
+      "syntax_ast_ok": true,
+      "imports_count": 0,
+      "legacy_hits": "",
+      "runtime_hits": "",
+      "write_hits": "",
+      "top_level_side_effect_hits": "",
+      "classification": "WRAPPER_INERTE_CONFORME",
+      "blocking_reasons": ""
+    },
+    {
+      "path": "auditphasee/wrapper_allocation_v1_inert.py",
+      "exists": true,
+      "sha256": "72be41068f46c274f3ec5bb52d62ff44744ed520bc95594937179e9208a4834b",
+      "bytes": 1613,
+      "lines": 55,
+      "syntax_ast_ok": true,
+      "imports_count": 0,
+      "legacy_hits": "",
+      "runtime_hits": "",
+      "write_hits": "",
+      "top_level_side_effect_hits": "",
+      "classification": "WRAPPER_INERTE_CONFORME",
+      "blocking_reasons": ""
+    }
+  ],
+  "blocking": [],
+  "bornage": {
+    "scan_global": false,
+    "sources_lues": [
+      "auditphasee/wrapper_aplomb_v1_inert.py",
+      "auditphasee/wrapper_double_tempo_v1_inert.py",
+      "auditphasee/wrapper_prudence_measure_v1_inert.py",
+      "auditphasee/wrapper_allocation_v1_inert.py"
+    ],
+    "imports_modules": false,
+    "py_compile": false,
+    "runtime_modified": false,
+    "cron_modified": false,
+    "systemd_modified": false,
+    "process_launched_by_wrappers": false,
+    "finance_reelle": false
+  }
+}

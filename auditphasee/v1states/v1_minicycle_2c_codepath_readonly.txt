@@ -1,0 +1,42 @@
+===== HASHES =====
+661f50815c876e79ff26f2d15d44ce44b39f590c01fed53a98b2793880e61cdd  seragone_pilot.py
+dff3b21aa41c2212e2d11a9752ca1ba3bb06a4c87c73234bf8ebbcfb225a999b  tools/seragone_one.py
+
+===== STAT =====
+seragone_pilot.py|4145|2026-05-07 18:59:25.774268114 +0000
+tools/seragone_one.py|10545|2026-05-11 20:38:24.217795838 +0000
+state.json|4666|2026-05-13 22:17:02.782230779 +0000
+pilot.log|15464804|2026-05-13 22:17:02.782230779 +0000
+logs/pilot.log|184175|2026-05-13 22:17:02.782230779 +0000
+
+===== SERAGONE_PILOT WRITES =====
+7:STATE = '/home/ubuntu/seragone/state.json'
+8:LOG = '/home/ubuntu/seragone/pilot.log'
+16:    with open(LOG, 'a') as f: f.write(line + '\n')
+22:        with open(p) as f:
+28:            with open(p2) as f: return float(f.read().strip())
+35:        with open(p) as f: return float(_json.load(f).get('prix', 0))
+42:        with open(LOCK) as f: lock = json.load(f)
+51:        with open(LOCK, 'w') as f:
+52:            json.dump({'last_trade': datetime.now(timezone.utc).isoformat(), 'regle': regle}, f)
+73:    state = json.load(open(STATE)) if os.path.exists(STATE) else {}
+94:    tmp = STATE + '.tmp'
+95:    with open(tmp, 'w') as f: json.dump(state, f, indent=2, default=str)
+96:    os.replace(tmp, STATE)
+
+===== SERAGONE_ONE REFERENCES =====
+8:import os, sys, json, hashlib, subprocess, datetime, glob
+18:        r = subprocess.run(cmd, shell=True, capture_output=True, text=True,
+
+===== CRONTAB EXACT PILOT =====
+    35	##############################################################################
+    36	
+    37	# Bulletin mobile (push GitHub toutes les minutes)
+    38	* * * * * /tmp/push_bulletin.sh >> /home/ubuntu/seragone/logs/github_push.log 2>&1
+    39	
+    40	# Pilote + mise à jour live (toutes les minutes)
+    41	* * * * * cd /home/ubuntu/seragone && python3 update_live.py >> logs/update_live.log 2>&1
+    42	* * * * * cd /home/ubuntu/seragone && python3 seragone_pilot.py >> logs/pilot.log 2>&1
+    43	
+    44	# 27 équations du temps (toutes les 5 minutes)
+    45	*/5 * * * * cd /home/ubuntu/seragone && python3 temps_seragone.py >> logs/temps_seragone.log 2>&1

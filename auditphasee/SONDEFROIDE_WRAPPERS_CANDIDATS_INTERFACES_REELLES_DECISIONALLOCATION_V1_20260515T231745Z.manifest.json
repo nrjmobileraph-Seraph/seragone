@@ -1,0 +1,28 @@
+{
+  "csv": "auditphasee/SONDEFROIDE_WRAPPERS_CANDIDATS_INTERFACES_REELLES_DECISIONALLOCATION_V1_20260515T231745Z.csv",
+  "details": "auditphasee/SONDEFROIDE_WRAPPERS_CANDIDATS_INTERFACES_REELLES_DECISIONALLOCATION_V1_20260515T231745Z.details.json",
+  "hashes": {
+    "csv_sha256": "e2f6d24a0b83227cee4854632125dcafab2486605b4e15126c8bebac3c3db6a5",
+    "details_sha256": "5efc40a137f45dc033bc6ab7e9e2f5e74df649be88a52b7b92feb18a9fc33b59",
+    "md_sha256": "cbf296099496daf2bf2e34a5fa6dbed1e1394592807b6be1e10c966706495a23"
+  },
+  "md": "auditphasee/SONDEFROIDE_WRAPPERS_CANDIDATS_INTERFACES_REELLES_DECISIONALLOCATION_V1_20260515T231745Z.md",
+  "policy": {
+    "candidate_executed": false,
+    "candidate_imported": false,
+    "cron_modified": false,
+    "finance_reelle": false,
+    "runtime_modified": false,
+    "scan_type": "AST_READ_ONLY_TARGETED_CANDIDATES",
+    "systemd_modified": false,
+    "wrapper_executed": false
+  },
+  "sonde": "SONDEFROIDE_WRAPPERS_CANDIDATS_INTERFACES_REELLES_DECISIONALLOCATION_V1",
+  "summary": {
+    "blocking_or_alert_count": 1,
+    "roles": 4,
+    "rows": 4,
+    "verdict_global": "SONDE_A_LIRE_AVANT_DECISION"
+  },
+  "timestamp_utc": "2026-05-15T23:17:45.583874+00:00"
+}

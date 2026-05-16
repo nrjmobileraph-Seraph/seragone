@@ -1,0 +1,89 @@
+{
+  "date_utc": "2026-05-15T20:48:46.392509+00:00",
+  "name": "SONDEFROIDE_NOMS_HASHS_MARQUEURS_CONTRAT_V1",
+  "root": "/home/ubuntu/seragone",
+  "md": "/home/ubuntu/seragone/auditphasee/SONDEFROIDE_NOMS_HASHS_MARQUEURS_CONTRAT_V1_20260515T204841Z.md",
+  "csv": "/home/ubuntu/seragone/auditphasee/SONDEFROIDE_NOMS_HASHS_MARQUEURS_CONTRAT_V1_20260515T204841Z.csv",
+  "manifest": "/home/ubuntu/seragone/auditphasee/SONDEFROIDE_NOMS_HASHS_MARQUEURS_CONTRAT_V1_20260515T204841Z.manifest.json",
+  "zones": [
+    "/home/ubuntu/seragone/auditphasee",
+    "/home/ubuntu/seragone/auditdecisions",
+    "/home/ubuntu/seragone/audit",
+    "/home/ubuntu/seragone/audits",
+    "/home/ubuntu/seragone/reports",
+    "/home/ubuntu/seragone/demoreports"
+  ],
+  "target_hashes": {
+    "contrat_v1_hash_documentaire": "2445e4776e234169e4d0e3c4be3bd14df284c1d593c8feefdfe18c02dcdf8c2d",
+    "squelette_v1_hash_documentaire": "f3f5512fc4a5453d005a8dc4dbc1aff8b41d889f281ef3d541b5f2c3c0f3353d",
+    "squelette_sha_file_hash_documentaire": "24bc5cdb7ecd8a14b1668d0a0bf89f90247d857717750934afe5cbabc73258dd"
+  },
+  "strong_candidates": [
+    {
+      "zone": "auditphasee",
+      "relpath": "auditphasee/CONTRAT_ORCHESTRATEUR_DEMO_V1_2026-05-13_2330_VALIDATED.md",
+      "exists": "true",
+      "sha256": "2445e4776e234169e4d0e3c4be3bd14df284c1d593c8feefdfe18c02dcdf8c2d",
+      "size": 8290,
+      "mtime_utc": "2026-05-13T21:47:41.907576+00:00",
+      "name_hits": "VALIDATED",
+      "content_score": 5,
+      "content_hits": "Tout module V1 est trait.*calculateur;Tout write legacy est interdit;aucun exchange;D9;D11",
+      "hash_mentions": "contrat_v1_hash_documentaire",
+      "classification": "HASH_EXACT_RETROUVE"
+    },
+    {
+      "zone": "auditphasee",
+      "relpath": "auditphasee/orchestrateur_demo_v1_skeleton_2026-05-13_2352_SYNTAX_OK.py",
+      "exists": "true",
+      "sha256": "f3f5512fc4a5453d005a8dc4dbc1aff8b41d889f281ef3d541b5f2c3c0f3353d",
+      "size": 8077,
+      "mtime_utc": "2026-05-13T21:58:46.529226+00:00",
+      "name_hits": "",
+      "content_score": 6,
+      "content_hits": "Tout module V1 est trait.*calculateur;Tout write legacy est interdit;aucun exchange;SQUELETTE INERTE;D9;D11",
+      "hash_mentions": "squelette_v1_hash_documentaire",
+      "classification": "HASH_EXACT_RETROUVE"
+    },
+    {
+      "zone": "auditphasee",
+      "relpath": "auditphasee/orchestrateur_demo_v1_skeleton_2026-05-13_2352_SYNTAX_OK.sha256.txt",
+      "exists": "true",
+      "sha256": "24bc5cdb7ecd8a14b1668d0a0bf89f90247d857717750934afe5cbabc73258dd",
+      "size": 126,
+      "mtime_utc": "2026-05-13T21:58:46.640226+00:00",
+      "name_hits": "",
+      "content_score": 0,
+      "content_hits": "",
+      "hash_mentions": "squelette_v1_hash_documentaire;squelette_sha_file_hash_documentaire",
+      "classification": "HASH_EXACT_RETROUVE"
+    },
+    {
+      "zone": "auditdecisions",
+      "relpath": "auditdecisions/V1_SKELETON_INERTIE_OK_2026-05-13_2201UTC.md",
+      "exists": "true",
+      "sha256": "4f33afe961607323054efe22a78f9fbe88f0704e3b28f32446d6943482a92f28",
+      "size": 538,
+      "mtime_utc": "2026-05-13T22:07:08.060472+00:00",
+      "name_hits": "",
+      "content_score": 0,
+      "content_hits": "",
+      "hash_mentions": "squelette_v1_hash_documentaire",
+      "classification": "MENTION_HASH_DOCUMENTAIRE"
+    }
+  ],
+  "rows_count": 514,
+  "readonly_documentary_bounded": true,
+  "global_scan": false,
+  "import_business_modules": false,
+  "called_legacy_modules": false,
+  "modified_runtime_files": false,
+  "cron_changed": false,
+  "systemd_changed": false,
+  "restart_done": false,
+  "process_launched": false,
+  "real_finance_authorized": false,
+  "branching_authorized": false,
+  "decree_created": false,
+  "only_writes_under_auditphasee": true
+}

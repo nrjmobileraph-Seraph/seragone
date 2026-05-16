@@ -1,0 +1,25 @@
+{
+  "schema": "seragone.v1.minicycle",
+  "timestamp_utc": "2026-05-13T22:12:00Z",
+  "cycle": "V1_MINICYCLE_1",
+  "status": "CREATED_IN_SEPARATE_V1_STATE_DIR",
+  "input_basis": [
+    "V1_BOOTSTATE_CREATED",
+    "D11_INTRouvable_CONTINUITE_V1",
+    "V1_SKELETON_INERTIE_OK"
+  ],
+  "actions_done": {
+    "legacy_modified": false,
+    "cron_systemd_modified": false,
+    "root_state_modified": false,
+    "real_order_sent": false,
+    "legacy_module_imported": false
+  },
+  "v1_decision": {
+    "mode": "MODE_DEMO_TOTAL",
+    "decision_weight": 0.0,
+    "proposal": "ATTENDRE",
+    "reason": "Premier mini-cycle V1 inerte: preuve de canal state V1 separe avant tout branchement."
+  },
+  "next": "V1_MINICYCLE_2_SNAPSHOT_READONLY"
+}

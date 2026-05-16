@@ -1,0 +1,2 @@
+kind,lineno,function,callee,reason,guards,expr,line
+write_like_call,25,wrapper_aplomb_v1_inert,'aplom bcontext'.replace,WRITE_METHOD_replace,,"'aplom bcontext'.replace(' ', '')","""aplom bcontext"".replace("" "", """"): {"

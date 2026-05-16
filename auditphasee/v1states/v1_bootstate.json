@@ -1,0 +1,12 @@
+{
+  "schema": "seragone.v1.bootstate",
+  "timestamp_utc": "2026-05-13T22:11:00Z",
+  "status": "V1_BOOTSTATE_CREATED",
+  "mode": "MODE_DEMO_TOTAL",
+  "v1_state_dir": "auditphasee/v1states",
+  "legacy_touched": false,
+  "cron_systemd_touched": false,
+  "root_state_touched": false,
+  "real_order": false,
+  "next": "V1_MINICYCLE_1"
+}

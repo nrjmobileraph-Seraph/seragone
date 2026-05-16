@@ -1,0 +1,161 @@
+{
+  "date_utc": "2026-05-15T20:43:42.595939+00:00",
+  "name": "MATRICE_WRAPPERS_PURS_DECISIONALLOCATION",
+  "root": "/home/ubuntu/seragone",
+  "csv": "/home/ubuntu/seragone/auditphasee/MATRICE_WRAPPERS_PURS_DECISIONALLOCATION_20260515T204342Z.csv",
+  "md": "/home/ubuntu/seragone/auditphasee/MATRICE_WRAPPERS_PURS_DECISIONALLOCATION_20260515T204342Z.md",
+  "manifest": "/home/ubuntu/seragone/auditphasee/MATRICE_WRAPPERS_PURS_DECISIONALLOCATION_20260515T204342Z.manifest.json",
+  "candidate_files": [
+    ".aplomb.py",
+    "aplomb.py",
+    "tireur_aplomb.py",
+    "productiondecisionaplomb.py",
+    "productionprotectionprudencemodule.py",
+    "prudence_module.py",
+    "demo/prudence/prudence_demo.py",
+    "productionallocationdoubletempo.py",
+    "doubletempo.py",
+    "productiondecisionpolicyengine.py",
+    "policy_engine.py",
+    "productionpolicyengine.py",
+    "productiondecisionallocationmanager.py",
+    "productionallocationmoneymanager.py",
+    "productionallocationmetacontroller.py",
+    "money_manager_perplexity_97L.py",
+    "money_manager.py",
+    "demo/generator/decision_to_order.py",
+    "demo/orders/test_order_demo.json",
+    "demo/orders/test_order_danger.json",
+    "demo/broker/demobroker.py",
+    "demo/broker/demobroker_runner.py",
+    "demo/prudence/prudence_demo_runner.py"
+  ],
+  "previous_docs": [
+    {
+      "file": "auditphasee/SONDEFROIDE_DECISIONALLOCATION_V1_20260515T203830Z.manifest.json",
+      "exists": true,
+      "sha256": "5b2bec2a6fa87a493c5a007367b087db25b95a86429a9b84f21d7298114d0bcd",
+      "size": 2430
+    },
+    {
+      "file": "auditphasee/SONDEB_BLOQUEURS_DECISIONALLOCATION_20260515T203947Z.manifest.json",
+      "exists": true,
+      "sha256": "7666d86fc325368bf9e02d2648afbbeb5bd418296a3154a4c4f5b6826ed9a18e",
+      "size": 1699
+    },
+    {
+      "file": "auditdecisions/ATTESTATION_DECISIONALLOCATION_SONDEB_BLOCAGE_DIRECT_20260515T204042Z.md",
+      "exists": true,
+      "sha256": "f81cc2cc2696ff373c6a63fe138c1a669f1e2681ac3fa9e75de473cb78b4c6a6",
+      "size": 2278
+    },
+    {
+      "file": "auditphasee/CONTRATORCHESTRATEURDEMOV12026-05-132330VALIDATED.md",
+      "exists": false,
+      "sha256": "",
+      "size": ""
+    },
+    {
+      "file": "auditdecisions/DECRETA73SEMANTIQUENEUTRALPOSITIONDEMO2026-05-15.md",
+      "exists": true,
+      "sha256": "3eefcc21f9b1250222d30339bea7f81ba01008a0d13c8df16607fd2fcc0a1961",
+      "size": 1964
+    }
+  ],
+  "files_read": 17,
+  "verdict_counts": {
+    "ABSENT": 10,
+    "WRAPPER_NEUF_REQUIS_WRITE_LEGACY": 4,
+    "EXCLURE_PROCESS_CRON_SYSTEMD_DIRECT": 2,
+    "EXCLURE_RISQUE_REEL_DIRECT": 5,
+    "LECTURE_STATE_OU_FIXTURE_SEULEMENT": 2
+  },
+  "role_status_counts": {
+    "FONCTION_PURE_CANDIDATE_MAIS_SONDE_SEPAREE_REQUISE": 2,
+    "WRAPPER_NEUF_REQUIS_AVEC_EXCLUSION_SOURCE_RISQUE": 2,
+    "SOURCE_ABSENTE_WRAPPER_NEUF_PROBABLE": 1,
+    "EXCLUSION_DIRECTE_JUSQU_A_DECRET_SPECIFIQUE": 2
+  },
+  "role_verdicts": {
+    "APLOMB": {
+      "status": "FONCTION_PURE_CANDIDATE_MAIS_SONDE_SEPAREE_REQUISE",
+      "next_step": "sonde ciblée de la ou des fonctions pures candidates",
+      "pure_candidates": [
+        {
+          "file": "tireur_aplomb.py",
+          "functions": "infer_aplomb_input;decide_local"
+        }
+      ]
+    },
+    "PRUDENCE_MEASURE": {
+      "status": "WRAPPER_NEUF_REQUIS_AVEC_EXCLUSION_SOURCE_RISQUE",
+      "next_step": "ne pas appeler la source; rédiger wrapper neuf inerte si besoin",
+      "pure_candidates": [
+        {
+          "file": "prudence_module.py",
+          "functions": "prudence_parle"
+        }
+      ]
+    },
+    "DOUBLE_TEMPO": {
+      "status": "FONCTION_PURE_CANDIDATE_MAIS_SONDE_SEPAREE_REQUISE",
+      "next_step": "sonde ciblée de la ou des fonctions pures candidates",
+      "pure_candidates": [
+        {
+          "file": "doubletempo.py",
+          "functions": "get_tempo_budgets"
+        }
+      ]
+    },
+    "POLICY_ENGINE": {
+      "status": "SOURCE_ABSENTE_WRAPPER_NEUF_PROBABLE",
+      "next_step": "wrapper neuf inerte si le rôle est indispensable",
+      "pure_candidates": []
+    },
+    "ALLOCATION": {
+      "status": "WRAPPER_NEUF_REQUIS_AVEC_EXCLUSION_SOURCE_RISQUE",
+      "next_step": "ne pas appeler la source; rédiger wrapper neuf inerte si besoin",
+      "pure_candidates": [
+        {
+          "file": "money_manager_perplexity_97L.py",
+          "functions": "load_aplomb_state"
+        },
+        {
+          "file": "money_manager.py",
+          "functions": "get_aplomb_permission;calculer_positions_tireurs"
+        }
+      ]
+    },
+    "DECISION_TO_ORDER": {
+      "status": "EXCLUSION_DIRECTE_JUSQU_A_DECRET_SPECIFIQUE",
+      "next_step": "conserver hors orchestrateur V1",
+      "pure_candidates": [
+        {
+          "file": "demo/generator/decision_to_order.py",
+          "functions": "decision_hash"
+        }
+      ]
+    },
+    "DEMO_BROKER": {
+      "status": "EXCLUSION_DIRECTE_JUSQU_A_DECRET_SPECIFIQUE",
+      "next_step": "conserver hors orchestrateur V1",
+      "pure_candidates": [
+        {
+          "file": "demo/prudence/prudence_demo_runner.py",
+          "functions": "is_already_prudenced"
+        }
+      ]
+    }
+  },
+  "readonly_static": true,
+  "import_business_modules": false,
+  "modified_runtime_files": false,
+  "cron_changed": false,
+  "systemd_changed": false,
+  "restart_done": false,
+  "process_launched": false,
+  "real_finance_authorized": false,
+  "only_writes_under_auditphasee": true,
+  "branching_authorized": false,
+  "decree_created": false
+}

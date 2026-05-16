@@ -1,0 +1,38 @@
+{
+  "date_utc": "2026-05-15T20:39:47.720871+00:00",
+  "name": "SONDEB_BLOQUEURS_DECISIONALLOCATION",
+  "targets": [
+    "aplomb.py",
+    "demo/generator/decision_to_order.py",
+    "demo/prudence/prudence_demo.py",
+    "demo/reports/RACCORDEMENT_CHAINE_REELLE_VERS_DEMO_20260507_211559/grep_ordre_execution_broker_head2000.txt",
+    "doubletempo.py",
+    "money_manager.py",
+    "money_manager_perplexity_97L.py",
+    "prudence_module.py",
+    "tireur_aplomb.py"
+  ],
+  "csv": "/home/ubuntu/seragone/auditphasee/SONDEB_BLOQUEURS_DECISIONALLOCATION_20260515T203947Z.csv",
+  "md": "/home/ubuntu/seragone/auditphasee/SONDEB_BLOQUEURS_DECISIONALLOCATION_20260515T203947Z.md",
+  "manifest": "/home/ubuntu/seragone/auditphasee/SONDEB_BLOQUEURS_DECISIONALLOCATION_20260515T203947Z.manifest.json",
+  "readonly_static": true,
+  "import_business_modules": false,
+  "modified_runtime_files": false,
+  "cron_changed": false,
+  "systemd_changed": false,
+  "restart_done": false,
+  "process_launched": false,
+  "real_finance_authorized": false,
+  "only_writes_under_auditphasee": true,
+  "verdicts": {
+    "aplomb.py": "WRITE_LEGACY_REEL_OU_PROBABLE",
+    "demo/generator/decision_to_order.py": "RISQUE_REEL_A_ISOLER",
+    "demo/prudence/prudence_demo.py": "RISQUE_REEL_A_ISOLER",
+    "demo/reports/RACCORDEMENT_CHAINE_REELLE_VERS_DEMO_20260507_211559/grep_ordre_execution_broker_head2000.txt": "RISQUE_REEL_A_ISOLER",
+    "doubletempo.py": "WRITE_LEGACY_REEL_OU_PROBABLE",
+    "money_manager.py": "RISQUE_REEL_A_ISOLER",
+    "money_manager_perplexity_97L.py": "WRITE_LEGACY_REEL_OU_PROBABLE",
+    "prudence_module.py": "WRITE_LEGACY_REEL_OU_PROBABLE",
+    "tireur_aplomb.py": "WRITE_LEGACY_REEL_OU_PROBABLE"
+  }
+}

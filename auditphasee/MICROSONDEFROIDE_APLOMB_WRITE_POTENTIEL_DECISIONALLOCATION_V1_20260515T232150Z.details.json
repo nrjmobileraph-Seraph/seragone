@@ -1,0 +1,42 @@
+{
+  "ast_ok": true,
+  "branching_authorized": false,
+  "cron_modified": false,
+  "date_utc": "2026-05-15T23:21:50.128039+00:00",
+  "functions": [
+    {
+      "lineno": 13,
+      "name": "wrapper_aplomb_v1_inert",
+      "signature": "marketcontext, parameters=None"
+    }
+  ],
+  "imports": [],
+  "legacy_marker_hits": [],
+  "path_literals": [],
+  "real_finance_authorized": false,
+  "runtime_modified": false,
+  "sonde": "MICROSONDEFROIDE_APLOMB_WRITE_POTENTIEL_DECISIONALLOCATION_V1",
+  "status": "SONDE_FROIDE_DOCUMENTAIRE_PURE",
+  "systemd_modified": false,
+  "target": "auditphasee/wrapper_aplomb_v1_inert.py",
+  "target_executed": false,
+  "target_exists": true,
+  "target_imported": false,
+  "target_lines": 44,
+  "target_sha256": "a42ba83d38b7160e6ed2ac70feb9bbb9c6b5e6e39af0ded4f6e5479624759132",
+  "target_size": 1168,
+  "top_level_calls": [],
+  "verdict": "ALERTE_WRITE_NESTED_NON_EXECUTEE_PAR_SONDE",
+  "wrapper_executed": false,
+  "write_like_calls": [
+    {
+      "callee": "'aplom bcontext'.replace",
+      "expr": "'aplom bcontext'.replace(' ', '')",
+      "function": "wrapper_aplomb_v1_inert",
+      "guards": [],
+      "line": "\"aplom bcontext\".replace(\" \", \"\"): {",
+      "lineno": 25,
+      "reason": "WRITE_METHOD_replace"
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+SONDE FROIDE — REFERENCES DOUBLONS TOP LARGE
+TS_UTC=20260515T202516Z
+
+=== CIBLES ===
+./btc_1min_historique_complet.csv
+./palette_claude/btc_1min_historique_complet.csv
+./_bibliotheque_modules/production_copies/multivers_state.json
+./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./backups/20avril2026_PM/mondes_recursifs_500m.csv
+
+=== REFERENCES TEXTUELLES BORNEES ===
+
+--- NEEDLE: btc_1min_historique_complet.csv ---
+./audit/suite6g3_csv_writer_et_cache_20260511T170537Z/suite6g3.txt:280:lrwxrwxrwx 1 ubuntu ubuntu        53 Apr 22 06:23 btc_1min_2026.csv -> /home/ubuntu/seragone/btc_1min_historique_complet.csv
+./audit/suite6g3_csv_writer_et_cache_20260511T170537Z/suite6g3.txt:281:-rw-rw-r-- 1 ubuntu ubuntu 533620487 Apr 16 01:21 btc_1min_historique_complet.csv
+./audit/rapports/SONDE_META_MONDES_PEPITES_20260514T225717Z.txt:4275:31:df_1min = pd.read_csv('/home/ubuntu/seragone/btc_1min_historique_complet.csv')
+./audit/rapports/SONDE_META_MONDES_PEPITES_20260514T225717Z.txt:13755:31:df_1min = pd.read_csv('/home/ubuntu/seragone/btc_1min_historique_complet.csv')
+./audit/artefacts_activite_20260511T224528Z/artefacts.txt:93:-rw-rw-r-- 1 ubuntu ubuntu 533620487 Apr 16 01:21 /home/ubuntu/seragone/btc_1min_historique_complet.csv
+./audit/artefacts_activite_20260511T224528Z/artefacts.txt:94:lrwxrwxrwx 1 ubuntu ubuntu 53 Apr 22 06:23 /home/ubuntu/seragone/btc_1min_2026.csv -> /home/ubuntu/seragone/btc_1min_historique_complet.csv
+./audit/artefacts_activite_20260511T224528Z/artefacts.txt:95:-rw-rw-r-- 1 ubuntu ubuntu 533620487 Apr 16 01:21 /home/ubuntu/seragone/AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/btc_1min_historique_complet.csv
+./audit/artefacts_activite_20260511T224528Z/artefacts.txt:96:-rw-rw-r-- 1 ubuntu ubuntu 533620487 Apr 21 12:35 /home/ubuntu/seragone/palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:5:./btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:6:./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:14:--- NEEDLE: btc_1min_historique_complet.csv ---
+./auditdecisions/ATTESTATIONDOUBLONSTOPLARGE20260515T202448Z.md:13:- btc_1min_historique_complet.csv : racine + palette_claude, hash identique 8f18732f...
+./auditdecisions/ATTESTATIONDOUBLONSTOPLARGE20260515T202446Z.md:13:- btc_1min_historique_complet.csv : racine + palette_claude, hash identique 8f18732f...
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:10:508.90M	2026-04-21 12:35	./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:11:508.90M	2026-04-16 01:21	./btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:95:509M	./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:96:509M	./btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:6:8f18732fed70a7a40194294f0e6e7b1bf667c54e44ae85993b1edc498665ebe5	533620487	./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:7:8f18732fed70a7a40194294f0e6e7b1bf667c54e44ae85993b1edc498665ebe5	533620487	./btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:60:  ./btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:61:  ./palette_claude/btc_1min_historique_complet.csv
+./chercheur_autonome.py:24:df_1min = pd.read_csv('/home/ubuntu/seragone/btc_1min_historique_complet.csv')
+./chasse_pepites_B.py:31:df_1min = pd.read_csv('/home/ubuntu/seragone/btc_1min_historique_complet.csv')
+./script_vps_definitif_B.py:36:df_1min = pd.read_csv('/home/ubuntu/seragone/btc_1min_historique_complet.csv')
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:4043:btc_1min_historique_complet.csv
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:5220:palette_claude/btc_1min_historique_complet.csv
+./canon/SERAGONE_ONE_TOTAL_TREE.txt:4828:./btc_1min_historique_complet.csv
+./canon/SERAGONE_ONE_TOTAL_TREE.txt:9449:./palette_claude/btc_1min_historique_complet.csv
+./canon/SERAGONE_ONE_TOTAL_GIT.txt:251:?? btc_1min_historique_complet.csv
+./audit_actions_v1/DIAG_API_COLLECTEUR_V5B.md:29:| `/home/ubuntu/seragone/btc_1min_historique_complet.csv` | `533620487` | `1321205` |
+./audit_actions_v1/CARTOGRAPHIE_MONDES_DOCUMENTS_V4A.md:36:- `btc_1min_historique_complet.csv` — data_csv — 533620487 octets
+./audit_actions_v1/CARTOGRAPHIE_MONDES_DOCUMENTS_V4A.md:37:- `palette_claude/btc_1min_historique_complet.csv` — data_csv — 533620487 octets
+./audit_actions_v1/FREEZE_V5_TRIPTYQUE_CANON_20260501_082610/DIAG_API_COLLECTEUR_V5B.md:29:| `/home/ubuntu/seragone/btc_1min_historique_complet.csv` | `533620487` | `1321205` |
+
+--- NEEDLE: palette_claude/btc_1min_historique_complet.csv ---
+./audit/artefacts_activite_20260511T224528Z/artefacts.txt:96:-rw-rw-r-- 1 ubuntu ubuntu 533620487 Apr 21 12:35 /home/ubuntu/seragone/palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:6:./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:22:./audit/artefacts_activite_20260511T224528Z/artefacts.txt:96:-rw-rw-r-- 1 ubuntu ubuntu 533620487 Apr 21 12:35 /home/ubuntu/seragone/palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:24:./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:6:./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:28:./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:10:508.90M	2026-04-21 12:35	./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:30:./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:95:509M	./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:32:./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:6:8f18732fed70a7a40194294f0e6e7b1bf667c54e44ae85993b1edc498665ebe5	533620487	./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:35:./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:61:  ./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:40:./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:5220:palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:42:./canon/SERAGONE_ONE_TOTAL_TREE.txt:9449:./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:46:./audit_actions_v1/CARTOGRAPHIE_MONDES_DOCUMENTS_V4A.md:37:- `palette_claude/btc_1min_historique_complet.csv` — data_csv — 533620487 octets
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:49:--- NEEDLE: palette_claude/btc_1min_historique_complet.csv ---
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:10:508.90M	2026-04-21 12:35	./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:95:509M	./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:6:8f18732fed70a7a40194294f0e6e7b1bf667c54e44ae85993b1edc498665ebe5	533620487	./palette_claude/btc_1min_historique_complet.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:61:  ./palette_claude/btc_1min_historique_complet.csv
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:5220:palette_claude/btc_1min_historique_complet.csv
+./canon/SERAGONE_ONE_TOTAL_TREE.txt:9449:./palette_claude/btc_1min_historique_complet.csv
+./audit_actions_v1/CARTOGRAPHIE_MONDES_DOCUMENTS_V4A.md:37:- `palette_claude/btc_1min_historique_complet.csv` — data_csv — 533620487 octets
+
+--- NEEDLE: _bibliotheque_modules/production_copies/multivers_state.json ---
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:163:2026-04-23 21:06  80753176  ./_bibliotheque_modules/production_copies/multivers_state.json
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:70:  - 2026-04-23 21:06:31 UTC | 80753176 bytes | _bibliotheque_modules/production_copies/multivers_state.json
+./audit/rapports/CANON_RECONSTITUTION_DOCS_SCRIPTS_STATES_20260430_202541.txt:850:2026-04-23 21:06:31.434007253 +0000 | 80753176 bytes | ./_bibliotheque_modules/production_copies/multivers_state.json
+./audit/orphelins_c4_bloc4_20260511T080947Z/c4_bloc4.txt:1869:        "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./audit/orphelins_c4_bloc4_20260511T080947Z/c4_bloc4.txt:1874:        "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./audit/audit_global_v0/vivants_v7.json:32009:        "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./audit/audit_global_v0/vivants_v7.json:32014:        "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:7:./_bibliotheque_modules/production_copies/multivers_state.json
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:70:--- NEEDLE: _bibliotheque_modules/production_copies/multivers_state.json ---
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:50:77.01M	2026-04-23 21:06	./_bibliotheque_modules/production_copies/multivers_state.json
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:148:78M	./_bibliotheque_modules/production_copies/multivers_state.json
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:46:156af3c0ea1e6e0e82991895305cd905cc662737de83b32a538c12637b13924d	80753176	./_bibliotheque_modules/production_copies/multivers_state.json
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:56:  ./_bibliotheque_modules/production_copies/multivers_state.json
+./AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json:3751:        "_bibliotheque_modules/production_copies/multivers_state.json",
+./AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json:3902:        "_bibliotheque_modules/production_copies/multivers_state.json",
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:1531:_bibliotheque_modules/production_copies/multivers_state.json
+./audit_multivers_fix_20260507/tmp_multivers_v2_progressif_readonly_20260507.txt:135:./audit/chrono_truth_20260501_100620/02_extraits_documents_pivots.md:87895:L70: - 2026-04-23 21:06:31 UTC | 80753176 bytes | _bibliotheque_modules/production_copies/multivers_state.json
+./audit_multivers_fix_20260507/tmp_multivers_v2_progressif_readonly_20260507.txt:137:./audit/chrono_truth_20260501_100620/02_extraits_documents_pivots.md:88186:L70: - 2026-04-23 21:06:31 UTC | 80753176 bytes | _bibliotheque_modules/production_copies/multivers_state.json
+./audit_multivers_fix_20260507/tmp_multivers_v2_progressif_readonly_20260507.txt:139:./audit/chrono_truth_20260501_100620/02_extraits_documents_pivots.md:88194:L70: - 2026-04-23 21:06:31 UTC | 80753176 bytes | _bibliotheque_modules/production_copies/multivers_state.json
+./_bibliotheque_modules/index/tree.txt:360:/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json
+./_bibliotheque_modules/index/inventory.json:2784:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./_bibliotheque_modules/index/inventory.txt:347:/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json
+./states/registry_probe_report_20260427_161900.json:1247:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./states/registry_probe_report_20260427_161900.json:5904:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./states/registry_probe_report_20260427_162908.json:1247:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./states/registry_probe_report_20260427_162908.json:5904:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./audit_cartographie_multimondes_moteurs_20260506_204436/01_recursion_multivers_candidates.txt:71:2026-04-23 21:06   80753176 ./_bibliotheque_modules/production_copies/multivers_state.json
+./audit_cartographie_multimondes_moteurs_20260506_204436/07_states_vivants_recents_tail500.txt:108:2026-04-23 21:06   80753176 ./_bibliotheque_modules/production_copies/multivers_state.json
+./canon/modulesregistry_v1_operationnel_REMPLI.json:506:        "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./canon/modulesregistry_v1_operationnel_REMPLI.json:511:        "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./canon/SERAGONE_ONE_TOTAL_TREE.txt:1560:./_bibliotheque_modules/production_copies/multivers_state.json
+./observabilite_seragone/OBS0_ETAT_VIVANT_20260506_193221/states_json_mtimes.txt:101:2026-04-23 21:06:31.4340072530 size=80753176 ./_bibliotheque_modules/production_copies/multivers_state.json
+./auditrapports/LECTURETOTALESERAGONE_INDEX_20260501092333.txt:7496:2026-04-23 21:06:31.4340072530 80753176 ./_bibliotheque_modules/production_copies/multivers_state.json
+./audit_actions_v1/PRECHECK_305_PARALLELES_20260505T232746Z/03_states_caches_outputs.txt:34:2026-04-23 21:06:31.434007253 +0000 size=80753176 /home/ubuntu/seragone/AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/production_copies/multivers_state.json
+./audit_actions_v1/PRECHECK_305_PARALLELES_20260505T232746Z/03_states_caches_outputs.txt:35:156af3c0ea1e6e0e82991895305cd905cc662737de83b32a538c12637b13924d  /home/ubuntu/seragone/AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/production_copies/multivers_state.json
+./audit_actions_v1/PRECHECK_305_PARALLELES_20260505T232746Z/03_states_caches_outputs.txt:70:2026-04-23 21:06:31.434007253 +0000 size=80753176 /home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json
+./audit_actions_v1/PRECHECK_305_PARALLELES_20260505T232746Z/03_states_caches_outputs.txt:71:156af3c0ea1e6e0e82991895305cd905cc662737de83b32a538c12637b13924d  /home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json
+./audit_actions_v1/CARTOGRAPHIE_MONDES_DOCUMENTS_V4A.md:81:- `_bibliotheque_modules/production_copies/multivers_state.json` — state_or_json — 80753176 octets
+./registry_probe_report.json:1239:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./registry_probe_report.json:5951:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/production_copies/multivers_state.json",
+./MANIFEST_RECUP_META_PEPITES_20260507_213022.txt:1324:./AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/production_copies/multivers_state.json
+./MANIFEST_RECUP_META_PEPITES_20260507_213022.txt:1795:./_bibliotheque_modules/production_copies/multivers_state.json
+
+--- NEEDLE: _bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json ---
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:164:2026-04-23 21:06  80753176  ./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:71:  - 2026-04-23 21:06:31 UTC | 80753176 bytes | _bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./audit/rapports/CANON_RECONSTITUTION_DOCS_SCRIPTS_STATES_20260430_202541.txt:851:2026-04-23 21:06:31.434007253 +0000 | 80753176 bytes | ./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./audit/orphelins_c4_bloc4_20260511T080947Z/c4_bloc4.txt:1870:        "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./audit/orphelins_c4_bloc4_20260511T080947Z/c4_bloc4.txt:1875:        "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./audit/audit_global_v0/vivants_v7.json:32010:        "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./audit/audit_global_v0/vivants_v7.json:32015:        "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:8:./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:114:--- NEEDLE: _bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json ---
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:49:77.01M	2026-04-23 21:06	./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:147:78M	./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:45:156af3c0ea1e6e0e82991895305cd905cc662737de83b32a538c12637b13924d	80753176	./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:57:  ./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json:3778:        "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json:3906:        "_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./RECUP_INDEX_20260507_213232/06_bibliotheque_modules.txt:28:./AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./RECUP_INDEX_20260507_213232/06_bibliotheque_modules.txt:106:./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./RECUP_PLAN_20260507_213338/C_CANDIDATS_RESTAURATION.txt:121:./AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./RECUP_PLAN_20260507_213338/00_all_indexed.txt:125:./AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./RECUP_PLAN_20260507_213338/00_all_indexed.txt:679:./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./RECUP_PLAN_20260507_213338/B_AUDIT_SOURCE_PREUVE.txt:125:./AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/deja_presents_actif.txt:121:_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/candidats_rel.txt:121:_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:2339:_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./RECUP_PLAN_20260507_213338/A_ACTIF_A_GARDER.txt:136:./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./audit_multivers_fix_20260507/tmp_multivers_v2_progressif_readonly_20260507.txt:138:./audit/chrono_truth_20260501_100620/02_extraits_documents_pivots.md:88187:L71: - 2026-04-23 21:06:31 UTC | 80753176 bytes | _bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./audit_multivers_fix_20260507/tmp_multivers_v2_progressif_readonly_20260507.txt:140:./audit/chrono_truth_20260501_100620/02_extraits_documents_pivots.md:88195:L71: - 2026-04-23 21:06:31 UTC | 80753176 bytes | _bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./_bibliotheque_modules/index/tree.txt:1124:/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./_bibliotheque_modules/index/inventory.json:9248:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./_bibliotheque_modules/index/inventory.txt:1088:/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./states/registry_probe_report_20260427_161900.json:2182:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./states/registry_probe_report_20260427_161900.json:6189:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./states/registry_probe_report_20260427_162908.json:2182:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./states/registry_probe_report_20260427_162908.json:6189:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./canon/modulesregistry_v1_operationnel_REMPLI.json:507:        "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./canon/modulesregistry_v1_operationnel_REMPLI.json:512:        "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./auditrapports/LECTURETOTALESERAGONE_INDEX_20260501092333.txt:7497:2026-04-23 21:06:31.4340072530 80753176 ./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./audit_actions_v1/PRECHECK_305_PARALLELES_20260505T232746Z/03_states_caches_outputs.txt:40:2026-04-23 21:06:31.434007253 +0000 size=80753176 /home/ubuntu/seragone/AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./audit_actions_v1/PRECHECK_305_PARALLELES_20260505T232746Z/03_states_caches_outputs.txt:41:156af3c0ea1e6e0e82991895305cd905cc662737de83b32a538c12637b13924d  /home/ubuntu/seragone/AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./audit_actions_v1/PRECHECK_305_PARALLELES_20260505T232746Z/03_states_caches_outputs.txt:76:2026-04-23 21:06:31.434007253 +0000 size=80753176 /home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./audit_actions_v1/PRECHECK_305_PARALLELES_20260505T232746Z/03_states_caches_outputs.txt:77:156af3c0ea1e6e0e82991895305cd905cc662737de83b32a538c12637b13924d  /home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./audit_actions_v1/CARTOGRAPHIE_MONDES_DOCUMENTS_V4A.md:82:- `_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json` — state_or_json — 80753176 octets
+./registry_probe_report.json:2174:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./registry_probe_report.json:6236:      "path": "/home/ubuntu/seragone/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json",
+./MANIFEST_RECUP_META_PEPITES_20260507_213022.txt:1374:./AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/contenu/_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./MANIFEST_RECUP_META_PEPITES_20260507_213022.txt:1847:./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+
+--- NEEDLE: backups/migration_canon_20avril2026/mondes_recursifs_500m.csv ---
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:64:  - 2026-04-20 10:55:21 UTC | 126517452 bytes | backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:124:  - 2026-04-20 10:55:21 UTC | 126517452 bytes | backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./audit/rapports/CANON_RECONSTITUTION_DOCS_SCRIPTS_STATES_20260430_202541.txt:802:2026-04-20 10:55:21.902806240 +0000 | 126517452 bytes | ./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:9:./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:162:--- NEEDLE: backups/migration_canon_20avril2026/mondes_recursifs_500m.csv ---
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:32:120.66M	2026-04-20 10:55	./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:126:121M	./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:28:3f984848720f50cf4d9c53a9214620fc9fb9ce1ccccfcd095a82c327a4a78ca1	126517452	./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:64:  ./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:3904:backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./states/registry_probe_report_20260427_161900.json:2757:      "path": "/home/ubuntu/seragone/backups/migration_canon_20avril2026/mondes_recursifs_500m.csv",
+./states/registry_probe_report_20260427_162908.json:2757:      "path": "/home/ubuntu/seragone/backups/migration_canon_20avril2026/mondes_recursifs_500m.csv",
+./audit_cartographie_multimondes_moteurs_20260506_204436/01_recursion_multivers_candidates.txt:39:2026-04-20 10:55  126517452 ./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./canon/SERAGONE_ONE_TOTAL_TREE.txt:4699:./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditrapports/LECTURETOTALESERAGONE_INDEX_20260501092333.txt:8142:./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./audit_actions_v1/CARTOGRAPHIE_MONDES_DOCUMENTS_V4A.md:79:- `backups/migration_canon_20avril2026/mondes_recursifs_500m.csv` — data_csv — 126517452 octets
+./registry_probe_report.json:2749:      "path": "/home/ubuntu/seragone/backups/migration_canon_20avril2026/mondes_recursifs_500m.csv",
+
+--- NEEDLE: backups/20avril2026_PM/mondes_recursifs_500m.csv ---
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:61:  - 2026-04-20 10:05:35 UTC | 126517452 bytes | backups/20avril2026_PM/mondes_recursifs_500m.csv
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:123:  - 2026-04-20 10:05:35 UTC | 126517452 bytes | backups/20avril2026_PM/mondes_recursifs_500m.csv
+./audit/rapports/CANON_RECONSTITUTION_DOCS_SCRIPTS_STATES_20260430_202541.txt:800:2026-04-20 10:05:35.488241367 +0000 | 126517452 bytes | ./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:10:./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:181:--- NEEDLE: backups/20avril2026_PM/mondes_recursifs_500m.csv ---
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:33:120.66M	2026-04-20 10:05	./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:127:121M	./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:29:3f984848720f50cf4d9c53a9214620fc9fb9ce1ccccfcd095a82c327a4a78ca1	126517452	./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:65:  ./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:3812:backups/20avril2026_PM/mondes_recursifs_500m.csv
+./states/registry_probe_report_20260427_161900.json:2612:      "path": "/home/ubuntu/seragone/backups/20avril2026_PM/mondes_recursifs_500m.csv",
+./states/registry_probe_report_20260427_162908.json:2612:      "path": "/home/ubuntu/seragone/backups/20avril2026_PM/mondes_recursifs_500m.csv",
+./audit_cartographie_multimondes_moteurs_20260506_204436/01_recursion_multivers_candidates.txt:29:2026-04-20 10:05  126517452 ./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./canon/SERAGONE_ONE_TOTAL_TREE.txt:4575:./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./audit_actions_v1/CARTOGRAPHIE_MONDES_DOCUMENTS_V4A.md:78:- `backups/20avril2026_PM/mondes_recursifs_500m.csv` — data_csv — 126517452 octets
+./registry_probe_report.json:2604:      "path": "/home/ubuntu/seragone/backups/20avril2026_PM/mondes_recursifs_500m.csv",
+
+--- NEEDLE: mondes_recursifs_500m.csv ---
+./audit/decisions/canon_lot_a3_1_preservation_20260509_231658/AUDIT_CIBLE_20avril2026_matin.md:126:- mondes_recursifs_500m.csv → 13 avril, **Session 2**
+./audit/decisions/canon_lot_a3_1_preservation_20260509_231658/AUDIT_CIBLE_20avril2026_matin.md:147:- **Fichier mondes_recursifs_500m.csv utilisable directement ?** OUI *pour ses dist_local* (calibrées sur médiane du train, indépendant de PHI_M0), mais NON structurellement rigoureux car W utilisé est Session 2 (1.50/2.00/1.50/1.00/0.50), pas CANON.
+./audit/rho3a_phase_O2_localisation_20260511T221630Z/phase_O2.txt:103:-rw-rw-r--   1 ubuntu ubuntu 127046452 Apr 20 13:21 mondes_recursifs_500m.csv
+./audit/phase_e/q5b2_seragone_data_recent.txt:49:2026-04-20 13:21:51.0738336870 127046452 /home/ubuntu/seragone/data/mondes_recursifs_500m.csv
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:61:  - 2026-04-20 10:05:35 UTC | 126517452 bytes | backups/20avril2026_PM/mondes_recursifs_500m.csv
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:64:  - 2026-04-20 10:55:21 UTC | 126517452 bytes | backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:67:  - 2026-04-20 13:21:51 UTC | 127046452 bytes | data/mondes_recursifs_500m.csv
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:123:  - 2026-04-20 10:05:35 UTC | 126517452 bytes | backups/20avril2026_PM/mondes_recursifs_500m.csv
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:124:  - 2026-04-20 10:55:21 UTC | 126517452 bytes | backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:127:  - 2026-04-20 13:21:51 UTC | 127046452 bytes | data/mondes_recursifs_500m.csv
+./audit/rapports/CANON_RECONSTITUTION_DOCS_SCRIPTS_STATES_20260430_202541.txt:800:2026-04-20 10:05:35.488241367 +0000 | 126517452 bytes | ./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./audit/rapports/CANON_RECONSTITUTION_DOCS_SCRIPTS_STATES_20260430_202541.txt:802:2026-04-20 10:55:21.902806240 +0000 | 126517452 bytes | ./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./audit/rapports/CANON_RECONSTITUTION_DOCS_SCRIPTS_STATES_20260430_202541.txt:809:2026-04-20 13:21:51.073833687 +0000 | 127046452 bytes | ./data/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:9:./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:10:./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:162:--- NEEDLE: backups/migration_canon_20avril2026/mondes_recursifs_500m.csv ---
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:163:./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:64:  - 2026-04-20 10:55:21 UTC | 126517452 bytes | backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:164:./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:124:  - 2026-04-20 10:55:21 UTC | 126517452 bytes | backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:165:./audit/rapports/CANON_RECONSTITUTION_DOCS_SCRIPTS_STATES_20260430_202541.txt:802:2026-04-20 10:55:21.902806240 +0000 | 126517452 bytes | ./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:166:./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:9:./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:167:./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:162:--- NEEDLE: backups/migration_canon_20avril2026/mondes_recursifs_500m.csv ---
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:168:./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:32:120.66M	2026-04-20 10:55	./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:169:./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:126:121M	./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:170:./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:28:3f984848720f50cf4d9c53a9214620fc9fb9ce1ccccfcd095a82c327a4a78ca1	126517452	./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:171:./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:64:  ./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:172:./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:3904:backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:173:./states/registry_probe_report_20260427_161900.json:2757:      "path": "/home/ubuntu/seragone/backups/migration_canon_20avril2026/mondes_recursifs_500m.csv",
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:174:./states/registry_probe_report_20260427_162908.json:2757:      "path": "/home/ubuntu/seragone/backups/migration_canon_20avril2026/mondes_recursifs_500m.csv",
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:175:./audit_cartographie_multimondes_moteurs_20260506_204436/01_recursion_multivers_candidates.txt:39:2026-04-20 10:55  126517452 ./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:176:./canon/SERAGONE_ONE_TOTAL_TREE.txt:4699:./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:177:./auditrapports/LECTURETOTALESERAGONE_INDEX_20260501092333.txt:8142:./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:178:./audit_actions_v1/CARTOGRAPHIE_MONDES_DOCUMENTS_V4A.md:79:- `backups/migration_canon_20avril2026/mondes_recursifs_500m.csv` — data_csv — 126517452 octets
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:179:./registry_probe_report.json:2749:      "path": "/home/ubuntu/seragone/backups/migration_canon_20avril2026/mondes_recursifs_500m.csv",
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:181:--- NEEDLE: backups/20avril2026_PM/mondes_recursifs_500m.csv ---
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:182:./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:61:  - 2026-04-20 10:05:35 UTC | 126517452 bytes | backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:183:./audit/rapports/CANON_MATRICE_FAMILLES_DOCS_SCRIPTS_STATES_20260430_202743.md:123:  - 2026-04-20 10:05:35 UTC | 126517452 bytes | backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:184:./audit/rapports/CANON_RECONSTITUTION_DOCS_SCRIPTS_STATES_20260430_202541.txt:800:2026-04-20 10:05:35.488241367 +0000 | 126517452 bytes | ./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:185:./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:10:./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:186:./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:181:--- NEEDLE: backups/20avril2026_PM/mondes_recursifs_500m.csv ---
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:187:./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:33:120.66M	2026-04-20 10:05	./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:188:./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:127:121M	./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:189:./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:29:3f984848720f50cf4d9c53a9214620fc9fb9ce1ccccfcd095a82c327a4a78ca1	126517452	./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:190:./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:65:  ./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:191:./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:3812:backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:192:./states/registry_probe_report_20260427_161900.json:2612:      "path": "/home/ubuntu/seragone/backups/20avril2026_PM/mondes_recursifs_500m.csv",
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:193:./states/registry_probe_report_20260427_162908.json:2612:      "path": "/home/ubuntu/seragone/backups/20avril2026_PM/mondes_recursifs_500m.csv",
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:194:./audit_cartographie_multimondes_moteurs_20260506_204436/01_recursion_multivers_candidates.txt:29:2026-04-20 10:05  126517452 ./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:195:./canon/SERAGONE_ONE_TOTAL_TREE.txt:4575:./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:196:./audit_actions_v1/CARTOGRAPHIE_MONDES_DOCUMENTS_V4A.md:78:- `backups/20avril2026_PM/mondes_recursifs_500m.csv` — data_csv — 126517452 octets
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:197:./registry_probe_report.json:2604:      "path": "/home/ubuntu/seragone/backups/20avril2026_PM/mondes_recursifs_500m.csv",
+./auditdecisions/SONDEFROIDEREFERENCESDOUBLONSTOPLARGE20260515T202516Z.txt:199:--- NEEDLE: mondes_recursifs_500m.csv ---
+./auditdecisions/ATTESTATIONDOUBLONSTOPLARGE20260515T202448Z.md:15:- mondes_recursifs_500m.csv : deux backups 20 avril, hash identique 3f984848...
+./auditdecisions/ATTESTATIONDOUBLONSTOPLARGE20260515T202446Z.md:15:- mondes_recursifs_500m.csv : deux backups 20 avril, hash identique 3f984848...
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:31:121.16M	2026-04-20 13:21	./data/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:32:120.66M	2026-04-20 10:55	./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:33:120.66M	2026-04-20 10:05	./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:125:122M	./data/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:126:121M	./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDETOPLARGEFICHIERS20260515T202216Z.txt:127:121M	./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:27:9953465115db2533ce3aee64ff1968b62ac8c20d1fa65f270d954a785033757a	127046452	./data/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:28:3f984848720f50cf4d9c53a9214620fc9fb9ce1ccccfcd095a82c327a4a78ca1	126517452	./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:29:3f984848720f50cf4d9c53a9214620fc9fb9ce1ccccfcd095a82c327a4a78ca1	126517452	./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:64:  ./backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./auditdecisions/SONDEFROIDEDOUBLONSTOPLARGE20260515T202301Z.txt:65:  ./backups/20avril2026_PM/mondes_recursifs_500m.csv
+./AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json:6271:        "data/mondes_recursifs_500m.csv",
+./AUDIT_M1_M8_COUVERTURE/audit_couverture_details.json:8872:        "data/mondes_recursifs_500m.csv",
+./output/global_manifest_20260419T154059Z.json:979:      "path": "data/mondes_recursifs_500m.csv",
+./output/global_manifest_20260419T154656Z.json:1037:      "path": "data/mondes_recursifs_500m.csv",
+./output/global_manifest_20260419T154908Z.json:901:      "path": "data/mondes_recursifs_500m.csv",
+./output/global_manifest_20260419T154642Z.json:1037:      "path": "data/mondes_recursifs_500m.csv",
+./output/lot_f_audit_v1.json:1324:  "data/mondes_recursifs_500m.csv": {
+./output/global_manifest.json:901:      "path": "data/mondes_recursifs_500m.csv",
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:3812:backups/20avril2026_PM/mondes_recursifs_500m.csv
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:3904:backups/migration_canon_20avril2026/mondes_recursifs_500m.csv
+./RECUP_PLAN_20260507_213338/RESTORE_DIFF/actifs_rel.txt:4240:data/mondes_recursifs_500m.csv
+./_bibliotheque_modules/index/modules_summary_v4.txt:1621:- build_global_manifest | meta | grade=C | maturity=validated (65) | reads=data/C1_btcusdt_2026-03-30_15min.csv,data/archive_chains/chain_F0.5.csv,data/archive_chains/chain_F0.csv,data/archive_chains/chain_F1.5.csv,data/archive_chains/chain_F1.csv,data/archive_chains/chain_F2.csv,data/archive_chains/chain_F3.csv,data/archive_chains/chain_F4.csv,data/archive_chains/chain_F6.csv,data/archive_chains/chain_propre_F0.5.csv,data/archive_chains/chain_propre_F0.csv,data/archive_chains/chain_propre_F1.5.csv,data/archive_chains/chain_propre_F1.csv,data/archive_chains/chain_propre_F2.csv,data/archive_chains/chain_propre_F3.csv,data/archive_chains/chain_propre_F4.csv,data/archive_chains/chain_propre_F6.csv,data/archive_chains/chain_v3_F0.5.csv,data/archive_chains/chain_v3_F0.csv,data/archive_chains/chain_v3_F1.5.csv,data/archive_chains/chain_v3_F1.csv,data/archive_chains/chain_v3_F2.csv,data/archive_chains/chain_v3_F3.csv,data/archive_chains/chain_v3_F4.csv,data/archive_chains/chain_v3_F6.csv,data/binance_fr_8h_4ans.csv,data/btc_15min_4ans.csv,data/btc_5min_4ans.csv,data/btc_5min_part1.csv,data/btc_5min_part2.csv,data/btc_daily.csv,data/btc_daily_fresh.csv,data/btc_hourly_4ans.csv,data/chaines_epurees_state.json,data/communicants_history.json,data/dim_btcusdt_2026-03-30_15min.csv,data/dim_btcusdt_2026-03-30_5min.csv,data/dim_btcusdt_2026-03-30_60min.csv,data/ec_latest.json,data/eth_daily.csv,data/fear_greed_complet.csv,data/live_metrics.json,data/mondes_paralleles_cache.json,data/mondes_paralleles_history.csv,data/mondes_recursifs_100m.csv,data/mondes_recursifs_20m.csv,data/mondes_recursifs_500m.csv,data/n_act_btcusdt_2026-03-30_15min.csv,data/phi_engine_memory.json,data/phi_local_100m.json,data/phi_local_20m.json,data/phi_local_500m.json,data/recursif_v1_config.json,data/seragone_4126j_canon.csv,data/seragone_4126j_canon_meta.json,data/seragone_4126j_complet_canon.csv,data/seragone_4126j_complet_canon_meta.json,data/seragone_canon_4117j.csv,data/sp500_daily.csv,data/trades_btcusdt_2026-04-04.csv,data/trades_btcusdt_2026-04-05.csv,data/trades_btcusdt_2026-04-06.csv,data/trades_btcusdt_2026-04-07.csv,data/trades_btcusdt_2026-04-08.csv,output/global_manifest.json,output/lot_a_audit.json,output/lot_b_audit.json,output/lot_c_audit_v1.json,output/lot_d_audit_v2.json,output/lot_e_audit.json,output/lot_f_audit_v1.json,output/orphans_report.json | writes=- | IN=0 | OUT=0 | path=scripts/validators/build_global_manifest.py
+./_bibliotheque_modules/index/modules_summary_v4.txt:1631:- validate_lot_f_v1 | meta | grade=C | maturity=validated (62) | reads=data/archive_chains/chain_F0.5.csv,data/archive_chains/chain_F0.csv,data/archive_chains/chain_F1.5.csv,data/archive_chains/chain_F1.csv,data/archive_chains/chain_F2.csv,data/archive_chains/chain_F3.csv,data/archive_chains/chain_F4.csv,data/archive_chains/chain_F6.csv,data/archive_chains/chain_propre_F0.5.csv,data/archive_chains/chain_propre_F0.csv,data/archive_chains/chain_propre_F1.5.csv,data/archive_chains/chain_propre_F1.csv,data/archive_chains/chain_propre_F2.csv,data/archive_chains/chain_propre_F3.csv,data/archive_chains/chain_propre_F4.csv,data/archive_chains/chain_propre_F6.csv,data/archive_chains/chain_v3_F0.5.csv,data/archive_chains/chain_v3_F0.csv,data/archive_chains/chain_v3_F1.5.csv,data/archive_chains/chain_v3_F1.csv,data/archive_chains/chain_v3_F2.csv,data/archive_chains/chain_v3_F3.csv,data/archive_chains/chain_v3_F4.csv,data/archive_chains/chain_v3_F6.csv,data/mondes_recursifs_100m.csv,data/mondes_recursifs_20m.csv,data/mondes_recursifs_500m.csv,data/seragone_4126j_canon.csv,data/seragone_4126j_canon_meta.json,data/seragone_4126j_complet_canon.csv,data/seragone_4126j_complet_canon_meta.json,data/seragone_canon_4117j.csv | writes=lot_f_audit_v1.json | IN=0 | OUT=0 | path=scripts/validators/validate_lot_f_v1.py
+./_bibliotheque_modules/index/modules_summary_v3.txt:1592:- build_global_manifest | meta | path_status=observed | maturity=validated (65) | reads=data/C1_btcusdt_2026-03-30_15min.csv,data/archive_chains/chain_F0.5.csv,data/archive_chains/chain_F0.csv,data/archive_chains/chain_F1.5.csv,data/archive_chains/chain_F1.csv,data/archive_chains/chain_F2.csv,data/archive_chains/chain_F3.csv,data/archive_chains/chain_F4.csv,data/archive_chains/chain_F6.csv,data/archive_chains/chain_propre_F0.5.csv,data/archive_chains/chain_propre_F0.csv,data/archive_chains/chain_propre_F1.5.csv,data/archive_chains/chain_propre_F1.csv,data/archive_chains/chain_propre_F2.csv,data/archive_chains/chain_propre_F3.csv,data/archive_chains/chain_propre_F4.csv,data/archive_chains/chain_propre_F6.csv,data/archive_chains/chain_v3_F0.5.csv,data/archive_chains/chain_v3_F0.csv,data/archive_chains/chain_v3_F1.5.csv,data/archive_chains/chain_v3_F1.csv,data/archive_chains/chain_v3_F2.csv,data/archive_chains/chain_v3_F3.csv,data/archive_chains/chain_v3_F4.csv,data/archive_chains/chain_v3_F6.csv,data/binance_fr_8h_4ans.csv,data/btc_15min_4ans.csv,data/btc_5min_4ans.csv,data/btc_5min_part1.csv,data/btc_5min_part2.csv,data/btc_daily.csv,data/btc_daily_fresh.csv,data/btc_hourly_4ans.csv,data/chaines_epurees_state.json,data/communicants_history.json,data/dim_btcusdt_2026-03-30_15min.csv,data/dim_btcusdt_2026-03-30_5min.csv,data/dim_btcusdt_2026-03-30_60min.csv,data/ec_latest.json,data/eth_daily.csv,data/fear_greed_complet.csv,data/live_metrics.json,data/mondes_paralleles_cache.json,data/mondes_paralleles_history.csv,data/mondes_recursifs_100m.csv,data/mondes_recursifs_20m.csv,data/mondes_recursifs_500m.csv,data/n_act_btcusdt_2026-03-30_15min.csv,data/phi_engine_memory.json,data/phi_local_100m.json,data/phi_local_20m.json,data/phi_local_500m.json,data/recursif_v1_config.json,data/seragone_4126j_canon.csv,data/seragone_4126j_canon_meta.json,data/seragone_4126j_complet_canon.csv,data/seragone_4126j_complet_canon_meta.json,data/seragone_canon_4117j.csv,data/sp500_daily.csv,data/trades_btcusdt_2026-04-04.csv,data/trades_btcusdt_2026-04-05.csv,data/trades_btcusdt_2026-04-06.csv,data/trades_btcusdt_2026-04-07.csv,data/trades_btcusdt_2026-04-08.csv,output/global_manifest.json,output/lot_a_audit.json,output/lot_b_audit.json,output/lot_c_audit_v1.json,output/lot_d_audit_v2.json,output/lot_e_audit.json,output/lot_f_audit_v1.json,output/orphans_report.json | writes=- | path=scripts/validators/build_global_manifest.py
+./_bibliotheque_modules/index/modules_summary_v3.txt:1602:- validate_lot_f_v1 | meta | path_status=observed | maturity=validated (62) | reads=data/archive_chains/chain_F0.5.csv,data/archive_chains/chain_F0.csv,data/archive_chains/chain_F1.5.csv,data/archive_chains/chain_F1.csv,data/archive_chains/chain_F2.csv,data/archive_chains/chain_F3.csv,data/archive_chains/chain_F4.csv,data/archive_chains/chain_F6.csv,data/archive_chains/chain_propre_F0.5.csv,data/archive_chains/chain_propre_F0.csv,data/archive_chains/chain_propre_F1.5.csv,data/archive_chains/chain_propre_F1.csv,data/archive_chains/chain_propre_F2.csv,data/archive_chains/chain_propre_F3.csv,data/archive_chains/chain_propre_F4.csv,data/archive_chains/chain_propre_F6.csv,data/archive_chains/chain_v3_F0.5.csv,data/archive_chains/chain_v3_F0.csv,data/archive_chains/chain_v3_F1.5.csv,data/archive_chains/chain_v3_F1.csv,data/archive_chains/chain_v3_F2.csv,data/archive_chains/chain_v3_F3.csv,data/archive_chains/chain_v3_F4.csv,data/archive_chains/chain_v3_F6.csv,data/mondes_recursifs_100m.csv,data/mondes_recursifs_20m.csv,data/mondes_recursifs_500m.csv,data/seragone_4126j_canon.csv,data/seragone_4126j_canon_meta.json,data/seragone_4126j_complet_canon.csv,data/seragone_4126j_complet_canon_meta.json,data/seragone_canon_4117j.csv,lot_f_audit_v1.json | writes=lot_f_audit_v1.json | path=scripts/validators/validate_lot_f_v1.py
+./_bibliotheque_modules/index/modules_summary_v5.txt:218:- build_global_manifest | meta | grade=C | maturity=observed | GS=54.25 | Q=70 | C=0 | Gov=65 | reads=data/C1_btcusdt_2026-03-30_15min.csv,data/archive_chains/chain_F0.5.csv,data/archive_chains/chain_F0.csv,data/archive_chains/chain_F1.5.csv,data/archive_chains/chain_F1.csv,data/archive_chains/chain_F2.csv,data/archive_chains/chain_F3.csv,data/archive_chains/chain_F4.csv,data/archive_chains/chain_F6.csv,data/archive_chains/chain_propre_F0.5.csv,data/archive_chains/chain_propre_F0.csv,data/archive_chains/chain_propre_F1.5.csv,data/archive_chains/chain_propre_F1.csv,data/archive_chains/chain_propre_F2.csv,data/archive_chains/chain_propre_F3.csv,data/archive_chains/chain_propre_F4.csv,data/archive_chains/chain_propre_F6.csv,data/archive_chains/chain_v3_F0.5.csv,data/archive_chains/chain_v3_F0.csv,data/archive_chains/chain_v3_F1.5.csv,data/archive_chains/chain_v3_F1.csv,data/archive_chains/chain_v3_F2.csv,data/archive_chains/chain_v3_F3.csv,data/archive_chains/chain_v3_F4.csv,data/archive_chains/chain_v3_F6.csv,data/binance_fr_8h_4ans.csv,data/btc_15min_4ans.csv,data/btc_5min_4ans.csv,data/btc_5min_part1.csv,data/btc_5min_part2.csv,data/btc_daily.csv,data/btc_daily_fresh.csv,data/btc_hourly_4ans.csv,data/chaines_epurees_state.json,data/communicants_history.json,data/dim_btcusdt_2026-03-30_15min.csv,data/dim_btcusdt_2026-03-30_5min.csv,data/dim_btcusdt_2026-03-30_60min.csv,data/ec_latest.json,data/eth_daily.csv,data/fear_greed_complet.csv,data/live_metrics.json,data/mondes_paralleles_cache.json,data/mondes_paralleles_history.csv,data/mondes_recursifs_100m.csv,data/mondes_recursifs_20m.csv,data/mondes_recursifs_500m.csv,data/n_act_btcusdt_2026-03-30_15min.csv,data/phi_engine_memory.json,data/phi_local_100m.json,data/phi_local_20m.json,data/phi_local_500m.json,data/recursif_v1_config.json,data/seragone_4126j_canon.csv,data/seragone_4126j_canon_meta.json,data/seragone_4126j_complet_canon.csv,data/seragone_4126j_complet_canon_meta.json,data/seragone_canon_4117j.csv,data/sp500_daily.csv,data/trades_btcusdt_2026-04-04.csv,data/trades_btcusdt_2026-04-05.csv,data/trades_btcusdt_2026-04-06.csv,data/trades_btcusdt_2026-04-07.csv,data/trades_btcusdt_2026-04-08.csv,output/global_manifest.json,output/lot_a_audit.json,output/lot_b_audit.json,output/lot_c_audit_v1.json,output/lot_d_audit_v2.json,output/lot_e_audit.json,output/lot_f_audit_v1.json,output/orphans_report.json | writes=- | IN=0 | OUT=0 | path=scripts/validators/build_global_manifest.py
+
+--- NEEDLE: multivers_state.json ---
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:13551:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:13936:        "multivers_state.json"
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:21019:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:30359:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:30744:        "multivers_state.json"
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:42353:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:46292:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:48154:        "multivers_state.json"
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:48184:        "multivers_state.json"
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:56678:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:56980:        "multivers_state.json"
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:64220:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65000:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65043:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65086:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65129:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65172:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65215:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65258:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65301:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65344:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65387:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65430:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65473:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65516:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65559:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:65738:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:68519:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:70303:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:72006:        "multivers_state.json",
+./audit/modulesregistry_v0_manual/modulesregistry_candidate_v0.json:73982:      "path": "multivers_state.json",
+./audit/memoire_totale_passe1_20260510T220644Z/03_racine_files.txt:34:1778450439.4793397430 136076960 ./multivers_state.json
+./audit/memoire_totale_passe1_20260510T220644Z/03_racine_files.txt:574:1775766301.0633071970 9587513 ./multivers_state.json.bak_162mondes
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:15:production/mondes/mondes_communicants.py:137:    mv = read_json_safe(BASE_DIR / "multivers_state.json")
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:26:production/pepites/moteur_pepite_7_H_dd_ath.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:28:production/pepites/moteur_pepite_7_H_dd_ath.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:30:production/pepites/moteur_pepite_12_m2_tension_Gbas.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:32:production/pepites/moteur_pepite_12_m2_tension_Gbas.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:34:production/pepites/moteur_pepite_6_H_shannon.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:36:production/pepites/moteur_pepite_6_H_shannon.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:38:production/pepites/moteur_pepite_11_m2_crise_dd.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:40:production/pepites/moteur_pepite_11_m2_crise_dd.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:42:production/pepites/moteur_pepite_15_m4_crise_Hbas.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:44:production/pepites/moteur_pepite_15_m4_crise_Hbas.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:46:production/pepites/moteur_pepite_17_m5_ouvrir_dd.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:48:production/pepites/moteur_pepite_17_m5_ouvrir_dd.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:50:production/pepites/moteur_pepite_18_m6_ouvrir_Mmilieu.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:52:production/pepites/moteur_pepite_18_m6_ouvrir_Mmilieu.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:54:production/pepites/moteur_pepite_19_m7_tension_Ghaut.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:56:production/pepites/moteur_pepite_19_m7_tension_Ghaut.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:58:production/pepites/moteur_pepite_10_S_xtbas_10j.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:60:production/pepites/moteur_pepite_10_S_xtbas_10j.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:62:production/pepites/moteur_pepite_13_m2_tension_fg.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:64:production/pepites/moteur_pepite_13_m2_tension_fg.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:66:production/pepites/moteur_pepite_14_m4_crise_Gbas.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:68:production/pepites/moteur_pepite_14_m4_crise_Gbas.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:70:production/pepites/moteur_pepite_16_m4_crise_Sbas.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:72:production/pepites/moteur_pepite_16_m4_crise_Sbas.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:74:production/pepites/moteur_pepite_9_M_V_G_extreme.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:76:production/pepites/moteur_pepite_9_M_V_G_extreme.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:78:production/pepites/moteur_pepite_8_M_V_H_calme.py:194:        BASE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:80:production/pepites/moteur_pepite_8_M_V_H_calme.py:196:        STATE_DIR / "multivers_state.json",
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:90:production/perception/state_vector.py:16:    states/multivers_state.json
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:91:production/perception/state_vector.py:47:MULTIVERS_STATE = STATES_DIR / "multivers_state.json"
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:146:2026-04-09 20:25  9587513  ./multivers_state.json.bak_162mondes
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:149:2026-04-20 10:54  53189133  ./backups/migration_canon_20avril2026/multivers_state.json
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:163:2026-04-23 21:06  80753176  ./_bibliotheque_modules/production_copies/multivers_state.json
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:164:2026-04-23 21:06  80753176  ./_bibliotheque_modules/snapshots/2026-04-23_21-34-30/racine/multivers_state.json
+./audit/bascule_canon_v2_phase_O_20260511T214413Z/phase_O_observer.txt:212:2026-05-11 21:30  143966454  ./multivers_state.json
+./audit/orphelins_c4_bloc2_20260511T075745Z/c4_bloc2.txt:727:    "source_state": "states/multivers_state.json",
+./audit/orphelins_c3_20260511T074342Z/orphelins_c3.txt:8010:Le state multivers_state.json fait 103 Mo et est un fichier critique
+./audit/orphelins_c3_20260511T074342Z/orphelins_c3.txt:8093:- Pas de modification de multivers_state.json (103 Mo critique).
+./audit/orphelins_c3_20260511T074342Z/orphelins_c3.txt:8877:                                                     multivers_state.json
+./audit/orphelins_c3_20260511T074342Z/orphelins_c3.txt:10391:  écrire si besoin vers demo/states/multivers_state.json
+./audit/orphelins_c2_20260511T073901Z/orphelins_c2.txt:2019:    "source_state": "states/multivers_state.json",
+./audit/b_lecture_mondes_phase_O_20260511T215902Z/b_phase_O.txt:326:    mv = read_json_safe(BASE_DIR / "multivers_state.json")
+./audit/m6_sonde_20260512T220246Z/trace.txt:125:194:        BASE_DIR / "multivers_state.json",
+./audit/m6_sonde_20260512T220246Z/trace.txt:127:196:        STATE_DIR / "multivers_state.json",
+./audit/decisions/phase_e_decisions_NOTES.md:6725:Le state multivers_state.json fait 103 Mo et est un fichier critique
+./audit/decisions/phase_e_decisions_NOTES.md:6808:- Pas de modification de multivers_state.json (103 Mo critique).

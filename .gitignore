@@ -185,3 +185,19 @@ canon/*.before_*
 # --- Misc ---
 /_documents_windows_downloads_docx_pivots_txt/
 /_vision_totale/
+
+# --- Téléchargements Windows avec parenthèses auto-rename ---
+*\ (*).py
+*\ (*).pdf
+*\ (*).csv
+*\ (*).txt
+*\ (*).json
+
+# --- NON_SERAGONE D6 : projet Finary cockpit (patchs signin Clerk + 2FA) ---
+finary_patch.py
+finary_patch_v2.py
+
+# --- NON_SERAGONE D6 : autres modules Finary cockpit racine ---
+page_finary.py
+page_finary_*.py
+finary_patch_*.py

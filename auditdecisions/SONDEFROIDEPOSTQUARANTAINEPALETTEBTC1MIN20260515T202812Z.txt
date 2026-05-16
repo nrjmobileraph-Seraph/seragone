@@ -1,0 +1,34 @@
+# SONDE FROIDE POST-QUARANTAINE PALETTE BTC 1MIN
+
+TS_UTC=20260515T202812Z
+
+## Pieces
+-rw-rw-r-- 1 ubuntu ubuntu  984 May 15 20:27 auditdecisions/ACTIVATIONQUARANTAINEPALETTEBTC1MIN20260515T202722Z.md
+-rw-rw-r-- 1 ubuntu ubuntu  136 May 15 20:27 auditdecisions/ACTIVATIONQUARANTAINEPALETTEBTC1MIN20260515T202722Z.md.sha256
+-rw-rw-r-- 1 ubuntu ubuntu 1.2K May 15 20:26 auditdecisions/DECRETQUARANTAINEPALETTEBTC1MIN20260515T202648Z.md
+-rw-rw-r-- 1 ubuntu ubuntu 509M Apr 21 12:35 quarantine/froide_palette_btc1min_20260515T202722Z/btc_1min_historique_complet.csv
+-rw-rw-r-- 1 ubuntu ubuntu  149 May 15 20:27 quarantine/froide_palette_btc1min_20260515T202722Z/btc_1min_historique_complet.csv.sha256
+
+## Existence
+ROOT_EXISTS=YES
+SRC_PALETTE_EXISTS=NO
+DST_QUARANTINE_EXISTS=YES
+
+## Hashs
+8f18732fed70a7a40194294f0e6e7b1bf667c54e44ae85993b1edc498665ebe5  ./btc_1min_historique_complet.csv
+8f18732fed70a7a40194294f0e6e7b1bf667c54e44ae85993b1edc498665ebe5  quarantine/froide_palette_btc1min_20260515T202722Z/btc_1min_historique_complet.csv
+5b525ed4aa13596764c1c7f2e63b8197b6ddd5f3b50d9673a8d17412009621ae  auditdecisions/ACTIVATIONQUARANTAINEPALETTEBTC1MIN20260515T202722Z.md
+7c7442bdb24b6907f3e03b94208b94c654d9dcf470020f707dc8d3312f62d6be  auditdecisions/DECRETQUARANTAINEPALETTEBTC1MIN20260515T202648Z.md
+
+## Tailles
+ROOT_SIZE=533620487
+DST_SIZE=533620487
+
+## Verification attendue
+DST_HASH_EXPECTED=YES
+
+## Interdits verifies en lecture seule
+NO_DELETE_CHECK=lecture seule
+NO_SYMLINK_CHECK=SRC_NOT_SYMLINK
+NO_ROOT_MODIFICATION_CHECK=hash racine affiche ci-dessus
+NO_MULTIVERS_ACTION_CHECK=aucune commande multivers_state.json executee dans cette sonde
