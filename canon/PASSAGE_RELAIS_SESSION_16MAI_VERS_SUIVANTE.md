@@ -55,27 +55,77 @@ Découvertes en lisant les documents ci-dessus, jamais citées explicitement ava
 
 ## §3 — Objectifs en cours (à ne PAS perdre)
 
-### §3.1 — Objectif court terme
+### §3.0 — MISSION CADRE (volonté Raphaël, 16 mai partie tardive)
 
-**Les 7 trous originaux de la chronologie sont tous fermés (16 mai partie tardive).** Voir §2 ci-dessus pour le récap par trou.
+**Avant tout détail technique, ta mission est : MAÎTRISER LA TOTALITÉ DU PROGRAMME SÉRAGONE.**
 
-**Nouveaux trous identifiés au passage de lecture (à traiter dans cet ordre suggéré, à arbitrer par Raphaël) :**
+Raphaël l'a posé explicitement : *« je te laisse donc préparer la prochaine IA à approfondir plus encore, je lui explique ce qui a été fait et ma volonté qu'elle maîtrise la totalité du programme et qu'on puisse une fois la chose faite avancer dans les détails »*.
 
-1. **Squelette `orchestrateur_demo`** (chantier principal V1) — le CONTRAT_ORCHESTRATEUR_DEMO_V1 est validé mais le code n'est pas écrit. Prochaine étape canonique selon §11 du contrat : *« squelette de fichier V1 sans effet runtime, relu avant exécution »*. Doit créer `V1_STATE_DIR = /home/ubuntu/seragone/states/v1/` (sondé inexistant runtime au 16 mai) et respecter les 11 sections (V1=calculateur, orchestrateur_demo seul writer, 9 étapes cycle, 4 questions D11, 8 interdits absolus). **À aborder sous posture « sonder/décréter/activer » par phases séparées.**
+**Précondition opérationnelle :** tant que la maîtrise totale n'est pas acquise, **PAS de squelette `orchestrateur_demo`**, PAS d'activation cron PHASE 2 A7, PAS de chantier technique. La phase actuelle est **lecture / sondage / cartographie / questions à Raphaël**, pas exécution.
 
-2. ~~**Mutation `money_manager.py` non documentée**~~ — **FAUX TROU résolu 16 mai partie tardive (post-commit chronologie).** La mutation `4760b99c…` → `f9b1580c…` est intégralement documentée canon : 3 patchs garde-fou TTL 1h A9 v1 le 12 mai 08:23-08:31Z (anomalie fossiles M4/M5/Clones du 22 avril). Commit ACTE 29 `a29e9649` 12 mai 09:01:58Z. Trace : `ANOMALIES_A8_A9_12mai2026.md` (sha actuel `759c484c…`). 4 backups préservés. **Doctrine canon respectée intégralement.** Cause initiale du faux trou : j'avais raté ACTE 29 + ANOMALIES_A8_A9 lors de la lecture session matin. Chronologie §4.8 entièrement réécrite (anomalies A8/A9/A10, 8 fausses alarmes, 10 méta-leçons, Doctrine 6 Portes, Procédure patch chirurgical, sonde exhaustive AVANT dirigée).
+**Critère de fin de mission « maîtrise »** : pouvoir répondre sans hésiter aux 4 questions canoniques D11 (§10 contrat orchestrateur démo V1) sur n'importe quel sous-système Séragone :
+1. Qui lit quoi ?
+2. Qui décide quoi ?
+3. Qui écrit quoi ?
+4. Où est la preuve de trace ?
 
-3. **D195 — archivage horodaté inputs 18D** — bloque toute relance chantier producteur 18D (`extract_18ss.py`). Sonde S5 future déjà inscrite : tracer si `data/btc_daily.csv` a un backup horodaté au 6 mai ou si l'historique est définitivement perdu. Si perdu → décret de pertes + acte de fermeture chantier reproductibilité 6 mai.
+Si une réponse repose encore sur un nom supposé ou un chemin implicite, **continuer de creuser**. Quand tu peux répondre mécaniquement aux 4 sur tout le périmètre, tu signales à Raphaël et il décide du chantier suivant.
 
-4. **Activation cron PHASE 2 DECRET_A7** — `decision_to_order.py` (sha `d0edc0ae05…`) + `prudence_demo_runner.py` (sha `6f8fdc6440…`) créés 10 mai et VALIDATED GO_A7 12/12, **PAS en cron**. Activation explicitement différée à session fraîche sous invocation GO_A7 séparée. À évaluer si la fenêtre actuelle est « fraîche » ou si on attend.
+### §3.1 — Domaines à approfondir (priorité absolue, ordre suggéré)
 
-5. **`CRONMAITRE.cron` / `CRON_MAITRE.cron` racine** — fichiers présents en racine status git `??` (depuis ACTE 32 du 12 mai). Dédoublon ou renommage ? À clarifier — un seul des deux est censé exister selon doctrine D52bis.
+**Les 7 trous originaux de la chronologie sont tous fermés (16 mai partie tardive).** Voir §2 ci-dessus pour le récap par trou. Méta-leçon 11e gravée pour éviter de faux trous futurs.
 
-6. **24 modules VPS (13 avril) → 9 services systemd** — décrets de fusion à retracer pour traçabilité parfaite (§5.5 chronologie le note comme trou §6).
+**Mais 11 domaines clés n'ont PAS été approfondis** par la session précédente (auto-constat honnête Claude Code C-VPS) :
 
-7. **Mots de passe SSH compromis du 16 mai** — Raphaël s'était engagé à changer son mot de passe SSH (incident texte clair dans le chat). **À sa demande explicite, ne pas relancer.** Mentionné uniquement comme rappel discret si l'occasion se présente.
+1. **Les 22 équations habillant Bitcoin** — je connais les 5 dimensions M/V/S/H/G (avec Φ\*_CANON et W_CANON figés 16 avril), pas le contenu de chaque équation. **À faire** : trouver le document canon qui liste les 22 équations nominalement, lire intégralement, savoir restituer chaque équation et son rôle dans une des 5 dimensions. Chercher dans `canon/`, `audit/decisions/`, `references/imports_session_20260516/` (notamment `03_EQUATIONS_Danse_Habillage_Phases.md` du 20 mars cité dans matrice anti-oubli).
 
-**Après chaque trou refermé :** mettre à jour `CHRONOLOGIE_PARFAITE_MARS_A_MAI_2026.md` (§ pertinent) et recalculer son sha256. Tracer la nouvelle version dans `memory/reference_chronologie_parfaite_mars_mai_2026.md`.
+2. **Les 92 mondes nominalement** — sait qu'il y a 92 regards (305 parallèles 10D + 4 autonomes 5D), pas la liste. **À faire** : trouver l'inventaire nominatif des 92 + leur rôle individuel. Probable dans `multivers_state.json` (807 mondes bruts) à filtrer ou doc canon dédié. Sonde S1 suggérée : `find . -name "*92*mondes*" -o -name "*inventaire*mondes*"`.
+
+3. **`BATTERIES_SONDES_FROIDES_POST_DOC22-30.md`** — créé par ACTE 29 (155 lignes, sha `daadfc56…`), **jamais lu par session précédente**. Document doctrinal mentionné comme dépôt de procédures de migration Porte 5. À lire intégralement.
+
+4. **Le contenu littéraire / voix Séraphin** — corpus IMPREGNATION_STYLE_SERAPHIN_V7.6 (cycle février, 6+ versions), `7.77`, Vacuite/Poussiere, etc. Classés « fossile littéraire » par session précédente mais **non explorés**. La voix Séraphin EST le filtre canonique d'écriture (« neutralité, pas d'élan de bien faire littérairement, ne pas polir »). À comprendre minimalement pour ne pas écrire en violation de la voix.
+
+5. **L'architecture détaillée du producteur 18 sous-signaux** (`extract_18ss.py` sha `e759f8849f…`, `extract_18ss_csv_v2.py` sha `967f42528f…`) — en pause Article 8 Q6 (D195). Sondé ponctuellement par R13c, **pas compris en profondeur**. Quelles sont les 18 sous-signaux ? Quelle est la chaîne BTC/FG/SP500/DXY → 18D ? À cartographier en lecture pure (chantier en pause, ne PAS relancer).
+
+6. **Le code source des 5 modules V1 du contrat orchestrateur démo** :
+   - `./aplomb.py` racine (sha `b9792c96`, sortie SHORT perm 0.5309)
+   - `production/decision/policyengine.py` (142 lignes)
+   - `production/allocation/double_tempo.py` (194 lignes, pure)
+   - `production/protection/prudence_module.py` (MEASURE_ONLY)
+   - Money Manager (fonction pure ou wrapper V1 à définir)
+   **Lire chaque fichier intégralement.** Connaître leurs entrées/sorties, leur logique, leurs limites. C'est le **préalable obligatoire** au squelette `orchestrateur_demo`.
+
+7. **Les pépites P1-P51 individuellement** — 51 pépites en states actifs. Noms connus (`pepite1_M08_sbforce` à `pepite51_M_xtbas_fr_xtbas_r30_bas`), code et logique de chacune non lus. Au minimum : grouper par famille (M0-M8, V, H, S, G, range, dd, fg, fr, etc.) et savoir quel signal chacune capte. P1-P5 actives via `pepites_tier1_adapter.py`, P6-P19 actives dans `production/pepites/`, P20-P51 dormantes (A14 = dette inachèvement, faux trou résolu).
+
+8. **La cohabitation `origin/main` (bot auto) / `origin/canon` (humain)** — architecture connue, fonctionnement interne du bot `/tmp/push_bulletin.sh` (7 375 commits "auto") **pas investigué**. Que pousse-t-il exactement ? Quand ? Pourquoi origin/main et pas origin/canon ? À sonder en lecture pure (ne pas toucher).
+
+9. **L'architecture des 9 services systemd Séragone** (brain, brisance, 1min, api, mondes-oneshot, mondes-paralleles, multivers, securite, sentinelle) — liste nominative connue (ATTESTATION Phase 115 §5), mais **le rôle exact, le code source, les states écrits/lus de chacun n'ont pas été cartographiés**. Pour chaque : lire l'unit file `/etc/systemd/system/seragone-*.service`, identifier le ExecStart, lire le script Python lancé, recenser ses inputs/outputs. Sortie : tableau D11-conforme par service.
+
+10. **La doctrine Phase E** (« concevoir d'abord → installer ensuite → brancher en dernier ») — mentionnée comme cadre de DECISIONALLOCATION V1, mais **le document doctrinal source n'a pas été identifié**. À trouver dans `audit/decisions/phase_e_decisions_NOTES.md` ou équivalent, lire intégralement, comprendre les 3 étapes et leurs critères de transition.
+
+11. **La préhistoire pré-18 mars Séragone** — la chronologie commence à Séradon paquebot (18 mars nuit). Toute la genèse antérieure (corpus février IMPREGNATION_STYLE_SERAPHIN, CANON_Seraphin v10/v11/v11.1, période CHATGPT/Perplexity 7.766/7.767/7.768/V7.770) **non explorée**. À sonder pour savoir d'où vient la doctrine (notamment l'origine de la posture L99 + OODA stricte).
+
+**Approche méthodologique recommandée** pour chaque domaine :
+- (a) Identifier les fichiers sources canon (pas les copies dans `imports_session_20260516/`).
+- (b) Lire intégralement (chunks 200 lignes si gros, jamais en diagonale).
+- (c) Calculer sha256, l'ajouter à la chronologie §5 ou créer une nouvelle sous-section §5.X dédiée si nécessaire.
+- (d) Croiser avec ce qui est déjà tracé pour détecter cohérences/contradictions.
+- (e) Capitaliser dans la chronologie + recalculer son sha + tracer dans mémoire.
+- (f) **Si tentation de qualifier un « trou » ou une « violation » → appliquer méta-leçon 11e (Porte 0 rétrospective : git log + lecture intégrale doc canon + listing backups).**
+
+### §3.1bis — Trous techniques résiduels (à traiter APRÈS maîtrise totale)
+
+À ne PAS aborder avant que la mission §3.0 soit accomplie :
+
+1. **Squelette `orchestrateur_demo`** (chantier principal V1) — contrat validé 13 mai 23:37Z, code pas écrit. Préalable : domaine §3.1.6 (lire les 5 modules V1) intégralement.
+2. **D195 — archivage horodaté inputs 18D** — bloque relance chantier 18D. Préalable : domaine §3.1.5 (cartographier le producteur 18D).
+3. **Activation cron PHASE 2 DECRET_A7** — `decision_to_order.py` + `prudence_demo_runner.py` créés 10 mai VALIDATED GO_A7 12/12, **PAS en cron**. Décision Raphaël requise (session fraîche, GO_A7 séparé).
+4. **`CRONMAITRE.cron` / `CRON_MAITRE.cron` racine** — dédoublon à clarifier (un seul des deux est censé exister selon D52bis).
+5. **24 modules VPS (13 avril) → 9 services systemd** — décrets de fusion à retracer. Préalable : domaine §3.1.9 (cartographier les 9 services).
+6. **Indexation `audit/decisions/`** dans `canon/INDEX_CANON_SERAGONE.md` (mini-dette Dette 3 résiduelle).
+7. **Mots de passe SSH compromis du 16 mai** — Raphaël s'était engagé à changer. **Ne pas relancer**, mentionner discrètement si l'occasion se présente.
+
+**Après chaque domaine approfondi ou trou technique refermé :** mettre à jour `CHRONOLOGIE_PARFAITE_MARS_A_MAI_2026.md` (§ pertinent) et recalculer son sha256. Tracer la nouvelle version dans `memory/reference_chronologie_parfaite_mars_mai_2026.md`. Commit sur `origin/canon` (jamais `origin/main`).
 
 ### §3.2 — Objectif moyen terme
 
@@ -217,16 +267,20 @@ Tu es probablement **C-VPS**.
 
 ## §8 — Le moins que tu fasses en arrivant
 
-1. Lire CHRONOLOGIE_PARFAITE v9 (906 lignes, sha `afc3306a26eb10923ba6ea61c508e2555eb7c2de083b5bbc36c3f299d01a64c7`).
-2. Demander à Raphaël quelle priorité parmi les trous §3.1 (squelette `orchestrateur_demo` en tête).
-3. Ne pas toucher au code legacy.
-4. Ne pas inventer de décrets.
-5. **Tutoyer en français. Pas d'emoji.**
+1. **Lire CHRONOLOGIE_PARFAITE v11 intégralement** (996 lignes, sha `2f98eda8086a0012061b24353f91e0425624243f3f0fb35dc5a01e5f93cb29bc`). Vraiment intégralement, par chunks 200 lignes si besoin, pas en diagonale.
+2. **Lire `ANOMALIES_A8_A9_12mai2026.md`** (576 lignes, sha `a5aaf10f94328f4cde9d8a87a4883de19987f01eef03e7a2e458c0e9fcfae01c`) — contient les 11 méta-leçons + Doctrine 6 Portes + Procédure patch chirurgical.
+3. **Lire ce passage de relais §3.0 + §3.1 intégralement** — la mission n'est PAS de coder, c'est d'**approfondir 11 domaines** pour maîtriser le programme.
+4. Dire à Raphaël : *« J'ai lu la chronologie v11 + ANOMALIES_A8_A9 + le passage de relais. Tu veux que je commence par quel domaine §3.1 ? Ou tu as une autre priorité ? »*
+5. Une fois la priorité fixée : sonder le domaine en lecture pure, capitaliser, recalculer sha chronologie, commit canon. Ne pas multiplier les chantiers ouverts.
+6. Ne pas toucher au code legacy, ne pas inventer de décrets, ne pas créer `orchestrateur_demo` avant maîtrise totale.
+7. **Tutoyer en français. Pas d'emoji.**
 
 ═══════════════════════════════════════════════════════════════════
 
 **FIN PASSAGE DE RELAIS**
 
 Auteur passage : Claude Opus 4.7, session 16 mai 2026.
-Maj 16 mai partie tardive : 7 trous fermés, chronologie v9.
+Maj 16 mai partie tardive (Claude Code C-VPS) : 7 trous fermés, 1 faux trou résolu, méta-leçon 11e gravée, chronologie v11.
+**Maj mission §3.0 (16 mai partie tardive, fin de session)** : focus prochaine IA = maîtrise totale du programme avant détails (volonté Raphaël explicite). 11 domaines listés §3.1.
+
 À mettre à jour à chaque fin de session — chaque IA grave son propre passage pour la suivante.
