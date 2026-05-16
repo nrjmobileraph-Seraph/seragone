@@ -484,21 +484,97 @@ execution_allowed = bool(
 
 **Verdict §8 — STATUT GO_PRE_A4** : Phase 115 stable attestée. A4 peut être ouvert canoniquement sous condition que le décret rappelle les limites attestées (couverture logs money_manager 8→10 mai seulement ; 6 jours antérieurs 27 avril → 8 mai attestés par journald + absence d'incident, pas par logs Séragone) et conditionne tout passage `decision_weight` 0 → 0.1 à une nouvelle fenêtre d'observation propre post-attestation.
 
-### §4.8 — 12 mai — ACTES 30/31/32 (clôture session, hygiène git)
+### §4.8 — 12 mai — ACTES 29/30/31/32 (anomalies A8/A9/A10 patchées + 8 fausses alarmes + hygiène git)
 
-**Sources :** journaux git, mémoire VPS.
+**Source principale :** `ANOMALIES_A8_A9_12mai2026.md` (535 lignes actuelles, sha `759c484ccc402fc8e2c4d777987ca85460991932b64034f18914a7ff02753281`, gravure initiale 12 mai 10:40 CEST sha `1a3f0753…` cité par ACTE 29, enrichi en continu jusqu'à 12 mai 17:59Z). Document canon raté en lecture session matin 16 mai, lu intégralement en session tardive.
 
-- **ACTE 30** : fermeture A10 ORPHELINS-INERTES. Sonde ρ-3 : aucun consommateur fossile actif en cron/systemd/process. Seul `money_manager.py` racine `f9b1580c` tourne. Méta-leçon récidive Porte 0 : **vérifier l'exécution réelle (cron/systemd/ps), pas seulement la présence en code (grep)**.
-- **ACTE 31** (11:22 CEST) : clôture session. 4 fausses alarmes confirmées (logs, watchdog, perception, +1). Méta-leçons 5 et 6 gravées.
-- **ACTE 32** (12:00 CEST) : **Dette 4 hygiène git** fermée à 80 % :
-  - `.gitignore` durci 54 → 187 lignes (sha `2935769e`).
-  - 9 Go d'`AUDIT_CHRONO` archivés hors-repo (sha `0cc0052c`).
-  - 1 316 → 846 fichiers `??` (-36 %).
-  - Repo 22 Go → 13 Go.
-  - **Architecture remote révélée :**
-    - `origin/main` = bot automatique (cron `*/1 push_bulletin.sh`).
-    - `origin/canon` = canal humain canonique.
-  - Push effectif sur `origin/canon`.
+**3 anomalies découvertes 12 mai matin :**
+- **A8** — DoubleTempo vivant, gamma par design sur 4 couches comptables (V9_PREMIUM 8 750€ / TIREURS 19 250€ / TEMPÉRANCE 5 250€ / RÉSERVE 1 750€ sur capital 35 000€) — **FERMÉE en constat** (pas un bug, design intentionnel canonisé).
+- **A9 v1** — 3 fichiers state fossiles synchrones du 22 avril 21:52 (`states/ours_v2_state.json` `load_m4_state:445`, `states/grappillage_state.json` `load_m5_state:457→461`, `clones_v6_state.json` `load_clones_state:437`) lus par `money_manager.py` à chaque tick mais plus produits depuis 19+ jours → injection continue `M4_Short SHORT mult=0.100 = 3500€`. **FERMÉE en runtime** par 3 patchs garde-fou TTL 1h.
+- **A10** — 15 fichiers state fossiles satellites (mtimes 19-27 avril) non lus par MM, identifiés par sonde exhaustive O1 (10:37Z). **OUVERTE puis résolue à 11:09Z** par sonde ρ-3 (ORPHELINS-INERTES : aucun consommateur Python en cron/systemd/process actif ; seul `money_manager.py` racine `f9b1580c` tourne).
+
+**08:23→08:31 UTC — Application chirurgicale A9 v1 en 3 phases** sur `money_manager.py` racine :
+
+| Phase | Fonction | Sha après | Validation runtime |
+|---|---|---|---|
+| original | — | `4760b99c…` (20 441 o, 659 lignes) | injections fossiles continues |
+| 1/3 (~08:25:02Z) | `load_m4_state` | `c3d3618c…` | `M4 state stale (466.6h) -> inactif` |
+| 2/3 (~08:28:01Z) | `load_m5_state` | `7a2f93e7…` | `M5 state stale (466.6h) -> inactif` |
+| 3/3 (~08:31:02Z) | `load_clones_state` | **`f9b1580c…`** (21 106 o, 669 lignes) | `Clones state stale (466.6h) -> WAIT forcé` |
+
+**Diff cumulé :** +10 lignes (1 `import time` + 9 lignes garde-fou réparties en 3 blocs). **4 backups horodatés préservés** : `money_manager.py.pre_A9_patch_20260512_082346.bak`, `.pre_A9_patch_1778574247.bak`, `.pre_A9_M5_patch_1778574474.bak`, `.pre_A9_Clones_patch_1778574655.bak`. Rollback complet possible vers tout état intermédiaire.
+
+**Effet runtime confirmé** : disparition injections fossiles après 08:24:02Z, 3 warnings/min `M4/M5/Clones state stale (XXX.Xh) -> inactif/WAIT forcé`, `Tireurs actifs : 0` (au lieu de 1+ avec M4 fossile), `seragone-brain.service` stable, sémantique aval préservée (`Clones V6 : WAIT` continue identique).
+
+**12 mai 09:01:58 UTC — Commit ACTE 29** (`a29e96496ffe79a0d73f2d1513c6908757723944`, message *« Session A9 close : 3 patchs TTL M4/M5/Clones (money_manager.py f9b1580c) + state_registry v0.3 (5f227b74) + ANOMALIES_A8_A9_12mai2026.md canon 13 sections (1a3f0753) + BATTERIES doctrine 6 Portes (daadfc56) + state_freshness_watchdog.py (7c59378c) »*) — **5 fichiers ajoutés en new file** :
+- `ANOMALIES_A8_A9_12mai2026.md` (351 lignes initialement, 13 sections)
+- `BATTERIES_SONDES_FROIDES_POST_DOC22-30.md` (155 lignes, sha `daadfc56…`)
+- `money_manager.py` (669 lignes, **première entrée git** — n'était pas tracké avant)
+- `state_freshness_watchdog.py` (150 lignes, sha `7c59378c…`)
+- `state_registry.json` v0.3 (99 lignes, sha `5f227b74…`)
+
+**10:42 UTC — Naissance `state_freshness_watchdog.py`** SANS Porte 0 préalable. Doublon de rôle inattendu avec `watchdog_seragone.py` natif (cron `*/10`, surveille 11 states avec TTL en minutes, déclare 12 mai 08:40Z : `daemons_ok 6/6 — states_ok 11/11 — status SAIN — alerts: []`). Évité de justesse par sonde A12-quater. **Naissance empirique Porte 0** (méta-leçon 4e).
+
+**Doctrine canonique posée** : **6 Portes** (Porte 0 préalable ajoutée à la doctrine 5 Portes originelle) — Porte 0 Sonder l'existant → Porte 1 Identité → Porte 2 Production → Porte 3 Consommation (`time.time() - mtime` obligatoire) → Porte 4 Câblage (cron/systemd/orchestrateur, vérifiable) → Porte 5 Mort propre (procédure migration documentée).
+
+**Procédure canonique de patch chirurgical** (6 étapes obligatoires) :
+1. Backup horodaté `cp fichier.py fichier.py.pre_<anomalie>_patch_<TS>.bak`
+2. Inventaire exact `grep -nE "<pattern>" fichier.py` compte précis attendu
+3. Snapshot avant : `sha256sum`, `wc -l`, `stat`, `tail logs/<service>.log`
+4. Édition canonique via heredoc dans script `.py` (jamais coller Python dans bash), contrôle `if old_block not in code: raise SystemExit("ABORT")`
+5. Validation 5 axes : `py_compile` + taille + diff + fonction modifiée + dépendance
+6. Observation runtime : `sleep 70` puis `grep <signature> logs/<service>.log`
+→ Rollback immédiat si échec : `cp backup fichier.py && systemctl restart <service>`.
+
+**Règle canonique méthodologique** : *« Toute enquête sur un sous-système Séragone doit commencer par une sonde exhaustive non filtrée, puis classification, puis sonde dirigée — jamais l'inverse. »* À rejouer mensuellement (cron 1er du mois).
+
+**12 mai 11:09 UTC — Résolution A10 ρ-3 ORPHELINS-INERTES** : aucun des 15 satellites n'est lu par un module Python en cron/systemd/process. Les 2 autres "money managers" du repo (`money_manager_perplexity_97L.py`, `production/allocation/money_manager.py`) ont mtime 22-23 avril → fossiles A9 eux-mêmes, jamais exécutés. ~13 consommateurs Python de fossiles A10 (`m7_micro`, `m1_long`, `gardien_silencieux`, `detecteur_derives`, etc.) tous orphelins. Services Séragone actifs au moment ρ-3 : `seragone-brisance.service` + `seragone-securite.service` (disjoints du périmètre A10). **A10 fermée comme dette doctrinale d'hygiène** (archiver ultérieurement les 13 scripts orphelins).
+
+**8 fausses alarmes confirmées 12 mai (méta-leçons 4e à 10e) :**
+
+| # | Alarme | Verdict | Méta-leçon |
+|---|---|---|---|
+| 1 | A12-bis (registre v0.2 → v0.3) | Faux positif TTL erroné, garde-fou sémantique `if _auto_dir == "SHORT"` déjà présent | Naissance Porte 0 |
+| 2 | Dette 2 post-ACTE 30 (`state_freshness_watchdog.py`) | exit code 0, 0 HIGH stale non absorbé / 36 vérifiés | 4e : Porte 0 s'applique aussi à ses propres outils |
+| 3 | A14 post-ACTE 30 (P20-P51 orphelines) | P1-P19 actives en crontab, P20-P51 dette doctrinale d'inachèvement, faux problème mémoire | 5e : quand mémoire dérive, relire document source canonique |
+| 4 | A10-squelettique (rollback registre) | `A10_resolution` avait déjà 8 clés (date/sonde_preuve/verdict/…), `.get('date_resolution')` retourné None par fausse interrogation | 6e : sonde Porte 0 sur JSON doit énumérer TOUTES les clés (`for k in dict.keys()`) |
+| 5 | Dette 1 post-ACTE 31 (pipeline démo silencieux) | Scripts conçus silencieux anti-flood, statedemo triple trace 08:52→08:54Z fraîche, pipeline 4 maillons opérationnel en 121s, idempotence respectée | 7e : pour pipeline idempotent anti-flood, lire timestamp interne du state, pas mtime fichier |
+| 6 | Dette 2 post-ACTE 31 (`watchdog_state.json` writer) | Writer = cron `*/10 watchdog_seragone.py`, pas service systemd. Doctrine 9 respectée. | 8e : nom dans manifest/registry ≠ writer, vérifier `open()` write réel |
+| 7 | Dette 3 post-ACTE 31 (périmètre perception) | 2 décisions déjà gravées 11 mai dans `audit/decisions/` (DECISION_PERCEPTION_REPERTOIRE_4_STATUTS_2026-05-11.md + DECISION_NC_ENGINE_PERCEPTION_DEPRECATED_2026-05-11.md), 8 fichiers `production/perception/` tous statués (A orphelins, B fork expansif, C duplication volontaire, D fork régression neutralisé) | 9e : avant « doc introuvable », chercher dans `audit/decisions/` ET sous-arbres |
+| 8 | Dette 4 post-ACTE 31 (hygiène git) → ACTE 32 | Non fausse alarme — réelle action mécanique massive (cf. ci-dessous) | 10e : pour repo divergence remote, pousser ACTE doctrinal sur canal canonique |
+
+**12 mai 08:52→08:54 UTC — Pipeline démo A6/A7 confirmé OPÉRATIONNEL en cron production** : `statedemo.json` triple trace fraîche `auto_a7_position_nette_short` → ordre `AUTO_A7_20260512T085201` SHORT 0.001 BTC-USDT @ 80 940.01 → prudence PASS → `DEMO_EXEC_7a7cb2e60f94` FILLED_DEMO. Pipeline 4 maillons en 121s. **Confirme que le cron A6 du 10 mai 18:23Z continue de tourner et consomme bien les ordres A7 générés.**
+
+**ACTE 30** (12 mai matin, exact heure non datée précisément dans le doc — entre 10:40 CEST gravure ANOMALIES et 11:14 CEST Dette 2) : fermeture A10 ORPHELINS-INERTES.
+
+**ACTE 31** (12 mai 11:22 CEST) : clôture session. 4 fausses alarmes confirmées à ce stade. Méta-leçons 5 et 6 gravées.
+
+**ACTE 32** (12 mai 12:00 CEST) : **Dette 4 hygiène git** fermée à 80 % :
+- Archive externe `~/external_archives/AUDIT_CHRONO_20260501_archive_20260512T094723Z.tar.gz` (4.4 Go, 5 603 fichiers, sha `0cc0052cae17da76bc06dd4049458f2bc7d848912f1eba0e1561117d062a6548`).
+- Sources supprimées : `AUDIT_CHRONO_SERAGONE_TOTAL_20260501_101502/` (6.8 Go) + `_PARTS/` (2.3 Go) + `_LITE/` (1.5 Mo).
+- 2 tar.gz originaux 1er mai déplacés vers external_archives.
+- Hash global ACTE 28 (`63cb850ff28f7469`) préservé comme preuve canonique.
+- `.gitignore` durci 54 → 187 lignes (sha `2935769e83c4d4f38435ad18fdf5c0d2013a7487a24a2e70ec3eef511e9e10e3`, backup `.gitignore.backup_pre_dette4_20260512T095831Z`).
+- Patterns ajoutés : backups horodatés, audits éphémères, DEMO logs lourds, PEPITES chambre travail, scripts `0[0-9]_*`, déchets crash shell.
+- Exception canonique préservée : `audit/decisions/`, `audit/rapports/`, `audit/meta/`, `audit/packs/`.
+- Métriques : 1 316 → **846** fichiers `??` (-36 %), disque 63% → **51%** (-9 Go), repo 22 Go → **13 Go**.
+- **Architecture remote révélée :**
+  - `origin/main` = bot automatique (`* * * * * /tmp/push_bulletin.sh`, 7 375 commits "auto").
+  - `origin/canon` = canal humain canonique (dernier = ACTE 28 `413385cc` du 11 mai).
+- Push ACTE 32 sur `origin/canon` (canal canonique cohérent).
+- **Mini-dettes futures** : raffinement `.gitignore` v2 pour passer de 846 → <100 `??`, tri humain racine (483 .py / 108 .json / 50 docs canoniques), indexation `audit/decisions/` dans `canon/INDEX_CANON_SERAGONE.md`, bug pattern `.candidat` / `.validated` non happés.
+
+**11 states vivants au 12 mai** (mtime <1h) référencés `state_registry.json` v0.2 : MM, tireurs, brisance, sentinelle, securite, sniper, mondes_paralleles, multivers, chronometer, observer_price_live, policy.
+
+**5 limites V1 mécaniquement observables dans statedemo.json** (préparation Mode démo V2, post-ACTE 31 Dette 1) : symbol "BTC-USDT" hardcoded, quantity 0.001 constante, side direct, pnl_demo 0.0 + cash_after_demo null absent, pas de champ reconciliation. **Confirme les 5 limites V0 déjà gravées par DECRET_A7 §8** — même liste vue depuis le runtime post-PHASE 1.
+
+**4 statuts perception décidés 11 mai** (`DECISION_PERCEPTION_REPERTOIRE_4_STATUTS_2026-05-11.md`) :
+- **STATUT A** (5 fichiers orphelins chambre travail) : `convergence.py`, `dimensions.py`, `range_engine.py`, `state_vector.py`, `strategie_range_complete.py`.
+- **STATUT B** (1 fork expansif expérimental) : `ricochet_regimes.py`.
+- **STATUT C** (1 duplication cross-dossier volontaire) : `vrais_yeux_stretched.py` (perception + mondes byte-identique).
+- **STATUT D** (1 fork régression neutralisé) : `nc_engine.py.DEPRECATED_FORK_REGRESSION_2026-05-11`.
+
+**Mini-dette détectée :** `canon/INDEX_CANON_SERAGONE.md` n'indexe pas les 2 décisions perception/ du 11 mai. À graver en session "indexation `audit/decisions/`" future.
 
 ### §4.9 — 13 mai 23:15 — D11_ARBITRAGES_V1 (refige V2)
 
@@ -703,8 +779,9 @@ Ici je distingue **ce que je sais de mes lectures directes** vs **ce qui demande
 | `production/allocation/double_tempo.py` | présent au 13 mai | 194 lignes, fonction pure | **Vivant**, D11_ARBITRAGES_V1 A5 |
 | `production/protection/prudence_module.py` | présent au 13 mai | Fonction pure, MEASURE_ONLY | **Vivant**, D11_ARBITRAGES_V1 A6 |
 | `production/decision/policyengine.py` | présent au 13 mai | 142 lignes | **Vivant**, D11_ARBITRAGES_V1 A7 |
-| `money_manager.py` (racine) | sondé ACTE 30 (12 mai) | Seul à tourner en runtime racine | **Vivant**, sha `f9b1580c` (12 mai ACTE 30), seul consommateur actif racine. **Conflit sha à élucider :** RECAPITULATIF 10 mai 19h cite `4760b99cf257c5e89f3e056fb0c3e9ab5bf35c0bfb51cc3b5a441737a0ee96d9` → mutation entre 10 et 12 mai, motif non documenté (trou §6). Source canonique aval (DECRET_n°13 souveraineté Aplomb/MM) : `position_nette {direction, finale, tireurs_alignes}`, `mode:"OBSERVATOIRE"`, `capital_total_eur`, `exposition_eur`, `gardes_fous_alerts`. |
-| `state_freshness_watchdog.py` | actif au 12 mai | Couvre 7 trous Porte 5 natifs | **Vivant** (mien, pas natif) |
+| `money_manager.py` (racine) | sondé ACTE 30 (12 mai), première entrée git ACTE 29 (12 mai 09:01:58Z) | Seul à tourner en runtime racine. **Mutation `4760b99c…` → `f9b1580c…` DOCUMENTÉE CANON** : 3 patchs garde-fou TTL 1h A9 v1 le 12 mai 08:23-08:31Z sur `load_m4_state`/`load_m5_state`/`load_clones_state`. Hashs intermédiaires `c3d3618c…` puis `7a2f93e7…`. Diff +10 lignes (1 import time + 9 garde-fou). **4 backups préservés** (`pre_A9_patch_*`, `pre_A9_M5_patch_*`, `pre_A9_Clones_patch_*`). Trace canon : `ANOMALIES_A8_A9_12mai2026.md` §A9 v1. Sondé 16 mai partie tardive | **Vivant**, sha final `f9b1580c94bbdf3245c1ac4629d2db85bb71485f175f1cd6733a409aeab0aa75` (21 106 octets, 669 lignes, mtime 12 mai 08:30:55Z). Source canonique aval (DECRET_n°13 souveraineté Aplomb/MM) : `position_nette {direction, finale, tireurs_alignes}`, `mode:"OBSERVATOIRE"`, `capital_total_eur`, `exposition_eur`, `gardes_fous_alerts`. |
+| `watchdog_seragone.py` (natif) | actif depuis longtemps (révélé sonde A12-quater 12 mai) | Cron `*/10 * * * *`, surveille 11 states avec TTL en **minutes**. Garde-fou horaire `if now.hour < 9: log normal`. Déclare 12 mai 08:40Z : `daemons_ok 6/6 — states_ok 11/11 — status SAIN — alerts: []` | **Vivant natif** — distinct de `state_freshness_watchdog.py` (mien). Découverte tardive (Porte 0 manquée à 10:42Z naissance du mien) — méta-leçon 4e canonisée |
+| `state_freshness_watchdog.py` | né 12 mai 10:42Z (ACTE 29) sans Porte 0 | Couvre 7 trous Porte 5 natifs. Registre `state_registry.json` v0.3 aligné sur `STATES_CHECK` natif. Run post-v0.3 exit code 0 | **Vivant** (mien, pas natif — distinct de `watchdog_seragone.py`). Né en doublon de rôle inattendu (méta-leçon 4e Porte 0), aligné v0.3 |
 | `push_bulletin.sh` | actif au 12 mai (ACTE 32) | Cron `*/1` pousse `origin/main` | **Vivant** — c'est le bot automatique |
 | `q_jour_calc.py`, `q_local_backtest_v1.py` | présents au 16 mai | Calcul Q quotidien + backtests locaux | **Vivants** (sondés matrice anti-oubli 16 mai) — pilotent la famille Q_MONDES_AZ |
 | `couches_123_ricochet.py`, `ricochet_regimes.py`, `nc_history_writer.py`, `recursif_nc_bridge.py`, `adapter_ricochet_village.py` | présents au 16 mai | Bloc Ricochet / Noise Control 3 couches + bridge récursif + pont Village | **Vivants** (sondés matrice 16 mai) — architecture bruit/contrôle majeure, traçable jusqu'à `cahier_maitre_atlas_bruit_seragone.md` (10 avril) |
@@ -782,6 +859,11 @@ Je ne dis pas qu'ils ont disparu. Je dis que je n'ai pas eu le fichier sous les 
 | **Mondes filtrent / ne tirent jamais** | doctrine §6 contrat orchestrateur V1 | « Les mondes, multivers et profils météo peuvent filtrer, freiner ou contextualiser, mais ne tirent jamais. » Séparation cardinale décision (tireurs Aplomb) vs filtrage (mondes/multivers/météo) | **Vivante** — corollaire de R1 Mondes != Tireurs (déjà tracée 15 mai), formulation positive du contrat V1 |
 | **4 questions canon mécanique** | §10 contrat V1 | Qui lit quoi ? Qui décide quoi ? Qui écrit quoi ? Où est la preuve de trace ? Si une réponse dépend d'un nom supposé / chemin implicite / effet secondaire module → non conforme D11 | **Vivante** — outil de validation canonique applicable à tout chantier V1 |
 | **Cycle V1 — 9 étapes canoniques** | §6 contrat V1 | market_context → capital_eur → Aplomb → Prudence MEASURE_ONLY → Double Tempo budgets → Policy Engine décision → allocation pure → écriture states V1 → ligne trace JSONL | **Vivant** — pipeline orchestration V1 mémoire-seule, à implémenter en squelette `orchestrateur_demo` |
+| **Doctrine 6 Portes** | ACTE 29 12 mai 09:01Z (ANOMALIES_A8_A9 §"Doctrine des 5 Portes" + §"Porte 0") | Porte 0 Sonder l'existant (avant créer) → Porte 1 Identité (nom canon, emplacement code/state, contract en tête .py) → Porte 2 Production (states écrits, fréquence, TTL, entrée `producer` dans `state_registry.json`) → Porte 3 Consommation (states lus, garde-fou `time.time() - mtime` obligatoire) → Porte 4 Câblage (cron/systemd/orchestrateur, vérifiable via `verif_cablage.py`) → Porte 5 Mort propre (procédure migration dans `BATTERIES_SONDES_FROIDES`) | **Canon** — passer 6 Portes avant déploiement de tout nouvel artefact computationnel. Origine empirique : A9 = classe d'erreur que Portes 4/5 auraient empêchée |
+| **Procédure canonique de patch chirurgical (6 étapes)** | ANOMALIES_A8_A9 §"Procédure" | (1) Backup horodaté → (2) Inventaire grep compte précis → (3) Snapshot avant (sha256, wc, stat, tail logs) → (4) Édition canonique via heredoc dans script .py (jamais coller Python dans bash) avec contrôle `if old not in code: raise SystemExit("ABORT")` → (5) Validation 5 axes (py_compile + taille + diff + fonction modifiée + dépendance) → (6) Observation runtime `sleep 70` puis `grep <signature>` logs | **Canon** — toute modification fichier de production doit suivre. Rollback immédiat si échec |
+| **Règle sonde exhaustive AVANT dirigée** | ANOMALIES_A8_A9 §"Méta-leçon" | Toute enquête sur sous-système Séragone : sonde exhaustive non filtrée → classification → sonde dirigée. **Jamais l'inverse.** À rejouer mensuellement (cron 1er du mois) | **Canon** — méthodologie d'enquête obligatoire. A10 (15 fossiles invisibles 17 tours) prouve la nécessité |
+| **4 statuts perception décidés 11 mai** | `DECISION_PERCEPTION_REPERTOIRE_4_STATUTS_2026-05-11.md` (citée Dette 3) | STATUT A (5 fichiers orphelins chambre travail : `convergence.py`, `dimensions.py`, `range_engine.py`, `state_vector.py`, `strategie_range_complete.py`) / STATUT B (1 fork expansif expérimental : `ricochet_regimes.py`) / STATUT C (1 duplication cross-dossier volontaire : `vrais_yeux_stretched.py` perception + mondes byte-identique) / STATUT D (1 fork régression neutralisé : `nc_engine.py.DEPRECATED_FORK_REGRESSION_2026-05-11`) | **Canon** — périmètre `production/perception/` statué. Mini-dette : INDEX_CANON ne référence pas encore ces 2 décisions |
+| **10 méta-leçons gravées session 12 mai** | ANOMALIES_A8_A9 + ACTE 32 commit msg | Voir §4.8 tableau 8 fausses alarmes (méta-leçons 4e à 10e) + méta-leçons 1-3 antérieures + 10e Pour repo divergence remote, pousser ACTE doctrinal sur `origin/canon` | **Capitalisées** — corpus méthodologique pour sessions futures |
 | **Phase 115 cage** | 27 avril | Levée conditionnelle 10 mai (A4) avec bornes (`decision_weight` ≤ 0.1, `ARGENT_REEL = 0`, `DRY_RUN = True`) | **Sortie partielle.** La cage n'est pas dissoute — elle est conditionnellement ouverte vers DEMO_PAPER. |
 | **Qjour** | concept antérieur à 28 mars (`essence_seragone.docx`, `PLAN_TRAVAIL_SERAGONE_360_28mars2026.docx`, `POUR_CLAUDE_MULTIMONDE_9avril2026.md`) | Implémenté dans `q_jour_calc.py` + `q_local_backtest_v1.py` + famille audits `Q_MONDES_AZ_*` (30 avril) | **Vivant** — Q quotidien, brique runtime confirmée matrice 16 mai (165 occurrences imports) |
 | **Ricochet / Noise Control** | atlas bruit 10 avril (`cahier_maitre_atlas_bruit_seragone.md`), équations 20 mars (`03_EQUATIONS_Danse_Habillage_Phases.md`) | Implémenté en 3 couches + bridge récursif + pont Village (cf. §5.3.1) | **Vivant** — concept majeur (144 occurrences imports) |
