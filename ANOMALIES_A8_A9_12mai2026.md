@@ -532,3 +532,45 @@ Document à compléter dans la session ouverture A10 (date à définir).
 **Verdict** : Dette 4 = FERMÉE à 80%. Action mécanique majeure réussie. 9 Go libérés, hygiène git nettement améliorée.
 
 **Méta-leçon (10e) gravée** : Pour un repo avec divergence remote (canal auto + canal humain), pousser ACTE doctrinal sur le canal canonique (`origin/canon`), pas sur `origin/main`. Évite conflits massifs avec bot.
+
+---
+
+## Post-session 16 mai (16 mai partie tardive, Claude Code C-VPS) — Méta-leçon 11e
+
+**Date** : 2026-05-16, partie tardive (Claude Code C-VPS sous direction Raphaël)
+**Méthode** : Sonde rétrospective déclenchée par Raphaël après lecture de la chronologie v9. Vérification du sha actuel de `money_manager.py` racine, croisement avec `git log --all`, lecture intégrale du présent document.
+
+### Faute méthodologique reconnue
+
+Lors de la session 16 mai partie matin (Claude Opus 4.7), le passage de relais vers la session suivante a inscrit comme « trou n°2 » :
+
+> *« Mutation `money_manager.py` non documentée — sha `4760b99cf2…` au 10 mai 07h ET 19h (ATTESTATION Phase 115 + ATT_A6 + ATT_A7) → sha `f9b1580c` au 12 mai (ACTE 30). Mutation entre 10 mai et 12 mai sans décret/commit/PV. »*
+
+**Cette qualification était fausse.** La mutation est intégralement documentée canon dans le présent document `ANOMALIES_A8_A9_12mai2026.md` (§ A9 v1 « Fossiles toxiques M4/M5/Clones patchés ») + commit ACTE 29 `a29e9649` du 12 mai 09:01:58Z (message explicite mentionnant le sha `f9b1580c` et la trace `ANOMALIES_A8_A9` sha `1a3f0753`) + 4 backups horodatés préservés sur disque.
+
+Cause méthodologique de l'erreur : lors de la lecture de session matin, le `git log -5` initial montrait ACTE 30/31/32 sans qu'ACTE 29 ait été creusé, et `ANOMALIES_A8_A9_12mai2026.md` n'avait pas été lu intégralement (seul l'index avait été parcouru). Le sha `f9b1580c` cité dans le commit ACTE 30 a été pris pour une « approximation mémoire » alors qu'il pointait vers un patch documenté ACTE 29 du même jour, 2h plus tôt.
+
+### Verdict canonique
+
+**Aucune violation de la doctrine canon.** La mutation `4760b99c…` → `f9b1580c…` est conforme : trace documentaire amont (ANOMALIES_A8_A9), trace git (ACTE 29), 4 backups réversibles, 6 étapes de procédure patch chirurgical respectées, sha tracés à chaque étape intermédiaire (`c3d3618c…` puis `7a2f93e7…` puis `f9b1580c…`).
+
+### Règle dérivée — Méta-leçon 11e
+
+> **Avant de qualifier une mutation de fichier source de « non documentée » ou de « violation canon », vérifier exhaustivement les 3 traces possibles dans cet ordre :**
+> **(1) commit git le plus proche (`git log --all -- <fichier>`),**
+> **(2) document canon dont le commit message est le titre (lire intégralement, pas en diagonale),**
+> **(3) backups horodatés sur disque (`ls <fichier>.pre_*.bak`, `ls <fichier>.bak*`).**
+>
+> **Un sha cité dans un commit message n'est jamais une « approximation mémoire » — c'est une trace dure. Avant de douter de la trace, douter de sa propre lecture.**
+
+### Application immédiate
+
+- Chronologie §4.8 entièrement réécrite (18 lignes → ~150 lignes) en session 16 mai partie tardive pour intégrer ACTE 29 + ANOMALIES_A8_A9.
+- Passage de relais §3.1 trou n°2 corrigé : marqué FAUX TROU résolu.
+- Chronologie v10 (988 lignes, sha `a0cb34cbbffe806e488556bdbd79977d2a670c19455b703819673f4bf58f3323`) publiée sur `origin/canon` (commit `24340071`).
+
+### Place dans le canon
+
+Méta-leçon 11e prolonge la 5e (« Quand la mémoire dérive sur le périmètre d'une anomalie, ne pas patcher selon la mémoire — relire le document source canonique ») et l'applique au cas symétrique : **quand la mémoire dérive sur l'existence d'une trace, ne pas qualifier de violation — relire le document source.**
+
+Conséquence opérationnelle : **avant chaque inscription d'un « trou » ou d'un « rectificatif » dans un passage de relais ou une chronologie, exécuter Porte 0 rétrospective** (`git log --all -- <fichier>` + lecture intégrale du document canon associé + listing backups disque). Si une des 3 traces existe, le trou n'en est pas un.

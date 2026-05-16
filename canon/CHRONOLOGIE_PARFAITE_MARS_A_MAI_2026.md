@@ -486,7 +486,7 @@ execution_allowed = bool(
 
 ### §4.8 — 12 mai — ACTES 29/30/31/32 (anomalies A8/A9/A10 patchées + 8 fausses alarmes + hygiène git)
 
-**Source principale :** `ANOMALIES_A8_A9_12mai2026.md` (535 lignes actuelles, sha `759c484ccc402fc8e2c4d777987ca85460991932b64034f18914a7ff02753281`, gravure initiale 12 mai 10:40 CEST sha `1a3f0753…` cité par ACTE 29, enrichi en continu jusqu'à 12 mai 17:59Z). Document canon raté en lecture session matin 16 mai, lu intégralement en session tardive.
+**Source principale :** `ANOMALIES_A8_A9_12mai2026.md` (576 lignes après gravure méta-leçon 11e du 16 mai partie tardive, sha **`a5aaf10f94328f4cde9d8a87a4883de19987f01eef03e7a2e458c0e9fcfae01c`**). Sha intermédiaires : `759c484c…` (535 lignes, état au 12 mai 17:59Z post-Dette 4), `1a3f0753…` (351 lignes, gravure initiale ACTE 29 du 12 mai 10:40 CEST). Document canon raté en lecture session matin 16 mai, lu intégralement en session tardive puis enrichi méta-leçon 11e.
 
 **3 anomalies découvertes 12 mai matin :**
 - **A8** — DoubleTempo vivant, gamma par design sur 4 couches comptables (V9_PREMIUM 8 750€ / TIREURS 19 250€ / TEMPÉRANCE 5 250€ / RÉSERVE 1 750€ sur capital 35 000€) — **FERMÉE en constat** (pas un bug, design intentionnel canonisé).
@@ -722,10 +722,17 @@ execution_allowed = bool(
 
 ### §4.11 — 16 mai — Session 16 mai (présente)
 
+**Partie matin (Claude Opus 4.7) :**
 - 1 210 fichiers (2,1 Go) importés via `scp` dans `canon/references/imports_session_20260516/`.
 - Vérification : les 9 décrets B/N/CONSTAT du fil Perplexity sont déjà gravés sur VPS.
 - Lecture par chunks chronologique : mars complet, avril dates clés, mai jusqu'à 13 mai 23:15 inclus.
-- **Présent document : gravure de la chronologie parfaite, 16 mai 2026.**
+- **Gravure de la chronologie parfaite v2** (542 lignes, sha `d7f191432199…`).
+
+**Partie tardive (Claude Code C-VPS sous direction Raphaël) :**
+- **7 trous §3.1 originaux fermés** (cf. passage de relais §2). Chronologie v2 → v9 (906 lignes, sha `afc3306a26eb…`), puis v9 → v10 après lecture rétrospective ANOMALIES_A8_A9 (988 lignes, sha `a0cb34cbbffe…`).
+- **Sonde rétrospective sha `money_manager.py` racine** déclenchée par Raphaël : sha actuel `f9b1580c…` confirme la trace canon ACTE 29. Le « trou n°2 mutation money_manager.py » du passage de relais était une **fausse alarme** — la mutation est documentée canon (cf. §4.8 réécrit).
+- **Gravure méta-leçon 11e** en fin de `ANOMALIES_A8_A9_12mai2026.md` (576 lignes, sha `a5aaf10f94328f4cde9d8a87a4883de19987f01eef03e7a2e458c0e9fcfae01c`) : Porte 0 rétrospective avant qualification de tout « trou » dans un passage de relais ou une chronologie. Prolonge la méta-leçon 5e (mémoire dérive sur périmètre) au cas symétrique (mémoire dérive sur existence d'une trace).
+- 2 commits poussés sur `origin/canon` : `163c9057` (7 trous fermés) puis `24340071` (§4.8 réécrit + faux trou résolu). 3e commit à venir pour la présente gravure méta-leçon 11e.
 
 ═══════════════════════════════════════════════════════════════════
 
@@ -864,6 +871,7 @@ Je ne dis pas qu'ils ont disparu. Je dis que je n'ai pas eu le fichier sous les 
 | **Règle sonde exhaustive AVANT dirigée** | ANOMALIES_A8_A9 §"Méta-leçon" | Toute enquête sur sous-système Séragone : sonde exhaustive non filtrée → classification → sonde dirigée. **Jamais l'inverse.** À rejouer mensuellement (cron 1er du mois) | **Canon** — méthodologie d'enquête obligatoire. A10 (15 fossiles invisibles 17 tours) prouve la nécessité |
 | **4 statuts perception décidés 11 mai** | `DECISION_PERCEPTION_REPERTOIRE_4_STATUTS_2026-05-11.md` (citée Dette 3) | STATUT A (5 fichiers orphelins chambre travail : `convergence.py`, `dimensions.py`, `range_engine.py`, `state_vector.py`, `strategie_range_complete.py`) / STATUT B (1 fork expansif expérimental : `ricochet_regimes.py`) / STATUT C (1 duplication cross-dossier volontaire : `vrais_yeux_stretched.py` perception + mondes byte-identique) / STATUT D (1 fork régression neutralisé : `nc_engine.py.DEPRECATED_FORK_REGRESSION_2026-05-11`) | **Canon** — périmètre `production/perception/` statué. Mini-dette : INDEX_CANON ne référence pas encore ces 2 décisions |
 | **10 méta-leçons gravées session 12 mai** | ANOMALIES_A8_A9 + ACTE 32 commit msg | Voir §4.8 tableau 8 fausses alarmes (méta-leçons 4e à 10e) + méta-leçons 1-3 antérieures + 10e Pour repo divergence remote, pousser ACTE doctrinal sur `origin/canon` | **Capitalisées** — corpus méthodologique pour sessions futures |
+| **Méta-leçon 11e (Porte 0 rétrospective)** | gravée 16 mai partie tardive en fin ANOMALIES_A8_A9 (sha `a5aaf10f…`) suite à incident faux trou "mutation money_manager.py" | *« Avant de qualifier une mutation de fichier source de "non documentée" ou de "violation canon", vérifier exhaustivement les 3 traces possibles dans cet ordre : (1) commit git le plus proche, (2) document canon dont le commit message est le titre (lire intégralement), (3) backups horodatés sur disque. Un sha cité dans un commit message n'est jamais une "approximation mémoire" — c'est une trace dure. Avant de douter de la trace, douter de sa propre lecture. »* | **Canon** — prolonge la 5e (mémoire dérive sur périmètre) et l'applique au cas symétrique (mémoire dérive sur existence d'une trace). Conséquence : avant chaque inscription d'un « trou » dans un passage de relais, exécuter **Porte 0 rétrospective** (git log --all + lecture intégrale doc canon + listing backups) |
 | **Phase 115 cage** | 27 avril | Levée conditionnelle 10 mai (A4) avec bornes (`decision_weight` ≤ 0.1, `ARGENT_REEL = 0`, `DRY_RUN = True`) | **Sortie partielle.** La cage n'est pas dissoute — elle est conditionnellement ouverte vers DEMO_PAPER. |
 | **Qjour** | concept antérieur à 28 mars (`essence_seragone.docx`, `PLAN_TRAVAIL_SERAGONE_360_28mars2026.docx`, `POUR_CLAUDE_MULTIMONDE_9avril2026.md`) | Implémenté dans `q_jour_calc.py` + `q_local_backtest_v1.py` + famille audits `Q_MONDES_AZ_*` (30 avril) | **Vivant** — Q quotidien, brique runtime confirmée matrice 16 mai (165 occurrences imports) |
 | **Ricochet / Noise Control** | atlas bruit 10 avril (`cahier_maitre_atlas_bruit_seragone.md`), équations 20 mars (`03_EQUATIONS_Danse_Habillage_Phases.md`) | Implémenté en 3 couches + bridge récursif + pont Village (cf. §5.3.1) | **Vivant** — concept majeur (144 occurrences imports) |
