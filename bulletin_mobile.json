@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-05-16T23:56:14.575012",
-  "prix_btc": 78147.12,
+  "timestamp": "2026-05-17T00:01:14.700713",
+  "prix_btc": 78183.99,
   "score_seragone": 15,
   "confiance": "INSUFFISANT",
-  "jours_ecoules": 33,
+  "jours_ecoules": 34,
   "jours_objectif": 60,
   "signaux_total": 3,
   "signaux_ok": 3,
@@ -57,7 +57,7 @@
     "mode": "WAIT"
   },
   "meteo": "orageux",
-  "journal": "16 May - Trop de brouillard. Je ne vois rien. J'attends.",
+  "journal": "17 May - Trop de brouillard. Je ne vois rien. J'attends.",
   "processus": {
     "collector": true,
     "brain": true,
